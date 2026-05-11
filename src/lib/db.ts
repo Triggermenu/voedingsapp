@@ -1,4 +1,5 @@
 import type { FoodItem, Condition } from '@/schemas/item'
+import { getCombinedScore } from '@/lib/scoring'
 
 import groenteData from '@/data/groente.json'
 import fruitData from '@/data/fruit.json'
@@ -47,6 +48,25 @@ export function searchItems(query: string, conditions: Condition[]): FoodItem[] 
 
 export function getItemById(id: string): FoodItem | undefined {
   return ALL_ITEMS.find((item) => item.id === id)
+}
+
+export function getAlternatives(item: FoodItem, conditions: Condition[], limit = 3): FoodItem[] {
+  const currentScore = getCombinedScore(item, conditions).score
+  if (currentScore === null || currentScore < 2) return []
+
+  return ALL_ITEMS
+    .filter((candidate) => {
+      if (candidate.id === item.id) return false
+      if (candidate.category !== item.category) return false
+      const s = getCombinedScore(candidate, conditions)
+      return s.score !== null && s.score < currentScore
+    })
+    .sort((a, b) => {
+      const sa = getCombinedScore(a, conditions).score ?? 99
+      const sb = getCombinedScore(b, conditions).score ?? 99
+      return sa - sb
+    })
+    .slice(0, limit)
 }
 
 export function getDatabaseStats() {

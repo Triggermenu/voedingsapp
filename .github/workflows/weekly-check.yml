@@ -1,0 +1,42 @@
+name: Weekly source check
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate database
+        run: npm run validate-db
+
+      - name: Check source URLs
+        run: npm run check-sources
+        timeout-minutes: 10
+        continue-on-error: true
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0]
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Auto] Database/source check failed — ${date}`,
+              body: '## Wekelijkse database-check mislukt\n\nEen of meer bronnen zijn onbereikbaar of de database-validatie is gefaald. Bekijk de [workflow logs](' + context.serverUrl + '/' + context.repo.owner + '/' + context.repo.repo + '/actions) voor details.\n\n_Automatisch aangemaakt door weekly-check workflow._',
+              labels: ['automated', 'database']
+            })

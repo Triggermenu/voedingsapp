@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import type { FoodItem, Condition } from '@/schemas/item'
 import { getCombinedScore } from '@/lib/scoring'
+import { getAlternatives } from '@/lib/db'
 import { StoplichtBadge } from './StoplichtBadge'
 import { EvidenceBadge } from './EvidenceBadge'
 
@@ -31,6 +32,7 @@ export function ItemCard({ item, activeConditions }: Props) {
   const { t } = useTranslation()
   const [expanded, setExpanded] = useState(false)
   const combined = getCombinedScore(item, activeConditions)
+  const alternatives = expanded ? getAlternatives(item, activeConditions) : []
 
   return (
     <div className={`rounded-xl border border-[#e0dfd7] bg-white overflow-hidden ${scoreAccentClass(combined.score)}`}>
@@ -132,6 +134,23 @@ export function ItemCard({ item, activeConditions }: Props) {
                   DAO-blokker
                 </span>
               )}
+            </div>
+          )}
+
+          {alternatives.length > 0 && (
+            <div className="border-t border-[#e0dfd7] pt-3 mt-1">
+              <p className="text-xs font-medium text-[#5f5e5a] mb-2">Betere alternatieven</p>
+              <div className="space-y-1.5">
+                {alternatives.map((alt) => {
+                  const altScore = getCombinedScore(alt, activeConditions)
+                  return (
+                    <div key={alt.id} className="flex items-center justify-between gap-2 bg-white rounded-lg px-3 py-2 border border-[#e0dfd7]">
+                      <span className="text-xs text-[#1a1a18] font-medium">{alt.name.nl}</span>
+                      <StoplichtBadge score={altScore.score} size="sm" />
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           )}
         </div>

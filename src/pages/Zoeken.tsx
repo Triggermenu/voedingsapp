@@ -5,7 +5,7 @@ import { getProfile } from '@/lib/profile'
 import { ItemCard } from '@/components/ItemCard'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
-import type { Condition } from '@/schemas/item'
+import type { Condition, Category } from '@/schemas/item'
 
 const CONDITION_LABELS: Record<Condition, string> = {
   jicht: 'Jicht',
@@ -14,6 +14,31 @@ const CONDITION_LABELS: Record<Condition, string> = {
   histamine: 'Histamine',
 }
 
+const CATEGORY_LABELS: Partial<Record<Category, string>> = {
+  groente: 'Groente',
+  fruit: 'Fruit',
+  granen: 'Granen & brood',
+  peulvruchten: 'Peulvruchten',
+  'noten-zaden': 'Noten & zaden',
+  vlees: 'Vlees & gevogelte',
+  'vis-schaaldieren': 'Vis & schaaldieren',
+  zuivel: 'Zuivel & eieren',
+  eieren: 'Eieren',
+  'dranken-alcohol': 'Dranken — alcohol',
+  'dranken-non-alcohol': 'Dranken — non-alcohol',
+  zoetwaren: 'Zoetwaren & snacks',
+  'sauzen-kruiden': 'Sauzen & kruiden',
+  'bereid-gerecht': 'Bereide gerechten',
+  overig: 'Overig',
+}
+
+const SCORE_LEGEND = [
+  { score: 0, label: 'Veilig', color: 'bg-emerald-500' },
+  { score: 1, label: 'Matig', color: 'bg-yellow-400' },
+  { score: 2, label: 'Voorzichtig', color: 'bg-orange-500' },
+  { score: 3, label: 'Vermijden', color: 'bg-red-600' },
+]
+
 export function Zoeken() {
   const { t } = useTranslation()
   const [query, setQuery] = useState('')
@@ -21,6 +46,17 @@ export function Zoeken() {
   const conditions = profile?.conditions ?? []
 
   const results = useMemo(() => searchItems(query, conditions), [query, conditions])
+
+  const grouped = useMemo(() => {
+    if (query) return null
+    const map = new Map<Category, typeof results>()
+    for (const item of results) {
+      const cat = item.category as Category
+      if (!map.has(cat)) map.set(cat, [])
+      map.get(cat)!.push(item)
+    }
+    return map
+  }, [query, results])
 
   return (
     <div className="min-h-screen bg-[#f8f7f4] pb-24">
@@ -75,19 +111,54 @@ export function Zoeken() {
         </div>
       </div>
 
-      {/* Results */}
-      <div className="px-4 py-3 space-y-2">
-        {results.length === 0 && query && (
-          <div className="text-center py-12 text-[#73726c]">
-            <div className="text-3xl mb-3">🔍</div>
-            <p className="font-medium">{t('zoeken.noResults', { query })}</p>
-            <p className="text-sm mt-1">{t('zoeken.noResultsHint')}</p>
+      {/* No results */}
+      {results.length === 0 && query && (
+        <div className="text-center py-16 px-4 text-[#73726c]">
+          <svg className="w-12 h-12 mx-auto mb-3 text-[#c8c7bf]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <p className="font-medium text-[#3d3d3a]">{t('zoeken.noResults', { query })}</p>
+          <p className="text-sm mt-1">{t('zoeken.noResultsHint')}</p>
+        </div>
+      )}
+
+      {/* Search results — flat list */}
+      {query && results.length > 0 && (
+        <div className="px-4 py-3 space-y-2">
+          {results.map((item) => (
+            <ItemCard key={item.id} item={item} activeConditions={conditions} />
+          ))}
+        </div>
+      )}
+
+      {/* No query — grouped by category */}
+      {!query && grouped && (
+        <>
+          {/* Score legend */}
+          <div className="mx-4 mt-3 mb-1 flex items-center gap-3 flex-wrap">
+            {SCORE_LEGEND.map(({ score, label, color }) => (
+              <div key={score} className="flex items-center gap-1.5">
+                <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${color}`} />
+                <span className="text-[10px] text-[#73726c]">{label}</span>
+              </div>
+            ))}
           </div>
-        )}
-        {results.map((item) => (
-          <ItemCard key={item.id} item={item} activeConditions={conditions} />
-        ))}
-      </div>
+
+          {Array.from(grouped.entries()).map(([cat, items]) => (
+            <div key={cat} className="px-4 pt-4">
+              <h2 className="text-xs font-semibold text-[#9c9a92] uppercase tracking-widest mb-2">
+                {CATEGORY_LABELS[cat] ?? cat}
+                <span className="font-normal ml-1.5 normal-case tracking-normal">({items.length})</span>
+              </h2>
+              <div className="space-y-2">
+                {items.map((item) => (
+                  <ItemCard key={item.id} item={item} activeConditions={conditions} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </>
+      )}
 
       <NavBar />
     </div>
