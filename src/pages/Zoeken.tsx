@@ -4,6 +4,15 @@ import { searchItems } from '@/lib/db'
 import { getProfile } from '@/lib/profile'
 import { ItemCard } from '@/components/ItemCard'
 import { NavBar } from '@/components/NavBar'
+import { Logo } from '@/components/Logo'
+import type { Condition } from '@/schemas/item'
+
+const CONDITION_LABELS: Record<Condition, string> = {
+  jicht: 'Jicht',
+  migraine: 'Migraine',
+  nierstenen: 'Nierstenen',
+  histamine: 'Histamine',
+}
 
 export function Zoeken() {
   const { t } = useTranslation()
@@ -17,7 +26,13 @@ export function Zoeken() {
     <div className="min-h-screen bg-[#f8f7f4] pb-24">
       {/* Header */}
       <div className="sticky top-0 bg-[#f8f7f4] border-b border-[#e0dfd7] z-10 px-4 pt-safe pt-4 pb-3">
-        <h1 className="text-base font-medium text-[#1a1a18] mb-3">{t('app.name')}</h1>
+        <div className="flex items-center gap-2 mb-3">
+          <Logo size={28} />
+          <div>
+            <h1 className="text-base font-semibold text-[#1a1a18] leading-tight">{t('app.name')}</h1>
+            <p className="text-[10px] text-[#9c9a92] leading-tight">{t('app.tagline')}</p>
+          </div>
+        </div>
         <div className="relative">
           <svg
             className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9c9a92]"
@@ -37,13 +52,27 @@ export function Zoeken() {
             autoCorrect="off"
           />
         </div>
-        <p className="text-xs text-[#9c9a92] mt-2">
-          {query
-            ? results.length === 0
-              ? t('zoeken.noResults', { query })
-              : `${results.length} resultaten`
-            : t('zoeken.allItems', { count: results.length })}
-        </p>
+        <div className="flex items-center justify-between mt-2">
+          <p className="text-xs text-[#9c9a92]">
+            {query
+              ? results.length === 0
+                ? t('zoeken.noResults', { query })
+                : `${results.length} resultaten`
+              : t('zoeken.allItems', { count: results.length })}
+          </p>
+          {conditions.length > 0 && (
+            <div className="flex gap-1 flex-wrap justify-end">
+              {conditions.map((c) => (
+                <span
+                  key={c}
+                  className="text-[10px] bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-full px-2 py-0.5 leading-none"
+                >
+                  {CONDITION_LABELS[c]}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Results */}

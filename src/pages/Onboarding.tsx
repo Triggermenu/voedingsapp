@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import type { Condition } from '@/schemas/item'
 import { CONDITIONS } from '@/schemas/item'
 import { saveProfile, acceptDisclaimer } from '@/lib/profile'
+import { Logo } from '@/components/Logo'
 
 const STEP_WELCOME = 0
 const STEP_CONDITIONS = 1
@@ -41,17 +42,20 @@ export function Onboarding() {
       <div className="w-full max-w-md">
         {/* Logo / title */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 mb-3">
-            <span className="text-2xl">🥦</span>
-            <h1 className="text-xl font-medium text-[#1a1a18]">{t('app.name')}</h1>
+          <div className="flex flex-col items-center gap-2 mb-4">
+            <Logo size={48} />
+            <div>
+              <h1 className="text-xl font-semibold text-[#1a1a18]">{t('app.name')}</h1>
+              <p className="text-xs text-[#73726c] mt-0.5">{t('app.tagline')}</p>
+            </div>
           </div>
           {/* Step dots */}
           <div className="flex justify-center gap-2">
             {[0, 1, 2].map((i) => (
               <div
                 key={i}
-                className={`h-1.5 rounded-full transition-all ${
-                  i === step ? 'w-6 bg-[#1d9e75]' : i < step ? 'w-4 bg-[#1d9e75]/40' : 'w-4 bg-[#e0dfd7]'
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === step ? 'w-8 bg-[#1d9e75]' : i < step ? 'w-4 bg-[#1d9e75]/50' : 'w-4 bg-[#e0dfd7]'
                 }`}
               />
             ))}

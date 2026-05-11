@@ -52,16 +52,21 @@ export function NavBar() {
           <NavLink
             key={to}
             to={to}
-            className={({ isActive }) =>
-              `flex-1 flex flex-col items-center justify-center gap-1 py-2 text-xs transition-colors ${
-                isActive
-                  ? 'text-[#1d9e75] font-medium'
-                  : 'text-[#9c9a92] hover:text-[#5f5e5a]'
-              }`
-            }
+            className="flex-1 relative flex flex-col items-center justify-center gap-1 py-2 text-xs transition-colors"
           >
-            {icon}
-            <span>{t(`nav.${key}`)}</span>
+            {({ isActive }) => (
+              <>
+                <span
+                  className={`absolute top-0 left-3 right-3 h-0.5 rounded-full transition-all duration-200 ${
+                    isActive ? 'bg-[#1d9e75]' : 'bg-transparent'
+                  }`}
+                />
+                <span className={isActive ? 'text-[#1d9e75]' : 'text-[#9c9a92]'}>{icon}</span>
+                <span className={`transition-colors ${isActive ? 'text-[#1d9e75] font-medium' : 'text-[#9c9a92]'}`}>
+                  {t(`nav.${key}`)}
+                </span>
+              </>
+            )}
           </NavLink>
         ))}
       </div>

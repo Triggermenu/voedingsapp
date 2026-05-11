@@ -5,6 +5,16 @@ import { getCombinedScore } from '@/lib/scoring'
 import { StoplichtBadge } from './StoplichtBadge'
 import { EvidenceBadge } from './EvidenceBadge'
 
+function scoreAccentClass(score: number | null): string {
+  switch (score) {
+    case 0: return 'border-l-4 border-l-emerald-400'
+    case 1: return 'border-l-4 border-l-yellow-400'
+    case 2: return 'border-l-4 border-l-orange-400'
+    case 3: return 'border-l-4 border-l-red-500'
+    default: return 'border-l-4 border-l-gray-200'
+  }
+}
+
 interface Props {
   item: FoodItem
   activeConditions: Condition[]
@@ -23,7 +33,7 @@ export function ItemCard({ item, activeConditions }: Props) {
   const combined = getCombinedScore(item, activeConditions)
 
   return (
-    <div className="rounded-xl border border-[#e0dfd7] bg-white overflow-hidden">
+    <div className={`rounded-xl border border-[#e0dfd7] bg-white overflow-hidden ${scoreAccentClass(combined.score)}`}>
       <button
         onClick={() => setExpanded(!expanded)}
         className="w-full text-left px-4 py-3 flex items-center gap-3"
