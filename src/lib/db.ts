@@ -14,7 +14,8 @@ import notenData from '@/data/noten-zaden.json'
 import zoetwarenData from '@/data/zoetwaren.json'
 import sauzenData from '@/data/sauzen-kruiden.json'
 
-const ALL_ITEMS: FoodItem[] = [
+const _seen = new Set<string>()
+const ALL_ITEMS: FoodItem[] = ([
   ...groenteData.items,
   ...fruitData.items,
   ...vleesData.items,
@@ -27,7 +28,11 @@ const ALL_ITEMS: FoodItem[] = [
   ...notenData.items,
   ...zoetwarenData.items,
   ...sauzenData.items,
-] as FoodItem[]
+] as FoodItem[]).filter((item) => {
+  if (_seen.has(item.id)) return false
+  _seen.add(item.id)
+  return true
+})
 
 export function getAllItems(): FoodItem[] {
   return ALL_ITEMS
