@@ -20,6 +20,7 @@ export default {
       },
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        serif: ['Lora', 'Georgia', 'serif'],
       },
     },
   },

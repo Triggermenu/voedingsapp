@@ -3,9 +3,10 @@ import { getProfile, hasAcceptedDisclaimer } from '@/lib/profile'
 import { Onboarding } from '@/pages/Onboarding'
 import { Zoeken } from '@/pages/Zoeken'
 import { Scan } from '@/pages/Scan'
-import { Recepten } from '@/pages/Recepten'
 import { Bronnen } from '@/pages/Bronnen'
 import { Instellingen } from '@/pages/Instellingen'
+import { Recepten } from '@/pages/Recepten'
+import { ItemDetail } from '@/pages/ItemDetail'
 
 function RequireProfile({ children }: { children: React.ReactNode }) {
   const profile = getProfile()
@@ -18,46 +19,12 @@ export default function App() {
   return (
     <Routes>
       <Route path="/onboarding" element={<Onboarding />} />
-      <Route
-        path="/zoeken"
-        element={
-          <RequireProfile>
-            <Zoeken />
-          </RequireProfile>
-        }
-      />
-      <Route
-        path="/recepten"
-        element={
-          <RequireProfile>
-            <Recepten />
-          </RequireProfile>
-        }
-      />
-      <Route
-        path="/scan"
-        element={
-          <RequireProfile>
-            <Scan />
-          </RequireProfile>
-        }
-      />
-      <Route
-        path="/bronnen"
-        element={
-          <RequireProfile>
-            <Bronnen />
-          </RequireProfile>
-        }
-      />
-      <Route
-        path="/instellingen"
-        element={
-          <RequireProfile>
-            <Instellingen />
-          </RequireProfile>
-        }
-      />
+      <Route path="/zoeken" element={<RequireProfile><Zoeken /></RequireProfile>} />
+      <Route path="/item/:id" element={<RequireProfile><ItemDetail /></RequireProfile>} />
+      <Route path="/recepten" element={<RequireProfile><Recepten /></RequireProfile>} />
+      <Route path="/scan" element={<RequireProfile><Scan /></RequireProfile>} />
+      <Route path="/bronnen" element={<RequireProfile><Bronnen /></RequireProfile>} />
+      <Route path="/instellingen" element={<RequireProfile><Instellingen /></RequireProfile>} />
       <Route path="/" element={<Navigate to="/zoeken" replace />} />
       <Route path="*" element={<Navigate to="/zoeken" replace />} />
     </Routes>
