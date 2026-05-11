@@ -10,7 +10,7 @@ test('onboarding flow completes and redirects to zoeken', async ({ page }) => {
 
   // Should redirect to onboarding
   await expect(page).toHaveURL(/\/onboarding/)
-  await expect(page.getByText('Voedingsapp')).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Voedingsapp' })).toBeVisible()
 
   // Step 1: Welcome
   await page.getByRole('button', { name: 'Volgende' }).click()
