@@ -133,6 +133,184 @@
         "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
       },
       "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-bier-stout",
+      "name": { "nl": "Stout (donker bier)", "en": "Stout (dark beer)" },
+      "category": "dranken-alcohol",
+      "subcategory": "bier",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Alcohol + geroosterd mout: jichtrisico door guanosine en lactaat." } },
+        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Donker bier: hoog histaminegehalte." } }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-bier-ipa",
+      "name": { "nl": "IPA-bier (India Pale Ale)", "en": "IPA beer (India Pale Ale)" },
+      "category": "dranken-alcohol",
+      "subcategory": "bier",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-bier-weizen",
+      "name": { "nl": "Witbier / Weizen", "en": "Wheat beer (Weizen)" },
+      "category": "dranken-alcohol",
+      "subcategory": "bier",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-cider-droog",
+      "name": { "nl": "Cider (droog)", "en": "Cider (dry)" },
+      "category": "dranken-alcohol",
+      "subcategory": "cider",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Alcohol verhoogt urinezuur via lactaat-competitie." } },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-cider-zoet",
+      "name": { "nl": "Cider (zoet)", "en": "Cider (sweet)" },
+      "category": "dranken-alcohol",
+      "subcategory": "cider",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Alcohol + fruitsuikers (fructose) verhogen urinezuur." } },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-rose-wijn",
+      "name": { "nl": "Rosé wijn", "en": "Rosé wine" },
+      "category": "dranken-alcohol",
+      "subcategory": "wijn",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-champagne",
+      "name": { "nl": "Champagne", "en": "Champagne" },
+      "category": "dranken-alcohol",
+      "subcategory": "wijn",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-tequila",
+      "name": { "nl": "Tequila", "en": "Tequila" },
+      "category": "dranken-alcohol",
+      "subcategory": "gedistilleerd",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-cognac",
+      "name": { "nl": "Cognac / Brandy", "en": "Cognac / Brandy" },
+      "category": "dranken-alcohol",
+      "subcategory": "gedistilleerd",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-bier-alcoholvrij",
+      "name": { "nl": "Bier (alcoholvrij)", "en": "Beer (non-alcoholic)" },
+      "category": "dranken-alcohol",
+      "subcategory": "bier",
+      "scores": {
+        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Geen alcohol, maar bevat nog guanosine (purine uit gist/mout). Lager jichtrisico dan gewoon bier." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-bier-trappist",
+      "name": { "nl": "Trappistenbier", "en": "Trappist beer" },
+      "category": "dranken-alcohol",
+      "subcategory": "bier",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Hoog alcoholgehalte (6–12%) en gist: dubbel purinerisico." } },
+        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Hoog histamine door rijping en hoog alcoholgehalte." } }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-sake",
+      "name": { "nl": "Sake (rijstwijn)", "en": "Sake (rice wine)" },
+      "category": "dranken-alcohol",
+      "subcategory": "wijn",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-vermouth",
+      "name": { "nl": "Vermouth", "en": "Vermouth" },
+      "category": "dranken-alcohol",
+      "subcategory": "gedistilleerd",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
     }
   ]
 }

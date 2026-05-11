@@ -389,6 +389,123 @@
         "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Azijn: hoog histamine per SIGHI-lijst." } }
       },
       "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-kurkuma",
+      "name": { "nl": "Kurkuma (geelwortel)", "en": "Turmeric" },
+      "category": "sauzen-kruiden",
+      "subcategory": "specerijen",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 2, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Kurkuma: hoog oxalaat." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-kaneel",
+      "name": { "nl": "Kaneel", "en": "Cinnamon" },
+      "category": "sauzen-kruiden",
+      "subcategory": "specerijen",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 2, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Kaneel: hoog oxalaat. Kleine hoeveelheden als specerij geven weinig risico." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-paprikapoeder",
+      "name": { "nl": "Paprikapoeder (zoet)", "en": "Sweet paprika powder" },
+      "category": "sauzen-kruiden",
+      "subcategory": "specerijen",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-curry-poeder",
+      "name": { "nl": "Currypoeder", "en": "Curry powder" },
+      "category": "sauzen-kruiden",
+      "subcategory": "kruidenmix",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Currymengsels kunnen biogene aminen bevatten." } },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-pesto",
+      "name": { "nl": "Pesto (basilicum)", "en": "Pesto (basil)" },
+      "category": "sauzen-kruiden",
+      "subcategory": "saus",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Pesto bevat pijnboompitten (noten) en kaas; enig risico." } },
+        "nierstenen": { "score": 2, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Basilicum en pijnboompitten: matig oxalaat." } },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-tomatensaus",
+      "name": { "nl": "Tomatensaus (passata)", "en": "Tomato sauce (passata)" },
+      "category": "sauzen-kruiden",
+      "subcategory": "saus",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Tomaat: matig migrainerisico door tyramine en histamine." } },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Tomaat: matig histamine; geconcentreerd in saus." } }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-mayonaise",
+      "name": { "nl": "Mayonaise", "en": "Mayonnaise" },
+      "category": "sauzen-kruiden",
+      "subcategory": "dressing",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-ketjap-manis",
+      "name": { "nl": "Ketjap manis", "en": "Sweet soy sauce" },
+      "category": "sauzen-kruiden",
+      "subcategory": "saus",
+      "scores": {
+        "jicht": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Sojasaus bevat kleine hoeveelheden purinen." } },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerde sojasaus: tyramine + umami, matig migrainerisico." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerde sauzen: matig histamine." } }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-worcestershiresaus",
+      "name": { "nl": "Worcestershiresaus", "en": "Worcestershire sauce" },
+      "category": "sauzen-kruiden",
+      "subcategory": "saus",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Worcestershiresaus: ansjovis + azijn + malt, matig migrainerisico." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Worcestershiresaus: ansjovis (hoog histamine) + azijn = klasse 3." } }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
     }
   ]
 }

@@ -659,6 +659,295 @@
       },
       "histamineFlags": { "liberator": true, "daoBlocker": false },
       "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-clementine",
+      "name": { "nl": "Clementine", "en": "Clementine" },
+      "category": "fruit",
+      "subcategory": "citrusfruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Citrusvrucht: omstreden trigger. Score oranje." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": true, "daoBlocker": false },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-limoen",
+      "name": { "nl": "Limoen", "en": "Lime" },
+      "category": "fruit",
+      "subcategory": "citrusfruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Citrusvrucht: omstreden trigger." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "histamineFlags": { "liberator": true, "daoBlocker": false },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-watermeloen",
+      "name": { "nl": "Watermeloen", "en": "Watermelon" },
+      "category": "fruit",
+      "subcategory": "meloenen",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-honingmeloen",
+      "name": { "nl": "Honingmeloen", "en": "Honeydew melon" },
+      "category": "fruit",
+      "subcategory": "meloenen",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-vijg-vers",
+      "name": { "nl": "Vijg (vers)", "en": "Fig (fresh)" },
+      "category": "fruit",
+      "subcategory": "exotisch-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~11 mg/100g." } },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-vijg-gedroogd",
+      "name": { "nl": "Vijg (gedroogd)", "en": "Fig (dried)" },
+      "category": "fruit",
+      "subcategory": "gedroogd-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 2, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Geconcentreerd: oxalaat ~40 mg/100g." } },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Gedroogd fruit: matig-hoog histamine." } }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-dadel",
+      "name": { "nl": "Dadel (gedroogd)", "en": "Date (dried)" },
+      "category": "fruit",
+      "subcategory": "gedroogd-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Hoog in tyramine; licht verhoogd migrainerisico." } },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-nectarine",
+      "name": { "nl": "Nectarine", "en": "Nectarine" },
+      "category": "fruit",
+      "subcategory": "steenvrucht",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-pruim",
+      "name": { "nl": "Pruim", "en": "Plum" },
+      "category": "fruit",
+      "subcategory": "steenvrucht",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~10 mg/100g." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-abrikoos",
+      "name": { "nl": "Abrikoos (vers)", "en": "Apricot (fresh)" },
+      "category": "fruit",
+      "subcategory": "steenvrucht",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-blauwe-bes",
+      "name": { "nl": "Blauwe bes", "en": "Blueberry" },
+      "category": "fruit",
+      "subcategory": "besvruchten",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~14 mg/100g." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-braam",
+      "name": { "nl": "Braam", "en": "Blackberry" },
+      "category": "fruit",
+      "subcategory": "besvruchten",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 2, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~29 mg/100g." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-framboos",
+      "name": { "nl": "Framboos", "en": "Raspberry" },
+      "category": "fruit",
+      "subcategory": "besvruchten",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 2, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~30 mg/100g." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-papaya",
+      "name": { "nl": "Papaja", "en": "Papaya" },
+      "category": "fruit",
+      "subcategory": "exotisch-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Histamineliberator." } }
+      },
+      "histamineFlags": { "liberator": true, "daoBlocker": false },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-guave",
+      "name": { "nl": "Guave", "en": "Guava" },
+      "category": "fruit",
+      "subcategory": "exotisch-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-dragon-fruit",
+      "name": { "nl": "Drakenvrucht (pitahaya)", "en": "Dragon fruit (pitaya)" },
+      "category": "fruit",
+      "subcategory": "exotisch-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-rambutan",
+      "name": { "nl": "Rambutan", "en": "Rambutan" },
+      "category": "fruit",
+      "subcategory": "exotisch-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-passievrucht",
+      "name": { "nl": "Passievrucht", "en": "Passion fruit" },
+      "category": "fruit",
+      "subcategory": "exotisch-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 2, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~30 mg/100g." } },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-rode-bes",
+      "name": { "nl": "Rode bes", "en": "Red currant" },
+      "category": "fruit",
+      "subcategory": "besvruchten",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~20 mg/100g." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-zwarte-bes",
+      "name": { "nl": "Zwarte bes", "en": "Blackcurrant" },
+      "category": "fruit",
+      "subcategory": "besvruchten",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~22 mg/100g." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-kokosnoot-vers",
+      "name": { "nl": "Kokosnoot (vers vlees)", "en": "Coconut (fresh flesh)" },
+      "category": "fruit",
+      "subcategory": "exotisch-fruit",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~14 mg/100g." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+    },
+    {
+      "id": "nl-cranberry",
+      "name": { "nl": "Cranberry (vers)", "en": "Cranberry (fresh)" },
+      "category": "fruit",
+      "subcategory": "besvruchten",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
+        "nierstenen": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline", "title": "AUA Medical Management of Kidney Stones Guideline", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Cranberry verlaagt urease-activiteit; beperkt bewijs voor nierstenen." } },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+      },
+      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
     }
   ]
 }
