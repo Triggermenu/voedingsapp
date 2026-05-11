@@ -7,7 +7,7 @@
 
 ## A-1 · CLAUDE.md eenmalig goedkeuren
 
-**Status:** ☐ Open
+**Status:** ✅ Goedgekeurd 2026-05-12
 **Tijd:** ~30 min lezen
 **Actie:** Lees `CLAUDE.md`. Reageer met *"akkoord"* of geef correcties.
 **Belang:** Na akkoord start Claude Code de volledige bouw autonoom. Dit is je laatste menselijke check-in.
