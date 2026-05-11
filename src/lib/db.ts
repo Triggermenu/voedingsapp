@@ -79,17 +79,17 @@ export function getAlternatives(item: FoodItem, conditions: Condition[], limit =
       })
       .slice(0, limit)
 
-  // Primary: same subcategory or same category
-  const sameGroup = ALL_ITEMS.filter((candidate) => {
-    if (candidate.id === item.id) return false
-    return (item.subcategory && candidate.subcategory)
-      ? candidate.subcategory === item.subcategory
-      : candidate.category === item.category
-  })
-  const primary = ranked(sameGroup)
-  if (primary.length > 0) return primary
+  // Tier 1: same subcategory
+  if (item.subcategory) {
+    const fromSubcat = ranked(ALL_ITEMS.filter((c) => c.id !== item.id && c.subcategory === item.subcategory))
+    if (fromSubcat.length > 0) return fromSubcat
+  }
 
-  // Fallback: related category (e.g. alcohol → non-alcoholic drinks)
+  // Tier 2: same category (regardless of subcategory)
+  const fromCat = ranked(ALL_ITEMS.filter((c) => c.id !== item.id && c.category === item.category))
+  if (fromCat.length > 0) return fromCat
+
+  // Tier 3: related category (e.g. alcohol → non-alcoholic drinks)
   const fallback = CATEGORY_FALLBACKS[item.category as Category]
   if (fallback) return ranked(ALL_ITEMS.filter((c) => c.category === fallback))
 
