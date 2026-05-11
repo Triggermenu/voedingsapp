@@ -4,6 +4,7 @@
       "id": "nl-olijfolie",
       "name": { "nl": "Olijfolie (extra vergine)", "en": "Olive oil (extra virgin)" },
       "category": "sauzen-kruiden",
+      "subcategory": "olie-vet",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -16,6 +17,7 @@
       "id": "nl-sojasaus",
       "name": { "nl": "Sojasaus", "en": "Soy sauce" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerd product met biogene aminen; vaak ook glutamaat." } },
@@ -28,6 +30,7 @@
       "id": "nl-ketchup",
       "name": { "nl": "Ketchup", "en": "Ketchup" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Tomatenbasis met azijn: milde trigger." } },
@@ -40,6 +43,7 @@
       "id": "nl-mayonaise",
       "name": { "nl": "Mayonaise", "en": "Mayonnaise" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -52,6 +56,7 @@
       "id": "nl-mosterd",
       "name": { "nl": "Mosterd", "en": "Mustard" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -64,6 +69,7 @@
       "id": "nl-msg",
       "name": { "nl": "MSG (natriumglutamaat)", "en": "MSG (monosodium glutamate)" },
       "category": "sauzen-kruiden",
+      "subcategory": "smaakversterkers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "MSG staat op de migraine-whitelist. Cohort-bewijs voor hoofdpijn bij gevoelige personen." } },
@@ -76,6 +82,7 @@
       "id": "nl-azijn-rode-wijn",
       "name": { "nl": "Rode wijnazijn", "en": "Red wine vinegar" },
       "category": "sauzen-kruiden",
+      "subcategory": "azijn",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -88,6 +95,7 @@
       "id": "nl-zout",
       "name": { "nl": "Keukenzout", "en": "Table salt" },
       "category": "sauzen-kruiden",
+      "subcategory": "smaakversterkers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -100,6 +108,7 @@
       "id": "nl-kurkuma",
       "name": { "nl": "Kurkuma (gemalen)", "en": "Turmeric (ground)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "B", "sources": [{ "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -112,6 +121,7 @@
       "id": "nl-gember",
       "name": { "nl": "Gember (vers)", "en": "Ginger (fresh)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "B", "sources": [{ "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -124,6 +134,7 @@
       "id": "nl-appelciderazijn",
       "name": { "nl": "Appelciderazijn", "en": "Apple cider vinegar" },
       "category": "sauzen-kruiden",
+      "subcategory": "azijn",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -136,6 +147,7 @@
       "id": "nl-peper-zwart",
       "name": { "nl": "Zwarte peper (gemalen)", "en": "Black pepper (ground)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -148,6 +160,7 @@
       "id": "nl-kaneel",
       "name": { "nl": "Kaneel (gemalen)", "en": "Cinnamon (ground)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -160,6 +173,7 @@
       "id": "nl-peterselie",
       "name": { "nl": "Peterselie (vers)", "en": "Parsley (fresh)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -172,6 +186,7 @@
       "id": "nl-basilicum",
       "name": { "nl": "Basilicum (vers)", "en": "Basil (fresh)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -184,6 +199,7 @@
       "id": "nl-tomatensaus",
       "name": { "nl": "Tomatensaus (zelfgemaakt)", "en": "Tomato sauce (homemade)" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Geconcentreerde tomaat als mogelijke trigger." } },
@@ -196,6 +212,7 @@
       "id": "nl-pesto",
       "name": { "nl": "Pesto (basilicum)", "en": "Pesto (basil)" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -208,6 +225,7 @@
       "id": "nl-sambal",
       "name": { "nl": "Sambal (oelek)", "en": "Sambal (chili paste)" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Capsaïcine kan bij sommige migrainepatiënten klachten uitlokken." } },
@@ -220,6 +238,7 @@
       "id": "nl-ketjap-manis",
       "name": { "nl": "Ketjap manis", "en": "Sweet soy sauce" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerde sojasaus-basis met biogene aminen." } },
@@ -232,6 +251,7 @@
       "id": "nl-worcestershire",
       "name": { "nl": "Worcestershiresaus", "en": "Worcestershire sauce" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Bevat ansjovis en gefermenteerde ingrediënten." } },
@@ -244,6 +264,7 @@
       "id": "nl-dille-vers",
       "name": { "nl": "Dille (vers)", "en": "Dill (fresh)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -256,6 +277,7 @@
       "id": "nl-rozemarijn",
       "name": { "nl": "Rozemarijn (vers)", "en": "Rosemary (fresh)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -268,6 +290,7 @@
       "id": "nl-tijm-vers",
       "name": { "nl": "Tijm (vers)", "en": "Thyme (fresh)" },
       "category": "sauzen-kruiden",
+      "subcategory": "kruiden-specerijen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -280,6 +303,7 @@
       "id": "nl-sunflower-olie",
       "name": { "nl": "Zonnebloemolie", "en": "Sunflower oil" },
       "category": "sauzen-kruiden",
+      "subcategory": "olie-vet",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -292,6 +316,7 @@
       "id": "nl-mayonaise",
       "name": { "nl": "Mayonaise", "en": "Mayonnaise" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -304,6 +329,7 @@
       "id": "nl-mosterd",
       "name": { "nl": "Mosterd", "en": "Mustard" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -316,6 +342,7 @@
       "id": "nl-olijfolie",
       "name": { "nl": "Olijfolie (extra vierge)", "en": "Olive oil (extra virgin)" },
       "category": "sauzen-kruiden",
+      "subcategory": "olie-vet",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -328,6 +355,7 @@
       "id": "nl-chilisaus",
       "name": { "nl": "Zoete chilisaus", "en": "Sweet chili sauce" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gekruide saus met azijn." } },
@@ -340,6 +368,7 @@
       "id": "nl-tahoe-marinade",
       "name": { "nl": "Sojasaus (licht)", "en": "Soy sauce (light)" },
       "category": "sauzen-kruiden",
+      "subcategory": "sauzen",
       "scores": {
         "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Soja-basis: laag purine per portie (klein volume)." } },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerde sojasaus: tyramine en biogene aminen." } },
@@ -352,6 +381,7 @@
       "id": "nl-azijn-wit",
       "name": { "nl": "Witte azijn", "en": "White vinegar" },
       "category": "sauzen-kruiden",
+      "subcategory": "azijn",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Azijn: licht verhoogd migrainerisico door azijnzuur." } },

@@ -57,7 +57,10 @@ export function getAlternatives(item: FoodItem, conditions: Condition[], limit =
   return ALL_ITEMS
     .filter((candidate) => {
       if (candidate.id === item.id) return false
-      if (candidate.category !== item.category) return false
+      const sameGroup = (item.subcategory && candidate.subcategory)
+        ? candidate.subcategory === item.subcategory
+        : candidate.category === item.category
+      if (!sameGroup) return false
       const s = getCombinedScore(candidate, conditions)
       return s.score !== null && s.score < currentScore
     })

@@ -4,6 +4,7 @@
       "id": "173432",
       "name": { "nl": "Volle melk", "en": "Whole milk" },
       "category": "zuivel",
+      "subcategory": "melk",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~0 mg/100g. Zuivel heeft vrijwel geen purine." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -16,6 +17,7 @@
       "id": "748967",
       "name": { "nl": "Ei (heel, rauw)", "en": "Egg (whole, raw)" },
       "category": "eieren",
+      "subcategory": "eieren",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~2 mg/100g. Ei is één van de veiligste eiwitbronnen bij jicht." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -29,6 +31,7 @@
       "nevoCode": "2024",
       "name": { "nl": "Edammer (jong, <3 maanden)", "en": "Edam (young, <3 months)" },
       "category": "zuivel",
+      "subcategory": "kaas-vers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Kaas heeft vrijwel geen purine." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Jong gerijpte kaas (<6 maanden) staat NIET op de migraine-whitelist." } },
@@ -41,6 +44,7 @@
       "id": "nl-kaas-oud-48",
       "name": { "nl": "Oude kaas (gouda, >48 maanden)", "en": "Aged cheese (gouda, >48 months)" },
       "category": "zuivel",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte kaas (>6 maanden) staat op de migraine-whitelist: hoge tyramine-concentratie door rijpingsproces." } },
@@ -53,6 +57,7 @@
       "id": "nl-halfvolle-melk",
       "name": { "nl": "Halfvolle melk (1.5%)", "en": "Semi-skimmed milk" },
       "category": "zuivel",
+      "subcategory": "melk",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -65,6 +70,7 @@
       "id": "171284",
       "name": { "nl": "Magere yoghurt", "en": "Low-fat yogurt" },
       "category": "zuivel",
+      "subcategory": "yoghurt-kwark",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -77,6 +83,7 @@
       "id": "nl-volle-yoghurt",
       "name": { "nl": "Volle yoghurt", "en": "Full-fat yogurt" },
       "category": "zuivel",
+      "subcategory": "yoghurt-kwark",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -89,6 +96,7 @@
       "id": "173420",
       "name": { "nl": "Kwark", "en": "Quark" },
       "category": "zuivel",
+      "subcategory": "yoghurt-kwark",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -101,6 +109,7 @@
       "id": "nl-brie",
       "name": { "nl": "Brie", "en": "Brie" },
       "category": "zuivel",
+      "subcategory": "kaas-vers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte zachte kaas, maar staat niet op de migraine-whitelist." } },
@@ -113,6 +122,7 @@
       "id": "170844",
       "name": { "nl": "Mozzarella (vers)", "en": "Mozzarella (fresh)" },
       "category": "zuivel",
+      "subcategory": "kaas-vers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -125,6 +135,7 @@
       "id": "nl-boter",
       "name": { "nl": "Boter", "en": "Butter" },
       "category": "zuivel",
+      "subcategory": "room-boter",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -137,6 +148,7 @@
       "id": "nl-slagroom",
       "name": { "nl": "Slagroom", "en": "Whipping cream" },
       "category": "zuivel",
+      "subcategory": "room-boter",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -149,6 +161,7 @@
       "id": "nl-ei-gebakken",
       "name": { "nl": "Gebakken ei", "en": "Fried egg" },
       "category": "eieren",
+      "subcategory": "eieren",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -161,6 +174,7 @@
       "id": "nl-ei-hardgekookt",
       "name": { "nl": "Hardgekookt ei", "en": "Hard-boiled egg" },
       "category": "eieren",
+      "subcategory": "eieren",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -173,6 +187,7 @@
       "id": "nl-gouda-jong",
       "name": { "nl": "Goudse kaas (jong)", "en": "Gouda (young)" },
       "category": "zuivel",
+      "subcategory": "kaas-vers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Jong gerijpt (<6 maanden): laag tyramine." } },
@@ -185,6 +200,7 @@
       "id": "nl-griekse-yoghurt",
       "name": { "nl": "Griekse yoghurt (10%)", "en": "Greek yogurt (10%)" },
       "category": "zuivel",
+      "subcategory": "yoghurt-kwark",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -197,6 +213,7 @@
       "id": "nl-karnemelk",
       "name": { "nl": "Karnemelk", "en": "Buttermilk" },
       "category": "zuivel",
+      "subcategory": "melk",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -209,6 +226,7 @@
       "id": "nl-cheddar",
       "name": { "nl": "Cheddar (belegen)", "en": "Cheddar (aged)" },
       "category": "zuivel",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Belegen cheddar (6-12 maanden): matig tyramine." } },
@@ -221,6 +239,7 @@
       "id": "nl-smeerkaas",
       "name": { "nl": "Smeerkaas (Philadelphia type)", "en": "Cream cheese" },
       "category": "zuivel",
+      "subcategory": "kaas-vers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -233,6 +252,7 @@
       "id": "nl-hagelslag-melk",
       "name": { "nl": "Chocolademelk", "en": "Chocolate milk" },
       "category": "zuivel",
+      "subcategory": "melk",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Chocolade-component: lichte migraine-associatie." } },
@@ -245,6 +265,7 @@
       "id": "nl-blauwe-kaas",
       "name": { "nl": "Blauwe kaas (gerijpte kaas)", "en": "Blue cheese (aged)" },
       "category": "zuivel",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Sterk gerijpte kaas: hoog tyramine. Standaard migrainerisicovoedsel." } },
@@ -257,6 +278,7 @@
       "id": "nl-parmezaan",
       "name": { "nl": "Parmezaan", "en": "Parmesan" },
       "category": "zuivel",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Lang gerijpte harde kaas: hoog tyramine." } },
@@ -269,6 +291,7 @@
       "id": "nl-camembert",
       "name": { "nl": "Camembert", "en": "Camembert" },
       "category": "zuivel",
+      "subcategory": "kaas-vers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte kaas: tyramine aanwezig." } },
@@ -281,6 +304,7 @@
       "id": "nl-brie",
       "name": { "nl": "Brie", "en": "Brie" },
       "category": "zuivel",
+      "subcategory": "kaas-vers",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte zachte kaas: tyramine en biogene aminen." } },
@@ -293,6 +317,7 @@
       "id": "nl-kwark",
       "name": { "nl": "Kwark (mager)", "en": "Quark (low-fat)" },
       "category": "zuivel",
+      "subcategory": "yoghurt-kwark",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -305,6 +330,7 @@
       "id": "nl-slagroom",
       "name": { "nl": "Slagroom", "en": "Whipped cream" },
       "category": "zuivel",
+      "subcategory": "room-boter",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },

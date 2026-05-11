@@ -4,6 +4,7 @@
       "id": "171688",
       "name": { "nl": "Appel (rauw)", "en": "Apple (raw)" },
       "category": "fruit",
+      "subcategory": "pitfruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: 14 mg/100g." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -16,6 +17,7 @@
       "id": "173944",
       "name": { "nl": "Banaan", "en": "Banana" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: 5 mg/100g." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -29,6 +31,7 @@
       "id": "169097",
       "name": { "nl": "Sinaasappel", "en": "Orange" },
       "category": "fruit",
+      "subcategory": "citrusfruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: 19 mg/100g." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -42,6 +45,7 @@
       "id": "167762",
       "name": { "nl": "Aardbeien", "en": "Strawberries" },
       "category": "fruit",
+      "subcategory": "besvruchten",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -55,6 +59,7 @@
       "id": "171706",
       "name": { "nl": "Avocado", "en": "Avocado" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -68,6 +73,7 @@
       "id": "171719",
       "name": { "nl": "Kers (zoet)", "en": "Sweet cherry" },
       "category": "fruit",
+      "subcategory": "steenfruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -97,6 +103,7 @@
       "id": "171711",
       "name": { "nl": "Blauwe bes", "en": "Blueberry" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -125,6 +132,7 @@
       "id": "174682",
       "name": { "nl": "Druif (rood)", "en": "Red grape" },
       "category": "fruit",
+      "subcategory": "besvruchten",
       "scores": {
         "jicht": {
           "score": 0,
@@ -153,6 +161,7 @@
       "id": "169124",
       "name": { "nl": "Ananas", "en": "Pineapple" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -183,6 +192,7 @@
       "id": "169910",
       "name": { "nl": "Mango", "en": "Mango" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -211,6 +221,7 @@
       "id": "174673",
       "name": { "nl": "Peer", "en": "Pear" },
       "category": "fruit",
+      "subcategory": "pitfruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -239,6 +250,7 @@
       "id": "169949",
       "name": { "nl": "Pruim", "en": "Plum" },
       "category": "fruit",
+      "subcategory": "steenfruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -268,6 +280,7 @@
       "id": "167765",
       "name": { "nl": "Watermeloen", "en": "Watermelon" },
       "category": "fruit",
+      "subcategory": "meloen",
       "scores": {
         "jicht": {
           "score": 0,
@@ -297,6 +310,7 @@
       "id": "167755",
       "name": { "nl": "Framboos", "en": "Raspberry" },
       "category": "fruit",
+      "subcategory": "besvruchten",
       "scores": {
         "jicht": {
           "score": 0,
@@ -326,6 +340,7 @@
       "id": "167747",
       "name": { "nl": "Citroen", "en": "Lemon" },
       "category": "fruit",
+      "subcategory": "citrusfruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -357,6 +372,7 @@
       "id": "168153",
       "name": { "nl": "Kiwi", "en": "Kiwi" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -386,6 +402,7 @@
       "id": "nl-grapefruit",
       "name": { "nl": "Grapefruit", "en": "Grapefruit" },
       "category": "fruit",
+      "subcategory": "citrusfruit",
       "scores": {
         "jicht": {
           "score": 0,
@@ -416,6 +433,7 @@
       "id": "nl-meloen",
       "name": { "nl": "Meloen (cantaloupe)", "en": "Cantaloupe melon" },
       "category": "fruit",
+      "subcategory": "meloen",
       "scores": {
         "jicht": {
           "score": 0,
@@ -445,6 +463,7 @@
       "id": "nl-perzik",
       "name": { "nl": "Perzik", "en": "Peach" },
       "category": "fruit",
+      "subcategory": "steenfruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -457,6 +476,7 @@
       "id": "nl-abrikoos",
       "name": { "nl": "Abrikoos (vers)", "en": "Apricot (fresh)" },
       "category": "fruit",
+      "subcategory": "steenfruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -470,6 +490,7 @@
       "id": "nl-vijg-vers",
       "name": { "nl": "Vijg (vers)", "en": "Fig (fresh)" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -483,6 +504,7 @@
       "id": "nl-papaja",
       "name": { "nl": "Papaja", "en": "Papaya" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -496,6 +518,7 @@
       "id": "nl-passievrucht",
       "name": { "nl": "Passievrucht", "en": "Passion fruit" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -508,6 +531,7 @@
       "id": "nl-kokosnoot",
       "name": { "nl": "Kokos (geraspte)", "en": "Coconut (shredded)" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -520,6 +544,7 @@
       "id": "169911",
       "name": { "nl": "Pruim", "en": "Plum" },
       "category": "fruit",
+      "subcategory": "steenfruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~10 mg/100g. Laag." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -533,6 +558,7 @@
       "id": "171711",
       "name": { "nl": "Kiwi", "en": "Kiwi" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -546,6 +572,7 @@
       "id": "173032",
       "name": { "nl": "Watermeloen", "en": "Watermelon" },
       "category": "fruit",
+      "subcategory": "meloen",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~3 mg/100g. Zeer laag." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -558,6 +585,7 @@
       "id": "169916",
       "name": { "nl": "Rode bessen (aalbes)", "en": "Red currant" },
       "category": "fruit",
+      "subcategory": "besvruchten",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -570,6 +598,7 @@
       "id": "nl-dadels",
       "name": { "nl": "Dadels (gedroogd)", "en": "Dates (dried)" },
       "category": "fruit",
+      "subcategory": "gedroogd-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gedroogd fruit met biogene aminen (tyramine). Matig risico." } },
@@ -582,6 +611,7 @@
       "id": "nl-rozijnen",
       "name": { "nl": "Rozijnen", "en": "Raisins" },
       "category": "fruit",
+      "subcategory": "gedroogd-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gedroogd fruit: verhoogd tyramine mogelijk." } },
@@ -594,6 +624,7 @@
       "id": "173945",
       "name": { "nl": "Nectarine", "en": "Nectarine" },
       "category": "fruit",
+      "subcategory": "steenfruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -606,6 +637,7 @@
       "id": "nl-lychee",
       "name": { "nl": "Lychee", "en": "Lychee" },
       "category": "fruit",
+      "subcategory": "tropisch-fruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -618,6 +650,7 @@
       "id": "nl-grapefruit",
       "name": { "nl": "Grapefruit", "en": "Grapefruit" },
       "category": "fruit",
+      "subcategory": "citrusfruit",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Citrusvrucht: matig migrainerisico." } },

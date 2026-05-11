@@ -30,6 +30,7 @@ export const FoodItemSchema = z.object({
   nevoCode: z.string().optional(),
   name: z.object({ nl: z.string().min(1), en: z.string().min(1) }),
   category: z.enum(CATEGORIES),
+  subcategory: z.string().optional(),
   scores: z.object({
     jicht: ScoreObjectSchema.nullable(),
     migraine: ScoreObjectSchema.nullable(),

@@ -4,6 +4,7 @@
       "id": "171890",
       "name": { "nl": "Koffie (zwart, gezet)", "en": "Coffee (black, brewed)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "koffie-thee",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr2.11425", "title": "Shirai et al. 2022 — Coffee and serum urate (Mendelian randomization)", "type": "meta-analysis", "accessedAt": "2026-05-11" }, { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518751/", "title": "Meta-analyse koffie/thee en hyperurikemie 2025", "type": "meta-analysis", "accessedAt": "2026-05-11" }], "note": { "nl": "Groen. Oudere richtlijnen waarschuwden voor koffie. Recente Mendelian-randomization studies (Shirai 2022, meta-analyse 2025) tonen beschermend effect op urinezuurspiegels." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Matige cafeïne-inname heeft geen bewezen triggerende werking. Cafeïne-onttrekking kan hoofdpijn veroorzaken." } },
@@ -17,6 +18,7 @@
       "id": "nl-thee-zwart",
       "name": { "nl": "Zwarte thee (gezet)", "en": "Black tea (brewed)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "koffie-thee",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518751/", "title": "Meta-analyse koffie/thee en hyperurikemie 2025", "type": "meta-analysis", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -30,6 +32,7 @@
       "id": "nl-groene-thee",
       "name": { "nl": "Groene thee (gezet)", "en": "Green tea (brewed)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "koffie-thee",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -43,6 +46,7 @@
       "id": "nl-sinaasappelsap",
       "name": { "nl": "Sinaasappelsap (vers)", "en": "Orange juice (fresh)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "vruchtensap",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -56,6 +60,7 @@
       "id": "nl-appelsap",
       "name": { "nl": "Appelsap", "en": "Apple juice" },
       "category": "dranken-non-alcohol",
+      "subcategory": "vruchtensap",
       "scores": {
         "jicht": { "score": 1, "evidence": "B", "sources": [{ "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Fructose-houdend sap kan urinezuur verhogen bij veel gebruik." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -68,6 +73,7 @@
       "id": "nl-energiedrank",
       "name": { "nl": "Energiedrank", "en": "Energy drink" },
       "category": "dranken-non-alcohol",
+      "subcategory": "frisdrank",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Cafeïne en taurine als potentiële triggerfactoren." } },
@@ -81,6 +87,7 @@
       "id": "nl-cola",
       "name": { "nl": "Cola (suikerhoudend)", "en": "Cola (sugared)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "frisdrank",
       "scores": {
         "jicht": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/20029734/", "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Fructose-gezoete frisdrank verhoogt urinezuur (Choi 2010 cohort)." } },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Cafeïne als potentiële triggerfactor." } },
@@ -93,6 +100,7 @@
       "id": "nl-tomatensap",
       "name": { "nl": "Tomatensap", "en": "Tomato juice" },
       "category": "dranken-non-alcohol",
+      "subcategory": "vruchtensap",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -106,6 +114,7 @@
       "id": "nl-water",
       "name": { "nl": "Water (kraanwater)", "en": "Tap water" },
       "category": "dranken-non-alcohol",
+      "subcategory": "water",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -118,6 +127,7 @@
       "id": "nl-sojamelk",
       "name": { "nl": "Sojamelk", "en": "Soy milk" },
       "category": "dranken-non-alcohol",
+      "subcategory": "plantaardige-melk",
       "scores": {
         "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Soja bevat licht purine." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -130,6 +140,7 @@
       "id": "nl-kamille-thee",
       "name": { "nl": "Kamille thee", "en": "Chamomile tea" },
       "category": "dranken-non-alcohol",
+      "subcategory": "koffie-thee",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -142,6 +153,7 @@
       "id": "nl-havermoutmelk",
       "name": { "nl": "Havermelk (ongezoet)", "en": "Oat milk (unsweetened)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "plantaardige-melk",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -154,6 +166,7 @@
       "id": "nl-kokoswater",
       "name": { "nl": "Kokoswater", "en": "Coconut water" },
       "category": "dranken-non-alcohol",
+      "subcategory": "frisdrank",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -166,6 +179,7 @@
       "id": "nl-spa-rood",
       "name": { "nl": "Bruiswater (koolzuurhoudend)", "en": "Sparkling water" },
       "category": "dranken-non-alcohol",
+      "subcategory": "water",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -178,6 +192,7 @@
       "id": "nl-gemberthee",
       "name": { "nl": "Gemberthee", "en": "Ginger tea" },
       "category": "dranken-non-alcohol",
+      "subcategory": "koffie-thee",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -190,6 +205,7 @@
       "id": "nl-cranberrysap",
       "name": { "nl": "Cranberrysap (ongezoet)", "en": "Cranberry juice (unsweetened)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "vruchtensap",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -202,6 +218,7 @@
       "id": "nl-limonade",
       "name": { "nl": "Limonade (met suiker)", "en": "Lemonade (sugared)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "frisdrank",
       "scores": {
         "jicht": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/20029734/", "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Fructosehoudende dranken verhogen urinezuur." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -214,6 +231,7 @@
       "id": "nl-sojamelk",
       "name": { "nl": "Sojamelk (ongezoet)", "en": "Soy milk (unsweetened)" },
       "category": "dranken-non-alcohol",
+      "subcategory": "plantaardige-melk",
       "scores": {
         "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Soja-basis: lage purine per 200 ml portie." } },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -226,6 +244,7 @@
       "id": "nl-muntthee",
       "name": { "nl": "Muntthee", "en": "Peppermint tea" },
       "category": "dranken-non-alcohol",
+      "subcategory": "koffie-thee",
       "scores": {
         "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
         "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
@@ -238,6 +257,7 @@
       "id": "nl-energydrink",
       "name": { "nl": "Energydrank (bijv. Red Bull)", "en": "Energy drink" },
       "category": "dranken-non-alcohol",
+      "subcategory": "frisdrank",
       "scores": {
         "jicht": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/20029734/", "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Fructose en cafeïne; indirecte jichtassociatie." } },
         "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Hoge cafeïne + taurine: matig migrainerisico." } },
@@ -250,6 +270,7 @@
       "id": "nl-druivensap",
       "name": { "nl": "Druivensap", "en": "Grape juice" },
       "category": "dranken-non-alcohol",
+      "subcategory": "vruchtensap",
       "scores": {
         "jicht": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/20029734/", "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Fructoserijke vruchtendrank." } },
         "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Druif bevat biogene aminen." } },
