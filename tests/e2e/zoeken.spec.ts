@@ -25,9 +25,9 @@ test('search filters by query', async ({ page }) => {
 
 test('item card expands on click', async ({ page }) => {
   await page.goto('/zoeken')
-  await page.getByRole('searchbox').fill('koffie')
+  await page.getByRole('searchbox').fill('spinazie')
 
-  const card = page.getByText('Koffie').first()
+  const card = page.getByText('Spinazie').first()
   await card.click()
 
   // Should show sources after expand
