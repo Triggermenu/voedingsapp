@@ -1,5 +1,9 @@
-import type { FoodItem, Condition } from '@/schemas/item'
+import type { FoodItem, Condition, Category } from '@/schemas/item'
 import { getCombinedScore } from '@/lib/scoring'
+
+const CATEGORY_FALLBACKS: Partial<Record<Category, Category>> = {
+  'dranken-alcohol': 'dranken-non-alcohol',
+}
 
 import groenteData from '@/data/groente.json'
 import fruitData from '@/data/fruit.json'
@@ -61,22 +65,35 @@ export function getAlternatives(item: FoodItem, conditions: Condition[], limit =
   const currentScore = getCombinedScore(item, conditions).score
   if (currentScore === null || currentScore < 2) return []
 
-  return ALL_ITEMS
-    .filter((candidate) => {
-      if (candidate.id === item.id) return false
-      const sameGroup = (item.subcategory && candidate.subcategory)
-        ? candidate.subcategory === item.subcategory
-        : candidate.category === item.category
-      if (!sameGroup) return false
-      const s = getCombinedScore(candidate, conditions)
-      return s.score !== null && s.score < currentScore
-    })
-    .sort((a, b) => {
-      const sa = getCombinedScore(a, conditions).score ?? 99
-      const sb = getCombinedScore(b, conditions).score ?? 99
-      return sa - sb
-    })
-    .slice(0, limit)
+  const ranked = (candidates: FoodItem[]) =>
+    candidates
+      .filter((candidate) => {
+        if (candidate.id === item.id) return false
+        const s = getCombinedScore(candidate, conditions)
+        return s.score !== null && s.score < currentScore
+      })
+      .sort((a, b) => {
+        const sa = getCombinedScore(a, conditions).score ?? 99
+        const sb = getCombinedScore(b, conditions).score ?? 99
+        return sa - sb
+      })
+      .slice(0, limit)
+
+  // Primary: same subcategory or same category
+  const sameGroup = ALL_ITEMS.filter((candidate) => {
+    if (candidate.id === item.id) return false
+    return (item.subcategory && candidate.subcategory)
+      ? candidate.subcategory === item.subcategory
+      : candidate.category === item.category
+  })
+  const primary = ranked(sameGroup)
+  if (primary.length > 0) return primary
+
+  // Fallback: related category (e.g. alcohol → non-alcoholic drinks)
+  const fallback = CATEGORY_FALLBACKS[item.category as Category]
+  if (fallback) return ranked(ALL_ITEMS.filter((c) => c.category === fallback))
+
+  return []
 }
 
 export function getDatabaseStats() {
