@@ -10,20 +10,26 @@ test('onboarding flow completes and redirects to zoeken', async ({ page }) => {
 
   // Should redirect to onboarding
   await expect(page).toHaveURL(/\/onboarding/)
-  await expect(page.getByRole('heading', { name: 'Voedingsapp' })).toBeVisible()
 
-  // Step 1: Welcome
-  await page.getByRole('button', { name: 'Volgende' }).click()
+  // Step 0: Welcome — brand name "Triggermenu" visible in header/body, no heading role
+  await expect(page.getByText('Triggermenu').first()).toBeVisible()
 
-  // Step 2: Choose condition
-  await expect(page.getByText('Kies je aandoening')).toBeVisible()
+  // Proceed to step 1 (condition selection)
+  await page.getByRole('button', { name: 'Beginnen' }).click()
+
+  // Step 1: Choose condition via card buttons (not a dropdown)
+  await expect(page.getByText('aandoening')).toBeVisible()
+  // Cards are <button> elements with the condition label text
   await page.getByRole('button', { name: 'Jicht' }).click()
-  await page.getByRole('button', { name: 'Volgende' }).click()
+  // After selecting, button text changes to include count
+  await page.getByRole('button', { name: /Doorgaan/ }).click()
 
-  // Step 3: Disclaimer
-  await expect(page.getByText('Disclaimer')).toBeVisible()
-  await page.getByRole('checkbox').check()
-  await page.getByRole('button', { name: 'App openen' }).click()
+  // Step 2: Disclaimer screen
+  await expect(page.getByText('kompas', { exact: false })).toBeVisible()
+  await expect(page.getByText('geen medisch advies')).toBeVisible()
+  // Custom checkbox wrapped in a <label> — click the label to toggle
+  await page.getByText('Ik begrijp dat Triggermenu').click()
+  await page.getByRole('button', { name: 'Aan de slag' }).click()
 
   // Should redirect to zoeken
   await expect(page).toHaveURL(/\/zoeken/)
@@ -37,11 +43,13 @@ test('cannot proceed to zoeken without completing onboarding', async ({ page }) 
 
 test('cannot proceed without selecting a condition', async ({ page }) => {
   await page.goto('/onboarding')
-  await page.getByRole('button', { name: 'Volgende' }).click()
 
-  // Skip condition selection
-  await page.getByRole('button', { name: 'Volgende' }).click()
+  // Go to step 1 (condition selection)
+  await page.getByRole('button', { name: 'Beginnen' }).click()
 
-  // Should show error
+  // Try to proceed without selecting any condition
+  await page.getByRole('button', { name: /Doorgaan/ }).click()
+
+  // Should show validation error
   await expect(page.getByText('Kies minstens één aandoening')).toBeVisible()
 })

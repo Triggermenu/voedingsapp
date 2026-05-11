@@ -47,6 +47,8 @@ export function searchItems(query: string, conditions: Condition[]): FoodItem[] 
 }
 
 export function getItemById(id: string): FoodItem | undefined {
+  // Validate id format before lookup to avoid matching on unexpected input
+  if (!/^(\d+|nl-[a-z0-9-]+)$/.test(id)) return undefined
   return ALL_ITEMS.find((item) => item.id === id)
 }
 

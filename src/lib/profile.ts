@@ -1,4 +1,5 @@
 import type { Condition } from '@/schemas/item'
+import { CONDITIONS } from '@/schemas/item'
 
 const PROFILE_KEY = 'voedingsapp_profile_v1'
 const DISCLAIMER_KEY = 'voedingsapp_disclaimer_v1'
@@ -11,7 +12,16 @@ export function getProfile(): Profile | null {
   try {
     const raw = localStorage.getItem(PROFILE_KEY)
     if (!raw) return null
-    return JSON.parse(raw) as Profile
+    const parsed = JSON.parse(raw) as unknown
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return null
+    const obj = parsed as Record<string, unknown>
+    if (!Array.isArray(obj.conditions)) return null
+    // Filter to only known, valid Condition values to prevent injection
+    const conditions = (obj.conditions as unknown[]).filter(
+      (c): c is Condition => typeof c === 'string' && (CONDITIONS as readonly string[]).includes(c)
+    )
+    if (conditions.length === 0) return null
+    return { conditions }
   } catch {
     return null
   }

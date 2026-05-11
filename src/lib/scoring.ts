@@ -12,10 +12,14 @@ export function getCombinedScore(item: FoodItem, conditions: Condition[]): Combi
   const perCondition: Partial<Record<Condition, ScoreObject | null>> = {}
   const activeScores: number[] = []
 
+  // Guard: item has no scores object at all
+  const scoresObj = item?.scores ?? {}
+
   for (const condition of conditions) {
-    const s = item.scores[condition]
+    const s = scoresObj[condition] ?? null
     perCondition[condition] = s
-    if (s !== null) activeScores.push(s.score)
+    // Use loose null-check so undefined (missing key) is also skipped
+    if (s != null) activeScores.push(s.score)
   }
 
   if (activeScores.length === 0) {
