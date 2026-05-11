@@ -3,6 +3,7 @@ import { getProfile, hasAcceptedDisclaimer } from '@/lib/profile'
 import { Onboarding } from '@/pages/Onboarding'
 import { Zoeken } from '@/pages/Zoeken'
 import { Scan } from '@/pages/Scan'
+import { Recepten } from '@/pages/Recepten'
 import { Bronnen } from '@/pages/Bronnen'
 import { Instellingen } from '@/pages/Instellingen'
 
@@ -22,6 +23,14 @@ export default function App() {
         element={
           <RequireProfile>
             <Zoeken />
+          </RequireProfile>
+        }
+      />
+      <Route
+        path="/recepten"
+        element={
+          <RequireProfile>
+            <Recepten />
           </RequireProfile>
         }
       />
