@@ -2,589 +2,2635 @@
   "items": [
     {
       "id": "173432",
-      "name": { "nl": "Volle melk", "en": "Whole milk" },
+      "name": {
+        "nl": "Volle melk",
+        "en": "Whole milk"
+      },
       "category": "zuivel",
       "subcategory": "melk",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~0 mg/100g. Zuivel heeft vrijwel geen purine." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }, { "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline", "title": "AUA Medical Management of Kidney Stones Guideline", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Hoog calcium (120 mg/100g) is beschermend voor nierstenen. Normale calciuminname verlaagt risico (Borghi RCT, AUA-richtlijn)." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~0 mg/100g. Zuivel heeft vrijwel geen purine."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline",
+              "title": "AUA Medical Management of Kidney Stones Guideline",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Hoog calcium (120 mg/100g) is beschermend voor nierstenen. Normale calciuminname verlaagt risico (Borghi RCT, AUA-richtlijn)."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "748967",
-      "name": { "nl": "Ei (heel, rauw)", "en": "Egg (whole, raw)" },
+      "name": {
+        "nl": "Ei (heel, rauw)",
+        "en": "Egg (whole, raw)"
+      },
       "category": "eieren",
       "subcategory": "eieren",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~2 mg/100g. Ei is één van de veiligste eiwitbronnen bij jicht." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Vers ei: laag histamine. Eiwitpoeder of lang bewaard ei kan hoger scoren." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~2 mg/100g. Ei is één van de veiligste eiwitbronnen bij jicht."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Vers ei: laag histamine. Eiwitpoeder of lang bewaard ei kan hoger scoren."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-edammer-jong",
       "nevoCode": "2024",
-      "name": { "nl": "Edammer (jong, <3 maanden)", "en": "Edam (young, <3 months)" },
+      "name": {
+        "nl": "Edammer (jong, <3 maanden)",
+        "en": "Edam (young, <3 months)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Kaas heeft vrijwel geen purine." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Jong gerijpte kaas (<6 maanden) staat NIET op de migraine-whitelist." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Calciumrijke kaas is beschermend voor nierstenen bij normale inname." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Jong gerijpt: laag-matig histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Kaas heeft vrijwel geen purine."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Jong gerijpte kaas (<6 maanden) staat NIET op de migraine-whitelist."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Calciumrijke kaas is beschermend voor nierstenen bij normale inname."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Jong gerijpt: laag-matig histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-kaas-oud-48",
-      "name": { "nl": "Oude kaas (gouda, >48 maanden)", "en": "Aged cheese (gouda, >48 months)" },
+      "name": {
+        "nl": "Oude kaas (gouda, >48 maanden)",
+        "en": "Aged cheese (gouda, >48 months)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-gerijpt",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte kaas (>6 maanden) staat op de migraine-whitelist: hoge tyramine-concentratie door rijpingsproces." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }, { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/", "title": "Brazilian Systematic Review — Histamine in Foods (2024)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Lang gerijpte kaas heeft een hoog histaminegehalte door bacteriële omzetting van histidine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte kaas (>6 maanden) staat op de migraine-whitelist: hoge tyramine-concentratie door rijpingsproces."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/",
+              "title": "Brazilian Systematic Review — Histamine in Foods (2024)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Lang gerijpte kaas heeft een hoog histaminegehalte door bacteriële omzetting van histidine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-halfvolle-melk",
-      "name": { "nl": "Halfvolle melk (1.5%)", "en": "Semi-skimmed milk" },
+      "name": {
+        "nl": "Halfvolle melk (1.5%)",
+        "en": "Semi-skimmed milk"
+      },
       "category": "zuivel",
       "subcategory": "melk",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Calcium in melk is beschermend voor nierstenen (Borghi RCT)." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Calcium in melk is beschermend voor nierstenen (Borghi RCT)."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "171284",
-      "name": { "nl": "Magere yoghurt", "en": "Low-fat yogurt" },
+      "name": {
+        "nl": "Magere yoghurt",
+        "en": "Low-fat yogurt"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Beschermend calcium." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerd: licht verhoogd histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Beschermend calcium."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerd: licht verhoogd histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-volle-yoghurt",
-      "name": { "nl": "Volle yoghurt", "en": "Full-fat yogurt" },
+      "name": {
+        "nl": "Volle yoghurt",
+        "en": "Full-fat yogurt"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "173420",
-      "name": { "nl": "Kwark", "en": "Quark" },
+      "name": {
+        "nl": "Kwark",
+        "en": "Quark"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-brie",
-      "name": { "nl": "Brie", "en": "Brie" },
+      "name": {
+        "nl": "Brie",
+        "en": "Brie"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte zachte kaas, maar staat niet op de migraine-whitelist." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Zachte gerijpte kaas: matig-hoog histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte zachte kaas, maar staat niet op de migraine-whitelist."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Zachte gerijpte kaas: matig-hoog histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "170844",
-      "name": { "nl": "Mozzarella (vers)", "en": "Mozzarella (fresh)" },
+      "name": {
+        "nl": "Mozzarella (vers)",
+        "en": "Mozzarella (fresh)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Verse mozzarella: laag histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Verse mozzarella: laag histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-boter",
-      "name": { "nl": "Boter", "en": "Butter" },
+      "name": {
+        "nl": "Boter",
+        "en": "Butter"
+      },
       "category": "zuivel",
       "subcategory": "room-boter",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-slagroom",
-      "name": { "nl": "Slagroom", "en": "Whipping cream" },
+      "name": {
+        "nl": "Slagroom",
+        "en": "Whipping cream"
+      },
       "category": "zuivel",
       "subcategory": "room-boter",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-ei-gebakken",
-      "name": { "nl": "Gebakken ei", "en": "Fried egg" },
+      "name": {
+        "nl": "Gebakken ei",
+        "en": "Fried egg"
+      },
       "category": "eieren",
       "subcategory": "eieren",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-ei-hardgekookt",
-      "name": { "nl": "Hardgekookt ei", "en": "Hard-boiled egg" },
+      "name": {
+        "nl": "Hardgekookt ei",
+        "en": "Hard-boiled egg"
+      },
       "category": "eieren",
       "subcategory": "eieren",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-gouda-jong",
-      "name": { "nl": "Goudse kaas (jong)", "en": "Gouda (young)" },
+      "name": {
+        "nl": "Goudse kaas (jong)",
+        "en": "Gouda (young)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Jong gerijpt (<6 maanden): laag tyramine." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Calcium beschermend." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Jong gerijpt (<6 maanden): laag tyramine."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Calcium beschermend."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-griekse-yoghurt",
-      "name": { "nl": "Griekse yoghurt (10%)", "en": "Greek yogurt (10%)" },
+      "name": {
+        "nl": "Griekse yoghurt (10%)",
+        "en": "Greek yogurt (10%)"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Calciumrijke zuivel is beschermend." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerde zuivel: licht histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Calciumrijke zuivel is beschermend."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerde zuivel: licht histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-karnemelk",
-      "name": { "nl": "Karnemelk", "en": "Buttermilk" },
+      "name": {
+        "nl": "Karnemelk",
+        "en": "Buttermilk"
+      },
       "category": "zuivel",
       "subcategory": "melk",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Licht gefermenteerd: matig histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Licht gefermenteerd: matig histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-cheddar",
-      "name": { "nl": "Cheddar (belegen)", "en": "Cheddar (aged)" },
+      "name": {
+        "nl": "Cheddar (belegen)",
+        "en": "Cheddar (aged)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-gerijpt",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Belegen cheddar (6-12 maanden): matig tyramine." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Belegen kaas: matig-hoog histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Belegen cheddar (6-12 maanden): matig tyramine."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Belegen kaas: matig-hoog histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-smeerkaas",
-      "name": { "nl": "Smeerkaas (Philadelphia type)", "en": "Cream cheese" },
+      "name": {
+        "nl": "Smeerkaas (Philadelphia type)",
+        "en": "Cream cheese"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-hagelslag-melk",
-      "name": { "nl": "Chocolademelk", "en": "Chocolate milk" },
+      "name": {
+        "nl": "Chocolademelk",
+        "en": "Chocolate milk"
+      },
       "category": "zuivel",
       "subcategory": "melk",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Chocolade-component: lichte migraine-associatie." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Melk is calcium-beschermend." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Chocolade-component: lichte migraine-associatie."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Melk is calcium-beschermend."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-blauwe-kaas",
-      "name": { "nl": "Blauwe kaas (gerijpte kaas)", "en": "Blue cheese (aged)" },
+      "name": {
+        "nl": "Blauwe kaas (gerijpte kaas)",
+        "en": "Blue cheese (aged)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-gerijpt",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Sterk gerijpte kaas: hoog tyramine. Standaard migrainerisicovoedsel." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Schimmelkaas: zeer hoog histamine per SIGHI." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Sterk gerijpte kaas: hoog tyramine. Standaard migrainerisicovoedsel."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Schimmelkaas: zeer hoog histamine per SIGHI."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-parmezaan",
-      "name": { "nl": "Parmezaan", "en": "Parmesan" },
+      "name": {
+        "nl": "Parmezaan",
+        "en": "Parmesan"
+      },
       "category": "zuivel",
       "subcategory": "kaas-gerijpt",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Lang gerijpte harde kaas: hoog tyramine." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Harde gerijpte kaas: hoog histamine per SIGHI." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Lang gerijpte harde kaas: hoog tyramine."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Harde gerijpte kaas: hoog histamine per SIGHI."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-camembert",
-      "name": { "nl": "Camembert", "en": "Camembert" },
+      "name": {
+        "nl": "Camembert",
+        "en": "Camembert"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte kaas: tyramine aanwezig." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Kaas is calcium-beschermend voor nierstenen." } },
-        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Zachte gerijpte kaas: hoog histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte kaas: tyramine aanwezig."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Kaas is calcium-beschermend voor nierstenen."
+          }
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Zachte gerijpte kaas: hoog histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
-    },
-    {
-      "id": "nl-brie",
-      "name": { "nl": "Brie", "en": "Brie" },
-      "category": "zuivel",
-      "subcategory": "kaas-vers",
-      "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte zachte kaas: tyramine en biogene aminen." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte zachte kaas: hoog histamine per SIGHI." } }
-      },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-kwark",
-      "name": { "nl": "Kwark (mager)", "en": "Quark (low-fat)" },
+      "name": {
+        "nl": "Kwark (mager)",
+        "en": "Quark (low-fat)"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
-    },
-    {
-      "id": "nl-slagroom",
-      "name": { "nl": "Slagroom", "en": "Whipped cream" },
-      "category": "zuivel",
-      "subcategory": "room-boter",
-      "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
-      },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-gouda-belegen",
-      "name": { "nl": "Goudse kaas (belegen)", "en": "Gouda cheese (mature)" },
+      "name": {
+        "nl": "Goudse kaas (belegen)",
+        "en": "Gouda cheese (mature)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-gerijpt",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Belegen kaas (6-12 maanden): matig tyramine, migrainerisico." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Belegen kaas (6-12 maanden): matig tyramine, migrainerisico."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-feta",
-      "name": { "nl": "Feta", "en": "Feta cheese" },
+      "name": {
+        "nl": "Feta",
+        "en": "Feta cheese"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Pekelkaas: enig tyramine, matige migrainerelevantie." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Pekelkaas: enig tyramine, matige migrainerelevantie."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-mozzarella-vers",
-      "name": { "nl": "Mozzarella (vers)", "en": "Mozzarella (fresh)" },
+      "name": {
+        "nl": "Mozzarella (vers)",
+        "en": "Mozzarella (fresh)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Verse mozzarella heeft minimaal tyramine." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Verse mozzarella heeft minimaal tyramine."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-ricotta",
-      "name": { "nl": "Ricotta", "en": "Ricotta" },
+      "name": {
+        "nl": "Ricotta",
+        "en": "Ricotta"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
-    },
-    {
-      "id": "nl-griekse-yoghurt",
-      "name": { "nl": "Griekse yoghurt (10% vet)", "en": "Greek yogurt (10% fat)" },
-      "category": "zuivel",
-      "subcategory": "yoghurt-kwark",
-      "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Calcium beschermend; normale inname veilig." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerde zuivel: laag-matig histamine." } }
-      },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-skyr",
-      "name": { "nl": "Skyr", "en": "Skyr" },
+      "name": {
+        "nl": "Skyr",
+        "en": "Skyr"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerd zuivelproduct: vergelijkbaar met yoghurt qua histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerd zuivelproduct: vergelijkbaar met yoghurt qua histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-kwark-mager",
-      "name": { "nl": "Magere kwark", "en": "Low-fat quark" },
+      "name": {
+        "nl": "Magere kwark",
+        "en": "Low-fat quark"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-mascarpone",
-      "name": { "nl": "Mascarpone", "en": "Mascarpone" },
+      "name": {
+        "nl": "Mascarpone",
+        "en": "Mascarpone"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-huttenkase",
-      "name": { "nl": "Hüttenkäse (cottage cheese)", "en": "Cottage cheese" },
+      "name": {
+        "nl": "Hüttenkäse (cottage cheese)",
+        "en": "Cottage cheese"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
-    },
-    {
-      "id": "nl-halfvolle-melk",
-      "name": { "nl": "Halfvolle melk", "en": "Semi-skimmed milk" },
-      "category": "zuivel",
-      "subcategory": "melk",
-      "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
-      },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-magere-melk",
-      "name": { "nl": "Magere melk", "en": "Skimmed milk" },
+      "name": {
+        "nl": "Magere melk",
+        "en": "Skimmed milk"
+      },
       "category": "zuivel",
       "subcategory": "melk",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
-    },
-    {
-      "id": "nl-karnemelk",
-      "name": { "nl": "Karnemelk", "en": "Buttermilk" },
-      "category": "zuivel",
-      "subcategory": "melk",
-      "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerde melk: licht verhoogd histamine." } }
-      },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-vla",
-      "name": { "nl": "Vla (vanille)", "en": "Dutch custard (vanilla)" },
+      "name": {
+        "nl": "Vla (vanille)",
+        "en": "Dutch custard (vanilla)"
+      },
       "category": "zuivel",
       "subcategory": "dessert-zuivel",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-cremefraiche",
-      "name": { "nl": "Crème fraîche", "en": "Crème fraîche" },
+      "name": {
+        "nl": "Crème fraîche",
+        "en": "Crème fraîche"
+      },
       "category": "zuivel",
       "subcategory": "room-boter",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
-    },
-    {
-      "id": "nl-cheddar",
-      "name": { "nl": "Cheddar", "en": "Cheddar cheese" },
-      "category": "zuivel",
-      "subcategory": "kaas-gerijpt",
-      "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Gerijpte cheddar: matig tyramine, migrainerisico." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
-      },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-roomkaas",
-      "name": { "nl": "Roomkaas (smeerkaas)", "en": "Cream cheese" },
+      "name": {
+        "nl": "Roomkaas (smeerkaas)",
+        "en": "Cream cheese"
+      },
       "category": "zuivel",
       "subcategory": "kaas-vers",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-lactosevrije-melk",
-      "name": { "nl": "Lactosevrije melk", "en": "Lactose-free milk" },
+      "name": {
+        "nl": "Lactosevrije melk",
+        "en": "Lactose-free milk"
+      },
       "category": "zuivel",
       "subcategory": "melk",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-edam-extra-belegen",
-      "name": { "nl": "Gerijpte Edammer (extra belegen, >12 maanden)", "en": "Aged Edam (extra mature, >12 months)" },
+      "name": {
+        "nl": "Gerijpte Edammer (extra belegen, >12 maanden)",
+        "en": "Aged Edam (extra mature, >12 months)"
+      },
       "category": "zuivel",
       "subcategory": "kaas-gerijpt",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Extra belegen: hoge tyramine-concentratie, verhoogd migrainerisico." } },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }], "note": { "nl": "Gerijpte kaas: matig histamine." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Extra belegen: hoge tyramine-concentratie, verhoogd migrainerisico."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte kaas: matig histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-kefir",
-      "name": { "nl": "Kefir", "en": "Kefir" },
+      "name": {
+        "nl": "Kefir",
+        "en": "Kefir"
+      },
       "category": "zuivel",
       "subcategory": "yoghurt-kwark",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }, { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/", "title": "Brazilian Systematic Review — Histamine in Foods (2024)", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerd: matig histamine door bacteriële activiteit." } }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/",
+              "title": "Brazilian Systematic Review — Histamine in Foods (2024)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerd: matig histamine door bacteriële activiteit."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     }
   ]
 }

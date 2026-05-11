@@ -2,354 +2,1846 @@
   "items": [
     {
       "id": "170420",
-      "name": { "nl": "Erwten (groen, vers)", "en": "Peas (green, fresh)" },
+      "name": {
+        "nl": "Erwten (groen, vers)",
+        "en": "Peas (green, fresh)"
+      },
       "category": "peulvruchten",
       "subcategory": "verse-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: 84 mg/100g. Maximaal oranje per EULAR 2022: bij peulvruchten is er epidemiologisch geen verhoogd jichtrisico, ondanks het purinegehalte." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine: 84 mg/100g. Maximaal oranje per EULAR 2022: bij peulvruchten is er epidemiologisch geen verhoogd jichtrisico, ondanks het purinegehalte."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "172421",
-      "name": { "nl": "Rode linzen", "en": "Red lentils" },
+      "name": {
+        "nl": "Rode linzen",
+        "en": "Red lentils"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine ~127mg/100g. Epidemiologisch geen verhoogd jichtrisico ondanks purinegehalte (EULAR 2022)." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Oxalaat ~10mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~127mg/100g. Epidemiologisch geen verhoogd jichtrisico ondanks purinegehalte (EULAR 2022)."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat ~10mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "173757",
-      "name": { "nl": "Kikkererwten (gekookt)", "en": "Chickpeas (cooked)" },
+      "name": {
+        "nl": "Kikkererwten (gekookt)",
+        "en": "Chickpeas (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine ~109mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~109mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "175200",
-      "name": { "nl": "Kidney bonen (gekookt)", "en": "Kidney beans (cooked)" },
+      "name": {
+        "nl": "Kidney bonen (gekookt)",
+        "en": "Kidney beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine ~80mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Oxalaat ~19mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~80mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat ~19mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-edamame",
-      "name": { "nl": "Edamame (sojabonen)", "en": "Edamame (soybeans)" },
+      "name": {
+        "nl": "Edamame (sojabonen)",
+        "en": "Edamame (soybeans)"
+      },
       "category": "peulvruchten",
       "subcategory": "sojaproducten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine ~116mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~116mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-zwarte-bonen",
-      "name": { "nl": "Zwarte bonen (gekookt)", "en": "Black beans (cooked)" },
+      "name": {
+        "nl": "Zwarte bonen (gekookt)",
+        "en": "Black beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine ~75mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Oxalaat ~27mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~75mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat ~27mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-bruine-bonen",
-      "name": { "nl": "Bruine bonen (gekookt)", "en": "Brown beans (cooked)" },
+      "name": {
+        "nl": "Bruine bonen (gekookt)",
+        "en": "Brown beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine ~80mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~80mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-witte-bonen",
-      "name": { "nl": "Witte bonen (gekookt)", "en": "White beans (cooked)" },
+      "name": {
+        "nl": "Witte bonen (gekookt)",
+        "en": "White beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine ~70mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Oxalaat: ~14mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~70mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat: ~14mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-mungbonen",
-      "name": { "nl": "Mungbonen (gekookt)", "en": "Mung beans (cooked)" },
+      "name": {
+        "nl": "Mungbonen (gekookt)",
+        "en": "Mung beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-tofu",
-      "name": { "nl": "Tofu (naturel)", "en": "Tofu (plain)" },
+      "name": {
+        "nl": "Tofu (naturel)",
+        "en": "Tofu (plain)"
+      },
       "category": "peulvruchten",
       "subcategory": "sojaproducten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~68 mg/100g. Sojaproduct: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~68 mg/100g. Sojaproduct: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-hummus",
-      "name": { "nl": "Hummus (kikkererwten)", "en": "Hummus (chickpea)" },
+      "name": {
+        "nl": "Hummus (kikkererwten)",
+        "en": "Hummus (chickpea)"
+      },
       "category": "peulvruchten",
       "subcategory": "bereide-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Peulvruchten-basis: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Sesam (tahin) component bijdraagt aan oxalaat." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Peulvruchten-basis: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Sesam (tahin) component bijdraagt aan oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-tempeh",
-      "name": { "nl": "Tempeh", "en": "Tempeh" },
+      "name": {
+        "nl": "Tempeh",
+        "en": "Tempeh"
+      },
       "category": "peulvruchten",
       "subcategory": "sojaproducten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerde soja: purine ~65 mg/100g." } },
-        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerd sojaproduct: licht verhoogd tyramine." } },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Gefermenteerde soja: matig histamine." } }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerde soja: purine ~65 mg/100g."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerd sojaproduct: licht verhoogd tyramine."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerde soja: matig histamine."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-snijbonen-peul",
-      "name": { "nl": "Tuinbonen (vers)", "en": "Broad beans (fresh)" },
+      "name": {
+        "nl": "Tuinbonen (vers)",
+        "en": "Broad beans (fresh)"
+      },
       "category": "peulvruchten",
       "subcategory": "verse-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~104 mg/100g. Verse peulvrucht." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~104 mg/100g. Verse peulvrucht."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-sojabonen",
-      "name": { "nl": "Sojabonen (gekookt)", "en": "Soybeans (cooked)" },
+      "name": {
+        "nl": "Sojabonen (gekookt)",
+        "en": "Soybeans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "sojaproducten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~190 mg/100g. Hoog voor een peulvrucht." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~190 mg/100g. Hoog voor een peulvrucht."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-kapucijners",
-      "name": { "nl": "Kapucijners", "en": "Marrowfat peas" },
+      "name": {
+        "nl": "Kapucijners",
+        "en": "Marrowfat peas"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Droge peulvrucht: purine ~118 mg/100g." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Droge peulvrucht: purine ~118 mg/100g."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
     },
     {
       "id": "nl-adzukibonen",
-      "name": { "nl": "Adzukibonen (gekookt)", "en": "Adzuki beans (cooked)" },
+      "name": {
+        "nl": "Adzukibonen (gekookt)",
+        "en": "Adzuki beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine ~95 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~12 mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~95 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat ~12 mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-pintobonen",
-      "name": { "nl": "Pintobonen (gekookt)", "en": "Pinto beans (cooked)" },
+      "name": {
+        "nl": "Pintobonen (gekookt)",
+        "en": "Pinto beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine ~75 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~11 mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~75 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat ~11 mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-groene-linzen",
-      "name": { "nl": "Groene linzen (gekookt)", "en": "Green lentils (cooked)" },
+      "name": {
+        "nl": "Groene linzen (gekookt)",
+        "en": "Green lentils (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine ~120 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat ~10 mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~120 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat ~10 mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-kikkererwten-blik",
-      "name": { "nl": "Kikkererwten (uit blik)", "en": "Chickpeas (canned)" },
+      "name": {
+        "nl": "Kikkererwten (uit blik)",
+        "en": "Chickpeas (canned)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Zelfde purinegehalte als gekookte kikkererwten." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "B", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Natriumgehalte in blik (ca. 250 mg/100g) verhoogt calciumuitscheiding licht." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Zelfde purinegehalte als gekookte kikkererwten."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Natriumgehalte in blik (ca. 250 mg/100g) verhoogt calciumuitscheiding licht."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-misopasta",
-      "name": { "nl": "Misopasta", "en": "Miso paste" },
+      "name": {
+        "nl": "Misopasta",
+        "en": "Miso paste"
+      },
       "category": "peulvruchten",
       "subcategory": "sojaproducten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerde soja: purine ~85 mg/100g." } },
-        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Gefermenteerd sojaproduct met biogene aminen." } },
-        "nierstenen": { "score": 1, "evidence": "B", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Hoog natriumgehalte verhoogt calciumuitscheiding." } },
-        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }, { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/", "title": "Brazilian Systematic Review — Histamine in Foods (2024)", "type": "review", "accessedAt": "2026-05-12" }], "note": { "nl": "Sterk gefermenteerd: hoog histaminegehalte." } }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerde soja: purine ~85 mg/100g."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Gefermenteerd sojaproduct met biogene aminen."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Hoog natriumgehalte verhoogt calciumuitscheiding."
+          }
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/",
+              "title": "Brazilian Systematic Review — Histamine in Foods (2024)",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Sterk gefermenteerd: hoog histaminegehalte."
+          }
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
-    },
-    {
-      "id": "nl-snijbonen",
-      "name": { "nl": "Snijbonen (vers)", "en": "Runner beans (fresh)" },
-      "category": "peulvruchten",
-      "subcategory": "verse-peulvruchten",
-      "scores": {
-        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Verse peulvrucht: purine ~55 mg/100g." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
-      },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-sperziebonen",
-      "name": { "nl": "Sperziebonen (vers)", "en": "Green beans (fresh)" },
+      "name": {
+        "nl": "Sperziebonen (vers)",
+        "en": "Green beans (fresh)"
+      },
       "category": "peulvruchten",
       "subcategory": "verse-peulvruchten",
       "scores": {
-        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine ~50 mg/100g." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~50 mg/100g."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-doperwten-diepvries",
-      "name": { "nl": "Doperwten (diepvries)", "en": "Peas (frozen)" },
+      "name": {
+        "nl": "Doperwten (diepvries)",
+        "en": "Peas (frozen)"
+      },
       "category": "peulvruchten",
       "subcategory": "verse-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine ~80 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~80 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
-    },
-    {
-      "id": "nl-sojamelk",
-      "name": { "nl": "Sojamelk (ongezoet)", "en": "Soy milk (unsweetened)" },
-      "category": "peulvruchten",
-      "subcategory": "sojaproducten",
-      "scores": {
-        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Verdunde soja: lagere purineconcentratie (~40 mg/100g)." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
-      },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-linzensoep",
-      "name": { "nl": "Linzensoep (zelfgemaakt)", "en": "Lentil soup (homemade)" },
+      "name": {
+        "nl": "Linzensoep (zelfgemaakt)",
+        "en": "Lentil soup (homemade)"
+      },
       "category": "peulvruchten",
       "subcategory": "bereide-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine-inhoudt varieert; peulvruchten-basis: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine-inhoudt varieert; peulvruchten-basis: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-flageolets",
-      "name": { "nl": "Flageolets (gekookt)", "en": "Flageolet beans (cooked)" },
+      "name": {
+        "nl": "Flageolets (gekookt)",
+        "en": "Flageolet beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }, { "url": "https://ard.bmj.com/content/81/11/1452", "title": "EULAR 2022 Gout Guidelines", "type": "guideline", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine ~72 mg/100g. Maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://ard.bmj.com/content/81/11/1452",
+              "title": "EULAR 2022 Gout Guidelines",
+              "type": "guideline",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine ~72 mg/100g. Maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     },
     {
       "id": "nl-tamarinpasta",
-      "name": { "nl": "Tamarinebonen (gekookt)", "en": "Tamarind beans (cooked)" },
+      "name": {
+        "nl": "Tamarinebonen (gekookt)",
+        "en": "Tamarind beans (cooked)"
+      },
       "category": "peulvruchten",
       "subcategory": "droge-peulvruchten",
       "scores": {
-        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Peulvrucht: maximaal oranje per EULAR 2022." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 2,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Peulvrucht: maximaal oranje per EULAR 2022."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
     }
   ]
 }
