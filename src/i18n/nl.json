@@ -1,0 +1,124 @@
+{
+  "app": {
+    "name": "Voedingsapp",
+    "tagline": "Beslishulp bij voedingskeuzes"
+  },
+  "nav": {
+    "zoeken": "Zoeken",
+    "scan": "Scan",
+    "bronnen": "Bronnen",
+    "instellingen": "Instellingen"
+  },
+  "conditions": {
+    "jicht": "Jicht",
+    "migraine": "Migraine",
+    "nierstenen": "Nierstenen",
+    "histamine": "Histamine"
+  },
+  "scores": {
+    "groen": "Veilig",
+    "geel": "Matig",
+    "oranje": "Voorzichtig",
+    "rood": "Vermijden",
+    "onbekend": "Onbekend"
+  },
+  "evidence": {
+    "label": "Bewijs",
+    "A": "Wetenschappelijk bewijs (A)",
+    "B": "Consensus / richtlijn (B)",
+    "C": "Anekdotisch (C)",
+    "onbekend": "Onbekend"
+  },
+  "onboarding": {
+    "welcome": "Welkom",
+    "welcomeText": "Voedingsapp helpt je bij voedingskeuzes als je jicht, migraine, nierstenen of histamine-intolerantie hebt. Je ziet per voedingsmiddel een stoplicht met onderbouwing.",
+    "notMedical": "Dit is geen medisch advies.",
+    "chooseConditions": "Kies je aandoening(en)",
+    "chooseConditionsHelp": "Je kunt meerdere aandoeningen kiezen. Je ziet daarna alleen informatie die voor jou relevant is.",
+    "atLeastOne": "Kies minstens één aandoening.",
+    "disclaimer": "Disclaimer",
+    "disclaimerText": "Voedingsapp biedt informatie als hulp bij voedingskeuzes en is geen vervanging voor medisch advies. De scores zijn gebaseerd op gepubliceerde richtlijnen en wetenschappelijk onderzoek, maar voedingswetenschap is een complex vakgebied waarbij bronnen elkaar soms tegenspreken. Raadpleeg altijd een arts of diëtist bij twijfel of klachten.",
+    "disclaimerAccept": "Ik begrijp dat dit geen medisch advies is en raadpleeg bij twijfel een zorgprofessional.",
+    "start": "App openen",
+    "next": "Volgende"
+  },
+  "zoeken": {
+    "placeholder": "Zoek een voedingsmiddel...",
+    "noResults": "Geen resultaten voor \"{{query}}\"",
+    "noResultsHint": "Probeer een andere zoekterm.",
+    "allItems": "Alle items ({{count}})",
+    "conflict": "⚠ Tegenstrijdig advies — zie details",
+    "conflictHelp": "Dit voedingsmiddel heeft een ander advies per aandoening. Zie hieronder.",
+    "sources": "Bronnen",
+    "noData": "Geen data beschikbaar"
+  },
+  "scan": {
+    "title": "Menukaart scannen",
+    "subtitle": "Maak een foto van een menukaart of gerecht voor een inschatting op basis van jouw profiel.",
+    "upload": "Foto uploaden of fotograferen",
+    "analyze": "Analyseren",
+    "analyzing": "Bezig met analyseren...",
+    "disclaimer": "De AI-analyse is een inschatting op basis van zichtbare ingrediënten. Bereidingswijzen en verborgen ingrediënten kunnen scores beïnvloeden. Vraag bij twijfel aan de bediening.",
+    "noAccess": "Menuscan is niet beschikbaar. Neem contact op met de beheerder voor toegang.",
+    "enterCode": "Toegangscode",
+    "enterCodePlaceholder": "Voer toegangscode in",
+    "saveCode": "Opslaan",
+    "error": "Er ging iets mis. Probeer het opnieuw."
+  },
+  "bronnen": {
+    "title": "Bronnen & methodologie",
+    "subtitle": "Transparantie over hoe de scores tot stand komen.",
+    "export": "Exporteer als PDF",
+    "exportHint": "Gebruik Ctrl+P of ⌘+P om te printen / op te slaan als PDF.",
+    "jicht": {
+      "title": "Jicht — scoringsmethodologie",
+      "text": "Scores zijn gebaseerd op het purinegehalte per 100g (bron: USDA Purine Database 2.0, 2025). Drempels: <50mg = groen, 50-100mg = geel, 100-200mg = oranje, >200mg = rood. Alcohol scoort altijd rood ongeacht purinegehalte (lactaat-competitie). Koffie scoort groen op basis van recente Mendelian-randomization studies (Shirai 2022, meta-analyse 2025) die een beschermend effect aantonen — in tegenstelling tot oudere richtlijnen. Peulvruchten scoren maximaal oranje ondanks soms hoog purine (EULAR 2022: epidemiologisch geen verhoogd risico)."
+    },
+    "migraine": {
+      "title": "Migraine — scoringsmethodologie",
+      "text": "Migraine is het domein met de minste evidence. Er bestaat geen gezaghebbende kwantitatieve database. Score 3 (rood) is alleen toegekend aan stoffen met enige RCT/cohort-onderbouwing: alcohol (rode wijn), MSG, gerijpte kaas (>6 maanden), gecureerd vlees (nitriet). Chocolade scoort oranje — recente systematic review (2023) suggereert dat trek in chocolade een prodroom-symptoom is, geen trigger. Alle overige items scoren groen tenzij specifiek bewijs aanwezig is. Evidence-niveau is bij migraine vrijwel altijd B of C."
+    },
+    "nierstenen": {
+      "title": "Nierstenen — scoringsmethodologie",
+      "text": "Scores zijn gebaseerd op oxalaatgehalte per standaardportie (bron: Harvard Oxalate Table 2023, UAB Knight Lab). Drempels: <10mg = groen, 10-25mg = geel, 25-50mg = oranje, >50mg = rood. Natrium >600mg per portie telt als +1 punt. Calcium: hoge calciuminname is gunstig (normale inname van 1000-1200mg/dag verlaagt het risico op nierstenen — Borghi RCT, AUA-richtlijn). Calciumrijke producten scoren dus groen. Vitamine C-supplementen scoren rood (omzetting naar oxalaat)."
+    },
+    "histamine": {
+      "title": "Histamine — scoringsmethodologie",
+      "text": "Scores zijn gebaseerd op de SIGHI Compatibility List 2023 (Heinz Lamprecht), aangevuld met de Brazilian systematic review 2024 (343 items met HPLC-meting) en het Montreux Consensus. De SIGHI 0-3 schaal wordt direct overgenomen. Items worden ook getagd als histamineliberator of DAO-blokker. Let op: citrus staat aangemerkt als omstreden — SIGHI labelt het hoog, maar San Mauro 2021 (Nutrients) toont dat ~53% van geëxcludeerde voeding geen meetbaar histamine heeft. Evidence-niveau is bij histamine vrijwel altijd B of C."
+    },
+    "conflicting": {
+      "title": "Tegenstrijdige bronnen",
+      "items": [
+        { "subject": "Koffie bij jicht", "text": "Oudere richtlijnen waarschuwden. Recente Mendelian-randomization studies (Shirai 2022, meta-analyse 2025) tonen beschermend effect. Onze weging: groen." },
+        { "subject": "Citrus bij histamine", "text": "SIGHI labelt citrus als hoog-risico. San Mauro 2021 (Nutrients) toont dat dit voor veel patiënten niet evidence-based is. Onze weging: oranje + noot 'omstreden'." },
+        { "subject": "Calcium bij nierstenen", "text": "Oud advies: weinig calcium eten. Modern bewijs (Borghi RCT, AUA-richtlijn): normale calciuminname verlaagt het risico. Onze weging: calciumrijke items groen." },
+        { "subject": "Chocolade bij migraine", "text": "Klassieke triggerlijsten zetten chocolade op rood. Recente systematic review (2023) suggereert prodroom-craving. Onze weging: oranje + noot." },
+        { "subject": "Peulvruchten bij jicht", "text": "Peulvruchten bevatten relatief veel purine. EULAR 2022 stelt dat epidemiologisch geen verhoogd risico aangetoond is. Onze weging: maximaal oranje." }
+      ]
+    },
+    "disclaimer": {
+      "title": "Disclaimer & scope",
+      "text": "Deze app is een beslishulp op basis van gepubliceerde richtlijnen en wetenschappelijk onderzoek. Het is geen vervanging voor medisch advies. Voedingswetenschap is een complex vakgebied; bronnen kunnen onderling afwijken. Raadpleeg altijd een arts of diëtist bij twijfel of klachten. De database is niet uitputtend — ontbrekende items of aandoeningen zijn gemarkeerd als 'geen data'."
+    }
+  },
+  "instellingen": {
+    "title": "Instellingen",
+    "profile": "Mijn profiel",
+    "profileHelp": "Wijzig je aandoening(en). Je zoekresultaten en menuscan passen zich aan.",
+    "save": "Opslaan",
+    "saved": "Opgeslagen",
+    "about": "Over de app",
+    "version": "Versie",
+    "items": "Items in database",
+    "methodology": "Bekijk methodologie",
+    "reset": "Profiel wissen",
+    "resetConfirm": "Weet je het zeker? Je profiel en instellingen worden gewist."
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er ging iets mis",
+    "retry": "Opnieuw proberen",
+    "close": "Sluiten",
+    "back": "Terug"
+  }
+}

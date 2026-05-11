@@ -1,0 +1,48 @@
+@media print {
+  /* Verberg navigatie en knoppen */
+  nav,
+  .print\:hidden,
+  button:not(.print-show) {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    font-size: 11pt;
+    color: #1a1a18;
+  }
+
+  .min-h-screen {
+    min-height: unset;
+  }
+
+  /* Verberg navbar padding */
+  .pb-24 {
+    padding-bottom: 0 !important;
+  }
+
+  /* Zorg dat bronnen-pagina goed print */
+  .rounded-xl {
+    border-radius: 4pt;
+  }
+
+  a {
+    color: #1a1a18 !important;
+    text-decoration: none;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #73726c;
+  }
+
+  h1, h2 {
+    break-after: avoid;
+  }
+
+  /* Voeg paginanummers toe */
+  @page {
+    margin: 2cm;
+  }
+}

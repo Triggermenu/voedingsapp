@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "id": "171890",
+      "name": { "nl": "Koffie (zwart, gezet)", "en": "Coffee (black, brewed)" },
+      "category": "dranken-non-alcohol",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr2.11425", "title": "Shirai et al. 2022 — Coffee and serum urate (Mendelian randomization)", "type": "meta-analysis", "accessedAt": "2026-05-11" }, { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518751/", "title": "Meta-analyse koffie/thee en hyperurikemie 2025", "type": "meta-analysis", "accessedAt": "2026-05-11" }], "note": { "nl": "Groen. Oudere richtlijnen waarschuwden voor koffie. Recente Mendelian-randomization studies (Shirai 2022, meta-analyse 2025) tonen beschermend effect op urinezuurspiegels." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Matige cafeïne-inname heeft geen bewezen triggerende werking. Cafeïne-onttrekking kan hoofdpijn veroorzaken." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Oxalaat: ~3 mg/250ml. Laag." } },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "DAO-blokker: remt het enzym dat histamine afbreekt." } }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-thee-zwart",
+      "name": { "nl": "Zwarte thee (gezet)", "en": "Black tea (brewed)" },
+      "category": "dranken-non-alcohol",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12518751/", "title": "Meta-analyse koffie/thee en hyperurikemie 2025", "type": "meta-analysis", "accessedAt": "2026-05-11" }] },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Oxalaat: ~14 mg/250ml kopje." } },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "DAO-blokker." } }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": true },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    }
+  ]
+}

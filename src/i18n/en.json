@@ -1,0 +1,94 @@
+{
+  "app": {
+    "name": "Food Guide",
+    "tagline": "Decision support for dietary choices"
+  },
+  "nav": {
+    "zoeken": "Search",
+    "scan": "Scan",
+    "bronnen": "Sources",
+    "instellingen": "Settings"
+  },
+  "conditions": {
+    "jicht": "Gout",
+    "migraine": "Migraine",
+    "nierstenen": "Kidney stones",
+    "histamine": "Histamine"
+  },
+  "scores": {
+    "groen": "Safe",
+    "geel": "Moderate",
+    "oranje": "Caution",
+    "rood": "Avoid",
+    "onbekend": "Unknown"
+  },
+  "evidence": {
+    "label": "Evidence",
+    "A": "Scientific evidence (A)",
+    "B": "Consensus / guideline (B)",
+    "C": "Anecdotal (C)",
+    "onbekend": "Unknown"
+  },
+  "onboarding": {
+    "welcome": "Welcome",
+    "welcomeText": "Food Guide helps you make dietary choices when you have gout, migraine, kidney stones or histamine intolerance. Each food item shows a traffic light with source attribution.",
+    "notMedical": "This is not medical advice.",
+    "chooseConditions": "Choose your condition(s)",
+    "chooseConditionsHelp": "You can choose multiple conditions. You will only see information relevant to you.",
+    "atLeastOne": "Choose at least one condition.",
+    "disclaimer": "Disclaimer",
+    "disclaimerText": "Food Guide provides information to support dietary choices and is not a replacement for medical advice. Scores are based on published guidelines and scientific research, but nutritional science is complex and sources sometimes conflict. Always consult a doctor or dietitian when in doubt.",
+    "disclaimerAccept": "I understand this is not medical advice and will consult a healthcare professional when in doubt.",
+    "start": "Open app",
+    "next": "Next"
+  },
+  "zoeken": {
+    "placeholder": "Search a food item...",
+    "noResults": "No results for \"{{query}}\"",
+    "noResultsHint": "Try a different search term.",
+    "allItems": "All items ({{count}})",
+    "conflict": "⚠ Conflicting advice — see details",
+    "conflictHelp": "This food has different advice per condition. See details below.",
+    "sources": "Sources",
+    "noData": "No data available"
+  },
+  "scan": {
+    "title": "Scan menu",
+    "subtitle": "Take a photo of a menu or dish for an assessment based on your profile.",
+    "upload": "Upload or take a photo",
+    "analyze": "Analyze",
+    "analyzing": "Analyzing...",
+    "disclaimer": "The AI analysis is an estimate based on visible ingredients. Preparation methods and hidden ingredients may affect scores. Ask staff if in doubt.",
+    "noAccess": "Menu scan is not available. Contact the administrator for access.",
+    "enterCode": "Access code",
+    "enterCodePlaceholder": "Enter access code",
+    "saveCode": "Save",
+    "error": "Something went wrong. Please try again."
+  },
+  "bronnen": {
+    "title": "Sources & methodology",
+    "subtitle": "Transparency about how scores are determined.",
+    "export": "Export as PDF",
+    "exportHint": "Use Ctrl+P or ⌘+P to print / save as PDF."
+  },
+  "instellingen": {
+    "title": "Settings",
+    "profile": "My profile",
+    "profileHelp": "Change your condition(s). Search results and menu scan will adapt.",
+    "save": "Save",
+    "saved": "Saved",
+    "about": "About",
+    "version": "Version",
+    "items": "Items in database",
+    "methodology": "View methodology",
+    "reset": "Clear profile",
+    "resetConfirm": "Are you sure? Your profile and settings will be cleared."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "close": "Close",
+    "back": "Back"
+  }
+}

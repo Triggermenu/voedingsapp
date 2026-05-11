@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "id": "173432",
+      "name": { "nl": "Volle melk", "en": "Whole milk" },
+      "category": "zuivel",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~0 mg/100g. Zuivel heeft vrijwel geen purine." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }, { "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline", "title": "AUA Medical Management of Kidney Stones Guideline", "type": "guideline", "accessedAt": "2026-05-11" }], "note": { "nl": "Hoog calcium (120 mg/100g) is beschermend voor nierstenen. Normale calciuminname verlaagt risico (Borghi RCT, AUA-richtlijn)." } },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "748967",
+      "name": { "nl": "Ei (heel, rauw)", "en": "Egg (whole, raw)" },
+      "category": "eieren",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~2 mg/100g. Ei is één van de veiligste eiwitbronnen bij jicht." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Vers ei: laag histamine. Eiwitpoeder of lang bewaard ei kan hoger scoren." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-edammer-jong",
+      "nevoCode": "2024",
+      "name": { "nl": "Edammer (jong, <3 maanden)", "en": "Edam (young, <3 months)" },
+      "category": "zuivel",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Kaas heeft vrijwel geen purine." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Jong gerijpte kaas (<6 maanden) staat NIET op de migraine-whitelist." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Calciumrijke kaas is beschermend voor nierstenen bij normale inname." } },
+        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Jong gerijpt: laag-matig histamine." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-kaas-oud-48",
+      "name": { "nl": "Oude kaas (gouda, >48 maanden)", "en": "Aged cheese (gouda, >48 months)" },
+      "category": "zuivel",
+      "scores": {
+        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte kaas (>6 maanden) staat op de migraine-whitelist: hoge tyramine-concentratie door rijpingsproces." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/", "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)", "type": "review", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }, { "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/", "title": "Brazilian Systematic Review — Histamine in Foods (2024)", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Lang gerijpte kaas heeft een hoog histaminegehalte door bacteriële omzetting van histidine." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    }
+  ]
+}

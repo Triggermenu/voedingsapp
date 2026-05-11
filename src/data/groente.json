@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "id": "168463",
+      "name": { "nl": "Spinazie (rauw)", "en": "Spinach (raw)" },
+      "category": "groente",
+      "scores": {
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Purine: 57 mg/100g. Geel-groen zone." }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }]
+        },
+        "nierstenen": {
+          "score": 3,
+          "evidence": "A",
+          "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Oxalaat: ~755 mg/100g (gekookt). Zeer hoog — één van de rijkste oxalaatbronnen." }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Middelmatig histaminegehalte per SIGHI-lijst." }
+        }
+      },
+      "histamineFlags": { "liberator": false, "daoBlocker": false },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "170457",
+      "name": { "nl": "Tomaat (rauw)", "en": "Tomato (raw)" },
+      "category": "groente",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Purine: 11 mg/100g." }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Oxalaat: ~8 mg/100g. Laag." }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Histamineliberator. Kan klachten uitlokken bij intolerantie." }
+        }
+      },
+      "histamineFlags": { "liberator": true, "daoBlocker": false },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "170379",
+      "name": { "nl": "Broccoli", "en": "Broccoli" },
+      "category": "groente",
+      "scores": {
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Purine: 70 mg/100g." }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Oxalaat: ~12 mg/100g. Laag-matig." }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }]
+        }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "169251",
+      "name": { "nl": "Champignons", "en": "White mushrooms" },
+      "category": "groente",
+      "scores": {
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Purine: ~50 mg/100g." }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Oxalaat: ~5 mg/100g. Laag." }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }]
+        }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "170026",
+      "name": { "nl": "Aardappel (gekookt)", "en": "Potato (boiled)" },
+      "category": "groente",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Purine: 16 mg/100g." }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Oxalaat: ~15 mg/100g." }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }]
+        }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "169145",
+      "name": { "nl": "Rode biet", "en": "Beetroot" },
+      "category": "groente",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Purine: ~20 mg/100g." }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }]
+        },
+        "nierstenen": {
+          "score": 3,
+          "evidence": "A",
+          "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }],
+          "note": { "nl": "Oxalaat: ~152 mg/100g. Hoog." }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }]
+        }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    }
+  ]
+}
