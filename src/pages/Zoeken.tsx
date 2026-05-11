@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { searchItems, getAllItems } from '@/lib/db'
 import { getProfile } from '@/lib/profile'
-import { getCombinedScore, scoreDotClass } from '@/lib/scoring'
+import { getCombinedScore } from '@/lib/scoring'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
 import type { Condition, Category } from '@/schemas/item'
@@ -38,17 +38,17 @@ function getTimeGreeting(): string {
 }
 
 function ScoreChip({ score, label }: { score: number | null; label: string }) {
+  const bg =
+    score === 0 ? 'bg-[#c6e3d5]' :
+    score === 1 ? 'bg-[#e8ddb5]' :
+    score === 2 ? 'bg-[#f0c4a0]' :
+    score === 3 ? 'bg-[#f0adad]' :
+    'bg-[#e0dfd7]'
   return (
-    <span className={`inline-flex items-center gap-0.5 rounded-md px-1.5 py-0.5 text-[9px] font-bold tracking-wide ${
-      score === 0 ? 'bg-emerald-100 text-emerald-700' :
-      score === 1 ? 'bg-yellow-100 text-yellow-700' :
-      score === 2 ? 'bg-orange-100 text-orange-700' :
-      score === 3 ? 'bg-red-100 text-red-700' :
-      'bg-gray-100 text-gray-400'
-    }`}>
-      <span className={`w-1.5 h-1.5 rounded-full ${scoreDotClass(score)}`} />
-      {label}
-    </span>
+    <div className="flex flex-col items-center gap-0.5">
+      <span className={`w-[22px] h-[22px] rounded-[5px] ${bg}`} />
+      <span className="text-[8px] font-semibold tracking-wide text-[#9c9a92] uppercase">{label}</span>
+    </div>
   )
 }
 
@@ -118,14 +118,15 @@ export function Zoeken() {
         </div>
 
         {/* Legend */}
-        <div className="flex items-center gap-3 mt-2.5 flex-wrap">
+        <div className="flex items-center gap-2.5 mt-2.5 flex-wrap">
+          <span className="text-[10px] text-[#9c9a92] tracking-widest uppercase font-semibold">Stoplicht</span>
           {[
-            { label: 'Veilig', color: 'bg-emerald-500' },
-            { label: 'Matig', color: 'bg-yellow-400' },
-            { label: 'Voorzichtig', color: 'bg-orange-500' },
-            { label: 'Vermijden', color: 'bg-red-600' },
+            { label: 'Veilig', color: 'bg-[#c6e3d5]' },
+            { label: 'Matig', color: 'bg-[#e8ddb5]' },
+            { label: 'Voorzichtig', color: 'bg-[#f0c4a0]' },
+            { label: 'Vermijden', color: 'bg-[#f0adad]' },
           ].map(({ label, color }) => (
-            <span key={label} className="flex items-center gap-1 text-[10px] text-[#73726c] tracking-wide uppercase font-medium">
+            <span key={label} className="flex items-center gap-1 text-[10px] text-[#73726c] tracking-wide">
               <span className={`w-2 h-2 rounded-full ${color}`} />
               {label}
             </span>
@@ -145,6 +146,11 @@ export function Zoeken() {
       {query && results.length > 0 && (
         <div className="px-4 py-3 divide-y divide-[#f0efe8]">
           {results.map((item) => {
+            const combined = getCombinedScore(item, conditions)
+            const hasConflict = combined.conflict
+            const firstNote = !hasConflict
+              ? conditions.map((c) => item.scores[c]?.note?.nl).find(Boolean)
+              : undefined
             return (
               <button
                 key={item.id}
@@ -153,7 +159,11 @@ export function Zoeken() {
               >
                 <div className="min-w-0">
                   <p className="font-serif font-semibold text-[1.05rem] text-[#1a1a18] leading-snug">{item.name.nl}</p>
-                  <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase mt-0.5">{CATEGORY_LABELS[item.category as Category] ?? item.category}</p>
+                  <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase mt-0.5">
+                    {CATEGORY_LABELS[item.category as Category] ?? item.category}
+                    {hasConflict && ' · Tegenstrijdig advies'}
+                    {firstNote && ` · ${firstNote}`}
+                  </p>
                 </div>
                 <div className="flex gap-1.5 flex-shrink-0">
                   {conditions.map((c) => {
@@ -181,6 +191,9 @@ export function Zoeken() {
                 {items.map((item) => {
                   const combined = getCombinedScore(item, conditions)
                   const hasConflict = combined.conflict
+                  const firstNote = !hasConflict
+                    ? conditions.map((c) => item.scores[c]?.note?.nl).find(Boolean)
+                    : undefined
                   return (
                     <button
                       key={item.id}
@@ -192,6 +205,7 @@ export function Zoeken() {
                         <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase mt-0.5">
                           {CATEGORY_LABELS[cat] ?? cat}
                           {hasConflict && ' · Tegenstrijdig advies'}
+                          {firstNote && ` · ${firstNote}`}
                         </p>
                       </div>
                       <div className="flex gap-1.5 flex-shrink-0">
