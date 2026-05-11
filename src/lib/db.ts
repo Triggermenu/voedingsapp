@@ -11,6 +11,7 @@ import drankenAlcoholData from '@/data/dranken-alcohol.json'
 import drankenNonAlcoholData from '@/data/dranken-non-alcohol.json'
 import notenData from '@/data/noten-zaden.json'
 import zoetwarenData from '@/data/zoetwaren.json'
+import sauzenData from '@/data/sauzen-kruiden.json'
 
 const ALL_ITEMS: FoodItem[] = [
   ...groenteData.items,
@@ -24,6 +25,7 @@ const ALL_ITEMS: FoodItem[] = [
   ...drankenNonAlcoholData.items,
   ...notenData.items,
   ...zoetwarenData.items,
+  ...sauzenData.items,
 ] as FoodItem[]
 
 export function getAllItems(): FoodItem[] {

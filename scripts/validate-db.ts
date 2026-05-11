@@ -69,9 +69,11 @@ for (const file of files) {
       }
     }
 
-    // Regression test: calcium-rijk voedsel (melk, kaas) nierstenen <= 1
-    const calciumRijk = ['melk', 'kaas', 'edammer', 'yoghurt']
-    if (calciumRijk.some((w) => item.name.nl.toLowerCase().includes(w))) {
+    // Regression test: calcium-rijk zuivel (melk, kaas, edammer, yoghurt) nierstenen <= 1
+    // Exclusions: pindakaas (noot, geen zuivel)
+    const calciumRijkZuivel = ['melk', 'edammer', 'yoghurt']
+    const kaasMatch = item.name.nl.toLowerCase().includes('kaas') && !item.name.nl.toLowerCase().includes('pindakaas')
+    if (calciumRijkZuivel.some((w) => item.name.nl.toLowerCase().includes(w)) || kaasMatch) {
       if (item.scores.nierstenen?.score !== undefined && item.scores.nierstenen.score > 1) {
         warn(`${label}: calcium-rijk item heeft nierstenen score > 1. Controleer of dit correct is.`)
       }

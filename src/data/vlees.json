@@ -47,6 +47,126 @@
         "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerookt + gecureerd = hoog histaminegehalte." } }
       },
       "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "167904",
+      "name": { "nl": "Varkensvlees (mager)", "en": "Pork (lean)" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~120 mg/100g." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Vers vlees: laag histamine." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "171491",
+      "name": { "nl": "Kalkoenfilet", "en": "Turkey breast" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~115 mg/100g." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "172544",
+      "name": { "nl": "Lamskoteletten", "en": "Lamb chops" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~105 mg/100g." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "167875",
+      "name": { "nl": "Ham (gekookt)", "en": "Cooked ham" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~75 mg/100g. Verwerkt vlees heeft lagere purineconcentratie." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Verwerkt en gepekeld vlees: matig histamine." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-rookworst-gecureerd",
+      "name": { "nl": "Rookworst (gecureerd)", "en": "Smoked sausage (cured)" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "migraine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Gecureerd vlees met nitrieten staat op de migraine-whitelist." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerookt en gecureerd: hoog histamine." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "172848",
+      "name": { "nl": "Kip (dij, met vel)", "en": "Chicken thigh (with skin)" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~110 mg/100g." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-gehakt-rund",
+      "name": { "nl": "Rundergehakt", "en": "Ground beef" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~100 mg/100g." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Vers bereid: laag histamine. Snel verhogend bij bewaring." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "174329",
+      "name": { "nl": "Kalfsvlees (mager)", "en": "Veal (lean)" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~140 mg/100g." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "nl-lever-kip",
+      "name": { "nl": "Kippenlever", "en": "Chicken liver" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 3, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }], "note": { "nl": "Purine: ~243 mg/100g. Orgaanvlees." } },
+        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }] },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }] }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
+    },
+    {
+      "id": "172936",
+      "name": { "nl": "Salami", "en": "Salami" },
+      "category": "vlees",
+      "scores": {
+        "jicht": { "score": 2, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "migraine": { "score": 2, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11" }], "note": { "nl": "Verwerkt vlees met nitrieten." } },
+        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-11" }] },
+        "histamine": { "score": 3, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-11" }], "note": { "nl": "Gerijpte droge worst: hoog histamine door fermentatie en rijping." } }
+      },
+      "meta": { "addedAt": "2026-05-11", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-11" }
     }
   ]
 }
