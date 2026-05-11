@@ -1,11 +1,15 @@
 import { useState, useRef } from 'react'
-import { useTranslation } from 'react-i18next'
 import { getProfile } from '@/lib/profile'
 import { NavBar } from '@/components/NavBar'
-import { StoplichtBadge } from '@/components/StoplichtBadge'
+import { Logo } from '@/components/Logo'
 import type { Condition } from '@/schemas/item'
 
-const ACCESS_CODE_KEY = 'voedingsapp_scan_code'
+const ACCESS_CODE_KEY = 'triggermenu_scan_code'
+
+const SCORE_LABELS: Record<number, string> = { 0: 'Veilig', 1: 'Matig', 2: 'Voorzichtig', 3: 'Vermijden' }
+const CONDITION_LABELS: Record<Condition, string> = {
+  jicht: 'Jicht', migraine: 'Migraine', nierstenen: 'Nierstenen', histamine: 'Histamine',
+}
 
 interface ScanResult {
   dish: string
@@ -13,127 +17,164 @@ interface ScanResult {
   overallNote: string
 }
 
+function ScorePill({ score }: { score: number }) {
+  const styles =
+    score === 0 ? 'bg-[#c6e3d5] text-emerald-800' :
+    score === 1 ? 'bg-[#e8ddb5] text-yellow-800' :
+    score === 2 ? 'bg-[#f0c4a0] text-orange-800' :
+    'bg-[#f0adad] text-red-800'
+  return (
+    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${styles}`}>
+      {SCORE_LABELS[score] ?? 'Onbekend'}
+    </span>
+  )
+}
+
 export function Scan() {
-  const { t } = useTranslation()
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
 
   const [accessCode, setAccessCode] = useState(() => localStorage.getItem(ACCESS_CODE_KEY) ?? '')
   const [codeSaved, setCodeSaved] = useState(!!localStorage.getItem(ACCESS_CODE_KEY))
-  const [image, setImage] = useState<File | null>(null)
   const [preview, setPreview] = useState<string | null>(null)
+  const [imageFile, setImageFile] = useState<File | null>(null)
   const [loading, setLoading] = useState(false)
   const [results, setResults] = useState<ScanResult[] | null>(null)
   const [error, setError] = useState('')
   const fileRef = useRef<HTMLInputElement>(null)
 
   const saveCode = () => {
-    localStorage.setItem(ACCESS_CODE_KEY, accessCode)
+    localStorage.setItem(ACCESS_CODE_KEY, accessCode.trim())
     setCodeSaved(true)
   }
 
   const handleFile = (file: File) => {
-    setImage(file)
+    setImageFile(file)
     setPreview(URL.createObjectURL(file))
     setResults(null)
     setError('')
   }
 
   const handleAnalyze = async () => {
-    if (!image || !accessCode) return
+    if (!imageFile || !accessCode) return
     setLoading(true)
     setError('')
-
     try {
-      const base64 = await fileToBase64(image)
+      const base64 = await fileToBase64(imageFile)
       const res = await fetch('/api/menuscan', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Access-Code': accessCode,
-        },
-        body: JSON.stringify({ image: base64, conditions, mediaType: image.type }),
+        headers: { 'Content-Type': 'application/json', 'X-Access-Code': accessCode },
+        body: JSON.stringify({ image: base64, conditions, mediaType: imageFile.type }),
       })
-
-      if (res.status === 401) {
-        setError('Ongeldige toegangscode. Controleer de code en probeer opnieuw.')
-        return
-      }
-      if (!res.ok) {
-        setError(t('scan.error'))
-        return
-      }
-
+      if (res.status === 401) { setError('Ongeldige toegangscode.'); return }
+      if (!res.ok) { setError('Er ging iets mis. Probeer opnieuw.'); return }
       const data = await res.json() as { results: ScanResult[] }
       setResults(data.results)
     } catch {
-      setError(t('scan.error'))
+      setError('Kon de server niet bereiken. Controleer je verbinding.')
     } finally {
       setLoading(false)
     }
   }
 
+  const reset = () => {
+    setPreview(null)
+    setImageFile(null)
+    setResults(null)
+    setError('')
+  }
+
   return (
     <div className="min-h-screen bg-[#f8f7f4] pb-24">
-      <div className="px-4 pt-safe pt-6 pb-3">
-        <h1 className="text-base font-medium text-[#1a1a18]">{t('scan.title')}</h1>
-        <p className="text-sm text-[#73726c] mt-1">{t('scan.subtitle')}</p>
+      {/* Header */}
+      <div className="px-4 pt-safe pt-5 pb-4 border-b border-[#e0dfd7]">
+        <div className="flex items-center gap-2 mb-3">
+          <Logo size={26} />
+          <span className="font-serif font-semibold text-[#1a1a18] text-base">Triggermenu</span>
+        </div>
+        <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-1">Menukaart scan</p>
+        <h1 className="font-serif text-[1.9rem] leading-[1.15] font-semibold text-[#1a1a18]">
+          Foto een menu,{' '}
+          <em className="not-italic italic text-[#1d9e75]">wij beoordelen</em>.
+        </h1>
+        <p className="text-sm text-[#73726c] mt-1">
+          Maak een foto van een restaurantmenukaart — elk gerecht krijgt een stoplichtadvies.
+        </p>
       </div>
 
-      <div className="px-4 space-y-4">
-        {/* Access code */}
+      <div className="px-4 py-4 space-y-4">
+
+        {/* Step 1: access code */}
         {!codeSaved ? (
           <div className="bg-white border border-[#e0dfd7] rounded-xl p-4 space-y-3">
-            <p className="text-sm font-medium text-[#1a1a18]">{t('scan.enterCode')}</p>
+            <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold">Toegangscode</p>
+            <p className="text-sm text-[#5f5e5a]">
+              De scan is een betaalde functie. Voer je toegangscode in om te beginnen.
+            </p>
             <div className="flex gap-2">
               <input
                 type="password"
                 value={accessCode}
                 onChange={(e) => setAccessCode(e.target.value)}
-                placeholder={t('scan.enterCodePlaceholder')}
-                className="flex-1 px-3 py-2 border border-[#e0dfd7] rounded-lg text-sm focus:outline-none focus:border-[#1d9e75]"
+                onKeyDown={(e) => e.key === 'Enter' && accessCode && saveCode()}
+                placeholder="••••••••"
+                className="flex-1 px-3 py-2.5 border border-[#e0dfd7] rounded-xl text-sm text-[#1a1a18] placeholder-[#9c9a92] focus:outline-none focus:border-[#1d9e75]"
               />
               <button
                 onClick={saveCode}
-                disabled={!accessCode}
-                className="px-4 py-2 bg-[#1d9e75] text-white text-sm font-medium rounded-lg disabled:bg-[#c8c7bf]"
+                disabled={!accessCode.trim()}
+                className="px-4 py-2.5 bg-[#1d9e75] hover:bg-[#178a65] disabled:bg-[#c8c7bf] text-white text-sm font-medium rounded-xl transition-colors"
               >
-                {t('scan.saveCode')}
+                Opslaan
               </button>
             </div>
           </div>
         ) : (
           <>
-            {/* Image upload */}
-            <div
-              className="bg-white border-2 border-dashed border-[#e0dfd7] rounded-xl p-6 text-center cursor-pointer hover:border-[#1d9e75] transition-colors"
-              onClick={() => fileRef.current?.click()}
-            >
-              {preview ? (
-                <img src={preview} alt="Preview" className="max-h-48 mx-auto rounded-lg object-contain" />
-              ) : (
-                <div className="space-y-2">
-                  <div className="text-3xl">📷</div>
-                  <p className="text-sm text-[#73726c]">{t('scan.upload')}</p>
-                </div>
-              )}
-              <input
-                ref={fileRef}
-                type="file"
-                accept="image/*"
-                capture="environment"
-                className="hidden"
-                onChange={(e) => e.target.files?.[0] && handleFile(e.target.files[0])}
-              />
-            </div>
+            {/* Step 2: image upload */}
+            {!results && (
+              <div
+                className="bg-white border-2 border-dashed border-[#e0dfd7] rounded-xl overflow-hidden cursor-pointer hover:border-[#1d9e75] transition-colors"
+                onClick={() => fileRef.current?.click()}
+              >
+                {preview ? (
+                  <img src={preview} alt="Menukaart preview" className="w-full max-h-64 object-contain" />
+                ) : (
+                  <div className="p-8 text-center space-y-2">
+                    <svg className="w-10 h-10 mx-auto text-[#c8c7bf]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <p className="text-sm font-medium text-[#1a1a18]">Foto maken of kiezen</p>
+                    <p className="text-xs text-[#9c9a92]">Tik om je camera te openen</p>
+                  </div>
+                )}
+                <input
+                  ref={fileRef}
+                  type="file"
+                  accept="image/*"
+                  capture="environment"
+                  className="hidden"
+                  onChange={(e) => e.target.files?.[0] && handleFile(e.target.files[0])}
+                />
+              </div>
+            )}
 
-            {image && (
+            {imageFile && !results && (
               <button
                 onClick={handleAnalyze}
                 disabled={loading}
-                className="w-full bg-[#1d9e75] hover:bg-[#178a65] disabled:bg-[#c8c7bf] text-white font-medium py-3 rounded-xl transition-colors"
+                className="w-full bg-[#1d9e75] hover:bg-[#178a65] disabled:bg-[#c8c7bf] text-white font-medium py-3.5 rounded-xl transition-colors flex items-center justify-center gap-2"
               >
-                {loading ? t('scan.analyzing') : t('scan.analyze')}
+                {loading ? (
+                  <>
+                    <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                    </svg>
+                    Analyseren…
+                  </>
+                ) : 'Menu analyseren'}
               </button>
             )}
 
@@ -143,36 +184,51 @@ export function Scan() {
               </div>
             )}
 
+            {/* Results */}
             {results && (
               <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold">
+                    {results.length} gerechten beoordeeld
+                  </p>
+                  <button onClick={reset} className="text-xs text-[#1d9e75] font-medium">
+                    Nieuwe scan
+                  </button>
+                </div>
+
                 {results.map((r, i) => (
-                  <div key={i} className="bg-white border border-[#e0dfd7] rounded-xl p-4 space-y-2">
-                    <p className="font-medium text-sm text-[#1a1a18]">{r.dish}</p>
+                  <div key={i} className="bg-white border border-[#e0dfd7] rounded-xl p-4 space-y-2.5">
+                    <p className="font-serif font-semibold text-[#1a1a18]">{r.dish}</p>
                     <div className="flex flex-wrap gap-2">
                       {conditions.map((c) => {
                         const s = r.scores[c]
-                        return s ? (
+                        if (!s) return null
+                        return (
                           <div key={c} className="flex items-center gap-1.5">
-                            <StoplichtBadge score={s.score} size="sm" />
-                            <span className="text-xs text-[#73726c]">{c}</span>
+                            <ScorePill score={s.score} />
+                            <span className="text-xs text-[#73726c]">{CONDITION_LABELS[c]}</span>
                           </div>
-                        ) : null
+                        )
                       })}
                     </div>
                     {r.overallNote && (
-                      <p className="text-xs text-[#73726c] leading-relaxed">{r.overallNote}</p>
+                      <p className="text-xs text-[#73726c] leading-relaxed border-t border-[#f0efe8] pt-2">
+                        {r.overallNote}
+                      </p>
                     )}
                   </div>
                 ))}
+
                 <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800 leading-relaxed">
-                  {t('scan.disclaimer')}
+                  Dit is een AI-inschatting op basis van de menukaart — geen medisch advies. Raadpleeg
+                  altijd je diëtist of arts bij twijfel. Scores kunnen afwijken van de database.
                 </div>
               </div>
             )}
 
             <button
               onClick={() => { setCodeSaved(false); localStorage.removeItem(ACCESS_CODE_KEY) }}
-              className="text-xs text-[#9c9a92] underline"
+              className="text-xs text-[#9c9a92] hover:text-[#5f5e5a] py-1 transition-colors"
             >
               Toegangscode wijzigen
             </button>

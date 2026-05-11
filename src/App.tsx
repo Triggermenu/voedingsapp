@@ -7,6 +7,7 @@ import { Bronnen } from '@/pages/Bronnen'
 import { Instellingen } from '@/pages/Instellingen'
 import { Recepten } from '@/pages/Recepten'
 import { ItemDetail } from '@/pages/ItemDetail'
+import { Privacy } from '@/pages/Privacy'
 
 function RequireProfile({ children }: { children: React.ReactNode }) {
   const profile = getProfile()
@@ -25,6 +26,7 @@ export default function App() {
       <Route path="/scan" element={<RequireProfile><Scan /></RequireProfile>} />
       <Route path="/bronnen" element={<RequireProfile><Bronnen /></RequireProfile>} />
       <Route path="/instellingen" element={<RequireProfile><Instellingen /></RequireProfile>} />
+      <Route path="/privacy" element={<Privacy />} />
       <Route path="/" element={<Navigate to="/zoeken" replace />} />
       <Route path="*" element={<Navigate to="/zoeken" replace />} />
     </Routes>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import type { Condition } from '@/schemas/item'
 import { CONDITIONS } from '@/schemas/item'
 import { getProfile, saveProfile, clearProfile } from '@/lib/profile'
@@ -142,6 +142,14 @@ export function Instellingen() {
         <button onClick={handleReset} className="w-full text-xs text-[#9c9a92] hover:text-red-500 py-2 transition-colors">
           Profiel wissen
         </button>
+
+        <div className="flex justify-center gap-4 pt-1">
+          <Link to="/privacy" className="text-xs text-[#9c9a92] hover:text-[#1d9e75] transition-colors">
+            Privacybeleid
+          </Link>
+          <span className="text-xs text-[#c8c7bf]">·</span>
+          <span className="text-xs text-[#c8c7bf]">Triggermenu v0.1</span>
+        </div>
       </div>
 
       <NavBar />
