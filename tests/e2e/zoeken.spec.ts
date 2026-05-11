@@ -20,7 +20,7 @@ test('search returns results', async ({ page }) => {
 test('search filters by query', async ({ page }) => {
   await page.goto('/zoeken')
   await page.getByRole('searchbox').fill('spinazie')
-  await expect(page.getByText('Spinazie')).toBeVisible()
+  await expect(page.getByText('Spinazie (rauw)', { exact: true })).toBeVisible()
 })
 
 test('item card navigates to /item/:id on click', async ({ page }) => {
@@ -28,7 +28,7 @@ test('item card navigates to /item/:id on click', async ({ page }) => {
   await page.getByRole('searchbox').fill('spinazie')
 
   // Click the Spinazie row — navigates to detail page
-  await page.getByText('Spinazie').first().click()
+  await page.getByText('Spinazie (rauw)', { exact: true }).click()
 
   await expect(page).toHaveURL(/\/item\/168463/)
 })
@@ -49,5 +49,5 @@ test('koffie is visible in search results', async ({ page }) => {
   await page.goto('/zoeken')
   await page.getByRole('searchbox').fill('koffie')
 
-  await expect(page.getByText('Koffie')).toBeVisible()
+  await expect(page.getByText('Koffie (zwart, gezet)', { exact: true })).toBeVisible()
 })

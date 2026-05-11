@@ -55,6 +55,8 @@ function ScoreChip({ score, label }: { score: number | null; label: string }) {
 export function Zoeken() {
   const navigate = useNavigate()
   const [query, setQuery] = useState('')
+  const [filterOpen, setFilterOpen] = useState(false)
+  const [activeCategories, setActiveCategories] = useState<Set<Category>>(new Set())
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
   const greeting = useMemo(() => getTimeGreeting(), [])
@@ -62,16 +64,36 @@ export function Zoeken() {
   const allItems = useMemo(() => getAllItems(), [])
   const results = useMemo(() => searchItems(query, conditions), [query, conditions])
 
+  const availableCategories = useMemo(() => {
+    const cats = new Set<Category>()
+    for (const item of results) cats.add(item.category as Category)
+    return Array.from(cats)
+  }, [results])
+
+  const filteredResults = useMemo(() => {
+    if (activeCategories.size === 0) return results
+    return results.filter((item) => activeCategories.has(item.category as Category))
+  }, [results, activeCategories])
+
   const grouped = useMemo(() => {
     if (query) return null
-    const map = new Map<Category, typeof results>()
-    for (const item of results) {
+    const map = new Map<Category, typeof filteredResults>()
+    for (const item of filteredResults) {
       const cat = item.category as Category
       if (!map.has(cat)) map.set(cat, [])
       map.get(cat)!.push(item)
     }
     return map
-  }, [query, results])
+  }, [query, filteredResults])
+
+  const toggleCategory = (cat: Category) => {
+    setActiveCategories((prev) => {
+      const next = new Set(prev)
+      if (next.has(cat)) next.delete(cat)
+      else next.add(cat)
+      return next
+    })
+  }
 
   const conditionLabels = conditions.map((c) => c.charAt(0).toUpperCase() + c.slice(1)).join(' & ')
 
@@ -84,10 +106,18 @@ export function Zoeken() {
             <Logo size={28} />
             <span className="font-serif font-semibold text-[#1a1a18] text-base">Triggermenu</span>
           </div>
-          <button className="w-8 h-8 rounded-full border border-[#e0dfd7] bg-white flex items-center justify-center">
-            <svg className="w-4 h-4 text-[#73726c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <button
+            onClick={() => setFilterOpen(true)}
+            className={`relative w-8 h-8 rounded-full border flex items-center justify-center transition-colors ${activeCategories.size > 0 ? 'border-[#1d9e75] bg-[#f0faf5]' : 'border-[#e0dfd7] bg-white'}`}
+          >
+            <svg className={`w-4 h-4 ${activeCategories.size > 0 ? 'text-[#1d9e75]' : 'text-[#73726c]'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 4h18M7 12h10M11 20h2" />
             </svg>
+            {activeCategories.size > 0 && (
+              <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-[#1d9e75] text-white text-[8px] font-bold flex items-center justify-center">
+                {activeCategories.size}
+              </span>
+            )}
           </button>
         </div>
 
@@ -135,17 +165,19 @@ export function Zoeken() {
       </div>
 
       {/* No results */}
-      {results.length === 0 && query && (
+      {filteredResults.length === 0 && (query || activeCategories.size > 0) && (
         <div className="text-center py-16 px-4 text-[#73726c]">
-          <p className="font-medium text-[#3d3d3a]">Geen resultaten voor &ldquo;{query}&rdquo;</p>
-          <p className="text-sm mt-1">Probeer een andere zoekterm.</p>
+          <p className="font-medium text-[#3d3d3a]">
+            {query ? `Geen resultaten voor "${query}"` : 'Geen items in geselecteerde categorieën'}
+          </p>
+          <p className="text-sm mt-1">Probeer een andere zoekterm of filter.</p>
         </div>
       )}
 
       {/* Search results */}
-      {query && results.length > 0 && (
+      {query && filteredResults.length > 0 && (
         <div className="px-4 py-3 divide-y divide-[#f0efe8]">
-          {results.map((item) => {
+          {filteredResults.map((item) => {
             const combined = getCombinedScore(item, conditions)
             const hasConflict = combined.conflict
             const firstNote = !hasConflict
@@ -220,6 +252,57 @@ export function Zoeken() {
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Filter sheet */}
+      {filterOpen && (
+        <div className="fixed inset-0 z-50 flex flex-col justify-end">
+          <div className="absolute inset-0 bg-black/30" onClick={() => setFilterOpen(false)} />
+          <div className="relative bg-white rounded-t-2xl px-4 pt-4 pb-8 space-y-4 max-h-[70vh] overflow-y-auto">
+            <div className="flex items-center justify-between">
+              <p className="font-serif font-semibold text-[#1a1a18]">Filter op categorie</p>
+              <div className="flex items-center gap-3">
+                {activeCategories.size > 0 && (
+                  <button
+                    onClick={() => setActiveCategories(new Set())}
+                    className="text-xs text-[#1d9e75] font-medium"
+                  >
+                    Wis filters
+                  </button>
+                )}
+                <button onClick={() => setFilterOpen(false)} className="w-7 h-7 rounded-full bg-[#f0efe8] flex items-center justify-center">
+                  <svg className="w-3.5 h-3.5 text-[#73726c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {availableCategories.map((cat) => {
+                const isActive = activeCategories.has(cat)
+                return (
+                  <button
+                    key={cat}
+                    onClick={() => toggleCategory(cat)}
+                    className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
+                      isActive
+                        ? 'bg-[#1d9e75] border-[#1d9e75] text-white'
+                        : 'bg-white border-[#e0dfd7] text-[#1a1a18]'
+                    }`}
+                  >
+                    {CATEGORY_LABELS[cat] ?? cat}
+                  </button>
+                )
+              })}
+            </div>
+            <button
+              onClick={() => setFilterOpen(false)}
+              className="w-full bg-[#1d9e75] text-white font-medium py-3 rounded-xl"
+            >
+              Toon resultaten{activeCategories.size > 0 ? ` (${filteredResults.length})` : ''}
+            </button>
+          </div>
         </div>
       )}
 
