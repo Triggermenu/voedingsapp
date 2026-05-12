@@ -144,6 +144,14 @@ Claude Code regelt vervolgens:
 
 ---
 
+## C-1 · Desktop drie-koloms layout bouwen
+
+**Status:** ☐ Open
+**Wat:** Split-panel layout voor brede schermen: zoeklijst links, itemdetail midden, alternatieven rechts. Mobiel blijft ongewijzigd (één kolom).
+**Trigger:** Zeg "bouw desktop layout" als je er klaar voor bent.
+
+---
+
 ## Klaar?
 Als A-1 t/m A-5 op ✅ staan, draait de app autonoom.
 A-6 is een eenmalige testronde — daarna is jouw rol *bestuurder bij uitzondering*: Sentry meldt incidenten, jij beslist over koers.
