@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, NavLink } from 'react-router-dom'
 import { searchItems, getAllItems } from '@/lib/db'
 import { getProfile } from '@/lib/profile'
 import { getCombinedScore } from '@/lib/scoring'
@@ -234,6 +234,30 @@ export function Zoeken() {
           <span className="font-serif font-semibold text-[#1a1a18] text-base">Triggermenu</span>
         </div>
         <div className="flex items-center gap-2">
+          {/* Desktop navigatie */}
+          {isDesktop && (
+            <nav className="hidden lg:flex items-center gap-0.5 mr-1">
+              {([
+                { to: '/scan', label: 'Scan' },
+                { to: '/bronnen', label: 'Bronnen' },
+                { to: '/instellingen', label: 'Profiel' },
+              ] as const).map(({ to, label }) => (
+                <NavLink
+                  key={to}
+                  to={to}
+                  className={({ isActive }) =>
+                    `text-xs font-medium px-3 py-1.5 rounded-lg transition-colors ${
+                      isActive
+                        ? 'text-[#1d9e75] bg-[#f0faf5]'
+                        : 'text-[#73726c] hover:text-[#1a1a18] hover:bg-[#f0efe8]'
+                    }`
+                  }
+                >
+                  {label}
+                </NavLink>
+              ))}
+            </nav>
+          )}
           {/* Profielindicator — desktop */}
           {isDesktop && conditions.length > 0 && (
             <span className="hidden lg:flex items-center gap-1.5 text-xs text-[#5f5e5a] bg-white border border-[#e0dfd7] rounded-full px-3 py-1">
