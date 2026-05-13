@@ -229,10 +229,13 @@ export function Zoeken() {
   const Header = (
     <div className="bg-[#f8f7f4] z-10 px-4 pt-safe pt-4 pb-3 border-b border-[#e0dfd7]">
       <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-2">
+        <button
+          onClick={() => { setQuery(''); setSelectedId(null); setActiveCategories(new Set()) }}
+          className="flex items-center gap-2"
+        >
           <Logo size={28} />
           <span className="font-serif font-semibold text-[#1a1a18] text-base">Triggermenu</span>
-        </div>
+        </button>
         <div className="flex items-center gap-2">
           {/* Desktop navigatie */}
           {isDesktop && (
