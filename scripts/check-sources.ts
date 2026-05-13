@@ -15,7 +15,8 @@ async function checkUrl(url: string): Promise<boolean> {
     const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
     const res = await fetch(url, { method: 'HEAD', signal: controller.signal, redirect: 'follow' })
     clearTimeout(timer)
-    const ok = res.status < 400
+    // 403/405 = server responded but blocks bots/HEAD — URL exists
+    const ok = res.status < 400 || res.status === 403 || res.status === 405
     CACHE[url] = ok
     return ok
   } catch {
