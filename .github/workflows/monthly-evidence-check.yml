@@ -1,0 +1,70 @@
+name: Monthly evidence check
+
+on:
+  schedule:
+    - cron: '0 8 1 * *'  # elke 1e van de maand om 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  evidence-check:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check for evidence updates
+        id: check
+        run: |
+          set +e
+          output=$(npx tsx scripts/check-evidence-updates.ts 2>&1)
+          exit_code=$?
+          echo "exit_code=$exit_code" >> $GITHUB_OUTPUT
+
+          # Sla findings op (alles na ---FINDINGS---)
+          findings=$(echo "$output" | awk '/^---FINDINGS---/{found=1; next} found{print}')
+          {
+            echo "findings<<EOF"
+            echo "$findings"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+
+          echo "$output"
+          exit 0
+
+      - name: Open issue bij bevindingen
+        if: steps.check.outputs.exit_code == '2'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0]
+            const findings = `${{ steps.check.outputs.findings }}`
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Evidence] Nieuwe wetenschappelijke updates gevonden — ${date}`,
+              body: `## Maandelijkse evidence check — ${date}
+
+De automatische check heeft nieuwe wetenschappelijke publicaties of bijgewerkte primaire bronnen gevonden. **Menselijke beoordeling vereist** voordat scores worden aangepast.
+
+${findings}
+
+---
+### Wat nu?
+1. Beoordeel of de gevonden papers de scoringsregels in \`CLAUDE.md\` raken
+2. Pas \`CLAUDE.md\` aan als er nieuwe weging nodig is (alleen Peter)
+3. Laat Claude Code daarna de betrokken items bijwerken via een PR
+4. Sluit dit issue
+
+_Automatisch aangemaakt door monthly-evidence-check workflow._`,
+              labels: ['evidence-update', 'needs-review']
+            })
