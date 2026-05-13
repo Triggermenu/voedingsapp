@@ -35,6 +35,7 @@ test('item card navigates to /item/:id on click', async ({ page }) => {
 })
 
 test('navigation tabs work', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/zoeken')
 
   await page.getByRole('link', { name: 'Bronnen' }).click()
