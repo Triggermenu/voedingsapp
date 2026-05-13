@@ -24,16 +24,18 @@ test('search filters by query', async ({ page }) => {
 })
 
 test('item card navigates to /item/:id on click', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/zoeken')
   await page.getByRole('searchbox').fill('spinazie')
 
-  // Click the Spinazie row — navigates to detail page
+  // Click the Spinazie row — navigates to detail page (mobile viewport)
   await page.getByText('Spinazie (rauw)', { exact: true }).click()
 
   await expect(page).toHaveURL(/\/item\/168463/)
 })
 
 test('navigation tabs work', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/zoeken')
 
   await page.getByRole('link', { name: 'Bronnen' }).click()
