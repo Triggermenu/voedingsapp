@@ -1,6 +1,23 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import Anthropic from '@anthropic-ai/sdk'
 
+// In-memory rate limiter — resets per function instance (stopgap; vervang door Upstash na A-4)
+const rateMap = new Map<string, { count: number; resetAt: number }>()
+const RATE_LIMIT = 10
+const RATE_WINDOW_MS = 60_000
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now()
+  const entry = rateMap.get(ip)
+  if (!entry || now > entry.resetAt) {
+    rateMap.set(ip, { count: 1, resetAt: now + RATE_WINDOW_MS })
+    return false
+  }
+  if (entry.count >= RATE_LIMIT) return true
+  entry.count++
+  return false
+}
+
 const CONDITION_CONTEXT: Record<string, string> = {
   jicht: 'jicht (vermijd hoog purinegehalte >200mg/100g, alcohol altijd rood)',
   migraine: 'migraine (vermijd rode wijn, MSG, gerijpte kaas, gecureerd vlees met nitriet)',
@@ -12,10 +29,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === 'OPTIONS') return res.status(200).end()
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
-  const code = req.headers['x-access-code']
+  const rawCode = req.headers['x-access-code']
+  const code = Array.isArray(rawCode) ? rawCode[0] : rawCode
   const validCode = process.env.SCAN_ACCESS_CODE
   if (!validCode || code !== validCode) {
     return res.status(401).json({ error: 'Ongeldige toegangscode' })
+  }
+
+  const rawIp = req.headers['x-forwarded-for']
+  const ip = (Array.isArray(rawIp) ? rawIp[0] : rawIp)?.split(',')[0]?.trim() ?? 'unknown'
+  if (isRateLimited(ip)) {
+    return res.status(429).json({ error: 'Te veel verzoeken. Probeer het over een minuut opnieuw.' })
   }
 
   const { image, conditions, mediaType } = req.body ?? {}

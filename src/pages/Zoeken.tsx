@@ -73,11 +73,11 @@ export function Zoeken() {
   const [filterOpen, setFilterOpen] = useState(false)
   const [activeCategories, setActiveCategories] = useState<Set<Category>>(new Set())
   const [selectedId, setSelectedId] = useState<string | null>(null)
-  const profile = getProfile()
+  const profile = useMemo(() => getProfile(), [])
   const conditions = profile?.conditions ?? []
   const greeting = useMemo(() => getTimeGreeting(), [])
 
-  const allItems = useMemo(() => getAllItems(), [])
+  const allItems = getAllItems()
   const results = useMemo(() => searchItems(query, conditions), [query, conditions])
 
   const availableCategories = useMemo(() => {

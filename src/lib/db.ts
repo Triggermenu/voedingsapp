@@ -65,18 +65,19 @@ export function getAlternatives(item: FoodItem, conditions: Condition[], limit =
   const currentScore = getCombinedScore(item, conditions).score
   if (currentScore === null || currentScore < 2) return []
 
+  const scoreCache = new Map<string, number | null>()
+  const cachedScore = (c: FoodItem) => {
+    if (!scoreCache.has(c.id)) scoreCache.set(c.id, getCombinedScore(c, conditions).score)
+    return scoreCache.get(c.id)!
+  }
+
   const ranked = (candidates: FoodItem[]) =>
     candidates
       .filter((candidate) => {
-        if (candidate.id === item.id) return false
-        const s = getCombinedScore(candidate, conditions)
-        return s.score !== null && s.score < currentScore
+        const s = cachedScore(candidate)
+        return s !== null && s < currentScore
       })
-      .sort((a, b) => {
-        const sa = getCombinedScore(a, conditions).score ?? 99
-        const sb = getCombinedScore(b, conditions).score ?? 99
-        return sa - sb
-      })
+      .sort((a, b) => (cachedScore(a) ?? 99) - (cachedScore(b) ?? 99))
       .slice(0, limit)
 
   // Tier 1: same subcategory

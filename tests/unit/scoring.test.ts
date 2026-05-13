@@ -95,3 +95,20 @@ describe('Regression: chocolade migraine', () => {
     }
   })
 })
+
+describe('Regression: hoog-calcium nierstenen', () => {
+  it('melk en yoghurt hebben nierstenen score <= 1', async () => {
+    const { getAllItems } = await import('@/lib/db')
+    const items = getAllItems()
+    const highCalcium = items.filter((i) =>
+      i.name.nl.toLowerCase().includes('melk') ||
+      i.name.nl.toLowerCase().includes('yoghurt')
+    )
+    expect(highCalcium.length).toBeGreaterThan(0)
+    for (const item of highCalcium) {
+      if (item.scores.nierstenen !== null) {
+        expect(item.scores.nierstenen.score).toBeLessThanOrEqual(1)
+      }
+    }
+  })
+})
