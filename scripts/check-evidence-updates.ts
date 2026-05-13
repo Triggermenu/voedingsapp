@@ -1,3 +1,5 @@
+export {}
+
 /**
  * Maandelijkse check op nieuwe wetenschappelijke evidence voor de vier aandoeningen.
  * Gebruikt PubMed E-utilities (geen API key nodig) + Last-Modified op primaire bronnen.
