@@ -4,6 +4,7 @@ import { test, expect } from '@playwright/test'
 const SPINAZIE_ID = '168463'
 
 test.beforeEach(async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
   await page.addInitScript(() => {
     localStorage.setItem('voedingsapp_profile_v1', JSON.stringify({ conditions: ['jicht', 'histamine'] }))
     localStorage.setItem('voedingsapp_disclaimer_v1', 'true')

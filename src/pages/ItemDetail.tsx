@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { getProfile } from '@/lib/profile'
+import { getItemById } from '@/lib/db'
 import { ItemDetailPanel } from '@/components/ItemDetailPanel'
 
 export function ItemDetail() {
@@ -7,12 +8,13 @@ export function ItemDetail() {
   const navigate = useNavigate()
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
+  const item = id ? getItemById(id) : null
 
-  if (!id) {
+  if (!id || !item) {
     return (
       <div className="min-h-screen bg-[#f8f7f4] flex items-center justify-center">
         <div className="text-center px-4">
-          <p className="text-[#73726c] mb-4">Item niet gevonden.</p>
+          <p className="text-[#73726c] mb-4">Item niet gevonden</p>
           <button onClick={() => navigate(-1)} className="text-[#1d9e75] text-sm">← Terug</button>
         </div>
       </div>
