@@ -47,13 +47,6 @@ const SOURCES: Record<CondKey, Source[]> = {
       use: 'Bewezen voedingstriggers: tyramine, MSG, nitraten.',
       url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/',
     },
-    {
-      title: 'EHF Consensus on Migraine Triggers',
-      org: 'European Headache Federation',
-      year: 2023, type: 'CONSENSUS',
-      use: 'Evidence-level A/B/C voor 84 triggers.',
-      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10561391/',
-    },
   ],
   nierstenen: [
     {
