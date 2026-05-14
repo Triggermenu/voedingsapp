@@ -364,18 +364,42 @@
           ]
         },
         "migraine": {
-          "score": 3,
+          "score": 2,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "vrij-glutamaat"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10736382/",
+              "title": "Geha RS et al. 2000 — Review of alleged reaction to MSG; multicenter double-blind placebo-controlled study (J Nutr)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/8282275/",
+              "title": "Tarasoff L & Kelly MF 1993 — Monosodium L-glutamate: a double-blind study and review (Food Chem Toxicol)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9215242/",
+              "title": "Yang WH et al. 1997 — The MSG symptom complex: double-blind placebo-controlled study (J Allergy Clin Immunol)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
+              "title": "Obayashi Y & Nagamura Y 2016 — Does MSG really cause headache? Systematic review (J Headache Pain)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "MSG staat op de migraine-whitelist. Cohort-bewijs voor hoofdpijn bij gevoelige personen."
+            "nl": "MSG (E621) staat bekend als migraine-trigger, maar recent onderzoek nuanceert dit sterk. In studies waarbij mensen MSG onbewust innamen via voedsel, was er geen aantoonbaar verschil met placebo. Bij hoge doses MSG zonder eten trad bij sommigen hoofdpijn op, maar dit was niet reproduceerbaar bij hertest. De internationale classificatie voor hoofdpijnaandoeningen heeft MSG in 2018 van de officiële triggerlijst verwijderd.",
+            "en": "MSG (E621) is widely believed to be a migraine trigger, but recent evidence strongly challenges this. In studies where people unknowingly consumed MSG in food, no difference from placebo was found. At high doses without food some subjects reported headache, but this was not reproducible on rechallenge. The International Classification of Headache Disorders removed MSG from its official trigger list in 2018."
           }
         },
         "nierstenen": {
@@ -409,7 +433,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-14"
       },
       "cluster": 18
     },
