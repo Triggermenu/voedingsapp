@@ -5,6 +5,9 @@ import { DatabaseFileSchema } from '../src/schemas/item'
 const DATA_DIR = join(process.cwd(), 'src/data')
 const MIGRAINE_WHITELIST = new Set(['rode wijn', 'bier', 'alcohol', 'msg', 'spek', 'bacon', 'gerijpte', 'gecureerd', 'oude kaas'])
 
+// Gate 11: evidence A toegestaan bij database, meta-analyse, of evidence-based guideline (AUA, EULAR, ACR)
+const EVIDENCE_A_SOURCE_TYPES = new Set(['database', 'meta-analysis', 'guideline'])
+
 let errors = 0
 let warnings = 0
 let totalItems = 0
@@ -51,6 +54,15 @@ for (const file of files) {
       if (!s) continue
       if (s.score === 3 && s.evidence === 'C') {
         fail(`${label} [${condition}]: score=3 vereist evidence A of B, niet C.`)
+      }
+    }
+
+    // Gate 11: evidence A alleen bij database of meta-analyse bronnen
+    for (const [condition, s] of Object.entries(item.scores)) {
+      if (!s || s.evidence !== 'A') continue
+      const hasAuthoritativeSource = s.sources.some((src) => EVIDENCE_A_SOURCE_TYPES.has(src.type))
+      if (!hasAuthoritativeSource) {
+        fail(`${label} [${condition}]: evidence=A vereist minstens één bron van type 'database' of 'meta-analysis' (CLAUDE.md §4.4).`)
       }
     }
 
