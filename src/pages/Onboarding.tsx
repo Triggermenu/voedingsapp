@@ -5,60 +5,335 @@ import { CONDITIONS } from '@/schemas/item'
 import { saveProfile, acceptDisclaimer } from '@/lib/profile'
 import { Logo } from '@/components/Logo'
 
-const CONDITION_META: Record<Condition, { label: string; sub: string; icon: React.ReactNode }> = {
-  jicht: {
-    label: 'Jicht',
-    sub: 'Purine-arm advies',
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.249-8.25-3.286z" />
-      </svg>
-    ),
-  },
-  migraine: {
-    label: 'Migraine',
-    sub: 'Triggers vermijden',
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
-      </svg>
-    ),
-  },
-  nierstenen: {
-    label: 'Nierstenen',
-    sub: 'Oxalaat-monitoring',
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15M14.25 3.104c.251.023.501.05.75.082M19.8 15a2.25 2.25 0 01-1.8 2.25v.75A2.25 2.25 0 0115.75 20.25h-7.5A2.25 2.25 0 016 18v-.75a2.25 2.25 0 01-1.8-2.25" />
-      </svg>
-    ),
-  },
-  histamine: {
-    label: 'Histamine',
-    sub: 'SIGHI-compatibel',
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-      </svg>
-    ),
-  },
+// ── Condition metadata ──────────────────────────────────────────────────────
+const COND_META: Record<Condition, { label: string; short: string; desc: string }> = {
+  jicht:      { label: 'Jicht',      short: 'JCHT', desc: 'Purine-arm advies' },
+  migraine:   { label: 'Migraine',   short: 'MIGR', desc: 'Triggers vermijden' },
+  nierstenen: { label: 'Nierstenen', short: 'NIER', desc: 'Oxalaat-monitoring' },
+  histamine:  { label: 'Histamine',  short: 'HIST', desc: 'SIGHI-compatibel' },
 }
 
+// ── CondCell — saturated stoplicht block ────────────────────────────────────
+type ScoreStatus = 'safe' | 'ok' | 'warn' | 'avoid'
+
+function CondCell({ status, label }: { status: ScoreStatus; label: string }) {
+  return (
+    <div className={`colorblock ${status}`} style={{ width: 28, minHeight: 36 }}>
+      <span className="lbl">{label}</span>
+    </div>
+  )
+}
+
+// ── Step dots ──────────────────────────────────────────────────────────────
 function StepDots({ step }: { step: number }) {
   return (
-    <div className="flex justify-center gap-1.5 my-5">
+    <div className="flex justify-center gap-1.5 mb-4">
       {[0, 1, 2].map((i) => (
         <div
           key={i}
-          className={`h-1 rounded-full transition-all duration-300 ${
-            i === step ? 'w-6 bg-[#1a1a18]' : i < step ? 'w-2 bg-[#1a1a18]/40' : 'w-2 bg-[#c8c7bf]'
-          }`}
+          style={{
+            height: 4,
+            borderRadius: 2,
+            width: i === step ? 22 : 6,
+            background: i === step ? 'var(--ink)' : i < step ? 'rgba(26,24,21,.35)' : 'var(--rule)',
+            transition: 'all .2s',
+          }}
         />
       ))}
     </div>
   )
 }
 
+// ── PhoneShell — shared outer frame ────────────────────────────────────────
+function PhoneShell({ children, stepLabel }: { children: React.ReactNode; stepLabel: string }) {
+  return (
+    <div className="min-h-screen flex flex-col max-w-sm mx-auto" style={{ background: 'var(--bg)' }}>
+      {/* Status bar area */}
+      <div className="flex items-center justify-between px-[22px] pt-safe pt-3 pb-1">
+        <Logo size={18} />
+        <span className="eyebrow">{stepLabel}</span>
+      </div>
+      {children}
+    </div>
+  )
+}
+
+// ── Step 1: Welkom (OnbMedisch) ────────────────────────────────────────────
+function StepWelkom({ onNext }: { onNext: () => void }) {
+  return (
+    <PhoneShell stepLabel="01 — Triggermenu">
+      {/* Hero */}
+      <div className="px-[26px] pt-7 pb-4">
+        <div className="eyebrow mb-2">Voor mensen met</div>
+        <h1
+          className="serif"
+          style={{
+            fontSize: 32,
+            lineHeight: 1.06,
+            fontWeight: 500,
+            margin: '8px 0 14px',
+            letterSpacing: -0.6,
+            color: 'var(--ink)',
+          }}
+        >
+          Jicht · Migraine ·<br />Nierstenen · Histamine
+        </h1>
+        <p style={{ fontSize: 14.5, lineHeight: 1.5, color: 'var(--ink-soft)', margin: 0, maxWidth: 320 }}>
+          Zoek een voedingsmiddel en zie direct of het voor jouw aandoening veilig is.
+          Indicatief advies, transparant onderbouwd.
+        </p>
+      </div>
+
+      {/* Voorbeeld card */}
+      <div className="px-[26px] mt-2">
+        <div className="tm-card" style={{ padding: 16 }}>
+          <div className="eyebrow">Voorbeeld · zoekresultaat</div>
+          <div className="flex items-center gap-2.5 mt-2.5">
+            <div className="flex-1">
+              <div className="serif" style={{ fontSize: 16, fontWeight: 500, color: 'var(--ink)' }}>
+                Spinazie{' '}
+                <em style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 400 }}>· rauw</em>
+              </div>
+              <div className="eyebrow" style={{ fontSize: 9.5, marginTop: 2 }}>Groente · 100 g</div>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 28px)', gap: 4 }}>
+              <CondCell status="ok"    label="JCH" />
+              <CondCell status="safe"  label="MIG" />
+              <CondCell status="avoid" label="NIE" />
+              <CondCell status="warn"  label="HIS" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Feature list */}
+      <div className="px-[26px] pt-6 flex-1">
+        {[
+          { t: 'Zoek 300+ voedingsmiddelen',  d: 'Producten, ingrediënten en bereidingen — rauw, gekookt, gebakken.' },
+          { t: 'Eén stoplicht per aandoening', d: 'Veilig · Matig · Voorzichtig · Vermijden. Op één rij zichtbaar.' },
+          { t: 'Met bron en evidence-niveau',  d: 'USDA, SIGHI, EULAR. Iedere score linkt naar de gebruikte studie.' },
+        ].map((it, i, a) => (
+          <div
+            key={it.t}
+            className="flex gap-3.5 items-start"
+            style={{
+              padding: '12px 0',
+              borderBottom: i < a.length - 1 ? '1px solid var(--rule-soft)' : 'none',
+            }}
+          >
+            <div style={{
+              width: 28, height: 28, borderRadius: 8,
+              background: 'var(--brand-50)', color: 'var(--brand)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              flexShrink: 0, marginTop: 1,
+            }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 12l5 5L20 6" />
+              </svg>
+            </div>
+            <div>
+              <div style={{ fontSize: 14.5, fontWeight: 600, color: 'var(--ink)' }}>{it.t}</div>
+              <div style={{ fontSize: 12.5, color: 'var(--ink-soft)', lineHeight: 1.45, marginTop: 2 }}>{it.d}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* CTA */}
+      <div className="px-[26px] pt-5 pb-8">
+        <StepDots step={0} />
+        <button
+          onClick={onNext}
+          style={{
+            width: '100%', height: 50, borderRadius: 12,
+            background: 'var(--ink)', color: 'var(--paper)',
+            border: 'none', fontSize: 15, fontWeight: 500,
+            fontFamily: 'inherit', cursor: 'pointer',
+          }}
+        >
+          Beginnen
+        </button>
+        <p style={{ textAlign: 'center', fontSize: 11.5, color: 'var(--muted)', margin: '12px 0 0' }}>
+          Indicatief · geen vervanging voor medisch advies
+        </p>
+      </div>
+    </PhoneShell>
+  )
+}
+
+// ── Step 2: Aandoeningen ───────────────────────────────────────────────────
+function StepAandoeningen({
+  selected,
+  onToggle,
+  onNext,
+  error,
+}: {
+  selected: Condition[]
+  onToggle: (c: Condition) => void
+  onNext: () => void
+  error: string
+}) {
+  return (
+    <PhoneShell stepLabel="02 — Profiel">
+      <div className="px-6 pt-6 pb-3.5">
+        <div className="eyebrow mb-2">Stap 2 van 3</div>
+        <h2
+          className="serif"
+          style={{ fontSize: 28, lineHeight: 1.05, fontWeight: 500, margin: '8px 0 6px', letterSpacing: -0.6, color: 'var(--ink)' }}
+        >
+          Voor welke aandoening<br />
+          geef ik{' '}
+          <em style={{ fontStyle: 'italic', color: 'var(--brand)' }}>advies</em>?
+        </h2>
+        <p style={{ fontSize: 13, color: 'var(--ink-soft)', margin: 0 }}>Kies één of meer. Je kunt dit later wijzigen.</p>
+      </div>
+
+      <div className="px-6 flex flex-col gap-2.5">
+        {CONDITIONS.map((c) => {
+          const meta = COND_META[c]
+          const isOn = selected.includes(c)
+          return (
+            <button
+              key={c}
+              onClick={() => onToggle(c)}
+              style={{
+                background: isOn ? 'var(--brand-50)' : 'var(--paper)',
+                border: isOn ? '1.5px solid var(--brand)' : '1px solid var(--rule)',
+                borderRadius: 12, padding: '14px 16px',
+                display: 'flex', alignItems: 'center', gap: 14,
+                textAlign: 'left', cursor: 'pointer', fontFamily: 'inherit',
+              }}
+            >
+              <span
+                className="mono"
+                style={{ fontSize: 10, color: isOn ? 'var(--brand-2)' : 'var(--muted)', letterSpacing: .06, width: 36, flexShrink: 0 }}
+              >
+                {meta.short}
+              </span>
+              <div style={{ flex: 1 }}>
+                <div className="serif" style={{ fontSize: 17, fontWeight: 500, letterSpacing: -0.2, color: 'var(--ink)' }}>
+                  {meta.label}
+                </div>
+                <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2 }}>{meta.desc}</div>
+              </div>
+              <span style={{
+                width: 20, height: 20, borderRadius: 6,
+                background: isOn ? 'var(--brand)' : 'transparent',
+                border: isOn ? 'none' : '1.5px solid var(--rule)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+              }}>
+                {isOn && (
+                  <svg width="11" height="11" viewBox="0 0 10 10" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round">
+                    <path d="M2 5l2 2 4-4" />
+                  </svg>
+                )}
+              </span>
+            </button>
+          )
+        })}
+        {error && <p style={{ fontSize: 13, color: 'var(--avoid)', margin: '4px 0 0' }}>{error}</p>}
+      </div>
+
+      <div className="px-6 pt-6 pb-8">
+        <StepDots step={1} />
+        <button
+          onClick={onNext}
+          style={{
+            width: '100%', height: 50, borderRadius: 12,
+            background: 'var(--ink)', color: 'var(--paper)',
+            border: 'none', fontSize: 15, fontWeight: 500,
+            fontFamily: 'inherit', cursor: 'pointer',
+          }}
+        >
+          {selected.length > 0 ? `Doorgaan · ${selected.length} gekozen` : 'Doorgaan'}
+        </button>
+      </div>
+    </PhoneShell>
+  )
+}
+
+// ── Step 3: Disclaimer ─────────────────────────────────────────────────────
+function StepDisclaimer({
+  checked,
+  onToggle,
+  onStart,
+}: {
+  checked: boolean
+  onToggle: () => void
+  onStart: () => void
+}) {
+  return (
+    <PhoneShell stepLabel="03 — Disclaimer">
+      <div className="px-6 pt-6 pb-4.5">
+        <div className="eyebrow mb-2">Belangrijk</div>
+        <h2
+          className="serif"
+          style={{ fontSize: 28, lineHeight: 1.06, fontWeight: 500, margin: '8px 0 4px', letterSpacing: -0.5, color: 'var(--ink)' }}
+        >
+          Een kompas,<br />geen recept.
+        </h2>
+      </div>
+
+      <div className="px-6">
+        <div className="tm-card" style={{ padding: '6px 18px 10px' }}>
+          {[
+            { t: 'Indicatief, niet medisch advies', d: 'Bespreek wijzigingen met je arts of diëtist.' },
+            { t: 'Per persoon verschillend',         d: 'Reacties op voeding variëren. Houd zo nodig een dagboek bij.' },
+            { t: 'Transparant onderbouwd',           d: 'Iedere score linkt naar de gebruikte studie of dataset.' },
+          ].map((it, i, a) => (
+            <div
+              key={it.t}
+              style={{ padding: '14px 0', borderBottom: i < a.length - 1 ? '1px solid var(--rule-soft)' : 'none' }}
+            >
+              <div className="serif" style={{ fontSize: 16, fontWeight: 500, color: 'var(--ink)' }}>{it.t}</div>
+              <div style={{ fontSize: 12.5, color: 'var(--ink-soft)', lineHeight: 1.45, marginTop: 2 }}>{it.d}</div>
+            </div>
+          ))}
+        </div>
+
+        <label
+          onClick={onToggle}
+          style={{ display: 'flex', gap: 10, alignItems: 'flex-start', marginTop: 18, fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.45, cursor: 'pointer' }}
+        >
+          <span style={{
+            width: 18, height: 18, borderRadius: 5,
+            background: checked ? 'var(--brand)' : 'transparent',
+            border: checked ? 'none' : '1.5px solid var(--rule)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            flexShrink: 0, marginTop: 1,
+          }}>
+            {checked && (
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round">
+                <path d="M2 5l2 2 4-4" />
+              </svg>
+            )}
+          </span>
+          <span>Ik begrijp dat Triggermenu een hulpmiddel is en geen medisch advies vervangt.</span>
+        </label>
+      </div>
+
+      <div className="px-6 pt-6 pb-8">
+        <StepDots step={2} />
+        <button
+          onClick={onStart}
+          disabled={!checked}
+          style={{
+            width: '100%', height: 50, borderRadius: 12,
+            background: checked ? 'var(--brand)' : 'var(--rule)',
+            color: checked ? '#fff' : 'var(--muted)',
+            border: 'none', fontSize: 15, fontWeight: 600,
+            fontFamily: 'inherit', cursor: checked ? 'pointer' : 'not-allowed',
+            transition: 'background .15s',
+          }}
+        >
+          Aan de slag
+        </button>
+      </div>
+    </PhoneShell>
+  )
+}
+
+// ── Root Onboarding ────────────────────────────────────────────────────────
 export function Onboarding() {
   const navigate = useNavigate()
   const [step, setStep] = useState(0)
@@ -82,138 +357,7 @@ export function Onboarding() {
     navigate('/zoeken')
   }
 
-  const stepLabel = ['01 — WELKOM', '02 — PROFIEL', '03 — DISCLAIMER'][step]
-
-  return (
-    <div className="min-h-screen bg-[#f8f7f4] flex flex-col max-w-md mx-auto">
-      <div className="flex items-center justify-between px-5 pt-safe pt-3 pb-2">
-        <Logo size={28} />
-        <span className="text-[10px] tracking-widest text-[#9c9a92] font-medium">{stepLabel}</span>
-      </div>
-
-      <div className="flex-1 flex flex-col px-5 pb-8">
-        {step === 0 && (
-          <div className="flex-1 flex flex-col">
-            <div className="flex-1 pt-6">
-              <p className="text-[11px] tracking-widest text-[#9c9a92] uppercase font-medium mb-4">Eet rustiger. Eet beter.</p>
-              <h1 className="font-serif text-[2.6rem] leading-[1.1] font-semibold text-[#1a1a18] mb-5">
-                Welke voeding past bij{' '}
-                <em className="not-italic italic text-[#1d9e75]">jouw lichaam</em>?
-              </h1>
-              <p className="text-[#5f5e5a] text-[15px] leading-relaxed mb-6">
-                Triggermenu vertaalt onderzoek over jicht, migraine, nierstenen en histamine-intolerantie naar één rustig stoplicht.
-              </p>
-              <div className="rounded-2xl bg-gradient-to-br from-[#e8f0eb] to-[#d4e6db] h-44 flex items-center justify-center">
-                <div className="w-20 h-20 rounded-full border-2 border-[#1d9e75]/30 flex items-center justify-center">
-                  <Logo size={44} />
-                </div>
-              </div>
-            </div>
-            <StepDots step={step} />
-            <button
-              onClick={handleNext}
-              className="w-full bg-[#1a1a18] hover:bg-[#2d2d2b] text-white font-medium py-4 rounded-2xl text-[15px] flex items-center justify-center gap-2 transition-colors"
-            >
-              Beginnen <span>→</span>
-            </button>
-            <p className="text-center text-xs text-[#9c9a92] mt-3">Geen account · geen tracking</p>
-          </div>
-        )}
-
-        {step === 1 && (
-          <div className="flex-1 flex flex-col">
-            <div className="flex-1 pt-4">
-              <p className="text-xs text-[#9c9a92] mb-2">Stap 2 van 3</p>
-              <h1 className="font-serif text-[2rem] leading-[1.15] font-semibold text-[#1a1a18] mb-1">
-                Voor welke{' '}
-                <em className="not-italic italic text-[#1d9e75]">aandoening</em>{' '}
-                kies je advies?
-              </h1>
-              <p className="text-sm text-[#73726c] mb-5">Je kunt er meer dan één kiezen.</p>
-              <div className="grid grid-cols-2 gap-3">
-                {CONDITIONS.map((c) => {
-                  const meta = CONDITION_META[c]
-                  const isOn = selected.includes(c)
-                  return (
-                    <button
-                      key={c}
-                      onClick={() => toggle(c)}
-                      className={`relative p-4 rounded-2xl border-2 text-left transition-all ${
-                        isOn ? 'border-[#1d9e75] bg-[#f0faf5]' : 'border-[#e0dfd7] bg-white hover:border-[#c8c7bf]'
-                      }`}
-                    >
-                      {isOn && (
-                        <span className="absolute top-3 right-3 w-5 h-5 rounded-full bg-[#1d9e75] flex items-center justify-center">
-                          <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                          </svg>
-                        </span>
-                      )}
-                      <span className={`mb-2 block ${isOn ? 'text-[#1d9e75]' : 'text-[#73726c]'}`}>{meta.icon}</span>
-                      <p className="font-semibold text-[#1a1a18] text-sm">{meta.label}</p>
-                      <p className="text-[11px] text-[#9c9a92] mt-0.5">{meta.sub}</p>
-                    </button>
-                  )
-                })}
-              </div>
-              {error && <p className="text-sm text-red-600 mt-3">{error}</p>}
-            </div>
-            <StepDots step={step} />
-            <button
-              onClick={handleNext}
-              className="w-full bg-[#1a1a18] hover:bg-[#2d2d2b] text-white font-medium py-4 rounded-2xl text-[15px] transition-colors"
-            >
-              {selected.length > 0 ? `Doorgaan · ${selected.length} gekozen` : 'Doorgaan'}
-            </button>
-          </div>
-        )}
-
-        {step === 2 && (
-          <div className="flex-1 flex flex-col">
-            <div className="flex-1 pt-4">
-              <p className="text-[11px] tracking-widest text-[#9c9a92] uppercase font-medium mb-4">Even iets belangrijks</p>
-              <h1 className="font-serif text-[2.2rem] leading-[1.15] font-semibold text-[#1a1a18] mb-6">
-                Een <em className="not-italic italic text-[#1d9e75]">kompas</em>, geen recept.
-              </h1>
-              <div className="bg-white rounded-2xl border border-[#e0dfd7] divide-y divide-[#f0efe8]">
-                {[
-                  { n: '01', title: 'Indicatief, niet medisch advies', text: 'Triggermenu vervangt geen arts of diëtist — gebruik het als startpunt voor een gesprek.' },
-                  { n: '02', title: 'Per persoon verschillend', text: 'Dezelfde voeding kan bij jou anders uitpakken. Houd zo nodig een dagboek bij.' },
-                  { n: '03', title: 'Transparant onderbouwd', text: 'Iedere score linkt naar de bron: USDA, SIGHI, EULAR, AUA en peer-reviewed papers.' },
-                ].map(({ n, title, text }) => (
-                  <div key={n} className="px-4 py-3.5 flex gap-4">
-                    <span className="text-xs font-semibold text-[#9c9a92] pt-0.5 w-5 flex-shrink-0">{n}</span>
-                    <div>
-                      <p className="text-sm font-semibold text-[#1a1a18]">{title}</p>
-                      <p className="text-xs text-[#73726c] mt-0.5 leading-relaxed">{text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <label className="flex items-start gap-3 mt-5 cursor-pointer" onClick={() => setDisclaimerChecked(!disclaimerChecked)}>
-                <span className={`mt-0.5 w-5 h-5 rounded border-2 flex-shrink-0 flex items-center justify-center transition-colors ${disclaimerChecked ? 'bg-[#1d9e75] border-[#1d9e75]' : 'border-[#c8c7bf]'}`}>
-                  {disclaimerChecked && (
-                    <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                    </svg>
-                  )}
-                </span>
-                <span className="text-sm text-[#3d3d3a] leading-relaxed">
-                  Ik begrijp dat Triggermenu een hulpmiddel is en geen medisch advies vervangt.
-                </span>
-              </label>
-            </div>
-            <StepDots step={step} />
-            <button
-              onClick={handleStart}
-              disabled={!disclaimerChecked}
-              className="w-full bg-[#1d9e75] hover:bg-[#178a65] disabled:bg-[#c8c7bf] disabled:cursor-not-allowed text-white font-medium py-4 rounded-2xl text-[15px] transition-colors"
-            >
-              Aan de slag
-            </button>
-          </div>
-        )}
-      </div>
-    </div>
-  )
+  if (step === 0) return <StepWelkom onNext={handleNext} />
+  if (step === 1) return <StepAandoeningen selected={selected} onToggle={toggle} onNext={handleNext} error={error} />
+  return <StepDisclaimer checked={disclaimerChecked} onToggle={() => setDisclaimerChecked((v) => !v)} onStart={handleStart} />
 }
