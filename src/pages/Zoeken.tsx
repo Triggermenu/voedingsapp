@@ -78,10 +78,10 @@ function CardC({
     return getAlternatives(item, conditions, 3)
   }, [expanded, item, conditions])
 
-  // Extract subcategory (everything after the first " (" or use name sub-part)
-  const nameParts = item.name.nl.match(/^([^(]+?)(?:\s*\(([^)]+)\))?$/)
-  const baseName = nameParts?.[1]?.trim() ?? item.name.nl
-  const sub = nameParts?.[2]?.trim()
+  // Keep full item.name.nl as text (for Playwright getByText), but italicize the parenthetical
+  const nameMatch = item.name.nl.match(/^(.*?)(\s*\([^)]+\))$/)
+  const nameMain = nameMatch ? nameMatch[1] : item.name.nl
+  const nameParen = nameMatch ? nameMatch[2] : null
 
   return (
     <div style={{
@@ -93,21 +93,27 @@ function CardC({
       marginBottom: expanded ? 4 : 0,
     }}>
       <div className="flex items-center gap-2.5">
-        {/* Name + category */}
-        <div style={{ flex: 1, minWidth: 0 }}>
+        {/* Name + category — clicking navigates to item detail */}
+        <button
+          onClick={() => onNavigate(item.id)}
+          style={{
+            flex: 1, minWidth: 0, textAlign: 'left',
+            background: 'none', border: 'none', padding: 0, cursor: 'pointer', fontFamily: 'inherit',
+          }}
+        >
           <div
             className="serif"
             style={{ fontSize: 17, lineHeight: 1.1, fontWeight: 500, letterSpacing: -0.2, color: 'var(--ink)' }}
           >
-            {baseName}
-            {sub && (
-              <em style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 400 }}> · {sub}</em>
+            {nameMain}
+            {nameParen && (
+              <em style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 400 }}>{nameParen}</em>
             )}
           </div>
           <div className="eyebrow" style={{ fontSize: 9.5, marginTop: 3 }}>
             {CATEGORY_LABELS[item.category as Category] ?? item.category}
           </div>
-        </div>
+        </button>
 
         {/* 4 condition cells */}
         <div style={{ display: 'grid', gridTemplateColumns: `repeat(${conditions.length}, 30px)`, gap: 4 }}>
@@ -577,25 +583,26 @@ export function Zoeken() {
                     {CATEGORY_LABELS[cat] ?? cat} · {items.length}
                   </div>
                   {items.map((item) => {
-                    const nameParts = item.name.nl.match(/^([^(]+?)(?:\s*\(([^)]+)\))?$/)
-                    const baseName = nameParts?.[1]?.trim() ?? item.name.nl
-                    const sub = nameParts?.[2]?.trim()
+                    const nm = item.name.nl.match(/^(.*?)(\s*\([^)]+\))$/)
+                    const nmMain = nm ? nm[1] : item.name.nl
+                    const nmParen = nm ? nm[2] : null
                     return (
-                      <div
+                      <button
                         key={item.id}
                         onClick={() => handleItemClick(item.id)}
                         style={{
+                          width: '100%', textAlign: 'left', fontFamily: 'inherit',
                           padding: 12, borderBottom: '1px solid var(--rule-soft)',
                           display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 10,
                           background: selectedId === item.id ? 'var(--brand-50)' : 'transparent',
                           borderRadius: selectedId === item.id ? 8 : 0,
-                          cursor: 'pointer',
+                          border: 'none', cursor: 'pointer',
                         }}
                       >
                         <div style={{ minWidth: 0, flex: 1 }}>
                           <div className="serif" style={{ fontSize: 14.5, fontWeight: 500, color: 'var(--ink)' }}>
-                            {baseName}
-                            {sub && <em style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 400 }}> · {sub}</em>}
+                            {nmMain}
+                            {nmParen && <em style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 400 }}>{nmParen}</em>}
                           </div>
                           <div className="eyebrow" style={{ fontSize: 9, marginTop: 2 }}>{CATEGORY_LABELS[cat] ?? cat}</div>
                         </div>
@@ -607,7 +614,7 @@ export function Zoeken() {
                             )
                           })}
                         </div>
-                      </div>
+                      </button>
                     )
                   })}
                 </div>
