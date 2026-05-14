@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Design tokens — Triggermenu Medisch-helder ────────────────────────── */
+:root {
+  /* Editorial palette — warm paper */
+  --bg:        #f5f2ea;
+  --paper:     #fbfaf5;
+  --paper-2:   #efebe1;
+  --ink:       #1a1815;
+  --ink-soft:  #3d3a33;
+  --muted:     #7a7466;
+  --rule:      #e3ddce;
+  --rule-soft: #ece6d8;
+
+  /* Brand */
+  --brand:     #1d6e54;
+  --brand-2:   #14573f;
+  --brand-50:  #e5efe9;
+  --plum:      #6e3a4c;
+  --ochre:     #b8893a;
+
+  /* Stoplicht — vriendelijk */
+  --safe:      #2a8a4a;  --safe-bg:   #d4ead7;  --safe-ink:  #1f5a2f;
+  --ok:        #d9a017;  --ok-bg:     #f6e6b3;  --ok-ink:    #5e4400;
+  --warn:      #db6a1f;  --warn-bg:   #f7d4b3;  --warn-ink:  #6e2c00;
+  --avoid:     #c4332c;  --avoid-bg:  #f3cbc7;  --avoid-ink: #5e120e;
+
+  --density:   1;
+  --shadow:    0 1px 0 rgba(20,15,10,.04), 0 10px 30px -18px rgba(20,15,10,.18);
+  --radius:    14px;
+}
+
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
@@ -9,8 +39,15 @@
   }
 
   body {
-    @apply bg-[#f8f7f4] text-[#1a1a18] antialiased;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter Tight", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }
 
@@ -23,3 +60,130 @@
   }
 }
 
+/* ── Typography helpers ─────────────────────────────────────────────────── */
+.font-serif,
+.serif {
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-optical-sizing: auto;
+}
+
+.font-mono,
+.mono {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.eyebrow {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ── Card ───────────────────────────────────────────────────────────────── */
+.tm-card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ── Stoplicht atoms ────────────────────────────────────────────────────── */
+.dot {
+  width: .55em;
+  height: .55em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  padding: .3em .6em;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+}
+.pill.safe  { background: var(--safe-bg);  color: var(--safe-ink); }
+.pill.ok    { background: var(--ok-bg);    color: var(--ok-ink); }
+.pill.warn  { background: var(--warn-bg);  color: var(--warn-ink); }
+.pill.avoid { background: var(--avoid-bg); color: var(--avoid-ink); }
+.pill .dot.safe  { background: var(--safe); }
+.pill .dot.ok    { background: var(--ok); }
+.pill .dot.warn  { background: var(--warn); }
+.pill .dot.avoid { background: var(--avoid); }
+
+/* Color-block — saturated stoplicht cell for dense rows */
+.colorblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 6px 0 5px;
+  min-height: 38px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  line-height: 1;
+  gap: 2px;
+}
+.colorblock .lbl {
+  font-size: 8.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: .78;
+}
+.colorblock.safe  { background: var(--safe);  color: #fff; }
+.colorblock.ok    { background: var(--ok);    color: #241800; }
+.colorblock.warn  { background: var(--warn);  color: #fff; }
+.colorblock.avoid { background: var(--avoid); color: #fff; }
+.colorblock.null  { background: var(--paper-2); color: var(--muted); }
+
+/* Swatch helpers */
+.swatch-safe  { background: var(--safe); }
+.swatch-ok    { background: var(--ok); }
+.swatch-warn  { background: var(--warn); }
+.swatch-avoid { background: var(--avoid); }
+
+/* Stripe bar */
+.stripe-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--paper-2);
+  overflow: hidden;
+  display: flex;
+}
+.stripe-bar > span { display: block; height: 100%; }
+
+/* Nav blur */
+.nav-blur {
+  background: color-mix(in srgb, var(--paper) 85%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid var(--rule);
+}
+
+/* Micro tile */
+.micro-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule-soft);
+}
+.micro-tile .name {
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.micro-tile .val {
+  font-size: 13px;
+  font-weight: 600;
+}
