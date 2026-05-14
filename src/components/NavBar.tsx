@@ -36,19 +36,18 @@ export function NavBar() {
       ),
     },
     {
-      to: '/bronnen',
-      label: 'Bronnen',
+      to: '/scan',
+      label: 'Menu scan',
       badge: null,
       icon: (active: boolean) => (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
-          <path d="M4 4h11a3 3 0 013 3v13a2 2 0 00-2-2H4z" />
-          <path d="M4 4v14h12" />
+          <path d="M4 7V5a1 1 0 011-1h2M20 7V5a1 1 0 00-1-1h-2M4 17v2a1 1 0 001 1h2M20 17v2a1 1 0 01-1 1h-2M8 12h8" />
         </svg>
       ),
     },
     {
       to: '/instellingen',
-      label: 'Profiel',
+      label: 'Instellingen',
       badge: null,
       icon: (active: boolean) => (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2 : 1.8} strokeLinecap="round" strokeLinejoin="round">
