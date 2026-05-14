@@ -26,6 +26,15 @@ const SCORE_LABELS: Record<number, string> = {
   0: 'Veilig', 1: 'Matig', 2: 'Voorzichtig', 3: 'Vermijden',
 }
 
+const TRIGGER_LABELS: Record<string, string> = {
+  'universeel': 'universele trigger',
+  'subgroep-bevestigd': 'subgroep-trigger',
+  'subgroep-overschat': 'subgroep — overschat',
+  'onttrekkings-trigger': 'onttrekkingstrigger',
+  'drug-interactie': 'alleen bij medicatie',
+  'context-afhankelijk': 'context-afhankelijk',
+}
+
 type CellStatus = 'safe' | 'ok' | 'warn' | 'avoid' | 'null'
 
 function scoreToStatus(score: number | null): CellStatus {
@@ -152,6 +161,22 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                         {s.note.nl}
                       </div>
                     )}
+                    {(s as any).triggerType && (
+                      <div style={{ marginBottom: 5 }}>
+                        <span style={{
+                          fontSize: 11, padding: '2px 8px', borderRadius: 999,
+                          background: 'var(--paper-2)', color: 'var(--ink-soft)',
+                          border: '1px solid var(--rule-soft)',
+                        }}>
+                          {TRIGGER_LABELS[(s as any).triggerType] ?? (s as any).triggerType}
+                        </span>
+                      </div>
+                    )}
+                    {(s as any).primaryModulators?.length > 0 && (
+                      <div style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 5 }}>
+                        Gevoelig bij: {(s as any).primaryModulators.join(', ')}
+                      </div>
+                    )}
                     {s.sources.slice(0, 1).map((src, si) => (
                       <a
                         key={si}
@@ -172,6 +197,11 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                     {s.evidence && (
                       <span className="mono" style={{ fontSize: 9.5, color: 'var(--muted)', marginLeft: s.sources.length > 0 ? 8 : 0 }}>
                         EV·{s.evidence}
+                      </span>
+                    )}
+                    {(s as any).confidence && (
+                      <span className="mono" style={{ fontSize: 9.5, color: 'var(--muted)', marginLeft: 8 }}>
+                        vertrouwen: {(s as any).confidence}
                       </span>
                     )}
                   </>
