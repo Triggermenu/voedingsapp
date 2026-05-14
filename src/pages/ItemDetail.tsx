@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getProfile } from '@/lib/profile'
 import { getItemById } from '@/lib/db'
+import { isInList, toggleList } from '@/lib/list'
 import { ItemDetailPanel } from '@/components/ItemDetailPanel'
 import { NavBar } from '@/components/NavBar'
 
@@ -10,6 +12,7 @@ export function ItemDetail() {
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
   const item = id ? getItemById(id) : null
+  const [saved, setSaved] = useState(() => (id ? isInList(id) : false))
 
   if (!id || !item) {
     return (
@@ -46,8 +49,12 @@ export function ItemDetail() {
           </svg>
           Terug
         </button>
-        <button style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--ink-soft)' }}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <button
+          onClick={() => { if (id) setSaved(toggleList(id)) }}
+          aria-label={saved ? 'Verwijder van lijst' : 'Voeg toe aan lijst'}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: saved ? 'var(--avoid)' : 'var(--ink-soft)', transition: 'color 0.15s' }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill={saved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8">
             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.29 1.51 4.04 3 5.5l7 7z" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
