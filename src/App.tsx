@@ -6,6 +6,7 @@ import { Scan } from '@/pages/Scan'
 import { Bronnen } from '@/pages/Bronnen'
 import { Instellingen } from '@/pages/Instellingen'
 import { Recepten } from '@/pages/Recepten'
+import { Lijst } from '@/pages/Lijst'
 import { ItemDetail } from '@/pages/ItemDetail'
 import { Privacy } from '@/pages/Privacy'
 import { Admin } from '@/pages/Admin'
@@ -24,6 +25,7 @@ export default function App() {
       <Route path="/zoeken" element={<RequireProfile><Zoeken /></RequireProfile>} />
       <Route path="/item/:id" element={<RequireProfile><ItemDetail /></RequireProfile>} />
       <Route path="/recepten" element={<RequireProfile><Recepten /></RequireProfile>} />
+      <Route path="/lijst" element={<RequireProfile><Lijst /></RequireProfile>} />
       <Route path="/scan" element={<RequireProfile><Scan /></RequireProfile>} />
       <Route path="/bronnen" element={<RequireProfile><Bronnen /></RequireProfile>} />
       <Route path="/instellingen" element={<RequireProfile><Instellingen /></RequireProfile>} />
