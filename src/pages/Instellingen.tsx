@@ -9,11 +9,11 @@ import { getCombinedScore } from '@/lib/scoring'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
 
-const CONDITION_LABELS: Record<Condition, string> = {
-  jicht: 'Jicht',
-  migraine: 'Migraine',
-  nierstenen: 'Nierstenen',
-  histamine: 'Histamine',
+const COND_META: Record<Condition, { label: string; short: string }> = {
+  jicht:      { label: 'Jicht',      short: 'JCHT' },
+  migraine:   { label: 'Migraine',   short: 'MIGR' },
+  nierstenen: { label: 'Nierstenen', short: 'NIER' },
+  histamine:  { label: 'Histamine',  short: 'HIST' },
 }
 
 export function Instellingen() {
@@ -27,18 +27,20 @@ export function Instellingen() {
   const allItems = getAllItems()
   const viewedItems = allItems.filter((i) => todayStats.viewed.includes(i.id))
 
-  const scoreCounts = viewedItems.reduce((acc, item) => {
-    const s = getCombinedScore(item, conditions).score
-    if (s === 0) acc.veilig++
-    else if (s === 1) acc.matig++
-    else if (s === 2) acc.voorzichtig++
-    else if (s === 3) acc.vermijden++
-    return acc
-  }, { veilig: 0, matig: 0, voorzichtig: 0, vermijden: 0 })
+  const scoreCounts = viewedItems.reduce(
+    (acc, item) => {
+      const s = getCombinedScore(item, conditions).score
+      if (s === 0) acc.veilig++
+      else if (s === 1) acc.matig++
+      else if (s === 2) acc.voorzichtig++
+      else if (s === 3) acc.vermijden++
+      return acc
+    },
+    { veilig: 0, matig: 0, voorzichtig: 0, vermijden: 0 }
+  )
 
-  const safePercent = viewedItems.length > 0
-    ? Math.round((scoreCounts.veilig / viewedItems.length) * 100)
-    : null
+  const safePercent =
+    viewedItems.length > 0 ? Math.round((scoreCounts.veilig / viewedItems.length) * 100) : null
 
   const toggle = (c: Condition) => {
     setSaved(false)
@@ -60,95 +62,122 @@ export function Instellingen() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f8f7f4] pb-24">
+    <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
       {/* Header */}
-      <div className="px-4 pt-safe pt-5 pb-4 border-b border-[#e0dfd7]">
-        <div className="flex items-center gap-2 mb-3">
-          <Logo size={26} />
-          <span className="font-serif font-semibold text-[#1a1a18] text-base">Triggermenu</span>
-        </div>
-        <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-1">Mijn profiel</p>
-        <h1 className="font-serif text-[1.9rem] leading-[1.15] font-semibold text-[#1a1a18]">
-          Wat moet ik voor{' '}
-          <em className="not-italic italic text-[#1d9e75]">jou</em> in de gaten houden?
+      <div style={{ padding: '8px 22px 0' }} className="pt-safe">
+        <Logo size={18} />
+      </div>
+      <div style={{ padding: '18px 22px 6px' }}>
+        <div className="eyebrow" style={{ marginBottom: 8 }}>Mijn profiel</div>
+        <h1 className="serif" style={{ fontSize: 26, lineHeight: 1.05, fontWeight: 500, margin: '8px 0 4px', letterSpacing: -0.5, color: 'var(--ink)' }}>
+          Voor wie advies?
         </h1>
-        <p className="text-sm text-[#73726c] mt-1">Je zoekresultaten en menuscan passen zich aan.</p>
+        <p style={{ fontSize: 13, color: 'var(--muted)', margin: 0 }}>
+          Zoekresultaten passen zich aan jouw selectie aan.
+        </p>
       </div>
 
-      <div className="px-4 py-4 space-y-4">
-        {/* Conditions */}
-        <div className="space-y-2">
-          {CONDITIONS.map((c) => {
-            const isOn = selected.includes(c)
-            return (
-              <button
-                key={c}
-                onClick={() => toggle(c)}
-                className={`w-full flex items-center justify-between px-4 py-3.5 rounded-xl border transition-all ${
-                  isOn ? 'border-[#1d9e75] bg-[#f0faf5]' : 'border-[#e0dfd7] bg-white'
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <span className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 ${isOn ? 'border-[#1d9e75] bg-[#1d9e75]' : 'border-[#c8c7bf]'}`}>
-                    {isOn && (
-                      <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    )}
-                  </span>
-                  <span className="font-medium text-[#1a1a18]">{CONDITION_LABELS[c]}</span>
-                </div>
+      {/* Condition toggles */}
+      <div style={{ padding: '14px 22px', display: 'flex', flexDirection: 'column', gap: 8 }}>
+        {CONDITIONS.map((c) => {
+          const meta = COND_META[c]
+          const isOn = selected.includes(c)
+          return (
+            <button
+              key={c}
+              onClick={() => toggle(c)}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 12,
+                padding: '14px 16px', borderRadius: 10, cursor: 'pointer',
+                background: isOn ? 'var(--brand-50)' : 'var(--paper)',
+                border: isOn ? '1px solid var(--brand)' : '1px solid var(--rule)',
+                fontFamily: 'inherit', textAlign: 'left',
+              }}
+            >
+              <span className="mono" style={{ fontSize: 10, color: isOn ? 'var(--brand-2)' : 'var(--muted)', width: 36 }}>
+                {meta.short}
+              </span>
+              <span className="serif" style={{ fontSize: 16, fontWeight: 500, flex: 1, color: 'var(--ink)' }}>
+                {meta.label}
+              </span>
+              <span style={{
+                width: 18, height: 18, borderRadius: 5, flexShrink: 0,
+                background: isOn ? 'var(--brand)' : 'transparent',
+                border: isOn ? 'none' : '1.5px solid var(--rule)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}>
                 {isOn && (
-                  <span className="text-[10px] tracking-widest text-[#1d9e75] font-semibold uppercase">Actief</span>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round">
+                    <path d="M2 5l2 2 4-4" />
+                  </svg>
                 )}
-              </button>
-            )
-          })}
-        </div>
+              </span>
+            </button>
+          )
+        })}
+      </div>
 
+      {/* Save button */}
+      <div style={{ padding: '4px 22px 12px' }}>
         <button
           onClick={handleSave}
           disabled={selected.length === 0}
-          className="w-full bg-[#1d9e75] hover:bg-[#178a65] disabled:bg-[#c8c7bf] text-white font-medium py-3.5 rounded-xl transition-colors"
+          style={{
+            width: '100%', height: 46, borderRadius: 10, fontFamily: 'inherit',
+            background: selected.length === 0 ? 'var(--rule)' : 'var(--brand)',
+            color: selected.length === 0 ? 'var(--muted)' : '#fff',
+            border: 'none', fontSize: 14, fontWeight: 600, cursor: selected.length === 0 ? 'not-allowed' : 'pointer',
+          }}
         >
           {saved ? '✓ Opgeslagen' : 'Opslaan'}
         </button>
+      </div>
 
-        {/* Today stats */}
-        {viewedItems.length > 0 && (
-          <div className="bg-white border border-[#e0dfd7] rounded-xl p-4">
-            <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">Vandaag</p>
-            <div className="flex items-end justify-between mb-2">
+      {/* Today stats */}
+      {viewedItems.length > 0 && (
+        <div style={{ padding: '0 22px 4px' }}>
+          <div className="eyebrow" style={{ marginBottom: 10 }}>Vandaag</div>
+          <div className="tm-card" style={{ padding: 16 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div>
-                <p className="font-semibold text-[#1a1a18]">{viewedItems.length} items bekeken</p>
-                <p className="text-xs text-[#9c9a92] mt-0.5">
+                <div className="serif" style={{ fontSize: 18, fontWeight: 500, color: 'var(--ink)' }}>
+                  {viewedItems.length} items bekeken
+                </div>
+                <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2 }}>
                   {scoreCounts.veilig} veilig · {scoreCounts.matig} matig · {scoreCounts.vermijden} vermijden
-                </p>
+                </div>
               </div>
               {safePercent !== null && (
-                <span className="font-serif text-2xl font-semibold text-[#1d9e75]">{safePercent}%</span>
+                <div className="mono" style={{ fontSize: 22, color: 'var(--ink)', fontWeight: 600 }}>
+                  {safePercent}<span style={{ color: 'var(--muted)', fontSize: 14 }}>%</span>
+                </div>
               )}
             </div>
-            {/* Progress bar */}
-            <div className="h-2 rounded-full bg-[#f0efe8] overflow-hidden flex">
-              <div className="bg-emerald-500 h-full transition-all" style={{ width: `${(scoreCounts.veilig / viewedItems.length) * 100}%` }} />
-              <div className="bg-yellow-400 h-full transition-all" style={{ width: `${(scoreCounts.matig / viewedItems.length) * 100}%` }} />
-              <div className="bg-orange-500 h-full transition-all" style={{ width: `${(scoreCounts.voorzichtig / viewedItems.length) * 100}%` }} />
-              <div className="bg-red-600 h-full transition-all" style={{ width: `${(scoreCounts.vermijden / viewedItems.length) * 100}%` }} />
+            {/* Stripe bar */}
+            <div className="stripe-bar" style={{ marginTop: 12 }}>
+              <span className="swatch-safe" style={{ flex: scoreCounts.veilig }} />
+              <span className="swatch-ok"   style={{ flex: scoreCounts.matig }} />
+              <span className="swatch-warn" style={{ flex: scoreCounts.voorzichtig }} />
+              <span className="swatch-avoid"style={{ flex: scoreCounts.vermijden }} />
             </div>
           </div>
-        )}
+        </div>
+      )}
 
-        <button onClick={handleReset} className="w-full text-xs text-[#9c9a92] hover:text-red-500 py-2 transition-colors">
+      {/* Footer links */}
+      <div style={{ padding: '20px 22px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+        <button
+          onClick={handleReset}
+          style={{ fontSize: 12, color: 'var(--muted)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}
+        >
           Profiel wissen
         </button>
-
-        <div className="flex justify-center gap-4 pt-1">
-          <Link to="/privacy" className="text-xs text-[#9c9a92] hover:text-[#1d9e75] transition-colors">
+        <div style={{ display: 'flex', gap: 16 }}>
+          <Link to="/privacy" style={{ fontSize: 12, color: 'var(--muted)', textDecoration: 'none' }}>
             Privacybeleid
           </Link>
-          <span className="text-xs text-[#c8c7bf]">·</span>
-          <span className="text-xs text-[#c8c7bf]">Triggermenu v0.1</span>
+          <span style={{ fontSize: 12, color: 'var(--rule)' }}>·</span>
+          <span style={{ fontSize: 12, color: 'var(--muted)' }}>Triggermenu v0.1</span>
         </div>
       </div>
 
