@@ -5,6 +5,131 @@ const CATEGORY_FALLBACKS: Partial<Record<Category, Category>> = {
   'dranken-alcohol': 'dranken-non-alcohol',
 }
 
+/**
+ * Groepeert gerelateerde subcategorieën voor betere alternatieven.
+ * Dekt ook typevarianten in de data (bladgroente/bladgroenten etc.).
+ * Tier 1.5 in getAlternatives gebruikt deze groepen.
+ */
+const SUBCATEGORY_GROUPS: Record<string, string[]> = {
+  // ── Zuivel ────────────────────────────────────────────────────────
+  'kaas-vers':    ['kaas-vers', 'kaas-gerijpt', 'kaas'],
+  'kaas-gerijpt': ['kaas-vers', 'kaas-gerijpt', 'kaas'],
+  'kaas':         ['kaas-vers', 'kaas-gerijpt', 'kaas'],
+  'melk':         ['melk'],
+  'yoghurt-kwark':['yoghurt-kwark'],
+  'eieren':       ['eieren'],
+  'room-boter':   ['room-boter'],
+
+  // ── Vis ───────────────────────────────────────────────────────────
+  'magere-vis':    ['magere-vis', 'vette-vis', 'zeevis', 'zoetwatervis', 'bereide-vis', 'bewerkte-vis'],
+  'vette-vis':     ['vette-vis', 'magere-vis', 'zeevis', 'zoetwatervis', 'bereide-vis', 'bewerkte-vis'],
+  'zeevis':        ['zeevis', 'zoetwatervis', 'magere-vis', 'vette-vis'],
+  'zoetwatervis':  ['zoetwatervis', 'zeevis', 'magere-vis', 'vette-vis'],
+  'bereide-vis':   ['bereide-vis', 'bewerkte-vis', 'magere-vis', 'vette-vis'],
+  'bewerkte-vis':  ['bereide-vis', 'bewerkte-vis', 'magere-vis', 'vette-vis'],
+  'gerookt-gerijpt':['gerookt-gerijpt', 'bereide-vis', 'bewerkte-vis'],
+  'schaaldieren':  ['schaaldieren', 'schelpdieren', 'schaal-schelpdieren'],
+  'schelpdieren':  ['schaaldieren', 'schelpdieren', 'schaal-schelpdieren'],
+  'schaal-schelpdieren': ['schaaldieren', 'schelpdieren', 'schaal-schelpdieren'],
+
+  // ── Vlees ─────────────────────────────────────────────────────────
+  'rood-vlees':     ['rood-vlees', 'gevogelte', 'wild'],
+  'gevogelte':      ['gevogelte', 'rood-vlees', 'wild'],
+  'wild':           ['wild', 'rood-vlees', 'gevogelte'],
+  'orgaanvlees':    ['orgaanvlees'],
+  'verwerkt-vlees': ['verwerkt-vlees', 'bereid-vlees', 'bewerkt-vlees'],
+  'bereid-vlees':   ['bereid-vlees', 'verwerkt-vlees', 'bewerkt-vlees'],
+  'bewerkt-vlees':  ['bereid-vlees', 'verwerkt-vlees', 'bewerkt-vlees'],
+
+  // ── Fruit (dekt ook typevarianten) ────────────────────────────────
+  'citrus':         ['citrus', 'citrusfruit'],
+  'citrusfruit':    ['citrus', 'citrusfruit'],
+  'steenfruit':     ['steenfruit', 'steenvrucht'],
+  'steenvrucht':    ['steenfruit', 'steenvrucht'],
+  'meloen':         ['meloen', 'meloenen'],
+  'meloenen':       ['meloen', 'meloenen'],
+  'tropisch-fruit': ['tropisch-fruit', 'exotisch-fruit'],
+  'exotisch-fruit': ['tropisch-fruit', 'exotisch-fruit'],
+  'besvruchten':    ['besvruchten'],
+  'pitfruit':       ['pitfruit'],
+  'gedroogd-fruit': ['gedroogd-fruit'],
+
+  // ── Groente (dekt ook typevarianten) ──────────────────────────────
+  'bladgroente':    ['bladgroente', 'bladgroenten'],
+  'bladgroenten':   ['bladgroente', 'bladgroenten'],
+  'vruchtgroente':  ['vruchtgroente', 'vruchtgroenten'],
+  'vruchtgroenten': ['vruchtgroente', 'vruchtgroenten'],
+  'wortel':         ['wortel', 'wortelgewassen', 'knolgewassen'],
+  'wortelgewassen': ['wortel', 'wortelgewassen', 'knolgewassen'],
+  'knolgewassen':   ['wortel', 'wortelgewassen', 'knolgewassen'],
+  'koolsoorten':    ['koolsoorten'],
+  'ui':             ['ui', 'ui-knoflook', 'uigewassen'],
+  'ui-knoflook':    ['ui', 'ui-knoflook', 'uigewassen'],
+  'uigewassen':     ['ui', 'ui-knoflook', 'uigewassen'],
+  'paddestoelen':   ['paddestoelen', 'paddenstoelen'],
+  'paddenstoelen':  ['paddestoelen', 'paddenstoelen'],
+
+  // ── Noten & zaden ─────────────────────────────────────────────────
+  'noten':          ['noten', 'notenproducten'],
+  'notenproducten': ['noten', 'notenproducten'],
+  'zaden':          ['zaden'],
+  'noten-olien':    ['noten-olien'],
+
+  // ── Peulvruchten ──────────────────────────────────────────────────
+  'bonen':                ['bonen', 'droge-peulvruchten', 'linzen', 'verse-peulvruchten'],
+  'droge-peulvruchten':   ['bonen', 'droge-peulvruchten', 'linzen'],
+  'linzen':               ['linzen', 'droge-peulvruchten', 'bonen'],
+  'verse-peulvruchten':   ['verse-peulvruchten', 'bereide-peulvruchten', 'bonen'],
+  'bereide-peulvruchten': ['bereide-peulvruchten', 'verse-peulvruchten'],
+  'soja':                 ['soja', 'sojaproducten'],
+  'sojaproducten':        ['soja', 'sojaproducten'],
+
+  // ── Granen ────────────────────────────────────────────────────────
+  'brood':            ['brood'],
+  'pasta':            ['pasta'],
+  'rijst':            ['rijst', 'pseudogranen'],
+  'pseudogranen':     ['rijst', 'pseudogranen'],
+  'havermout-granen': ['havermout-granen', 'ontbijtgranen'],
+  'ontbijtgranen':    ['havermout-granen', 'ontbijtgranen'],
+
+  // ── Dranken alcohol ───────────────────────────────────────────────
+  'wijn':         ['wijn'],
+  'bier':         ['bier', 'cider'],
+  'cider':        ['bier', 'cider'],
+  'gedistilleerd':['gedistilleerd'],
+
+  // ── Dranken non-alcohol ───────────────────────────────────────────
+  'koffie-thee':       ['koffie-thee', 'thee', 'kruidenthee'],
+  'thee':              ['thee', 'koffie-thee', 'kruidenthee'],
+  'kruidenthee':       ['kruidenthee', 'thee', 'koffie-thee'],
+  'frisdrank':         ['frisdrank'],
+  'sappen':            ['sappen', 'vruchtensap'],
+  'vruchtensap':       ['vruchtensap', 'sappen'],
+  'plantaardige-melk': ['plantaardige-melk'],
+  'water':             ['water'],
+
+  // ── Zoetwaren ─────────────────────────────────────────────────────
+  'chocolade':     ['chocolade'],
+  'snoep':         ['snoep', 'koek-biscuit', 'koek-gebak'],
+  'koek-biscuit':  ['koek-biscuit', 'koek-gebak', 'snoep'],
+  'koek-gebak':    ['koek-gebak', 'koek-biscuit', 'gebak'],
+  'gebak':         ['gebak', 'koek-gebak'],
+  'ijs':           ['ijs'],
+  'zoetstoffen':   ['zoetstoffen'],
+  'hartige-snacks':['hartige-snacks'],
+
+  // ── Sauzen & kruiden ──────────────────────────────────────────────
+  'kruiden-vers':       ['kruiden-vers', 'kruiden-droog', 'kruiden-specerijen', 'specerijen'],
+  'kruiden-droog':      ['kruiden-droog', 'kruiden-vers', 'kruiden-specerijen', 'specerijen'],
+  'kruiden-specerijen': ['kruiden-specerijen', 'specerijen', 'kruiden-droog', 'kruiden-vers'],
+  'specerijen':         ['specerijen', 'kruiden-specerijen', 'kruiden-droog', 'kruiden-vers'],
+  'sauzen':             ['sauzen', 'saus'],
+  'saus':               ['saus', 'sauzen'],
+  'azijn':              ['azijn'],
+  'olie-vet':           ['olie-vet', 'olien'],
+  'olien':              ['olien', 'olie-vet'],
+}
+
 import groenteData from '@/data/groente.json'
 import fruitData from '@/data/fruit.json'
 import vleesData from '@/data/vlees.json'
@@ -83,6 +208,13 @@ export function getAlternatives(item: FoodItem, conditions: Condition[], limit =
   if (item.subcategory) {
     const fromSubcat = ranked(ALL_ITEMS.filter((c) => c.id !== item.id && c.subcategory === item.subcategory))
     if (fromSubcat.length > 0) return fromSubcat
+  }
+
+  // Tier 1.5: gerelateerde subcategorieën (bv. kaas-gerijpt → ook kaas-vers)
+  if (item.subcategory && SUBCATEGORY_GROUPS[item.subcategory]) {
+    const relatedSubs = SUBCATEGORY_GROUPS[item.subcategory]
+    const fromGroup = ranked(ALL_ITEMS.filter((c) => c.id !== item.id && c.subcategory != null && relatedSubs.includes(c.subcategory)))
+    if (fromGroup.length > 0) return fromGroup
   }
 
   // Tier 2: same category (regardless of subcategory)
