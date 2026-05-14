@@ -40,7 +40,7 @@ test('navigation tabs work', async ({ page }) => {
 
   await page.getByRole('link', { name: 'Bronnen' }).click()
   await expect(page).toHaveURL(/\/bronnen/)
-  await expect(page.getByText('Bronnen & methodologie')).toBeVisible()
+  await expect(page.getByText('De wetenschap achter elke score.')).toBeVisible()
 
   // Tab is labelled "Profiel" in the NavBar (not "Instellingen")
   await page.getByRole('link', { name: 'Profiel' }).click()

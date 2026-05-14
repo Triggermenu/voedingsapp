@@ -6,7 +6,7 @@ import type { Condition } from '@/schemas/item'
 
 // ── Constants ────────────────────────────────────────────────────────────────
 const COND_LABELS: Record<Condition, string> = {
-  jicht: 'Jicht', migraine: 'Migraine', nierstenen: 'Nieren', histamine: 'Histam.',
+  jicht: 'Jicht', migraine: 'Migraine', nierstenen: 'Nierstenen', histamine: 'Histamine',
 }
 
 const COND_SHORT: Record<Condition, string> = {
