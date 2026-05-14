@@ -267,7 +267,6 @@ export function Zoeken() {
   const navigate = useNavigate()
   const isDesktop = useMediaQuery('(min-width: 1280px)')
   const [query, setQuery] = useState('')
-  const [filterOpen, setFilterOpen] = useState(false)
   const [activeCategories, setActiveCategories] = useState<Set<Category>>(new Set())
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [expandedId, setExpandedId] = useState<string | null>(null)
@@ -338,32 +337,6 @@ export function Zoeken() {
               {conditions.map((c) => COND_SHORT[c]).join(' · ')}
             </span>
           )}
-          <button
-            onClick={() => setFilterOpen(true)}
-            style={{
-              width: 30, height: 30, borderRadius: 8,
-              border: `1px solid ${activeCategories.size > 0 ? 'var(--brand)' : 'var(--rule)'}`,
-              background: activeCategories.size > 0 ? 'var(--brand-50)' : 'var(--paper)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              color: activeCategories.size > 0 ? 'var(--brand)' : 'var(--ink-soft)',
-              cursor: 'pointer', position: 'relative',
-            }}
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <path d="M3 6h18M6 12h12M10 18h4" />
-            </svg>
-            {activeCategories.size > 0 && (
-              <span style={{
-                position: 'absolute', top: -4, right: -4,
-                width: 14, height: 14, borderRadius: '50%',
-                background: 'var(--brand)', color: '#fff',
-                fontSize: 8, fontWeight: 700,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-              }}>
-                {activeCategories.size}
-              </span>
-            )}
-          </button>
         </div>
       </div>
 
@@ -399,12 +372,56 @@ export function Zoeken() {
           autoComplete="off"
           autoCorrect="off"
         />
-        {!query && (
-          <span className="mono" style={{ fontSize: 10, color: 'var(--muted)', border: '1px solid var(--rule)', padding: '2px 6px', borderRadius: 4 }}>
-            ⌘K
-          </span>
+        {query && (
+          <button
+            onClick={() => setQuery('')}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--muted)', padding: 0, display: 'flex' }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <path d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
         )}
       </div>
+
+      {/* Category chips — always visible, horizontally scrollable */}
+      {availableCategories.length > 0 && (
+        <div style={{
+          display: 'flex', gap: 6, overflowX: 'auto', padding: '10px 0 2px',
+          scrollbarWidth: 'none', msOverflowStyle: 'none',
+        }}>
+          <button
+            onClick={() => setActiveCategories(new Set())}
+            style={{
+              flexShrink: 0, padding: '5px 11px', borderRadius: 999, fontSize: 12.5, fontWeight: 500,
+              background: activeCategories.size === 0 ? 'var(--ink)' : 'transparent',
+              color: activeCategories.size === 0 ? 'var(--paper)' : 'var(--ink-soft)',
+              border: activeCategories.size === 0 ? 'none' : '1px solid var(--rule)',
+              cursor: 'pointer', fontFamily: 'inherit',
+            }}
+          >
+            Alle
+          </button>
+          {availableCategories.map((cat) => {
+            const isActive = activeCategories.has(cat)
+            return (
+              <button
+                key={cat}
+                onClick={() => toggleCategory(cat)}
+                style={{
+                  flexShrink: 0, padding: '5px 11px', borderRadius: 999, fontSize: 12.5, fontWeight: 500,
+                  background: isActive ? 'var(--ink)' : 'transparent',
+                  color: isActive ? 'var(--paper)' : 'var(--ink-soft)',
+                  border: isActive ? 'none' : '1px solid var(--rule)',
+                  cursor: 'pointer', fontFamily: 'inherit',
+                }}
+              >
+                {CATEGORY_LABELS[cat] ?? cat}
+              </button>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 
@@ -445,68 +462,6 @@ export function Zoeken() {
     </>
   )
 
-  // ── Filter sheet ────────────────────────────────────────────────────────
-  const FilterSheet = filterOpen && (
-    <div className="fixed inset-0 z-50 flex flex-col justify-end">
-      <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,.35)' }} onClick={() => setFilterOpen(false)} />
-      <div style={{
-        position: 'relative', background: 'var(--paper)',
-        borderRadius: '16px 16px 0 0', padding: '16px 16px 32px',
-        maxHeight: '70vh', overflowY: 'auto',
-      }}>
-        <div className="flex items-center justify-between mb-4">
-          <p className="serif" style={{ fontSize: 17, fontWeight: 500, color: 'var(--ink)' }}>Filter op categorie</p>
-          <div className="flex items-center gap-3">
-            {activeCategories.size > 0 && (
-              <button
-                onClick={() => setActiveCategories(new Set())}
-                style={{ fontSize: 12, color: 'var(--brand)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}
-              >
-                Wis filters
-              </button>
-            )}
-            <button
-              onClick={() => setFilterOpen(false)}
-              style={{ width: 28, height: 28, borderRadius: '50%', background: 'var(--paper-2)', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: 'var(--muted)' }}
-            >
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 18L18 6M6 6l12 12" /></svg>
-            </button>
-          </div>
-        </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 16 }}>
-          {availableCategories.map((cat) => {
-            const isActive = activeCategories.has(cat)
-            return (
-              <button
-                key={cat}
-                onClick={() => toggleCategory(cat)}
-                style={{
-                  padding: '6px 12px', borderRadius: 999, fontSize: 13, fontWeight: 500,
-                  background: isActive ? 'var(--ink)' : 'transparent',
-                  color: isActive ? 'var(--paper)' : 'var(--ink-soft)',
-                  border: isActive ? 'none' : '1px solid var(--rule)',
-                  cursor: 'pointer', fontFamily: 'inherit',
-                }}
-              >
-                {CATEGORY_LABELS[cat] ?? cat}
-              </button>
-            )
-          })}
-        </div>
-        <button
-          onClick={() => setFilterOpen(false)}
-          style={{
-            width: '100%', height: 48, borderRadius: 12,
-            background: 'var(--brand)', color: '#fff',
-            border: 'none', fontSize: 15, fontWeight: 600,
-            cursor: 'pointer', fontFamily: 'inherit',
-          }}
-        >
-          Toon resultaten{activeCategories.size > 0 ? ` (${filteredResults.length})` : ''}
-        </button>
-      </div>
-    </div>
-  )
 
   // ── Desktop: drie-koloms layout ────────────────────────────────────────
   if (isDesktop) {
@@ -638,7 +593,7 @@ export function Zoeken() {
           </div>
         </div>
 
-        {FilterSheet}
+
       </div>
     )
   }
@@ -651,8 +606,6 @@ export function Zoeken() {
       </div>
 
       {ListContent}
-
-      {FilterSheet}
 
       <NavBar />
     </div>
