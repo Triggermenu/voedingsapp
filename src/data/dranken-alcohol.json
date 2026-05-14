@@ -31,18 +31,40 @@
           }
         },
         "migraine": {
-          "score": 3,
+          "score": 2,
           "evidence": "B",
+          "confidence": "hoog",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": ["quercetine-3-glucuronide", "ethanol", "aldh2-variant"],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/2894493/",
+              "title": "Littlewood JT et al. 1988 — Red wine as a cause of migraine (Lancet)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30565341/",
+              "title": "Onderwater GLJ et al. 2019 — Alcoholic beverages as trigger factor (Eur J Neurol)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10662156/",
+              "title": "Devi A, Waterhouse AL et al. 2023 — Inhibition of ALDH2 by quercetin glucuronide (Sci Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh NA et al. 2020 — Diet and Nutrition in Migraine (Headache)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Rode wijn staat op de migraine-whitelist: alcohol + vasoactieve stoffen. Consensus in meerdere richtlijnen."
+            "nl": "RCT (Littlewood 1988, n=11): migraine bij 9/11 gevoelige patiënten na rode wijn; 0/8 na vodka. Zelf-rapportage overschat (~78% vs ~9% objectief consistent). Mechanisme: quercetine-3-glucuronide remt ALDH2, acetaldehyde stapelt op.",
+            "en": "RCT (Littlewood 1988, n=11): migraine in 9/11 sensitive patients after red wine; 0/8 after vodka. Self-reporting overestimates trigger (~78% vs ~9% objectively consistent). Mechanism: quercetin-3-glucuronide inhibits ALDH2, causing acetaldehyde accumulation."
           }
         },
         "nierstenen": {
@@ -83,10 +105,11 @@
         "liberator": false,
         "daoBlocker": true
       },
+      "cluster": 10,
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-14"
       }
     },
     {
@@ -652,15 +675,28 @@
         },
         "migraine": {
           "score": 2,
-          "evidence": "B",
+          "evidence": "C",
+          "confidence": "laag",
+          "triggerType": "context-afhankelijk",
+          "primaryModulators": ["ethanol", "quercetine-3-glucuronide"],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10662156/",
+              "title": "Devi A, Waterhouse AL et al. 2023 — Inhibition of ALDH2 by quercetin glucuronide (Sci Rep) — rode wijn; extrapolatie naar port",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30565341/",
+              "title": "Onderwater GLJ et al. 2019 — Alcoholic beverages as trigger factor (Eur J Neurol) — rode wijn; extrapolatie naar port",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Geen directe studie beschikbaar. Extrapolatie van rode-wijn-pathway: port is versterkte rode wijn met vergelijkbare polyfenolen. Hogere ABV (~20%) maar kleinere portie (60 ml) compenseert; netto quercetine per drinkmoment niet gekwantificeerd.",
+            "en": "No direct study available. Extrapolation from red wine pathway: port is a fortified red wine with comparable polyphenols. Higher ABV (~20%) but smaller serving (60 ml) partially compensates; net quercetin per drinking occasion not quantified."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -694,10 +730,11 @@
         "liberator": false,
         "daoBlocker": true
       },
+      "cluster": 10,
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-14"
       }
     },
     {

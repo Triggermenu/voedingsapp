@@ -1,0 +1,52 @@
+{
+  "snapshotAt": "2026-05-14",
+  "cluster": 10,
+  "description": "Pre-patch staat van cluster-10-items (migraine-score vóór cluster-10-onderzoek)",
+  "items": [
+    {
+      "id": "174836",
+      "name": { "nl": "Rode wijn", "en": "Red wine" },
+      "scores": {
+        "migraine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Rode wijn staat op de migraine-whitelist: alcohol + vasoactieve stoffen. Consensus in meerdere richtlijnen."
+          }
+        }
+      },
+      "meta": {
+        "lastReviewed": "2026-05-11"
+      }
+    },
+    {
+      "id": "nl-port",
+      "name": { "nl": "Port", "en": "Port wine" },
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "lastReviewed": "2026-05-11"
+      }
+    }
+  ]
+}
