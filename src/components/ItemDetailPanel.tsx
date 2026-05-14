@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { getItemById, getAlternatives } from '@/lib/db'
 import { getCombinedScore } from '@/lib/scoring'
 import { recordView } from '@/lib/stats'
@@ -82,9 +82,11 @@ interface Props {
 // ── ItemDetailPanel ───────────────────────────────────────────────────────
 export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNavigate }: Props) {
   const item = getItemById(id)
+  const [expandedCond, setExpandedCond] = useState<string | null>(null)
 
   useEffect(() => {
     if (id) recordView(id)
+    setExpandedCond(null)
   }, [id])
 
   if (!item) return null
@@ -161,22 +163,6 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                         {s.note.nl}
                       </div>
                     )}
-                    {(s as any).triggerType && (
-                      <div style={{ marginBottom: 5 }}>
-                        <span style={{
-                          fontSize: 11, padding: '2px 8px', borderRadius: 999,
-                          background: 'var(--paper-2)', color: 'var(--ink-soft)',
-                          border: '1px solid var(--rule-soft)',
-                        }}>
-                          {TRIGGER_LABELS[(s as any).triggerType] ?? (s as any).triggerType}
-                        </span>
-                      </div>
-                    )}
-                    {(s as any).primaryModulators?.length > 0 && (
-                      <div style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 5 }}>
-                        Gevoelig bij: {(s as any).primaryModulators.join(', ')}
-                      </div>
-                    )}
                     {s.sources.slice(0, 1).map((src, si) => (
                       <a
                         key={si}
@@ -199,10 +185,46 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                         EV·{s.evidence}
                       </span>
                     )}
-                    {(s as any).confidence && (
-                      <span className="mono" style={{ fontSize: 9.5, color: 'var(--muted)', marginLeft: 8 }}>
-                        vertrouwen: {(s as any).confidence}
-                      </span>
+                    {/* Meer info — technische details ingeklapt */}
+                    {((s as any).triggerType || (s as any).primaryModulators?.length > 0 || (s as any).confidence) && (
+                      <div style={{ marginTop: 6 }}>
+                        <button
+                          onClick={() => setExpandedCond(expandedCond === c ? null : c)}
+                          style={{
+                            background: 'none', border: 'none', padding: 0, cursor: 'pointer',
+                            fontSize: 11, color: 'var(--muted)', display: 'inline-flex', alignItems: 'center', gap: 3,
+                          }}
+                        >
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
+                            style={{ transform: expandedCond === c ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.15s' }}>
+                            <path d="M6 9l6 6 6-6" />
+                          </svg>
+                          {expandedCond === c ? 'minder' : 'meer info'}
+                        </button>
+                        {expandedCond === c && (
+                          <div style={{ marginTop: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
+                            {(s as any).triggerType && (
+                              <span style={{
+                                fontSize: 11, padding: '2px 8px', borderRadius: 999, alignSelf: 'flex-start',
+                                background: 'var(--paper-2)', color: 'var(--ink-soft)',
+                                border: '1px solid var(--rule-soft)',
+                              }}>
+                                {TRIGGER_LABELS[(s as any).triggerType] ?? (s as any).triggerType}
+                              </span>
+                            )}
+                            {(s as any).primaryModulators?.length > 0 && (
+                              <div style={{ fontSize: 12, color: 'var(--muted)' }}>
+                                Gevoelig bij: {(s as any).primaryModulators.join(', ')}
+                              </div>
+                            )}
+                            {(s as any).confidence && (
+                              <span className="mono" style={{ fontSize: 9.5, color: 'var(--muted)' }}>
+                                vertrouwen: {(s as any).confidence}
+                              </span>
+                            )}
+                          </div>
+                        )}
+                      </div>
                     )}
                   </>
                 ) : (
