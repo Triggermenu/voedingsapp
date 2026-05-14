@@ -18,11 +18,23 @@ export const SourceSchema = z.object({
   accessedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Datum moet YYYY-MM-DD zijn'),
 })
 
+export const TRIGGER_TYPES = [
+  'universeel',
+  'subgroep-bevestigd',
+  'subgroep-overschat',
+  'onttrekkings-trigger',
+  'drug-interactie',
+  'context-afhankelijk',
+] as const
+
 export const ScoreObjectSchema = z.object({
   score: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]),
   evidence: z.enum(EVIDENCE_LEVELS),
   sources: z.array(SourceSchema).min(1, 'Elke score vereist minstens één bron'),
   note: z.object({ nl: z.string(), en: z.string().optional() }).optional(),
+  confidence: z.enum(['laag', 'middel', 'hoog']).optional(),
+  triggerType: z.enum(TRIGGER_TYPES).optional(),
+  primaryModulators: z.array(z.string().regex(/^[a-z0-9-]+$/)).max(3).optional(),
 })
 
 export const FoodItemSchema = z.object({
