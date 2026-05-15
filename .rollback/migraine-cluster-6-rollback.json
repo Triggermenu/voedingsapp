@@ -1,0 +1,6 @@
+{
+  "snapshotAt": "2026-05-14",
+  "cluster": 6,
+  "description": "Pre-patch staat van cluster-6 (gist-extracten en autolyses). Geen bestaande items — cluster 6 was leeg in de dataset. Alle drie cluster-6-items worden nieuw toegevoegd in FASE 3. Het cluster-18-item nl-bouillonblok-gistextract wordt in dezelfde patch toegevoegd (cluster 18, niet 6).",
+  "items": []
+}

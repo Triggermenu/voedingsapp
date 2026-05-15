@@ -46,6 +46,17 @@ Aanbeveling: aparte uitbreidingsbatch na afronding cluster 1–20, want scoring-
 
 ---
 
+## Open vraag: triggerType tyramine-pathway (cluster 3 / cluster 6)
+
+Bij uitvoering cluster 3 (gerijpte kazen): beslissen welke triggerType de standaard wordt voor tyramine-pathway items zonder migraine-specifieke RCT-evidentie.
+
+- **context-afhankelijk**: pragmatische keuze voor de algemene populatie (de context is MAOI-status); dit is het paradigma dat in cluster 6 is gekozen voor Marmite/Vegemite/gistvlokken.
+- **drug-interactie**: mechanistisch zuiverder (tyramine-crisis is uitsluitend relevant bij MAO-remming); nadeel: weinig informatief voor de niet-MAOI-gebruiker.
+
+Beslissing bij cluster 3 is leidend voor eventuele retroactieve aanpassing van cluster 6. Documenteer gekozen standaard in CLAUDE.md §12 (tegenstrijdige bronnen — vastgestelde weging).
+
+---
+
 ## Overige cleanup-punten (verzamelen per cluster)
 
 *Cluster 7 gaps (zie ook migraine-cluster-7-rationale.md):*
