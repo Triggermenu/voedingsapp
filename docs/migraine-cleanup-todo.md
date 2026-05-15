@@ -12,6 +12,9 @@ Items voor een aparte opruim-ronde, niet urgent voor cluster-onderzoek.
 |---|---|---|---|
 | `nl-worst-rook` — Rookworst (gecureerd) | `nl-rookworst-gecureerd` — Rookworst (gecureerd) | Vermoedelijk identiek product | nl-worst-rook deprecaten; addedAt 2026-05-12 vs 2026-05-11 |
 | `nl-worcestershire` — Worcestershiresaus | `nl-worcestershiresaus` — Worcestershiresaus | Vermoedelijk identiek product | nl-worcestershire deprecaten (score 1 vs 2; nl-worcestershiresaus heeft note) |
+| `170844` — Mozzarella (vers, USDA) | `nl-mozzarella-vers` — Mozzarella (vers) | Identiek product; 170844 heeft geen note | `170844` deprecaten — nl-mozzarella-vers heeft note en is NL-specifiek |
+| `nl-huttenkase` — Hüttenkäse (cottage cheese) | `nl-cottage-cheese` — Cottage cheese | Identiek product, ander taalgebruik; nl-huttenkase in kaas-vers, nl-cottage-cheese in kaas | `nl-cottage-cheese` deprecaten — nl-huttenkase heeft correcte subcategory |
+| `nl-smeerkaas` — Smeerkaas (Philadelphia type) | `nl-roomkaas` — Roomkaas (smeerkaas) | Vermoedelijk identiek product; nl-roomkaas heeft geen onderscheidende note | `nl-smeerkaas` deprecaten — nl-roomkaas is het meest gangbare Nederlandse begrip |
 
 ### Geen actie nodig, alleen genoteerd
 
@@ -46,14 +49,15 @@ Aanbeveling: aparte uitbreidingsbatch na afronding cluster 1–20, want scoring-
 
 ---
 
-## Open vraag: triggerType tyramine-pathway (cluster 3 / cluster 6)
+## ~~Open vraag: triggerType tyramine-pathway (cluster 3 / cluster 6)~~ — OPGELOST (2026-05-14)
 
-Bij uitvoering cluster 3 (gerijpte kazen): beslissen welke triggerType de standaard wordt voor tyramine-pathway items zonder migraine-specifieke RCT-evidentie.
+**Beslissing cluster 3:** `subgroep-overschat` voor alle 13 gerijpte kazen.
 
-- **context-afhankelijk**: pragmatische keuze voor de algemene populatie (de context is MAOI-status); dit is het paradigma dat in cluster 6 is gekozen voor Marmite/Vegemite/gistvlokken.
-- **drug-interactie**: mechanistisch zuiverder (tyramine-crisis is uitsluitend relevant bij MAO-remming); nadeel: weinig informatief voor de niet-MAOI-gebruiker.
+**Onderbouwing:** voor de algemene (niet-MAOI) populatie zijn er geen positieve RCTs voor gerijpte kazen als migrainetrigger. Ziegler & Stewart 1977 (PMID 560645) vond dat placebo even effectief was als tyramine-capsules. Moffett 1972 (PMID 4559027) vond geen significant verband. De Macedonische SR 2023 (Sudharta et al.) toonde 0–42,1% response op placebo vs 17,2–50% op tyramine — overlap te groot voor causaliteit. Alle positieve evidence stamt uit één laboratorium (Hanington, 1967–1970) zonder onafhankelijke replicatie.
 
-Beslissing bij cluster 3 is leidend voor eventuele retroactieve aanpassing van cluster 6. Documenteer gekozen standaard in CLAUDE.md §12 (tegenstrijdige bronnen — vastgestelde weging).
+**Onderscheid met cluster 6 (context-afhankelijk):** Marmite/Vegemite nadert bij 5g de MAOI-veiligheidsgrens (1,6–3,25 mg / 6 mg threshold) met reële batchvariabiliteit. Gerijpte kazen komen bij normale porties (30g) voor de meeste items ver onder die grens, en de MAOI-specifieke waarschuwing is minder prominent omdat kaas geen "MAOI-dieet-verboden-categorie" is die gebruikers actief herkennen.
+
+**Retroactieve aanpassing cluster 6:** niet nodig. `context-afhankelijk` blijft correct voor Marmite/Vegemite/gistvlokken (MAOI-interactie is het primaire mechanisme). `subgroep-overschat` is correct voor gerijpte kazen (populair als trigger, maar RCT-bewijs ontbreekt en geeft negatieve signalen).
 
 ---
 

@@ -251,18 +251,42 @@
           ]
         },
         "migraine": {
-          "score": 3,
+          "score": 2,
           "evidence": "B",
+          "confidence": "middel",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Gerijpte kaas (>6 maanden) staat op de migraine-whitelist: hoge tyramine-concentratie door rijpingsproces."
+            "nl": "Oude kaas (>48 maanden rijping) bevat meer tyramine dan jonge kaas, maar in dubbelblinde studies kon tyramine bij mensen zónder MAOI-antidepressiva geen migraine reproduceerbaar veroorzaken — placebo veroorzaakte even vaak hoofdpijn (Ziegler 1977, Moffett 1972). Score oranje als voorzorgsmaatregel, en bij gebruik van MAOI-medicatie is maatregel absoluut. Batchvariabiliteit kan groot zijn.",
+            "en": "Aged cheese (>48 months) contains more tyramine than young cheese, but double-blind studies could not reproduce tyramine-triggered migraine in people without MAOI antidepressants — placebo produced headache equally often. Score orange as a precaution, and absolute restriction under MAOI medication."
           }
         },
         "nierstenen": {
@@ -308,8 +332,9 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-halfvolle-melk",
@@ -595,7 +620,7 @@
         "en": "Brie"
       },
       "category": "zuivel",
-      "subcategory": "kaas-vers",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": {
           "score": 0,
@@ -610,18 +635,42 @@
           ]
         },
         "migraine": {
-          "score": 2,
+          "score": 1,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Gerijpte zachte kaas, maar staat niet op de migraine-whitelist."
+            "nl": "Brie bevat in moderne supermarktversies (gepasteuriseerd, 4-6 weken rijping) zeer weinig tyramine: meeste monsters ≤5 mg/kg (≤0,15 mg per 30g). Volledig rijpe artisanale Brie kan hogere waarden bereiken — historische studies (De Vuyst 1976) melden tot 400 mg/kg bij maximaal rijpe partijen. Score geel voor standaard supermarktbrie; bij artisanale of maximaal rijpe brie is voorzichtigheid geboden, met name bij MAOI-medicatie.",
+            "en": "Brie in modern supermarket form (pasteurised, 4–6 weeks ripening) contains very little tyramine: most samples ≤5 mg/kg (≤0.15 mg per 30g). Fully ripe artisanal Brie can reach higher values — historical studies (De Vuyst 1976) report up to 400 mg/kg at peak ripeness."
           }
         },
         "nierstenen": {
@@ -655,8 +704,9 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "170844",
@@ -1230,16 +1280,40 @@
         "migraine": {
           "score": 2,
           "evidence": "B",
+          "confidence": "middel",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Belegen cheddar (6-12 maanden): matig tyramine."
+            "nl": "Belegen cheddar (6-12 maanden rijping) bevat 70-210 mg tyramine per kg; een portie van 30g levert 2-6 mg. Bij de bovengrens van dat bereik wordt de drempel nadert die bij MAOI-medicatie relevant is. Dubbelblinde studies konden tyramine als migrainetrigger bij mensen zónder MAOI niet reproduceerbaar bevestigen. \"Kaas veroorzaakt migraine\" is een wijdverbreid geloof dat in gecontroleerd onderzoek slechts zwak wordt ondersteund.",
+            "en": "Aged cheddar (6–12 months) contains 70–210 mg tyramine/kg; 30g delivers 2–6 mg. The upper range approaches the threshold relevant under MAOI medication. Double-blind studies could not reproduce tyramine-triggered migraine without MAOI."
           }
         },
         "nierstenen": {
@@ -1279,8 +1353,9 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-smeerkaas",
@@ -1450,18 +1525,42 @@
           ]
         },
         "migraine": {
-          "score": 3,
+          "score": 2,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Sterk gerijpte kaas: hoog tyramine. Standaard migrainerisicovoedsel."
+            "nl": "Blauwschimmelkaas heeft de grootste spreiding in tyramine-gehalte van alle kaassoorten: sommige Roquefort-monsters bevatten vrijwel geen tyramine, terwijl Tsjechische blauwschimmelkaas gemiddeld 380 mg/kg bevat (tot 875 mg/kg). Een portie van 30g levert daarmee 0,3 tot 26 mg tyramine. Dubbelblinde studies konden tyramine als migrainetrigger bij mensen zónder MAOI-medicatie niet bevestigen. Score oranje als voorzorgsmaatregel; bij blauwschimmelkaas weegt persoonlijke ervaring zwaarder dan de generieke score.",
+            "en": "Blue cheese has the widest tyramine variability of all cheeses: some Roquefort samples contain virtually no tyramine while Czech blue cheeses average 380 mg/kg (up to 875 mg/kg). A 30g portion delivers 0.3–26 mg tyramine. Double-blind studies could not confirm tyramine as a migraine trigger without MAOI medication."
           }
         },
         "nierstenen": {
@@ -1501,8 +1600,9 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-parmezaan",
@@ -1526,18 +1626,48 @@
           ]
         },
         "migraine": {
-          "score": 2,
+          "score": 1,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7824754/",
+              "title": "Korean domestic market study 2021 — Quantitative analysis of biogenic amines in different cheese varieties (Foods)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Lang gerijpte harde kaas: hoog tyramine."
+            "nl": "Parmezaan rijpt lang (24-36 maanden), maar moderne LC/HPLC-metingen laten zien dat het tyramine-gehalte lager is dan vroeger werd aangenomen: 20-150 mg/kg (Spizziri et al.; Koreaanse marktstudie 2021). Per portie van 30g gaat het om 0,6-4,5 mg tyramine — ruim onder de drempel die in farmacologische studies effect geeft. Geen gecontroleerd bewijs voor migrainetriggering. Score geel als attentie bij MAOI-gebruik.",
+            "en": "Parmesan ripens long (24–36 months) but modern LC/HPLC measurements show lower tyramine than previously assumed: 20–150 mg/kg, delivering 0.6–4.5 mg per 30g portion — well below pharmacological thresholds. No controlled evidence for migraine triggering."
           }
         },
         "nierstenen": {
@@ -1577,8 +1707,9 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-camembert",
@@ -1587,7 +1718,7 @@
         "en": "Camembert"
       },
       "category": "zuivel",
-      "subcategory": "kaas-vers",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": {
           "score": 0,
@@ -1602,18 +1733,42 @@
           ]
         },
         "migraine": {
-          "score": 2,
+          "score": 1,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Gerijpte kaas: tyramine aanwezig."
+            "nl": "Camembert bevat in moderne supermarktversies eveneens weinig tyramine (meeste monsters ≤5 mg/kg), vergelijkbaar met brie. Artisanale varianten (volledig rijp: zachte kern, ammoniak-geur) kunnen hogere waarden bereiken, maar dit is geen normaal NL-supermarktproduct. Score geel voor standaard supermarktcamembert; bij uitgesproken rijpe artisanale versies is voorzichtigheid geboden.",
+            "en": "Camembert in modern supermarket form also contains little tyramine (most samples ≤5 mg/kg), similar to Brie. Artisanal fully-ripe varieties can reach higher values but are not typical Dutch supermarket products."
           }
         },
         "nierstenen": {
@@ -1656,8 +1811,9 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-kwark",
@@ -1753,16 +1909,40 @@
         "migraine": {
           "score": 2,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Belegen kaas (6-12 maanden): matig tyramine, migrainerisico."
+            "nl": "Belegen Gouda bevat doorgaans weinig tyramine (meeste monsters <50 mg/kg), maar de spreiding is groot: tot 250 mg/kg in Komprda et al. Bij 250 mg/kg levert een portie van 30g 7,5 mg tyramine, wat de MAOI-voorzorgsgrens overschrijdt. Score oranje als voorzorgsmaatregel. Geen gecontroleerd bewijs voor migrainetriggering zonder MAOI.",
+            "en": "Aged Gouda typically has low tyramine (most samples <50 mg/kg) but variability is high: up to 250 mg/kg (Komprda et al.). At the upper range, a 30g portion delivers 7.5 mg tyramine. Score orange as precaution; no controlled evidence for migraine triggering without MAOI."
           }
         },
         "nierstenen": {
@@ -1799,8 +1979,9 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-feta",
@@ -1809,7 +1990,7 @@
         "en": "Feta cheese"
       },
       "category": "zuivel",
-      "subcategory": "kaas-vers",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": {
           "score": 0,
@@ -1824,18 +2005,48 @@
           ]
         },
         "migraine": {
-          "score": 1,
+          "score": 2,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
             {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Pekelkaas: enig tyramine, matige migrainerelevantie."
+            "nl": "Feta is een gepekelde kaas die in de handel doorgaans 60-120 dagen rijpt (vat-feta). Na 120 dagen rijping kan het tyramine-gehalte oplopen tot 246 mg/kg (Valsamaki et al.), wat per 30g portie ~7,4 mg oplevert — boven de MAOI-voorzorgsgrens. Verse feta (<30 dagen) bevat nauwelijks tyramine. Score oranje geldt voor de in NL gangbare gerijpte vat-feta; bij jonge of verse feta is score lager.",
+            "en": "Feta typically ripens 60–120 days commercially (barrel feta). After 120 days, tyramine can reach 246 mg/kg (Valsamaki et al.), ~7.4 mg per 30g — above the MAOI precautionary threshold. Fresh feta (<30 days) contains minimal tyramine. Score orange applies to typical commercially available barrel feta."
           }
         },
         "nierstenen": {
@@ -1872,8 +2083,9 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-mozzarella-vers",
@@ -2673,18 +2885,42 @@
           ]
         },
         "migraine": {
-          "score": 3,
+          "score": 2,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Extra belegen: hoge tyramine-concentratie, verhoogd migrainerisico."
+            "nl": "Extra belegen Edammer bevat minder tyramine dan de meeste andere hard-gerijpte kazen: 60-120 mg/kg in de enige beschikbare studie (Bunkova et al.), wat per portie van 30g neerkomt op 2-4 mg — ruim onder drempels waarbij farmacologische studies effect zagen. Score oranje geldt als voorzorgsmaatregel consistent met het gerijpte-kazen-paradigma; score 3 is teruggebracht op basis van RCT-evidentie.",
+            "en": "Extra-aged Edam contains less tyramine than most other hard-ripened cheeses: 60–120 mg/kg (Bunkova et al.), delivering 2–4 mg per 30g portion — well below pharmacological thresholds. Score orange as precaution consistent with the aged-cheese paradigm."
           }
         },
         "nierstenen": {
@@ -2724,8 +2960,9 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-kefir",
@@ -3136,7 +3373,7 @@
         "en": "Raclette cheese"
       },
       "category": "zuivel",
-      "subcategory": "kaas",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": {
           "score": 0,
@@ -3151,18 +3388,42 @@
           ]
         },
         "migraine": {
-          "score": 2,
+          "score": 1,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
             {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Belegen kaas met verhoogd tyramine."
+            "nl": "Raclette rijpt 3-6 maanden en heeft een tyramine-profiel vergelijkbaar met Gruyère (<100 mg/kg). Per portie van 30g gaat het naar schatting om <3 mg tyramine — onder alle klinisch relevante drempels. Geen gecontroleerd bewijs voor migrainetriggering. Score geel als voorzorgsmaatregel.",
+            "en": "Raclette ripens 3–6 months with a tyramine profile similar to Gruyère (<100 mg/kg). Estimated <3 mg tyramine per 30g portion — below all clinically relevant thresholds. No controlled evidence for migraine triggering."
           }
         },
         "nierstenen": {
@@ -3193,8 +3454,9 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-manchego",
@@ -3203,7 +3465,7 @@
         "en": "Manchego cheese"
       },
       "category": "zuivel",
-      "subcategory": "kaas",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": {
           "score": 0,
@@ -3220,16 +3482,46 @@
         "migraine": {
           "score": 2,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
             {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
           ],
           "note": {
-            "nl": "Gerijpte kaas, verhoogd tyramine."
+            "nl": "Manchego is schapenmelkkaas die 2-24 maanden rijpt. Er is geen directe tyramine-meting beschikbaar; op basis van vergelijkbare gerijpte kazen wordt een range van 100-400 mg/kg geschat, wat per portie van 30g neerkomt op 3-12 mg. Score oranje als voorzorgsmaatregel bij gerijpte varianten (curado/viejo). Verse manchego (fresco) heeft verwaarloosbare tyramine.",
+            "en": "Manchego is sheep milk cheese ripened 2–24 months. No direct tyramine measurement exists; estimated 100–400 mg/kg based on comparable aged cheeses (3–12 mg per 30g portion). Score orange as precaution for aged varieties (curado/viejo)."
           }
         },
         "nierstenen": {
@@ -3260,8 +3552,9 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-emmentaler",
@@ -3270,7 +3563,7 @@
         "en": "Emmental cheese"
       },
       "category": "zuivel",
-      "subcategory": "kaas",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": {
           "score": 0,
@@ -3285,16 +3578,43 @@
           ]
         },
         "migraine": {
-          "score": 2,
+          "score": 1,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7824754/",
+              "title": "Korean domestic market study 2021 — Quantitative analysis of biogenic amines in different cheese varieties (Foods)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Emmentaler bevat verrassend weinig tyramine voor een lang-gerijpte kaas: 16-82 mg/kg in moderne studies, wat per portie van 30g neerkomt op slechts 0,5-2,5 mg. Dit is onder elke klinisch relevante drempel. Score geel als voorzorgsmaatregel bij het gerijpte-kazen-paradigma, niet op basis van specifiek bewijs voor Emmentaler als trigger.",
+            "en": "Emmental contains surprisingly little tyramine for a long-ripened cheese: 16–82 mg/kg in modern studies, delivering only 0.5–2.5 mg per 30g portion — below any clinically relevant threshold."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3324,8 +3644,9 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-gruyere",
@@ -3334,7 +3655,7 @@
         "en": "Gruyère cheese"
       },
       "category": "zuivel",
-      "subcategory": "kaas",
+      "subcategory": "kaas-gerijpt",
       "scores": {
         "jicht": {
           "score": 0,
@@ -3349,16 +3670,43 @@
           ]
         },
         "migraine": {
-          "score": 2,
+          "score": 1,
           "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/560645/",
+              "title": "Ziegler DK & Stewart R 1977 — Failure of tyramine to induce migraine (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://oamjms.eu/index.php/mjms/article/view/11484",
+              "title": "Sudharta H et al. 2023 — Tyramine ingestion and migraine attack: a systematic review (Open Access Macedonian J Med Sci)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet: thinking through tyramine myths (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Gruyère bevat <100 mg/kg tyramine in moderne metingen (Spizziri et al.), wat per portie van 30g neerkomt op <3 mg. Geen gecontroleerd bewijs voor migrainetriggering. Score geel als voorzorgsmaatregel.",
+            "en": "Gruyère contains <100 mg/kg tyramine in modern measurements, delivering <3 mg per 30g portion. No controlled evidence for migraine triggering."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3388,8 +3736,9 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
+        "lastReviewed": "2026-05-14"
+      },
+      "cluster": 3
     },
     {
       "id": "nl-cottage-cheese",

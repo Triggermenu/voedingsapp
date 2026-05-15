@@ -1,0 +1,391 @@
+{
+  "snapshotAt": "2026-05-14",
+  "cluster": 3,
+  "description": "Pre-patch staat van cluster-3-items (gerijpte kazen). Score-veld migraine bevat vóór-patch waarden.",
+  "items": [
+    {
+      "id": "nl-kaas-oud-48",
+      "name": {
+        "nl": "Oude kaas (gouda, >48 maanden)",
+        "en": "Aged cheese (gouda, >48 months)"
+      },
+      "subcategory": "kaas-gerijpt",
+      "scores": {
+        "migraine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte kaas (>6 maanden) staat op de migraine-whitelist: hoge tyramine-concentratie door rijpingsproces."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
+    },
+    {
+      "id": "nl-blauwe-kaas",
+      "name": {
+        "nl": "Blauwe kaas (gerijpte kaas)",
+        "en": "Blue cheese (aged)"
+      },
+      "subcategory": "kaas-gerijpt",
+      "scores": {
+        "migraine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Sterk gerijpte kaas: hoog tyramine. Standaard migrainerisicovoedsel."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
+    },
+    {
+      "id": "nl-edam-extra-belegen",
+      "name": {
+        "nl": "Gerijpte Edammer (extra belegen, >12 maanden)",
+        "en": "Aged Edam (extra mature, >12 months)"
+      },
+      "subcategory": "kaas-gerijpt",
+      "scores": {
+        "migraine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Extra belegen: hoge tyramine-concentratie, verhoogd migrainerisico."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
+    },
+    {
+      "id": "nl-cheddar",
+      "name": {
+        "nl": "Cheddar (belegen)",
+        "en": "Cheddar (aged)"
+      },
+      "subcategory": "kaas-gerijpt",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Belegen cheddar (6-12 maanden): matig tyramine."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
+    },
+    {
+      "id": "nl-gouda-belegen",
+      "name": {
+        "nl": "Goudse kaas (belegen)",
+        "en": "Gouda cheese (mature)"
+      },
+      "subcategory": "kaas-gerijpt",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Belegen kaas (6-12 maanden): matig tyramine, migrainerisico."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
+    },
+    {
+      "id": "nl-manchego",
+      "name": {
+        "nl": "Manchego kaas",
+        "en": "Manchego cheese"
+      },
+      "subcategory": "kaas",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte kaas, verhoogd tyramine."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
+    },
+    {
+      "id": "nl-feta",
+      "name": {
+        "nl": "Feta",
+        "en": "Feta cheese"
+      },
+      "subcategory": "kaas-vers",
+      "scores": {
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Pekelkaas: enig tyramine, matige migrainerelevantie."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
+    },
+    {
+      "id": "nl-parmezaan",
+      "name": {
+        "nl": "Parmezaan",
+        "en": "Parmesan"
+      },
+      "subcategory": "kaas-gerijpt",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Lang gerijpte harde kaas: hoog tyramine."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
+    },
+    {
+      "id": "nl-raclette-kaas",
+      "name": {
+        "nl": "Raclette kaas",
+        "en": "Raclette cheese"
+      },
+      "subcategory": "kaas",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Belegen kaas met verhoogd tyramine."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
+    },
+    {
+      "id": "nl-emmentaler",
+      "name": {
+        "nl": "Emmentaler kaas",
+        "en": "Emmental cheese"
+      },
+      "subcategory": "kaas",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
+    },
+    {
+      "id": "nl-gruyere",
+      "name": {
+        "nl": "Gruyère kaas",
+        "en": "Gruyère cheese"
+      },
+      "subcategory": "kaas",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-12"
+      }
+    },
+    {
+      "id": "nl-brie",
+      "name": {
+        "nl": "Brie",
+        "en": "Brie"
+      },
+      "subcategory": "kaas-vers",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte zachte kaas, maar staat niet op de migraine-whitelist."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
+    },
+    {
+      "id": "nl-camembert",
+      "name": {
+        "nl": "Camembert",
+        "en": "Camembert"
+      },
+      "subcategory": "kaas-vers",
+      "scores": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Gerijpte kaas: tyramine aanwezig."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-11"
+      }
+    }
+  ]
+}
