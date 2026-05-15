@@ -186,7 +186,7 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                       </span>
                     )}
                     {/* Meer info — technische details ingeklapt */}
-                    {((s as any).triggerType || (s as any).primaryModulators?.length > 0 || (s as any).confidence) && (
+                    {(s.triggerType || !!s.primaryModulators?.length || s.confidence) && (
                       <div style={{ marginTop: 6 }}>
                         <button
                           onClick={() => setExpandedCond(expandedCond === c ? null : c)}
@@ -203,23 +203,23 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                         </button>
                         {expandedCond === c && (
                           <div style={{ marginTop: 6, display: 'flex', flexDirection: 'column', gap: 4 }}>
-                            {(s as any).triggerType && (
+                            {s.triggerType && (
                               <span style={{
                                 fontSize: 11, padding: '2px 8px', borderRadius: 999, alignSelf: 'flex-start',
                                 background: 'var(--paper-2)', color: 'var(--ink-soft)',
                                 border: '1px solid var(--rule-soft)',
                               }}>
-                                {TRIGGER_LABELS[(s as any).triggerType] ?? (s as any).triggerType}
+                                {TRIGGER_LABELS[s.triggerType] ?? s.triggerType}
                               </span>
                             )}
-                            {(s as any).primaryModulators?.length > 0 && (
+                            {s.primaryModulators && s.primaryModulators.length > 0 && (
                               <div style={{ fontSize: 12, color: 'var(--muted)' }}>
-                                Gevoelig bij: {(s as any).primaryModulators.join(', ')}
+                                Gevoelig bij: {s.primaryModulators.join(', ')}
                               </div>
                             )}
-                            {(s as any).confidence && (
+                            {s.confidence && (
                               <span className="mono" style={{ fontSize: 9.5, color: 'var(--muted)' }}>
-                                vertrouwen: {(s as any).confidence}
+                                vertrouwen: {s.confidence}
                               </span>
                             )}
                           </div>
