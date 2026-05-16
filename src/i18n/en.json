@@ -59,10 +59,6 @@
     "analyze": "Analyze",
     "analyzing": "Analyzing...",
     "disclaimer": "The AI analysis is an estimate based on visible ingredients. Preparation methods and hidden ingredients may affect scores. Ask staff if in doubt.",
-    "noAccess": "Menu scan is not available. Contact the administrator for access.",
-    "enterCode": "Access code",
-    "enterCodePlaceholder": "Enter access code",
-    "saveCode": "Save",
     "error": "Something went wrong. Please try again."
   },
   "bronnen": {

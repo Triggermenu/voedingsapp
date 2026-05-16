@@ -281,8 +281,8 @@ Bij meerdere aandoeningen:
 1. **Database = single source of truth** (JSON in repo, versioned via git).
 2. **USDA FDC ID = primary key.** NEVO-code als alias-veld.
 3. **API key NOOIT client-side.** Anthropic calls via `api/menuscan.ts` (Vercel function).
-4. **Rate limiting** op menuscan endpoint (Vercel KV of Upstash, gratis tier).
-5. **Magic link auth** op menuscan (Resend of vergelijkbaar) — voorkomt grote Anthropic-rekening bij misbruik.
+4. **Rate limiting** op menuscan endpoint: 12 scans/uur per IP via **Supabase** (`rate_limits` tabel, EU-regio). Geen magic link of wachtwoord — open maar gelimiteerd. Budget cap op Anthropic dashboard als financiële achtervang (acties-peter.md A-5).
+5. **Geen auth op menuscan voor MVP.** Magic link was overwogen maar vervangen door IP-rate-limiting (eenvoudiger, geen account-verplichting). Bij accounts later: rate limiting per gebruiker i.p.v. per IP (zie RISKS.md R-007).
 6. **i18n hooks vanaf dag 1** — alle UI-strings via `t()`.
 7. **Print-stylesheet voor PDF export** — geen PDF-library nodig.
 8. **PWA-manifest** vanaf dag 1 — homescreen-installatie op iPhone werkt.
@@ -375,6 +375,7 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 14. Versiebeheer van dit document
 
-- **Schema version:** v1.0
-- **Laatste wijziging:** [vul bij eerste commit]
+- **Schema version:** v1.1
+- **Laatste wijziging:** 2026-05-15
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
+  - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).

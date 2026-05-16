@@ -144,6 +144,31 @@ Claude Code regelt vervolgens:
 
 ---
 
+## A-7 · AVG/privacy-compliance regelen
+
+**Status:** ☐ Open
+**Tijd:** ~2–4u (privacyverklaring + DPA's); evt. jurist-consult apart
+**Deadline:** Basis vóór publieke launch; DPIA vóór accounts live
+**Reden:** mitigatie R-007 — de menuscan verwerkt nu al gezondheidsgegevens (aandoeningen + foto) naar Vercel en Anthropic.
+
+### Vóór publieke launch (ook MVP)
+1. **Privacyverklaring** (NL) opstellen — wat verwerk je, grondslag (uitdrukkelijke toestemming), verwerkers, doorgifte VS, bewaartermijn, betrokkenenrechten. Generator of jurist-template volstaat voor MVP.
+2. **Verwerkersovereenkomsten (DPA's)** afsluiten — meestal klik-akkoord in dashboard:
+   - Vercel, Anthropic, Sentry, Supabase (Resend pas bij accounts)
+3. **Anthropic Zero Data Retention** aanvragen/aanzetten — console.anthropic.com (sterkste risicoreductie).
+4. **EU-regio kiezen** bij aanmaken Supabase-project (Frankfurt) en waar mogelijk Vercel.
+5. **Datalek-meldprocedure** paraat: bij lek met gezondheidsdata binnen 72u melden bij Autoriteit Persoonsgegevens.
+
+### Bij accounts erbij (later)
+6. **DPIA** (Data Protection Impact Assessment) uitvoeren — verplicht bij grootschalige verwerking gezondheidsdata.
+7. Overweeg jurist-consult (combineerbaar met A-3 MDR — zelfde jurist kan beide).
+
+**Claude Code regelt de technische kant:** aparte toestemmings-UI bij menuscan (los van medische disclaimer), Sentry-scrubbing (geen foto/aandoening in logs), foto niet bewaren na scan, en — bij accounts — betrokkenenrechten (inzage/export/verwijdering) + leeftijdscheck 16+.
+
+**Resultaat noteren in:** RISKS.md R-007
+
+---
+
 ## C-1 · Desktop drie-koloms layout bouwen
 
 **Status:** ☐ Open
@@ -153,7 +178,7 @@ Claude Code regelt vervolgens:
 ---
 
 ## Klaar?
-Als A-1 t/m A-5 op ✅ staan, draait de app autonoom.
+Als A-1 t/m A-5 + A-7 op ✅ staan, mag de app publiek launchen en draait hij autonoom.
 A-6 is een eenmalige testronde — daarna is jouw rol *bestuurder bij uitzondering*: Sentry meldt incidenten, jij beslist over koers.
 
 ---

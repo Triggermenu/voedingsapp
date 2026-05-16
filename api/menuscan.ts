@@ -1,5 +1,51 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import Anthropic from '@anthropic-ai/sdk'
+import { createClient } from '@supabase/supabase-js'
+
+const RATE_LIMIT = 12 // scans per IP
+const RATE_WINDOW_MS = 60 * 60 * 1000 // per uur
+
+/**
+ * Rate limiting per IP via Supabase. Geen accounts nodig (zie R-007).
+ * Faalt "open" bij een Supabase-storing: een outage mag de scan niet blokkeren —
+ * de Anthropic budget-cap (acties-peter.md A-5) is de financiële achtervang.
+ * Retourneert true als het request is toegestaan.
+ */
+async function checkRateLimit(ip: string): Promise<boolean> {
+  const url = process.env.SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!url || !key) {
+    console.error('menuscan: Supabase env vars ontbreken — rate limiting overgeslagen')
+    return true
+  }
+  try {
+    const supabase = createClient(url, key, { auth: { persistSession: false } })
+    const since = new Date(Date.now() - RATE_WINDOW_MS).toISOString()
+
+    const { count, error } = await supabase
+      .from('rate_limits')
+      .select('*', { count: 'exact', head: true })
+      .eq('ip', ip)
+      .gte('requested_at', since)
+    if (error) throw error
+
+    if ((count ?? 0) >= RATE_LIMIT) return false
+
+    await supabase.from('rate_limits').insert({ ip })
+    // opruimen: oude rijen weghalen zodat de tabel klein blijft
+    await supabase.from('rate_limits').delete().lt('requested_at', since)
+    return true
+  } catch (err) {
+    console.error('menuscan: rate limit check mislukt, request toegestaan:', err)
+    return true
+  }
+}
+
+function getClientIp(req: VercelRequest): string {
+  const fwd = req.headers['x-forwarded-for']
+  if (typeof fwd === 'string' && fwd.length > 0) return fwd.split(',')[0].trim()
+  return req.socket?.remoteAddress ?? 'unknown'
+}
 
 const CONDITION_CONTEXT: Record<string, string> = {
   jicht: 'jicht (vermijd hoog purinegehalte >200mg/100g, alcohol altijd rood)',
@@ -12,10 +58,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === 'OPTIONS') return res.status(200).end()
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
-  const code = req.headers['x-access-code']
-  const validCode = process.env.SCAN_ACCESS_CODE
-  if (!validCode || code !== validCode) {
-    return res.status(401).json({ error: 'Ongeldige toegangscode' })
+  const allowed = await checkRateLimit(getClientIp(req))
+  if (!allowed) {
+    return res.status(429).json({
+      error: `Je hebt het maximum van ${RATE_LIMIT} scans per uur bereikt. Probeer het later opnieuw.`,
+    })
   }
 
   const { image, conditions, mediaType } = req.body ?? {}

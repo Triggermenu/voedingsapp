@@ -68,8 +68,9 @@ export function Privacy() {
             . Gebruik de scan niet voor foto's met herkenbare personen.
           </p>
           <p>
-            De scan is een <strong>betaalde functie</strong> waarvoor een toegangscode nodig is.
-            Zonder toegangscode worden er geen gegevens verstuurd.
+            Om misbruik te voorkomen is de scan beperkt tot <strong>12 keer per uur</strong>.
+            Hiervoor wordt je IP-adres tijdelijk vastgelegd; dit wordt na een uur automatisch
+            verwijderd en niet aan je profiel of aandoeningen gekoppeld.
           </p>
         </section>
 

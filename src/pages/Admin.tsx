@@ -36,7 +36,7 @@ const RISKS = [
   },
   {
     id: 'R-005', title: 'API-kosten (misbruik)', status: 'mitigated' as const,
-    desc: 'Access code + rate limit aanwezig. Budget-cap instellen op Anthropic dashboard (A-4).',
+    desc: 'Rate limit (12 scans/uur per IP via Supabase) aanwezig. Budget-cap instellen op Anthropic dashboard (A-5).',
   },
   {
     id: 'R-006', title: 'Database-kwaliteit', status: 'mitigated' as const,
