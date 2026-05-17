@@ -15,7 +15,8 @@ Zie `acties-peter.md` voor de stappen.
 Database-items staan in `src/data/<categorie>.json`. CI valideert automatisch alle scores, bronnen en regression-tests. PR's van Cowork mergen automatisch als CI groen is.
 
 ### Menuscan
-Vereist `ANTHROPIC_API_KEY` en `MENUSCAN_ACCESS_CODE` in Vercel env vars. Deel de toegangscode met Jerry.
+Vereist `ANTHROPIC_API_KEY`, `SUPABASE_URL` en `SUPABASE_SERVICE_ROLE_KEY` in Vercel env vars.
+De scan is beperkt tot 12 keer per uur per IP-adres (rate limiting via Supabase, zie RISKS.md R-007).
 
 ## Technisch
 

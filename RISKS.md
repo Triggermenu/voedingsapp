@@ -58,7 +58,7 @@
 | **Status** | Geaccepteerd, gemitigeerd |
 | **Impact** | Middel-hoog — verkeerde score op restaurantgerecht kan dagenlange klachten geven (vooral histamine) |
 | **Waarschijnlijkheid** | Middel — AI kan verborgen ingrediënten (MSG, gerijpte kaas in saus, gefermenteerde sojasaus) missen |
-| **Mitigatie** | 1) Prompt instrueert tot voorzichtigste interpretatie bij twijfel. 2) Bij onzekerheid resultaat = oranje + "vraag ober" i.p.v. groen. 3) Per-gerecht disclaimer over bereidingsvariaties. 4) Rate limiting + magic link tegen misbruik. |
+| **Mitigatie** | 1) Prompt instrueert tot voorzichtigste interpretatie bij twijfel. 2) Bij onzekerheid resultaat = oranje + "vraag ober" i.p.v. groen. 3) Per-gerecht disclaimer over bereidingsvariaties. 4) Rate limiting (12 scans/uur per IP via Supabase) tegen misbruik. |
 | **Eigenaar** | Claude Code (prompt design + UI fallbacks) |
 | **Deadline** | n.v.t. — doorlopend |
 | **Tracking** | api/menuscan.ts + Playwright e2e |
@@ -73,7 +73,7 @@
 | **Status** | Gemitigeerd |
 | **Impact** | Middel — onverwachte rekening bij scraping/abuse |
 | **Waarschijnlijkheid** | Laag bij implementatie van mitigaties |
-| **Mitigatie** | 1) Magic link auth (geen open endpoint). 2) Rate limit per user (Vercel KV/Upstash). 3) Hard budget cap op Anthropic dashboard. 4) Sentry alert bij ongebruikelijke pieken. |
+| **Mitigatie** | 1) Rate limiting: 12 scans/uur per IP via Supabase (`rate_limits` tabel). 2) Hard budget cap op Anthropic dashboard. 3) Sentry alert bij ongebruikelijke pieken. 4) Faalt "open" bij Supabase-storing — budget cap is de financiële achtervang. |
 | **Eigenaar** | Claude Code (implementatie) + Peter (budget-cap instellen) |
 | **Deadline** | Vóór publieke URL |
 | **Tracking** | acties-peter.md (budget cap) + api/menuscan.ts |
@@ -95,9 +95,24 @@
 
 ---
 
+## R-007 · AVG/GDPR — verwerking gezondheidsgegevens
+
+| Veld | Waarde |
+|---|---|
+| **Aard** | Juridisch / privacy (AVG / GDPR, art. 9 bijzondere persoonsgegevens) |
+| **Status** | Open — niet eerder geregistreerd |
+| **Impact** | Hoog — gekozen aandoeningen zijn gezondheidsgegevens; verwerking zonder geldige grondslag is onrechtmatig |
+| **Waarschijnlijkheid** | Zeker — de menuscan verwerkt nu al `conditions` + foto naar Vercel én Anthropic (VS) |
+| **Mitigatie** | 1) Privacyverklaring (NL) vóór launch. 2) Aparte uitdrukkelijke toestemming voor menuscan, los van de medische disclaimer. 3) Verwerkersovereenkomsten met Vercel, Anthropic, Sentry, Supabase (en Resend bij accounts). 4) Anthropic Zero Data Retention aanzetten. 5) Sentry-scrubbing: geen foto/aandoening in error logs. 6) Supabase + Vercel in EU-regio. 7) Dataminimalisatie: foto niet bewaren na scan. 8) Bij accounts: DPIA + betrokkenenrechten (inzage/export/verwijdering) + leeftijdscheck (16+). 9) Datalek-meldprocedure (72u → Autoriteit Persoonsgegevens). |
+| **Eigenaar** | Peter (juridisch: privacyverklaring, DPA's, evt. jurist-consult) + Claude Code (technische maatregelen) |
+| **Deadline** | Basismaatregelen vóór publieke launch; DPIA + rechten vóór accounts live |
+| **Tracking** | acties-peter.md A-7 |
+
+---
+
 ## Niet-risico's (expliciet genoemd, doelbewust geen mitigatie)
 
-- **Geen account / cloud sync (MVP).** Profiel in localStorage. Acceptabel voor MVP. Migratie naar accounts later mogelijk zonder breaking changes (zelfde schema).
+- **Geen account / cloud sync (MVP).** Profiel in localStorage — blijft op het apparaat van de gebruiker, gaat niet naar een server. Laag AVG-risico. Migratie naar accounts later mogelijk zonder breaking changes (zelfde schema), maar verhoogt het AVG-risico — zie R-007.
 - **Geen offline mode.** Vercel CDN + service worker mogelijk later. Niet kritiek voor MVP.
 - **Geen 24/7 monitoring.** Sentry + Plausible volstaan. Geen oncall.
 
