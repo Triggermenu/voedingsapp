@@ -1,6 +1,6 @@
 # Voedingsapp
 
-Beslishulp bij voedingskeuzes voor mensen met jicht, migraine, nierstenen en/of histamine-intolerantie.
+Beslishulp bij voedingskeuzes voor mensen met jicht, migraine, nierstenen en/of histamine-intolerantie. Bereikbaar via [triggermenu.nl](https://triggermenu.nl).
 
 ## Voor Jerry (gebruiker)
 
