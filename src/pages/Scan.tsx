@@ -55,7 +55,7 @@ export function Scan() {
       const res = await fetch('/api/menuscan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ image: base64, conditions, mediaType: imageFile.type }),
+        body: JSON.stringify({ image: base64, conditions, mediaType: 'image/jpeg' }),
       })
       if (res.status === 429) {
         const data = await res.json().catch(() => null) as { error?: string } | null
@@ -203,11 +203,39 @@ export function Scan() {
   )
 }
 
+/**
+ * Comprimeer afbeelding naar max 1280px en JPEG 0.82 kwaliteit.
+ * Houdt de base64-payload ruim onder Vercel's 4.5MB body-limiet.
+ */
 async function fileToBase64(file: File): Promise<string> {
+  const MAX_PX = 1280
+  const QUALITY = 0.82
+
+  const bitmap = await createImageBitmap(file)
+  const { width, height } = bitmap
+
+  const scale = Math.min(1, MAX_PX / Math.max(width, height))
+  const w = Math.round(width * scale)
+  const h = Math.round(height * scale)
+
+  const canvas = document.createElement('canvas')
+  canvas.width = w
+  canvas.height = h
+  const ctx = canvas.getContext('2d')!
+  ctx.drawImage(bitmap, 0, 0, w, h)
+  bitmap.close()
+
   return new Promise((resolve, reject) => {
-    const reader = new FileReader()
-    reader.onload = () => resolve((reader.result as string).split(',')[1])
-    reader.onerror = reject
-    reader.readAsDataURL(file)
+    canvas.toBlob(
+      (blob) => {
+        if (!blob) { reject(new Error('Canvas toBlob mislukt')); return }
+        const reader = new FileReader()
+        reader.onload = () => resolve((reader.result as string).split(',')[1])
+        reader.onerror = reject
+        reader.readAsDataURL(blob)
+      },
+      'image/jpeg',
+      QUALITY,
+    )
   })
 }
