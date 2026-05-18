@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getList, clearList } from '@/lib/list'
 import { getItemById } from '@/lib/db'
@@ -6,7 +6,16 @@ import { getCombinedScore } from '@/lib/scoring'
 import { getProfile } from '@/lib/profile'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
-import type { Condition } from '@/schemas/item'
+import type { Condition, Category } from '@/schemas/item'
+
+const CATEGORY_LABELS: Partial<Record<Category, string>> = {
+  groente: 'Groente', fruit: 'Fruit', granen: 'Granen & brood',
+  peulvruchten: 'Peulvruchten', 'noten-zaden': 'Noten & zaden',
+  vlees: 'Vlees & gevogelte', 'vis-schaaldieren': 'Vis & schaaldieren',
+  zuivel: 'Zuivel', eieren: 'Eieren', 'dranken-alcohol': 'Alcohol',
+  'dranken-non-alcohol': 'Dranken', zoetwaren: 'Zoetwaren & snacks',
+  'sauzen-kruiden': 'Sauzen & kruiden', 'bereid-gerecht': 'Bereide gerechten', overig: 'Overig',
+}
 
 type CellStatus = 'safe' | 'ok' | 'warn' | 'avoid' | 'null'
 
@@ -57,12 +66,21 @@ export function Lijst() {
     }
   }
 
-  // Sort: unchecked first, checked last
-  const sorted = [...items].sort((a, b) => {
-    const ac = checked.has(a.id) ? 1 : 0
-    const bc = checked.has(b.id) ? 1 : 0
-    return ac - bc
-  })
+  // Groepeer op categorie, binnen elke groep: afgevinkt onderaan
+  const grouped = useMemo(() => {
+    const map = new Map<string, typeof items>()
+    const sorted = [...items].sort((a, b) => {
+      const ac = checked.has(a.id) ? 1 : 0
+      const bc = checked.has(b.id) ? 1 : 0
+      return ac - bc
+    })
+    for (const item of sorted) {
+      const cat = item.category
+      if (!map.has(cat)) map.set(cat, [])
+      map.get(cat)!.push(item)
+    }
+    return map
+  }, [items, checked])
 
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
@@ -122,88 +140,76 @@ export function Lijst() {
         </div>
       )}
 
-      {/* List */}
+      {/* List — gegroepeerd per categorie */}
       {items.length > 0 && (
-        <div style={{ padding: '8px 22px 16px', display: 'flex', flexDirection: 'column', gap: 6 }}>
-          {sorted.map((item) => {
-            const isDone = checked.has(item.id)
-            const combined = getCombinedScore(item, conditions)
-            const status = scoreToStatus(combined.score)
-
-            const nm = item.name.nl.match(/^(.*?)(\s*\([^)]+\))$/)
-            const nameMain = nm ? nm[1] : item.name.nl
-            const nameSub = nm ? nm[2].trim() : null
-
-            return (
-              <div
-                key={item.id}
-                style={{
-                  display: 'flex', alignItems: 'center', gap: 12,
-                  padding: '12px 14px', borderRadius: 10,
-                  background: 'var(--paper)', border: '1px solid var(--rule)',
-                  opacity: isDone ? 0.45 : 1, transition: 'opacity 0.15s',
-                }}
-              >
-                {/* Checkbox */}
-                <button
-                  onClick={() => toggleCheck(item.id)}
-                  aria-label={isDone ? 'Afgevinkt' : 'Vink af'}
-                  style={{
-                    flexShrink: 0, width: 24, height: 24, borderRadius: 6,
-                    border: isDone ? 'none' : '2px solid var(--rule)',
-                    background: isDone ? 'var(--brand)' : 'transparent',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    cursor: 'pointer',
-                  }}
-                >
-                  {isDone && (
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round">
-                      <path d="M2 6l3 3 5-5" />
-                    </svg>
-                  )}
-                </button>
-
-                {/* Name + sub */}
-                <button
-                  onClick={() => navigate(`/item/${item.id}`)}
-                  style={{
-                    flex: 1, textAlign: 'left', background: 'none', border: 'none',
-                    cursor: 'pointer', fontFamily: 'inherit', minWidth: 0,
-                  }}
-                >
-                  <div style={{
-                    fontSize: 15, fontWeight: 500, color: 'var(--ink)',
-                    textDecoration: isDone ? 'line-through' : 'none',
-                    whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
-                  }}>
-                    {nameMain}
-                  </div>
-                  {nameSub && (
-                    <div style={{ fontSize: 11.5, color: 'var(--muted)', marginTop: 1 }}>{nameSub}</div>
-                  )}
-                </button>
-
-                {/* Combined status dot */}
-                <div style={{
-                  width: 10, height: 10, borderRadius: '50%', flexShrink: 0,
-                  background: status !== 'null' ? `var(--${status})` : 'var(--rule)',
-                }} />
-
-                {/* Per-condition mini dots */}
-                {conditions.length > 1 && (
-                  <div style={{ display: 'flex', gap: 5, flexShrink: 0 }}>
-                    {conditions.map((c) => (
-                      <MiniCondDot
-                        key={c}
-                        status={scoreToStatus(item.scores[c]?.score ?? null)}
-                        label={COND_SHORT[c]}
-                      />
-                    ))}
-                  </div>
-                )}
+        <div style={{ padding: '4px 22px 16px' }}>
+          {Array.from(grouped.entries()).map(([cat, catItems]) => (
+            <div key={cat}>
+              <div className="eyebrow" style={{ padding: '14px 0 6px', fontSize: 10 }}>
+                {CATEGORY_LABELS[cat as Category] ?? cat} · {catItems.length}
               </div>
-            )
-          })}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+                {catItems.map((item) => {
+                  const isDone = checked.has(item.id)
+                  const combined = getCombinedScore(item, conditions)
+                  const status = scoreToStatus(combined.score)
+                  const nm = item.name.nl.match(/^(.*?)(\s*\([^)]+\))$/)
+                  const nameMain = nm ? nm[1] : item.name.nl
+                  const nameSub = nm ? nm[2].trim() : null
+
+                  return (
+                    <div
+                      key={item.id}
+                      style={{
+                        display: 'flex', alignItems: 'center', gap: 12,
+                        padding: '12px 14px', borderRadius: 10,
+                        background: 'var(--paper)', border: '1px solid var(--rule)',
+                        opacity: isDone ? 0.45 : 1, transition: 'opacity 0.15s',
+                      }}
+                    >
+                      <button
+                        onClick={() => toggleCheck(item.id)}
+                        aria-label={isDone ? 'Afgevinkt' : 'Vink af'}
+                        style={{
+                          flexShrink: 0, width: 24, height: 24, borderRadius: 6,
+                          border: isDone ? 'none' : '2px solid var(--rule)',
+                          background: isDone ? 'var(--brand)' : 'transparent',
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {isDone && (
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round">
+                            <path d="M2 6l3 3 5-5" />
+                          </svg>
+                        )}
+                      </button>
+
+                      <button
+                        onClick={() => navigate(`/item/${item.id}`)}
+                        style={{ flex: 1, textAlign: 'left', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', minWidth: 0 }}
+                      >
+                        <div style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)', textDecoration: isDone ? 'line-through' : 'none', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                          {nameMain}
+                        </div>
+                        {nameSub && <div style={{ fontSize: 11.5, color: 'var(--muted)', marginTop: 1 }}>{nameSub}</div>}
+                      </button>
+
+                      <div style={{ width: 10, height: 10, borderRadius: '50%', flexShrink: 0, background: status !== 'null' ? `var(--${status})` : 'var(--rule)' }} />
+
+                      {conditions.length > 1 && (
+                        <div style={{ display: 'flex', gap: 5, flexShrink: 0 }}>
+                          {conditions.map((c) => (
+                            <MiniCondDot key={c} status={scoreToStatus(item.scores[c]?.score ?? null)} label={COND_SHORT[c]} />
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       )}
 

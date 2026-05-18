@@ -244,6 +244,17 @@ export function Scan() {
               Dit is een AI-inschatting op basis van de menukaart — geen medisch advies. Raadpleeg
               altijd je diëtist of arts bij twijfel. Scores kunnen afwijken van de database.
             </div>
+
+            {/* Deel-knop */}
+            <button
+              onClick={() => shareResults(results!, conditions)}
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border border-[#e0dfd7] text-sm text-[#73726c] font-medium hover:border-[#1d9e75] hover:text-[#1d9e75] transition-colors"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />
+              </svg>
+              Deel resultaten
+            </button>
           </div>
         )}
       </div>
@@ -251,6 +262,29 @@ export function Scan() {
       <NavBar />
     </div>
   )
+}
+
+const SCORE_EMOJI: Record<number, string> = { 0: '🟢', 1: '🟡', 2: '🟠', 3: '🔴' }
+
+function shareResults(results: ScanResult[], conditions: string[]) {
+  const lines = results.map((r) => {
+    const scores = conditions
+      .map((c) => {
+        const s = r.scores[c as keyof typeof r.scores]
+        return s ? `${CONDITION_LABELS[c as keyof typeof CONDITION_LABELS]}: ${SCORE_EMOJI[s.score] ?? '?'} ${SCORE_LABELS[s.score]}` : null
+      })
+      .filter(Boolean)
+      .join(' · ')
+    return `${r.dish}\n${scores}`
+  }).join('\n\n')
+
+  const text = `Menukaart analyse via Triggermenu\n\n${lines}\n\ntriggermenu.nl`
+
+  if (navigator.share) {
+    navigator.share({ title: 'Triggermenu menukaart scan', text }).catch(() => {})
+  } else {
+    navigator.clipboard.writeText(text).then(() => alert('Gekopieerd naar klembord'))
+  }
 }
 
 /**

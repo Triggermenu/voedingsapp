@@ -1,6 +1,7 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { searchItems, getAllItems, getAlternatives } from '@/lib/db'
+import { getCombinedScore } from '@/lib/scoring'
 import { getProfile } from '@/lib/profile'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
@@ -268,11 +269,28 @@ export function Zoeken() {
   const isDesktop = useMediaQuery('(min-width: 1280px)')
   const [query, setQuery] = useState('')
   const [activeCategories, setActiveCategories] = useState<Set<Category>>(new Set())
+  const [onlySafe, setOnlySafe] = useState(false)
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [expandedId, setExpandedId] = useState<string | null>(null)
+  const [recentSearches, setRecentSearches] = useState<string[]>(() => {
+    try { return JSON.parse(localStorage.getItem('recent-searches') ?? '[]') } catch { return [] }
+  })
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
   const greeting = useMemo(() => getTimeGreeting(), [])
+
+  // Sla recente zoekopdracht op na 1 seconde inactiviteit
+  useEffect(() => {
+    if (query.length < 2) return
+    const t = setTimeout(() => {
+      setRecentSearches((prev) => {
+        const next = [query, ...prev.filter((q) => q.toLowerCase() !== query.toLowerCase())].slice(0, 5)
+        localStorage.setItem('recent-searches', JSON.stringify(next))
+        return next
+      })
+    }, 1000)
+    return () => clearTimeout(t)
+  }, [query])
 
   const allItems = useMemo(() => getAllItems(), [])
   const results = useMemo(() => searchItems(query, conditions), [query, conditions])
@@ -284,9 +302,11 @@ export function Zoeken() {
   }, [results])
 
   const filteredResults = useMemo(() => {
-    if (activeCategories.size === 0) return results
-    return results.filter((item) => activeCategories.has(item.category as Category))
-  }, [results, activeCategories])
+    let r = results
+    if (activeCategories.size > 0) r = r.filter((item) => activeCategories.has(item.category as Category))
+    if (onlySafe) r = r.filter((item) => getCombinedScore(item, conditions).score === 0)
+    return r
+  }, [results, activeCategories, onlySafe, conditions])
 
   const grouped = useMemo(() => {
     const map = new Map<Category, typeof filteredResults>()
@@ -384,19 +404,56 @@ export function Zoeken() {
         )}
       </div>
 
-      {/* Category chips — always visible, horizontally scrollable */}
+      {/* Recente zoekopdrachten — alleen zichtbaar wanneer zoekveld leeg is */}
+      {!query && recentSearches.length > 0 && (
+        <div style={{ display: 'flex', gap: 6, overflowX: 'auto', padding: '8px 0 0', scrollbarWidth: 'none' }}>
+          {recentSearches.map((s) => (
+            <button
+              key={s}
+              onClick={() => setQuery(s)}
+              style={{
+                flexShrink: 0, padding: '4px 10px', borderRadius: 999, fontSize: 12, fontWeight: 400,
+                background: 'transparent', color: 'var(--ink-soft)',
+                border: '1px dashed var(--rule)', cursor: 'pointer', fontFamily: 'inherit',
+                display: 'flex', alignItems: 'center', gap: 5,
+              }}
+            >
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+                <polyline points="12 8 12 12 14 14" /><circle cx="12" cy="12" r="9" />
+              </svg>
+              {s}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Category chips + veilig-filter */}
       {availableCategories.length > 0 && (
         <div style={{
           display: 'flex', gap: 6, overflowX: 'auto', padding: '10px 0 2px',
           scrollbarWidth: 'none', msOverflowStyle: 'none',
         }}>
+          {/* Veilig-filter chip */}
+          <button
+            onClick={() => setOnlySafe((v) => !v)}
+            style={{
+              flexShrink: 0, padding: '5px 11px', borderRadius: 999, fontSize: 12.5, fontWeight: 500,
+              background: onlySafe ? 'var(--safe)' : 'transparent',
+              color: onlySafe ? 'var(--safe-ink)' : 'var(--ink-soft)',
+              border: onlySafe ? 'none' : '1px solid var(--rule)',
+              cursor: 'pointer', fontFamily: 'inherit',
+            }}
+          >
+            ✓ Alleen veilig
+          </button>
+
           <button
             onClick={() => setActiveCategories(new Set())}
             style={{
               flexShrink: 0, padding: '5px 11px', borderRadius: 999, fontSize: 12.5, fontWeight: 500,
-              background: activeCategories.size === 0 ? 'var(--ink)' : 'transparent',
-              color: activeCategories.size === 0 ? 'var(--paper)' : 'var(--ink-soft)',
-              border: activeCategories.size === 0 ? 'none' : '1px solid var(--rule)',
+              background: activeCategories.size === 0 && !onlySafe ? 'var(--ink)' : 'transparent',
+              color: activeCategories.size === 0 && !onlySafe ? 'var(--paper)' : 'var(--ink-soft)',
+              border: activeCategories.size === 0 && !onlySafe ? 'none' : '1px solid var(--rule)',
               cursor: 'pointer', fontFamily: 'inherit',
             }}
           >
