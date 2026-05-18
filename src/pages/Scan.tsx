@@ -13,6 +13,8 @@ interface ScanResult {
   dish: string
   scores: Partial<Record<Condition, { score: number; note: string }>>
   overallNote: string
+  explanation: string
+  waiterQuestions: string[]
 }
 
 function ScorePill({ score }: { score: number }) {
@@ -37,6 +39,7 @@ export function Scan() {
   const [loading, setLoading] = useState(false)
   const [results, setResults] = useState<ScanResult[] | null>(null)
   const [error, setError] = useState('')
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
 
   const handleFile = (file: File) => {
@@ -166,28 +169,76 @@ export function Scan() {
               </button>
             </div>
 
-            {results.map((r, i) => (
-              <div key={i} className="bg-white border border-[#e0dfd7] rounded-xl p-4 space-y-2.5">
-                <p className="font-serif font-semibold text-[#1a1a18]">{r.dish}</p>
-                <div className="flex flex-wrap gap-2">
-                  {conditions.map((c) => {
-                    const s = r.scores[c]
-                    if (!s) return null
-                    return (
-                      <div key={c} className="flex items-center gap-1.5">
-                        <ScorePill score={s.score} />
-                        <span className="text-xs text-[#73726c]">{CONDITION_LABELS[c]}</span>
-                      </div>
-                    )
-                  })}
+            {results.map((r, i) => {
+              const isOpen = expandedIndex === i
+              return (
+                <div key={i} className="bg-white border border-[#e0dfd7] rounded-xl overflow-hidden">
+                  {/* Hoofdrij */}
+                  <div className="p-4 space-y-2.5">
+                    <div className="flex items-start justify-between gap-2">
+                      <p className="font-serif font-semibold text-[#1a1a18] leading-snug">{r.dish}</p>
+                      <button
+                        onClick={() => setExpandedIndex(isOpen ? null : i)}
+                        aria-expanded={isOpen}
+                        aria-label="Meer uitleg"
+                        className="flex-shrink-0 w-6 h-6 rounded-full border border-[#c8c7bf] flex items-center justify-center text-[#73726c] hover:border-[#1d9e75] hover:text-[#1d9e75] transition-colors mt-0.5"
+                      >
+                        <span className="text-[11px] font-semibold leading-none">i</span>
+                      </button>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {conditions.map((c) => {
+                        const s = r.scores[c]
+                        if (!s) return null
+                        return (
+                          <div key={c} className="flex items-center gap-1.5">
+                            <ScorePill score={s.score} />
+                            <span className="text-xs text-[#73726c]">{CONDITION_LABELS[c]}</span>
+                          </div>
+                        )
+                      })}
+                    </div>
+                    {r.overallNote && (
+                      <p className="text-xs text-[#73726c] leading-relaxed border-t border-[#f0efe8] pt-2">
+                        {r.overallNote}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Uitklapblok */}
+                  {isOpen && (
+                    <div className="border-t border-[#f0efe8] bg-[#faf9f6] px-4 py-3 space-y-3">
+                      {/* Uitleg per aandoening */}
+                      {r.explanation && (
+                        <div>
+                          <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-1">Waarom deze score?</p>
+                          <p className="text-xs text-[#1a1a18] leading-relaxed">{r.explanation}</p>
+                        </div>
+                      )}
+
+                      {/* Vragen voor de ober */}
+                      {r.waiterQuestions?.length > 0 && (
+                        <div>
+                          <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-1.5">Vraag aan de ober</p>
+                          <ul className="space-y-1.5">
+                            {r.waiterQuestions.map((q, qi) => (
+                              <li key={qi} className="flex items-start gap-2">
+                                <span className="text-[#1d9e75] mt-0.5 flex-shrink-0">
+                                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M6 1C3.24 1 1 3.24 1 6s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm.5 7.5h-1v-4h1v4zm0-5h-1V2.5h1V3.5z" fill="currentColor"/>
+                                  </svg>
+                                </span>
+                                <span className="text-xs text-[#1a1a18] leading-relaxed italic">"{q}"</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
-                {r.overallNote && (
-                  <p className="text-xs text-[#73726c] leading-relaxed border-t border-[#f0efe8] pt-2">
-                    {r.overallNote}
-                  </p>
-                )}
-              </div>
-            ))}
+              )
+            })}
 
             <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800 leading-relaxed">
               Dit is een AI-inschatting op basis van de menukaart — geen medisch advies. Raadpleeg

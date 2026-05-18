@@ -87,7 +87,7 @@ Scoreschaal:
 0 = veilig  |  1 = matig (met mate)  |  2 = voorzichtig (beperken)  |  3 = vermijden
 
 Geef alleen gerechten terug die duidelijk leesbaar op de kaart staan. Maximaal 12 gerechten.
-Schrijf alle tekst in het Nederlands. Wees bondig in de notes (max 10 woorden per note).
+Schrijf alle tekst in het Nederlands.
 
 Antwoord UITSLUITEND als geldig JSON:
 {
@@ -97,7 +97,12 @@ Antwoord UITSLUITEND als geldig JSON:
       "scores": {
         ${scoreFields}
       },
-      "overallNote": "één zin samenvatting"
+      "overallNote": "één zin samenvatting van het advies",
+      "explanation": "2-3 zinnen waarom dit gerecht deze scores krijgt — benoem concrete ingrediënten of bereidingswijzen die relevant zijn voor de aandoening(en). Wees specifiek en informatief.",
+      "waiterQuestions": [
+        "Concrete vraag die de gast aan de ober kan stellen om meer zekerheid te krijgen, bijv. over bereidingswijze of ingrediënten",
+        "Tweede vraag indien relevant"
+      ]
     }
   ]
 }`
@@ -106,7 +111,7 @@ Antwoord UITSLUITEND als geldig JSON:
     const client = new Anthropic()
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
-      max_tokens: 2048,
+      max_tokens: 4096,
       messages: [
         {
           role: 'user',
