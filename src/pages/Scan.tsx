@@ -89,7 +89,6 @@ export function Scan() {
       <div className="px-4 pt-safe pt-5 pb-4 border-b border-[#e0dfd7]">
         <div className="flex items-center gap-2 mb-3">
           <Logo size={26} />
-          <span className="font-serif font-semibold text-[#1a1a18] text-base">Triggermenu</span>
         </div>
         <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-1">Menukaart scan</p>
         <h1 className="font-serif text-[1.9rem] leading-[1.15] font-semibold text-[#1a1a18]">
