@@ -133,6 +133,12 @@ Antwoord UITSLUITEND als geldig JSON:
     return res.status(200).json(parsed)
   } catch (err) {
     console.error('menuscan error:', err)
-    return res.status(500).json({ error: 'Er ging iets mis bij de analyse' })
+    if (err instanceof Anthropic.AuthenticationError) {
+      return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
+    }
+    if (err instanceof Anthropic.APIError) {
+      return res.status(500).json({ error: `AI-fout (${err.status}): ${err.message}` })
+    }
+    return res.status(500).json({ error: 'Er ging iets mis bij de analyse. Probeer opnieuw.' })
   }
 }

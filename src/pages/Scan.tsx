@@ -62,7 +62,11 @@ export function Scan() {
         setError(data?.error ?? 'Te veel scans. Probeer het later opnieuw.')
         return
       }
-      if (!res.ok) { setError('Er ging iets mis. Probeer opnieuw.'); return }
+      if (!res.ok) {
+        const errData = await res.json().catch(() => null) as { error?: string } | null
+        setError(errData?.error ?? 'Er ging iets mis. Probeer opnieuw.')
+        return
+      }
       const data = await res.json() as { results: ScanResult[] }
       setResults(data.results)
     } catch {

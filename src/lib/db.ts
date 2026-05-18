@@ -133,7 +133,7 @@ const SUBCATEGORY_GROUPS: Record<string, string[]> = {
 import groenteData from '@/data/groente.json'
 import fruitData from '@/data/fruit.json'
 import vleesData from '@/data/vlees.json'
-import visData from '@/data/vis.json'
+import visData from '@/data/vis-schaaldieren.json'
 import zuivelData from '@/data/zuivel.json'
 import granenData from '@/data/granen.json'
 import peulvruchtenData from '@/data/peulvruchten.json'

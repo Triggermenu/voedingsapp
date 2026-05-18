@@ -9,17 +9,11 @@ const MIGRAINE_WHITELIST = new Set(['rode wijn', 'bier', 'alcohol', 'msg', 'spek
 const EVIDENCE_A_SOURCE_TYPES = new Set(['database', 'meta-analysis', 'guideline'])
 
 let errors = 0
-let warnings = 0
 let totalItems = 0
 
 function fail(msg: string) {
   console.error(`  ✗ ${msg}`)
   errors++
-}
-
-function warn(msg: string) {
-  console.warn(`  ⚠ ${msg}`)
-  warnings++
 }
 
 const files = readdirSync(DATA_DIR).filter((f) => f.endsWith('.json'))
@@ -104,7 +98,7 @@ for (const file of files) {
 
 console.log(`\n━━━ Database validatie ━━━`)
 console.log(`Bestanden: ${files.length} · Items: ${totalItems}`)
-console.log(`Fouten: ${errors} · Waarschuwingen: ${warnings}`)
+console.log(`Fouten: ${errors}`)
 
 if (errors > 0) {
   console.error(`\n✗ Validatie MISLUKT (${errors} fout${errors !== 1 ? 'en' : ''})`)
