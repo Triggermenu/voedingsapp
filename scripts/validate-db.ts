@@ -91,7 +91,7 @@ for (const file of files) {
     const melkMatch = !isPlantBased && calciumRijkZuivel.some((w) => nameNlLower.includes(w))
     if (melkMatch || kaasMatch) {
       if (item.scores.nierstenen?.score !== undefined && item.scores.nierstenen.score > 1) {
-        warn(`${label}: calcium-rijk item heeft nierstenen score > 1. Controleer of dit correct is.`)
+        fail(`${label}: REGRESSIE — calcium-rijke items mogen nierstenen score max 1 hebben (Borghi RCT, CLAUDE.md §4.2 gate 8).`)
       }
     }
 

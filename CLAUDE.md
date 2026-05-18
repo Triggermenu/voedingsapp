@@ -237,9 +237,10 @@ Als alle 16 checks groen zijn én PR-author is in `trusted-authors.json` (Cowork
 |---|---|---|---|
 | 1 | 150 | Sweet spot — alle 4 aandoeningen scorebaar | 1–2 weken |
 | 2 | 300 | NL-supermarkt dekking | 4–6 weken |
-| 3 | 500 (cap) | Voltooien USDA Purine + Harvard Oxalate | 2–3 maanden |
+| 3 | 500 (bereikt) | Voltooien USDA Purine + Harvard Oxalate | afgerond |
+| 4 | 700 (cap) | Ontbrekende categorieën: eieren, bereid-gerecht, vis-schaaldieren | lopend |
 
-**Boven 500 items: NIET groeien.** Onderzoek toont dat boven 500 items USDA Branded Foods ingezet zou moeten worden, waar 50%+ geen purine-/oxalaat-/histaminedata heeft. Kwaliteit > kwantiteit.
+**Boven 700 items: NIET groeien.** Boven dit aantal zijn alleen nog USDA Branded Foods beschikbaar, waar 50%+ geen purine-/oxalaat-/histaminedata heeft. Kwaliteit > kwantiteit. Cap verhoogd van 500 → 700 op 2026-05-18 om ruimte te maken voor de categorieën eieren, bereid-gerecht en vis-schaaldieren (akkoord: Peter Wolterman).
 
 ---
 
@@ -375,7 +376,8 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 14. Versiebeheer van dit document
 
-- **Schema version:** v1.1
-- **Laatste wijziging:** 2026-05-15
+- **Schema version:** v1.2
+- **Laatste wijziging:** 2026-05-18
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
+  - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).

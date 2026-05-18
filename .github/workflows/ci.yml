@@ -34,7 +34,6 @@ jobs:
 
       - name: Check source URLs
         run: npm run check-sources
-        continue-on-error: true
         timeout-minutes: 5
 
       - name: Build
