@@ -65,28 +65,31 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     })
   }
 
-  const { image, conditions, mediaType } = req.body ?? {}
-  if (!image || !Array.isArray(conditions) || conditions.length === 0) {
-    return res.status(400).json({ error: 'Ontbrekende velden' })
-  }
+  const { phase, image, conditions, mediaType, dishes } = req.body ?? {}
 
-  const validMediaTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
-  const safeMediaType = validMediaTypes.includes(mediaType) ? mediaType : 'image/jpeg'
+  // Phase 1: afbeelding → scores per gerecht
+  if (phase === 1 || !phase) {
+    if (!image || !Array.isArray(conditions) || conditions.length === 0) {
+      return res.status(400).json({ error: 'Ontbrekende velden' })
+    }
 
-  const activeContext = conditions
-    .map((c: string) => CONDITION_CONTEXT[c] ?? c)
-    .join('; ')
+    const validMediaTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
+    const safeMediaType = validMediaTypes.includes(mediaType) ? mediaType : 'image/jpeg'
 
-  const scoreFields = conditions
-    .map((c: string) => `"${c}": { "score": 0, "note": "korte uitleg in het Nederlands" }`)
-    .join(',\n        ')
+    const activeContext = conditions
+      .map((c: string) => CONDITION_CONTEXT[c] ?? c)
+      .join('; ')
 
-  const prompt = `Analyseer deze restaurantmenukaart voor iemand met: ${activeContext}.
+    const scoreFields = conditions
+      .map((c: string) => `"${c}": { "score": 0, "note": "korte uitleg in het Nederlands" }`)
+      .join(',\n        ')
+
+    const prompt = `Analyseer deze restaurantmenukaart voor iemand met: ${activeContext}.
 
 Scoreschaal:
 0 = veilig  |  1 = matig (met mate)  |  2 = voorzichtig (beperken)  |  3 = vermijden
 
-Geef ALLE gerechten terug die leesbaar op de kaart staan, scan de volledige afbeelding van boven naar beneden. Maximaal 25 gerechten; sla bijlagen, drankjes en desserts niet over.
+Scan de volledige afbeelding van boven naar beneden. Geef maximaal 15 gerechten terug — kies de meest herkenbare hoofd- en bijgerechten. Sla drankjes over tenzij er verder weinig gerechten zijn.
 Schrijf alle tekst in het Nederlands.
 
 Antwoord UITSLUITEND als geldig JSON:
@@ -97,53 +100,116 @@ Antwoord UITSLUITEND als geldig JSON:
       "scores": {
         ${scoreFields}
       },
-      "overallNote": "één zin samenvatting van het advies",
-      "explanation": "2-3 zinnen waarom dit gerecht deze scores krijgt — benoem concrete ingrediënten of bereidingswijzen die relevant zijn voor de aandoening(en). Wees specifiek en informatief.",
-      "waiterQuestions": [
-        "Concrete vraag die de gast aan de ober kan stellen om meer zekerheid te krijgen, bijv. over bereidingswijze of ingrediënten",
-        "Tweede vraag indien relevant"
-      ]
+      "overallNote": "één zin samenvatting van het advies"
     }
   ]
 }`
 
-  try {
-    const client = new Anthropic()
-    const response = await client.messages.create({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 8192,
-      messages: [
-        {
-          role: 'user',
-          content: [
-            {
-              type: 'image',
-              source: {
-                type: 'base64',
-                media_type: safeMediaType as 'image/jpeg' | 'image/png' | 'image/gif' | 'image/webp',
-                data: image,
+    try {
+      const client = new Anthropic()
+      const response = await client.messages.create({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 2048,
+        messages: [
+          {
+            role: 'user',
+            content: [
+              {
+                type: 'image',
+                source: {
+                  type: 'base64',
+                  media_type: safeMediaType as 'image/jpeg' | 'image/png' | 'image/gif' | 'image/webp',
+                  data: image,
+                },
               },
-            },
-            { type: 'text', text: prompt },
-          ],
-        },
-      ],
-    })
+              { type: 'text', text: prompt },
+            ],
+          },
+        ],
+      })
 
-    const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    const jsonMatch = text.match(/\{[\s\S]*\}/)
-    if (!jsonMatch) return res.status(500).json({ error: 'Kon resultaat niet verwerken' })
+      const text = response.content[0].type === 'text' ? response.content[0].text : ''
+      const jsonMatch = text.match(/\{[\s\S]*\}/)
+      if (!jsonMatch) return res.status(500).json({ error: 'Kon resultaat niet verwerken' })
 
-    const parsed = JSON.parse(jsonMatch[0])
-    return res.status(200).json(parsed)
-  } catch (err) {
-    console.error('menuscan error:', err)
-    if (err instanceof Anthropic.AuthenticationError) {
-      return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
+      const parsed = JSON.parse(jsonMatch[0])
+      return res.status(200).json(parsed)
+    } catch (err) {
+      console.error('menuscan fase 1 error:', err)
+      if (err instanceof Anthropic.AuthenticationError) {
+        return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
+      }
+      if (err instanceof Anthropic.APIError) {
+        return res.status(500).json({ error: `AI-fout (${err.status}): ${err.message}` })
+      }
+      return res.status(500).json({ error: 'Er ging iets mis bij de analyse. Probeer opnieuw.' })
     }
-    if (err instanceof Anthropic.APIError) {
-      return res.status(500).json({ error: `AI-fout (${err.status}): ${err.message}` })
-    }
-    return res.status(500).json({ error: 'Er ging iets mis bij de analyse. Probeer opnieuw.' })
   }
+
+  // Phase 2: tekst-only → uitleg + obervragen per gerecht
+  if (phase === 2) {
+    if (!Array.isArray(dishes) || dishes.length === 0 || !Array.isArray(conditions) || conditions.length === 0) {
+      return res.status(400).json({ error: 'Ontbrekende velden voor fase 2' })
+    }
+
+    const activeContext = conditions
+      .map((c: string) => CONDITION_CONTEXT[c] ?? c)
+      .join('; ')
+
+    const dishList = (dishes as Array<{ dish: string; scores: Record<string, { score: number }> }>)
+      .map((d) => {
+        const scoreStr = Object.entries(d.scores)
+          .map(([k, v]) => `${k}: ${v.score}`)
+          .join(', ')
+        return `- ${d.dish} (scores: ${scoreStr})`
+      })
+      .join('\n')
+
+    const prompt = `Je bent een voedingsadviseur voor iemand met: ${activeContext}.
+
+De volgende gerechten zijn zojuist gescoord (0=veilig, 1=matig, 2=voorzichtig, 3=vermijden):
+${dishList}
+
+Geef per gerecht:
+1. Een uitleg van 2-3 zinnen waarom dit gerecht deze scores krijgt. Benoem concrete ingrediënten of bereidingswijzen die relevant zijn.
+2. 1-2 concrete vragen die de gast aan de ober kan stellen voor meer zekerheid.
+
+Schrijf in het Nederlands. Antwoord UITSLUITEND als geldig JSON:
+{
+  "details": [
+    {
+      "dish": "exacte naam zoals hierboven",
+      "explanation": "2-3 zinnen uitleg",
+      "waiterQuestions": ["Vraag 1", "Vraag 2"]
+    }
+  ]
+}`
+
+    try {
+      const client = new Anthropic()
+      const response = await client.messages.create({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 4096,
+        messages: [{ role: 'user', content: prompt }],
+      })
+
+      const text = response.content[0].type === 'text' ? response.content[0].text : ''
+      const jsonMatch = text.match(/\{[\s\S]*\}/)
+      if (!jsonMatch) return res.status(500).json({ error: 'Kon uitleg niet verwerken' })
+
+      const parsed = JSON.parse(jsonMatch[0])
+      return res.status(200).json(parsed)
+    } catch (err) {
+      console.error('menuscan fase 2 error:', err)
+      if (err instanceof Anthropic.AuthenticationError) {
+        return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
+      }
+      if (err instanceof Anthropic.APIError) {
+        return res.status(500).json({ error: `AI-fout (${err.status}): ${err.message}` })
+      }
+      return res.status(500).json({ error: 'Uitleg kon niet worden opgehaald.' })
+    }
+  }
+
+  return res.status(400).json({ error: 'Ongeldig phase-veld' })
 }

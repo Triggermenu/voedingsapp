@@ -9,13 +9,20 @@ const CONDITION_LABELS: Record<Condition, string> = {
   jicht: 'Jicht', migraine: 'Migraine', nierstenen: 'Nierstenen', histamine: 'Histamine',
 }
 
-interface ScanResult {
+interface Phase1Result {
   dish: string
   scores: Partial<Record<Condition, { score: number; note: string }>>
   overallNote: string
+}
+
+interface Phase2Detail {
+  dish: string
   explanation: string
   waiterQuestions: string[]
 }
+
+// Merged type used once both phases are done
+type ScanResult = Phase1Result & Partial<Pick<Phase2Detail, 'explanation' | 'waiterQuestions'>>
 
 function ScorePill({ score }: { score: number }) {
   const styles =
@@ -38,6 +45,7 @@ export function Scan() {
   const [imageFile, setImageFile] = useState<File | null>(null)
   const [loading, setLoading] = useState(false)
   const [results, setResults] = useState<ScanResult[] | null>(null)
+  const [phase2Loading, setPhase2Loading] = useState(false)
   const [error, setError] = useState('')
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
@@ -53,28 +61,60 @@ export function Scan() {
     if (!imageFile) return
     setLoading(true)
     setError('')
+    setResults(null)
+
     try {
+      // Fase 1: afbeelding → scores (snel)
       const base64 = await fileToBase64(imageFile)
-      const res = await fetch('/api/menuscan', {
+      const res1 = await fetch('/api/menuscan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ image: base64, conditions, mediaType: 'image/jpeg' }),
+        body: JSON.stringify({ phase: 1, image: base64, conditions, mediaType: 'image/jpeg' }),
       })
-      if (res.status === 429) {
-        const data = await res.json().catch(() => null) as { error?: string } | null
+      if (res1.status === 429) {
+        const data = await res1.json().catch(() => null) as { error?: string } | null
         setError(data?.error ?? 'Te veel scans. Probeer het later opnieuw.')
         return
       }
-      if (!res.ok) {
-        const errData = await res.json().catch(() => null) as { error?: string } | null
+      if (!res1.ok) {
+        const errData = await res1.json().catch(() => null) as { error?: string } | null
         setError(errData?.error ?? 'Er ging iets mis. Probeer opnieuw.')
         return
       }
-      const data = await res.json() as { results: ScanResult[] }
-      setResults(data.results)
+      const data1 = await res1.json() as { results: Phase1Result[] }
+      const phase1Results: ScanResult[] = data1.results
+      setResults(phase1Results)
+      setLoading(false)
+
+      // Fase 2: tekst-only → uitleg + obervragen (op de achtergrond)
+      setPhase2Loading(true)
+      try {
+        const res2 = await fetch('/api/menuscan', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            phase: 2,
+            conditions,
+            dishes: phase1Results.map((r) => ({ dish: r.dish, scores: r.scores })),
+          }),
+        })
+        if (res2.ok) {
+          const data2 = await res2.json() as { details: Phase2Detail[] }
+          setResults((prev) => {
+            if (!prev) return prev
+            return prev.map((r) => {
+              const detail = data2.details.find((d) => d.dish === r.dish)
+              return detail ? { ...r, explanation: detail.explanation, waiterQuestions: detail.waiterQuestions } : r
+            })
+          })
+        }
+      } catch {
+        // fase 2 mislukt stilletjes — scores zijn al zichtbaar
+      } finally {
+        setPhase2Loading(false)
+      }
     } catch {
       setError('Kon de server niet bereiken. Controleer je verbinding.')
-    } finally {
       setLoading(false)
     }
   }
@@ -84,6 +124,8 @@ export function Scan() {
     setImageFile(null)
     setResults(null)
     setError('')
+    setPhase2Loading(false)
+    setExpandedIndex(null)
   }
 
   return (
@@ -99,7 +141,7 @@ export function Scan() {
           <em className="not-italic italic text-[#1d9e75]">wij beoordelen</em>.
         </h1>
         <p className="text-sm text-[#73726c] mt-1">
-          Maak een foto van een restaurantmenukaart — elk gerecht krijgt een stoplichtadvies.
+          Maak een foto van een restaurantmenukaart — elk gerecht krijgt een stoplichtadvies. We analyseren maximaal 15 gerechten per foto.
         </p>
       </div>
 
@@ -161,9 +203,20 @@ export function Scan() {
         {results && (
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold">
-                {results.length} gerechten beoordeeld
-              </p>
+              <div className="flex items-center gap-2">
+                <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold">
+                  {results.length} gerechten beoordeeld
+                </p>
+                {phase2Loading && (
+                  <span className="flex items-center gap-1 text-[10px] text-[#9c9a92]">
+                    <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                    </svg>
+                    uitleg laden…
+                  </span>
+                )}
+              </div>
               <button onClick={reset} className="text-xs text-[#1d9e75] font-medium">
                 Nieuwe scan
               </button>
@@ -208,6 +261,17 @@ export function Scan() {
                   {/* Uitklapblok */}
                   {isOpen && (
                     <div className="border-t border-[#f0efe8] bg-[#faf9f6] px-4 py-3 space-y-3">
+                      {/* Spinner tijdens fase 2 */}
+                      {phase2Loading && !r.explanation && (
+                        <div className="flex items-center gap-2 text-xs text-[#9c9a92]">
+                          <svg className="w-3.5 h-3.5 animate-spin flex-shrink-0" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                          </svg>
+                          Uitleg wordt geladen…
+                        </div>
+                      )}
+
                       {/* Uitleg per aandoening */}
                       {r.explanation && (
                         <div>
@@ -216,8 +280,13 @@ export function Scan() {
                         </div>
                       )}
 
+                      {/* Niet beschikbaar na fase 2 */}
+                      {!phase2Loading && !r.explanation && (
+                        <p className="text-xs text-[#9c9a92] italic">Geen uitleg beschikbaar.</p>
+                      )}
+
                       {/* Vragen voor de ober */}
-                      {r.waiterQuestions?.length > 0 && (
+                      {r.waiterQuestions && r.waiterQuestions.length > 0 && (
                         <div>
                           <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-1.5">Vraag aan de ober</p>
                           <ul className="space-y-1.5">
