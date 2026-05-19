@@ -292,8 +292,8 @@ function shareResults(results: ScanResult[], conditions: string[]) {
  * Houdt de base64-payload ruim onder Vercel's 4.5MB body-limiet.
  */
 async function fileToBase64(file: File): Promise<string> {
-  const MAX_PX = 1280
-  const QUALITY = 0.82
+  const MAX_PX = 2048
+  const QUALITY = 0.88
 
   const bitmap = await createImageBitmap(file)
   const { width, height } = bitmap

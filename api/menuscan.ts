@@ -86,7 +86,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 Scoreschaal:
 0 = veilig  |  1 = matig (met mate)  |  2 = voorzichtig (beperken)  |  3 = vermijden
 
-Geef alleen gerechten terug die duidelijk leesbaar op de kaart staan. Maximaal 12 gerechten.
+Geef ALLE gerechten terug die leesbaar op de kaart staan, scan de volledige afbeelding van boven naar beneden. Maximaal 25 gerechten; sla bijlagen, drankjes en desserts niet over.
 Schrijf alle tekst in het Nederlands.
 
 Antwoord UITSLUITEND als geldig JSON:
@@ -111,7 +111,7 @@ Antwoord UITSLUITEND als geldig JSON:
     const client = new Anthropic()
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6',
-      max_tokens: 4096,
+      max_tokens: 8192,
       messages: [
         {
           role: 'user',
