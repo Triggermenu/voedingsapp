@@ -54,7 +54,6 @@ Elk niet-null score MOET een `evidence` (A/B/C) en `sources[]` hebben.
 
 **Whitelist voor score = 3 (rood)** — *alleen* deze stoffen krijgen rood, op basis van enige RCT/cohort-evidence:
 - Alcohol (vooral rode wijn)
-- MSG (monosodium glutamate)
 - Gerijpte kaas (>6 maanden rijping)
 - Gecureerd vlees (nitriethoudend)
 
@@ -62,6 +61,7 @@ Elk niet-null score MOET een `evidence` (A/B/C) en `sources[]` hebben.
 - Aspartaam
 - **Chocolade**: NIET rood. Recente evidence (2023 SR) suggereert prodroom-craving i.p.v. trigger. Note: *"mogelijk een vroeg-symptoom in plaats van oorzaak"*.
 - Cafeïne in hoge doses (>400mg/dag)
+- **MSG (monosodium glutamate)**: NIET rood. Verwijderd van score-3 whitelist 2026-05 na review van Obayashi 2016 SR (PMC4870486) + Geha 2000 (PMID 10736382) + ICHD-3 2018-revisie (MSG geschrapt van officiële triggerlijst). In geblindeerde studies geen reproduceerbaar effect bij normale voedselinname. Score 2 met `triggerType: subgroep-overschat` is de standaard voor MSG.
 
 **Alle overige items: 0 (groen)** tenzij specifiek onderzoek anders aangeeft.
 
@@ -361,6 +361,7 @@ Deze weging is **definitief** tenzij CLAUDE.md wordt aangepast. Cowork mag hier 
 | Citrus ↔ histamine | SIGHI: hoog. San Mauro 2021: lage evidence. | **Oranje + note "omstreden"** | Beperkte directe histamine-data |
 | Calcium ↔ nierstenen | Oud advies: laag Ca. Modern: normaal Ca. | **Groen bij normale inname** | Borghi RCT, AUA-guideline |
 | Chocolade ↔ migraine | Trigger-lijsten: rood. 2023 SR: prodroom-craving. | **Oranje + note** | Hindiyeh 2020, recente SR |
+| MSG ↔ migraine | Whitelist (oud): rood. SR 2016 + ICHD-3 2018: geen reproduceerbaar effect. | **Oranje + note "subgroep-overschat"** | Obayashi 2016 SR, Geha 2000, ICHD-3 2018 |
 | Peulvruchten ↔ jicht | Hoog purine. Geen verhoogd risico. | **Oranje max** | EULAR 2022 |
 
 ---
@@ -376,8 +377,9 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 14. Versiebeheer van dit document
 
-- **Schema version:** v1.2
-- **Laatste wijziging:** 2026-05-18
+- **Schema version:** v1.3
+- **Laatste wijziging:** 2026-05-20
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
   - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).
+  - v1.3 (2026-05-20): §2.2 MSG verwijderd van score-3 whitelist; score 2 + subgroep-overschat is nu standaard. Akkoord: Peter Wolterman (chat 2026-05-20, review PR #15 methodologische bevinding).
