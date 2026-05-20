@@ -91,7 +91,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-melkchocolade",
@@ -181,7 +182,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-honing",
@@ -616,7 +618,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-taart-slagroom",
@@ -764,7 +767,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-appelgebak",
@@ -1063,7 +1067,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-ijs-sorbet",
@@ -1719,7 +1724,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-wafel",
@@ -1862,7 +1868,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-pepermunt",
@@ -2010,7 +2017,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-ahornsiroop",
@@ -2306,7 +2314,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-madeleine",
@@ -2804,7 +2813,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-marzipan",
@@ -2947,7 +2957,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 2
     },
     {
       "id": "nl-tafelzoetje-aspartaam",
