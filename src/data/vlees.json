@@ -3597,7 +3597,7 @@
           "note": {
             "nl": "Paté/leverworst: hoog tyramine (lever) + mogelijk nitrieten. Score 2; bij gevoelige personen."
           },
-          "triggerType": "subgroep-overschat",
+          "triggerType": "subgroep-bevestigd",
           "confidence": "middel",
           "primaryModulators": [
             "tyramine",

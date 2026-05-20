@@ -1,0 +1,31 @@
+{
+  "cluster": 12,
+  "patchDate": "2026-05-20",
+  "commitSha": "32936d8",
+  "note": "Gecombineerde commit met cluster 11 (32936d8); gesplitst in aparte patch.json per cluster op 2026-05-20. Dataqualiteit-noot uit items.md: bier score 3 vs rode wijn score 2 is inconsistent — cleanup-taak.",
+  "scoreChanges": 0,
+  "sourceUpgrades": 19,
+  "triggerTypeAdded": 18,
+  "affectedIds": [
+    "168746",
+    "nl-whisky",
+    "nl-gin",
+    "nl-vodka",
+    "nl-rum",
+    "nl-likeur",
+    "nl-bier-stout",
+    "nl-bier-ipa",
+    "nl-bier-weizen",
+    "nl-tequila",
+    "nl-cognac",
+    "nl-bier-alcoholvrij",
+    "nl-bier-trappist",
+    "nl-vermouth",
+    "nl-jenever",
+    "nl-absint",
+    "nl-bier-pilsener",
+    "nl-mead",
+    "nl-lambiek"
+  ],
+  "scoreFixes": []
+}
