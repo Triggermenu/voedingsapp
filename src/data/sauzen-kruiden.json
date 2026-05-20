@@ -3861,7 +3861,7 @@
           "score": 2,
           "evidence": "B",
           "confidence": "middel",
-          "triggerType": "context-afhankelijk",
+          "triggerType": "subgroep-bevestigd",
           "primaryModulators": [
             "tyramine",
             "mao-remming"
@@ -3970,7 +3970,7 @@
           "score": 2,
           "evidence": "B",
           "confidence": "middel",
-          "triggerType": "context-afhankelijk",
+          "triggerType": "subgroep-bevestigd",
           "primaryModulators": [
             "tyramine",
             "mao-remming"
@@ -4165,7 +4165,7 @@
           "score": 2,
           "evidence": "B",
           "confidence": "laag",
-          "triggerType": "subgroep-overschat",
+          "triggerType": "subgroep-bevestigd",
           "primaryModulators": [
             "vrij-glutamaat",
             "gistextract"
