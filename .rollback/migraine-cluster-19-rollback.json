@@ -1,0 +1,13 @@
+{
+  "cluster": 19,
+  "rollbackDate": "2026-05-20",
+  "prePatchState": [
+    {"id": "nl-dadels", "migraine.score": 1, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-rozijnen", "migraine.score": 1, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-vijg-gedroogd", "migraine.score": 0, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-dadel", "migraine.score": 1, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-abrikozen-gedroogd", "migraine.score": 1, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-vijgen-gedroogd-v2", "migraine.score": 1, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-pruimen-gedroogd", "migraine.score": 1, "migraine.sources": ["Hindiyeh 2020 sole"]}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "cluster": 20,
+  "patchDate": "2026-05-20",
+  "scoreChanges": 0,
+  "sourceUpgrades": 52,
+  "changes": [
+    {"group": "granen.json (49 items)", "changeType": "bronnen-uitbreiding (Finberg 2022 + Hindiyeh) + noot"},
+    {"group": "zuivel.json eieren (3 items: 748967, nl-ei-gebakken, nl-ei-hardgekookt)", "changeType": "bronnen-uitbreiding + noot"}
+  ]
+}

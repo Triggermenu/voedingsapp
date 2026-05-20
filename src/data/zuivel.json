@@ -114,12 +114,21 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+                                                                          "title":  "Finberg \u0026 Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-11"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
-                                                                  ]
+                                                                  ],
+                                                      "note":  {
+                                                                   "nl":  "Eieren bevatten geen bekende migraine-triggerstof. Tyramine: ~0-2 mg/kg. Geen migrainepathway."
+                                                               }
                                                   },
                                      "nierstenen":  {
                                                         "score":  0,
@@ -152,7 +161,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-11",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-11"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -1007,12 +1016,21 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+                                                                          "title":  "Finberg \u0026 Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-11"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
-                                                                  ]
+                                                                  ],
+                                                      "note":  {
+                                                                   "nl":  "Eieren bevatten geen bekende migraine-triggerstof. Tyramine: ~0-2 mg/kg. Geen migrainepathway."
+                                                               }
                                                   },
                                      "nierstenen":  {
                                                         "score":  0,
@@ -1042,7 +1060,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-11",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-11"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -1071,12 +1089,21 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+                                                                          "title":  "Finberg \u0026 Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-11"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
-                                                                  ]
+                                                                  ],
+                                                      "note":  {
+                                                                   "nl":  "Eieren bevatten geen bekende migraine-triggerstof. Tyramine: ~0-2 mg/kg. Geen migrainepathway."
+                                                               }
                                                   },
                                      "nierstenen":  {
                                                         "score":  0,
@@ -1106,7 +1133,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-11",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-11"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {

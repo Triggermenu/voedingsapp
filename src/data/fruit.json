@@ -1948,15 +1948,27 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+                                                                          "title":  "Maintz \u0026 Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-11"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
                                                                   ],
                                                       "note":  {
-                                                                   "nl":  "Gedroogd fruit met biogene aminen (tyramine). Matig risico."
-                                                               }
+                                                                   "nl":  "Gedroogd fruit bevat vaak sulfietpreservatieven (E220-E228). Sulfiet als migrainetrigger: zwak bewijs bij gevoelige subgroep. Astma-respons sterker dan migraine-respons."
+                                                               },
+                                                      "triggerType":  "subgroep-overschat",
+                                                      "confidence":  "laag",
+                                                      "primaryModulators":  [
+                                                                                "sulfieten",
+                                                                                "biogene-aminen"
+                                                                            ]
                                                   },
                                      "nierstenen":  {
                                                         "score":  1,
@@ -1992,7 +2004,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-11",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-11"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -2021,15 +2033,27 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+                                                                          "title":  "Maintz \u0026 Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-11"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
                                                                   ],
                                                       "note":  {
-                                                                   "nl":  "Gedroogd fruit: verhoogd tyramine mogelijk."
-                                                               }
+                                                                   "nl":  "Gedroogd fruit bevat vaak sulfietpreservatieven (E220-E228). Sulfiet als migrainetrigger: zwak bewijs bij gevoelige subgroep. Astma-respons sterker dan migraine-respons."
+                                                               },
+                                                      "triggerType":  "subgroep-overschat",
+                                                      "confidence":  "laag",
+                                                      "primaryModulators":  [
+                                                                                "sulfieten",
+                                                                                "biogene-aminen"
+                                                                            ]
                                                   },
                                      "nierstenen":  {
                                                         "score":  1,
@@ -2065,7 +2089,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-11",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-11"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -2512,16 +2536,31 @@
                                                                ]
                                                },
                                      "migraine":  {
-                                                      "score":  0,
+                                                      "score":  1,
                                                       "evidence":  "B",
                                                       "sources":  [
+                                                                      {
+                                                                          "url":  "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+                                                                          "title":  "Maintz \u0026 Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
                                                                       {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-12"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
-                                                                  ]
+                                                                  ],
+                                                      "triggerType":  "subgroep-overschat",
+                                                      "confidence":  "laag",
+                                                      "primaryModulators":  [
+                                                                                "sulfieten",
+                                                                                "biogene-aminen"
+                                                                            ],
+                                                      "note":  {
+                                                                   "nl":  "Gedroogd fruit bevat vaak sulfietpreservatieven (E220-E228). Sulfiet als migrainetrigger: zwak bewijs bij gevoelige subgroep. Astma-respons sterker dan migraine-respons."
+                                                               }
                                                   },
                                      "nierstenen":  {
                                                         "score":  2,
@@ -2557,7 +2596,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-12",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-12"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -2586,15 +2625,27 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+                                                                          "title":  "Maintz \u0026 Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-12"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
                                                                   ],
                                                       "note":  {
-                                                                   "nl":  "Hoog in tyramine; licht verhoogd migrainerisico."
-                                                               }
+                                                                   "nl":  "Gedroogd fruit bevat vaak sulfietpreservatieven (E220-E228). Sulfiet als migrainetrigger: zwak bewijs bij gevoelige subgroep. Astma-respons sterker dan migraine-respons."
+                                                               },
+                                                      "triggerType":  "subgroep-overschat",
+                                                      "confidence":  "laag",
+                                                      "primaryModulators":  [
+                                                                                "sulfieten",
+                                                                                "biogene-aminen"
+                                                                            ]
                                                   },
                                      "nierstenen":  {
                                                         "score":  1,
@@ -2624,7 +2675,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-12",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-12"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -3647,15 +3698,27 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+                                                                          "title":  "Maintz \u0026 Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-12"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
                                                                   ],
                                                       "note":  {
-                                                                   "nl":  "Gedroogd fruit: geconcentreerde suikers en sulfiet (conservering)."
-                                                               }
+                                                                   "nl":  "Gedroogd fruit bevat vaak sulfietpreservatieven (E220-E228). Sulfiet als migrainetrigger: zwak bewijs bij gevoelige subgroep. Astma-respons sterker dan migraine-respons."
+                                                               },
+                                                      "triggerType":  "subgroep-overschat",
+                                                      "confidence":  "laag",
+                                                      "primaryModulators":  [
+                                                                                "sulfieten",
+                                                                                "biogene-aminen"
+                                                                            ]
                                                   },
                                      "nierstenen":  {
                                                         "score":  1,
@@ -3688,7 +3751,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-12",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-12"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -3717,12 +3780,27 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+                                                                          "title":  "Maintz \u0026 Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-12"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
-                                                                  ]
+                                                                  ],
+                                                      "triggerType":  "subgroep-overschat",
+                                                      "confidence":  "laag",
+                                                      "primaryModulators":  [
+                                                                                "sulfieten",
+                                                                                "biogene-aminen"
+                                                                            ],
+                                                      "note":  {
+                                                                   "nl":  "Gedroogd fruit bevat vaak sulfietpreservatieven (E220-E228). Sulfiet als migrainetrigger: zwak bewijs bij gevoelige subgroep. Astma-respons sterker dan migraine-respons."
+                                                               }
                                                   },
                                      "nierstenen":  {
                                                         "score":  2,
@@ -3755,7 +3833,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-12",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-12"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {
@@ -3784,12 +3862,27 @@
                                                       "evidence":  "B",
                                                       "sources":  [
                                                                       {
+                                                                          "url":  "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+                                                                          "title":  "Maintz \u0026 Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+                                                                          "type":  "review",
+                                                                          "accessedAt":  "2026-05-20"
+                                                                      },
+                                                                      {
                                                                           "url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
                                                                           "title":  "Hindiyeh et al. 2020 — Diet and Headache",
                                                                           "type":  "review",
-                                                                          "accessedAt":  "2026-05-12"
+                                                                          "accessedAt":  "2026-05-20"
                                                                       }
-                                                                  ]
+                                                                  ],
+                                                      "triggerType":  "subgroep-overschat",
+                                                      "confidence":  "laag",
+                                                      "primaryModulators":  [
+                                                                                "sulfieten",
+                                                                                "biogene-aminen"
+                                                                            ],
+                                                      "note":  {
+                                                                   "nl":  "Gedroogd fruit bevat vaak sulfietpreservatieven (E220-E228). Sulfiet als migrainetrigger: zwak bewijs bij gevoelige subgroep. Astma-respons sterker dan migraine-respons."
+                                                               }
                                                   },
                                      "nierstenen":  {
                                                         "score":  1,
@@ -3819,7 +3912,7 @@
                       "meta":  {
                                    "addedAt":  "2026-05-12",
                                    "schemaVersion":  "1.0.0",
-                                   "lastReviewed":  "2026-05-12"
+                                   "lastReviewed":  "2026-05-20"
                                }
                   },
                   {

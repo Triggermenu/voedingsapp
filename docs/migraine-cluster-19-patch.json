@@ -1,0 +1,10 @@
+{
+  "cluster": 19,
+  "patchDate": "2026-05-20",
+  "scoreChanges": 1,
+  "sourceUpgrades": 7,
+  "changes": [
+    {"id": "nl-vijg-gedroogd", "scoreBefore": 0, "scoreAfter": 1, "changeType": "score-verhoging + bronnen + triggerType"},
+    {"group": "nl-dadels, nl-rozijnen, nl-dadel, nl-abrikozen-gedroogd, nl-vijgen-gedroogd-v2, nl-pruimen-gedroogd", "changeType": "bronnen-uitbreiding + triggerType + noot"}
+  ]
+}
