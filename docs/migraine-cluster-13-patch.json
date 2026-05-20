@@ -1,0 +1,15 @@
+{
+  "cluster": 13,
+  "patchDate": "2026-05-20",
+  "scoreChanges": 7,
+  "sourceUpgrades": 48,
+  "scoreFixes": [
+    {"id": "175080", "name": "Ansjovis (ingeblikt)", "scoreBefore": 0, "scoreAfter": 2, "reason": "Inconsistent met nl-ansjovis-blik (score 2); rijpingsproces produceert hoog histamine"},
+    {"id": "175139", "name": "Sardines (blik, olie)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Inconsistent met nl-sardines-blik (score 1)"},
+    {"id": "175159", "name": "Tonijn (blik, water)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Inconsistent met nl-tonijn-blik (score 1)"},
+    {"id": "nl-zalm-gerookt", "name": "Gerookte zalm", "scoreBefore": 0, "scoreAfter": 2, "reason": "Inconsistent met nl-gerookte-zalm (score 2)"},
+    {"id": "nl-sprotjes-blik", "name": "Sprotjes (blik)", "scoreBefore": 0, "scoreAfter": 2, "reason": "Canned sprats: histamine 30-300 mg/kg"},
+    {"id": "nl-haring-zuur", "name": "Maatjesharing", "scoreBefore": 0, "scoreAfter": 2, "reason": "Zout-gerijpte vis: histamine 20-100 mg/kg"},
+    {"id": "nl-zalm-blik", "name": "Zalm (blik)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Canned salmon: moderate histamine (10-30 mg/kg)"}
+  ]
+}

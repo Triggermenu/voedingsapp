@@ -1,0 +1,11 @@
+{
+  "cluster": 13,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 13 — score-fouten: 175080/175139/175159 op 0 ipv correct; nl-zalm-gerookt/sprotjes/haring-zuur/zalm-blik ook 0",
+  "prePatchScores": [
+    {"id": "175080", "score": 0}, {"id": "175139", "score": 0}, {"id": "175159", "score": 0},
+    {"id": "nl-zalm-gerookt", "score": 0}, {"id": "nl-sprotjes-blik", "score": 0},
+    {"id": "nl-haring-zuur", "score": 0}, {"id": "nl-zalm-blik", "score": 0}
+  ],
+  "affectedFile": "src/data/vis-schaaldieren.json"
+}
