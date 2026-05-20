@@ -3762,11 +3762,17 @@
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
               "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Raclette rijpt 3-6 maanden en heeft een tyramine-profiel vergelijkbaar met Gruyère (<100 mg/kg). Per portie van 30g gaat het naar schatting om <3 mg tyramine — onder alle klinisch relevante drempels. Geen gecontroleerd bewijs voor migrainetriggering. Score geel als voorzorgsmaatregel.",
-            "en": "Raclette ripens 3–6 months with a tyramine profile similar to Gruyère (<100 mg/kg). Estimated <3 mg tyramine per 30g portion — below all clinically relevant thresholds. No controlled evidence for migraine triggering."
+            "nl": "Raclette rijpt 3-6 maanden en heeft een tyramine-profiel vergelijkbaar met Gruyère (<100 mg/kg). Per portie van 30g gaat het naar schatting om <3 mg tyramine — onder alle klinisch relevante drempels. Tyramine wordt bij intacte MAO-functie in darmwand/lever geïnactiveerd; effect klinisch relevant uitsluitend in MAO-A-gevoelige subgroep of bij MAOI-gebruik. Geen gecontroleerd bewijs voor migrainetriggering in de algemene populatie.",
+            "en": "Raclette ripens 3–6 months with a tyramine profile similar to Gruyère (<100 mg/kg). Estimated <3 mg tyramine per 30g portion — below all clinically relevant thresholds. Tyramine is inactivated by intact MAO in gut/liver; effect clinically relevant only in MAO-A-sensitive subgroup or with MAOI use."
           }
         },
         "nierstenen": {
@@ -3797,7 +3803,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-14"
+        "lastReviewed": "2026-05-20"
       },
       "cluster": 3
     },
@@ -3952,11 +3958,17 @@
               "title": "Korean domestic market study 2021 — Quantitative analysis of biogenic amines in different cheese varieties (Foods)",
               "type": "review",
               "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Emmentaler bevat verrassend weinig tyramine voor een lang-gerijpte kaas: 16-82 mg/kg in moderne studies, wat per portie van 30g neerkomt op slechts 0,5-2,5 mg. Dit is onder elke klinisch relevante drempel. Score geel als voorzorgsmaatregel bij het gerijpte-kazen-paradigma, niet op basis van specifiek bewijs voor Emmentaler als trigger.",
-            "en": "Emmental contains surprisingly little tyramine for a long-ripened cheese: 16–82 mg/kg in modern studies, delivering only 0.5–2.5 mg per 30g portion — below any clinically relevant threshold."
+            "nl": "Emmentaler bevat verrassend weinig tyramine voor een lang-gerijpte kaas: 16-82 mg/kg in moderne studies, wat per portie van 30g neerkomt op slechts 0,5-2,5 mg. Dit is onder elke klinisch relevante drempel. Tyramine wordt bij intacte MAO-functie in darmwand/lever geïnactiveerd; klinisch relevant uitsluitend bij MAO-A-gevoelige subgroep of MAOI-gebruik.",
+            "en": "Emmental contains surprisingly little tyramine for a long-ripened cheese: 16–82 mg/kg in modern studies, delivering only 0.5–2.5 mg per 30g portion — below any clinically relevant threshold. Tyramine is inactivated by intact MAO in gut/liver; clinically relevant only in MAO-A-sensitive subgroup or with MAOI use."
           }
         },
         "nierstenen": {
@@ -3987,7 +3999,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-14"
+        "lastReviewed": "2026-05-20"
       },
       "cluster": 3
     },
