@@ -4369,13 +4369,13 @@
           ]
         },
         "migraine": {
-          "score": 1,
+          "score": 0,
           "evidence": "B",
           "sources": [
             {
-              "url": "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-3-headache-attributed-to-substance-withdrawal/8-3-1-caffeine-withdrawal-headache/",
-              "title": "ICHD-3 — Caffeine-withdrawal headache (IHS 2018)",
-              "type": "guideline",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
               "accessedAt": "2026-05-20"
             },
             {
@@ -4386,13 +4386,8 @@
             }
           ],
           "note": {
-            "nl": "Koffiemelk / creamer: score 1 vanwege koffiegebruikspatroon. Cafeïne-component in het koffiedrankje dat dit aanvult."
-          },
-          "triggerType": "onttrekkings-trigger",
-          "confidence": "laag",
-          "primaryModulators": [
-            "cafeine"
-          ]
+            "nl": "Koffiemelk/creamer bevat zelf geen cafeïne of tyramine. De cafeïne zit in de koffie die ermee aangevuld wordt, niet in de creamer. Geen eigen trigger-mechanisme."
+          }
         },
         "nierstenen": {
           "score": 0,
