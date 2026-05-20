@@ -1481,89 +1481,6 @@
       "cluster": 5
     },
     {
-      "id": "nl-worcestershire",
-      "name": {
-        "nl": "Worcestershiresaus",
-        "en": "Worcestershire sauce"
-      },
-      "category": "sauzen-kruiden",
-      "subcategory": "sauzen",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Worcestershiresaus: ansjovis (gefermenteerd) + tamarinde + malt = matige biogene aminen. Mogelijke trigger bij gevoelige personen. Signalering: mogelijk duplicaat van nl-worcestershiresaus — aparte follow-up."
-          },
-          "triggerType": "subgroep-bevestigd",
-          "confidence": "laag",
-          "primaryModulators": [
-            "tyramine",
-            "biogene-aminen"
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 3,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Bevat ansjovis, azijn, tamarinde: hoog histamine."
-          }
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 5
-    },
-    {
       "id": "nl-dille-vers",
       "name": {
         "nl": "Dille (vers)",
@@ -2287,7 +2204,7 @@
             }
           ],
           "note": {
-            "nl": "Worcestershiresaus: ansjovis (gefermenteerd/gerijpt, hoog tyramine) + gefermenteerde ingrediënten. Score 2 defensible op basis van biogene-amine-pathway. Signalering: mogelijk duplicaat van nl-worcestershire."
+            "nl": "Worcestershiresaus: ansjovis (gefermenteerd/gerijpt, hoog tyramine) + gefermenteerde ingrediënten. Score 2 op basis van biogene-amine-pathway (Maintz 2007)."
           },
           "triggerType": "subgroep-bevestigd",
           "confidence": "middel",
@@ -3861,7 +3778,7 @@
           "score": 2,
           "evidence": "B",
           "confidence": "middel",
-          "triggerType": "context-afhankelijk",
+          "triggerType": "subgroep-bevestigd",
           "primaryModulators": [
             "tyramine",
             "mao-remming"
@@ -3970,7 +3887,7 @@
           "score": 2,
           "evidence": "B",
           "confidence": "middel",
-          "triggerType": "context-afhankelijk",
+          "triggerType": "subgroep-bevestigd",
           "primaryModulators": [
             "tyramine",
             "mao-remming"
@@ -4165,7 +4082,7 @@
           "score": 2,
           "evidence": "B",
           "confidence": "laag",
-          "triggerType": "subgroep-overschat",
+          "triggerType": "subgroep-bevestigd",
           "primaryModulators": [
             "vrij-glutamaat",
             "gistextract"

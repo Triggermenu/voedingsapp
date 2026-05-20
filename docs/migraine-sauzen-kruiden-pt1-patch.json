@@ -14,7 +14,8 @@
     {"id": "nl-azijn-wit",     "name": "Witte azijn",      "scoreBefore": 1, "scoreAfter": 0, "reason": "Azijnzuur geen bekende migraine-triggerstof"},
     {"id": "nl-balsamico-azijn","name": "Balsamicoazijn",  "scoreBefore": 2, "scoreAfter": 1, "reason": "Gefermenteerd maar biogene aminen in azijn verwaarloosbaar laag; score 2 te hoog"}
   ],
-  "signaleringen": [
-    "nl-worcestershire (score 1) en nl-worcestershiresaus (score 2) zijn mogelijk een duplicaat — aparte follow-up vereist"
+  "signaleringen": [],
+  "deduplicaties": [
+    {"removed": "nl-worcestershire", "canonical": "nl-worcestershiresaus", "date": "2026-05-20", "reason": "Identiek product, score 1 vs 2; nl-worcestershiresaus heeft betere onderbouwing (score 2, confidence middel)"}
   ]
 }
