@@ -1,0 +1,143 @@
+{
+  "cluster": 6,
+  "generatedAt": "2026-05-15",
+  "promptVersion": "v5",
+  "reconstructedAt": "2026-05-20",
+  "reconstructionNote": "Retroactief gereconstrueerd op basis van items.md, rationale.md, rollback.json en git commit ca33ce6",
+  "clusterDefinition": "Gist-extracten en autolyses — autolytische gistproducten met hoge tyramine-concentraties. triggerType context-afhankelijk (dominant MAOI-context).",
+  "patches": [
+    {
+      "id": "nl-marmite",
+      "name": "Marmite (gistextract-spread)",
+      "field": "scores.migraine",
+      "changeType": "nieuw item",
+      "before": null,
+      "after": {
+        "score": 2,
+        "evidence": "B",
+        "confidence": "middel",
+        "triggerType": "context-afhankelijk",
+        "primaryModulators": ["tyramine", "mao-remming"],
+        "sources": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8617704/",
+            "title": "Gardner DM et al. 1996 — The making of a user friendly MAOI diet (J Clin Psychiatry)",
+            "type": "guideline",
+            "accessedAt": "2026-05-14"
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8889911/",
+            "title": "Walker SE et al. 1996 — Tyramine content of previously restricted foods in MAOI diets (J Clin Psychopharmacol)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3283290/",
+            "title": "Da Prada M et al. 1988 — On tyramine, food, beverages and the reversible MAO inhibitor moclobemide (J Neural Transm Suppl)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+            "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet (J Neural Transm)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          }
+        ]
+      },
+      "tyramineData": {
+        "modern_mg_per_kg": "322–650",
+        "portion_5g_mg": "1.6–3.25",
+        "maoi_threshold_mg": 6,
+        "belowThreshold": true,
+        "batchVariabilityNote": "Blackwell 1969 toonde waarden tot 1600 mg/kg; score 2 verdedigd op voorzorgsbeginsel + variabiliteit"
+      },
+      "meta_update": {
+        "addedAt": "2026-05-15",
+        "lastReviewed": "2026-05-15",
+        "cluster": 6
+      }
+    },
+    {
+      "id": "nl-vegemite",
+      "name": "Vegemite (gistextract-spread)",
+      "field": "scores.migraine",
+      "changeType": "nieuw item",
+      "before": null,
+      "after": {
+        "score": 2,
+        "evidence": "B",
+        "confidence": "middel",
+        "triggerType": "context-afhankelijk",
+        "primaryModulators": ["tyramine", "mao-remming"],
+        "sources": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8617704/",
+            "title": "Gardner DM et al. 1996 — The making of a user friendly MAOI diet (J Clin Psychiatry)",
+            "type": "guideline",
+            "accessedAt": "2026-05-14"
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8889911/",
+            "title": "Walker SE et al. 1996 — Tyramine content of previously restricted foods in MAOI diets (J Clin Psychopharmacol)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          },
+          {
+            "url": "https://doi.org/10.1016/j.jfca.2005.12.008",
+            "title": "McCabe-Sellers BJ et al. 2006 — Tyramine in foods and MAO inhibitor drugs (J Food Compost Anal)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+            "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet (J Neural Transm)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          }
+        ]
+      },
+      "tyramineData": {
+        "source": "McCabe-Sellers 2006 (Australische data)",
+        "comparableTo": "Marmite",
+        "note": "Geen directe kwantitatieve bevestiging via open-access primaire studie; McCabe-Sellers 2006 niet open access"
+      },
+      "meta_update": {
+        "addedAt": "2026-05-15",
+        "lastReviewed": "2026-05-15",
+        "cluster": 6
+      }
+    },
+    {
+      "id": "nl-gistvlokken",
+      "name": "Gistvlokken (nutritional yeast)",
+      "field": "scores.migraine",
+      "changeType": "nieuw item",
+      "before": null,
+      "after": {
+        "score": 1,
+        "evidence": "C",
+        "confidence": "laag",
+        "triggerType": "context-afhankelijk",
+        "primaryModulators": ["tyramine"],
+        "scoreRationale": "Gistvlokken zijn inactief gedroogde Saccharomyces cerevisiae — NIET autolytisch. Enzymen geïnactiveerd bij verhitting; minimale tyramine-vrijzetting. Geen kwantitatieve tyramine-data beschikbaar. Score 1 afgeleid van mechanistisch onderscheid (inactief vs autolytisch), niet van primaire meting."
+      },
+      "meta_update": {
+        "addedAt": "2026-05-15",
+        "lastReviewed": "2026-05-15",
+        "cluster": 6
+      }
+    }
+  ],
+  "bouillonblokNote": "nl-bouillonblok-gistextract is in dezelfde git-commit (ca33ce6) toegevoegd maar toegewezen aan cluster 18 (MSG-pathway primair). Zie migraine-cluster-18-patch.json.",
+  "broncorrectie": {
+    "origineleInstructie": "Walker, Sandler, Kohen 1996 (Br J Clin Pharmacol)",
+    "gecorrigeerd": "Walker SE et al. 1996 (PMID 8889911, J Clin Psychopharmacol) + Gardner DM et al. 1996 (PMID 8617704, J Clin Psychiatry). 'Sandler' en 'Kohen' zijn geen auteurs in de geldige tyramine-MAOI-literatuur."
+  },
+  "gaps": [
+    "Geen recente LC-analyse van Marmite tyramine als primaire studie — moderne data uit review PMC9172554",
+    "Geen kwantitatieve tyramine-data voor gistvlokken (nutritional yeast) — score 1 is evidence C",
+    "McCabe-Sellers 2006 niet open access — Vegemite-data niet direct verifieerbaar",
+    "Geen migraine-specifieke RCT voor enig cluster-6-item"
+  ]
+}

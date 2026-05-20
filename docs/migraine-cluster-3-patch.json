@@ -1,0 +1,161 @@
+{
+  "cluster": 3,
+  "generatedAt": "2026-05-15",
+  "promptVersion": "v5",
+  "reconstructedAt": "2026-05-20",
+  "reconstructionNote": "Retroactief gereconstrueerd op basis van items.md, rationale.md, rollback.json en git commit ee1b28d",
+  "clusterDefinition": "Gerijpte/gefermenteerde kazen — tyramine-houdende zuivelproducten met rijpingstijd ≥3 weken. triggerType: subgroep-overschat (tyramine-pathway niet causaal bewezen voor algemene populatie).",
+  "scoringRegel": "meaningful bovengrens ≥6 mg tyramine per 30g portie → score 2; <6 mg → score 1. Pre-1975 uitschieters uitgesloten (colorimetrische methoden, niet vergelijkbaar met moderne HPLC).",
+  "patches": [
+    {
+      "id": "nl-kaas-oud-48",
+      "name": "Oude kaas (gouda, >48 maanden)",
+      "field": "scores.migraine",
+      "changeType": "score-verlaging 3→2 + triggerType/confidence/primaryModulators/cluster toegevoegd + bronnen vervangen",
+      "before": {"score": 3, "evidence": "B", "subcategory": "kaas-gerijpt",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 2, "evidence": "B", "confidence": "middel", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "scoreRationale": "Whitelist-3 → score 2. Hoogste tyramine van Nederlandse kaasvarianten (>12 maanden Gouda: significant gerijpt). Geen causaliteitsbewijs voor niet-MAOI-populatie. Score 2 = conservatieve default bij hoge tyramine-last.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-blauwe-kaas",
+      "name": "Blauwe kaas (gerijpte kaas)",
+      "field": "scores.migraine",
+      "changeType": "score-verlaging 3→2 + nieuwe velden + bronnen vervangen",
+      "before": {"score": 3, "evidence": "B", "subcategory": "kaas-gerijpt",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 2, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "scoreRationale": "Whitelist-3 → score 2. Blauwe kaas (Gorgonzola, Roquefort-type) heeft hoog tyramine via schimmelculturen. Confidence laag: grote intra-categorie spreiding; geen specifieke NL-data.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-edam-extra-belegen",
+      "name": "Gerijpte Edammer (extra belegen, >12 maanden)",
+      "field": "scores.migraine",
+      "changeType": "score-verlaging 3→2 + nieuwe velden + bronnen vervangen",
+      "before": {"score": 3, "evidence": "B", "subcategory": "kaas-gerijpt",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]},
+      "after": {"score": 2, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "scoreRationale": "Whitelist-3 → score 2. Single-source data (Bunkova 2010). Whitelist-3 floor sub-rule: niet verder dan score 2 bij thin evidence. Inconsistentie met Parmezaan (score 1) gedocumenteerd als residueel gap.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-cheddar",
+      "name": "Cheddar (belegen)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + nieuwe velden + bronnen vervangen",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas-gerijpt",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 2, "evidence": "B", "confidence": "middel", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "tyramineRange": "72–953 mg/kg (Walker 1996) → bij 30g: 2,2–28,6 mg. Meaningful bovengrens 28,6 mg >> 6 mg drempel → score 2 correct.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-parmezaan",
+      "name": "Parmezaan",
+      "field": "scores.migraine",
+      "changeType": "score-verlaging 2→1 + nieuwe velden + bronnen vervangen",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas-gerijpt",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 1, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "scoreDiscrepantie": "[gereconstrueerd] Score 2→1 onverwacht gegeven tyramine Walker 1996: 400–1400 mg/kg. Bij 30g portie = 12–42 mg > 6 mg drempel → scoringsregel zou score 2 geven. Mogelijk is 15g gebruikt (typische rasportie), waarvoor 400 mg/kg × 15g = 6 mg borderline. Items.md §C markeerde dit als score-inconsistentie. Post-patch score 1 is de gekozen waarde maar vereist aanvullende toelichting.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-gouda-belegen",
+      "name": "Goudse kaas (belegen)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + nieuwe velden + bronnen vervangen",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas-gerijpt",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 2, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-brie",
+      "name": "Brie",
+      "field": "scores.migraine + subcategory",
+      "changeType": "score-verlaging 2→1 + subcategory kaas-vers→kaas-gerijpt + nieuwe velden",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas-vers",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 1, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "scoreRationale": "NL-supermarktproduct: gepasteuriseerd, industrieel, rijping 4–5 weken. Modern LC-data (PMC9172554): meaningful range voor supermarkt-Brie ruim onder 6 mg/30g drempel. Historische artisanale data niet toepasbaar.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-camembert",
+      "name": "Camembert",
+      "field": "scores.migraine + subcategory",
+      "changeType": "score-verlaging 2→1 + subcategory kaas-vers→kaas-gerijpt + nieuwe velden",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas-vers",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 1, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "scoreRationale": "Idem Brie: NL-supermarktcontext (gepasteuriseerd, 3–5 weken rijping). Artisanale De Vuyst 1976-data niet toepasbaar op NL-retail.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-feta",
+      "name": "Feta",
+      "field": "scores.migraine + subcategory",
+      "changeType": "score-verhoging 1→2 + subcategory kaas-vers→kaas-gerijpt + nieuwe velden",
+      "before": {"score": 1, "evidence": "B", "subcategory": "kaas-vers",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 2, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "scoreRationale": "Tyramine 350–800 mg/kg (McCabe-Sellers 2006, Walker 1996); bij 30g = 10,5–24 mg → boven 6 mg drempel. Feta is gepekeld-gerijpt, geen verse kaas. Score 1 was te laag; score 2 correct.",
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-raclette-kaas",
+      "name": "Raclette kaas",
+      "field": "scores.migraine + subcategory",
+      "changeType": "score-verlaging 2→1 + subcategory kaas→kaas-gerijpt + nieuwe velden",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 1, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-manchego",
+      "name": "Manchego kaas",
+      "field": "scores.migraine + subcategory",
+      "changeType": "score behouden + subcategory kaas→kaas-gerijpt + nieuwe velden",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 2, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-emmentaler",
+      "name": "Emmentaler kaas",
+      "field": "scores.migraine + subcategory",
+      "changeType": "score-verlaging 2→1 + subcategory kaas→kaas-gerijpt + nieuwe velden",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 1, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    },
+    {
+      "id": "nl-gruyere",
+      "name": "Gruyère kaas",
+      "field": "scores.migraine + subcategory",
+      "changeType": "score-verlaging 2→1 + subcategory kaas→kaas-gerijpt + nieuwe velden",
+      "before": {"score": 2, "evidence": "B", "subcategory": "kaas",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]},
+      "after": {"score": 1, "evidence": "B", "confidence": "laag", "triggerType": "subgroep-overschat", "primaryModulators": ["tyramine"], "subcategory": "kaas-gerijpt"},
+      "meta_update": {"lastReviewed": "2026-05-15", "cluster": 3}
+    }
+  ],
+  "summary": {
+    "scoreVerlaging_3naar2": 3,
+    "scoreVerlaging_2naar1": 6,
+    "scoreVerhoging_1naar2": 1,
+    "scoreOngewijzigd": 3,
+    "subcategoryCorrections": 7,
+    "totalPatched": 13
+  },
+  "gaps": [
+    "Parmezaan post-patch score 1: scoring-regel (≥6 mg/30g → score 2) geeft score 2 bij 30g. Mogelijk 15g rasportie gebruikt. [gereconstrueerd op basis van items.md §C3]",
+    "Inconsistentie nl-edam-extra-belegen (score 2) vs Parmezaan (score 1) gedocumenteerd in items.md §C3 — niet opgelost in deze patch"
+  ]
+}

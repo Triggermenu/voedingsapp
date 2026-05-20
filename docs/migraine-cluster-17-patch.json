@@ -1,0 +1,144 @@
+{
+  "cluster": 17,
+  "generatedAt": "2026-05-14",
+  "promptVersion": "v5",
+  "reconstructedAt": "2026-05-20",
+  "reconstructionNote": "Retroactief gereconstrueerd op basis van rationale.md, rollback.json en git commit 3061bfb. Rollback toonde leeg cluster (geen pre-patch items).",
+  "clusterDefinition": "Aspartaam & kunstmatige zoetstoffen. Paradigma: context-afhankelijk (effect absent bij acute dosis; potentieel aanwezig bij cumulatieve blootstelling over weken).",
+  "patches": [
+    {
+      "id": "nl-cola-light",
+      "name": "Cola light / Cola Zero",
+      "file": "dranken-non-alcohol.json",
+      "field": "scores.migraine + scores.nierstenen",
+      "changeType": "nieuw item",
+      "before": null,
+      "after": {
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "context-afhankelijk",
+          "primaryModulators": ["aspartaam", "fenylalanine"],
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3657889/",
+              "title": "Schiffman SS et al. 1987 — Aspartame and susceptibility to headache (N Engl J Med)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3277925/",
+              "title": "Koehler SM & Glaros A 1988 — The effect of aspartame on migraine headache (Headache)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/7936222/",
+              "title": "Van den Eeden SK et al. 1994 — Aspartame ingestion and headaches: a randomized crossover trial (Neurology)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24700203/",
+              "title": "Lindseth GN et al. 2014 — Neurobehavioral effects of aspartame consumption (Res Nurs Health)",
+              "type": "review",
+              "accessedAt": "2026-05-14"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "C",
+          "note": "Voorzorgsmaatregel: fosforzuur cola (~50–75 mg/250ml). Curhan et al. NHS/HPFS cohort: geen statistisch significant verhoogd risico bij normale consumptie."
+        }
+      },
+      "meta_update": {
+        "addedAt": "2026-05-14",
+        "lastReviewed": "2026-05-14",
+        "cluster": 17
+      }
+    },
+    {
+      "id": "nl-tafelzoetje-aspartaam",
+      "name": "Tafelzoetje (aspartaam)",
+      "file": "zoetwaren.json",
+      "field": "scores.migraine",
+      "changeType": "nieuw item",
+      "before": null,
+      "after": {
+        "score": 2,
+        "evidence": "B",
+        "confidence": "laag",
+        "triggerType": "context-afhankelijk",
+        "primaryModulators": ["aspartaam", "fenylalanine"],
+        "sources": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3277925/",
+            "title": "Koehler SM & Glaros A 1988 — The effect of aspartame on migraine headache (Headache)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24700203/",
+            "title": "Lindseth GN et al. 2014 — Neurobehavioral effects of aspartame consumption (Res Nurs Health)",
+            "type": "review",
+            "accessedAt": "2026-05-14"
+          }
+        ]
+      },
+      "meta_update": {
+        "addedAt": "2026-05-14",
+        "lastReviewed": "2026-05-14",
+        "cluster": 17
+      }
+    },
+    {
+      "id": "nl-kauwgom-suikervrij",
+      "name": "Kauwgom (suikervrij)",
+      "file": "dranken-non-alcohol.json",
+      "field": "scores.migraine",
+      "changeType": "nieuw item",
+      "before": null,
+      "after": {
+        "score": 1,
+        "evidence": "C",
+        "confidence": "laag",
+        "triggerType": "context-afhankelijk",
+        "scoreRationale": "~35 mg aspartaam per stukje; drempel cumulatief effect (Lindseth 2014) >900 mg/dag. Voorzorgsscore voor frequent gebruik."
+      },
+      "meta_update": {
+        "addedAt": "2026-05-14",
+        "lastReviewed": "2026-05-14",
+        "cluster": 17
+      }
+    },
+    {
+      "id": "nl-sucralose",
+      "name": "Sucralose (kunstmatige zoetstof)",
+      "file": "zoetwaren.json",
+      "field": "scores.migraine",
+      "changeType": "nieuw item",
+      "before": null,
+      "after": {
+        "score": 0,
+        "evidence": "C",
+        "scoreRationale": "Mechanisch anders dan aspartaam (gechlooreerd suiker, geen fenylalanine/methanol). Geen RCT-bewijs. Twee N=1 case reports onvoldoende voor score-toewijzing. Paradigmatisch onderscheid: sucralose ≠ aspartaam."
+      },
+      "meta_update": {
+        "addedAt": "2026-05-14",
+        "lastReviewed": "2026-05-14",
+        "cluster": 17
+      }
+    }
+  ],
+  "acuteVsCumulatiefNote": "Cluster 17 onthult methodologisch patroon: acute single-dose RCTs negatief (Schiffman 1987, Van den Eeden 1994); meerdaagse cumulatieve RCTs positief (Koehler 1988, Lindseth 2014). Kandidaat voor v6 dimensie 15 (provocatie-design). Niet retroactief doorgevoerd in andere clusters.",
+  "discrepantie": {
+    "VandenEeden_n": "Rationale vermeldt n=40; PubMed (PMID 7936222) toont n=18. Schiffman 1987 (PMID 3657889) had n=40. Mogelijk mixed up in rationale. [gereconstrueerd op basis van rationale; PubMed-verificatie: Van den Eeden n=18]"
+  },
+  "gaps": [
+    "Geen moderne pre-geregistreerde RCT voor aspartaam en migraine (alle studies 1987–2014)",
+    "Kauwgom-item mist splitsing aspartaam vs sorbitol vs xylitol",
+    "Bigal 2006 (PMID 16618274) en Patel 2006 (PMID 16942478) voor sucralose niet via PubMed-lookup geverifieerd in reconstructiesessie [gereconstrueerd op basis van rationale]"
+  ]
+}

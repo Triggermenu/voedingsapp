@@ -1,0 +1,102 @@
+{
+  "cluster": 18,
+  "generatedAt": "2026-05-15",
+  "promptVersion": "v5",
+  "reconstructedAt": "2026-05-20",
+  "reconstructionNote": "Retroactief gereconstrueerd op basis van rationale.md, rollback.json en git commit ca33ce6",
+  "patches": [
+    {
+      "id": "nl-msg",
+      "name": "MSG (natriumglutamaat)",
+      "field": "scores.migraine",
+      "changeType": "score-verlaging + triggerType/confidence/primaryModulators toegevoegd + bronnen vervangen",
+      "before": {
+        "score": 3,
+        "evidence": "B",
+        "sources": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+            "title": "Hindiyeh et al. 2020 — Diet and Headache",
+            "type": "review",
+            "accessedAt": "2026-05-11"
+          }
+        ],
+        "note": {
+          "nl": "MSG staat op de migraine-whitelist. Cohort-bewijs voor hoofdpijn bij gevoelige personen."
+        }
+      },
+      "after": {
+        "score": 2,
+        "evidence": "B",
+        "confidence": "laag",
+        "triggerType": "subgroep-overschat",
+        "primaryModulators": ["vrij-glutamaat"],
+        "sources": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8282275/",
+            "title": "Tarasoff L & Kelly MF 1993 — Monosodium L-glutamate: a double-blind study and review (Food Chem Toxicol)",
+            "type": "review",
+            "accessedAt": "2026-05-15"
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9215242/",
+            "title": "Yang WH et al. 1997 — The monosodium glutamate symptom complex: assessment in a double-blind, placebo-controlled, randomized study (J Allergy Clin Immunol)",
+            "type": "review",
+            "accessedAt": "2026-05-15"
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10736382/",
+            "title": "Geha RS et al. 2000 — Review of alleged reaction to MSG and outcome of a multicenter double-blind placebo-controlled study (J Nutr)",
+            "type": "review",
+            "accessedAt": "2026-05-15"
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
+            "title": "Obayashi Y & Nagamura Y 2016 — Does monosodium glutamate really cause headache? (J Headache Pain)",
+            "type": "review",
+            "accessedAt": "2026-05-15"
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30508818/",
+            "title": "Fernstrom JD 2018 — Monosodium Glutamate in the Diet Does Not Raise Brain Glutamate Concentrations or Disrupt Brain Functions (Ann Nutr Metab)",
+            "type": "review",
+            "accessedAt": "2026-05-15"
+          }
+        ]
+      },
+      "fieldsChanged": ["score", "confidence", "triggerType", "primaryModulators", "sources", "cluster"],
+      "meta_update": {
+        "lastReviewed": "2026-05-15",
+        "cluster": 18
+      },
+      "paradigmaNote": "MSG is het schoolvoorbeeld van subgroep-overschatting (Kwok 1968 als anekdotisch startpunt). Negatieve multicenter-RCTs domineren; ICHD-3 verwijderde MSG van triggerlijst in 2018. Score 2 gehandhaafd (niet 0) vanwege drempel-effect bij hoge doses zonder voedsel (Yang 1997 ≥2,5g)."
+    },
+    {
+      "id": "nl-bouillonblok-gistextract",
+      "name": "Bouillonblok (met gistextract)",
+      "field": "scores.migraine",
+      "changeType": "nieuw item — toegevoegd in cluster 18 (i.p.v. cluster 6)",
+      "before": null,
+      "after": {
+        "score": 2,
+        "evidence": "B",
+        "confidence": "laag",
+        "triggerType": "subgroep-overschat",
+        "primaryModulators": ["vrij-glutamaat", "gistextract"],
+        "cluster": 18
+      },
+      "clusterNote": "Oorspronkelijk gepland als cluster-6-item (gistextract). Tyramine in industriële bouillonblokken ≤10 mg/kg (PMC9172554); per 5g blokje = ~0,05 mg — verwaarloosbaar. Primaire migraine-pathway: MSG (E621). Cluster 18 correct.",
+      "meta_update": {
+        "addedAt": "2026-05-15",
+        "lastReviewed": "2026-05-15",
+        "cluster": 18
+      }
+    }
+  ],
+  "authorityNote": "ICHD-3 2018 heeft MSG verwijderd van de officiële headache-trigger-classificatie. Dit is de sterkste autoritatieve afservering van enig item in de gehele dataset.",
+  "gaps": [
+    "Kwok 1968 heeft geen PubMed-PMID (pre-PubMed-era brief); geciteerd via DOI 10.1056/NEJM196804042781419",
+    "Rationale noemde 'Baker 2018 (PMID 30508818)' — PMID-verificatie toont: auteur is Fernstrom JD, niet Baker. Gecorrigeerd in patch.json en onderzoek.md.",
+    "MSG-houdende industriële producten (chips, instant noodles) ontbreken in dataset"
+  ]
+}
