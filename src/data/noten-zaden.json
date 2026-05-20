@@ -26,10 +26,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -64,7 +70,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -93,10 +99,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -131,7 +143,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -160,10 +172,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -198,7 +216,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -227,15 +245,27 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Pinda's staan op sommige triggerlijsten als potentiële trigger."
-          }
+            "nl": "Pinda's bevatten biogene aminen (tyramine ~0.8 mg/100g); matige zelf-gerapporteerde reacties. Onvoldoende bewijs voor trigger bij niet-gevoelige migrainepatiënten."
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ]
         },
         "nierstenen": {
           "score": 2,
@@ -268,7 +298,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -297,10 +327,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -335,7 +371,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -364,10 +400,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -402,7 +444,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -431,10 +473,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -466,7 +514,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -495,10 +543,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -533,7 +587,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -562,10 +616,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -600,7 +660,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -629,10 +689,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -664,7 +730,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -693,11 +759,26 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
+          ],
+          "note": {
+            "nl": "Pindakaas: biogene aminen; vergelijkbaar met pinda's. Relevant bij gevoelige individuen, niet bewezen trigger bij populatie-niveau."
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
           ]
         },
         "nierstenen": {
@@ -731,7 +812,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -760,10 +841,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -798,7 +885,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -827,10 +914,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -865,7 +958,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -894,10 +987,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -932,7 +1031,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -961,10 +1060,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -999,7 +1104,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1028,10 +1133,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1066,7 +1177,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1095,10 +1206,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1130,7 +1247,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1162,10 +1279,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1200,7 +1323,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1229,10 +1352,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1267,7 +1396,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1296,10 +1425,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1331,7 +1466,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1360,10 +1495,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1398,7 +1539,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1427,10 +1568,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1465,7 +1612,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1494,10 +1641,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1529,7 +1682,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1558,10 +1711,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1596,7 +1755,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1625,10 +1784,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ]
         },
@@ -1663,138 +1828,753 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
       "id": "nl-pinda",
-      "name": { "nl": "Pinda's (ongezouten)", "en": "Peanuts (unsalted)" },
+      "name": {
+        "nl": "Pinda's (ongezouten)",
+        "en": "Peanuts (unsalted)"
+      },
       "category": "noten-zaden",
       "subcategory": "noten",
       "scores": {
-        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine: ~70 mg/100g." } },
-        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat: ~24 mg/100g." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~70 mg/100g."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ],
+          "note": {
+            "nl": "Pinda's (ongezouten): biogene aminen; consistent met 172430. Relevant bij gevoelige subgroep."
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat: ~24 mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-vlaszaad",
-      "name": { "nl": "Vlaszaad (heel)", "en": "Flaxseed (whole)" },
+      "name": {
+        "nl": "Vlaszaad (heel)",
+        "en": "Flaxseed (whole)"
+      },
       "category": "noten-zaden",
       "subcategory": "zaden",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat: ~15 mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat: ~15 mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-hennepzaad",
-      "name": { "nl": "Hennepzaad (gepeld)", "en": "Hemp seeds (shelled)" },
+      "name": {
+        "nl": "Hennepzaad (gepeld)",
+        "en": "Hemp seeds (shelled)"
+      },
       "category": "noten-zaden",
       "subcategory": "zaden",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "B", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-notenolie-walnoot",
-      "name": { "nl": "Walnootolie", "en": "Walnut oil" },
+      "name": {
+        "nl": "Walnootolie",
+        "en": "Walnut oil"
+      },
       "category": "noten-zaden",
       "subcategory": "noten-olien",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-pindaolie-v2",
-      "name": { "nl": "Pindakaas (crunchy)", "en": "Peanut butter (crunchy)" },
+      "name": {
+        "nl": "Pindakaas (crunchy)",
+        "en": "Peanut butter (crunchy)"
+      },
       "category": "noten-zaden",
       "subcategory": "noten",
       "scores": {
-        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ],
+          "note": {
+            "nl": "Pindakaas (crunchy): biogene aminen; consistent met overige pinda-producten (score 1)."
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-cashew-geroosterd",
-      "name": { "nl": "Cashewnoten (geroosterd, gezouten)", "en": "Cashews (roasted, salted)" },
+      "name": {
+        "nl": "Cashewnoten (geroosterd, gezouten)",
+        "en": "Cashews (roasted, salted)"
+      },
       "category": "noten-zaden",
       "subcategory": "noten",
       "scores": {
-        "jicht": { "score": 1, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Purine: ~55 mg/100g." } },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 3, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Oxalaat: ~200 mg/100g — hoog." } },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~55 mg/100g."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 3,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Oxalaat: ~200 mg/100g — hoog."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-studentenhaver",
-      "name": { "nl": "Studentenhaver (noten-rozijnen mix)", "en": "Trail mix (nuts and raisins)" },
+      "name": {
+        "nl": "Studentenhaver (noten-rozijnen mix)",
+        "en": "Trail mix (nuts and raisins)"
+      },
       "category": "noten-zaden",
       "subcategory": "noten",
       "scores": {
-        "jicht": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 1, "evidence": "B", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 1, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ],
+          "note": {
+            "nl": "Mix van noten en gedroogd fruit (rozijnen); gedroogd fruit bevat biogene aminen en sulfieten. Score 1 via gedroogd-fruit component."
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "biogene-aminen",
+            "sulfieten"
+          ]
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-kokosolie",
-      "name": { "nl": "Kokosolie (extra vierge)", "en": "Coconut oil (extra virgin)" },
+      "name": {
+        "nl": "Kokosolie (extra vierge)",
+        "en": "Coconut oil (extra virgin)"
+      },
       "category": "noten-zaden",
       "subcategory": "noten-olien",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-geroosterde-amandelen",
-      "name": { "nl": "Amandelen (geroosterd)", "en": "Almonds (roasted)" },
+      "name": {
+        "nl": "Amandelen (geroosterd)",
+        "en": "Almonds (roasted)"
+      },
       "category": "noten-zaden",
       "subcategory": "noten",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 3, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }], "note": { "nl": "Amandelen: hoog oxalaat ~460 mg/100g." } },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 3,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ],
+          "note": {
+            "nl": "Amandelen: hoog oxalaat ~460 mg/100g."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     },
     {
       "id": "nl-sesamolie",
-      "name": { "nl": "Sesamolie", "en": "Sesame oil" },
+      "name": {
+        "nl": "Sesamolie",
+        "en": "Sesame oil"
+      },
       "category": "noten-zaden",
       "subcategory": "noten-olien",
       "scores": {
-        "jicht": { "score": 0, "evidence": "A", "sources": [{ "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf", "title": "USDA Purine Database Release 2.0 (2025)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "migraine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12" }] },
-        "nierstenen": { "score": 0, "evidence": "A", "sources": [{ "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx", "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)", "type": "database", "accessedAt": "2026-05-12" }] },
-        "histamine": { "score": 0, "evidence": "B", "sources": [{ "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf", "title": "SIGHI Food Compatibility List 2023", "type": "consensus", "accessedAt": "2026-05-12" }] }
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ]
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
       },
-      "meta": { "addedAt": "2026-05-12", "schemaVersion": "1.0.0", "lastReviewed": "2026-05-12" }
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      }
     }
   ]
 }
