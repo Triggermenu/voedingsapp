@@ -1,0 +1,12 @@
+{
+  "cluster": 1,
+  "patchDate": "2026-05-20",
+  "scoreChanges": 4,
+  "sourceUpgrades": 41,
+  "scoreFixes": [
+    {"id": "nl-witte-thee", "name": "Witte thee", "scoreBefore": 1, "scoreAfter": 0, "reason": "Inconsistent met koffie/zwarte thee score 0; witte thee heeft minder cafeine"},
+    {"id": "nl-oolong-thee", "name": "Oolong thee", "scoreBefore": 1, "scoreAfter": 0, "reason": "Inconsistent met groene thee score 0; vergelijkbare cafeine-inhoud"},
+    {"id": "nl-energiedrank", "name": "Energiedrank", "scoreBefore": 1, "scoreAfter": 2, "reason": "Inconsistent met nl-energydrink (score 2); zelfde productcategorie"},
+    {"id": "nl-kauwgom-suikervrij", "name": "Kauwgom (suikervrij)", "scoreBefore": 1, "scoreAfter": 2, "reason": "Bevat aspartaam -> score 2 per CLAUDE.md §2.2 aspartaam-regel"}
+  ]
+}
