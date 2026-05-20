@@ -1,0 +1,14 @@
+{
+  "cluster": 15,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 15 citrus — inconsistente scores: 0 voor sinaasappel/citroen/grapefruit, 2 voor clementine/limoen/kumquat",
+  "prePatchState": [
+    {"id": "169097", "migraine.score": 0, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "167747", "migraine.score": 0, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-grapefruit", "migraine.score": 0, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-clementine", "migraine.score": 2, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-limoen", "migraine.score": 2, "migraine.sources": ["Hindiyeh 2020 sole"]},
+    {"id": "nl-kumquat", "migraine.score": 2, "migraine.sources": ["Hindiyeh 2020 sole"]}
+  ],
+  "postPatchScores": "alle 6 items score 1"
+}

@@ -1,0 +1,250 @@
+{
+  "cluster": 7,
+  "generatedAt": "2026-05-14",
+  "promptVersion": "v5",
+  "reconstructedAt": "2026-05-20",
+  "reconstructionNote": "Retroactief gereconstrueerd op basis van rationale.md, rollback.json en git commit 9cf918f",
+  "clusterDefinition": "Nitriet-vleeswaren — gecureerde vleesproducten met toegevoegd nitriet (E249/E250/E252) of nitraat (E251/E252), of via selderijextract.",
+  "primaryEvidence": "Henderson & Raskin 1972 (PMID 4117590) — N=1 dubbelblind enteraal provocatieonderzoek; 8/13 positief bij 10 mg natriumnitriet. Enige directe voedingsdosis-provocatiestudie.",
+  "pmidCorrectie": "PMID in originele instructie was 4111922 — correct is 4117590 (gecorrigeerd in rationale.md)",
+  "patches": [
+    {
+      "id": "168319",
+      "name": "Spek (gerookt, gecureerd) / Bacon",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence/primaryModulators toegevoegd + bronnen vervangen",
+      "before": {
+        "score": 3, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]
+      },
+      "after": {
+        "score": 3, "evidence": "B", "confidence": "middel",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet", "stikstofmonoxide", "enterosalivaire-conversie"]
+      },
+      "dosisRationale": "60g spek ≈ 7–15 mg nitriet (Zhong 2022 mediaan 12,25 mg/kg × 60g portie). Henderson-drempel: 10 mg enteraal. Voedingsdosis bereikt drempel → score 3 verdedigd.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-spek-gerookt",
+      "name": "Spek (gerookt)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence/primaryModulators toegevoegd + bronnen vervangen",
+      "before": {
+        "score": 3, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 3, "evidence": "B", "confidence": "middel",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet", "stikstofmonoxide", "enterosalivaire-conversie"]
+      },
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-rookworst-gecureerd",
+      "name": "Rookworst (gecureerd)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence/primaryModulators toegevoegd + bronnen vervangen",
+      "before": {
+        "score": 3, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]
+      },
+      "after": {
+        "score": 3, "evidence": "B", "confidence": "middel",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet", "stikstofmonoxide", "enterosalivaire-conversie"]
+      },
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-worst-rook",
+      "name": "Rookworst (gecureerd)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence/primaryModulators toegevoegd",
+      "before": {
+        "score": 3, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 3, "evidence": "B", "confidence": "middel",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet", "stikstofmonoxide", "enterosalivaire-conversie"]
+      },
+      "duplicaatNote": "Vermoedelijk duplicaat van nl-rookworst-gecureerd. Deprecatie pending beslissing.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "172936",
+      "name": "Salami",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence/primaryModulators toegevoegd + bronnen vervangen",
+      "before": {
+        "score": 2, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]
+      },
+      "after": {
+        "score": 2, "evidence": "B", "confidence": "laag",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet", "stikstofmonoxide"]
+      },
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-salami",
+      "name": "Salami (gecureerd, gerijpt)",
+      "field": "scores.migraine",
+      "changeType": "score-verlaging 3→2 + inconsistentie opgelost + triggerType/confidence/primaryModulators toegevoegd",
+      "before": {
+        "score": 3, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 2, "evidence": "B", "confidence": "laag",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet", "stikstofmonoxide"]
+      },
+      "inconsistentieOpgelost": "nl-salami was score 3, 172936 was score 2 voor hetzelfde producttype. Residu droge salami ~8,20 mg/kg mediaan (Zhong 2022); portie 30g = ~2–3 mg nitriet. Beide naar score 2.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-chorizo",
+      "name": "Chorizo (gecureerd)",
+      "field": "scores.migraine",
+      "changeType": "score-verlaging 3→2 + laag nitriet-residu + triggerType gewijzigd",
+      "before": {
+        "score": 3, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]
+      },
+      "after": {
+        "score": 2, "evidence": "B", "confidence": "laag",
+        "triggerType": "subgroep-bevestigd"
+      },
+      "scoreRationale": "Residu 4,35 mg/kg mediaan (IQR 2,93–5,80; Zhong 2022) — laagste van alle cluster-7-items. 30g portie ≈ 1,3 mg nitriet. Henderson-drempel niet bereikt.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-pastrami",
+      "name": "Pastrami",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence/primaryModulators toegevoegd",
+      "before": {
+        "score": 2, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]
+      },
+      "after": {
+        "score": 2, "evidence": "B", "confidence": "middel",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet", "stikstofmonoxide"]
+      },
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-ham-gekookt",
+      "name": "Ham (gekookt)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + evidence B→C + triggerType context-afhankelijk",
+      "before": {
+        "score": 2, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 2, "evidence": "C", "confidence": "laag",
+        "triggerType": "context-afhankelijk"
+      },
+      "evidenceRationale": "Verhitting verlaagt nitriet sterk. Hindiyeh 2020 noemt gekookte ham niet specifiek. Evidence C.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-prosciutto",
+      "name": "Prosciutto (rauwe ham, Italiaans)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + evidence B→C + triggerType context-afhankelijk",
+      "before": {
+        "score": 2, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 2, "evidence": "C", "confidence": "laag",
+        "triggerType": "context-afhankelijk"
+      },
+      "evidenceRationale": "DOP Parma-versies: geen toegevoegd nitriet. Generiek label onzeker. Evidence C: geen directe studie.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-mortadella",
+      "name": "Mortadella",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence toegevoegd",
+      "before": {
+        "score": 2, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 2, "evidence": "B", "confidence": "laag",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet"]
+      },
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-gerookte-kip",
+      "name": "Gerookte kip",
+      "field": "scores.migraine",
+      "changeType": "score behouden + evidence B→C + triggerType context-afhankelijk",
+      "before": {
+        "score": 1, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-11"}]
+      },
+      "after": {
+        "score": 1, "evidence": "C", "confidence": "laag",
+        "triggerType": "context-afhankelijk"
+      },
+      "scoreRationale": "Kan vers gerookt (geen nitriet → score 0) of industrieel gecureerd (E249/E250 → score 2) zijn. Score 1 als middenweg. Blocker Peter: score-verhoging speculatief.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-gerookte-kipfilet",
+      "name": "Gerookte kipfilet",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence toegevoegd",
+      "before": {
+        "score": 2, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 2, "evidence": "C", "confidence": "laag",
+        "triggerType": "context-afhankelijk"
+      },
+      "scoreRationale": "Meeste industriële NL kipfilet: selderijextract (biochemisch identiek aan E250). Etiketcontrole nodig.",
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    },
+    {
+      "id": "nl-vleesbrood",
+      "name": "Vleesbrood (bewerkt)",
+      "field": "scores.migraine",
+      "changeType": "score behouden + triggerType/confidence/primaryModulators toegevoegd",
+      "before": {
+        "score": 2, "evidence": "B",
+        "sources": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/", "title": "Hindiyeh et al. 2020 — Diet and Headache", "type": "review", "accessedAt": "2026-05-12"}]
+      },
+      "after": {
+        "score": 2, "evidence": "B", "confidence": "laag",
+        "triggerType": "subgroep-bevestigd",
+        "primaryModulators": ["nitriet"]
+      },
+      "meta_update": {"lastReviewed": "2026-05-14", "cluster": 7}
+    }
+  ],
+  "summary": {
+    "scoreChanges": 2,
+    "evidenceDowngrades": 3,
+    "newFieldsOnly": 9,
+    "totalPatched": 14
+  },
+  "gaps": [
+    "Henderson 1972 nooit gerepliceerd — N=1 blijft enige directe voedingsdosis-evidence",
+    "nl-worst-rook vermoedelijk duplicaat van nl-rookworst-gecureerd — deprecatie pending",
+    "Geen residu-data voor pastrami, mortadella, nl-vleesbrood"
+  ]
+}

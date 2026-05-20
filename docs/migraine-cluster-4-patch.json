@@ -1,0 +1,292 @@
+{
+  "cluster": 4,
+  "patchDate": "2026-05-20",
+  "branch": "migraine/open-clusters-batch",
+  "description": "Cluster 4 verse zuivel: Hindiyeh-purge + Finberg 2022 toegevoegd als mechanistische bron",
+  "changes": [
+    {
+      "id": "173432",
+      "name": "Volle melk",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022 (PMC9172554)", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-halfvolle-melk",
+      "name": "Halfvolle melk",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "171284",
+      "name": "Magere yoghurt",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-volle-yoghurt",
+      "name": "Volle yoghurt",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "173420",
+      "name": "Kwark",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "170844",
+      "name": "Mozzarella (vers)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-boter",
+      "name": "Boter",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-slagroom",
+      "name": "Slagroom",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-edammer-jong",
+      "name": "Edammer (jong, <3 maanden)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-gouda-jong",
+      "name": "Goudse kaas (jong)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-griekse-yoghurt",
+      "name": "Griekse yoghurt",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-karnemelk",
+      "name": "Karnemelk",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-smeerkaas",
+      "name": "Smeerkaas (Philadelphia type)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-kwark",
+      "name": "Kwark (mager)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-mozzarella-vers",
+      "name": "Mozzarella (vers)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-ricotta",
+      "name": "Ricotta",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-skyr",
+      "name": "Skyr",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-kwark-mager",
+      "name": "Magere kwark",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-mascarpone",
+      "name": "Mascarpone",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-huttenkase",
+      "name": "Hüttenkäse (cottage cheese)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-magere-melk",
+      "name": "Magere melk",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-vla",
+      "name": "Vla (vanille)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-cremefraiche",
+      "name": "Crème fraîche",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-roomkaas",
+      "name": "Roomkaas (smeerkaas)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-lactosevrije-melk",
+      "name": "Lactosevrije melk",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-kefir",
+      "name": "Kefir",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-havermelk",
+      "name": "Havermelk (plantaardig)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-amandelmelk-drank",
+      "name": "Amandelmelk (ongezoet)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-kokosmelk-drank",
+      "name": "Kokosmelk (als drank)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-rijstemelk",
+      "name": "Rijstemelk",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-kwark-vol",
+      "name": "Kwark (vol, 10% vet)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-cottage-cheese",
+      "name": "Cottage cheese",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-volle-melk",
+      "name": "Volle melk (3,5% vet)",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-yoghurt-naturel",
+      "name": "Yoghurt naturel",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    },
+    {
+      "id": "nl-karnemelk-dik",
+      "name": "Dikke karnemelk",
+      "changeType": "bronnen-uitbreiding",
+      "field": "migraine.sources",
+      "before": ["Hindiyeh et al. 2020 (sole)"],
+      "after": ["Finberg & Gillman 2022", "Hindiyeh et al. 2020"]
+    }
+  ],
+  "scoreChanges": 0,
+  "sourceUpgrades": 35,
+  "newFields": ["migraine.note (35 items)"],
+  "unchanged": ["nl-hagelslag-melk (cluster 2)", "nl-slagroom-koffie (cluster 1)", "748967 (eieren, cluster 20)", "alle kaas-gerijpt (cluster 3)"]
+}

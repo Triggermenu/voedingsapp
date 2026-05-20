@@ -1,0 +1,12 @@
+{
+  "cluster": 1,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 1 — score-fouten: nl-witte-thee/nl-oolong-thee op 1 ipv 0; nl-energiedrank op 1 ipv 2; nl-kauwgom-suikervrij op 1 ipv 2",
+  "prePatchScores": [
+    {"id": "nl-witte-thee", "score": 1},
+    {"id": "nl-oolong-thee", "score": 1},
+    {"id": "nl-energiedrank", "score": 1},
+    {"id": "nl-kauwgom-suikervrij", "score": 1}
+  ],
+  "affectedFile": "src/data/dranken-non-alcohol.json"
+}

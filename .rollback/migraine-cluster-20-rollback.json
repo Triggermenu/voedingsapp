@@ -1,0 +1,7 @@
+{
+  "cluster": 20,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 20: granen (49 items) + eieren (3 items) hadden Hindiyeh 2020 als enige bron",
+  "prePatchState": {"migraine.sources": ["Hindiyeh 2020 sole"], "meta.lastReviewed": "2026-05-11"},
+  "affectedFiles": ["src/data/granen.json (49 items)", "src/data/zuivel.json (3 eieren: 748967, nl-ei-gebakken, nl-ei-hardgekookt)"]
+}

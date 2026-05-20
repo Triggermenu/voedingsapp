@@ -1,0 +1,7 @@
+{
+  "cluster": 11,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 11 witte/sparkling wijn — 7 items hadden Hindiyeh 2020 als enige bron",
+  "prePatchState": {"migraine.sources": ["Hindiyeh et al. 2020 (sole)"], "meta.lastReviewed": "2026-05-11"},
+  "affectedIds": ["nl-witte-wijn","nl-prosecco","nl-champagne","nl-rose-wijn","nl-cider-droog","nl-cider-zoet","nl-sake"]
+}

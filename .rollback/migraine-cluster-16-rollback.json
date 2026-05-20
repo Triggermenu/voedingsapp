@@ -1,0 +1,7 @@
+{
+  "cluster": 16,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 16 — geen score-wijzigingen; alleen bronnen-upgrades",
+  "prePatchScores": [],
+  "affectedFile": "src/data/noten-zaden.json"
+}

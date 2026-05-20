@@ -1,0 +1,17 @@
+{
+  "cluster": 14,
+  "patchDate": "2026-05-20",
+  "scoreChanges": 9,
+  "sourceUpgrades": 137,
+  "scoreFixes": [
+    {"id": "168463", "name": "Spinazie (rauw)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Histamine 30-60 mg/kg (Maintz 2007); SIGHI histamine-score 2"},
+    {"id": "170457", "name": "Tomaat (rauw)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Histamine-liberator; SIGHI histamine-score 2; histamineFlags.liberator=true"},
+    {"id": "169251", "name": "Champignons", "scoreBefore": 0, "scoreAfter": 1, "reason": "Inconsistent met nl-champignon-bruin (score 1); biogene aminen"},
+    {"id": "nl-aubergine", "name": "Aubergine", "scoreBefore": 0, "scoreAfter": 1, "reason": "Inconsistent met 169233 Aubergine (score 1); histamine ~26 mg/kg"},
+    {"id": "nl-wilde-spinazie", "name": "Wilde spinazie", "scoreBefore": 0, "scoreAfter": 1, "reason": "Consistent met spinazie (score 1); histamine-content"},
+    {"id": "167762", "name": "Aardbeien", "scoreBefore": 0, "scoreAfter": 1, "reason": "Klassieke histamine-liberator (Maintz 2007)"},
+    {"id": "171706", "name": "Avocado", "scoreBefore": 0, "scoreAfter": 1, "reason": "Histamine ~23 mg/kg + putrescine/cadaverine (Maintz 2007)"},
+    {"id": "169124", "name": "Ananas", "scoreBefore": 0, "scoreAfter": 1, "reason": "Histamine-liberator + bromelain (Maintz 2007)"},
+    {"id": "167755", "name": "Framboos", "scoreBefore": 0, "scoreAfter": 1, "reason": "Histamine-liberator (Maintz 2007)"}
+  ]
+}

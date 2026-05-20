@@ -1,0 +1,17 @@
+{
+  "cluster": 14,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 14 — score-fouten: spinazie/tomaat/champignons/nl-aubergine/nl-wilde-spinazie op 0 ipv 1; aardbeien/avocado/ananas/framboos op 0 ipv 1",
+  "prePatchScores": [
+    {"id": "168463", "score": 0},
+    {"id": "170457", "score": 0},
+    {"id": "169251", "score": 0},
+    {"id": "nl-aubergine", "score": 0},
+    {"id": "nl-wilde-spinazie", "score": 0},
+    {"id": "167762", "score": 0},
+    {"id": "171706", "score": 0},
+    {"id": "169124", "score": 0},
+    {"id": "167755", "score": 0}
+  ],
+  "affectedFiles": ["src/data/groente.json", "src/data/fruit.json"]
+}

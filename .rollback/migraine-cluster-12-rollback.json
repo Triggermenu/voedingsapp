@@ -1,0 +1,7 @@
+{
+  "cluster": 12,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 12 bier/sterke drank — 19 items hadden Hindiyeh 2020 als enige bron",
+  "prePatchState": {"migraine.sources": ["Hindiyeh et al. 2020 (sole)"], "meta.lastReviewed": "2026-05-11"},
+  "affectedIds": ["168746","nl-whisky","nl-gin","nl-vodka","nl-rum","nl-likeur","nl-bier-stout","nl-bier-ipa","nl-bier-weizen","nl-tequila","nl-cognac","nl-bier-alcoholvrij","nl-bier-trappist","nl-vermouth","nl-jenever","nl-absint","nl-bier-pilsener","nl-mead","nl-lambiek"]
+}

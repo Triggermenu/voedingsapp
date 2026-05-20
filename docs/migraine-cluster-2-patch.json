@@ -1,0 +1,10 @@
+{
+  "cluster": 2,
+  "patchDate": "2026-05-20",
+  "scoreChanges": 2,
+  "sourceUpgrades": 43,
+  "scoreFixes": [
+    {"id": "nl-chocoladereep-wit", "name": "Witte chocolade", "scoreBefore": 1, "scoreAfter": 0, "reason": "Witte chocolade: geen cacaosolids, geen theobromine/tyramine; trigger-mechanisme ontbreekt"},
+    {"id": "nl-donuts", "name": "Donuts (geglazuurd)", "scoreBefore": 1, "scoreAfter": 0, "reason": "Gewone geglazuurde donut: geen significant tyramine/histamine; trigger-mechanisme ontbreekt"}
+  ]
+}

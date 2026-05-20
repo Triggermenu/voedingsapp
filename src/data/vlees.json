@@ -29,12 +29,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -67,7 +76,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -99,12 +108,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -137,7 +155,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -169,12 +187,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -204,7 +231,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -333,12 +360,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -371,7 +407,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -403,12 +439,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -438,7 +483,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -470,12 +515,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -505,7 +559,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -537,12 +591,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Ham (gekookt): verwerkt vlees, weinig tyramine. Score 0 bij lage nitriethoudende voorbereiding."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -575,7 +638,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -704,12 +767,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -739,7 +811,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -771,12 +843,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -809,7 +890,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -841,12 +922,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -876,7 +966,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -908,12 +998,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -943,7 +1042,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1071,12 +1170,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1106,7 +1214,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1138,12 +1246,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1176,7 +1293,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1306,16 +1423,16 @@
           ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/2506503/",
-              "title": "Iversen HK, Olesen J, Tfelt-Hansen P 1989 — IV nitroglycerin as experimental model of vascular headache (Pain)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
               "type": "review",
-              "accessedAt": "2026-05-14"
+              "accessedAt": "2026-05-20"
             },
             {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh NA et al. 2020 — Diet and Nutrition in Migraine (Headache)",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-14"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
@@ -1354,7 +1471,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-14"
+        "lastReviewed": "2026-05-20"
       },
       "cluster": 7
     },
@@ -1387,12 +1504,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Filet americain: vers rauw gehakt, lage tyramine (<2 mg/100g). Onder MAOI-drempel."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1425,7 +1551,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1457,12 +1583,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1492,7 +1627,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1524,12 +1659,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1559,7 +1703,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1591,12 +1735,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse gehaktbal: verse bereiding, beperkte biogene aminen bij goede versheid."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1626,7 +1779,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1758,12 +1911,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1793,7 +1955,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1825,12 +1987,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1860,7 +2031,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1898,12 +2069,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Orgaanvlees bevat meer tyramine dan spiervlees (~20-80 mg/kg). Per portie 100-150g: 2-12 mg tyramine. Subgroep: MAOI-gebruikers en histamine-intoleranten."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1933,7 +2113,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1971,12 +2151,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Orgaanvlees bevat meer tyramine dan spiervlees (~20-80 mg/kg). Per portie 100-150g: 2-12 mg tyramine. Subgroep: MAOI-gebruikers en histamine-intoleranten."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2006,7 +2195,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2038,12 +2227,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2073,7 +2271,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2105,12 +2303,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2140,7 +2347,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2172,12 +2379,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2207,7 +2423,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2239,12 +2455,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2274,7 +2499,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2306,12 +2531,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2341,7 +2575,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2373,12 +2607,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2408,7 +2651,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2440,15 +2683,26 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
             "nl": "Kippenlever: hoog tyramine-gehalte."
-          }
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine"
+          ]
         },
         "nierstenen": {
           "score": 0,
@@ -2478,7 +2732,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2784,12 +3038,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2819,7 +3082,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2851,12 +3114,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2886,7 +3158,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2915,12 +3187,26 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "biogene-aminen"
+          ],
+          "note": {
+            "nl": "Verse saucijsjes: biogene aminen afhankelijk van versheid en bereiding."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2950,7 +3236,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3063,15 +3349,26 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
             "nl": "Rauw vleesbereiding met kruiden en Worcestershiresaus: matig migrainerisico."
-          }
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine"
+          ]
         },
         "nierstenen": {
           "score": 0,
@@ -3104,7 +3401,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3136,12 +3433,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3171,7 +3477,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3200,12 +3506,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3235,7 +3550,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3267,15 +3582,27 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Gecureerd vlees met nitriet — sterke migrainetrigger."
-          }
+            "nl": "Paté/leverworst: hoog tyramine (lever) + mogelijk nitrieten. Score 2; bij gevoelige personen."
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "middel",
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ]
         },
         "nierstenen": {
           "score": 0,
@@ -3308,7 +3635,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3340,12 +3667,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3378,7 +3714,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3410,12 +3746,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3445,7 +3790,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3754,15 +4099,26 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
             "nl": "Bewerkt product: kan MSG en additieven bevatten."
-          }
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine"
+          ]
         },
         "nierstenen": {
           "score": 1,
@@ -3795,7 +4151,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3823,35 +4179,22 @@
           "score": 2,
           "evidence": "B",
           "confidence": "laag",
-          "triggerType": "subgroep-bevestigd",
+          "triggerType": "subgroep-overschat",
           "primaryModulators": [
-            "nitriet",
-            "stikstofmonoxide"
+            "tyramine"
           ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/4117590/",
-              "title": "Henderson WR & Raskin NH 1972 — \"Hot-dog\" headache: individual susceptibility to nitrite (Lancet)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
               "type": "review",
-              "accessedAt": "2026-05-14"
-            },
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/2506503/",
-              "title": "Iversen HK, Olesen J, Tfelt-Hansen P 1989 — IV nitroglycerin as experimental model of vascular headache (Pain)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
-            },
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
-              "title": "Gonzalez A et al. 2016 — Migraines correlated with nitrate/nitrite oral microbes (mSystems)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
+              "accessedAt": "2026-05-20"
             },
             {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh NA et al. 2020 — Diet and Nutrition in Migraine (Headache)",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-14"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
@@ -3890,7 +4233,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-14"
+        "lastReviewed": "2026-05-20"
       },
       "cluster": 7
     },
@@ -3920,12 +4263,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3955,7 +4307,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3987,12 +4339,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -4022,7 +4383,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     }
   ]

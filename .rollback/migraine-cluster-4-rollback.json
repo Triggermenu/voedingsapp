@@ -1,0 +1,29 @@
+{
+  "cluster": 4,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch state voor cluster 4 verse zuivel — alle 35 items hadden Hindiyeh 2020 als enige migraine-bron",
+  "prePatchtate": {
+    "migraine.sources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+        "title": "Hindiyeh et al. 2020 — Diet and Headache",
+        "type": "review",
+        "accessedAt": "2026-05-11"
+      }
+    ],
+    "migraine.note": null,
+    "meta.lastReviewed": "2026-05-11"
+  },
+  "affectedIds": [
+    "173432", "nl-halfvolle-melk", "171284", "nl-volle-yoghurt", "173420",
+    "170844", "nl-boter", "nl-slagroom", "nl-edammer-jong", "nl-gouda-jong",
+    "nl-griekse-yoghurt", "nl-karnemelk", "nl-smeerkaas", "nl-kwark",
+    "nl-mozzarella-vers", "nl-ricotta", "nl-skyr", "nl-kwark-mager",
+    "nl-mascarpone", "nl-huttenkase", "nl-magere-melk", "nl-vla",
+    "nl-cremefraiche", "nl-roomkaas", "nl-lactosevrije-melk", "nl-kefir",
+    "nl-havermelk", "nl-amandelmelk-drank", "nl-kokosmelk-drank", "nl-rijstemelk",
+    "nl-kwark-vol", "nl-cottage-cheese", "nl-volle-melk", "nl-yoghurt-naturel",
+    "nl-karnemelk-dik"
+  ],
+  "rollbackInstructions": "Vervang migraine.sources terug naar [Hindiyeh 2020 sole] en verwijder migraine.note voor elk item in affectedIds in src/data/zuivel.json"
+}

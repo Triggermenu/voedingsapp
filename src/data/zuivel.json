@@ -29,12 +29,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -73,7 +82,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -105,12 +114,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Eieren bevatten geen bekende migraine-triggerstof. Tyramine: ~0-2 mg/kg. Geen migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -143,7 +161,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -176,10 +194,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
@@ -226,7 +250,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -362,12 +386,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -406,7 +439,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -435,12 +468,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -482,7 +524,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -511,12 +553,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -546,7 +597,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -575,12 +626,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -610,7 +670,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -734,12 +794,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -772,7 +841,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -801,12 +870,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -836,7 +914,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -865,12 +943,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -900,7 +987,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -929,12 +1016,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Eieren bevatten geen bekende migraine-triggerstof. Tyramine: ~0-2 mg/kg. Geen migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -964,7 +1060,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -993,12 +1089,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Eieren bevatten geen bekende migraine-triggerstof. Tyramine: ~0-2 mg/kg. Geen migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1028,7 +1133,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1057,10 +1162,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
@@ -1104,7 +1215,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1133,12 +1244,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1180,7 +1300,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1209,12 +1329,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1253,7 +1382,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1383,12 +1512,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1424,7 +1562,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1453,15 +1591,27 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9453274/",
+              "title": "Marcus DA et al. 1997 — Chocolate not a migraine trigger: double-blind provocation (Cephalalgia)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Chocolade-component: lichte migraine-associatie."
-          }
+            "nl": "Chocolademelk: verdunde chocolade-component (theobromine/tyramine pathway). Score 1 als dilutie van chocolade. Prodroom-craving i.p.v. causale trigger per Marcus 1997."
+          },
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "primaryModulators": [
+            "theobromine",
+            "tyramine"
+          ]
         },
         "nierstenen": {
           "score": 0,
@@ -1500,7 +1650,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1841,12 +1991,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1882,7 +2041,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2113,10 +2272,16 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
@@ -2157,7 +2322,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2186,12 +2351,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2227,7 +2401,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2256,12 +2430,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2300,7 +2483,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2329,12 +2512,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2370,7 +2562,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2399,12 +2591,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2440,7 +2641,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2469,12 +2670,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2510,7 +2720,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2539,12 +2749,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2580,7 +2799,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2609,12 +2828,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2650,7 +2878,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2679,12 +2907,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2720,7 +2957,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2749,12 +2986,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2790,7 +3036,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2819,12 +3065,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2860,7 +3115,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2990,12 +3245,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3040,7 +3304,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3069,12 +3333,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3104,7 +3377,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3133,12 +3406,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -3171,7 +3453,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3200,12 +3482,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3235,7 +3526,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3264,12 +3555,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3299,7 +3599,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3328,12 +3628,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3363,7 +3672,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3766,12 +4075,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3801,7 +4119,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3830,12 +4148,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3868,7 +4195,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3897,12 +4224,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3935,7 +4271,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3964,12 +4300,21 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Verse zuivel bevat minimale tyramine (<10 mg/kg). Per portie ver onder de MAOI-drempel van 6 mg (Finberg 2022). Geen aantoonbaar migrainepathway."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3999,7 +4344,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -4028,15 +4373,26 @@
           "evidence": "B",
           "sources": [
             {
+              "url": "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-3-headache-attributed-to-substance-withdrawal/8-3-1-caffeine-withdrawal-headache/",
+              "title": "ICHD-3 — Caffeine-withdrawal headache (IHS 2018)",
+              "type": "guideline",
+              "accessedAt": "2026-05-20"
+            },
+            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Kan additieven bevatten die migrainegevoelig zijn."
-          }
+            "nl": "Koffiemelk / creamer: score 1 vanwege koffiegebruikspatroon. Cafeïne-component in het koffiedrankje dat dit aanvult."
+          },
+          "triggerType": "onttrekkings-trigger",
+          "confidence": "laag",
+          "primaryModulators": [
+            "cafeine"
+          ]
         },
         "nierstenen": {
           "score": 0,
@@ -4066,7 +4422,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     }
   ]

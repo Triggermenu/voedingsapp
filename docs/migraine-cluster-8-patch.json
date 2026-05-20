@@ -1,0 +1,14 @@
+{
+  "cluster": 8,
+  "patchDate": "2026-05-20",
+  "branch": "migraine/open-clusters-batch",
+  "description": "Cluster 8 verse vleeswaren: Hindiyeh-purge + Finberg 2022, noten + triggerType voor score-2 items",
+  "scoreChanges": 0,
+  "sourceUpgrades": 37,
+  "newFields": ["migraine.note (37 items)", "migraine.triggerType (4 score-2 items)", "migraine.confidence (4 score-2 items)", "migraine.primaryModulators (4 score-2 items)"],
+  "changes": [
+    {"group": "score-0 vers spiervlees (32 items)", "changeType": "bronnen-uitbreiding + noot", "ids": ["174033","171477","174474","167904","171491","172544","172848","nl-gehakt-rund","174329","nl-lever-kip","nl-eend-filet","nl-gehakt-half-om-half","nl-lamskoteletten","nl-varkenshaas","nl-kalkoenfilet","nl-biefstuk","nl-fricandeau","nl-lamsvlees","nl-eendenvlees","nl-konijn","nl-hertenvlees","nl-varkenslever","nl-kipgehakt","nl-rundergehakt","nl-wild-zwijn","nl-tartaar-rundvlees","nl-bouillon-kip","nl-bouillon-rundvlees","nl-kipschnitzel","nl-runderrollade"]},
+    {"group": "score-1 orgaanvlees + gerookte kip (3 items)", "changeType": "bronnen-uitbreiding + noot", "ids": ["nl-lever","nl-niertjes","nl-gerookte-kip"]},
+    {"group": "score-2 kippenlever + bereide producten (4 items)", "changeType": "bronnen-uitbreiding + triggerType + noot", "ids": ["nl-kippenlever","nl-biefstuk-tartaar","nl-kipnuggets","nl-vleesbrood"]}
+  ]
+}
