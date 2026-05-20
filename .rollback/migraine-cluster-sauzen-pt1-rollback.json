@@ -1,0 +1,14 @@
+{
+  "cluster": "sauzen-kruiden-pt1",
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat sauzen/azijn/olie PT1 — 22 items hadden Hindiyeh 2020 als enige bron",
+  "prePatchState": {"migraine.sources": ["Hindiyeh et al. 2020 (sole)"]},
+  "affectedIds": [
+    "nl-olijfolie", "nl-sojasaus", "nl-ketchup", "nl-mayonaise", "nl-mosterd",
+    "nl-azijn-rode-wijn", "nl-zout", "nl-appelciderazijn", "nl-tomatensaus",
+    "nl-pesto", "nl-sambal", "nl-ketjap-manis", "nl-worcestershire",
+    "nl-sunflower-olie", "nl-chilisaus", "nl-tahoe-marinade", "nl-azijn-wit",
+    "nl-worcestershiresaus", "nl-balsamico-azijn", "nl-hoisinsaus",
+    "nl-oesterketsap", "nl-arachideolie"
+  ]
+}
