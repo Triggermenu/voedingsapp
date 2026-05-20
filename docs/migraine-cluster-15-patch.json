@@ -1,0 +1,17 @@
+{
+  "cluster": 15,
+  "patchDate": "2026-05-20",
+  "branch": "migraine/open-clusters-batch",
+  "description": "Cluster 15 citrus: score-normalisatie alle 6 items naar score 1 + bronnen + triggerType",
+  "scoreChanges": 6,
+  "sourceUpgrades": 6,
+  "changes": [
+    {"id": "169097", "name": "Sinaasappel", "scoreBefore": 0, "scoreAfter": 1, "changeType": "score-verhoging + bronnen"},
+    {"id": "167747", "name": "Citroen", "scoreBefore": 0, "scoreAfter": 1, "changeType": "score-verhoging + bronnen"},
+    {"id": "nl-grapefruit", "name": "Grapefruit", "scoreBefore": 0, "scoreAfter": 1, "changeType": "score-verhoging + bronnen"},
+    {"id": "nl-clementine", "name": "Clementine", "scoreBefore": 2, "scoreAfter": 1, "changeType": "score-verlaging + bronnen"},
+    {"id": "nl-limoen", "name": "Limoen", "scoreBefore": 2, "scoreAfter": 1, "changeType": "score-verlaging + bronnen"},
+    {"id": "nl-kumquat", "name": "Kumquat", "scoreBefore": 2, "scoreAfter": 1, "changeType": "score-verlaging + bronnen"}
+  ],
+  "rationale": "Pre-patch inconsistentie: gelijke citrusvruchten hadden scores 0 of 2 zonder onderscheidend bewijs. Normalisatie naar score 1 op basis van ~11% zelfrapportage en histamine-liberator mechanism (Maintz 2007)."
+}
