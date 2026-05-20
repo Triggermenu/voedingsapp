@@ -1933,7 +1933,7 @@
       "cluster": 9,
       "scores": {
         "jicht": {
-          "score": 0,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1942,7 +1942,10 @@
               "type": "database",
               "accessedAt": "2026-05-11"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Purine ~55 mg/100g."
+          }
         },
         "migraine": {
           "score": 1,
@@ -3988,110 +3991,6 @@
               "accessedAt": "2026-05-12"
             }
           ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-rucola",
-      "name": {
-        "nl": "Rucola",
-        "en": "Rocket / Arugula"
-      },
-      "category": "groente",
-      "subcategory": "bladgroenten",
-      "cluster": 9,
-      "scores": {
-        "jicht": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Purine ~55 mg/100g."
-          }
-        },
-        "migraine": {
-          "score": 1,
-          "evidence": "C",
-          "triggerType": "individueel-variabel",
-          "confidence": "laag",
-          "primaryModulators": [
-            "nitraat",
-            "microbioom-conversie"
-          ],
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
-              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
-              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
-              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
-              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Rucola heeft het hoogste nitraat-gehalte van gangbare slasoorten (>300 mg/100g). Endogene conversie naar nitriet via orale bacteriën varieert sterk individueel. Bij personen met hoog-actief nitraat-reducerend microbioom mogelijk trigger via NO-pathway (Gonzalez 2016, observationeel; correctie 2017). Evidence-grade C: directe RCT ontbreekt."
-          }
-        },
-        "nierstenen": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Oxalaat ~16 mg/100g."
-          }
         },
         "histamine": {
           "score": 0,
