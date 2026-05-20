@@ -35,12 +35,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Erwten (groen, vers): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -70,7 +79,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -108,12 +117,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Rode linzen: peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -146,7 +164,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -184,12 +202,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kikkererwten (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -219,7 +246,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -257,12 +284,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kidney bonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -295,7 +331,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -333,12 +369,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Edamame (sojabonen): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -368,7 +413,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -406,12 +451,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Zwarte bonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -444,7 +498,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -482,12 +536,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Bruine bonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -517,7 +580,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -555,12 +618,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Witte bonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -593,7 +665,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -631,12 +703,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Mungbonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -666,7 +747,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -704,12 +785,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Tofu (naturel): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -739,7 +829,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -777,12 +867,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Hummus (kikkererwten): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -815,7 +914,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -853,15 +952,27 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Gefermenteerd sojaproduct: licht verhoogd tyramine."
-          }
+            "nl": "Tempeh: gefermenteerd sojaproduct (Rhizopus-schimmel). Matig tyramine door fermentatie. Mogelijke trigger bij MAO-A-gevoelige personen; niet op algemene migraine-whitelist."
+          },
+          "triggerType": "subgroep-bevestigd",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ]
         },
         "nierstenen": {
           "score": 1,
@@ -894,7 +1005,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -926,12 +1037,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Tuinbonen (vers): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -961,7 +1081,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -999,12 +1119,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Sojabonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1034,7 +1163,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1066,12 +1195,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kapucijners: peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1101,7 +1239,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1139,12 +1277,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Adzukibonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1177,7 +1324,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1215,12 +1362,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Pintobonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1253,7 +1409,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1291,12 +1447,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Groene linzen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1329,7 +1494,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1367,12 +1532,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kikkererwten (uit blik): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1405,7 +1579,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1437,15 +1611,27 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
+              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Gefermenteerd sojaproduct met biogene aminen."
-          }
+            "nl": "Misopasta: lang gefermenteerde sojabonenpasta. Biogene aminen (tyramine, histamine) door fermentatie. Mogelijke trigger bij MAO-A-gevoelige personen."
+          },
+          "triggerType": "subgroep-bevestigd",
+          "confidence": "laag",
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ]
         },
         "nierstenen": {
           "score": 1,
@@ -1487,7 +1673,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       },
       "cluster": 5
     },
@@ -1520,12 +1706,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Sperziebonen (vers): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1555,7 +1750,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1593,12 +1788,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Doperwten (diepvries): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1628,7 +1832,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1666,12 +1870,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Linzensoep (zelfgemaakt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1701,7 +1914,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1739,12 +1952,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Flageolets (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1774,7 +1996,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1806,12 +2028,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Tamarinebonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1841,7 +2072,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1873,12 +2104,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Rode linzen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1911,7 +2151,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1943,12 +2183,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Beluga linzen (zwart, gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1978,7 +2227,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2010,12 +2259,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Puy linzen / Groene Lentilles du Puy (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2045,7 +2303,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2077,12 +2335,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kikkererwten (gedroogd, rauw): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2112,7 +2379,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2144,12 +2411,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Natto (gefermenteerde sojabonen): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2182,7 +2458,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2214,12 +2490,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Bruine bonen (gedroogd): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2249,7 +2534,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2278,12 +2563,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Sojamelk (ongezoet): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2313,7 +2607,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2345,12 +2639,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Lupinebonen (gekookt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2380,7 +2683,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2412,12 +2715,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kidneybonen (blik, uitgelekt): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2447,7 +2759,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2479,12 +2791,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Edamame bonen (vers/bevroren): peulvrucht zonder specifieke migraine-trigger-evidence. Geen biogene aminen of andere triggerstoffen (Hindiyeh 2020, Finberg 2022)."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2514,7 +2835,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     }
   ]
