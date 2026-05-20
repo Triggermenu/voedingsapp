@@ -1,0 +1,14 @@
+{
+  "batch": "sauzen-kruiden-pt2",
+  "patchDate": "2026-05-20",
+  "description": "Hindiyeh-purge kruiden/specerijen — 27 items, Hindiyeh sole-source vervangen",
+  "scoreChanges": 4,
+  "sourceUpgrades": 27,
+  "triggerTypeAdded": 0,
+  "scoreFixes": [
+    {"id": "nl-curry-poeder",  "name": "Currypoeder",   "scoreBefore": 1, "scoreAfter": 0, "reason": "Geen specifieke evidence voor kruidenmengsel als migrainetrigger"},
+    {"id": "nl-chili-vers",    "name": "Verse chilipeper","scoreBefore": 1, "scoreAfter": 0, "reason": "Capsaïcine geen bewezen trigger; soms therapeutisch"},
+    {"id": "nl-nootmuskaat",   "name": "Nootmuskaat",   "scoreBefore": 1, "scoreAfter": 0, "reason": "Geen evidence in gangbare hoeveelheden"},
+    {"id": "nl-cayennepeper",  "name": "Cayennepeper",  "scoreBefore": 1, "scoreAfter": 0, "reason": "Capsaïcine geen bewezen triggermechanisme"}
+  ]
+}

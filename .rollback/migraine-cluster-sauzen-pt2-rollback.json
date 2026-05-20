@@ -1,0 +1,15 @@
+{
+  "cluster": "sauzen-kruiden-pt2",
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat kruiden/specerijen PT2 — 27 items hadden Hindiyeh 2020 als enige bron",
+  "prePatchState": {"migraine.sources": ["Hindiyeh et al. 2020 (sole)"]},
+  "affectedIds": [
+    "nl-kurkuma", "nl-gember", "nl-peper-zwart", "nl-kaneel", "nl-peterselie",
+    "nl-basilicum", "nl-dille-vers", "nl-rozemarijn", "nl-tijm-vers",
+    "nl-bieslook-vers", "nl-dragon-vers", "nl-majoraan-vers", "nl-oregano-vers",
+    "nl-koriander-vers", "nl-munt-vers", "nl-chili-vers", "nl-nootmuskaat",
+    "nl-kardemom", "nl-steranijs", "nl-cayennepeper", "nl-laurierblad",
+    "nl-komijn", "nl-knoflookpoeder", "nl-uienpoeder", "nl-salie-vers",
+    "nl-paprikapoeder", "nl-curry-poeder"
+  ]
+}

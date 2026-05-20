@@ -666,12 +666,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kurkuma (curcumine): anti-inflammatoir; geen bewijs voor migraine-triggering. Eerder gezien als neutraal of beschermend."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -704,7 +713,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -733,12 +742,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Gember: anti-inflammatoire eigenschappen; in sommige studies helpt het bij migraine-symptomen. Geen trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -771,7 +789,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -876,12 +894,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Zwarte peper: piperine; geen specifieke migraine-trigger-evidence in gangbare hoeveelheden."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -914,7 +941,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -943,12 +970,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kaneel: geen specifieke migraine-trigger-evidence in gangbare hoeveelheden."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -981,7 +1017,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1010,12 +1046,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Peterselie: geen biogene aminen of bekende migraine-triggerstoffen."
+          }
         },
         "nierstenen": {
           "score": 2,
@@ -1048,7 +1093,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1077,12 +1122,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Basilicum: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1112,7 +1166,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1535,12 +1589,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Dille: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -1573,7 +1636,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1602,12 +1665,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Rozemarijn: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1637,7 +1709,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -1666,12 +1738,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-11"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Tijm: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -1701,7 +1782,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-11"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2047,78 +2128,20 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
-      }
-    },
-    {
-      "id": "nl-curry-poeder",
-      "name": {
-        "nl": "Currypoeder",
-        "en": "Curry powder"
-      },
-      "category": "sauzen-kruiden",
-      "subcategory": "kruidenmix",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
+              "accessedAt": "2026-05-20"
+            },
             {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Currymengsels kunnen biogene aminen bevatten."
+            "nl": "Paprikapoeder: geen specifieke migraine-trigger-evidence."
           }
         },
         "nierstenen": {
@@ -2149,7 +2172,80 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
+      }
+    },
+    {
+      "id": "nl-curry-poeder",
+      "name": {
+        "nl": "Currypoeder",
+        "en": "Curry powder"
+      },
+      "category": "sauzen-kruiden",
+      "subcategory": "kruidenmix",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ],
+          "note": {
+            "nl": "Currypoeder (mengsel kruiden/specerijen): geen specifieke migraine-trigger-evidence als mengsel. Eerder score 1 op basis van Hindiyeh sole-source."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-12"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-12",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2261,12 +2357,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Bieslook: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2299,7 +2404,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2328,12 +2433,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Dragon: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2363,7 +2477,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2392,12 +2506,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Majoraan: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2427,7 +2550,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2456,12 +2579,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Oregano: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2494,7 +2626,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2523,12 +2655,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Koriander: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2558,7 +2699,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2587,12 +2728,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Munt: geen cafeïne; geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2625,7 +2775,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2650,18 +2800,24 @@
           ]
         },
         "migraine": {
-          "score": 1,
+          "score": 0,
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Capsaïcine kan bij gevoelige personen migraineklachten uitlokken."
+            "nl": "Verse chilipeper (capsaïcine): geen bewezen migraine-trigger; capsaïcine soms therapeutisch gebruikt. Eerder score 1 op basis van Hindiyeh sole-source."
           }
         },
         "nierstenen": {
@@ -2692,7 +2848,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2717,18 +2873,24 @@
           ]
         },
         "migraine": {
-          "score": 1,
+          "score": 0,
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
           ],
           "note": {
-            "nl": "Bevat myristicine — bij hoge dosis mogelijk trigger."
+            "nl": "Nootmuskaat: geen specifieke migraine-trigger-evidence in gangbare hoeveelheden. Eerder score 1 op basis van Hindiyeh sole-source."
           }
         },
         "nierstenen": {
@@ -2759,7 +2921,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2788,12 +2950,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Kardemom: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2823,7 +2994,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2852,12 +3023,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Steranijs: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -2887,7 +3067,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2912,16 +3092,25 @@
           ]
         },
         "migraine": {
-          "score": 1,
+          "score": 0,
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Cayennepeper (capsaïcine): geen bewezen migraine-triggermechanisme. Eerder score 1 op basis van Hindiyeh sole-source."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2954,7 +3143,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -2983,12 +3172,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Laurierblad: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3018,7 +3216,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3047,12 +3245,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Komijn: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3082,7 +3289,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3111,12 +3318,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Knoflookpoeder: knoflook zelf geen established migraine-trigger; geen specifieke evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3146,7 +3362,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3175,12 +3391,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Uienpoeder: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3210,7 +3435,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
@@ -3239,12 +3464,21 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors (J Clin Pharmacol)",
               "type": "review",
-              "accessedAt": "2026-05-12"
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache (Curr Pain Headache Rep)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Salie: geen specifieke migraine-trigger-evidence."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3274,7 +3508,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-12"
+        "lastReviewed": "2026-05-20"
       }
     },
     {
