@@ -1,0 +1,61 @@
+{
+  "batch": "peulvruchten-hindiyeh-purge",
+  "patchDate": "2026-05-20",
+  "branch": "migraine/peulvruchten-hindiyeh",
+  "note": "Hindiyeh-only purge: alle 35 items in peulvruchten.json. Finberg 2022 + Hindiyeh 2020 als standaard score-0 bronpaar. Gefermenteerde uitzonderingen (nl-tempeh, nl-misopasta) behouden score 1 met Maintz 2007 + Hindiyeh en triggerType subgroep-bevestigd.",
+  "scoreChanges": 0,
+  "sourceUpgrades": 35,
+  "triggerTypeAdded": 2,
+  "affectedIds": [
+    "170420",
+    "172421",
+    "173757",
+    "175200",
+    "nl-edamame",
+    "nl-zwarte-bonen",
+    "nl-bruine-bonen",
+    "nl-witte-bonen",
+    "nl-mungbonen",
+    "nl-tofu",
+    "nl-hummus",
+    "nl-tempeh",
+    "nl-snijbonen-peul",
+    "nl-sojabonen",
+    "nl-kapucijners",
+    "nl-adzukibonen",
+    "nl-pintobonen",
+    "nl-groene-linzen",
+    "nl-kikkererwten-blik",
+    "nl-misopasta",
+    "nl-sperziebonen",
+    "nl-doperwten-diepvries",
+    "nl-linzensoep",
+    "nl-flageolets",
+    "nl-tamarinpasta",
+    "nl-rode-linzen",
+    "nl-beluga-linzen",
+    "nl-puy-linzen",
+    "nl-kikkererwten-gedroogd",
+    "nl-natto",
+    "nl-gedroogde-bruine-bonen",
+    "nl-sojadrink",
+    "nl-lupinebonen",
+    "nl-kidneybonen",
+    "nl-sojaschroot"
+  ],
+  "scoreFixes": [],
+  "fermentedExceptions": [
+    {
+      "id": "nl-tempeh",
+      "score": 1,
+      "triggerType": "subgroep-bevestigd",
+      "note": "Gefermenteerd sojaproduct (Rhizopus-schimmel). Matig tyramine door fermentatie."
+    },
+    {
+      "id": "nl-misopasta",
+      "score": 1,
+      "triggerType": "subgroep-bevestigd",
+      "note": "Lang gefermenteerde sojabonenpasta. Biogene aminen (tyramine, histamine) door fermentatie."
+    }
+  ]
+}
