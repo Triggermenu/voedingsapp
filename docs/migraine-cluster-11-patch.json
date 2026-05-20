@@ -1,0 +1,19 @@
+{
+  "cluster": 11,
+  "patchDate": "2026-05-20",
+  "commitSha": "32936d8",
+  "note": "Gecombineerde commit met cluster 12 (32936d8); gesplitst in aparte patch.json per cluster op 2026-05-20.",
+  "scoreChanges": 0,
+  "sourceUpgrades": 7,
+  "triggerTypeAdded": 7,
+  "affectedIds": [
+    "nl-witte-wijn",
+    "nl-prosecco",
+    "nl-champagne",
+    "nl-rose-wijn",
+    "nl-cider-droog",
+    "nl-cider-zoet",
+    "nl-sake"
+  ],
+  "scoreFixes": []
+}
