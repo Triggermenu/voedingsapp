@@ -1,0 +1,20 @@
+{
+  "cluster": 8,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch state cluster 8 verse vleeswaren — 37 items hadden Hindiyeh 2020 als enige migraine-bron",
+  "prePatchState": {
+    "migraine.sources": ["Hindiyeh et al. 2020 (sole)"],
+    "meta.lastReviewed": "2026-05-11"
+  },
+  "scoreChanges": [],
+  "affectedIds": [
+    "174033","171477","174474","167904","171491","172544","172848",
+    "nl-gehakt-rund","174329","nl-lever-kip","nl-eend-filet","nl-gehakt-half-om-half",
+    "nl-gerookte-kip","nl-lamskoteletten","nl-varkenshaas","nl-kalkoenfilet","nl-biefstuk",
+    "nl-lever","nl-niertjes","nl-fricandeau","nl-lamsvlees","nl-eendenvlees",
+    "nl-konijn","nl-hertenvlees","nl-varkenslever","nl-kippenlever","nl-kipgehakt",
+    "nl-rundergehakt","nl-biefstuk-tartaar","nl-wild-zwijn","nl-tartaar-rundvlees",
+    "nl-bouillon-kip","nl-bouillon-rundvlees","nl-kipnuggets","nl-vleesbrood",
+    "nl-kipschnitzel","nl-runderrollade"
+  ]
+}
