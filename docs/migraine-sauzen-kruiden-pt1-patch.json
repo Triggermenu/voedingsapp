@@ -1,0 +1,20 @@
+{
+  "batch": "sauzen-kruiden-pt1",
+  "patchDate": "2026-05-20",
+  "description": "Hindiyeh-purge sauzen/azijn/olie — 22 items, Hindiyeh sole-source vervangen",
+  "scoreChanges": 7,
+  "sourceUpgrades": 22,
+  "triggerTypeAdded": 8,
+  "scoreFixes": [
+    {"id": "nl-ketchup",       "name": "Ketchup",         "scoreBefore": 1, "scoreAfter": 0, "reason": "Geen specifiek bewijs voor ketchup als migrainetrigger; tomaat als histamine-liberator onvoldoende voor score 1"},
+    {"id": "nl-azijn-rode-wijn","name": "Rode wijnazijn",  "scoreBefore": 1, "scoreAfter": 0, "reason": "Alcohol omgezet in azijnzuur; biogene aminen verwaarloosbaar"},
+    {"id": "nl-tomatensaus",   "name": "Tomatensaus",      "scoreBefore": 1, "scoreAfter": 0, "reason": "Tomaat is histamine-liberator maar migraine-specifiek bewijs ontbreekt"},
+    {"id": "nl-sambal",        "name": "Sambal (oelek)",   "scoreBefore": 1, "scoreAfter": 0, "reason": "Capsaïcine geen bewezen migrainetrigger; soms therapeutisch gebruikt"},
+    {"id": "nl-chilisaus",     "name": "Zoete chilisaus",  "scoreBefore": 1, "scoreAfter": 0, "reason": "Capsaïcine zonder bewezen triggermechanisme"},
+    {"id": "nl-azijn-wit",     "name": "Witte azijn",      "scoreBefore": 1, "scoreAfter": 0, "reason": "Azijnzuur geen bekende migraine-triggerstof"},
+    {"id": "nl-balsamico-azijn","name": "Balsamicoazijn",  "scoreBefore": 2, "scoreAfter": 1, "reason": "Gefermenteerd maar biogene aminen in azijn verwaarloosbaar laag; score 2 te hoog"}
+  ],
+  "signaleringen": [
+    "nl-worcestershire (score 1) en nl-worcestershiresaus (score 2) zijn mogelijk een duplicaat — aparte follow-up vereist"
+  ]
+}
