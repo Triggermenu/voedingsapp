@@ -1,0 +1,10 @@
+{
+  "cluster": 2,
+  "rollbackDate": "2026-05-20",
+  "description": "Pre-patch staat cluster 2 — score-fouten: nl-chocoladereep-wit op 1 ipv 0; nl-donuts op 1 ipv 0",
+  "prePatchScores": [
+    {"id": "nl-chocoladereep-wit", "score": 1},
+    {"id": "nl-donuts", "score": 1}
+  ],
+  "affectedFiles": ["src/data/zoetwaren.json", "src/data/zuivel.json"]
+}
