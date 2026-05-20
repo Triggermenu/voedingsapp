@@ -255,7 +255,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 15
     },
     {
       "id": "167762",
@@ -343,7 +344,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 14
     },
     {
       "id": "171706",
@@ -428,7 +430,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 14
     },
     {
       "id": "171719",
@@ -726,7 +729,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 14
     },
     {
       "id": "169910",
@@ -1093,7 +1097,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 14
     },
     {
       "id": "167747",
@@ -1182,7 +1187,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 15
     },
     {
       "id": "168153",
@@ -1341,7 +1347,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 15
     },
     {
       "id": "nl-meloen",
@@ -2181,7 +2188,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 19
     },
     {
       "id": "nl-rozijnen",
@@ -2266,7 +2274,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 19
     },
     {
       "id": "173945",
@@ -2489,7 +2498,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 15
     },
     {
       "id": "nl-limoen",
@@ -2572,7 +2582,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 15
     },
     {
       "id": "nl-watermeloen",
@@ -2797,7 +2808,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 19
     },
     {
       "id": "nl-dadel",
@@ -2876,7 +2888,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 19
     },
     {
       "id": "nl-nectarine",
@@ -3895,7 +3908,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 14
     },
     {
       "id": "nl-jackfruit",
@@ -4047,7 +4061,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 19
     },
     {
       "id": "nl-vijgen-gedroogd-v2",
@@ -4129,7 +4144,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 19
     },
     {
       "id": "nl-pruimen-gedroogd",
@@ -4208,7 +4224,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 19
     },
     {
       "id": "nl-kersen",
@@ -4366,7 +4383,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 15
     },
     {
       "id": "nl-tamarinde",

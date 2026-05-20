@@ -483,7 +483,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-cola",
@@ -564,7 +565,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-tomatensap",
@@ -1444,7 +1446,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-druivensap",
@@ -1528,7 +1531,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-kamillethee",
@@ -1829,7 +1833,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-vlierbloesemsiroop",
@@ -2252,7 +2257,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-oolong-thee",
@@ -2325,7 +2331,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-vlierbloesemthee",
@@ -2619,7 +2626,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-hibiscusthee",
@@ -2774,7 +2782,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-groene-smoothie",
@@ -2934,7 +2943,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-tonic-water",
@@ -3012,7 +3022,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 1
     },
     {
       "id": "nl-cola-light",
