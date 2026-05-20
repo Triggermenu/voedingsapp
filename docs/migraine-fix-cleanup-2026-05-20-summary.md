@@ -85,6 +85,10 @@ Commit `32936d8` verwerkte clusters 11 en 12 samen. Gesplitst in:
 | Follow-up | Prioriteit | Branch |
 |---|---|---|
 | `168746` vs `nl-bier-pilsener` duplicaat | Middel | aparte branch |
-| Cluster-veld backfill (555 items zonder cluster) | Laag | `migraine/cluster-backfill` |
-| sauzen-kruiden Hindiyeh-purge (49 items) | Hoog | `migraine/sauzen-kruiden-hindiyeh` |
-| peulvruchten Hindiyeh-purge (35 items) | Hoog | `migraine/peulvruchten-hindiyeh` |
+| ~~Cluster-veld backfill (555 items zonder cluster)~~ | ~~Laag~~ | **afgerond** `migraine/cluster-veld-backfill` |
+| ~~sauzen-kruiden Hindiyeh-purge (49 items)~~ | ~~Hoog~~ | **afgerond** PR #15 |
+| ~~peulvruchten Hindiyeh-purge (35 items)~~ | ~~Hoog~~ | **afgerond** PR #16 |
+
+## Changelog cluster-veld backfill (2026-05-20)
+
+2026-05-20: cluster-veld backfilled voor 158 items op basis van `docs/migraine-cluster-*-items.md` per cluster. Items waarvan herkomst niet eenduidig herleidbaar was (389 items), hebben géén cluster-veld gekregen (geen `cluster: 0` placeholder). Tracking-gap nu zichtbaar in plaats van gemaskeerd. Items met cluster-veld voor backfill: 51 → na backfill: 209.
