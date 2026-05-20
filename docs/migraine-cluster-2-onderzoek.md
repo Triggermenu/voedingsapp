@@ -12,7 +12,7 @@ migraineurs vlak vóór een aanval rapporteren een OORZAAK of een SYMPTOOM?
 **Prodroom-hypothese:** Chocolade-cravings zijn een neurologisch vroeg-symptoom van migraine
 (prodroom), niet de oorzaak. Hypothalamus-activatie in de prodroom-fase kan cravings uitlokken.
 
-**Marcus 1997 (PMID 9048276):** Gerandomiseerde double-blind crossover studie (n=63 migraine-
+**Marcus 1997 (PMID 9453274):** Gerandomiseerde double-blind crossover studie (n=63 migraine-
 patiënten). Chocolade vs. carob-placebo: geen significant verschil in hoofdpijnincidentie (42% vs. 44%).
 Dit is de sterkste directe toets van de chocolade-trigger hypothese — en bevestigt hem NIET.
 

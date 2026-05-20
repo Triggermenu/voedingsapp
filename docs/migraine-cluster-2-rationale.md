@@ -46,7 +46,7 @@ carob-placebo bij migrainepatiënten. Dit ondermijnt de causaliteitstheorie ster
 
 ## Bronnen
 
-1. **Marcus DA et al. 1997 (PMID 9048276):** Double-blind provocation studie; chocolade
+1. **Marcus DA et al. 1997 (PMID 9453274):** Double-blind provocation studie; chocolade
    niet meer migraine-uitlokkend dan carob-placebo. Sleutelreferentie voor chocolade max score 2.
 2. **Hindiyeh 2020 (PMC7496357):** Chocolade-cravings als prodroommfenomeen; bevestigt
    de twijfels over causaal verband. Authoriteit voor CLAUDE.md-regel.
