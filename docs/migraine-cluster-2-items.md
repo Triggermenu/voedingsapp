@@ -30,7 +30,7 @@ Opgesteld: 2026-05-20 | Bestanden: `src/data/zoetwaren.json`, `src/data/zuivel.j
 
 | ID | Naam | Score | Wijziging |
 |---|---|---|---|
-| nl-frisdrank-cola | Cola (frisdrank) | 1 | ICHD-3+Hind + triggerType onttrekkings-trigger |
+| ~~nl-frisdrank-cola~~ → **nl-cola** | Cola (suikerhoudend) | 1 | ICHD-3+Hind + triggerType onttrekkings-trigger | canoniek in dranken-non-alcohol; nl-frisdrank-cola (zoetwaren, duplicaat) verwijderd 2026-05-20 |
 | nl-worstenbroodje | Worstenbroodje | 1 | Maintz+Hind + triggerType context-afhankelijk |
 | nl-zoethout-snoep | Zoete drop (Engels) | 1 | Maintz+Hind + triggerType context-afhankelijk |
 | nl-nougat | Nougat | 1 | Maintz+Hind + triggerType subgroep-overschat |
