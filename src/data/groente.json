@@ -429,6 +429,7 @@
       },
       "category": "groente",
       "subcategory": "knolgewassen",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -446,12 +447,36 @@
           }
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -461,7 +486,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Rode biet bevat >250 mg nitraat per 100g (rauw). Endogene conversie naar nitriet via orale bacteriën (Veillonella, Actinomyces) varieert sterk individueel. Bij personen met hoog-actief nitraat-reducerend microbioom mogelijk trigger via NO-pathway (Gonzalez 2016, observationeel; correctie 2017). Koken verlaagt nitraat met 40-80%. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 3,
@@ -1902,6 +1930,7 @@
       },
       "category": "groente",
       "subcategory": "bladgroenten",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -1916,12 +1945,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -1931,7 +1984,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Rucola heeft het hoogste nitraat-gehalte van gangbare slasoorten (>300 mg/100g). Endogene conversie naar nitriet via orale bacteriën varieert sterk individueel. Bij personen met hoog-actief nitraat-reducerend microbioom mogelijk trigger via NO-pathway (Gonzalez 2016, observationeel; correctie 2017). Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -2933,6 +2989,7 @@
       },
       "category": "groente",
       "subcategory": "bladgroenten",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -2947,12 +3004,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -2962,7 +3043,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Paksoi bevat 200-300 mg nitraat per 100g (EFSA: zeer hoog-categorie). Endogene conversie naar nitriet via orale bacteriën individueel variabel. Koken verlaagt nitraat significant. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -3435,6 +3519,7 @@
       },
       "category": "groente",
       "subcategory": "wortelgewassen",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -3449,12 +3534,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -3464,7 +3573,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Radijs bevat 100-270 mg nitraat per 100g, aan de bovenkant van de EFSA-'zeer hoog'-categorie. Endogene conversie via orale bacteriën individueel variabel. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -3660,6 +3772,7 @@
       },
       "category": "groente",
       "subcategory": "bladgroenten",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 1,
@@ -3677,12 +3790,36 @@
           }
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -3692,7 +3829,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Raapstelen behoren tot de hoogste nitraat-groenten (>300 mg/100g). Endogene conversie naar nitriet via orale bacteriën varieert sterk individueel. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -3876,6 +4016,7 @@
       },
       "category": "groente",
       "subcategory": "bladgroenten",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 1,
@@ -3893,12 +4034,36 @@
           }
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -3908,7 +4073,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Rucola heeft het hoogste nitraat-gehalte van gangbare slasoorten (>300 mg/100g). Endogene conversie naar nitriet via orale bacteriën varieert sterk individueel. Bij personen met hoog-actief nitraat-reducerend microbioom mogelijk trigger via NO-pathway (Gonzalez 2016, observationeel; correctie 2017). Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 1,
@@ -6081,6 +6249,7 @@
       },
       "category": "groente",
       "subcategory": "wortel",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -6095,12 +6264,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -6110,7 +6303,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Daikon (witte radijs) bevat 200-300 mg nitraat per 100g, vergelijkbaar met radijs. Endogene conversie naar nitriet via orale bacteriën individueel variabel. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 0,
@@ -6434,6 +6630,7 @@
       },
       "category": "groente",
       "subcategory": "bladgroente",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -6448,12 +6645,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -6463,7 +6684,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Snijbiet bevat >250 mg nitraat per 100g, vergelijkbaar met spinazie. Endogene conversie naar nitriet via orale bacteriën varieert sterk individueel. Koken in water verlaagt nitraat met 40-80%. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 3,
@@ -6811,6 +7035,7 @@
       },
       "category": "groente",
       "subcategory": "wortel",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -6825,12 +7050,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -6840,7 +7089,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Rode biet bevat rauw >250 mg nitraat per 100g; koken verlaagt dit met 40-80% (gekookt ~50-150 mg/100g). Trigger-relevantie via mondmicrobioom-pathway is lager dan bij rauwe consumptie. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 3,
@@ -6884,6 +7136,7 @@
       },
       "category": "groente",
       "subcategory": "wortel",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -6898,12 +7151,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -6913,7 +7190,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Gele biet heeft een vergelijkbaar nitraat-gehalte als rode biet (>250 mg/100g rauw). Endogene conversie naar nitriet via orale bacteriën individueel variabel. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 2,
@@ -7030,6 +7310,7 @@
       },
       "category": "groente",
       "subcategory": "bladgroente",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -7044,12 +7325,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 1,
+          "evidence": "C",
+          "triggerType": "individueel-variabel",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "microbioom-conversie"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+              "title": "Hord et al. 2009 — Food sources of nitrates and nitrites (Am J Clin Nutr)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -7059,7 +7364,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Wilde rucola (Diplotaxis tenuifolia) bevat meer nitraat dan gekweekte rucola (>400 mg/100g). Endogene conversie naar nitriet via orale bacteriën varieert sterk individueel. Evidence-grade C: directe RCT ontbreekt."
+          }
         },
         "nierstenen": {
           "score": 1,

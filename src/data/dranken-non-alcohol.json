@@ -2482,6 +2482,7 @@
       },
       "category": "dranken-non-alcohol",
       "subcategory": "sappen",
+      "cluster": 9,
       "scores": {
         "jicht": {
           "score": 0,
@@ -2496,12 +2497,36 @@
           ]
         },
         "migraine": {
-          "score": 0,
-          "evidence": "B",
+          "score": 2,
+          "evidence": "C",
+          "triggerType": "dosis-afhankelijk",
+          "confidence": "laag",
+          "primaryModulators": [
+            "nitraat",
+            "no-pathway"
+          ],
           "sources": [
             {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
+              "title": "Gonzalez et al. 2016 — Migraines correlated with nitrate-reducing oral microbes (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28428981/",
+              "title": "Gonzalez et al. 2017 — Correction: nitrate-reducing microbes study (mSystems)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18250365/",
+              "title": "Webb et al. 2008 — Acute blood pressure lowering via dietary nitrate bioconversion (Hypertension)",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/18167491/",
+              "title": "Lundberg et al. 2008 — The nitrate-nitrite-nitric oxide pathway (Nat Rev Drug Discov)",
               "type": "review",
               "accessedAt": "2026-05-20"
             },
@@ -2511,7 +2536,10 @@
               "type": "review",
               "accessedAt": "2026-05-20"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Geconcentreerde nitraat-dosis: 500ml bietensap ≈ 500 mg nitraat (sportprotocol-niveau, Webb 2008). Acute plasma-nitriet-pieken via mondmicrobioom-conversie bereiken bij hoog-actieve nitraat-reduceerders een dosis die klinisch relevant kan zijn. Evidence-grade C: extrapolatie van sportstudies en Gonzalez 2016 observationele data; geen directe RCT op migraine-endpoint."
+          }
         },
         "nierstenen": {
           "score": 3,

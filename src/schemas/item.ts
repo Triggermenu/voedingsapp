@@ -25,6 +25,8 @@ export const TRIGGER_TYPES = [
   'onttrekkings-trigger',
   'drug-interactie',
   'context-afhankelijk',
+  'individueel-variabel',
+  'dosis-afhankelijk',
 ] as const
 
 export const ScoreObjectSchema = z.object({

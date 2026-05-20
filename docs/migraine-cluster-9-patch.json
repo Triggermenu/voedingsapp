@@ -1,0 +1,31 @@
+{
+  "cluster": 9,
+  "patchDate": "2026-05-20",
+  "description": "Nitraatrijke groenten — mondmicrobioom-pathway, eerste evidence-C-only cluster",
+  "scoreChanges": 12,
+  "sourceAdditions": 12,
+  "triggerTypeAdditions": 12,
+  "clusterFieldAdditions": 12,
+  "scoreFixes": [
+    {"id": "169145", "name": "Rode biet", "scoreBefore": 0, "scoreAfter": 1, "reason": "Hoog nitraat >250 mg/100g, mondmicrobioom-pathway, evidence C"},
+    {"id": "169967", "name": "Rucola (USDA)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Zeer hoog nitraat >300 mg/100g"},
+    {"id": "nl-rucola", "name": "Rucola", "scoreBefore": 0, "scoreAfter": 1, "reason": "Zeer hoog nitraat >300 mg/100g (duplicaat van 169967, aparte cleanup)"},
+    {"id": "nl-rucola-wilde", "name": "Wilde rucola", "scoreBefore": 0, "scoreAfter": 1, "reason": "Zeer hoog nitraat >400 mg/100g"},
+    {"id": "nl-radijs", "name": "Radijs", "scoreBefore": 0, "scoreAfter": 1, "reason": "Nitraat 100-270 mg/100g (hoge grens >250)"},
+    {"id": "nl-raapstelen", "name": "Raapstelen", "scoreBefore": 0, "scoreAfter": 1, "reason": "Zeer hoog nitraat >300 mg/100g"},
+    {"id": "nl-mangold", "name": "Snijbiet / Mangold", "scoreBefore": 0, "scoreAfter": 1, "reason": "Hoog nitraat >250 mg/100g"},
+    {"id": "nl-oekraense-biet", "name": "Rode biet (gekookt)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Rauw >250 mg/100g; koken verlaagt 40-80%"},
+    {"id": "nl-gele-biet", "name": "Gele biet (rauw)", "scoreBefore": 0, "scoreAfter": 1, "reason": "Hoog nitraat >250 mg/100g"},
+    {"id": "nl-paksoi", "name": "Paksoi", "scoreBefore": 0, "scoreAfter": 1, "reason": "Nitraat 200-300 mg/100g"},
+    {"id": "nl-daikon", "name": "Daikon / Witte radijs", "scoreBefore": 0, "scoreAfter": 1, "reason": "Nitraat 200-300 mg/100g"},
+    {"id": "nl-bietensap", "name": "Bietensap (vers geperst)", "scoreBefore": 0, "scoreAfter": 2, "reason": "Geconcentreerde dosis 500ml ≈ 500 mg nitraat (sportprotocol), dosis-afhankelijk"}
+  ],
+  "stopConditieItems": [
+    {"id": "168463", "name": "Spinazie (rauw)", "reden": "Heeft al cluster:14 (histamine-pathway). Score 1 via andere pathway. Niet gewijzigd."},
+    {"id": "nl-wilde-spinazie", "name": "Wilde spinazie", "reden": "Heeft al cluster:14. Score 1 via andere pathway. Niet gewijzigd."}
+  ],
+  "signaleringen": [
+    {"type": "duplicaat", "ids": ["169967", "nl-rucola"], "actie": "Aparte cleanup-PR — 169967 is canonical (USDA FDC ID)"},
+    {"type": "ontbrekend-in-db", "items": ["bleekselderij", "tuinkers"], "actie": "Kunnen worden toegevoegd in toekomstige uitbreidingsbatch"}
+  ]
+}
