@@ -165,12 +165,13 @@ SIGHI vereist schriftelijke toestemming voor commercieel gebruik. Mail door Pete
 Elk item is een TypeScript object dat aan dit Zod-schema voldoet. **CI faalt bij elke afwijking.**
 
 ```ts
-// src/schemas/item.ts (te genereren in fase 1)
+// src/schemas/item.ts
 type FoodItem = {
   id: string;                           // USDA FDC ID als primary key
   nevoCode?: string;                    // NL-alias
   name: { nl: string; en: string };
   category: Category;                   // enum, zie 3.1
+  subcategory?: string;                 // vrij tekstveld, optioneel
   scores: {
     jicht:      ScoreObject | null;
     migraine:   ScoreObject | null;
@@ -193,6 +194,9 @@ type ScoreObject = {
   evidence: 'A' | 'B' | 'C' | 'onbekend';
   sources: Source[];                    // minimaal 1
   note?: { nl: string; en?: string };
+  confidence?: 'laag' | 'middel' | 'hoog';  // default impliciet 'middel'
+  triggerType?: TriggerType;            // alleen migraine — zie §2.2.1
+  primaryModulators?: string[];         // max 3; slug-formaat [a-z0-9-]
 };
 
 type Source = {
@@ -202,6 +206,14 @@ type Source = {
   accessedAt: string;                   // ISO date
 };
 ```
+
+### 3.3 Optionele ScoreObject-velden
+
+| Veld | Type | Gebruik |
+|---|---|---|
+| `confidence` | `'laag' \| 'middel' \| 'hoog'` | Mate van zekerheid over de score, los van evidence-grade. `laag` = tegenstrijdige studies of beperkte n; `middel` = default als weggelaten; `hoog` = consistente A/B-bronnen. |
+| `triggerType` | `TriggerType` (8 waarden) | Classificeert het triggermechanisme. **Alleen op migraine-scores.** Verplicht bij score ≥ 2 voor migraine. Definities in §2.2.1. |
+| `primaryModulators` | `string[]` (max 3) | Slug-formaat `[a-z0-9-]`. Benoemt de voornaamste modulerende factoren bij `individueel-variabel` of `context-afhankelijk` triggerType. Voorbeeld: `["microbioom", "nitraat-conversie"]`. |
 
 ### 3.1 Toegestane categorieën
 `groente | fruit | granen | peulvruchten | noten-zaden | vlees | vis-schaaldieren | zuivel | eieren | dranken-alcohol | dranken-non-alcohol | zoetwaren | sauzen-kruiden | bereid-gerecht | overig`
@@ -428,11 +440,12 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 14. Versiebeheer van dit document
 
-- **Schema version:** v1.5
+- **Schema version:** v1.6
 - **Laatste wijziging:** 2026-05-21
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
   - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).
   - v1.3 (2026-05-20): §2.2 MSG verwijderd van score-3 whitelist; score 2 + subgroep-overschat is nu standaard. Akkoord: Peter Wolterman (chat 2026-05-20, review PR #15 methodologische bevinding).
   - v1.4 (2026-05-20): §2.2 whitelist-audit — whitelist gecondenseerd naar 2 stoffen (was 3): alcohol-ethanol + gecureerd vlees boven Henderson-drempel. Gerijpte kaas verwijderd van whitelist (interne paradigma-extensie; Finberg 2022 + subgroep-overschat-toets; geen formele guideline-revisie). §2.2 formuleringen gepreciseerd: ethanol-mechanisme + Henderson-drempel expliciet. §12 uitgebreid met gerijpte-kaas-bronconflict. Akkoord: Peter Wolterman (chat 2026-05-20).
-  - v1.5 (2026-05-21): TriggerType-enum documentatie + evidence-C-only paradigma. Nieuwe subsectie §2.2.1 TriggerType-enum met alle 8 waarden uit src/schemas/item.ts — schema en documentatie nu in de pas; CLAUDE.md liep achter sinds eerder schema-werk (PR #28 introduceerde `individueel-variabel` + `dosis-afhankelijk` impliciet maar updatete §2.2 niet). Evidence-C-only cluster-paradigma vastgelegd als formeel principe in §2.2.2: score-plafond 1, score 2 alleen voor dosis-uitzonderingen, cluster 9 als precedent. Onderscheid `subgroep-bevestigd` (welomschreven subgroep) vs `individueel-variabel` (continue modulerende factor) vs `context-afhankelijk` (situatievariabele) expliciet gedocumenteerd. `context-afhankelijk` en `drug-interactie` behouden als gereserveerde enum-waarden (0 items in DB). Geen data-wijzigingen — uitsluitend documentatie. Bekende gap voor opvolg-PR: §3 ScoreObject-velden (`triggerType`, `confidence`, `primaryModulators`) niet volledig gedocumenteerd. Akkoord: Peter Wolterman (vereist per §14 vóór merge).
+  - v1.5 (2026-05-21): TriggerType-enum documentatie + evidence-C-only paradigma. Nieuwe subsectie §2.2.1 TriggerType-enum met alle 8 waarden uit src/schemas/item.ts — schema en documentatie nu in de pas; CLAUDE.md liep achter sinds eerder schema-werk (PR #28 introduceerde `individueel-variabel` + `dosis-afhankelijk` impliciet maar updatete §2.2 niet). Evidence-C-only cluster-paradigma vastgelegd als formeel principe in §2.2.2: score-plafond 1, score 2 alleen voor dosis-uitzonderingen, cluster 9 als precedent. Onderscheid `subgroep-bevestigd` (welomschreven subgroep) vs `individueel-variabel` (continue modulerende factor) vs `context-afhankelijk` (situatievariabele) expliciet gedocumenteerd. `context-afhankelijk` en `drug-interactie` behouden als gereserveerde enum-waarden (0 items in DB). Geen data-wijzigingen — uitsluitend documentatie. Akkoord: Peter Wolterman (chat 2026-05-21).
+  - v1.6 (2026-05-21): §3 ScoreObject volledig gedocumenteerd. `confidence`, `triggerType`, `primaryModulators` toegevoegd aan type-definitie + nieuwe §3.3 met veldbeschrijvingen. `subcategory` op FoodItem toegevoegd (was al in schema). Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
