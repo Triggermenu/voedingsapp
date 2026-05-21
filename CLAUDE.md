@@ -429,7 +429,24 @@ Deze weging is **definitief** tenzij CLAUDE.md wordt aangepast. Cowork mag hier 
 
 ---
 
-## 13. Open risico's
+## 13. Paradigma-precedenten
+
+Chronologisch register van methodologische paradigmawijzigingen. **Bedoeld voor Cowork-agenten:** wanneer een nieuw item lijkt op een precedent hieronder, volg het bijbehorende paradigma zonder nieuwe deliberatie.
+
+Verschil met §12 (Tegenstrijdige bronnen): §12 registreert *item-niveau* beslissingen (weging voor specifiek voedingsmiddel). §13 registreert *methodologische* paradigma's (hoe een hele klasse van evidentie te wegen).
+
+| Datum | Onderwerp | Beslissing | Generaliseerbare regel | Versie |
+|---|---|---|---|---|
+| 2026-05 | Koffie ↔ jicht | Score 0 (beschermend). MR-data overwint oudere observationele richtlijnen. | Mechanistisch sterke MR-data > correlationele richtlijnen bij tegenstrijdigheid. | v1.0 |
+| 2026-05 | Calcium ↔ nierstenen | Score 0 bij normale calciuminname. Borghi RCT: risicoverlaging; oud laag-Ca-advies achterhaald. | RCT met directe endpoint (steenvorming) > oud dieetadvies op correlatie. | v1.0 |
+| 2026-05 | Peulvruchten ↔ jicht | Max score 2 ondanks hoog purine. EULAR 2022: geen verhoogd epidemiologisch risico. | Epidemiologische uitkomstdata > biochemische samenstelling alleen. | v1.0 |
+| 2026-05-20 | MSG ↔ migraine | Score 2 + `subgroep-overschat`. Geblindeerde studies: geen reproduceerbaar effect bij normale inname. Van score-3 whitelist verwijderd (v1.3). | Geblindeerde provocatie-RCT overrulet open-label observaties. ICHD-3-revisie is leidend boven klassieke trigger-lijsten. | v1.3 |
+| 2026-05-20 | Gerijpte kaas ↔ migraine | Score 2 + `subgroep-overschat`. MAO-functie neutraliseert tyramine bij intacte enzymstatus; effect alleen in MAO-A-gevoelige subgroep. Van score-3 whitelist verwijderd (v1.4). | Mechanistisch inzicht in inactivatie-pathway > klassieke observationele trigger-lijsten (Hannington 1967-stijl). | v1.4 |
+| 2026-05-21 | Evidence-C-only clusters — cluster 9 | Score-plafond 1; score 2 alleen bij dosis-uitzonderingen; score 3 verboden. TriggerType `individueel-variabel`. Volledig paradigma in §2.2.2. | Clusters zonder A/B-evidence: mechanistische plausibility + observationeel = max score 1 zonder RCT-ondersteuning. | v1.5 |
+
+---
+
+## 14. Open risico's
 
 Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 - SIGHI commerciële licentie nog niet bevestigd → data opgenomen onder voorbehoud.
@@ -438,9 +455,9 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ---
 
-## 14. Versiebeheer van dit document
+## 15. Versiebeheer van dit document
 
-- **Schema version:** v1.6
+- **Schema version:** v1.7
 - **Laatste wijziging:** 2026-05-21
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
@@ -448,4 +465,5 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
   - v1.3 (2026-05-20): §2.2 MSG verwijderd van score-3 whitelist; score 2 + subgroep-overschat is nu standaard. Akkoord: Peter Wolterman (chat 2026-05-20, review PR #15 methodologische bevinding).
   - v1.4 (2026-05-20): §2.2 whitelist-audit — whitelist gecondenseerd naar 2 stoffen (was 3): alcohol-ethanol + gecureerd vlees boven Henderson-drempel. Gerijpte kaas verwijderd van whitelist (interne paradigma-extensie; Finberg 2022 + subgroep-overschat-toets; geen formele guideline-revisie). §2.2 formuleringen gepreciseerd: ethanol-mechanisme + Henderson-drempel expliciet. §12 uitgebreid met gerijpte-kaas-bronconflict. Akkoord: Peter Wolterman (chat 2026-05-20).
   - v1.5 (2026-05-21): TriggerType-enum documentatie + evidence-C-only paradigma. Nieuwe subsectie §2.2.1 TriggerType-enum met alle 8 waarden uit src/schemas/item.ts — schema en documentatie nu in de pas; CLAUDE.md liep achter sinds eerder schema-werk (PR #28 introduceerde `individueel-variabel` + `dosis-afhankelijk` impliciet maar updatete §2.2 niet). Evidence-C-only cluster-paradigma vastgelegd als formeel principe in §2.2.2: score-plafond 1, score 2 alleen voor dosis-uitzonderingen, cluster 9 als precedent. Onderscheid `subgroep-bevestigd` (welomschreven subgroep) vs `individueel-variabel` (continue modulerende factor) vs `context-afhankelijk` (situatievariabele) expliciet gedocumenteerd. `context-afhankelijk` en `drug-interactie` behouden als gereserveerde enum-waarden (0 items in DB). Geen data-wijzigingen — uitsluitend documentatie. Akkoord: Peter Wolterman (chat 2026-05-21).
+  - v1.7 (2026-05-21): Nieuwe §13 Paradigma-precedenten. Chronologisch register van 6 methodologische paradigmawijzigingen (v1.0–v1.5). Onderscheid met §12 (item-niveau) expliciet. Versiebeheer hernoemd van §14 → §15. Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
   - v1.6 (2026-05-21): §3 ScoreObject volledig gedocumenteerd. `confidence`, `triggerType`, `primaryModulators` toegevoegd aan type-definitie + nieuwe §3.3 met veldbeschrijvingen. `subcategory` op FoodItem toegevoegd (was al in schema). Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
