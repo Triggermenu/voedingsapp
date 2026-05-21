@@ -75,6 +75,48 @@ Elk niet-null score MOET een `evidence` (A/B/C) en `sources[]` hebben.
 
 **Evidence-default:** B of C. Score = 3 vereist evidence ≥ B met expliciete bron.
 
+### 2.2.1 — TriggerType-enum
+
+Het `triggerType`-veld op een ScoreObject classificeert hoe een trigger zich gedraagt. Acht waarden, conform `src/schemas/item.ts` regels 21-30. Documentatie hieronder loopt in de pas met het schema sinds v1.5.
+
+| Waarde | Definitie | Voorbeeld-cluster |
+|---|---|---|
+| `universeel` | Mechanisme werkt op iedere migraine-patiënt bij voldoende dosis. Direct farmacologisch, geen subgroep-afhankelijkheid. | Bier (ethanol-mechanisme, cluster 11/12, PR #14) |
+| `subgroep-bevestigd` | Welomschreven subgroep met bewezen reproduceerbare reactie. Subgroep gedefinieerd door duidelijke biologische factor (bv. enzymdeficiëntie). | Paté/leverworst sub-Henderson nitriet (cluster 7); Marmite/Vegemite tyramine (cluster 18, PR #18) |
+| `subgroep-overschat` | Effect alleen in subgroep, in algemene populatie overschat. Zelfrapportage-rate hoog, geblindeerde reproduceerbaarheid laag. | MSG (PR #17), rode wijn (cluster 11/12), gerijpte kaas (PR #22) |
+| `dosis-afhankelijk` | Effect treedt op boven specifieke dosis-drempel; onder drempel geen effect. | Spek/bacon Henderson-drempel (cluster 7); bietensap geconcentreerd (cluster 9, PR #28) |
+| `onttrekkings-trigger` | Trigger door staken of verminderen van inname, niet door inname zelf. | Cafeïne (cluster 1) |
+| `drug-interactie` | Trigger alleen in combinatie met specifieke medicatie. Gereserveerd voor toekomstig gebruik (momenteel 0 items in DB). Mogelijke toepassing: MAO-remmer + tyramine-rijke voeding. | (gereserveerd) |
+| `context-afhankelijk` | Trigger-status hangt af van consumptie-context (combinatie met andere stoffen, timing t.o.v. maaltijd, fysieke staat), niet van persoonseigenschappen. Onderscheid met `subgroep-bevestigd`: subgroep zit in persoon, context zit in situatie. | (gereserveerd voor toekomstige clusters; eerder gebruikt voor Marmite/Vegemite vóór PR #18-hertoewijzing) |
+| `individueel-variabel` | Modulerende factor varieert continu zonder welomschreven subgroep-grens. Effect-grootte verschilt per individu maar geen scherpe ja/nee-dichotomie. | Nitraatrijke groenten (cluster 9, microbioom-conversie-capaciteit als continue modulator, PR #28) |
+
+**Kritisch onderscheid: `subgroep-bevestigd` vs `individueel-variabel`:**
+
+- `subgroep-bevestigd`: subgroep is **welomschreven**. Voorbeeld: MAO-A-deficiëntie of DAO-deficiëntie zijn binaire eigenschappen — iemand heeft het of heeft het niet. Effect binnen subgroep reproduceerbaar.
+- `individueel-variabel`: modulerende factor varieert **continu**. Voorbeeld: orale microbioom-samenstelling (cluster 9) — geen dichotome "wel/niet"-categorie, alleen een spectrum van conversie-capaciteit. Effect-grootte verschilt per individu langs een gradient.
+
+**Kritisch onderscheid: `subgroep-bevestigd` vs `context-afhankelijk`:**
+
+- `subgroep-bevestigd`: variabele zit in de **persoon** (enzymdeficiëntie, microbioom-status, genetica).
+- `context-afhankelijk`: variabele zit in de **situatie** (combinatie met andere voeding, timing, lege/volle maag).
+
+### 2.2.2 — Evidence-C-only clusters
+
+Sommige clusters bevatten geen items met evidence-grade A of B. Dit treedt op wanneer:
+- Geen RCT met het cluster-onderwerp als interventie en migraine als endpoint
+- Geen formele SR met deze specifieke vraagstelling
+- Wel mechanistische plausibility + observationele studies (eventueel met methodologische beperkingen erkend door de auteurs zelf)
+
+**Scoring-regels voor evidence-C-only clusters:**
+- Score-plafond standaard 1
+- Score 2 alleen voor dosis-uitzonderingen waar geconcentreerde producten mechanistisch Henderson-equivalente niveaus benaderen
+- Score 3 niet toegestaan binnen evidence-C-only cluster
+- TriggerType bij voorkeur `individueel-variabel` of `dosis-afhankelijk` (niet `subgroep-bevestigd`, want subgroep is niet welomschreven)
+
+**Precedent:** cluster 9 (nitraatrijke groenten), geïntroduceerd in PR #28 (2026-05-21). Gebaseerd op Gonzalez 2016 (PMID 27822557) + Gonzalez correctie 2017 (PMID 28428981) + Lundberg 2008 NO-pathway (PMID 18167491) + Webb 2008 bietensap acute effecten (PMID 18250365) + Hord 2009 nitraat-content tabel (PMID 19439460) + Hindiyeh 2020 algemene review (PMC7496357).
+
+**Toekomstige clusters waar directe migraine-evidence ontbreekt moeten naar deze norm verwijzen.**
+
 ### 2.3 Nierstenen (calciumoxalaat — meest voorkomend)
 
 **Primaire bron:** Harvard Oxalate Table 2023 (UAB Knight Lab).
@@ -386,10 +428,11 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 14. Versiebeheer van dit document
 
-- **Schema version:** v1.4
-- **Laatste wijziging:** 2026-05-20
+- **Schema version:** v1.5
+- **Laatste wijziging:** 2026-05-21
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
   - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).
   - v1.3 (2026-05-20): §2.2 MSG verwijderd van score-3 whitelist; score 2 + subgroep-overschat is nu standaard. Akkoord: Peter Wolterman (chat 2026-05-20, review PR #15 methodologische bevinding).
   - v1.4 (2026-05-20): §2.2 whitelist-audit — whitelist gecondenseerd naar 2 stoffen (was 3): alcohol-ethanol + gecureerd vlees boven Henderson-drempel. Gerijpte kaas verwijderd van whitelist (interne paradigma-extensie; Finberg 2022 + subgroep-overschat-toets; geen formele guideline-revisie). §2.2 formuleringen gepreciseerd: ethanol-mechanisme + Henderson-drempel expliciet. §12 uitgebreid met gerijpte-kaas-bronconflict. Akkoord: Peter Wolterman (chat 2026-05-20).
+  - v1.5 (2026-05-21): TriggerType-enum documentatie + evidence-C-only paradigma. Nieuwe subsectie §2.2.1 TriggerType-enum met alle 8 waarden uit src/schemas/item.ts — schema en documentatie nu in de pas; CLAUDE.md liep achter sinds eerder schema-werk (PR #28 introduceerde `individueel-variabel` + `dosis-afhankelijk` impliciet maar updatete §2.2 niet). Evidence-C-only cluster-paradigma vastgelegd als formeel principe in §2.2.2: score-plafond 1, score 2 alleen voor dosis-uitzonderingen, cluster 9 als precedent. Onderscheid `subgroep-bevestigd` (welomschreven subgroep) vs `individueel-variabel` (continue modulerende factor) vs `context-afhankelijk` (situatievariabele) expliciet gedocumenteerd. `context-afhankelijk` en `drug-interactie` behouden als gereserveerde enum-waarden (0 items in DB). Geen data-wijzigingen — uitsluitend documentatie. Bekende gap voor opvolg-PR: §3 ScoreObject-velden (`triggerType`, `confidence`, `primaryModulators`) niet volledig gedocumenteerd. Akkoord: Peter Wolterman (vereist per §14 vóór merge).
