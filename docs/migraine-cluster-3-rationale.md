@@ -120,3 +120,23 @@ Subcategory-correctie is een data-kwaliteitsverbetering, niet inhoudelijk. Feta 
 | Finberg JPM & Gillman K 2022 — PMC9172554 | Moderne tyramine-waarden; MAOI-drempel 6 mg/maal |
 | Bunkova L et al. 2010 — DOI 10.1016/j.foodchem.2009.09.051 | HPLC-data Gouda, Edam, Cheddar Tsjechische markt |
 | Korean Food Composition DB 2021 — PMC7824754 | Aziatische gerijpte kazen; aanvullend voor Manchego-schatting |
+
+---
+
+## Uitbreiding 2026-05-21 — Gefermenteerde/ingeblikte vis (zelfde tyramine/biogene-aminen-pathway)
+
+Cluster 3 omvat sinds 2026-05-21 ook drie visitems waarvan het mechanisme inhoudelijk identiek is aan gerijpte/gefermenteerde kaas: tyramine + biogene aminen via rijping/fermentatie, MAO-A-afhankelijk. Bij intacte MAO-functie wordt tyramine in darmwand/lever geïnactiveerd; effect alleen klinisch relevant in MAO-A-gevoelige subgroep. Zelf-rapportage overschat de omvang — vandaar `subgroep-overschat`, conform de kaas-paradigma in dit cluster.
+
+| Item | Bron van biogene aminen |
+|---|---|
+| `nl-makreel-blik` | inblik-processing en bewaring; m.n. histamine (scombroïde vis) |
+| `nl-gravad-lax` | tyramine + histamine door koude rijping |
+| `nl-haring-rolmops` | biogene aminen door fermentatie/pekel |
+
+Alle drie: score 2 · evidence B · confidence middel · `triggerType: subgroep-overschat` · `primaryModulators: ["tyramine", "histamine"]` · bronset Finberg 2022 (PMC9172554) + Maintz 2007 (PMID 17490952) + Hindiyeh 2020 (PMC7496357). Toegevoegd in opruim-PR 2026-05-21; oorspronkelijk in PR #26 zonder triggerType ingevoerd — paradigma-conformiteit hersteld.
+
+**Clusternaam blijft "Gerijpte/gefermenteerde kazen"** als verkorting; het mechanisme is breder: tyramine + biogene aminen via rijping/fermentatie in kaas én vis.
+
+> **NB — bewust NIET cluster 7.** Cluster 7 (nitriet-vleeswaren) is een ander mechanisme: nitriet → NO-vasodilatatie met dosis-drempel (Henderson & Raskin 1972). Vis met tyramine/biogene aminen volgt de MAO-A-pathway van cluster 3, niet de NO-pathway. De biogene-aminen-component in vis heeft géén Henderson-equivalente provocatie-evidence en blijft daarom `subgroep-overschat` i.p.v. het `subgroep-bevestigd`/`dosis-afhankelijk` van cluster 7.
+>
+> **Open beslispunt (Peter):** alternatief is een apart cluster 21 "Gefermenteerde/ingeblikte vis — biogene aminen" dat naar dit cluster-3-paradigma verwijst. Voordeel cluster 3 = geen clusterproliferatie; voordeel cluster 21 = clusternaam "kazen" blijft letterlijk kloppen. Huidige keuze: cluster 3.
