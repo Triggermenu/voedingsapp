@@ -1,0 +1,116 @@
+# Methodologie Voedingsgids / Pulse — migraine-as
+
+**Versie:** 0.1 concept (sectie 1-2)
+**Datum:** 2026-05-21
+**Auteur:** Peter Wolterman
+**Status:** intern concept; niet voor externe deling tot v1.0
+
+---
+
+## 1. Inleiding en scope
+
+### 1.1 Wat het systeem is
+
+Voedingsgids (intern ook bekend als Pulse) is een Nederlandstalige informatieve beslishulp die voedingsmiddelen scoort op vier voedingsgerelateerde aandoeningen: migraine, jicht, nierstenen en histamine-intolerantie. De applicatie geeft per voedingsmiddel een ordinale score van 0 tot 3 per aandoening, samen met een korte motivering, bronnen en mate van zekerheid.
+
+De applicatie is ontworpen voor zelfregie: een gebruiker die met een van deze aandoeningen leeft, kan voor een specifiek voedingsmiddel snel inzien of het waarschijnlijk goed verdragen wordt, mogelijk problematisch is, of waarschijnlijk een trigger vormt. De scoring is gebaseerd op de huidige wetenschappelijke literatuur en wordt onderhouden door één auteur met een achtergrond in financieel-juridische analyse en methodologische rigueur, niet door een medisch professional.
+
+Deze methodologie-doc beschrijft hoe de scoring tot stand komt voor de **migraine-as**. De andere drie aandoeningen volgen vergelijkbare maar niet identieke paradigma's; deze worden in toekomstige delen behandeld.
+
+### 1.2 Wat het systeem niet is
+
+De applicatie is **geen** medisch hulpmiddel in de zin van de EU Medical Device Regulation 2017/745. De scoring is een informatieve heuristiek op basis van gepubliceerde literatuur en stelt geen diagnose, geeft geen behandeladvies en is geen vervanging voor medisch advies van een huisarts, neuroloog, diëtist of andere zorgverlener.
+
+Concreet betekent dit:
+- De scores claimen geen diagnostische waarde. Een score 3 zegt niet dat een product een migraine-aanval zal veroorzaken; het zegt dat de literatuur dit product met substantieel risico associeert.
+- De scores claimen geen therapeutische waarde. Het vermijden van score 3-producten is geen behandeling van migraine en wordt niet als zodanig gepresenteerd.
+- Er worden geen claims gedaan over individuele uitkomsten. Migraine-triggers zijn sterk individueel; het systeem beschrijft populatie-niveau associaties, niet persoonlijke voorspellingen.
+
+### 1.3 Voor wie deze doc is geschreven
+
+Primaire doelgroep: medisch en wetenschappelijk geïnteresseerde lezers die willen beoordelen of de scoring-methodologie methodologisch verdedigbaar is. Dit omvat:
+- Neurologen en huisartsen die overwegen het systeem aan patiënten te noemen
+- Diëtisten die migraine-patiënten begeleiden
+- Onderzoekers in migraine-voedingstriggers
+- Patiëntorganisaties (Hoofdpijnnet, Migraine Trust NL)
+
+Secundaire doelgroep: juridisch en regulatoire lezers (RIVM, IGJ, eventuele MDR-toetsende instanties) die willen verifiëren of het systeem zich houdt aan de uitgangspunten van een niet-medisch-hulpmiddel.
+
+De doc gaat ervan uit dat de lezer bekend is met basisbegrippen uit klinische evidence-grading (RCT, SR, observationeel onderzoek) en met de aandoening migraine zelf. Er wordt niet uitgelegd wat migraine is of hoe ICHD-3 classificeert; daarvoor wordt verwezen naar de gangbare literatuur.
+
+### 1.4 Niet-doelen
+
+Drie zaken die deze methodologie expliciet niet doet:
+
+1. **Geen persoonlijke trigger-identificatie.** Het systeem zegt niet "U krijgt waarschijnlijk migraine van rode wijn." Het zegt "Rode wijn wordt in de literatuur geassocieerd met migraine in een specifieke subgroep, vermoedelijk via tyramine/histamine-pathway."
+
+2. **Geen volledig dieetadvies.** Het systeem scoort losse voedingsmiddelen. Het doet geen uitspraken over dieetcomposities, maaltijdfrequentie, of nutritionele adequaatheid. Een gebruiker die op basis van de scores producten elimineert, kan in nutritionele tekorten terechtkomen. Hiervoor wordt naar een diëtist verwezen.
+
+3. **Geen claim van volledigheid.** De huidige database bevat 631 voedingsmiddelen (per 2026-05-21). Producten die niet in de database staan, worden niet automatisch als "veilig" of "onveilig" beschouwd — ze zijn simpelweg nog niet gescoord.
+
+---
+
+## 2. Scoring-schema
+
+### 2.1 De ordinale schaal 0-3
+
+Elk voedingsmiddel krijgt per aandoening een ordinale score van 0 tot 3. De schaal is bewust grof gehouden:
+
+| Score | Betekenis migraine-as |
+|---|---|
+| 0 | Geen significante associatie met migraine-trigger-status in de huidige literatuur. Producten in deze categorie worden door het systeem niet aangemerkt als aandachtspunt voor migraine-patiënten. |
+| 1 | Zwakke associatie. Mechanistische plausibility en/of beperkte observationele data; geen reproduceerbare trigger in algemene populatie. |
+| 2 | Matige associatie. Reproduceerbare trigger in welomschreven subgroep, of substantieel mechanistisch onderbouwd. In algemene populatie vaak overschat. |
+| 3 | Sterke associatie. Trigger met universeel of dosis-afhankelijk mechanisme dat in de algemene migraine-populatie reproduceerbaar effect heeft. |
+
+De keuze voor vier niveaus in plaats van een continue schaal is bewust:
+- **Reproduceerbaarheid.** Een ordinale schaal met scherpe definities is consistenter te hanteren bij honderden items dan een continue 0-10 schaal.
+- **Communiceerbaarheid.** Gebruikers begrijpen "rood / oranje / geel / groen" semantiek intuïtief.
+- **Eerlijkheid over onzekerheid.** Een score van 7.3 suggereert precisie die de onderliggende evidence niet ondersteunt.
+
+Belangrijk: de schaal is niet lineair-kwantitatief. Het verschil tussen score 0 en 1 is niet hetzelfde als tussen 2 en 3. Score 3 is een **kwalitatieve sprong** — alleen producten die de score-3-whitelist passeren (zie §5.1) krijgen deze score.
+
+### 2.2 Evidence-grading
+
+Naast de score krijgt elk item een evidence-grade die de kwaliteit van het onderliggende bewijs uitdrukt:
+
+| Grade | Criterium |
+|---|---|
+| A | Bewijs uit ten minste één RCT of peer-reviewed meta-analyse met directe link tussen het item en migraine-uitkomst. |
+| B | Bewijs uit één SR met methodologische beperkingen, of meerdere observationele studies met consistente bevindingen, of sterke mechanistische onderbouwing gecombineerd met klinische ervaring. |
+| C | Bewijs uit observationele studies met methodologische beperkingen (surrogaat-uitkomsten, klein cohort, zelfrapportage zonder blindering), of mechanistische plausibility zonder directe migraine-evidence. |
+
+Een vierde schemawaarde, `onbekend`, is geen evidence-grade in eigenlijke zin: deze is gereserveerd voor aandoeningen die voor een item niet gescoord zijn (score `null`). In de migraine-as komt `onbekend` daarom niet voor — gescoorde migraine-items dragen altijd A, B of C.
+
+De evidence-grade is **onafhankelijk** van de score. Binnen de migraine-as komt dit bijvoorbeeld tot uiting in een item met score 1 + evidence B (zwakke trigger, redelijk onderbouwd) naast een item met score 3 + evidence B (sterke trigger, dezelfde bewijskwaliteit maar klinisch zwaarder wegend). Deze ontkoppeling is essentieel: de score zegt iets over de **klinische sterkte** van de trigger, de evidence-grade over de **wetenschappelijke onderbouwing**. (In andere assen dan migraine — waar wél grade A voorkomt, bv. jicht via de USDA Purine Database — kan de ontkoppeling scherper zijn: een zwakke maar sterk bewezen associatie, score 1 + evidence A.)
+
+In de huidige database (per 2026-05-21) is geen enkel **migraine-item** geclassificeerd als grade A; de migraine-as gebruikt uitsluitend grades B en C. Reden: directe RCT's met voedingsmiddel-interventie en migraine-aanval als primair endpoint zijn zeldzaam; de meeste literatuur is observationeel of mechanistisch. Dit is een eerlijke weerspiegeling van de staat van het veld, niet een tekortkoming van de methodologie. (Ter contrast: de jicht- en nierstenen-assen bevatten wél veel grade A-scores, omdat daar wel kwantitatieve referentiedatabases bestaan — USDA Purine Database 2.0 respectievelijk de Harvard Oxalate Table.)
+
+### 2.3 Confidence
+
+Naast score en evidence krijgt elk item een confidence-aanduiding (laag, middel, hoog) die uitdrukt hoe zeker de auteur is over de toegekende score gegeven de huidige literatuur. Confidence verschilt subtiel van evidence-grade:
+
+- **Evidence-grade** beschrijft de kwaliteit van het bewijs.
+- **Confidence** beschrijft hoe overtuigd de scoring-keuze is, gegeven het bewijs én de paradigma-keuzes (welk cluster, welke triggerType, welke score binnen het cluster-plafond).
+
+Een item kan evidence C hebben (zwak bewijs) maar confidence hoog (de auteur is zeker dat dit zwakke bewijs een score 1 rechtvaardigt en niet 2). Andersom: evidence B (redelijk bewijs) met confidence laag (de paradigma-toewijzing is onzeker — past dit item bij cluster X of cluster Y?).
+
+Wordt confidence weggelaten, dan geldt impliciet `middel`.
+
+### 2.4 Vier aandoeningen — waarom deze vier?
+
+De applicatie scoort op migraine, jicht, nierstenen en histamine-intolerantie. Deze keuze is niet willekeurig:
+
+- **Migraine en histamine-intolerantie** hebben overlappende mechanistische pathways (biogene aminen, MAO-A), maar verschillen klinisch substantieel. Een gebruiker met DAO-deficiëntie (histamine-intolerantie) heeft andere triggers dan een algemene migraine-patiënt zonder enzymdeficiëntie. Het apart scoren voorkomt vermenging.
+
+- **Jicht** is een metabole aandoening met sterke voedingsgevoeligheid (purinerijke producten, fructose, alcohol). De evidence-basis is robuuster dan voor migraine — directe RCT's en grote cohortstudies bestaan.
+
+- **Nierstenen** zijn divers in pathogenese (calciumoxalaat, urinezuur, struviet); de scoring richt zich op de meest voorkomende typen waar voeding een bekende rol speelt.
+
+Andere aandoeningen waar voeding een rol speelt (PDS, glutenintolerantie, lactose-intolerantie, diabetes type 2) zijn bewust buiten scope. Reden: ofwel is de evidence-basis onvoldoende voor stoffelijke scoring (PDS), ofwel is de voedings-triggerstatus voldoende eenduidig om geen scoring nodig te hebben (lactose), ofwel valt het buiten de informatieve-beslishulp-scope (diabetes vergt persoonlijke glucose-monitoring).
+
+Deze methodologie-doc behandelt alleen de migraine-as. De andere drie assen volgen vergelijkbare maar niet-identieke principes en worden in toekomstige deelversies behandeld.
+
+---
+
+*[Einde sectie 1-2. Sectie 3 volgt na review.]*
