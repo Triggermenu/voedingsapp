@@ -369,16 +369,22 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
               "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
+              "title": "Obayashi & Nagamura 2016 — Does MSG really cause headache? (systematic review)",
+              "type": "review",
+              "accessedAt": "2026-05-21"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9540118/",
+              "title": "Zhong et al. 2022 — Nitrate/nitrite food composition database",
+              "type": "database",
+              "accessedAt": "2026-05-21"
             }
           ],
           "triggerType": "context-afhankelijk",
@@ -780,16 +786,22 @@
           "evidence": "B",
           "sources": [
             {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
               "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
               "title": "Hindiyeh et al. 2020 — Diet and Headache",
               "type": "review",
               "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
+              "title": "Obayashi & Nagamura 2016 — Does MSG really cause headache? (systematic review)",
+              "type": "review",
+              "accessedAt": "2026-05-21"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9540118/",
+              "title": "Zhong et al. 2022 — Nitrate/nitrite food composition database",
+              "type": "database",
+              "accessedAt": "2026-05-21"
             }
           ],
           "triggerType": "context-afhankelijk",
