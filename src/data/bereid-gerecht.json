@@ -381,9 +381,9 @@
               "accessedAt": "2026-05-20"
             }
           ],
-          "triggerType": "subgroep-bevestigd",
+          "triggerType": "context-afhankelijk",
           "note": {
-            "nl": "Frikandel bevat gecureerd en sterk verwerkt vlees met nitrieten en mogelijke glutamaten. Potentieel trigger bij gevoelige personen."
+            "nl": "Bereiding sterk product-/producent-afhankelijk: sommige frikandel-producenten gebruiken nitriet en/of MSG, andere niet. Trigger-status hangt af van het specifieke product, niet van persoonseigenschappen. Bij bekende gevoeligheid: ingrediëntenlijst checken."
           }
         },
         "nierstenen": {
@@ -792,9 +792,9 @@
               "accessedAt": "2026-05-20"
             }
           ],
-          "triggerType": "subgroep-bevestigd",
+          "triggerType": "context-afhankelijk",
           "note": {
-            "nl": "Shoarmavlees kan nitrieten en MSG-houdende kruidenmengsels bevatten. Saus (yoghurt of knoflooksaus) additief-arm, maar kruidenmix is product-afhankelijk."
+            "nl": "Bereiding sterk product-/keten-afhankelijk: sommige shoarma-kruidenmengsels gebruiken nitriet en/of MSG, andere niet. Trigger-status hangt af van het specifieke product, niet van persoonseigenschappen. Bij bekende gevoeligheid: ingrediëntenlijst checken."
           }
         },
         "nierstenen": {
