@@ -113,4 +113,66 @@ Deze methodologie-doc behandelt alleen de migraine-as. De andere drie assen volg
 
 ---
 
-*[Einde sectie 1-2. Sectie 3 volgt na review.]*
+## 3. Migraine-specifieke methodologie
+
+De algemene scoring-principes uit sectie 2 gelden voor alle vier aandoeningen. De migraine-as kent daarbovenop drie eigenheden die deze sectie behandelt: een uitzonderlijk restrictieve drempel voor de hoogste score (§3.1), een expliciete weging tegen klassieke trigger-lijsten (§3.2), en een verplichte classificatie van het triggermechanisme (§3.3).
+
+### 3.1 Het score-3-principe: een restrictieve whitelist
+
+Score 3 is op de migraine-as bewust zeldzaam. Van de 631 gescoorde items dragen er **tien** een migraine-score 3 (1,6%). De score-verdeling per 2026-05-21:
+
+| Score | Aantal items |
+|---|---|
+| 0 | 456 |
+| 1 | 90 |
+| 2 | 75 |
+| 3 | 10 |
+
+De reden voor deze terughoudendheid is principieel. De migraine-voedingsliteratuur is methodologisch zwak: de meeste "triggers" berusten op zelfrapportage en cross-sectioneel onderzoek, en moderne geblindeerde studies reproduceren het effect zelden in de algemene populatie. Een score die "sterke, in de algemene populatie reproduceerbare associatie" claimt, mag daarom niet lichtvaardig worden toegekend.
+
+Concreet wordt score 3 gereserveerd voor stoffen waarvan het mechanisme **universeel** is (werkt op iedere migraine-patiënt bij voldoende dosis) **of dosis-afhankelijk** met een drempel die via normale voeding daadwerkelijk bereikt wordt. Slechts twee stofklassen voldoen hieraan, en zij vormen samen de volledige score-3-populatie:
+
+1. **Alcoholische dranken** (bier in alle varianten, gedistilleerd, sterke wijn) — zes items, mechanisme `universeel`. De trigger is het ethanol-mechanisme zelf (directe vasodilatatie, CGRP-release, mestcel-degranulatie), dat dosis-afhankelijk bij vrijwel iedere patiënt optreedt en niet beperkt is tot een subgroep.
+2. **Gecureerd vlees boven de Henderson-nitrietdrempel** (spek/bacon, gerookte/gecureerde worst) — vier items, mechanisme `subgroep-bevestigd`. Een typische portie bereikt ≥10 mg nitriet, de dosis waarbij Henderson & Raskin (1972) in direct enteraal provocatieonderzoek migraine opwekten. De dose-route-match rechtvaardigt de hoogste score, ook al rust de directe evidence op een kleine n.
+
+Een nieuw item kan alleen score 3 krijgen als het op deze whitelist past; dit wordt geautomatiseerd bewaakt. Daarbij geldt een ondergrens voor de bewijskwaliteit: score 3 vereist evidence-grade ≥ B.
+
+### 3.2 Waarom klassieke triggers géén score 3 krijgen
+
+Een aanzienlijk deel van de publieke migraine-trigger-lijsten (chocolade, monosodiumglutamaat, gerijpte kaas, rode wijn) wordt door dit systeem **niet** op score 3 gezet, maar op score 2 met een toelichtende note. Dit is een expliciete methodologische keuze, geen omissie. De onderliggende regel: **geblindeerde provocatie- en RCT-evidence weegt zwaarder dan observationele trigger-lijsten, en mechanistisch inzicht in inactivatie-pathways weegt zwaarder dan klassieke associatie.**
+
+Per geval:
+
+- **MSG.** Meerdere dubbelblinde RCT's tonen geen reproduceerbaar effect bij normale voedselinname; ICHD-3 verwijderde MSG in 2018 van de officiële triggerlijst. Score 2, `subgroep-overschat`.
+- **Gerijpte kaas.** Tyramine wordt bij een intacte MAO-functie in darmwand en lever geïnactiveerd; het effect is alleen klinisch relevant in een MAO-A-gevoelige subgroep of bij MAO-remmer-gebruik. Geen moderne provocatie-RCT. Score 2, `subgroep-overschat`.
+- **Rode wijn.** Er bestaat een positieve RCT (Littlewood 1988) maar met kleine n, en een groot cohort (Onderwater 2019) toont een forse kloof tussen ~77% zelf-rapportage en ~9% objectief consistente respons. Score 2, `subgroep-overschat`.
+- **Chocolade.** Recente systematische reviews suggereren dat chocolade-craving eerder een vroeg prodroom-symptoom is dan een oorzaak. Score 2, met note.
+
+Deze downgrades zijn als formele paradigma-precedenten vastgelegd, zodat een toekomstig item dat op een precedent lijkt zonder hernieuwde discussie dezelfde weging volgt.
+
+### 3.3 De triggerType-taxonomie
+
+Elke migraine-score van 2 of hoger draagt een `triggerType`: een classificatie van hóé de trigger zich gedraagt. Dit veld is verplicht vanaf score 2 (geautomatiseerd afgedwongen) en dwingt tot expliciteit over het mechanisme in plaats van een kale risico-score. Er zijn acht waarden:
+
+| Waarde | Betekenis |
+|---|---|
+| `universeel` | Mechanisme werkt op iedere patiënt bij voldoende dosis; direct farmacologisch, geen subgroep-afhankelijkheid. |
+| `dosis-afhankelijk` | Effect treedt op boven een specifieke dosisdrempel; daaronder niet. |
+| `subgroep-bevestigd` | Reproduceerbaar effect in een welomschreven subgroep, gedefinieerd door een duidelijke biologische factor (bv. enzymdeficiëntie). |
+| `subgroep-overschat` | Effect bestaat alleen in een subgroep en wordt in de algemene populatie overschat: hoge zelf-rapportage, lage geblindeerde reproduceerbaarheid. |
+| `onttrekkings-trigger` | Trigger door het staken/verminderen van inname, niet door de inname zelf (bv. cafeïne). |
+| `context-afhankelijk` | Trigger-status hangt af van de situatie of het specifieke product (samenstelling per producent, combinatie met andere stoffen, timing), niet van persoonseigenschappen. |
+| `individueel-variabel` | Modulerende factor varieert continu zonder scherpe subgroep-grens; effectgrootte verschilt per individu langs een gradiënt. |
+| `drug-interactie` | Trigger alleen in combinatie met specifieke medicatie. Gereserveerd voor toekomstig gebruik (momenteel nul items). |
+
+Drie onderscheidingen zijn essentieel en bepalen in de praktijk de meeste classificatie-keuzes:
+
+- **`subgroep-bevestigd` vs `subgroep-overschat`** — niet *of* er een subgroep is, maar of het effect bínnen die subgroep geblindeerd reproduceerbaar is (bevestigd) dan wel vooral op zelf-rapportage berust (overschat).
+- **`subgroep-bevestigd` vs `individueel-variabel`** — een subgroep is een dichotome eigenschap (men heeft de enzymdeficiëntie wel of niet); een individueel-variabele factor is een continuüm zonder scherpe grens.
+- **`subgroep-bevestigd` vs `context-afhankelijk`** — de bepalende variabele zit in de **persoon** (enzym, genetica, microbioom) versus in de **situatie of het product** (welk merk, welke combinatie, welk tijdstip).
+
+Dat de taxonomie consistent wordt toegepast blijkt onder meer hieruit: `drug-interactie` is gereserveerd en kent nul items; en items met `individueel-variabel` blijven binnen het score-plafond van hun (bewijszwakke) cluster, waarover meer in een latere sectie.
+
+---
+
+*[Einde sectie 1-3. Sectie 4 (clustersysteem en evidence-graden per cluster) volgt; afhankelijk van de openstaande cluster-indelingsbeslissing.]*
