@@ -68,7 +68,7 @@ De keuze voor vier niveaus in plaats van een continue schaal is bewust:
 - **Communiceerbaarheid.** Gebruikers begrijpen "rood / oranje / geel / groen" semantiek intuïtief.
 - **Eerlijkheid over onzekerheid.** Een score van 7.3 suggereert precisie die de onderliggende evidence niet ondersteunt.
 
-Belangrijk: de schaal is niet lineair-kwantitatief. Het verschil tussen score 0 en 1 is niet hetzelfde als tussen 2 en 3. Score 3 is een **kwalitatieve sprong** — alleen producten die de score-3-whitelist passeren (zie §5.1) krijgen deze score.
+Belangrijk: de schaal is niet lineair-kwantitatief. Het verschil tussen score 0 en 1 is niet hetzelfde als tussen 2 en 3. Score 3 is een **kwalitatieve sprong** — alleen producten die de score-3-whitelist passeren (zie §3.1) krijgen deze score.
 
 ### 2.2 Evidence-grading
 
@@ -175,4 +175,42 @@ Dat de taxonomie consistent wordt toegepast blijkt onder meer hieruit: `drug-int
 
 ---
 
-*[Einde sectie 1-3. Sectie 4 (clustersysteem en evidence-graden per cluster) volgt; afhankelijk van de openstaande cluster-indelingsbeslissing.]*
+## 4. Clustersysteem
+
+*[Gereserveerd. Deze sectie beschrijft hoe migraine-triggers worden gegroepeerd in mechanistische pathway-clusters, het evidence-C-only-paradigma (score-plafond bij clusters zonder A/B-evidence), en hoe paradigma-precedenten als register fungeren. Wordt geschreven na de openstaande cluster-indelingsbeslissing.]*
+
+---
+
+## 5. Beperkingen, onzekerheid en onderhoud
+
+Een methodologie is alleen verdedigbaar als ze haar eigen grenzen benoemt. Deze sectie maakt expliciet wat het systeem niet weet, waar het bewijs dun is, en hoe de scoring over tijd onderhouden en bewaakt wordt.
+
+### 5.1 Inherente beperkingen van de migraine-evidence
+
+De grootste beperking is het veld zelf. Er bestaan vrijwel geen gerandomiseerde, geblindeerde studies met een voedingsmiddel als interventie en een migraine-aanval als primair eindpunt. De beschikbare literatuur is overwegend observationeel, cross-sectioneel of mechanistisch, en leunt sterk op zelfrapportage — een methode die voor migraine-triggers notoir gevoelig is voor recall-bias en nocebo-effecten.
+
+De directe consequentie is zichtbaar in de data: op de migraine-as is **geen enkel item geclassificeerd als evidence-grade A** (zie §2.2). De as gebruikt uitsluitend B en C. Dit is geen tekortkoming van de methodologie maar een eerlijke weerspiegeling van de staat van het onderzoek. Waar de jicht- en nierstenen-assen kunnen terugvallen op kwantitatieve referentiedatabases (USDA Purine Database, Harvard Oxalate Table), bestaat voor migraine geen equivalent.
+
+Deze onzekerheid is bewust in het ontwerp verwerkt: de grove ordinale schaal (§2.1), de restrictieve score-3-whitelist (§3.1) en de zichtbare evidence- en confidence-aanduidingen zijn alle bedoeld om niet méér zekerheid te suggereren dan het bewijs draagt.
+
+### 5.2 Bron- en methodologie-caveats
+
+- **Secundaire bronnen.** Een belangrijk deel van de migraine-scores leunt op systematische reviews (o.a. Hindiyeh 2020) in plaats van op primaire interventiestudies. Sommige van die reviews hebben gemelde belangenverstrengelingen (farmaceutische sponsoring); dit wordt waar relevant in de item-notes vermeld en verandert niets aan de transparantie van de onderbouwing, maar de lezer dient het te wegen.
+- **Tyramine-tabellen als referentie, niet als bewijs.** Klassieke tyramine-gehaltetabellen worden gebruikt om producten te rangschikken, niet als zelfstandig bewijs van trigger-status. Een hoog tyramine-gehalte leidt niet automatisch tot een hoge score; de klinische reproduceerbaarheid (§3.2) is leidend.
+- **Productvariatie.** Voor samengestelde of bewerkte producten verschilt de samenstelling per producent (zie `context-afhankelijk`, §3.3). De score beschrijft een typisch product; het etiket van een specifiek product kan afwijken.
+
+### 5.3 Onderhoud en kwaliteitsborging
+
+De scoring is geen eenmalige momentopname maar een onderhouden dataset. Drie mechanismen borgen de kwaliteit:
+
+- **Geautomatiseerde validatie.** Elke wijziging passeert een geautomatiseerde controle vóór publicatie: schema-conformiteit (elk niet-leeg oordeel heeft een score, evidence-grade en minstens één bron), de score-3-whitelist-bewaking, de verplichting van een `triggerType` vanaf score 2, en een bereikbaarheidscontrole van alle bron-URL's. Een wijziging die een van deze regels schendt, wordt niet doorgevoerd.
+- **Paradigma-precedenten.** Methodologische beslissingen (zoals de downgrades in §3.2) worden vastgelegd in een chronologisch register, zodat vergelijkbare toekomstige gevallen consistent worden gewogen zonder telkens opnieuw te beslissen.
+- **Herzieningsdatum per item.** Elk item draagt een datum van laatste herziening, zodat veroudering zichtbaar en traceerbaar is.
+
+### 5.4 Wat dit betekent voor de lezer
+
+De scores zijn een hulpmiddel bij het oriënteren, geen voorspelling van een individuele reactie. Migraine-triggers zijn sterk persoonlijk; het systeem beschrijft associaties op populatieniveau en de mate van zekerheid daarover. Een gebruiker die wil weten of een specifiek product voor hém of haar een trigger is, kan dat alleen vaststellen via zorgvuldige eigen observatie, bij voorkeur in overleg met een huisarts, neuroloog of diëtist. Deze methodologie ondersteunt dat gesprek; ze vervangt het niet.
+
+---
+
+*[Einde sectie 1-3 en 5. Sectie 4 (clustersysteem) gereserveerd, afhankelijk van de openstaande cluster-indelingsbeslissing.]*
