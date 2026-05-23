@@ -4,24 +4,33 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft == false
     steps:
+      - uses: actions/checkout@v4
+
       - name: Check trusted author
         id: check-author
         run: |
           AUTHOR="${{ github.event.pull_request.user.login }}"
-          TRUSTED=$(cat trusted-authors.json | jq -r '.authors[]' | grep -x "$AUTHOR" || echo "")
-          if [ -n "$TRUSTED" ]; then
-            echo "trusted=true" >> $GITHUB_OUTPUT
+          if jq -e --arg a "$AUTHOR" '.authors | index($a)' trusted-authors.json > /dev/null; then
+            echo "trusted=true" >> "$GITHUB_OUTPUT"
+            echo "✓ $AUTHOR staat in trusted-authors.json — auto-merge wordt ingeschakeld."
           else
-            echo "trusted=false" >> $GITHUB_OUTPUT
+            echo "trusted=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ $AUTHOR niet in trusted-authors.json — auto-merge overgeslagen (handmatige merge vereist)."
           fi
 
       - name: Enable auto-merge for trusted authors
         if: steps.check-author.outputs.trusted == 'true'
-        run: gh pr merge --auto --squash "${{ github.event.pull_request.number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge --auto --squash "${{ github.event.pull_request.number }}" \
+            || echo "::warning::Kon auto-merge niet inschakelen — controleer repo-instelling Settings → Pull Requests → 'Allow auto-merge'."
