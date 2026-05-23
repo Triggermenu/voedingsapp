@@ -3682,14 +3682,8 @@
           "evidence": "B",
           "confidence": "middel",
           "triggerType": "subgroep-overschat",
-          "primaryModulators": ["tyramine", "histamine"],
+          "primaryModulators": ["histamine"],
           "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
             {
               "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
               "title": "Maintz & Novak 2007 — Histamine and histamine intolerance",
@@ -3704,7 +3698,7 @@
             }
           ],
           "note": {
-            "nl": "Ingeblikte vette vis bevat verhoogde tyramine en histamine door processing en bewaring. Mechanisme analoog aan gerijpte kaas (cluster 3): tyramine wordt bij intacte MAO-functie geïnactiveerd, effect klinisch relevant in MAO-A-gevoelige subgroep. Algemene populatie ondervindt zelden trigger; zelf-rapportage overschat de omvang."
+            "nl": "Ingeblikte vette vis kan verhoogde histamine bevatten door histidine-omzetting tijdens processing en bewaring (cluster 13, histamine-pathway). Effect klinisch relevant in een DAO-gevoelige subgroep; algemene populatie ondervindt zelden trigger. Zelf-rapportage overschat de omvang."
           }
         },
         "nierstenen": {
@@ -3741,9 +3735,9 @@
       "meta": {
         "addedAt": "2026-05-20",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-21"
+        "lastReviewed": "2026-05-23"
       },
-      "cluster": 3
+      "cluster": 13
     },
     {
       "id": "nl-zalm-gebakken",
@@ -3935,14 +3929,8 @@
           "evidence": "B",
           "confidence": "middel",
           "triggerType": "subgroep-overschat",
-          "primaryModulators": ["tyramine", "histamine"],
+          "primaryModulators": ["histamine"],
           "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
             {
               "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
               "title": "Maintz & Novak 2007 — Histamine and histamine intolerance",
@@ -3957,7 +3945,7 @@
             }
           ],
           "note": {
-            "nl": "Gezouten en koud gerijpte zalm bevat verhoogde tyramine en histamine. Mechanisme analoog aan gerijpte kaas (cluster 3): tyramine wordt bij intacte MAO-functie geïnactiveerd, effect klinisch relevant in MAO-A-gevoelige subgroep. Algemene populatie ondervindt zelden trigger; zelf-rapportage overschat de omvang."
+            "nl": "Gezouten en koud gerijpte zalm kan verhoogde histamine bevatten door langdurige rijping (cluster 13, histamine-pathway). Effect klinisch relevant in een DAO-gevoelige subgroep; algemene populatie ondervindt zelden trigger. Zelf-rapportage overschat de omvang."
           }
         },
         "nierstenen": {
@@ -3994,9 +3982,9 @@
       "meta": {
         "addedAt": "2026-05-20",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-21"
+        "lastReviewed": "2026-05-23"
       },
-      "cluster": 3
+      "cluster": 13
     },
     {
       "id": "nl-haring-rolmops",
@@ -4027,14 +4015,8 @@
           "evidence": "B",
           "confidence": "middel",
           "triggerType": "subgroep-overschat",
-          "primaryModulators": ["tyramine", "histamine"],
+          "primaryModulators": ["histamine"],
           "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
             {
               "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
               "title": "Maintz & Novak 2007 — Histamine and histamine intolerance",
@@ -4049,7 +4031,7 @@
             }
           ],
           "note": {
-            "nl": "Gefermenteerde en gepekelde haring bevat verhoogde tyramine en histamine door fermentatie/pekel. Mechanisme analoog aan gerijpte kaas (cluster 3): tyramine wordt bij intacte MAO-functie geïnactiveerd, effect klinisch relevant in MAO-A-gevoelige subgroep. Algemene populatie ondervindt zelden trigger; zelf-rapportage overschat de omvang."
+            "nl": "Gefermenteerde en gepekelde haring kan verhoogde histamine bevatten door rijping/pekel (cluster 13, histamine-pathway); vergelijkbaar met maatjesharing. Effect klinisch relevant in een DAO-gevoelige subgroep; algemene populatie ondervindt zelden trigger. Zelf-rapportage overschat de omvang."
           }
         },
         "nierstenen": {
@@ -4086,9 +4068,9 @@
       "meta": {
         "addedAt": "2026-05-20",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-21"
+        "lastReviewed": "2026-05-23"
       },
-      "cluster": 3
+      "cluster": 13
     },
     {
       "id": "nl-visburger",
