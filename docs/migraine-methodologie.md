@@ -7,6 +7,44 @@
 
 ---
 
+## Samenvatting
+
+Voedingsgids (Pulse) is een Nederlandstalige, informatieve beslishulp — uitdrukkelijk **geen medisch hulpmiddel** — die voedingsmiddelen scoort op vier aandoeningen. Dit document beschrijft de methodologie voor de **migraine-as**. Elk voedingsmiddel krijgt een ordinale score van 0 tot 3, met een onafhankelijke evidence-grade (A/B/C) en, vanaf score 2, een verplichte classificatie van het triggermechanisme (`triggerType`).
+
+De methodologie is bewust terughoudend, passend bij de zwakke migraine-voedingsliteratuur. De hoogste score is gereserveerd voor een restrictieve whitelist (in de praktijk alleen alcohol en gecureerd vlees boven de nitrietdrempel — tien van de 631 items). Klassieke "triggers" als MSG, gerijpte kaas, rode wijn en chocolade worden bewust niet op score 3 gezet maar op 2, op grond van geblindeerde evidence boven observationele trigger-lijsten. Triggers worden gegroepeerd per mechanistisch pathway-cluster; clusters zonder sterk bewijs kennen een verlaagd score-plafond. Methodologische keuzes zijn vastgelegd als toetsbare paradigma-precedenten.
+
+De doc is geschreven voor medisch-wetenschappelijke en regulatoire lezers die willen beoordelen of de scoring methodologisch verdedigbaar is.
+
+---
+
+## Inhoudsopgave
+
+- [1. Inleiding en scope](#1-inleiding-en-scope)
+  - [1.1 Wat het systeem is](#11-wat-het-systeem-is)
+  - [1.2 Wat het systeem niet is](#12-wat-het-systeem-niet-is)
+  - [1.3 Voor wie deze doc is geschreven](#13-voor-wie-deze-doc-is-geschreven)
+  - [1.4 Niet-doelen](#14-niet-doelen)
+- [2. Scoring-schema](#2-scoring-schema)
+  - [2.1 De ordinale schaal 0-3](#21-de-ordinale-schaal-0-3)
+  - [2.2 Evidence-grading](#22-evidence-grading)
+  - [2.3 Confidence](#23-confidence)
+  - [2.4 Vier aandoeningen — waarom deze vier?](#24-vier-aandoeningen--waarom-deze-vier)
+- [3. Migraine-specifieke methodologie](#3-migraine-specifieke-methodologie)
+  - [3.1 Het score-3-principe: een restrictieve whitelist](#31-het-score-3-principe-een-restrictieve-whitelist)
+  - [3.2 Waarom klassieke triggers géén score 3 krijgen](#32-waarom-klassieke-triggers-géén-score-3-krijgen)
+  - [3.3 De triggerType-taxonomie](#33-de-triggertype-taxonomie)
+- [4. Clustersysteem](#4-clustersysteem)
+  - [4.1 Pathway-clustering: scoren per mechanisme, niet per product](#41-pathway-clustering-scoren-per-mechanisme-niet-per-product)
+  - [4.2 Evidence-C-only clusters: een verlaagd score-plafond](#42-evidence-c-only-clusters-een-verlaagd-score-plafond)
+  - [4.3 Paradigma-precedenten als register](#43-paradigma-precedenten-als-register)
+- [5. Beperkingen, onzekerheid en onderhoud](#5-beperkingen-onzekerheid-en-onderhoud)
+  - [5.1 Inherente beperkingen van de migraine-evidence](#51-inherente-beperkingen-van-de-migraine-evidence)
+  - [5.2 Bron- en methodologie-caveats](#52-bron--en-methodologie-caveats)
+  - [5.3 Onderhoud en kwaliteitsborging](#53-onderhoud-en-kwaliteitsborging)
+  - [5.4 Wat dit betekent voor de lezer](#54-wat-dit-betekent-voor-de-lezer)
+
+---
+
 ## 1. Inleiding en scope
 
 ### 1.1 Wat het systeem is
