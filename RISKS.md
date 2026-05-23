@@ -110,6 +110,36 @@
 
 ---
 
+## R-008 · Methodologische governance — enkele auteur
+
+| Veld | Waarde |
+|---|---|
+| **Aard** | Proces / wetenschappelijk-methodologisch |
+| **Status** | Open — erkend, gemitigeerd via transparantie |
+| **Impact** | Middel-hoog — alle scoringsregels, drempels, paradigma-precedenten en bronwegingen berusten op één auteur (Peter) zonder externe domein-expert-validatie (diëtist/arts/toxicoloog). Een bias of blinde vlek propageert ongecontroleerd door de hele database. |
+| **Waarschijnlijkheid** | Zeker — er is per definitie geen tweede beoordelaar. |
+| **Mitigatie** | 1) Volledig auditeerbaar besluitspoor: CLAUDE.md §12 (bronweging) + §13 (paradigma-precedenten) maken elke afwijking van klassieke richtlijnen expliciet en herleidbaar. 2) Per-score evidence-badge (A/B/C) + `confidence`-veld tonen de onderbouwing. 3) Exporteerbare methodologie-pagina (§10) zodat arts/diëtist de keuzes kan controleren. 4) Conservatieve defaults (groen tenzij bewijs; score-3-whitelist). **NB:** dit vervangt géén externe peer-review — bij opschaling/commercieel gebruik is een eenmalige externe methodologie-review per aandoening aan te bevelen (geen fictieve reviewlaag in de docs opvoeren). |
+| **Eigenaar** | Peter |
+| **Deadline** | Externe review aanbevolen vóór commercieel gebruik / actieve werving |
+| **Tracking** | CLAUDE.md §12 + §13; deze entry |
+
+---
+
+## R-009 · UX — populatie- vs individuniveau-misinterpretatie
+
+| Veld | Waarde |
+|---|---|
+| **Aard** | Productrisico / UX |
+| **Status** | Open — gedeeltelijk gemitigeerd |
+| **Impact** | Middel — gebruiker kan een stoplicht lezen als een individueel medisch verdict ("rood = ik moet dit vermijden", "groen = veilig voor mij"), terwijl scores populatie-inschattingen zijn. Vooral riskant bij migraine (subgroep-/individueel-variabele triggers) en histamine (sterke individuele drempelverschillen). |
+| **Waarschijnlijkheid** | Hoog — de stoplichtmetafoor nodigt uit tot een binair-persoonlijke lezing. |
+| **Mitigatie** | 1) Per-score evidence/confidence-badges zichtbaar. 2) `triggerType`-classificatie (§2.2.1) maakt subgroep-/individueel-/context-variabiliteit expliciet. 3) UI toont bij migraine-scores met een variabele-respons-`triggerType` een expliciete hint "respons verschilt per persoon" (ItemDetailPanel). 4) Verplichte disclaimer vóór gebruik (§10): informatieve beslishulp, geen medisch advies. 5) Tegenstrijdige scores expliciet getoond (§8) i.p.v. weggemiddeld. **NB:** het product blíjft een snelle keuze-ondersteuning (§1) — de mitigatie maakt de populatie-aard zichtbaar zónder de beslishulp-functie uit te hollen tot "alleen hypothesegeneratie". |
+| **Eigenaar** | Claude Code (UI/mitigatie) + Peter (disclaimer/positionering) |
+| **Deadline** | Doorlopend; herzien vóór publieke launch |
+| **Tracking** | ItemDetailPanel.tsx + CLAUDE.md §8/§10; deze entry |
+
+---
+
 ## Niet-risico's (expliciet genoemd, doelbewust geen mitigatie)
 
 - **Geen account / cloud sync (MVP).** Profiel in localStorage — blijft op het apparaat van de gebruiker, gaat niet naar een server. Laag AVG-risico. Migratie naar accounts later mogelijk zonder breaking changes (zelfde schema), maar verhoogt het AVG-risico — zie R-007.

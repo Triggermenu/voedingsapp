@@ -33,7 +33,16 @@ const TRIGGER_LABELS: Record<string, string> = {
   'onttrekkings-trigger': 'onttrekkingstrigger',
   'drug-interactie': 'alleen bij medicatie',
   'context-afhankelijk': 'context-afhankelijk',
+  'individueel-variabel': 'individueel variabel',
+  'dosis-afhankelijk': 'dosis-afhankelijk',
 }
+
+// Migraine-triggerTypes waarbij de respons sterk per persoon verschilt — toont
+// een expliciete hint zodat de score niet als individueel verdict wordt gelezen
+// (RISKS.md R-009: populatie- vs individuniveau).
+const VARIABLE_RESPONSE_TRIGGERS = new Set<string>([
+  'subgroep-bevestigd', 'subgroep-overschat', 'individueel-variabel',
+])
 
 type CellStatus = 'safe' | 'ok' | 'warn' | 'avoid' | 'null'
 
@@ -161,6 +170,11 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                     {s.note?.nl && (
                       <div style={{ fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.5, marginBottom: 6 }}>
                         {s.note.nl}
+                      </div>
+                    )}
+                    {s.triggerType && VARIABLE_RESPONSE_TRIGGERS.has(s.triggerType) && (
+                      <div style={{ fontSize: 12, color: 'var(--muted)', fontStyle: 'italic', lineHeight: 1.5, marginBottom: 6 }}>
+                        ↳ Populatie-inschatting — de respons hierop verschilt per persoon.
                       </div>
                     )}
                     {s.sources.slice(0, 1).map((src, si) => (
