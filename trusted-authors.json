@@ -1,4 +1,4 @@
 {
-  "_comment": "GitHub usernames die auto-merge mogen triggeren als CI groen is. Voeg Cowork bot-account toe zodra bekend.",
-  "authors": []
+  "_comment": "GitHub usernames waarvan groene PR's automatisch mergen (CI = de review-gate, CLAUDE.md §4.6). Verwijder uit deze lijst om auto-merge per account uit te zetten.",
+  "authors": ["PeterWolterman"]
 }
