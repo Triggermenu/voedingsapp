@@ -1,6 +1,6 @@
 # Methodologie Voedingsgids / Pulse — migraine-as
 
-**Versie:** 0.2 concept (sectie 1-5)
+**Versie:** 0.3 concept (sectie 1-6)
 **Datum:** 2026-05-23
 **Auteur:** Peter Wolterman
 **Status:** intern concept; niet voor externe deling tot v1.0
@@ -42,6 +42,9 @@ De doc is geschreven voor medisch-wetenschappelijke en regulatoire lezers die wi
   - [5.2 Bron- en methodologie-caveats](#52-bron--en-methodologie-caveats)
   - [5.3 Onderhoud en kwaliteitsborging](#53-onderhoud-en-kwaliteitsborging)
   - [5.4 Wat dit betekent voor de lezer](#54-wat-dit-betekent-voor-de-lezer)
+- [6. Versiebeheer en bronnen](#6-versiebeheer-en-bronnen)
+  - [6.1 Versiebeheer en audit trail](#61-versiebeheer-en-audit-trail)
+  - [6.2 Kernbronnen](#62-kernbronnen)
 
 ---
 
@@ -57,7 +60,7 @@ Deze methodologie-doc beschrijft hoe de scoring tot stand komt voor de **migrain
 
 ### 1.2 Wat het systeem niet is
 
-De applicatie is **geen** medisch hulpmiddel in de zin van de EU Medical Device Regulation 2017/745. De scoring is een informatieve heuristiek op basis van gepubliceerde literatuur en stelt geen diagnose, geeft geen behandeladvies en is geen vervanging voor medisch advies van een huisarts, neuroloog, diëtist of andere zorgverlener.
+De applicatie **positioneert zich uitdrukkelijk als informatieve beslishulp en niet als medisch hulpmiddel** in de zin van de EU Medical Device Regulation (MDR) 2017/745: ze stelt geen diagnose, geeft geen behandeladvies en maakt geen diagnostische of therapeutische claims. De scoring is een informatieve heuristiek op basis van gepubliceerde literatuur en is geen vervanging voor medisch advies van een huisarts, neuroloog, diëtist of andere zorgverlener. De definitieve MDR-classificatie is onderwerp van juridische toetsing; tot uitsluitsel gedraagt de applicatie zich conservatief conform de hierboven beschreven afbakening.
 
 Concreet betekent dit:
 - De scores claimen geen diagnostische waarde. Een score 3 zegt niet dat een product een migraine-aanval zal veroorzaken; het zegt dat de literatuur dit product met substantieel risico associeert.
@@ -287,4 +290,51 @@ De scores zijn een hulpmiddel bij het oriënteren, geen voorspelling van een ind
 
 ---
 
-*[Einde concept sectie 1-5. Volledige migraine-as-methodologie gedekt; klaar voor inhoudelijke review vóór v1.0 / externe deling.]*
+## 6. Versiebeheer en bronnen
+
+### 6.1 Versiebeheer en audit trail
+
+De methodologie is geen statische publicatie maar een onderhouden, versiebeheerd systeem. Vier lagen vormen samen een traceerbaar spoor van wat is gescoord, op welke basis, en wanneer het laatst is herzien:
+
+- **Eén autoritatief regeldocument.** De scoringregels, drempels, het schema en de kwaliteitspoorten zijn vastgelegd in één centraal document dat onder semantisch versiebeheer staat. Wijzigingen daaraan vereisen expliciete goedkeuring van de auteur en worden met een changelog-regel (versie, datum, motivering) geregistreerd.
+- **Versiebeheerde dataset.** De volledige dataset staat onder git: elke score-wijziging is een traceerbare commit met motivering, doorgaans via een pull request met geautomatiseerde controle.
+- **Paradigma-precedenten-register.** Methodologische paradigmawijzigingen worden chronologisch vastgelegd (§4.3), met per precedent de beslissing, de generaliseerbare regel en de versie waarin ze is ingevoerd.
+- **Herzieningsdatum per item.** Elk item draagt een datum van toevoeging én van laatste herziening, zodat veroudering zichtbaar is.
+
+Voor een regulatoire of audit-context betekent dit dat elke individuele score herleidbaar is tot een regelversie, een bronnenset en een revisiedatum.
+
+### 6.2 Kernbronnen
+
+Onderstaande bronnen worden in deze methodologie-doc structureel aangehaald of liggen ten grondslag aan de besproken paradigma's. Dit is geen uitputtende bibliografie: de volledige, per-item bronvermelding (inclusief alle identifiers) is onderdeel van de dataset zelf en van de cluster-onderzoeksdocumentatie.
+
+**Algemeen migraine-voeding**
+- Hindiyeh NA et al. 2020 — *The Role of Diet and Nutrition in Migraine Triggers and Treatment: A Systematic Review* (PMC7496357)
+- ICHD-3, International Classification of Headache Disorders, 3e editie (2018)
+
+**Nitriet / NO-pathway (gecureerd vlees, nitraatgroenten)**
+- Henderson WR & Raskin NH 1972 — enteraal nitriet-provocatieonderzoek (PMID 4117590)
+- Iversen HK, Olesen J & Tfelt-Hansen P 1989 — NO-donor (GTN) en migraine (PMID 2506503)
+- Gonzalez H et al. 2016 — nitraat/nitriet-reducerende orale bacteriën bij migraineurs (PMID 27822557)
+- Zhong J et al. 2022 — nitraat/nitriet food-composition database (PMC9540118)
+
+**Biogene aminen — tyramine (gerijpte kaas)**
+- Ziegler DK & Stewart R 1977 — placebo-gecontroleerde tyramine-crossover (PMID 560645)
+- Moffett AM et al. 1972 — tyramine-inname en migrainefrequentie (PMID 4559027)
+- Finberg JPM & Gillman K 2022 — dieet-tyramine en MAO (PMC9172554)
+
+**Biogene aminen — histamine (vis)**
+- Maintz L & Novak N 2007 — *Histamine and histamine intolerance* (PMID 17490952)
+
+**Additieven (MSG)**
+- Obayashi Y & Nagamura Y 2016 — *Does monosodium glutamate really cause headache?* (systematische review, PMC4870486)
+
+**Alcohol / rode wijn**
+- Littlewood JT et al. 1988 — rode wijn als migrainetrigger (provocatiestudie)
+- Onderwater GLJ et al. 2019 — alcohol als zelf-gerapporteerde vs objectieve trigger (cohort, n≈2.197)
+
+**Chocolade**
+- Marcus DA et al. 1997 — chocolade vs placebo, geen reproduceerbaar trigger-effect
+
+---
+
+*[Einde concept sectie 1-6. Volledige migraine-as-methodologie gedekt; klaar voor inhoudelijke en juridische review vóór v1.0 / externe deling.]*
