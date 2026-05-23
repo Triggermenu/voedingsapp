@@ -1033,6 +1033,342 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       }
+    },
+    {
+      "id": "nl-eeuw-ei",
+      "name": {
+        "nl": "Eeuw-ei (pidan)",
+        "en": "Century egg (pidan)"
+      },
+      "category": "eieren",
+      "subcategory": "eieren",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Ei: ~2-5 mg purine/100g. Alkalische rijping verandert het purinegehalte niet. Score groen."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "C",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-overschat",
+          "confidence": "laag",
+          "note": {
+            "nl": "Alkalisch gefermenteerd ei ontwikkelt biogene aminen (tyramine, histamine). Tyramine-pathway alleen klinisch relevant in MAO-gevoelige subgroep (analoog gerijpte kaas, §2.2). Beperkte directe migraine-evidence."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "C",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "confidence": "laag",
+          "note": {
+            "nl": "Sterk gefermenteerd/gerijpt ei → verhoogde biogene aminen. SIGHI rate fermentatieproducten hoog; geen item-specifieke meting. Omstreden — beperkte directe data."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      },
+      "cluster": 20
+    },
+    {
+      "id": "nl-gezouten-eendenei",
+      "name": {
+        "nl": "Gezouten eendenei",
+        "en": "Salted duck egg"
+      },
+      "category": "eieren",
+      "subcategory": "eieren",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Eendenei: laag purine (~3-6 mg/100g). Pekelen verandert purine niet. Score groen."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen migraine-triggerstof; zout is geen trigger."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Sterk gepekeld; natrium kan >600 mg per ei bereiken → nierstenen-modifier +1 (§2.3). Oxalaat zelf verwaarloosbaar."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "C",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "confidence": "laag",
+          "note": {
+            "nl": "Gepekeld/geconserveerd eiproduct; verlengde bewaring kan biogene aminen verhogen. SIGHI: voorzichtigheid bij geconserveerde producten."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      },
+      "cluster": 20
+    },
+    {
+      "id": "nl-thee-ei",
+      "name": {
+        "nl": "Thee-ei (gemarineerd)",
+        "en": "Tea egg"
+      },
+      "category": "eieren",
+      "subcategory": "eieren",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Ei met thee/sojamarinade: purine blijft laag (~3-5 mg/100g). Score groen."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Sojasaus (gefermenteerd) bevat tyramine in kleine hoeveelheid in de marinade. Onvoldoende voor populatiebreed effect; lage score."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Theemarinade (oxalaat) + sojasaus (natrium); per ei grotendeels subklinisch, licht verhoogd."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Sojasaus is gefermenteerd (biogene aminen) en histamine-liberator. SIGHI cat. 2 voor sojasaus-marinade."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      },
+      "cluster": 20
+    },
+    {
+      "id": "nl-ganzenei",
+      "name": {
+        "nl": "Ganzenei (vers)",
+        "en": "Goose egg (fresh)"
+      },
+      "category": "eieren",
+      "subcategory": "eieren",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Ganzenei: groot ei, laag purine (~3-6 mg/100g) vergelijkbaar met kippen-/eendenei. Score groen."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen migraine-triggerstof."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Vers ei: laag histamine."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      },
+      "cluster": 20
     }
   ]
 }
