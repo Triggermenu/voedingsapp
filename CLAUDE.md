@@ -307,9 +307,11 @@ Als alle 16 checks groen zijn én PR-author is in `trusted-authors.json` (Cowork
 | 1 | 150 | Sweet spot — alle 4 aandoeningen scorebaar | 1–2 weken |
 | 2 | 300 | NL-supermarkt dekking | 4–6 weken |
 | 3 | 500 (bereikt) | Voltooien USDA Purine + Harvard Oxalate | afgerond |
-| 4 | 700 (cap) | Ontbrekende categorieën: eieren, bereid-gerecht, vis-schaaldieren | lopend |
+| 4 | 700 (cap bereikt) | Ontbrekende categorieën: eieren, bereid-gerecht, vis-schaaldieren | afgerond 2026-05-23 |
 
 **Boven 700 items: NIET groeien.** Boven dit aantal zijn alleen nog USDA Branded Foods beschikbaar, waar 50%+ geen purine-/oxalaat-/histaminedata heeft. Kwaliteit > kwantiteit. Cap verhoogd van 500 → 700 op 2026-05-18 om ruimte te maken voor de categorieën eieren, bereid-gerecht en vis-schaaldieren (akkoord: Peter Wolterman).
+
+**Cap bereikt op 2026-05-23 (700 items).** Databasegroei is voltooid; verdere wijzigingen aan de data zijn correcties/kwaliteitsverbeteringen, geen nieuwe items.
 
 ---
 
@@ -363,6 +365,9 @@ Bij meerdere aandoeningen:
 
 ### MDR-status
 **In onderzoek door Peter.** Tot uitsluitsel: app gedraagt zich conservatief en presenteert zich expliciet als *informatieve beslishulp*, niet als medisch hulpmiddel.
+
+### Bedoeld gebruik — populatieniveau
+De stoplichten zijn **populatie-inschattingen** op basis van de best beschikbare evidence, géén individueel medisch verdict. Individuele respons varieert — sterk bij migraine (subgroep-/individueel-variabele triggers, §2.2.1) en histamine (individuele DAO-drempels). De app ondersteunt snelle keuzes (§1) en is geen eliminatie-/provocatietraject onder begeleiding. De UI maakt deze variabiliteit zichtbaar via triggerType-classificatie en een expliciete *"respons verschilt per persoon"*-hint bij variabele-respons-triggers (RISKS.md R-009). Deze framing onderschrijft de conservatieve MDR-positie: informeren, niet diagnosticeren of behandelen.
 
 ### Verplichte UX-elementen
 - **Onboarding-disclaimer:** vóór eerste gebruik, vereist expliciet akkoord (checkbox).
@@ -459,12 +464,14 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 - SIGHI commerciële licentie nog niet bevestigd → data opgenomen onder voorbehoud.
 - MDR-classificatie nog niet bepaald → app gedraagt zich conservatief.
 - Migraine evidence inherent zwak → gemitigeerd via lage drempels voor score=3 en zichtbare evidence-badges.
+- Methodologische governance bij één auteur zonder externe domeinvalidatie (R-008) → gemitigeerd via auditeerbaar besluitspoor (§12/§13), evidence/confidence-badges en exporteerbare methodologie; externe review aanbevolen vóór commercieel gebruik.
+- UX — populatie- vs individuniveau-misinterpretatie (R-009) → gemitigeerd via triggerType-zichtbaarheid, badges, disclaimer en de "respons verschilt per persoon"-hint (§10 Bedoeld gebruik).
 
 ---
 
 ## 15. Versiebeheer van dit document
 
-- **Schema version:** v1.8
+- **Schema version:** v1.9
 - **Laatste wijziging:** 2026-05-23
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
@@ -475,3 +482,4 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
   - v1.7 (2026-05-21): Nieuwe §13 Paradigma-precedenten. Chronologisch register van 6 methodologische paradigmawijzigingen (v1.0–v1.5). Onderscheid met §12 (item-niveau) expliciet. Versiebeheer hernoemd van §14 → §15. Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
   - v1.6 (2026-05-21): §3 ScoreObject volledig gedocumenteerd. `confidence`, `triggerType`, `primaryModulators` toegevoegd aan type-definitie + nieuwe §3.3 met veldbeschrijvingen. `subcategory` op FoodItem toegevoegd (was al in schema). Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
   - v1.8 (2026-05-23): TriggerType-enumwaarde `universeel` → `populatiebreed` hernoemd (regulatoire defensibility — "universeel" suggereerde reactie bij iedere patiënt; "populatiebreed" claimt reproduceerbaarheid over brede populaties zonder subgroep-grens, conform de reeds bestaande definitie). Doorgevoerd in `src/schemas/item.ts`, 7 bier/alcohol-items in `dranken-alcohol.json` (scores ongewijzigd — alléén label), UI-labelmap `ItemDetailPanel.tsx`, §2.2 + enum-tabel §2.2.1. Nieuw: expliciete 5-punts toelatingschecklist voor score-3-whitelist in §2.2 (consolideert verspreide criteria; geen inhoudelijke verzwaring). Geen scorewijzigingen. Akkoord: Peter Wolterman (chat 2026-05-23, review extern feedbackdocument).
+  - v1.9 (2026-05-23): Consistentie-sync na fase-4-afronding + reviewpunten. §7: fase 4 op "cap bereikt (700, afgerond 2026-05-23)" — databasegroei voltooid. §10: nieuwe subsectie "Bedoeld gebruik — populatieniveau" (stoplichten zijn populatie-inschattingen, geen individueel verdict; individuele respons varieert; onderschrijft conservatieve MDR-positie). §14: twee nieuwe risico's erkend — R-008 (methodologische governance bij één auteur, gemitigeerd via §12/§13-audit-trail + externe-review-aanbeveling) en R-009 (populatie-vs-individu-misinterpretatie, gemitigeerd via triggerType-zichtbaarheid + UI-hint). Bijbehorende R-008/R-009 staan volledig in RISKS.md; UI-hint "respons verschilt per persoon" in `ItemDetailPanel.tsx`. Geen scoring-/drempelwijzigingen. Akkoord: Peter Wolterman (chat 2026-05-23, keuze "Sync + intended-use").
