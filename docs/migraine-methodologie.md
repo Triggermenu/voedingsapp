@@ -1,7 +1,7 @@
 # Methodologie Voedingsgids / Pulse — migraine-as
 
-**Versie:** 0.1 concept (sectie 1-2)
-**Datum:** 2026-05-21
+**Versie:** 0.2 concept (sectie 1-5)
+**Datum:** 2026-05-23
 **Auteur:** Peter Wolterman
 **Status:** intern concept; niet voor externe deling tot v1.0
 
@@ -177,7 +177,43 @@ Dat de taxonomie consistent wordt toegepast blijkt onder meer hieruit: `drug-int
 
 ## 4. Clustersysteem
 
-*[Gereserveerd. Deze sectie beschrijft hoe migraine-triggers worden gegroepeerd in mechanistische pathway-clusters, het evidence-C-only-paradigma (score-plafond bij clusters zonder A/B-evidence), en hoe paradigma-precedenten als register fungeren. Wordt geschreven na de openstaande cluster-indelingsbeslissing.]*
+De score, evidence-grade en triggerType (sectie 2-3) worden per item toegekend, maar niet per item *bedacht*. Daaronder ligt een organiserend principe dat consistentie waarborgt over honderden items: het clustersysteem.
+
+### 4.1 Pathway-clustering: scoren per mechanisme, niet per product
+
+Migraine-triggers worden gegroepeerd op hun **primaire trigger-stof of -pathway**, niet op culinaire categorie. De dataset kent een twintigtal van zulke clusters, geordend in families: stimulantia/xanthines (cafeïne, theobromine), biogene aminen uit gefermenteerde producten (tyramine, histamine), de nitriet/NO-pathway, alcohol, histamine uit vis en plantaardige bronnen, vasoactieve fenolen, en additieven (aspartaam, MSG, sulfieten).
+
+Het voordeel van clusteren op mechanisme in plaats van op productsoort is consistentie. Eén pathway krijgt één scoringregel en wordt als één onderzoeksbatch behandeld; alle items binnen het cluster worden tegen diezelfde regel en bronnenset gewogen. Zo voorkomt het systeem dat twee chemisch vergelijkbare producten — bijvoorbeeld een gerijpte kaas en een gefermenteerde vis, beide rijk aan biogene aminen — toevallig uiteenlopende scores krijgen doordat ze in verschillende categorieën zijn ingevoerd.
+
+Een trigger-stof kan in meerdere productgroepen voorkomen. Tyramine zit zowel in gerijpte kaas (cluster gerijpte/gefermenteerde kazen) als in gistextracten; histamine in gerijpte vis (cluster histamine-rijke vis), in gefermenteerde groenten en in bepaald fruit. Items die mechanistisch op de grens van twee clusters liggen, krijgen het cluster van het **dominante mechanisme voor migraine**, niet het eerst-passende. Een gefermenteerde haring valt daarom onder het histamine-viscluster (histamine dominant), niet onder het kaas-tyramine-cluster — een onderscheid dat in de praktijk bepalend is voor de gekozen bronnenset en modulatoren.
+
+### 4.2 Evidence-C-only clusters: een verlaagd score-plafond
+
+Niet elk cluster rust op even sterk bewijs. Sommige clusters bevatten uitsluitend items met evidence-grade C: er is geen RCT met het cluster-onderwerp als interventie, geen systematische review met deze specifieke vraagstelling, alleen mechanistische plausibiliteit en observationeel onderzoek met door de auteurs zelf erkende beperkingen.
+
+Voor zulke **evidence-C-only clusters** geldt een strenger scoringregime, om te voorkomen dat zwak bewijs tot een sterke risico-uitspraak leidt:
+
+- Het score-plafond is standaard **1**.
+- Score **2** is alleen toegestaan als dosis-uitzondering, waar geconcentreerde producten mechanistisch een drempel benaderen die vergelijkbaar is met een bewezen pathway.
+- Score **3** is binnen zo'n cluster **niet toegestaan**.
+- De triggerType is bij voorkeur `individueel-variabel` of `dosis-afhankelijk`, niet `subgroep-bevestigd` — want bij ontbrekend bewijs is de subgroep niet welomschreven.
+
+Het precedent is het cluster nitraatrijke groenten: mechanistische plausibiliteit (nitraat → enterosalivaire conversie naar NO, met het mondmicrobioom als modulator) plus observationeel onderzoek, maar geen directe migraine-RCT. Items daar blijven op score 1, op een enkele geconcentreerde dosis-uitzondering na. Toekomstige clusters waar directe migraine-evidence ontbreekt, volgen deze norm.
+
+### 4.3 Paradigma-precedenten als register
+
+Methodologische beslissingen die verder reiken dan één item — bijvoorbeeld het verlagen van een hele klasse van "klassieke triggers" (sectie 3.2), of het instellen van het evidence-C-plafond — worden vastgelegd in een chronologisch register van paradigma-precedenten. Elk precedent koppelt een concrete beslissing aan een generaliseerbare regel.
+
+Het doel is tweeledig. Ten eerste **consistentie over tijd**: een nieuw item dat lijkt op een eerder beslist geval volgt hetzelfde paradigma zonder dat de afweging opnieuw gemaakt wordt. Ten tweede **toetsbaarheid**: een externe lezer kan nagaan wélke regel op een item is toegepast en waaróm, in plaats van een losse score te moeten vertrouwen.
+
+Voorbeelden van vastgelegde migraine-precedenten:
+
+- **Geblindeerd bewijs verslaat trigger-lijsten.** Een geblindeerde provocatie- of RCT-uitkomst overrulet open-label observaties en klassieke trigger-lijsten (toegepast op MSG: van klassieke "rode" trigger naar score 2).
+- **Mechanistisch inactivatie-inzicht verslaat klassieke associatie.** Inzicht dat tyramine bij intacte MAO-functie wordt geïnactiveerd, weegt zwaarder dan historische associatie-lijsten (toegepast op gerijpte kaas).
+- **Eén-laboratorium-evidence zonder replicatie geeft een lage prior.** Positief bewijs dat uitsluitend uit één onderzoeksgroep komt en niet onafhankelijk gerepliceerd is, rechtvaardigt geen hoge score, ongeacht de biochemische plausibiliteit (toegepast op de tyramine-kaas-literatuur).
+- **Evidence-C-only ⇒ score-plafond 1** (zie §4.2).
+
+Deze precedenten zijn geen losse meningen maar staan in een gedeeld register dat onderdeel is van de projectdocumentatie; ze worden hier weergegeven omdat ze de scoring op de migraine-as direct bepalen.
 
 ---
 
@@ -213,4 +249,4 @@ De scores zijn een hulpmiddel bij het oriënteren, geen voorspelling van een ind
 
 ---
 
-*[Einde sectie 1-3 en 5. Sectie 4 (clustersysteem) gereserveerd, afhankelijk van de openstaande cluster-indelingsbeslissing.]*
+*[Einde concept sectie 1-5. Volledige migraine-as-methodologie gedekt; klaar voor inhoudelijke review vóór v1.0 / externe deling.]*
