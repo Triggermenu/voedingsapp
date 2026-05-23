@@ -39,6 +39,19 @@ export const ScoreObjectSchema = z.object({
   primaryModulators: z.array(z.string().regex(/^[a-z0-9-]+$/)).max(3).optional(),
 })
 
+// Migraine-specifieke variant: triggerType is verplicht bij score >= 2 (CLAUDE.md §3.3).
+// Deze regel geldt ALLEEN voor de migraine-as — triggerType is niet van toepassing op
+// jicht/nierstenen/histamine, dus die blijven de generieke ScoreObjectSchema gebruiken.
+export const MigraineScoreSchema = ScoreObjectSchema.superRefine((val, ctx) => {
+  if (val.score >= 2 && val.triggerType === undefined) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: 'Migraine score ≥ 2 vereist een triggerType (CLAUDE.md §3.3)',
+      path: ['triggerType'],
+    })
+  }
+})
+
 export const FoodItemSchema = z.object({
   id: z.string().regex(/^(\d+|nl-[a-z0-9-]+)$/, 'ID moet USDA FDC ID (cijfers) zijn of nl-prefixed'),
   nevoCode: z.string().optional(),
@@ -47,7 +60,7 @@ export const FoodItemSchema = z.object({
   subcategory: z.string().optional(),
   scores: z.object({
     jicht: ScoreObjectSchema.nullable(),
-    migraine: ScoreObjectSchema.nullable(),
+    migraine: MigraineScoreSchema.nullable(),
     nierstenen: ScoreObjectSchema.nullable(),
     histamine: ScoreObjectSchema.nullable(),
   }).refine(
