@@ -166,7 +166,7 @@
           "note": {
             "nl": "Ethanol-mechanisme: vasodilatatie, CGRP-release, mestcel-degranulatie. Bier versterkt door histamine/biogene aminen bij gisting. Populatiebreed effect bij adequate dosis (Onderwater 2019)."
           },
-          "triggerType": "universeel",
+          "triggerType": "populatiebreed",
           "confidence": "hoog",
           "primaryModulators": [
             "ethanol",
@@ -976,7 +976,7 @@
               "accessedAt": "2026-05-20"
             }
           ],
-          "triggerType": "universeel",
+          "triggerType": "populatiebreed",
           "confidence": "hoog",
           "primaryModulators": [
             "ethanol",
@@ -1069,7 +1069,7 @@
               "accessedAt": "2026-05-20"
             }
           ],
-          "triggerType": "universeel",
+          "triggerType": "populatiebreed",
           "confidence": "hoog",
           "primaryModulators": [
             "ethanol",
@@ -1159,7 +1159,7 @@
               "accessedAt": "2026-05-20"
             }
           ],
-          "triggerType": "universeel",
+          "triggerType": "populatiebreed",
           "confidence": "hoog",
           "primaryModulators": [
             "ethanol",
@@ -1861,7 +1861,7 @@
               "accessedAt": "2026-05-20"
             }
           ],
-          "triggerType": "universeel",
+          "triggerType": "populatiebreed",
           "confidence": "hoog",
           "primaryModulators": [
             "ethanol",
@@ -2395,7 +2395,7 @@
               "accessedAt": "2026-05-20"
             }
           ],
-          "triggerType": "universeel",
+          "triggerType": "populatiebreed",
           "confidence": "hoog",
           "primaryModulators": [
             "ethanol",

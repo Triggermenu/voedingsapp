@@ -19,7 +19,7 @@ export const SourceSchema = z.object({
 })
 
 export const TRIGGER_TYPES = [
-  'universeel',
+  'populatiebreed',
   'subgroep-bevestigd',
   'subgroep-overschat',
   'onttrekkings-trigger',

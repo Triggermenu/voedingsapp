@@ -27,7 +27,7 @@ const SCORE_LABELS: Record<number, string> = {
 }
 
 const TRIGGER_LABELS: Record<string, string> = {
-  'universeel': 'universele trigger',
+  'populatiebreed': 'populatiebrede trigger',
   'subgroep-bevestigd': 'subgroep-trigger',
   'subgroep-overschat': 'subgroep — overschat',
   'onttrekkings-trigger': 'onttrekkingstrigger',
