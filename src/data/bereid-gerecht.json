@@ -3325,6 +3325,1654 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-23"
       }
+    },
+    {
+      "id": "nl-pizza-salami",
+      "name": {
+        "nl": "Pizza salami",
+        "en": "Salami pizza"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "pizza",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Salamibeleg (gecureerd) + deeg/kaas. Portie ~120-180 mg purine. Score 2."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-bevestigd",
+          "note": {
+            "nl": "Salami is gecureerd/nitriethoudend vlees (sub-Henderson per portie) + kaas. Subgroep-relevant."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Salami (gerijpt, biogene aminen) + kaas + tomatensaus (liberator). SIGHI cat. 2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-zuurkoolschotel",
+      "name": {
+        "nl": "Zuurkoolschotel met worst",
+        "en": "Sauerkraut casserole with sausage"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "stamppot",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Worst/spek (purine) + aardappel + zuurkool. Portie score 2."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-overschat",
+          "note": {
+            "nl": "Zuurkool (sterk gefermenteerd, biogene aminen/tyramine) + worst. Subgroep-afhankelijke pathway."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Zuurkool is sterk gefermenteerd → behoort tot de histaminerijkste producten. SIGHI cat. 3."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-andijviestamppot-spek",
+      "name": {
+        "nl": "Andijviestamppot met spekjes",
+        "en": "Endive stamppot with bacon"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "stamppot",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Aardappel + andijvie + spekjes (purine). Portie score 2."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-bevestigd",
+          "note": {
+            "nl": "Spekjes = gecureerd/nitriethoudend vlees (sub-Henderson). Subgroep-relevant."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Andijvie bevat matig oxalaat; portie licht verhoogd. Score 1."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Spek (gerookt) + andijvie. SIGHI cat. 1."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-boeuf-bourguignon",
+      "name": {
+        "nl": "Boeuf bourguignon",
+        "en": "Beef bourguignon"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "stoofgerecht",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Rundvlees stoof (~110-150 mg purine/100g). Portie score 2."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-overschat",
+          "note": {
+            "nl": "Rode wijn (tyramine/sulfiet; alcohol grotendeels verdampt) + champignons. Subgroep-afhankelijke pathway."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Champignon/wijn oxalaat subklinisch per portie."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Rode wijn + champignon + langgestoofd vlees → biogene aminen. SIGHI cat. 2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-moussaka",
+      "name": {
+        "nl": "Moussaka",
+        "en": "Moussaka"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "ovenschotel",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Lamsgehakt (~120-150 mg purine) + aubergine + bechamel. Score 2."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Aubergine + tomaat (liberatoren); geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Aubergine matig oxalaat; portie licht verhoogd. Score 1."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Aubergine + tomaat (liberatoren) + bechamel. SIGHI cat. 1-2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-spareribs",
+      "name": {
+        "nl": "Spareribs (varkensribben)",
+        "en": "Spare ribs (pork)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "vlees",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Varkensribben (~120-150 mg purine/100g), grote portie. Score 2."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "BBQ-/tomatensaus (liberator); geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomaten-/BBQ-marinade (liberator) + langgegaard vlees. SIGHI cat. 1-2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-cordon-bleu",
+      "name": {
+        "nl": "Cordon bleu (kip, ham, kaas)",
+        "en": "Cordon bleu (chicken, ham, cheese)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "vlees",
+      "scores": {
+        "jicht": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Kipfilet + ham + kaas, gepaneerd. Portie matig. Score 1."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-bevestigd",
+          "note": {
+            "nl": "Gecureerde ham (nitriet, sub-Henderson) + kaas. Subgroep-relevant."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat; calcium-rijke kaas verlaagt eerder risico."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Kaas (tyramine) + gecureerde ham. SIGHI cat. 2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-schnitzel",
+      "name": {
+        "nl": "Schnitzel (varkens, gepaneerd)",
+        "en": "Pork schnitzel (breaded)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "vlees",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Varkensschnitzel (~120-150 mg purine/100g). Score 2."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen migraine-triggerstof bij verse bereiding."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Vers gepaneerd varkensvlees laag histamine. SIGHI cat. 0-1."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-worstenbroodje",
+      "name": {
+        "nl": "Worstenbroodje",
+        "en": "Sausage roll"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "snack",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Worstvulling (gehakt/worst) in deeg. Portie score 2."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-bevestigd",
+          "note": {
+            "nl": "Worst kan gecureerd/nitriethoudend zijn (sub-Henderson). Subgroep-relevant."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Worstvulling; afhankelijk van rijping. SIGHI cat. 1."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-tonijnsalade",
+      "name": {
+        "nl": "Tonijnsalade (met mayonaise)",
+        "en": "Tuna salad (with mayonnaise)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "salade",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Ingeblikte tonijn (matig-hoog purine) + mayo. Score 2."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-overschat",
+          "note": {
+            "nl": "Ingeblikte tonijn (hoge biogene aminen). Subgroep-afhankelijke pathway."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Ingeblikte tonijn behoort tot de histaminerijkste producten. SIGHI cat. 3."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-garnalencocktail",
+      "name": {
+        "nl": "Garnalencocktail",
+        "en": "Shrimp cocktail"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "voorgerecht",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Garnalen (matig purine) + cocktailsaus. Score 2."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse garnalen geen trigger; let op histamine bij niet-verse schaaldieren."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Schaaldier + cocktailsaus (tomaat-liberator). SIGHI cat. 2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-caprese",
+      "name": {
+        "nl": "Caprese salade",
+        "en": "Caprese salad"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "salade",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomaat + mozzarella + basilicum. Laag purine."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse tomaat (liberator) + mozzarella; geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse tomaat (liberator) + mozzarella (verse kaas). SIGHI cat. 1-2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-griekse-salade",
+      "name": {
+        "nl": "Griekse salade (feta, olijf)",
+        "en": "Greek salad (feta, olives)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "salade",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Groente + feta + olijven. Laag purine."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomaat (liberator) + feta (tyramine, mild); geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Feta/olijf gezouten → natrium-modifier mogelijk; oxalaat laag. Score ≤1."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomaat (liberator) + feta + olijven (gefermenteerd). SIGHI cat. 1-2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-quinoa-salade",
+      "name": {
+        "nl": "Quinoa salade (met groente)",
+        "en": "Quinoa salad (with vegetables)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "salade",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Quinoa + groente; laag purine."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen migraine-triggerstof."
+          }
+        },
+        "nierstenen": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Quinoa is matig oxalaatrijk; portie ~25-50 mg oxalaat → score 2 (§2.3 drempel)."
+          }
+        },
+        "histamine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse plantaardige salade; laag histamine."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-gevulde-paprika",
+      "name": {
+        "nl": "Gevulde paprika (gehakt, rijst)",
+        "en": "Stuffed pepper (mince, rice)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "ovenschotel",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Rundergehakt + rijst in paprika. Portie score 2."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Paprika/tomaat (liberatoren); geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Paprika/tomaat (liberatoren) + gehakt. SIGHI cat. 1."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-mac-and-cheese",
+      "name": {
+        "nl": "Mac and cheese",
+        "en": "Macaroni and cheese"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "pasta",
+      "scores": {
+        "jicht": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Pasta + kaassaus. Portie matig-laag purine. Score 1."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Kaas (tyramine; jonge/gesmolten kaas mild); geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Kaassaus calcium-rijk (verlaagt risico); geen relevant oxalaat. Score ≤1."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Kaassaus (tyramine/histamine). SIGHI cat. 2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-fish-and-chips",
+      "name": {
+        "nl": "Fish and chips",
+        "en": "Fish and chips"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "fastfood",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Gepaneerde witvis (kabeljauw) + friet. Grote portie. Score 2."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse witvis geen trigger."
+          }
+        },
+        "nierstenen": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Gezouten friet → natrium-modifier bij grote portie. Score 1."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse witvis (laag) + friet. SIGHI cat. 0-1."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-pad-thai",
+      "name": {
+        "nl": "Pad thai (garnaal)",
+        "en": "Pad thai (shrimp)"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "noedels",
+      "scores": {
+        "jicht": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Garnalen (matig purine) + rijstnoedels + ei. Score 2."
+          }
+        },
+        "migraine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "triggerType": "subgroep-overschat",
+          "note": {
+            "nl": "Vissaus (gefermenteerd, tyramine/biogene aminen) + pinda. Subgroep-afhankelijke pathway."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen relevant oxalaat."
+          }
+        },
+        "histamine": {
+          "score": 3,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Vissaus (gefermenteerd, histaminerijk) + pinda (liberator) + garnaal. SIGHI cat. 2-3."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-kip-tikka-masala",
+      "name": {
+        "nl": "Kip tikka masala",
+        "en": "Chicken tikka masala"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "curry",
+      "scores": {
+        "jicht": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Kipfilet + tomaten-roomsaus. Portie matig-laag purine. Score 1."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomatensaus (liberator) + specerijen; geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomaat oxalaat subklinisch per portie."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomaten-roomsaus (liberator) + specerijen. SIGHI cat. 1-2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
+    },
+    {
+      "id": "nl-gnocchi-tomaat",
+      "name": {
+        "nl": "Gnocchi met tomatensaus",
+        "en": "Gnocchi with tomato sauce"
+      },
+      "category": "bereid-gerecht",
+      "subcategory": "pasta",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Aardappelgnocchi + tomatensaus. Laag purine."
+          }
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomatensaus (liberator); geen sterk migrainebewijs."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Aardappel/tomaat oxalaat subklinisch per portie."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-23"
+            }
+          ],
+          "note": {
+            "nl": "Tomatensaus = histamine-liberator. SIGHI cat. 1-2."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-23"
+      }
     }
   ]
 }
