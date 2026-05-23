@@ -52,11 +52,18 @@ Elk niet-null score MOET een `evidence` (A/B/C) en `sources[]` hebben.
 
 **Bronnen:** Hindiyeh 2020 systematic review (PubMed), American Migraine Foundation, Migraine Trust. Tyramine-tabellen alleen ter referentie, niet als enige basis.
 
-**Whitelist voor score = 3 (rood)** — score 3 is gereserveerd voor stoffen met universeel of dosis-afhankelijk mechanisme, niet beperkt tot een welomschreven subgroep. *Alleen* de onderstaande 2 stoffen:
+**Whitelist voor score = 3 (rood)** — score 3 is gereserveerd voor stoffen met een populatiebreed of dosis-afhankelijk mechanisme dat niet gebonden is aan een welomschreven subgroep. "Populatiebreed" claimt géén universele reactie bij iedere patiënt, maar reproduceerbaarheid over brede populaties bij voldoende dosis. *Alleen* de onderstaande 2 stoffen:
+
+**Toelatingscriteria — een stof komt alléén op de score-3-whitelist als ze aan álle vijf voldoet:**
+1. Mechanisme direct farmacologisch/biologisch plausibel (niet louter epidemiologische associatie).
+2. Een realistische portie bereikt de werkzame drempeldosis (bv. Henderson-drempel ≥10 mg nitriet, adequate ethanoldosis).
+3. Effect reproduceerbaar over een brede populatie, niet afhankelijk van een geïdentificeerde subgroep — `triggerType` is `populatiebreed` of `dosis-afhankelijk` (nooit een `subgroep-*`, `individueel-variabel` of `context-afhankelijk` type).
+4. Evidence-grade ≥ B met minstens 1 expliciete bron (§4.4, CI-gate 10).
+5. Niet uitgesloten door een paradigma-precedent (§13) of een vastgestelde bronweging (§12).
 
 **1. Alcohol — ethanol-mechanisme.**
 - Score 3: bier (alle varianten), gedistilleerd, sterke wijn.
-- Mechanisme: directe vasodilatatie, CGRP-release, mestcel-degranulatie. Universeel bij voldoende dosis.
+- Mechanisme: directe vasodilatatie, CGRP-release, mestcel-degranulatie. Populatiebreed reproduceerbaar bij voldoende dosis.
 - **Uitzondering:** rode wijn krijgt score 2 + `subgroep-overschat` vanwege dominante tyramine/histamine/sulfiet-pathway die alleen in MAO-A-gevoelige subgroep klinisch relevant is.
 
 **2. Gecureerd vlees boven Henderson-drempel.**
@@ -81,7 +88,7 @@ Het `triggerType`-veld op een ScoreObject classificeert hoe een trigger zich ged
 
 | Waarde | Definitie | Voorbeeld-cluster |
 |---|---|---|
-| `universeel` | Mechanisme werkt op iedere migraine-patiënt bij voldoende dosis. Direct farmacologisch, geen subgroep-afhankelijkheid. | Bier (ethanol-mechanisme, cluster 11/12, PR #14) |
+| `populatiebreed` | Mechanisme reproduceerbaar over brede populaties bij voldoende dosis; niet gebonden aan een geïdentificeerde subgroep. Direct farmacologisch. Claimt géén reactie bij iedere patiënt — wel afwezigheid van een subgroep-grens. | Bier (ethanol-mechanisme, cluster 11/12, PR #14) |
 | `subgroep-bevestigd` | Welomschreven subgroep met bewezen reproduceerbare reactie. Subgroep gedefinieerd door duidelijke biologische factor (bv. enzymdeficiëntie). | Paté/leverworst sub-Henderson nitriet (cluster 7); Marmite/Vegemite tyramine (cluster 18, PR #18) |
 | `subgroep-overschat` | Effect alleen in subgroep, in algemene populatie overschat. Zelfrapportage-rate hoog, geblindeerde reproduceerbaarheid laag. | MSG (PR #17), rode wijn (cluster 11/12), gerijpte kaas (PR #22) |
 | `dosis-afhankelijk` | Effect treedt op boven specifieke dosis-drempel; onder drempel geen effect. | Spek/bacon Henderson-drempel (cluster 7); bietensap geconcentreerd (cluster 9, PR #28) |
@@ -457,8 +464,8 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 15. Versiebeheer van dit document
 
-- **Schema version:** v1.7
-- **Laatste wijziging:** 2026-05-21
+- **Schema version:** v1.8
+- **Laatste wijziging:** 2026-05-23
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
   - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).
@@ -467,3 +474,4 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
   - v1.5 (2026-05-21): TriggerType-enum documentatie + evidence-C-only paradigma. Nieuwe subsectie §2.2.1 TriggerType-enum met alle 8 waarden uit src/schemas/item.ts — schema en documentatie nu in de pas; CLAUDE.md liep achter sinds eerder schema-werk (PR #28 introduceerde `individueel-variabel` + `dosis-afhankelijk` impliciet maar updatete §2.2 niet). Evidence-C-only cluster-paradigma vastgelegd als formeel principe in §2.2.2: score-plafond 1, score 2 alleen voor dosis-uitzonderingen, cluster 9 als precedent. Onderscheid `subgroep-bevestigd` (welomschreven subgroep) vs `individueel-variabel` (continue modulerende factor) vs `context-afhankelijk` (situatievariabele) expliciet gedocumenteerd. `context-afhankelijk` en `drug-interactie` behouden als gereserveerde enum-waarden (0 items in DB). Geen data-wijzigingen — uitsluitend documentatie. Akkoord: Peter Wolterman (chat 2026-05-21).
   - v1.7 (2026-05-21): Nieuwe §13 Paradigma-precedenten. Chronologisch register van 6 methodologische paradigmawijzigingen (v1.0–v1.5). Onderscheid met §12 (item-niveau) expliciet. Versiebeheer hernoemd van §14 → §15. Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
   - v1.6 (2026-05-21): §3 ScoreObject volledig gedocumenteerd. `confidence`, `triggerType`, `primaryModulators` toegevoegd aan type-definitie + nieuwe §3.3 met veldbeschrijvingen. `subcategory` op FoodItem toegevoegd (was al in schema). Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
+  - v1.8 (2026-05-23): TriggerType-enumwaarde `universeel` → `populatiebreed` hernoemd (regulatoire defensibility — "universeel" suggereerde reactie bij iedere patiënt; "populatiebreed" claimt reproduceerbaarheid over brede populaties zonder subgroep-grens, conform de reeds bestaande definitie). Doorgevoerd in `src/schemas/item.ts`, 7 bier/alcohol-items in `dranken-alcohol.json` (scores ongewijzigd — alléén label), UI-labelmap `ItemDetailPanel.tsx`, §2.2 + enum-tabel §2.2.1. Nieuw: expliciete 5-punts toelatingschecklist voor score-3-whitelist in §2.2 (consolideert verspreide criteria; geen inhoudelijke verzwaring). Geen scorewijzigingen. Akkoord: Peter Wolterman (chat 2026-05-23, review extern feedbackdocument).
