@@ -1,6 +1,6 @@
 # Methodologie Voedingsgids / Pulse — migraine-as
 
-**Versie:** 0.3 concept (sectie 1-6)
+**Versie:** 0.4 concept (sectie 1-6 + bijlage A)
 **Datum:** 2026-05-23
 **Auteur:** Peter Wolterman
 **Status:** intern concept; niet voor externe deling tot v1.0
@@ -45,6 +45,9 @@ De doc is geschreven voor medisch-wetenschappelijke en regulatoire lezers die wi
 - [6. Versiebeheer en bronnen](#6-versiebeheer-en-bronnen)
   - [6.1 Versiebeheer en audit trail](#61-versiebeheer-en-audit-trail)
   - [6.2 Kernbronnen](#62-kernbronnen)
+- [Bijlage A. Twee uitgewerkte scoringsvoorbeelden](#bijlage-a-twee-uitgewerkte-scoringsvoorbeelden)
+  - [A.1 Spek (gerookt) — score 3](#a1-spek-gerookt--score-3)
+  - [A.2 Oude kaas (>48 maanden) — score 2](#a2-oude-kaas-48-maanden--score-2)
 
 ---
 
@@ -337,4 +340,38 @@ Onderstaande bronnen worden in deze methodologie-doc structureel aangehaald of l
 
 ---
 
-*[Einde concept sectie 1-6. Volledige migraine-as-methodologie gedekt; klaar voor inhoudelijke en juridische review vóór v1.0 / externe deling.]*
+## Bijlage A. Twee uitgewerkte scoringsvoorbeelden
+
+Ter illustratie van de methodologie van begin tot eind, twee items die bewust contrasteren: één dat de hoogste score *verdient*, en één klassieke "trigger" die bewust *lager* wordt gescoord. Samen tonen ze zowel dat het systeem naar score 3 gaat wanneer het bewijs dat draagt, als dat het de klassieke trigger-lijsten weerstaat wanneer dat niet zo is.
+
+### A.1 Spek (gerookt) — score 3
+
+| Stap | Uitkomst |
+|---|---|
+| **Item** | Gerookt spek (`nl-spek-gerookt`) |
+| **Cluster** | 7 — nitriet/NO-pathway |
+| **Mechanisme** | Nitriet (E250) → stikstofmonoxide via maagzuur en de enterosalivaire cyclus → vasodilatatie |
+| **Dosis-data** | Een portie van ~60 g levert ~7–15 mg nitriet |
+| **Toets** | Henderson & Raskin (1972) wekten in enteraal provocatieonderzoek migraine op bij ~10 mg nitriet. De voedingsdosis bereikt die drempel: dose-route-match. Gecureerd vlees boven de Henderson-drempel is één van de twee stofklassen op de score-3-whitelist (§3.1). |
+| **Resultaat** | **score 3** · evidence **B** · triggerType **`subgroep-bevestigd`** · confidence **middel** · modulatoren `nitriet`, `stikstofmonoxide`, `enterosalivaire-conversie` |
+| **Waarom geen evidence A** | De directe provocatie is een N=1-bevinding, nooit in een moderne RCT gerepliceerd → B, niet A (§2.2). |
+
+De score is hoog én de onzekerheid wordt eerlijk meegegeven: een sterke, dosis-onderbouwde associatie, maar gedragen door beperkte directe evidence.
+
+### A.2 Oude kaas (>48 maanden) — score 2
+
+| Stap | Uitkomst |
+|---|---|
+| **Item** | Oude Goudse kaas, >48 maanden (`nl-kaas-oud-48`) |
+| **Cluster** | 3 — gerijpte/gefermenteerde kazen, tyramine/MAO-A-pathway |
+| **Mechanisme** | Hoog tyramine-gehalte; klassiek geassocieerd met migraine via noradrenaline-release |
+| **Tegen-evidence** | Geblindeerde studies (Ziegler & Stewart 1977, Moffett 1972) tonen géén reproduceerbaar effect bij personen zónder MAO-remmers; tyramine wordt bij intacte MAO-functie in darmwand en lever geïnactiveerd |
+| **Toets** | Twee precedenten verlagen de score (§3.2, §4.3): geblindeerd bewijs verslaat klassieke trigger-lijsten, en mechanistisch inactivatie-inzicht verslaat historische associatie. Score 3 is daarom uitgesloten. De whitelist-3-floor houdt het item op score 2 (niet 1) als conservatieve default bij een historisch als trigger bekend product. |
+| **Resultaat** | **score 2** · evidence **B** · triggerType **`subgroep-overschat`** · confidence **middel** · modulator `tyramine` |
+| **Boodschap** | "Wordt vaak als trigger genoemd, maar het bredere bewijs ondersteunt dat niet; relevant vooral in een MAO-gevoelige subgroep." |
+
+Hetzelfde product dat op klassieke trigger-lijsten "rood" zou zijn, krijgt hier expliciet een lagere, beter onderbouwde score — met de reden zichtbaar voor de gebruiker.
+
+---
+
+*[Einde concept sectie 1-6 + bijlage A. Volledige migraine-as-methodologie gedekt; klaar voor inhoudelijke en juridische review vóór v1.0 / externe deling.]*
