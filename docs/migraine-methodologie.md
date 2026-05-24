@@ -11,7 +11,7 @@
 
 Voedingsgids (Pulse) is een Nederlandstalige, informatieve beslishulp — uitdrukkelijk **geen medisch hulpmiddel** — die voedingsmiddelen scoort op vier aandoeningen. Dit document beschrijft de methodologie voor de **migraine-as**. Elk voedingsmiddel krijgt een ordinale score van 0 tot 3, met een onafhankelijke evidence-grade (A/B/C) en, vanaf score 2, een verplichte classificatie van het triggermechanisme (`triggerType`).
 
-De methodologie is bewust terughoudend, passend bij de zwakke migraine-voedingsliteratuur. De hoogste score is gereserveerd voor een restrictieve whitelist (in de praktijk alleen alcohol en gecureerd vlees boven de nitrietdrempel — tien van de 631 items). Klassieke "triggers" als MSG, gerijpte kaas, rode wijn en chocolade worden bewust niet op score 3 gezet maar op 2, op grond van geblindeerde evidence boven observationele trigger-lijsten. Triggers worden gegroepeerd per mechanistisch pathway-cluster; clusters zonder sterk bewijs kennen een verlaagd score-plafond. Methodologische keuzes zijn vastgelegd als toetsbare paradigma-precedenten.
+De methodologie is bewust terughoudend, passend bij de zwakke migraine-voedingsliteratuur. De hoogste score is gereserveerd voor een restrictieve whitelist (in de praktijk alleen alcohol en gecureerd vlees boven de nitrietdrempel — tien van de 700 items). Klassieke "triggers" als MSG, gerijpte kaas, rode wijn en chocolade worden bewust niet op score 3 gezet maar op 2, op grond van geblindeerde evidence boven observationele trigger-lijsten. Triggers worden gegroepeerd per mechanistisch pathway-cluster; clusters zonder sterk bewijs kennen een verlaagd score-plafond. Methodologische keuzes zijn vastgelegd als toetsbare paradigma-precedenten.
 
 De doc is geschreven voor medisch-wetenschappelijke en regulatoire lezers die willen beoordelen of de scoring methodologisch verdedigbaar is.
 
@@ -90,7 +90,7 @@ Drie zaken die deze methodologie expliciet niet doet:
 
 2. **Geen volledig dieetadvies.** Het systeem scoort losse voedingsmiddelen. Het doet geen uitspraken over dieetcomposities, maaltijdfrequentie, of nutritionele adequaatheid. Een gebruiker die op basis van de scores producten elimineert, kan in nutritionele tekorten terechtkomen. Hiervoor wordt naar een diëtist verwezen.
 
-3. **Geen claim van volledigheid.** De huidige database bevat 631 voedingsmiddelen (per 2026-05-21). Producten die niet in de database staan, worden niet automatisch als "veilig" of "onveilig" beschouwd — ze zijn simpelweg nog niet gescoord.
+3. **Geen claim van volledigheid.** De huidige database bevat 700 voedingsmiddelen (per 2026-05-23, de vastgestelde cap). Producten die niet in de database staan, worden niet automatisch als "veilig" of "onveilig" beschouwd — ze zijn simpelweg nog niet gescoord.
 
 ---
 
@@ -105,7 +105,7 @@ Elk voedingsmiddel krijgt per aandoening een ordinale score van 0 tot 3. De scha
 | 0 | Geen significante associatie met migraine-trigger-status in de huidige literatuur. Producten in deze categorie worden door het systeem niet aangemerkt als aandachtspunt voor migraine-patiënten. |
 | 1 | Zwakke associatie. Mechanistische plausibility en/of beperkte observationele data; geen reproduceerbare trigger in algemene populatie. |
 | 2 | Matige associatie. Reproduceerbare trigger in welomschreven subgroep, of substantieel mechanistisch onderbouwd. In algemene populatie vaak overschat. |
-| 3 | Sterke associatie. Trigger met universeel of dosis-afhankelijk mechanisme dat in de algemene migraine-populatie reproduceerbaar effect heeft. |
+| 3 | Sterke associatie. Trigger met populatiebreed of dosis-afhankelijk mechanisme dat in de algemene migraine-populatie reproduceerbaar effect heeft. |
 
 De keuze voor vier niveaus in plaats van een continue schaal is bewust:
 - **Reproduceerbaarheid.** Een ordinale schaal met scherpe definities is consistenter te hanteren bij honderden items dan een continue 0-10 schaal.
@@ -128,7 +128,7 @@ Een vierde schemawaarde, `onbekend`, is geen evidence-grade in eigenlijke zin: d
 
 De evidence-grade is **onafhankelijk** van de score. Binnen de migraine-as komt dit bijvoorbeeld tot uiting in een item met score 1 + evidence B (zwakke trigger, redelijk onderbouwd) naast een item met score 3 + evidence B (sterke trigger, dezelfde bewijskwaliteit maar klinisch zwaarder wegend). Deze ontkoppeling is essentieel: de score zegt iets over de **klinische sterkte** van de trigger, de evidence-grade over de **wetenschappelijke onderbouwing**. (In andere assen dan migraine — waar wél grade A voorkomt, bv. jicht via de USDA Purine Database — kan de ontkoppeling scherper zijn: een zwakke maar sterk bewezen associatie, score 1 + evidence A.)
 
-In de huidige database (per 2026-05-21) is geen enkel **migraine-item** geclassificeerd als grade A; de migraine-as gebruikt uitsluitend grades B en C. Reden: directe RCT's met voedingsmiddel-interventie en migraine-aanval als primair endpoint zijn zeldzaam; de meeste literatuur is observationeel of mechanistisch. Dit is een eerlijke weerspiegeling van de staat van het veld, niet een tekortkoming van de methodologie. (Ter contrast: de jicht- en nierstenen-assen bevatten wél veel grade A-scores, omdat daar wel kwantitatieve referentiedatabases bestaan — USDA Purine Database 2.0 respectievelijk de Harvard Oxalate Table.)
+In de huidige database (per 2026-05-23) is geen enkel **migraine-item** geclassificeerd als grade A; de migraine-as gebruikt uitsluitend grades B en C. Reden: directe RCT's met voedingsmiddel-interventie en migraine-aanval als primair endpoint zijn zeldzaam; de meeste literatuur is observationeel of mechanistisch. Dit is een eerlijke weerspiegeling van de staat van het veld, niet een tekortkoming van de methodologie. (Ter contrast: de jicht- en nierstenen-assen bevatten wél veel grade A-scores, omdat daar wel kwantitatieve referentiedatabases bestaan — USDA Purine Database 2.0 respectievelijk de Harvard Oxalate Table.)
 
 ### 2.3 Confidence
 
@@ -163,20 +163,20 @@ De algemene scoring-principes uit sectie 2 gelden voor alle vier aandoeningen. D
 
 ### 3.1 Het score-3-principe: een restrictieve whitelist
 
-Score 3 is op de migraine-as bewust zeldzaam. Van de 631 gescoorde items dragen er **tien** een migraine-score 3 (1,6%). De score-verdeling per 2026-05-21:
+Score 3 is op de migraine-as bewust zeldzaam. Van de 700 gescoorde items dragen er **tien** een migraine-score 3 (1,4%). De score-verdeling per 2026-05-23:
 
 | Score | Aantal items |
 |---|---|
-| 0 | 456 |
-| 1 | 90 |
-| 2 | 75 |
+| 0 | 476 |
+| 1 | 119 |
+| 2 | 95 |
 | 3 | 10 |
 
 De reden voor deze terughoudendheid is principieel. De migraine-voedingsliteratuur is methodologisch zwak: de meeste "triggers" berusten op zelfrapportage en cross-sectioneel onderzoek, en moderne geblindeerde studies reproduceren het effect zelden in de algemene populatie. Een score die "sterke, in de algemene populatie reproduceerbare associatie" claimt, mag daarom niet lichtvaardig worden toegekend.
 
-Concreet wordt score 3 gereserveerd voor stoffen waarvan het mechanisme **universeel** is (werkt op iedere migraine-patiënt bij voldoende dosis) **of dosis-afhankelijk** met een drempel die via normale voeding daadwerkelijk bereikt wordt. Slechts twee stofklassen voldoen hieraan, en zij vormen samen de volledige score-3-populatie:
+Concreet wordt score 3 gereserveerd voor stoffen waarvan het mechanisme **populatiebreed** is (reproduceerbaar over brede populaties bij voldoende dosis, niet gebonden aan een geïdentificeerde subgroep — géén claim dat iedere patiënt reageert) **of dosis-afhankelijk** met een drempel die via normale voeding daadwerkelijk bereikt wordt. Slechts twee stofklassen voldoen hieraan, en zij vormen samen de volledige score-3-populatie:
 
-1. **Alcoholische dranken** (bier in alle varianten, gedistilleerd, sterke wijn) — zes items, mechanisme `universeel`. De trigger is het ethanol-mechanisme zelf (directe vasodilatatie, CGRP-release, mestcel-degranulatie), dat dosis-afhankelijk bij vrijwel iedere patiënt optreedt en niet beperkt is tot een subgroep.
+1. **Alcoholische dranken** (bier in alle varianten, gedistilleerd, sterke wijn) — zes items, mechanisme `populatiebreed`. De trigger is het ethanol-mechanisme zelf (directe vasodilatatie, CGRP-release, mestcel-degranulatie), dat dosis-afhankelijk over brede populaties optreedt en niet beperkt is tot een geïdentificeerde subgroep.
 2. **Gecureerd vlees boven de Henderson-nitrietdrempel** (spek/bacon, gerookte/gecureerde worst) — vier items, mechanisme `subgroep-bevestigd`. Een typische portie bereikt ≥10 mg nitriet, de dosis waarbij Henderson & Raskin (1972) in direct enteraal provocatieonderzoek migraine opwekten. De dose-route-match rechtvaardigt de hoogste score, ook al rust de directe evidence op een kleine n.
 
 Een nieuw item kan alleen score 3 krijgen als het op deze whitelist past; dit wordt geautomatiseerd bewaakt. Daarbij geldt een ondergrens voor de bewijskwaliteit: score 3 vereist evidence-grade ≥ B.
@@ -200,7 +200,7 @@ Elke migraine-score van 2 of hoger draagt een `triggerType`: een classificatie v
 
 | Waarde | Betekenis |
 |---|---|
-| `universeel` | Mechanisme werkt op iedere patiënt bij voldoende dosis; direct farmacologisch, geen subgroep-afhankelijkheid. |
+| `populatiebreed` | Mechanisme reproduceerbaar over brede populaties bij voldoende dosis; niet gebonden aan een geïdentificeerde subgroep; direct farmacologisch. Claimt géén reactie bij iedere patiënt — wel afwezigheid van een subgroep-grens. |
 | `dosis-afhankelijk` | Effect treedt op boven een specifieke dosisdrempel; daaronder niet. |
 | `subgroep-bevestigd` | Reproduceerbaar effect in een welomschreven subgroep, gedefinieerd door een duidelijke biologische factor (bv. enzymdeficiëntie). |
 | `subgroep-overschat` | Effect bestaat alleen in een subgroep en wordt in de algemene populatie overschat: hoge zelf-rapportage, lage geblindeerde reproduceerbaarheid. |
