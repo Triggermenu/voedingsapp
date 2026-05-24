@@ -7,20 +7,25 @@ const RETRIES = 2 // totaal aantal pogingen = RETRIES + 1
 const RETRY_BACKOFF_MS = 1_000
 
 /**
- * Hosts die geldig zijn maar onbetrouwbaar reageren vanaf CI-IP's
- * (bot-blocking, geo-filtering, flaky servers). Bij een NETWERKFOUT
- * (timeout / connection refused) — dus géén echt HTTP-antwoord — worden
- * deze hosts soft-passed met een waarschuwing i.p.v. de build te laten falen.
+ * Bron-URL-bereikbaarheid (CLAUDE.md §4.1, gate 4).
  *
- * Belangrijk: een echt HTTP-antwoord (bv. 404 = URL verplaatst) faalt nog
- * steeds. Soft-pass geldt uitsluitend voor netwerkfouten, zodat de gate
- * dode links blijft detecteren.
+ * Deze gate draait tegen externe academische/overheidshosts (USDA, Harvard, PMC,
+ * SIGHI, EULAR, …) die vanaf CI-IP's regelmatig rate-limiten, bots blokkeren of
+ * timeouten. Om de gate betrouwbaar genoeg te maken om als *required* status check
+ * te dienen (zodat auto-merge er écht op wacht), faalt hij UITSLUITEND op een
+ * definitief "dode link"-signaal:
  *
- * - mastzellaktivierung.info → SIGHI Food Compatibility List (licentie pending,
- *   zie CLAUDE.md §2.4 / RISKS.md). Host timeout't intermitterend vanaf GitHub
- *   Actions; mirroren mag niet vanwege de licentiestatus.
+ *   - HARD FAIL → HTTP 404 / 410: de resource bestaat echt niet (meer).
+ *   - SOFT PASS → alles wat niet-definitief is: netwerkfout/timeout (na retries),
+ *                 401/403/405 (auth-/bot-/HEAD-blokkade), 429 (rate-limit), 5xx
+ *                 (tijdelijke serverfout). Geeft een ⚠ waarschuwing, faalt niet.
+ *   - OK        → 2xx/3xx.
+ *
+ * Zo blijft de gate verkeerde/verdwenen links detecteren zonder op transiente
+ * netwerkproblemen te flakeren. Soft-passes worden geprint zodat ze zichtbaar
+ * blijven voor handmatige controle.
  */
-const FLAKY_HOSTS = ['mastzellaktivierung.info']
+const DEAD_STATUSES = new Set([404, 410])
 
 type CheckResult = { ok: boolean; soft: boolean; reason?: string }
 const CACHE: Record<string, CheckResult> = {}
@@ -28,16 +33,6 @@ const CACHE: Record<string, CheckResult> = {}
 let checked = 0
 let failed = 0
 let softPassed = 0
-
-function isFlakyHost(url: string): boolean {
-  let host: string
-  try {
-    host = new URL(url).hostname.replace(/^www\./, '')
-  } catch {
-    return false
-  }
-  return FLAKY_HOSTS.some((h) => host === h || host.endsWith(`.${h}`))
-}
 
 async function checkUrl(url: string): Promise<CheckResult> {
   if (url in CACHE) return CACHE[url]
@@ -50,10 +45,17 @@ async function checkUrl(url: string): Promise<CheckResult> {
       const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
       const res = await fetch(url, { method: 'HEAD', signal: controller.signal, redirect: 'follow' })
       clearTimeout(timer)
-      // Definitief HTTP-antwoord ontvangen. 403/405 = server blokkeert bots/HEAD,
-      // maar de URL bestaat. Elke andere >=400 is een echte fout (bv. 404 verplaatst).
-      const ok = res.status < 400 || res.status === 403 || res.status === 405
-      const result: CheckResult = { ok, soft: false, reason: ok ? undefined : `HTTP ${res.status}` }
+
+      let result: CheckResult
+      if (res.status < 400) {
+        result = { ok: true, soft: false }
+      } else if (DEAD_STATUSES.has(res.status)) {
+        // Definitief dode link — de enige harde faalconditie.
+        result = { ok: false, soft: false, reason: `HTTP ${res.status}` }
+      } else {
+        // 401/403/405/429/5xx: bestaat, maar het antwoord is niet-definitief.
+        result = { ok: true, soft: true, reason: `HTTP ${res.status} (niet-definitief)` }
+      }
       CACHE[url] = result
       return result
     } catch (e) {
@@ -65,10 +67,8 @@ async function checkUrl(url: string): Promise<CheckResult> {
     }
   }
 
-  // Alle pogingen faalden op netwerkniveau (nooit een HTTP-antwoord gekregen).
-  const result: CheckResult = isFlakyHost(url)
-    ? { ok: true, soft: true, reason: lastError }
-    : { ok: false, soft: false, reason: lastError }
+  // Nooit een HTTP-antwoord gekregen (timeout/connection refused/DNS) → niet-definitief.
+  const result: CheckResult = { ok: true, soft: true, reason: `netwerkfout: ${lastError}` }
   CACHE[url] = result
   return result
 }
@@ -100,11 +100,11 @@ const results = await Promise.allSettled(
     const { ok, soft, reason } = await checkUrl(url)
     if (!ok) {
       failed++
-      console.error(`  ✗ Onbereikbaar: ${url}${reason ? ` (${reason})` : ''}`)
+      console.error(`  ✗ Dode link: ${url}${reason ? ` (${reason})` : ''}`)
       console.error(`    Gebruikt in: ${urlMap[url].slice(0, 3).join(', ')}`)
     } else if (soft) {
       softPassed++
-      console.warn(`  ⚠ Soft-pass (bekende onbetrouwbare host): ${url}${reason ? ` (${reason})` : ''}`)
+      console.warn(`  ⚠ Soft-pass (niet-definitief): ${url}${reason ? ` (${reason})` : ''}`)
     }
     return ok
   })
@@ -112,13 +112,13 @@ const results = await Promise.allSettled(
 
 console.log(`\nGecontroleerd: ${checked} URLs`)
 if (softPassed > 0) {
-  console.warn(`⚠ ${softPassed} URL${softPassed !== 1 ? 's' : ''} soft-passed (flaky host, netwerkfout genegeerd)`)
+  console.warn(`⚠ ${softPassed} URL${softPassed !== 1 ? 's' : ''} soft-passed (niet-definitief — handmatig nakijken aangeraden)`)
 }
 if (failed > 0) {
-  console.error(`✗ ${failed} URL${failed !== 1 ? 's' : ''} onbereikbaar`)
+  console.error(`✗ ${failed} dode link${failed !== 1 ? 's' : ''} (HTTP 404/410)`)
   process.exit(1)
 } else {
-  console.log(`✓ Alle URLs bereikbaar`)
+  console.log(`✓ Geen dode links`)
 }
 
 void results
