@@ -141,7 +141,7 @@ export function Instellingen() {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div>
                 <div className="serif" style={{ fontSize: 18, fontWeight: 500, color: 'var(--ink)' }}>
-                  {viewedItems.length} items bekeken
+                  {viewedItems.length} {viewedItems.length === 1 ? 'item' : 'items'} bekeken
                 </div>
                 <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2 }}>
                   {scoreCounts.veilig} veilig · {scoreCounts.matig} matig · {scoreCounts.vermijden} vermijden
