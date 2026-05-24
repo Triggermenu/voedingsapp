@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
-import { getProfile } from '@/lib/profile'
+import { Link } from 'react-router-dom'
+import { getProfile, hasAcceptedScanConsent, acceptScanConsent } from '@/lib/profile'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
 import type { Condition } from '@/schemas/item'
@@ -37,6 +38,34 @@ function ScorePill({ score }: { score: number }) {
   )
 }
 
+// Aparte, uitdrukkelijke toestemming voor de menuscan (gezondheidsgegevens →
+// Vercel + Anthropic). Los van de medische disclaimer uit de onboarding — A-7 / R-007.
+function ScanConsentGate({ onAccept }: { onAccept: () => void }) {
+  return (
+    <div className="bg-white border border-[#e0dfd7] rounded-xl p-5 space-y-3">
+      <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold">Eenmalige toestemming</p>
+      <h2 className="font-serif text-lg font-semibold text-[#1a1a18] leading-snug">
+        Voor de menuscan verwerken we gezondheidsgegevens
+      </h2>
+      <ul className="text-xs text-[#73726c] leading-relaxed space-y-1.5 list-disc pl-4">
+        <li>Je foto van de menukaart en je gekozen aandoening(en) gaan naar onze server (Vercel, EU) en naar Anthropic (AI-analyse, VS).</li>
+        <li>De foto wordt <strong>niet opgeslagen</strong> en na de analyse niet bewaard.</li>
+        <li>Verwerking gebeurt op basis van jouw uitdrukkelijke toestemming; je hoeft geen account te maken.</li>
+      </ul>
+      <p className="text-xs text-[#73726c]">
+        Meer details in de{' '}
+        <Link to="/privacy" className="text-[#1d9e75] font-medium underline">privacyverklaring</Link>.
+      </p>
+      <button
+        onClick={onAccept}
+        className="w-full bg-[#1d9e75] hover:bg-[#178a65] text-white font-medium py-3 rounded-xl transition-colors"
+      >
+        Ik geef toestemming en ga verder
+      </button>
+    </div>
+  )
+}
+
 export function Scan() {
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
@@ -48,9 +77,12 @@ export function Scan() {
   const [phase2Loading, setPhase2Loading] = useState(false)
   const [error, setError] = useState('')
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
+  const [scanConsent, setScanConsent] = useState(hasAcceptedScanConsent())
   const fileRef = useRef<HTMLInputElement>(null)
 
   const handleFile = (file: File) => {
+    // Geef de vorige object-URL vrij — de foto wordt niet langer dan nodig bewaard.
+    if (preview) URL.revokeObjectURL(preview)
     setImageFile(file)
     setPreview(URL.createObjectURL(file))
     setResults(null)
@@ -120,6 +152,7 @@ export function Scan() {
   }
 
   const reset = () => {
+    if (preview) URL.revokeObjectURL(preview)
     setPreview(null)
     setImageFile(null)
     setResults(null)
@@ -147,8 +180,13 @@ export function Scan() {
 
       <div className="px-4 py-4 space-y-4">
 
+        {/* Toestemming menuscan — los van de medische disclaimer (A-7 / R-007) */}
+        {!scanConsent && (
+          <ScanConsentGate onAccept={() => { acceptScanConsent(); setScanConsent(true) }} />
+        )}
+
         {/* Image upload */}
-        {!results && (
+        {scanConsent && !results && (
           <div
             className="bg-white border-2 border-dashed border-[#e0dfd7] rounded-xl overflow-hidden cursor-pointer hover:border-[#1d9e75] transition-colors"
             onClick={() => fileRef.current?.click()}

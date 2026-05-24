@@ -106,6 +106,7 @@
 | **Mitigatie** | 1) Privacyverklaring (NL) vóór launch. 2) Aparte uitdrukkelijke toestemming voor menuscan, los van de medische disclaimer. 3) Verwerkersovereenkomsten met Vercel, Anthropic, Sentry, Supabase (en Resend bij accounts). 4) Anthropic Zero Data Retention aanzetten. 5) Sentry-scrubbing: geen foto/aandoening in error logs. 6) Supabase + Vercel in EU-regio. 7) Dataminimalisatie: foto niet bewaren na scan. 8) Bij accounts: DPIA + betrokkenenrechten (inzage/export/verwijdering) + leeftijdscheck (16+). 9) Datalek-meldprocedure (72u → Autoriteit Persoonsgegevens). |
 | **Eigenaar** | Peter (juridisch: privacyverklaring, DPA's, evt. jurist-consult) + Claude Code (technische maatregelen) |
 | **Deadline** | Basismaatregelen vóór publieke launch; DPIA + rechten vóór accounts live |
+| **Voortgang (technisch, 2026-05-24)** | ✅ Mitigatie 2 (aparte menuscan-consent vóór scan, `ScanConsentGate`), 5 (Sentry-scrubbing: replay `maskAllText`/`blockAllMedia` + `beforeSend` strip request-data/menuscan-breadcrumb), 7 (foto niet server-side bewaard — passthrough; client revoke object-URL), en deels 6 (Vercel-functies gepind op `fra1`/Frankfurt). **Nog open (Peter):** 1 privacyverklaring-tekst, 3 DPA's, 4 Anthropic ZDR, 6 Supabase EU-regio, 9 datalek-procedure. |
 | **Tracking** | acties-peter.md A-7 |
 
 ---

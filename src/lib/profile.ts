@@ -3,6 +3,10 @@ import { CONDITIONS } from '@/schemas/item'
 
 const PROFILE_KEY = 'voedingsapp_profile_v1'
 const DISCLAIMER_KEY = 'voedingsapp_disclaimer_v1'
+// Aparte, uitdrukkelijke toestemming voor de menuscan — los van de medische
+// disclaimer (RISKS.md R-007 / acties-peter.md A-7). De scan verwerkt
+// gezondheidsgegevens (gekozen aandoeningen + foto) naar Vercel en Anthropic.
+const SCAN_CONSENT_KEY = 'voedingsapp_scan_consent_v1'
 
 export interface Profile {
   conditions: Condition[]
@@ -39,7 +43,20 @@ export function acceptDisclaimer(): void {
   localStorage.setItem(DISCLAIMER_KEY, 'true')
 }
 
+export function hasAcceptedScanConsent(): boolean {
+  return localStorage.getItem(SCAN_CONSENT_KEY) === 'true'
+}
+
+export function acceptScanConsent(): void {
+  localStorage.setItem(SCAN_CONSENT_KEY, 'true')
+}
+
+export function revokeScanConsent(): void {
+  localStorage.removeItem(SCAN_CONSENT_KEY)
+}
+
 export function clearProfile(): void {
   localStorage.removeItem(PROFILE_KEY)
   localStorage.removeItem(DISCLAIMER_KEY)
+  localStorage.removeItem(SCAN_CONSENT_KEY)
 }
