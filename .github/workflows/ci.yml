@@ -58,7 +58,13 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+          cache: 'npm'
+
       - name: Squash-merge bij trusted author (CI is groen)
+        id: merge
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -67,6 +73,23 @@ jobs:
           if jq -e --arg a "$PR_AUTHOR" '.authors | index($a)' trusted-authors.json > /dev/null; then
             echo "✓ $PR_AUTHOR is trusted en CI is groen — squash-merge."
             gh pr merge --squash --delete-branch "$PR_NUMBER"
+            echo "merged=true" >> "$GITHUB_OUTPUT"
           else
             echo "ℹ $PR_AUTHOR niet in trusted-authors.json — handmatige merge vereist."
+            echo "merged=false" >> "$GITHUB_OUTPUT"
           fi
+
+      # Deploy de zojuist gemergede main direct naar productie. Nodig omdat een
+      # GITHUB_TOKEN-merge geen push-workflows (deploy.yml) triggert; zo blijft
+      # "gemerged" == "live" zonder PAT — met de Vercel-secrets die al bestaan.
+      - name: Deploy naar Vercel (productie) na merge
+        if: steps.merge.outputs.merged == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          git fetch origin main
+          git checkout -f FETCH_HEAD
+          npm ci
+          npx vercel deploy --prod --token="$VERCEL_TOKEN" --yes
