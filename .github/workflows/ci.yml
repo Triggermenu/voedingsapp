@@ -44,3 +44,29 @@ jobs:
 
       - name: E2E tests
         run: npm run test:e2e -- --project=chromium
+
+  # Auto-merge gate: draait UITSLUITEND als de `ci`-job (alle 16 gates) is geslaagd
+  # — `needs: ci`. Vervangt branch protection (niet beschikbaar zonder repo-admin):
+  # een PR van een trusted author merget pas ná groene CI. CLAUDE.md §4.6.
+  auto-merge:
+    needs: ci
+    if: github.event_name == 'pull_request' && github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Squash-merge bij trusted author (CI is groen)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          if jq -e --arg a "$PR_AUTHOR" '.authors | index($a)' trusted-authors.json > /dev/null; then
+            echo "✓ $PR_AUTHOR is trusted en CI is groen — squash-merge."
+            gh pr merge --squash --delete-branch "$PR_NUMBER"
+          else
+            echo "ℹ $PR_AUTHOR niet in trusted-authors.json — handmatige merge vereist."
+          fi
