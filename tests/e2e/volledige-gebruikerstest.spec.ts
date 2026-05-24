@@ -15,6 +15,13 @@ import { test, expect, type Page } from '@playwright/test'
 const MOBILE = { width: 390, height: 844 }
 const DESKTOP = { width: 1440, height: 900 }
 
+// Chrome-gerichte gebruikerstest: overslaan op andere engines (bv. het
+// Mobile-Safari/WebKit CI-project), waar de canvas-scanpipeline anders reageert.
+// De kern-flows worden cross-engine al gedekt door de overige e2e-specs.
+test.beforeEach(({ browserName }) => {
+  test.skip(browserName !== 'chromium', 'Chrome-gerichte gebruikerstest (alleen chromium)')
+})
+
 // Profiel + disclaimer vooraf zetten (slaat onboarding over voor losse tests).
 async function seedProfile(page: Page, conditions: string[]) {
   await page.addInitScript((conds) => {
