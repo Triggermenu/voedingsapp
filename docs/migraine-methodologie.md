@@ -1,9 +1,9 @@
 # Methodologie Voedingsgids / Pulse — migraine-as
 
-**Versie:** 0.4 concept (sectie 1-6 + bijlage A)
+**Versie:** 1.0 (migraine-as — sectie 1-6 + bijlage A)
 **Datum:** 2026-05-23
 **Auteur:** Peter Wolterman
-**Status:** intern concept; niet voor externe deling tot v1.0
+**Status:** v1.0 — vrijgegeven voor deling met medische/regulatoire lezers. Dekt uitsluitend de migraine-as; jicht, nierstenen en histamine volgen als aparte delen.
 
 ---
 
@@ -374,4 +374,4 @@ Hetzelfde product dat op klassieke trigger-lijsten "rood" zou zijn, krijgt hier 
 
 ---
 
-*[Einde concept sectie 1-6 + bijlage A. Volledige migraine-as-methodologie gedekt; klaar voor inhoudelijke en juridische review vóór v1.0 / externe deling.]*
+*[v1.0 — migraine-as-methodologie (sectie 1-6 + bijlage A) compleet. Jicht, nierstenen en histamine volgen als aparte delen.]*
