@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { getItemById, getAlternatives } from '@/lib/db'
 import { getCombinedScore } from '@/lib/scoring'
 import { recordView } from '@/lib/stats'
+import { isInList, toggleList } from '@/lib/list'
 import type { Condition } from '@/schemas/item'
 
 // ── Constants ────────────────────────────────────────────────────────────────
@@ -92,10 +93,12 @@ interface Props {
 export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNavigate }: Props) {
   const item = getItemById(id)
   const [expandedCond, setExpandedCond] = useState<string | null>(null)
+  const [saved, setSaved] = useState(() => isInList(id))
 
   useEffect(() => {
     if (id) recordView(id)
     setExpandedCond(null)
+    setSaved(isInList(id))
   }, [id])
 
   if (!item) return null
@@ -124,11 +127,30 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
       </h1>
 
       {/* 4 CondCell blocks */}
-      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${conditions.length}, 1fr)`, gap: 6, marginBottom: 16 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(${conditions.length}, 1fr)`, gap: 6, marginBottom: 12 }}>
         {conditions.map((c) => (
           <CondCell key={c} status={scoreToStatus(item.scores[c]?.score ?? null)} label={COND_SHORT[c]} />
         ))}
       </div>
+
+      {/* Op-lijstje-knop — kernactie, prominent onder de stoplichten */}
+      <button
+        onClick={() => setSaved(toggleList(item.id))}
+        aria-pressed={saved}
+        style={{
+          width: '100%', padding: '11px 14px', borderRadius: 10, marginBottom: 16,
+          border: saved ? '1px solid var(--rule)' : 'none',
+          background: saved ? 'var(--paper-2)' : 'var(--brand)',
+          color: saved ? 'var(--ink-soft)' : '#fff',
+          fontSize: 14, fontWeight: 600, fontFamily: 'inherit', cursor: 'pointer',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 7,
+        }}
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill={saved ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.29 1.51 4.04 3 5.5l7 7z" />
+        </svg>
+        {saved ? 'Op je lijstje ✓' : 'Op lijstje zetten'}
+      </button>
 
       {/* Conflict / summary banner */}
       {combined.conflict && (

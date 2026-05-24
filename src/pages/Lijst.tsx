@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { getList, clearList } from '@/lib/list'
+import { getList, clearList, toggleList } from '@/lib/list'
 import { getItemById } from '@/lib/db'
 import { getCombinedScore } from '@/lib/scoring'
 import { getProfile } from '@/lib/profile'
@@ -64,6 +64,16 @@ export function Lijst() {
       setIds([])
       setChecked(new Set())
     }
+  }
+
+  const handleRemove = (id: string) => {
+    toggleList(id) // staat in de lijst → verwijdert
+    setIds(getList())
+    setChecked((prev) => {
+      const next = new Set(prev)
+      next.delete(id)
+      return next
+    })
   }
 
   // Groepeer op categorie, binnen elke groep: afgevinkt onderaan
@@ -204,6 +214,20 @@ export function Lijst() {
                           ))}
                         </div>
                       )}
+
+                      <button
+                        onClick={() => handleRemove(item.id)}
+                        aria-label="Verwijder van lijstje"
+                        style={{
+                          flexShrink: 0, width: 28, height: 28, borderRadius: 6,
+                          background: 'none', border: 'none', cursor: 'pointer',
+                          color: 'var(--muted)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        }}
+                      >
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                          <path d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
                     </div>
                   )
                 })}

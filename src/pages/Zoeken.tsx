@@ -564,6 +564,8 @@ export function Zoeken() {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="Zoek voedingsmiddel…"
+                  // Autofocus alleen op desktop — op mobiel zou dit meteen het toetsenbord openen.
+                  autoFocus
                   style={{ flex: 1, background: 'none', border: 'none', outline: 'none', fontSize: 13, color: 'var(--ink)', fontFamily: 'inherit' }}
                 />
               </div>

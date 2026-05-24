@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import type { Condition } from '@/schemas/item'
 import { CONDITIONS } from '@/schemas/item'
 import { saveProfile, acceptDisclaimer } from '@/lib/profile'
+import { getAllItems } from '@/lib/db'
 import { Logo } from '@/components/Logo'
 
 // ── Condition metadata ──────────────────────────────────────────────────────
@@ -60,6 +61,7 @@ function PhoneShell({ children, stepLabel }: { children: React.ReactNode; stepLa
 
 // ── Step 1: Welkom (OnbMedisch) ────────────────────────────────────────────
 function StepWelkom({ onNext }: { onNext: () => void }) {
+  const itemCount = getAllItems().length
   return (
     <PhoneShell stepLabel="01 — Triggermenu">
       {/* Hero */}
@@ -109,7 +111,7 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
       {/* Feature list */}
       <div className="px-[26px] pt-6 flex-1">
         {[
-          { t: 'Zoek 300+ voedingsmiddelen',  d: 'Producten, ingrediënten en bereidingen — rauw, gekookt, gebakken.' },
+          { t: `Zoek ${itemCount} voedingsmiddelen`,  d: 'Producten, ingrediënten en bereidingen — rauw, gekookt, gebakken.' },
           { t: 'Eén stoplicht per aandoening', d: 'Veilig · Matig · Voorzichtig · Vermijden. Op één rij zichtbaar.' },
           { t: 'Met bron en evidence-niveau',  d: 'USDA, SIGHI, EULAR. Iedere score linkt naar de gebruikte studie.' },
         ].map((it, i, a) => (
