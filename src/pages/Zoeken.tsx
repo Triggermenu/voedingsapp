@@ -460,7 +460,7 @@ export function Zoeken() {
               cursor: 'pointer', fontFamily: 'inherit',
             }}
           >
-            ✓ Alleen veilig
+            ✓ Alles groen
           </button>
 
           <button
@@ -603,7 +603,7 @@ export function Zoeken() {
                 )}
               </div>
               <div style={{ marginTop: 10, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                {/* Alleen veilig */}
+                {/* Alles groen */}
                 <span
                   onClick={() => setOnlySafe((v) => {
                     const next = !v
@@ -618,7 +618,7 @@ export function Zoeken() {
                     fontWeight: onlySafe ? 500 : 400,
                   }}
                 >
-                  {onlySafe ? '✓ Alleen veilig' : 'Alleen veilig'}
+                  {onlySafe ? '✓ Alles groen' : 'Alles groen'}
                 </span>
                 {/* Categorieën */}
                 {['Alle', ...availableCategories].map((c) => {
