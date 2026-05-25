@@ -273,7 +273,14 @@ export function Zoeken() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const [recentSearches, setRecentSearches] = useState<string[]>(() => {
-    try { return JSON.parse(localStorage.getItem('recent-searches') ?? '[]') } catch { return [] }
+    try {
+      const raw: unknown = JSON.parse(localStorage.getItem('recent-searches') ?? '[]')
+      if (!Array.isArray(raw)) return []
+      // Saneer bestaande opgeslagen termen: filter lege strings, kap af op 30 tekens
+      return (raw as unknown[])
+        .filter((s): s is string => typeof s === 'string' && s.length > 0)
+        .map((s) => s.slice(0, 30))
+    } catch { return [] }
   })
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
@@ -284,7 +291,8 @@ export function Zoeken() {
     if (query.length < 2) return
     const t = setTimeout(() => {
       setRecentSearches((prev) => {
-        const next = [query, ...prev.filter((q) => q.toLowerCase() !== query.toLowerCase())].slice(0, 5)
+        const trimmed = query.slice(0, 30)
+        const next = [trimmed, ...prev.filter((q) => q.toLowerCase() !== trimmed.toLowerCase())].slice(0, 5)
         localStorage.setItem('recent-searches', JSON.stringify(next))
         return next
       })
@@ -417,12 +425,13 @@ export function Zoeken() {
                 background: 'transparent', color: 'var(--ink-soft)',
                 border: '1px dashed var(--rule)', cursor: 'pointer', fontFamily: 'inherit',
                 display: 'flex', alignItems: 'center', gap: 5,
+                maxWidth: 180, overflow: 'hidden',
               }}
             >
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" style={{ flexShrink: 0 }}>
                 <polyline points="12 8 12 12 14 14" /><circle cx="12" cy="12" r="9" />
               </svg>
-              {s}
+              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s}</span>
             </button>
           ))}
         </div>
