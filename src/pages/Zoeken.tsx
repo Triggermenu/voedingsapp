@@ -391,6 +391,7 @@ export function Zoeken() {
           }}
           autoComplete="off"
           autoCorrect="off"
+          maxLength={100}
         />
         {query && (
           <button
@@ -489,7 +490,7 @@ export function Zoeken() {
 
       {filteredResults.length === 0 && (query || activeCategories.size > 0) && (
         <div style={{ textAlign: 'center', padding: '64px 16px', color: 'var(--ink-soft)' }}>
-          <p style={{ fontWeight: 500, color: 'var(--ink)' }}>
+          <p style={{ fontWeight: 500, color: 'var(--ink)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             {query ? `Geen resultaten voor "${query}"` : 'Geen items in geselecteerde categorieën'}
           </p>
           <p style={{ fontSize: 13, marginTop: 4 }}>Probeer een andere zoekterm of filter.</p>
@@ -660,9 +661,7 @@ export function Zoeken() {
   // ── Mobile ──────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
-      <div className="sticky top-0">
-        {SearchHeader}
-      </div>
+      {SearchHeader}
 
       {ListContent}
 

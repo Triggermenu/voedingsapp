@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { Condition } from '@/schemas/item'
 import { CONDITIONS } from '@/schemas/item'
-import { saveProfile, acceptDisclaimer } from '@/lib/profile'
+import { getProfile, saveProfile, acceptDisclaimer } from '@/lib/profile'
 import { getAllItems } from '@/lib/db'
 import { Logo } from '@/components/Logo'
 
@@ -339,7 +339,7 @@ function StepDisclaimer({
 export function Onboarding() {
   const navigate = useNavigate()
   const [step, setStep] = useState(0)
-  const [selected, setSelected] = useState<Condition[]>([])
+  const [selected, setSelected] = useState<Condition[]>(() => getProfile()?.conditions ?? [])
   const [disclaimerChecked, setDisclaimerChecked] = useState(false)
   const [error, setError] = useState('')
 
