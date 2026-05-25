@@ -269,7 +269,9 @@ export function Zoeken() {
   const isDesktop = useMediaQuery('(min-width: 1280px)')
   const [query, setQuery] = useState('')
   const [activeCategories, setActiveCategories] = useState<Set<Category>>(new Set())
-  const [onlySafe, setOnlySafe] = useState(false)
+  const [onlySafe, setOnlySafe] = useState(() =>
+    localStorage.getItem('zoeken-only-safe') === 'true'
+  )
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const [recentSearches, setRecentSearches] = useState<string[]>(() => {
@@ -445,7 +447,11 @@ export function Zoeken() {
         }}>
           {/* Veilig-filter chip */}
           <button
-            onClick={() => setOnlySafe((v) => !v)}
+            onClick={() => setOnlySafe((v) => {
+                const next = !v
+                localStorage.setItem('zoeken-only-safe', String(next))
+                return next
+              })}
             style={{
               flexShrink: 0, padding: '5px 11px', borderRadius: 999, fontSize: 12.5, fontWeight: 500,
               background: onlySafe ? 'var(--safe)' : 'transparent',
