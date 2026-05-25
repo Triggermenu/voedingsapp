@@ -83,7 +83,7 @@ export function Recepten() {
       {/* Header */}
       <div className="sticky top-0 bg-[#f8f7f4] border-b border-[#e0dfd7] z-10 px-4 pt-safe pt-4 pb-3">
         <div className="flex items-center gap-2 mb-3">
-          <Logo size={28} />
+          <Logo size={28} to="/zoeken" />
           <div>
             <h1 className="text-base font-semibold text-[#1a1a18] leading-tight">Recept checken</h1>
             <p className="text-[10px] text-[#9c9a92] leading-tight">Voeg ingrediënten toe en zie het totaalplaatje</p>

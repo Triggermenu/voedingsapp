@@ -360,7 +360,7 @@ export function Zoeken() {
       className="sticky top-0 z-10 px-5 pt-safe pt-4 pb-3"
     >
       <div className="flex items-center justify-between mb-3">
-        <Logo size={18} />
+        <Logo size={18} to="/zoeken" />
         <div className="flex items-center gap-2">
           {isDesktop && conditions.length > 0 && (
             <span className="mono" style={{ fontSize: 11, color: 'var(--muted)' }}>
@@ -543,7 +543,7 @@ export function Zoeken() {
       <div style={{ height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg)' }}>
         {/* Desktop header — alleen logo + profiel-context */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 32px', borderBottom: '1px solid var(--rule)', flexShrink: 0 }}>
-          <Logo size={20} />
+          <Logo size={20} to="/zoeken" />
           {conditions.length > 0 && (
             <span className="mono" style={{ fontSize: 11, color: 'var(--muted)' }}>
               {conditions.map((c) => COND_SHORT[c]).join(' · ')}

@@ -96,7 +96,7 @@ export function Lijst() {
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
       {/* Header */}
       <div style={{ padding: '8px 22px 0' }} className="pt-safe">
-        <Logo size={18} />
+        <Logo size={18} to="/zoeken" />
       </div>
       <div style={{ padding: '18px 22px 8px' }}>
         <div className="eyebrow" style={{ marginBottom: 8 }}>Mijn lijstje</div>

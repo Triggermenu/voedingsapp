@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom'
+
 interface Props {
   size?: number
   className?: string
+  to?: string
 }
 
 // Brand mark — rounded square with editorial T-shape + ochre accent dot
@@ -14,10 +17,10 @@ function Mark({ size = 32 }: { size: number }) {
   )
 }
 
-export function Logo({ size = 28, className = '' }: Props) {
+export function Logo({ size = 28, className = '', to }: Props) {
   const textSize = Math.round(size * 0.72)
-  return (
-    <div className={`flex items-center gap-2.5 ${className}`} style={{ lineHeight: 1 }}>
+  const inner = (
+    <>
       <Mark size={size + 4} />
       <span
         className="serif"
@@ -25,6 +28,18 @@ export function Logo({ size = 28, className = '' }: Props) {
       >
         Triggermenu
       </span>
+    </>
+  )
+  if (to) {
+    return (
+      <Link to={to} className={`flex items-center gap-2.5 ${className}`} style={{ lineHeight: 1, textDecoration: 'none' }}>
+        {inner}
+      </Link>
+    )
+  }
+  return (
+    <div className={`flex items-center gap-2.5 ${className}`} style={{ lineHeight: 1 }}>
+      {inner}
     </div>
   )
 }
