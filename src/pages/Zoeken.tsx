@@ -580,10 +580,22 @@ export function Zoeken() {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="Zoek voedingsmiddel…"
-                  // Autofocus alleen op desktop — op mobiel zou dit meteen het toetsenbord openen.
                   autoFocus
+                  autoComplete="off"
+                  autoCorrect="off"
+                  maxLength={100}
                   style={{ flex: 1, background: 'none', border: 'none', outline: 'none', fontSize: 13, color: 'var(--ink)', fontFamily: 'inherit' }}
                 />
+                {query && (
+                  <button
+                    onClick={() => setQuery('')}
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--muted)', padding: 0, display: 'flex', flexShrink: 0 }}
+                  >
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                      <path d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                )}
               </div>
               <div style={{ marginTop: 10, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
                 {/* Alleen veilig */}
@@ -604,7 +616,7 @@ export function Zoeken() {
                   {onlySafe ? '✓ Alleen veilig' : 'Alleen veilig'}
                 </span>
                 {/* Categorieën */}
-                {['Alle', ...availableCategories.slice(0, 5)].map((c) => {
+                {['Alle', ...availableCategories].map((c) => {
                   const isAll = c === 'Alle'
                   const isActive = isAll ? activeCategories.size === 0 : activeCategories.has(c as Category)
                   return (
@@ -624,6 +636,7 @@ export function Zoeken() {
                 })}
               </div>
             </div>
+            <LegendBar />
             <div style={{ flex: 1, overflowY: 'auto', padding: '8px 12px' }}>
               {Array.from(grouped.entries()).map(([cat, items]) => (
                 <div key={cat}>
