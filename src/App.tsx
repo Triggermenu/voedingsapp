@@ -18,10 +18,17 @@ function RequireProfile({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
 
+function RequireNoProfile({ children }: { children: React.ReactNode }) {
+  const profile = getProfile()
+  const accepted = hasAcceptedDisclaimer()
+  if (profile && accepted) return <Navigate to="/zoeken" replace />
+  return <>{children}</>
+}
+
 export default function App() {
   return (
     <Routes>
-      <Route path="/onboarding" element={<Onboarding />} />
+      <Route path="/onboarding" element={<RequireNoProfile><Onboarding /></RequireNoProfile>} />
       <Route path="/zoeken" element={<RequireProfile><Zoeken /></RequireProfile>} />
       <Route path="/item/:id" element={<RequireProfile><ItemDetail /></RequireProfile>} />
       <Route path="/recepten" element={<RequireProfile><Recepten /></RequireProfile>} />

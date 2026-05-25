@@ -356,7 +356,7 @@ export function Onboarding() {
     if (!disclaimerChecked) return
     saveProfile({ conditions: selected })
     acceptDisclaimer()
-    navigate('/zoeken')
+    navigate('/zoeken', { replace: true })
   }
 
   if (step === 0) return <StepWelkom onNext={handleNext} />
