@@ -544,17 +544,22 @@ export function Zoeken() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '18px 32px', borderBottom: '1px solid var(--rule)' }}>
           <Logo size={20} />
           <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            {['Zoeken', 'Bronnen', 'Profiel'].map((t, i) => (
+            {[
+              { label: 'Zoeken',       path: null },
+              { label: 'Bronnen',      path: '/bronnen' },
+              { label: 'Lijstje',      path: '/lijst' },
+              { label: 'Instellingen', path: '/instellingen' },
+            ].map(({ label, path }, i) => (
               <span
-                key={t}
+                key={label}
                 style={{
                   fontSize: 13.5, fontWeight: i === 0 ? 600 : 400,
                   color: i === 0 ? 'var(--ink)' : 'var(--muted)',
-                  position: 'relative', cursor: i > 0 ? 'pointer' : 'default',
+                  position: 'relative', cursor: path ? 'pointer' : 'default',
                 }}
-                onClick={i === 1 ? () => navigate('/bronnen') : i === 2 ? () => navigate('/instellingen') : undefined}
+                onClick={path ? () => navigate(path) : undefined}
               >
-                {t}
+                {label}
                 {i === 0 && (
                   <span style={{ position: 'absolute', left: 0, right: 0, bottom: -22, height: 2, background: 'var(--brand)', borderRadius: 1 }} />
                 )}
