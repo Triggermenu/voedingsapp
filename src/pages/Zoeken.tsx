@@ -586,6 +586,24 @@ export function Zoeken() {
                 />
               </div>
               <div style={{ marginTop: 10, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                {/* Alleen veilig */}
+                <span
+                  onClick={() => setOnlySafe((v) => {
+                    const next = !v
+                    localStorage.setItem('zoeken-only-safe', String(next))
+                    return next
+                  })}
+                  style={{
+                    fontSize: 11.5, padding: '5px 10px', borderRadius: 999, cursor: 'pointer',
+                    background: onlySafe ? 'var(--safe)' : 'transparent',
+                    color: onlySafe ? 'var(--safe-ink)' : 'var(--ink-soft)',
+                    border: onlySafe ? 'none' : '1px solid var(--rule)',
+                    fontWeight: onlySafe ? 500 : 400,
+                  }}
+                >
+                  {onlySafe ? '✓ Alleen veilig' : 'Alleen veilig'}
+                </span>
+                {/* Categorieën */}
                 {['Alle', ...availableCategories.slice(0, 5)].map((c) => {
                   const isAll = c === 'Alle'
                   const isActive = isAll ? activeCategories.size === 0 : activeCategories.has(c as Category)
