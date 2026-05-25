@@ -539,33 +539,11 @@ export function Zoeken() {
   // ── Desktop: drie-koloms layout ────────────────────────────────────────
   if (isDesktop) {
     return (
-      <div className="h-screen flex flex-col overflow-hidden" style={{ background: 'var(--bg)' }}>
-        {/* Desktop header */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '18px 32px', borderBottom: '1px solid var(--rule)' }}>
+      <>
+      <div style={{ height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg)' }}>
+        {/* Desktop header — alleen logo + profiel-context */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 32px', borderBottom: '1px solid var(--rule)', flexShrink: 0 }}>
           <Logo size={20} />
-          <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            {[
-              { label: 'Zoeken',       path: null },
-              { label: 'Menu scan',    path: '/scan' },
-              { label: 'Lijstje',      path: '/lijst' },
-              { label: 'Instellingen', path: '/instellingen' },
-            ].map(({ label, path }, i) => (
-              <span
-                key={label}
-                style={{
-                  fontSize: 13.5, fontWeight: i === 0 ? 600 : 400,
-                  color: i === 0 ? 'var(--ink)' : 'var(--muted)',
-                  position: 'relative', cursor: path ? 'pointer' : 'default',
-                }}
-                onClick={path ? () => navigate(path) : undefined}
-              >
-                {label}
-                {i === 0 && (
-                  <span style={{ position: 'absolute', left: 0, right: 0, bottom: -22, height: 2, background: 'var(--brand)', borderRadius: 1 }} />
-                )}
-              </span>
-            ))}
-          </div>
           {conditions.length > 0 && (
             <span className="mono" style={{ fontSize: 11, color: 'var(--muted)' }}>
               {conditions.map((c) => COND_SHORT[c]).join(' · ')}
@@ -703,9 +681,9 @@ export function Zoeken() {
             )}
           </div>
         </div>
-
-
       </div>
+      <NavBar />
+      </>
     )
   }
 
