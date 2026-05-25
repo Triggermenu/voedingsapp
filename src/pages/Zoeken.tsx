@@ -546,7 +546,7 @@ export function Zoeken() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
             {[
               { label: 'Zoeken',       path: null },
-              { label: 'Bronnen',      path: '/bronnen' },
+              { label: 'Menu scan',    path: '/scan' },
               { label: 'Lijstje',      path: '/lijst' },
               { label: 'Instellingen', path: '/instellingen' },
             ].map(({ label, path }, i) => (
