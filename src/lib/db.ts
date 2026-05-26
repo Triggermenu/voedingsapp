@@ -135,6 +135,7 @@ import fruitData from '@/data/fruit.json'
 import vleesData from '@/data/vlees.json'
 import visData from '@/data/vis-schaaldieren.json'
 import zuivelData from '@/data/zuivel.json'
+import eierenData from '@/data/eieren.json'
 import granenData from '@/data/granen.json'
 import peulvruchtenData from '@/data/peulvruchten.json'
 import drankenAlcoholData from '@/data/dranken-alcohol.json'
@@ -142,6 +143,7 @@ import drankenNonAlcoholData from '@/data/dranken-non-alcohol.json'
 import notenData from '@/data/noten-zaden.json'
 import zoetwarenData from '@/data/zoetwaren.json'
 import sauzenData from '@/data/sauzen-kruiden.json'
+import bereidGerechtData from '@/data/bereid-gerecht.json'
 
 const _seen = new Set<string>()
 const ALL_ITEMS: FoodItem[] = ([
@@ -150,6 +152,7 @@ const ALL_ITEMS: FoodItem[] = ([
   ...vleesData.items,
   ...visData.items,
   ...zuivelData.items,
+  ...eierenData.items,
   ...granenData.items,
   ...peulvruchtenData.items,
   ...drankenAlcoholData.items,
@@ -157,6 +160,7 @@ const ALL_ITEMS: FoodItem[] = ([
   ...notenData.items,
   ...zoetwarenData.items,
   ...sauzenData.items,
+  ...bereidGerechtData.items,
 ] as FoodItem[]).filter((item) => {
   if (_seen.has(item.id)) return false
   _seen.add(item.id)

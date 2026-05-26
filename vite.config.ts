@@ -45,6 +45,37 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    // food-data chunk is intentioneel groot (700 items JSON) — geen code-smell
+    chunkSizeWarningLimit: 1100,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // React-kern apart — wijzigt zelden, lang gecached
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          // Alle 700-item JSON-bestanden in één data-chunk.
+          // Voordeel: bij code-wijzigingen hoeft de browser de ~900 kB data
+          // niet opnieuw te downloaden; alleen de kleinere app-chunk verandert.
+          'food-data': [
+            './src/data/groente.json',
+            './src/data/fruit.json',
+            './src/data/vlees.json',
+            './src/data/vis-schaaldieren.json',
+            './src/data/zuivel.json',
+            './src/data/eieren.json',
+            './src/data/granen.json',
+            './src/data/peulvruchten.json',
+            './src/data/dranken-alcohol.json',
+            './src/data/dranken-non-alcohol.json',
+            './src/data/noten-zaden.json',
+            './src/data/zoetwaren.json',
+            './src/data/sauzen-kruiden.json',
+            './src/data/bereid-gerecht.json',
+          ],
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
