@@ -24,7 +24,11 @@ const CAT_LABELS: Record<string, string> = {
 }
 
 const SCORE_LABELS: Record<number, string> = {
-  0: 'Veilig', 1: 'Matig', 2: 'Voorzichtig', 3: 'Vermijden',
+  0: 'Veilig', 1: 'Met mate', 2: 'Spaarzaam', 3: 'Vermijden',
+}
+
+const EVIDENCE_LABELS: Record<string, string> = {
+  A: 'Sterk bewijs (A)', B: 'Redelijk bewijs (B)', C: 'Beperkt bewijs (C)', onbekend: 'Geen bewijs',
 }
 
 const TRIGGER_LABELS: Record<string, string> = {
@@ -94,6 +98,14 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
   const item = getItemById(id)
   const [expandedCond, setExpandedCond] = useState<string | null>(null)
   const [saved, setSaved] = useState(() => isInList(id))
+  const [showTip, setShowTip] = useState(() => {
+    try { return localStorage.getItem('voedingsapp_detail_tip_v1') !== 'true' } catch { return false }
+  })
+
+  const dismissTip = () => {
+    try { localStorage.setItem('voedingsapp_detail_tip_v1', 'true') } catch { /* ignore */ }
+    setShowTip(false)
+  }
 
   useEffect(() => {
     if (id) recordView(id)
@@ -133,6 +145,32 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
         ))}
       </div>
 
+      {/* E3 — eenmalige uitleg hoe je een resultaat leest */}
+      {showTip && (
+        <div style={{
+          position: 'relative', padding: '12px 32px 12px 14px', marginBottom: 16,
+          background: 'var(--brand-50)', borderRadius: 10,
+          border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
+          fontSize: 12.5, color: 'var(--ink-soft)', lineHeight: 1.5,
+        }}>
+          Elke gekleurde balk is één aandoening uit jouw profiel. Groen = veilig, rood = vermijden.
+          Tik op <strong style={{ color: 'var(--ink)' }}>meer info</strong> voor de onderbouwing en
+          het bewijsniveau (sterk/redelijk/beperkt).
+          <button
+            onClick={dismissTip}
+            aria-label="Tip sluiten"
+            style={{
+              position: 'absolute', top: 8, right: 8, background: 'none', border: 'none',
+              cursor: 'pointer', color: 'var(--muted)', padding: 2, lineHeight: 0,
+            }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <path d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      )}
+
       {/* Op-lijstje-knop — kernactie, prominent onder de stoplichten */}
       <button
         onClick={() => setSaved(toggleList(item.id))}
@@ -158,7 +196,7 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
           padding: '12px 14px', background: 'var(--warn-bg)', borderRadius: 10,
           fontSize: 12.5, color: 'var(--warn-ink)', lineHeight: 1.5, marginBottom: 16,
         }}>
-          <span style={{ fontWeight: 600 }}>Voorzichtig</span>
+          <span style={{ fontWeight: 600 }}>Let op</span>
           {' · advies wisselt per aandoening. Zie details hieronder.'}
         </div>
       )}
@@ -217,8 +255,8 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                       </a>
                     ))}
                     {s.evidence && (
-                      <span className="mono" style={{ fontSize: 9.5, color: 'var(--muted)', marginLeft: s.sources.length > 0 ? 8 : 0 }}>
-                        EV·{s.evidence}
+                      <span style={{ fontSize: 10.5, color: 'var(--muted)', marginLeft: s.sources.length > 0 ? 8 : 0 }}>
+                        {EVIDENCE_LABELS[s.evidence] ?? s.evidence}
                       </span>
                     )}
                     {/* Meer info — technische details ingeklapt */}

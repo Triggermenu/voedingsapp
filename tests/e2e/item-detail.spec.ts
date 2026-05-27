@@ -25,8 +25,8 @@ test('ItemDetail toont per-conditie score-blokken', async ({ page }) => {
   await expect(page.getByText('Jicht', { exact: true })).toBeVisible()
   await expect(page.getByText('Histamine', { exact: true })).toBeVisible()
 
-  // Each block contains a score pill (Veilig / Matig / Voorzichtig / Vermijden)
-  const pills = page.getByText(/^(Veilig|Matig|Voorzichtig|Vermijden)$/)
+  // Each block contains a score pill (Veilig / Met mate / Spaarzaam / Vermijden)
+  const pills = page.getByText(/^(Veilig|Met mate|Spaarzaam|Vermijden)$/)
   await expect(pills.first()).toBeVisible()
 })
 

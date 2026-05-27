@@ -18,17 +18,24 @@
   },
   "scores": {
     "groen": "Veilig",
-    "geel": "Matig",
-    "oranje": "Voorzichtig",
+    "geel": "Met mate",
+    "oranje": "Spaarzaam",
     "rood": "Vermijden",
     "onbekend": "Onbekend"
   },
+  "scoreHelp": {
+    "groen": "zonder zorg",
+    "geel": "regelmatig prima",
+    "oranje": "alleen af en toe, klein beetje",
+    "rood": "beter niet"
+  },
   "evidence": {
     "label": "Bewijs",
-    "A": "Wetenschappelijk bewijs (A)",
-    "B": "Consensus / richtlijn (B)",
-    "C": "Anekdotisch (C)",
-    "onbekend": "Onbekend"
+    "A": "Sterk bewijs (A)",
+    "B": "Redelijk bewijs (B)",
+    "C": "Beperkt bewijs (C)",
+    "onbekend": "Geen bewijs",
+    "help": "Hoe sterk is het bewijs achter deze score? A — sterk: grote databases en meta-analyses. B — redelijk: richtlijnen en kleinere studies. C — beperkt: anekdotisch of weinig data."
   },
   "onboarding": {
     "welcome": "Welkom",

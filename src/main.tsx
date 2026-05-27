@@ -7,6 +7,9 @@ import '@/styles/index.css'
 import '@/styles/print.css'
 import App from './App'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
+import { initPlausible } from '@/lib/analytics'
+
+initPlausible()
 
 const dsn = import.meta.env.VITE_SENTRY_DSN as string | undefined
 

@@ -23,7 +23,7 @@ export function Privacy() {
         <h1 className="font-serif text-[1.9rem] leading-[1.15] font-semibold text-[#1a1a18]">
           Privacybeleid
         </h1>
-        <p className="text-xs text-[#9c9a92] mt-1">Versie 1.0 · mei 2026</p>
+        <p className="text-xs text-[#9c9a92] mt-1">Versie 1.1 · mei 2026</p>
       </div>
 
       <div className="px-4 py-5 space-y-6 max-w-prose text-sm text-[#3d3d3a] leading-relaxed">
@@ -83,11 +83,24 @@ export function Privacy() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="font-serif font-semibold text-base text-[#1a1a18]">Cookies en tracking</h2>
+          <h2 className="font-serif font-semibold text-base text-[#1a1a18]">Statistieken (Plausible)</h2>
           <p>
-            Triggermenu gebruikt <strong>geen tracking cookies</strong>, geen advertentienetwerken
-            en geen analytics-diensten van derden. Er wordt geen profiel van jou opgebouwd voor
-            commerciële doeleinden.
+            Triggermenu gebruikt Plausible Analytics om te zien hoe de app gebruikt wordt
+            (aantal bezoekers, populaire pagina's). Plausible is privacyvriendelijk: het gebruikt
+            <strong> geen cookies</strong>, verzamelt <strong>geen persoonsgegevens</strong> en
+            bouwt geen profiel van je op. De gegevens zijn volledig anoniem en worden in de EU
+            verwerkt. Je aandoeningen worden nooit naar Plausible gestuurd. Er zijn geen
+            advertentienetwerken of tracking-cookies van derden.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="font-serif font-semibold text-base text-[#1a1a18]">Feedback</h2>
+          <p>
+            Als je via de feedbackknop een bericht stuurt, bewaren we alleen de tekst van je
+            bericht (plus de pagina waar je was, om het te kunnen plaatsen) om de app te
+            verbeteren. We koppelen dit <strong>niet</strong> aan je profiel of aandoeningen en
+            vragen geen naam. Stuur geen persoonlijke of medische gegevens mee.
           </p>
         </section>
 

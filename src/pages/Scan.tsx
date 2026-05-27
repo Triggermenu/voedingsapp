@@ -1,11 +1,12 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { getProfile, hasAcceptedScanConsent, acceptScanConsent } from '@/lib/profile'
+import { track } from '@/lib/analytics'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
 import type { Condition } from '@/schemas/item'
 
-const SCORE_LABELS: Record<number, string> = { 0: 'Veilig', 1: 'Matig', 2: 'Voorzichtig', 3: 'Vermijden' }
+const SCORE_LABELS: Record<number, string> = { 0: 'Veilig', 1: 'Met mate', 2: 'Spaarzaam', 3: 'Vermijden' }
 const CONDITION_LABELS: Record<Condition, string> = {
   jicht: 'Jicht', migraine: 'Migraine', nierstenen: 'Nierstenen', histamine: 'Histamine',
 }
@@ -94,6 +95,7 @@ export function Scan() {
     setLoading(true)
     setError('')
     setResults(null)
+    track('menuscan_gestart')
 
     try {
       // Fase 1: afbeelding → scores (snel)
@@ -117,6 +119,7 @@ export function Scan() {
       const phase1Results: ScanResult[] = data1.results
       setResults(phase1Results)
       setLoading(false)
+      track('menuscan_gelukt', { gerechten: phase1Results.length })
 
       // Fase 2: tekst-only → uitleg + obervragen (op de achtergrond)
       setPhase2Loading(true)

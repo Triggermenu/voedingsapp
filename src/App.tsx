@@ -10,6 +10,7 @@ import { Lijst } from '@/pages/Lijst'
 import { ItemDetail } from '@/pages/ItemDetail'
 import { Privacy } from '@/pages/Privacy'
 import { Admin } from '@/pages/Admin'
+import { FeedbackButton } from '@/components/FeedbackButton'
 
 function RequireProfile({ children }: { children: React.ReactNode }) {
   const profile = getProfile()
@@ -27,6 +28,7 @@ function RequireNoProfile({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
+    <>
     <Routes>
       <Route path="/onboarding" element={<RequireNoProfile><Onboarding /></RequireNoProfile>} />
       <Route path="/zoeken" element={<RequireProfile><Zoeken /></RequireProfile>} />
@@ -41,5 +43,7 @@ export default function App() {
       <Route path="/" element={<Navigate to="/zoeken" replace />} />
       <Route path="*" element={<Navigate to="/zoeken" replace />} />
     </Routes>
+    <FeedbackButton />
+    </>
   )
 }

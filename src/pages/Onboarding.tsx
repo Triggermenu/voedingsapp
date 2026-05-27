@@ -4,6 +4,7 @@ import type { Condition } from '@/schemas/item'
 import { CONDITIONS } from '@/schemas/item'
 import { getProfile, saveProfile, acceptDisclaimer } from '@/lib/profile'
 import { getAllItems } from '@/lib/db'
+import { track } from '@/lib/analytics'
 import { Logo } from '@/components/Logo'
 
 // ── Condition metadata ──────────────────────────────────────────────────────
@@ -62,6 +63,7 @@ function PhoneShell({ children, stepLabel }: { children: React.ReactNode; stepLa
 // ── Step 1: Welkom (OnbMedisch) ────────────────────────────────────────────
 function StepWelkom({ onNext }: { onNext: () => void }) {
   const itemCount = getAllItems().length
+  const [storyOpen, setStoryOpen] = useState(false)
   return (
     <PhoneShell stepLabel="01 — Triggermenu">
       {/* Hero */}
@@ -93,27 +95,30 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
           <div className="flex items-center gap-2.5 mt-2.5">
             <div className="flex-1">
               <div className="serif" style={{ fontSize: 16, fontWeight: 500, color: 'var(--ink)' }}>
-                Spinazie{' '}
-                <em style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 400 }}>· rauw</em>
+                Tonijn{' '}
+                <em style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 400 }}>· in blik</em>
               </div>
-              <div className="eyebrow" style={{ fontSize: 9.5, marginTop: 2 }}>Groente · 100 g</div>
+              <div className="eyebrow" style={{ fontSize: 9.5, marginTop: 2 }}>Vis · 100 g</div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 28px)', gap: 4 }}>
-              <CondCell status="ok"    label="JCH" />
-              <CondCell status="safe"  label="MIG" />
-              <CondCell status="avoid" label="NIE" />
-              <CondCell status="warn"  label="HIS" />
+              <CondCell status="warn"  label="JCH" />
+              <CondCell status="ok"    label="MIG" />
+              <CondCell status="safe"  label="NIE" />
+              <CondCell status="avoid" label="HIS" />
             </div>
           </div>
         </div>
+        <p style={{ fontSize: 11.5, color: 'var(--muted)', margin: '8px 2px 0', lineHeight: 1.4 }}>
+          Elke kleur staat voor één aandoening uit jouw profiel.
+        </p>
       </div>
 
       {/* Feature list */}
-      <div className="px-[26px] pt-6 flex-1">
+      <div className="px-[26px] pt-6">
         {[
           { t: `Zoek ${itemCount} voedingsmiddelen`,  d: 'Producten, ingrediënten en bereidingen — rauw, gekookt, gebakken.' },
-          { t: 'Eén stoplicht per aandoening', d: 'Veilig · Matig · Voorzichtig · Vermijden. Op één rij zichtbaar.' },
-          { t: 'Met bron en evidence-niveau',  d: 'USDA, SIGHI, EULAR. Iedere score linkt naar de gebruikte studie.' },
+          { t: 'Eén stoplicht per aandoening', d: 'Veilig · Met mate · Spaarzaam · Vermijden. Op één rij zichtbaar.' },
+          { t: 'Met bron en bewijs-niveau',  d: 'USDA, SIGHI, EULAR. Iedere score linkt naar de gebruikte studie.' },
         ].map((it, i, a) => (
           <div
             key={it.t}
@@ -139,6 +144,40 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Van de maker */}
+      <div className="px-[26px] pt-7">
+        <div className="tm-card" style={{ padding: 16, background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 22%, transparent)' }}>
+          <div className="eyebrow" style={{ marginBottom: 7 }}>Van de maker</div>
+          <p style={{ fontSize: 13.5, color: 'var(--ink-soft)', lineHeight: 1.55, margin: 0 }}>
+            Ik bouwde Triggermenu voor mijn vriend Jerry. Hij heeft jicht én migraine, en toen we
+            met onze vrouwen uit eten waren zat hij te twijfelen over zo'n beetje elk gerecht op de
+            kaart. Toen dachten we: dit moet makkelijker kunnen. Dit is het resultaat — nog volop in
+            ontwikkeling. Probeer 'm uit en laat me weten wat er beter kan, via de{' '}
+            <strong style={{ color: 'var(--ink)' }}>Feedback</strong>-knop.
+          </p>
+          {storyOpen && (
+            <p style={{ fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.55, margin: '10px 0 0' }}>
+              Jerry en ik kennen elkaar al jaren. Hij kreeg eerst jicht, later ook migraine — en
+              merkte hoe ingewikkeld eten dan wordt: het ene advies spreekt het andere tegen, en in
+              de supermarkt of het restaurant heb je daar niks aan. Ik wilde iets dat in één
+              oogopslag laat zien waar je op moet letten, mét de bron erbij, zodat je het zelf kunt
+              nalezen of aan je arts kunt laten zien. Geen dieetschema, geen medisch oordeel — gewoon
+              een eerlijk hulpje. Het is nog lang niet af, en jouw feedback bepaalt mee waar het
+              heen gaat.
+            </p>
+          )}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 10 }}>
+            <span className="serif" style={{ fontSize: 13.5, fontStyle: 'italic', color: 'var(--muted)' }}>— Peter</span>
+            <button
+              onClick={() => setStoryOpen((v) => !v)}
+              style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', fontFamily: 'inherit', fontSize: 12, color: 'var(--brand)' }}
+            >
+              {storyOpen ? 'Minder' : 'Lees het hele verhaal'}
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* CTA */}
@@ -356,6 +395,7 @@ export function Onboarding() {
     if (!disclaimerChecked) return
     saveProfile({ conditions: selected })
     acceptDisclaimer()
+    track('onboarding_voltooid', { aantal: selected.length })
     navigate('/zoeken', { replace: true })
   }
 

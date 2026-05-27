@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { searchItems, getAllItems, getAlternatives } from '@/lib/db'
 import { getCombinedScore } from '@/lib/scoring'
 import { getProfile } from '@/lib/profile'
+import { sendFeedback } from '@/lib/feedback'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
 import { ItemDetailPanel, AlternativesPanel } from '@/components/ItemDetailPanel'
@@ -153,7 +154,7 @@ function CardC({
             {conditions.map((c) => {
               const scoreObj = item.scores[c]
               const status = scoreToStatus(scoreObj?.score ?? null)
-              const statusLabel = { safe: 'Veilig', ok: 'Matig', warn: 'Voorzichtig', avoid: 'Vermijden', null: 'Onbekend' }[status]
+              const statusLabel = { safe: 'Veilig', ok: 'Met mate', warn: 'Spaarzaam', avoid: 'Vermijden', null: 'Onbekend' }[status]
               return (
                 <div key={c}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 3 }}>
@@ -244,7 +245,7 @@ function LegendBar() {
       display: 'flex', justifyContent: 'flex-end', alignItems: 'center',
     }}>
       <div style={{ display: 'flex', gap: 10 }}>
-        {([['safe', 'Veilig'], ['ok', 'Matig'], ['warn', 'Voorzichtig'], ['avoid', 'Vermijden']] as const).map(([s, l]) => (
+        {([['safe', 'Veilig'], ['ok', 'Met mate'], ['warn', 'Spaarzaam'], ['avoid', 'Vermijden']] as const).map(([s, l]) => (
           <span key={s} style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 10.5, color: 'var(--ink-soft)' }}>
             <i style={{ width: 8, height: 8, borderRadius: 2, background: `var(--${s})`, display: 'inline-block' }} />
             {l}
@@ -261,6 +262,25 @@ function getTimeGreeting(): string {
   if (h >= 5 && h < 12) return 'vanochtend'
   if (h >= 12 && h < 17) return 'vandaag'
   return 'vanavond'
+}
+
+// ── MeldItemKnop — rapporteer een ontbrekend item bij 0 zoekresultaten ──────
+function MeldItemKnop({ query }: { query: string }) {
+  const [done, setDone] = useState(false)
+  if (done) {
+    return <p style={{ fontSize: 13, marginTop: 12, color: 'var(--brand)' }}>Gemeld — dank je!</p>
+  }
+  return (
+    <button
+      onClick={() => { setDone(true); void sendFeedback(query, 'item-mist', '/zoeken') }}
+      style={{
+        marginTop: 12, padding: '8px 16px', borderRadius: 999, cursor: 'pointer', fontFamily: 'inherit',
+        background: 'var(--brand)', color: '#fff', border: 'none', fontSize: 13, fontWeight: 600,
+      }}
+    >
+      Meld dit item
+    </button>
+  )
 }
 
 // ── Main Zoeken ───────────────────────────────────────────────────────────
@@ -509,6 +529,12 @@ export function Zoeken() {
             {query ? `Geen resultaten voor "${query}"` : 'Geen items in geselecteerde categorieën'}
           </p>
           <p style={{ fontSize: 13, marginTop: 4 }}>Probeer een andere zoekterm of filter.</p>
+          {query && (
+            <>
+              <p style={{ fontSize: 13, marginTop: 16 }}>Staat dit er nog niet in? Meld het — dan voeg ik het toe.</p>
+              <MeldItemKnop query={query} />
+            </>
+          )}
         </div>
       )}
 
