@@ -159,7 +159,7 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
           </p>
           {storyOpen && (
             <p style={{ fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.55, margin: '10px 0 0' }}>
-              Jerry en ik kennen elkaar al jaren. Hij kreeg eerst jicht, later ook migraine — en
+              Jerry en ik kennen elkaar al jaren. Hij kreeg eerst migraine, later ook jicht — en
               merkte hoe ingewikkeld eten dan wordt: het ene advies spreekt het andere tegen, en in
               de supermarkt of het restaurant heb je daar niks aan. Ik wilde iets dat in één
               oogopslag laat zien waar je op moet letten, mét de bron erbij, zodat je het zelf kunt
