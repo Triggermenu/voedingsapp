@@ -37,9 +37,37 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       .from('feedback')
       .insert({ message: trimmed, type: safeType, context: safeContext })
     if (error) throw error
+    // Best-effort mailnotificatie — blokkeert het opslaan niet als 'ie faalt.
+    await notifyByEmail(safeType, trimmed, safeContext)
     return res.status(200).json({ ok: true })
   } catch (err) {
     console.error('feedback insert mislukt:', err)
     return res.status(500).json({ error: 'Kon feedback niet opslaan.' })
+  }
+}
+
+/**
+ * Stuurt een mailtje per feedback via Resend. Doet niets als RESEND_API_KEY
+ * ontbreekt (dan blijft feedback gewoon in de Supabase-tabel staan).
+ * Fouten worden geslikt zodat de feedback-respons nooit faalt door de mail.
+ */
+async function notifyByEmail(type: string, message: string, context: string | null) {
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) return
+  const to = process.env.FEEDBACK_NOTIFY_EMAIL ?? 'peter.wolterman@gmail.com'
+  const from = process.env.FEEDBACK_FROM_EMAIL ?? 'Triggermenu <onboarding@resend.dev>'
+  try {
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from,
+        to: [to],
+        subject: `Triggermenu feedback — ${type}`,
+        text: `Type: ${type}\nPagina: ${context ?? '-'}\n\n${message}`,
+      }),
+    })
+  } catch (err) {
+    console.error('feedback: e-mailnotificatie mislukt (genegeerd):', err)
   }
 }

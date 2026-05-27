@@ -91,30 +91,18 @@ Kind regards,
 
 ---
 
-## A-4 · Accountsetup (éénmalig, ~15 min totaal)
+## A-4 · Accountsetup
 
-**Status:** ☐ Open
-**Wanneer:** zodra CLAUDE.md is goedgekeurd
+**Status:** 🟡 Grotendeels klaar — Sentry-DSN fixen, Plausible + Resend nog open
 
-1. **GitHub account** — github.com (gratis). Username noteren.
-2. **Vercel account** — vercel.com, "Login met GitHub". Geen creditcard nodig voor MVP.
-3. **Anthropic API key** — console.anthropic.com → API Keys → Create. Sla op in password manager.
-4. **Sentry account** — sentry.io (gratis tier, 5k events/maand). Project type: React + Node.
-5. **Plausible account** — plausible.io of zelf-gehost. Site toevoegen voor productie-domein.
-6. **Resend account** (voor magic link mail) — resend.com (gratis tier, 100 mails/dag).
+1. **GitHub** — ✅ repo `Triggermenu/voedingsapp` live, CI/CD draait.
+2. **Vercel** — ✅ project `voedingsapp` live op triggermenu.nl, auto-deploy bij push naar main.
+3. **Anthropic API key** — ✅ staat in Vercel, menuscan werkt.
+4. **Sentry** — ⚠️ DSN staat in Vercel maar is **ongeldig** (console: *"Invalid Sentry Dsn"*) → foutregistratie initialiseert nu niet. **Actie:** juiste DSN uit sentry.io kopiëren en `VITE_SENTRY_DSN` in Vercel corrigeren.
+5. **Plausible** — ☐ nog niet opgezet. **Actie:** account op plausible.io (EU), site `triggermenu.nl` toevoegen, dan `VITE_PLAUSIBLE_DOMAIN=triggermenu.nl` in Vercel zetten. Code is al gewired (no-op tot de var staat).
+6. **Resend** (voor feedback-mailnotificatie) — ☐ nog niet opgezet. **Actie:** account op resend.com (gratis: 100 mails/dag), API key maken, `RESEND_API_KEY` in Vercel zetten. Dan krijg je per feedback een mailtje. Zonder key blijft feedback gewoon in de Supabase-tabel staan. Optioneel: domein verifiëren voor een net afzendadres (anders `onboarding@resend.dev`).
 
-**Lever aan Claude Code (in chat):**
-- GitHub username
-- Anthropic API key (Claude Code zet 'm direct in Vercel env vars, niet in repo)
-- Sentry DSN
-- Plausible site-ID (of bevestiging "skip analytics")
-- Resend API key
-
-Claude Code regelt vervolgens:
-- GitHub repo aanmaken via `gh` CLI
-- Vercel project linken via `vercel` CLI
-- Env vars zetten via `vercel env`
-- Eerste deploy
+**Supabase (nieuw, 2026-05-27):** ✅ aparte EU-org "Triggermenu's Org" + project (ref `jjfwkawiufplmqjomall`, Frankfurt). Tabellen `rate_limits` + `feedback` aangemaakt. `SUPABASE_URL` + secret key in Vercel. Hierdoor werkt de menuscan-rate-limiting nu (was eerder inactief) én de in-app feedback.
 
 ---
 
@@ -152,17 +140,17 @@ Claude Code regelt vervolgens:
 **Reden:** mitigatie R-007 — de menuscan verwerkt gezondheidsgegevens (aandoeningen + foto) naar Vercel en Anthropic.
 
 ### Vóór kleine test (5–10 mensen) — minimumset
-1. **Privacyverklaring** (NL) — Claude Code schrijft concept, jij accordeert.
-2. **DPA's** klik-akkoord in dashboards (~15 min totaal):
-   - Vercel, Anthropic, Sentry, Supabase
-3. **Anthropic budget cap** op €10 — console.anthropic.com → Billing.
+1. **Privacyverklaring** (NL) — ✅ live (v1.1, met Plausible- en feedback-secties; `/privacy`).
+2. **DPA's** klik-akkoord in dashboards (~15 min totaal) — ☐ open:
+   - Vercel, Anthropic, Sentry, Supabase (nieuwe org)
+3. **Anthropic budget cap** op €10 — ☐ open — console.anthropic.com → Billing. Nu extra relevant: de menuscan werkt.
 
 *Noot: aandoeningen die naar Anthropic gaan (in de prompt) zijn technisch gezondheidsdata (AVG art. 9), maar pseudoniem (geen naam/e-mail meegestuurd). De ScanConsentGate geeft de vereiste expliciete toestemming. Risico is laag voor kleine test.*
 
 ### Vóór publieke launch (aanvullend)
-4. **Anthropic Zero Data Retention** aanvragen — console.anthropic.com. Voorkomt dat Anthropic requests 30 dagen logt. Best practice, geen blokkade voor de test.
-5. **EU-regio** bevestigen bij Supabase-project (Frankfurt).
-6. **Datalek-meldprocedure** paraat: bij lek met gezondheidsdata binnen 72u melden bij Autoriteit Persoonsgegevens.
+4. **Anthropic Zero Data Retention** aanvragen — ☐ open — console.anthropic.com. Voorkomt dat Anthropic requests 30 dagen logt. Best practice, geen blokkade voor de test.
+5. **EU-regio Supabase** — ✅ nieuw project staat in Frankfurt (eu-central-1).
+6. **Datalek-meldprocedure** paraat — ☐ open: bij lek met gezondheidsdata binnen 72u melden bij Autoriteit Persoonsgegevens.
 
 ### Bij accounts erbij (later)
 7. **DPIA** (Data Protection Impact Assessment) — verplicht bij grootschalige verwerking.
@@ -180,8 +168,18 @@ Claude Code regelt vervolgens:
 
 ---
 
-## Klaar voor kleine test?
-Als A-7 minimumset (privacyverklaring + DPA's + budget cap) klaar is → test starten.
+## Stand van zaken (2026-05-27)
+De app is **technisch test-klaar** en draait live op triggermenu.nl: nieuwe scorelabels
+(Veilig/Met mate/Spaarzaam/Vermijden), bewijs in mensentaal, Tonijn-voorbeeldkaart, Jerry-verhaal,
+in-app feedbackknop (→ Supabase + optioneel mail), "niet gevonden"-melding, en de menuscan met
+nu wél actieve rate-limiting. Database 700 items.
+
+**Nog te doen vóór je de link breed deelt:**
+- ☐ **DPA's** klikken (Vercel, Anthropic, Supabase, Sentry) — A-7
+- ☐ **Budget cap €10** op Anthropic — A-5
+- ☐ **Sentry-DSN** corrigeren in Vercel (nu ongeldig) — A-4
+- ☐ *(optioneel)* **Plausible** account + `VITE_PLAUSIBLE_DOMAIN` — voor gebruiksstatistieken
+- ☐ *(optioneel)* **Resend** account + `RESEND_API_KEY` — voor mail per feedback
 
 ## Klaar voor publieke launch?
 Als A-2 + A-3 + A-5 + A-7 volledig op ✅ staan → publiek launchen.
