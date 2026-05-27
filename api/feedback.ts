@@ -20,7 +20,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const trimmed = message.trim().slice(0, MAX_LEN)
   const safeType = typeof type === 'string' && VALID_TYPES.includes(type) ? type : 'algemeen'
-  const safeContext = typeof context === 'string' ? context.slice(0, 200) : null
+  const safeContext = typeof context === 'string' ? context.replace(/[\r\n]/g, ' ').slice(0, 200) : null
 
   const url = process.env.SUPABASE_URL
   // Supabase hernoemde de service-role key naar "secret key" (sb_secret_…).

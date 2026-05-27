@@ -1,14 +1,56 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import Anthropic from '@anthropic-ai/sdk'
 import { createClient } from '@supabase/supabase-js'
+import { z } from 'zod'
 
-const RATE_LIMIT = 12 // scans per IP
+const fase1Schema = z.object({
+  results: z.array(
+    z.object({
+      dish: z.string().max(200),
+      scores: z.record(z.object({ score: z.number().int().min(0).max(3), note: z.string().optional() })),
+      overallNote: z.string().max(500).optional(),
+    })
+  ).max(15),
+})
+
+const fase2Schema = z.object({
+  details: z.array(
+    z.object({
+      dish: z.string().max(200),
+      explanation: z.string().max(1000),
+      waiterQuestions: z.array(z.string().max(300)).max(3),
+    })
+  ).max(20),
+})
+
+const RATE_LIMIT = 12 // scans per IP per uur (Supabase)
+const MEMORY_LIMIT = 5 // conservatievere noodrem per instantie bij Supabase-outage
 const RATE_WINDOW_MS = 60 * 60 * 1000 // per uur
 
 /**
+ * In-memory fallback teller per serverless-instantie.
+ * Vercel serverless deelt geen geheugen tussen instanties, dus dit is geen
+ * volledige vervanging van Supabase — wel een noodrem bij burst-aanvallen
+ * op dezelfde instantie tijdens een Supabase-outage.
+ */
+const memFallback = new Map<string, { count: number; resetAt: number }>()
+
+function checkMemoryRateLimit(ip: string): boolean {
+  const now = Date.now()
+  const entry = memFallback.get(ip)
+  if (!entry || entry.resetAt < now) {
+    memFallback.set(ip, { count: 1, resetAt: now + RATE_WINDOW_MS })
+    return true
+  }
+  if (entry.count >= MEMORY_LIMIT) return false
+  entry.count++
+  return true
+}
+
+/**
  * Rate limiting per IP via Supabase. Geen accounts nodig (zie R-007).
- * Faalt "open" bij een Supabase-storing: een outage mag de scan niet blokkeren —
- * de Anthropic budget-cap (acties-peter.md A-5) is de financiële achtervang.
+ * Bij Supabase-outage: in-memory fallback (MEMORY_LIMIT=5) als noodrem.
+ * De Anthropic budget-cap (acties-peter.md A-5) blijft de financiële achtervang.
  * Retourneert true als het request is toegestaan.
  */
 async function checkRateLimit(ip: string): Promise<boolean> {
@@ -17,8 +59,8 @@ async function checkRateLimit(ip: string): Promise<boolean> {
   // Accepteer beide namen zodat de bestaande Vercel-var werkt.
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.SUPABASE_SECRET_KEY
   if (!url || !key) {
-    console.error('menuscan: Supabase env vars ontbreken — rate limiting overgeslagen')
-    return true
+    console.error('menuscan: Supabase env vars ontbreken — in-memory fallback actief')
+    return checkMemoryRateLimit(ip)
   }
   try {
     const supabase = createClient(url, key, { auth: { persistSession: false } })
@@ -38,14 +80,17 @@ async function checkRateLimit(ip: string): Promise<boolean> {
     await supabase.from('rate_limits').delete().lt('requested_at', since)
     return true
   } catch (err) {
-    console.error('menuscan: rate limit check mislukt, request toegestaan:', err)
-    return true
+    console.error('menuscan: Supabase rate limit mislukt — in-memory fallback actief:', err)
+    return checkMemoryRateLimit(ip)
   }
 }
 
 function getClientIp(req: VercelRequest): string {
-  const fwd = req.headers['x-forwarded-for']
-  if (typeof fwd === 'string' && fwd.length > 0) return fwd.split(',')[0].trim()
+  // Gebruik x-vercel-forwarded-for: wordt door Vercel's edge-proxy ingesteld
+  // en kan niet door de client worden overschreven (i.t.t. x-forwarded-for).
+  const vercelFwd = req.headers['x-vercel-forwarded-for']
+  if (typeof vercelFwd === 'string' && vercelFwd.length > 0) return vercelFwd.split(',')[0].trim()
+  // Fallback voor lokale dev (geen Vercel-proxy aanwezig)
   return req.socket?.remoteAddress ?? 'unknown'
 }
 
@@ -75,15 +120,24 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'Ontbrekende velden' })
     }
 
+    if (typeof image !== 'string' || image.length > 5_000_000) {
+      return res.status(413).json({ error: 'Afbeelding te groot (max ~3,5 MB)' })
+    }
+
     const validMediaTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
     const safeMediaType = validMediaTypes.includes(mediaType) ? mediaType : 'image/jpeg'
 
-    const activeContext = conditions
-      .map((c: string) => CONDITION_CONTEXT[c] ?? c)
+    const validConditions = (conditions as string[]).filter((c) => c in CONDITION_CONTEXT)
+    if (validConditions.length === 0) {
+      return res.status(400).json({ error: 'Geen geldige aandoeningen opgegeven' })
+    }
+
+    const activeContext = validConditions
+      .map((c) => CONDITION_CONTEXT[c])
       .join('; ')
 
-    const scoreFields = conditions
-      .map((c: string) => `"${c}": { "score": 0, "note": "korte uitleg in het Nederlands" }`)
+    const scoreFields = validConditions
+      .map((c) => `"${c}": { "score": 0, "note": "korte uitleg in het Nederlands" }`)
       .join(',\n        ')
 
     const prompt = `Analyseer deze restaurantmenukaart voor iemand met: ${activeContext}.
@@ -134,8 +188,9 @@ Antwoord UITSLUITEND als geldig JSON:
       const jsonMatch = text.match(/\{[\s\S]*\}/)
       if (!jsonMatch) return res.status(500).json({ error: 'Kon resultaat niet verwerken' })
 
-      const parsed = JSON.parse(jsonMatch[0])
-      return res.status(200).json(parsed)
+      const parsed = fase1Schema.safeParse(JSON.parse(jsonMatch[0]))
+      if (!parsed.success) return res.status(500).json({ error: 'Onverwacht responsformaat van AI' })
+      return res.status(200).json(parsed.data)
     } catch (err) {
       console.error('menuscan fase 1 error:', err)
       if (err instanceof Anthropic.AuthenticationError) {
@@ -154,16 +209,29 @@ Antwoord UITSLUITEND als geldig JSON:
       return res.status(400).json({ error: 'Ontbrekende velden voor fase 2' })
     }
 
-    const activeContext = conditions
-      .map((c: string) => CONDITION_CONTEXT[c] ?? c)
+    const validConditions2 = (conditions as string[]).filter((c) => c in CONDITION_CONTEXT)
+    if (validConditions2.length === 0) {
+      return res.status(400).json({ error: 'Geen geldige aandoeningen opgegeven' })
+    }
+
+    const activeContext = validConditions2
+      .map((c) => CONDITION_CONTEXT[c])
       .join('; ')
+
+    if ((dishes as unknown[]).length > 20) {
+      return res.status(400).json({ error: 'Te veel gerechten (max 20)' })
+    }
 
     const dishList = (dishes as Array<{ dish: string; scores: Record<string, { score: number }> }>)
       .map((d) => {
-        const scoreStr = Object.entries(d.scores)
+        // Sanitize dish-naam: max 100 tekens, geen newlines (prompt injection preventie)
+        const safeDish = String(d.dish ?? '').replace(/[\r\n]/g, ' ').slice(0, 100)
+        // Alleen bekende condition-keys en integer scores 0-3 doorlaten
+        const scoreStr = Object.entries(d.scores ?? {})
+          .filter(([k, v]) => k in CONDITION_CONTEXT && Number.isInteger(v.score) && v.score >= 0 && v.score <= 3)
           .map(([k, v]) => `${k}: ${v.score}`)
           .join(', ')
-        return `- ${d.dish} (scores: ${scoreStr})`
+        return `- ${safeDish} (scores: ${scoreStr})`
       })
       .join('\n')
 
@@ -199,8 +267,9 @@ Schrijf in het Nederlands. Antwoord UITSLUITEND als geldig JSON:
       const jsonMatch = text.match(/\{[\s\S]*\}/)
       if (!jsonMatch) return res.status(500).json({ error: 'Kon uitleg niet verwerken' })
 
-      const parsed = JSON.parse(jsonMatch[0])
-      return res.status(200).json(parsed)
+      const parsed = fase2Schema.safeParse(JSON.parse(jsonMatch[0]))
+      if (!parsed.success) return res.status(500).json({ error: 'Onverwacht responsformaat van AI' })
+      return res.status(200).json(parsed.data)
     } catch (err) {
       console.error('menuscan fase 2 error:', err)
       if (err instanceof Anthropic.AuthenticationError) {
