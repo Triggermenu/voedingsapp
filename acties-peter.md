@@ -148,22 +148,27 @@ Claude Code regelt vervolgens:
 
 **Status:** ☐ Open
 **Tijd:** ~2–4u (privacyverklaring + DPA's); evt. jurist-consult apart
-**Deadline:** Basis vóór publieke launch; DPIA vóór accounts live
-**Reden:** mitigatie R-007 — de menuscan verwerkt nu al gezondheidsgegevens (aandoeningen + foto) naar Vercel en Anthropic.
+**Deadline:** Basis vóór kleine test; volledig vóór publieke launch
+**Reden:** mitigatie R-007 — de menuscan verwerkt gezondheidsgegevens (aandoeningen + foto) naar Vercel en Anthropic.
 
-### Vóór publieke launch (ook MVP)
-1. **Privacyverklaring** (NL) opstellen — wat verwerk je, grondslag (uitdrukkelijke toestemming), verwerkers, doorgifte VS, bewaartermijn, betrokkenenrechten. Generator of jurist-template volstaat voor MVP.
-2. **Verwerkersovereenkomsten (DPA's)** afsluiten — meestal klik-akkoord in dashboard:
-   - Vercel, Anthropic, Sentry, Supabase (Resend pas bij accounts)
-3. **Anthropic Zero Data Retention** aanvragen/aanzetten — console.anthropic.com (sterkste risicoreductie).
-4. **EU-regio kiezen** bij aanmaken Supabase-project (Frankfurt) en waar mogelijk Vercel.
-5. **Datalek-meldprocedure** paraat: bij lek met gezondheidsdata binnen 72u melden bij Autoriteit Persoonsgegevens.
+### Vóór kleine test (5–10 mensen) — minimumset
+1. **Privacyverklaring** (NL) — Claude Code schrijft concept, jij accordeert.
+2. **DPA's** klik-akkoord in dashboards (~15 min totaal):
+   - Vercel, Anthropic, Sentry, Supabase
+3. **Anthropic budget cap** op €10 — console.anthropic.com → Billing.
+
+*Noot: aandoeningen die naar Anthropic gaan (in de prompt) zijn technisch gezondheidsdata (AVG art. 9), maar pseudoniem (geen naam/e-mail meegestuurd). De ScanConsentGate geeft de vereiste expliciete toestemming. Risico is laag voor kleine test.*
+
+### Vóór publieke launch (aanvullend)
+4. **Anthropic Zero Data Retention** aanvragen — console.anthropic.com. Voorkomt dat Anthropic requests 30 dagen logt. Best practice, geen blokkade voor de test.
+5. **EU-regio** bevestigen bij Supabase-project (Frankfurt).
+6. **Datalek-meldprocedure** paraat: bij lek met gezondheidsdata binnen 72u melden bij Autoriteit Persoonsgegevens.
 
 ### Bij accounts erbij (later)
-6. **DPIA** (Data Protection Impact Assessment) uitvoeren — verplicht bij grootschalige verwerking gezondheidsdata.
-7. Overweeg jurist-consult (combineerbaar met A-3 MDR — zelfde jurist kan beide).
+7. **DPIA** (Data Protection Impact Assessment) — verplicht bij grootschalige verwerking.
+8. Jurist-consult (combineerbaar met A-3 MDR).
 
-**Claude Code regelt de technische kant:** aparte toestemmings-UI bij menuscan (los van medische disclaimer), Sentry-scrubbing (geen foto/aandoening in logs), foto niet bewaren na scan, en — bij accounts — betrokkenenrechten (inzage/export/verwijdering) + leeftijdscheck 16+.
+**Technisch al gedaan door Claude Code:** ScanConsentGate (aparte toestemming vóór scan), Sentry-scrubbing (geen foto/aandoening in logs), foto niet bewaard na scan, Vercel-functies op Frankfurt (fra1).
 
 **Resultaat noteren in:** RISKS.md R-007
 
@@ -171,14 +176,15 @@ Claude Code regelt vervolgens:
 
 ## C-1 · Desktop drie-koloms layout bouwen
 
-**Status:** ☐ Open
-**Wat:** Split-panel layout voor brede schermen: zoeklijst links, itemdetail midden, alternatieven rechts. Mobiel blijft ongewijzigd (één kolom).
-**Trigger:** Zeg "bouw desktop layout" als je er klaar voor bent.
+**Status:** ✅ Gebouwd (zoeklijst links, detail midden, alternatieven rechts)
 
 ---
 
-## Klaar?
-Als A-1 t/m A-5 + A-7 op ✅ staan, mag de app publiek launchen en draait hij autonoom.
+## Klaar voor kleine test?
+Als A-7 minimumset (privacyverklaring + DPA's + budget cap) klaar is → test starten.
+
+## Klaar voor publieke launch?
+Als A-2 + A-3 + A-5 + A-7 volledig op ✅ staan → publiek launchen.
 A-6 is een eenmalige testronde — daarna is jouw rol *bestuurder bij uitzondering*: Sentry meldt incidenten, jij beslist over koers.
 
 ---
