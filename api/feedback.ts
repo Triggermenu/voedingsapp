@@ -23,7 +23,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const safeContext = typeof context === 'string' ? context.slice(0, 200) : null
 
   const url = process.env.SUPABASE_URL
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  // Supabase hernoemde de service-role key naar "secret key" (sb_secret_…).
+  // Accepteer beide namen zodat de bestaande Vercel-var werkt.
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.SUPABASE_SECRET_KEY
   if (!url || !key) {
     console.error('feedback: Supabase env vars ontbreken')
     return res.status(503).json({ error: 'Feedback is tijdelijk niet beschikbaar.' })

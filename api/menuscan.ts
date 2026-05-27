@@ -13,7 +13,9 @@ const RATE_WINDOW_MS = 60 * 60 * 1000 // per uur
  */
 async function checkRateLimit(ip: string): Promise<boolean> {
   const url = process.env.SUPABASE_URL
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  // Supabase hernoemde de service-role key naar "secret key" (sb_secret_…).
+  // Accepteer beide namen zodat de bestaande Vercel-var werkt.
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.SUPABASE_SECRET_KEY
   if (!url || !key) {
     console.error('menuscan: Supabase env vars ontbreken — rate limiting overgeslagen')
     return true
