@@ -164,7 +164,7 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
               de supermarkt of het restaurant heb je daar niks aan. Ik wilde iets dat in één
               oogopslag laat zien waar je op moet letten, mét de bron erbij, zodat je het zelf kunt
               nalezen of aan je arts kunt laten zien. Geen dieetschema, geen medisch oordeel — gewoon
-              een eerlijk hulpje. Het is nog lang niet af, en jouw feedback bepaalt mee waar het
+              een eerlijke assistent. Het is nog lang niet af, en jouw feedback bepaalt mee waar het
               heen gaat.
             </p>
           )}
