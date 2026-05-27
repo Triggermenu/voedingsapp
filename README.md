@@ -2,7 +2,7 @@
 
 Beslishulp bij voedingskeuzes voor mensen met jicht, migraine, nierstenen en/of histamine-intolerantie. Bereikbaar via [triggermenu.nl](https://triggermenu.nl).
 
-## Voor Jerry (gebruiker)
+## Voor Jeffrey (gebruiker)
 
 Open de app op je iPhone via de link die je ontvangen hebt. Zet hem op je beginscherm via Safari → Delen → Zet op beginscherm.
 

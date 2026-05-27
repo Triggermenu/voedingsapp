@@ -151,7 +151,7 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
         <div className="tm-card" style={{ padding: 16, background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 22%, transparent)' }}>
           <div className="eyebrow" style={{ marginBottom: 7 }}>Van de maker</div>
           <p style={{ fontSize: 13.5, color: 'var(--ink-soft)', lineHeight: 1.55, margin: 0 }}>
-            Ik bouwde Triggermenu voor mijn vriend Jerry. Hij heeft jicht én migraine, en toen we
+            Ik bouwde Triggermenu voor mijn vriend Jeffrey. Hij heeft jicht én migraine, en toen we
             met onze vrouwen uit eten waren zat hij te twijfelen over zo'n beetje elk gerecht op de
             kaart. Toen dachten we: dit moet makkelijker kunnen. Dit is het resultaat — nog volop in
             ontwikkeling. Probeer 'm uit en laat me weten wat er beter kan, via de{' '}
@@ -159,7 +159,7 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
           </p>
           {storyOpen && (
             <p style={{ fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.55, margin: '10px 0 0' }}>
-              Jerry en ik kennen elkaar al jaren. Hij kreeg eerst migraine, later ook jicht — en
+              Jeffrey en ik kennen elkaar al jaren. Hij kreeg eerst migraine, later ook jicht — en
               merkte hoe ingewikkeld eten dan wordt: het ene advies spreekt het andere tegen, en in
               de supermarkt of het restaurant heb je daar niks aan. Ik wilde iets dat in één
               oogopslag laat zien waar je op moet letten, mét de bron erbij, zodat je het zelf kunt

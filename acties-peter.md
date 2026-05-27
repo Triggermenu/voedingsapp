@@ -116,12 +116,12 @@ Kind regards,
 
 ---
 
-## A-6 · Jerry-test (na alpha-release)
+## A-6 · Jeffrey-test (na alpha-release)
 
 **Status:** ☐ Open (start na fase 1: 150 items + alpha live)
 **Tijd:** verspreid over 2 weken
 **Actie:**
-1. Deel productie-URL met Jerry.
+1. Deel productie-URL met Jeffrey.
 2. Vraag hem 2 weken normaal te gebruiken (supermarkt + restaurant).
 3. Verzamel feedback informeel (mail/app). Geen formulieren — wel duidelijke vragen:
    - Welke producten zocht je die er niet in zaten?
@@ -170,7 +170,7 @@ Kind regards,
 
 ## Stand van zaken (2026-05-27)
 De app is **technisch test-klaar** en draait live op triggermenu.nl: nieuwe scorelabels
-(Veilig/Met mate/Spaarzaam/Vermijden), bewijs in mensentaal, Tonijn-voorbeeldkaart, Jerry-verhaal,
+(Veilig/Met mate/Spaarzaam/Vermijden), bewijs in mensentaal, Tonijn-voorbeeldkaart, Jeffrey-verhaal,
 in-app feedbackknop (→ Supabase + optioneel mail), "niet gevonden"-melding, en de menuscan met
 nu wél actieve rate-limiting. Database 700 items.
 
