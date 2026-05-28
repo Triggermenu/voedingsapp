@@ -3,24 +3,25 @@ import Anthropic from '@anthropic-ai/sdk'
 import { createClient } from '@supabase/supabase-js'
 import { z } from 'zod'
 
+// Ruime limieten: het doel is hard misbruik blokkeren, niet de AI inperken.
 const fase1Schema = z.object({
   results: z.array(
     z.object({
-      dish: z.string().max(200),
-      scores: z.record(z.object({ score: z.number().int().min(0).max(3), note: z.string().optional() })),
-      overallNote: z.string().max(500).optional(),
+      dish: z.string().max(500),
+      scores: z.record(z.object({ score: z.number().int().min(0).max(3), note: z.string().max(500).optional() })),
+      overallNote: z.string().max(1000).optional(),
     })
-  ).max(15),
+  ).max(20),
 })
 
 const fase2Schema = z.object({
   details: z.array(
     z.object({
-      dish: z.string().max(200),
-      explanation: z.string().max(1000),
-      waiterQuestions: z.array(z.string().max(300)).max(3),
+      dish: z.string().max(500),
+      explanation: z.string().max(2000),
+      waiterQuestions: z.array(z.string().max(500)).max(5),
     })
-  ).max(20),
+  ).max(25),
 })
 
 const RATE_LIMIT = 12 // scans per IP per uur (Supabase)
@@ -202,10 +203,24 @@ Antwoord UITSLUITEND als geldig JSON:
 
       const text = response.content[0].type === 'text' ? response.content[0].text : ''
       const jsonMatch = text.match(/\{[\s\S]*\}/)
-      if (!jsonMatch) return res.status(500).json({ error: 'Kon resultaat niet verwerken' })
+      if (!jsonMatch) {
+        console.error('menuscan fase 1: geen JSON in AI-response. Tekst:', text.slice(0, 500))
+        return res.status(500).json({ error: 'Kon resultaat niet verwerken' })
+      }
 
-      const parsed = fase1Schema.safeParse(JSON.parse(jsonMatch[0]))
-      if (!parsed.success) return res.status(500).json({ error: 'Onverwacht responsformaat van AI' })
+      let rawJson: unknown
+      try {
+        rawJson = JSON.parse(jsonMatch[0])
+      } catch (parseErr) {
+        console.error('menuscan fase 1: JSON.parse mislukt:', parseErr, 'JSON-blok:', jsonMatch[0].slice(0, 500))
+        return res.status(500).json({ error: 'Kon resultaat niet verwerken' })
+      }
+
+      const parsed = fase1Schema.safeParse(rawJson)
+      if (!parsed.success) {
+        console.error('menuscan fase 1: Zod-validatie mislukt:', JSON.stringify(parsed.error.issues), 'Raw:', JSON.stringify(rawJson).slice(0, 500))
+        return res.status(500).json({ error: 'Onverwacht responsformaat van AI' })
+      }
       return res.status(200).json(parsed.data)
     } catch (err) {
       console.error('menuscan fase 1 error:', err)
@@ -281,10 +296,24 @@ Schrijf in het Nederlands. Antwoord UITSLUITEND als geldig JSON:
 
       const text = response.content[0].type === 'text' ? response.content[0].text : ''
       const jsonMatch = text.match(/\{[\s\S]*\}/)
-      if (!jsonMatch) return res.status(500).json({ error: 'Kon uitleg niet verwerken' })
+      if (!jsonMatch) {
+        console.error('menuscan fase 2: geen JSON in AI-response. Tekst:', text.slice(0, 500))
+        return res.status(500).json({ error: 'Kon uitleg niet verwerken' })
+      }
 
-      const parsed = fase2Schema.safeParse(JSON.parse(jsonMatch[0]))
-      if (!parsed.success) return res.status(500).json({ error: 'Onverwacht responsformaat van AI' })
+      let rawJson: unknown
+      try {
+        rawJson = JSON.parse(jsonMatch[0])
+      } catch (parseErr) {
+        console.error('menuscan fase 2: JSON.parse mislukt:', parseErr, 'JSON-blok:', jsonMatch[0].slice(0, 500))
+        return res.status(500).json({ error: 'Kon uitleg niet verwerken' })
+      }
+
+      const parsed = fase2Schema.safeParse(rawJson)
+      if (!parsed.success) {
+        console.error('menuscan fase 2: Zod-validatie mislukt:', JSON.stringify(parsed.error.issues), 'Raw:', JSON.stringify(rawJson).slice(0, 500))
+        return res.status(500).json({ error: 'Onverwacht responsformaat van AI' })
+      }
       return res.status(200).json(parsed.data)
     } catch (err) {
       console.error('menuscan fase 2 error:', err)
