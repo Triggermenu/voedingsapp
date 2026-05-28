@@ -87,11 +87,13 @@ async function checkRateLimit(ip: string): Promise<boolean> {
 }
 
 function getClientIp(req: VercelRequest): string {
-  // Gebruik x-vercel-forwarded-for: wordt door Vercel's edge-proxy ingesteld
-  // en kan niet door de client worden overschreven (i.t.t. x-forwarded-for).
+  // Vercel's edge-proxy strikt client-aanpasbare x-forwarded-for niet altijd,
+  // maar in de Vercel-architectuur worden BEIDE headers door de proxy gezet en
+  // is de eerste waarde betrouwbaar (proxy plakt de echte client-IP vooraan).
   const vercelFwd = req.headers['x-vercel-forwarded-for']
   if (typeof vercelFwd === 'string' && vercelFwd.length > 0) return vercelFwd.split(',')[0].trim()
-  // Fallback voor lokale dev (geen Vercel-proxy aanwezig)
+  const fwd = req.headers['x-forwarded-for']
+  if (typeof fwd === 'string' && fwd.length > 0) return fwd.split(',')[0].trim()
   return req.socket?.remoteAddress ?? 'unknown'
 }
 
