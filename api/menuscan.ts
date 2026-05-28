@@ -282,7 +282,23 @@ ${dishList}
 
 Geef per gerecht:
 1. Een uitleg van 2-3 zinnen waarom dit gerecht deze scores krijgt. Benoem concrete ingrediënten of bereidingswijzen die relevant zijn.
-2. 1-2 concrete vragen die de gast aan de ober kan stellen voor meer zekerheid.
+2. 1-2 ober-vragen. Strikte regels:
+   - Maximaal 12 woorden per vraag
+   - Eén ingrediënt of bereidingsstap per vraag (NIET "X of Y of Z" combineren)
+   - Actie-gericht: "Kan dit zonder X bereid worden?" is beter dan "Bevat dit X?"
+   - Vraag NIET naar dingen die je in de uitleg hierboven al noemt
+   - Noem de aandoening NIET in de vraag (geen "voor jicht", "voor mijn migraine", etc.) — de gast weet zelf waarom hij vraagt
+   - Schrijf de vraag zoals de gast 'm letterlijk zou uitspreken aan de ober
+
+Goede voorbeelden:
+   • "Kan dit gerecht zonder room bereid worden?"
+   • "Wordt de saus met bouillonblokjes gemaakt?"
+   • "Is het vlees gemarineerd of gerookt?"
+
+Slechte voorbeelden (vermijden):
+   • "Welke sauzen worden gebruikt en bevat het worcestersaus?" (te lang, multi-clause)
+   • "Bevat dit gerecht worcestersaus?" (al genoemd in de uitleg → redundant)
+   • "Welke ingrediënten zijn relevant voor mijn jicht?" (aandoening noemen, niet specifiek)
 
 Schrijf in het Nederlands. Antwoord UITSLUITEND als geldig JSON:
 {
