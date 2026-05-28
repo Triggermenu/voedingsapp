@@ -173,7 +173,7 @@ export function Scan() {
         </div>
         <p className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-1">Menukaart scan</p>
         <h1 className="font-serif text-[1.9rem] leading-[1.15] font-semibold text-[#1a1a18]">
-          Foto een menu,{' '}
+          Maak een foto van het menu,{' '}
           <em className="not-italic italic text-[#1d9e75]">wij beoordelen</em>.
         </h1>
         <p className="text-sm text-[#73726c] mt-1">
