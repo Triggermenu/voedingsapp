@@ -185,8 +185,10 @@ Antwoord UITSLUITEND als geldig JSON:
       const response = await client.messages.create({
         // Phase 1: snelle score-pass op Haiku 4.5 (2-3x sneller dan Sonnet, ruim genoeg
         // voor JSON-output met scores 0-3). Phase 2 blijft op Sonnet voor uitlegkwaliteit.
+        // max_tokens 2048: 15 gerechten × scores × notes hebben ~1500 tokens nodig;
+        // krapper geeft truncatie en JSON.parse-fouten.
         model: 'claude-haiku-4-5',
-        max_tokens: 1024,
+        max_tokens: 2048,
         messages: [
           {
             role: 'user',
