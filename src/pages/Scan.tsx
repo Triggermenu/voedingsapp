@@ -399,12 +399,13 @@ function shareResults(results: ScanResult[], conditions: string[]) {
 }
 
 /**
- * Comprimeer afbeelding naar max 1280px en JPEG 0.82 kwaliteit.
+ * Comprimeer afbeelding naar max 1568px (Anthropic's interne vision-limiet —
+ * groter heeft geen nut, alleen meer upload-tijd en vision-tokens) en JPEG 0.85.
  * Houdt de base64-payload ruim onder Vercel's 4.5MB body-limiet.
  */
 async function fileToBase64(file: File): Promise<string> {
-  const MAX_PX = 2048
-  const QUALITY = 0.88
+  const MAX_PX = 1568
+  const QUALITY = 0.85
 
   const bitmap = await createImageBitmap(file)
   const { width, height } = bitmap

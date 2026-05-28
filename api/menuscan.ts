@@ -183,8 +183,10 @@ Antwoord UITSLUITEND als geldig JSON:
     try {
       const client = new Anthropic()
       const response = await client.messages.create({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 2048,
+        // Phase 1: snelle score-pass op Haiku 4.5 (2-3x sneller dan Sonnet, ruim genoeg
+        // voor JSON-output met scores 0-3). Phase 2 blijft op Sonnet voor uitlegkwaliteit.
+        model: 'claude-haiku-4-5',
+        max_tokens: 1024,
         messages: [
           {
             role: 'user',
