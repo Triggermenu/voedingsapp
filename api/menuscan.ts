@@ -234,7 +234,8 @@ Antwoord UITSLUITEND als geldig JSON:
       if (err instanceof Anthropic.APIError) {
         return res.status(500).json({ error: `AI-fout (${err.status}): ${err.message}` })
       }
-      return res.status(500).json({ error: 'Er ging iets mis bij de analyse. Probeer opnieuw.' })
+      // TEMP DEBUG: expose error details to client so we can diagnose
+      return res.status(500).json({ error: 'Er ging iets mis bij de analyse. Probeer opnieuw.', _debug: { name: errName, message: errMsg } })
     }
   }
 
