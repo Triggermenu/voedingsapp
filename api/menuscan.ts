@@ -223,7 +223,11 @@ Antwoord UITSLUITEND als geldig JSON:
       }
       return res.status(200).json(parsed.data)
     } catch (err) {
-      console.error('menuscan fase 1 error:', err)
+      const errName = err instanceof Error ? err.constructor.name : typeof err
+      const errMsg = err instanceof Error ? err.message : String(err)
+      console.error('menuscan fase 1 — class:', errName)
+      console.error('menuscan fase 1 — message:', errMsg)
+      if (err instanceof Error && err.stack) console.error('menuscan fase 1 — stack:', err.stack.split('\n').slice(0, 5).join(' | '))
       if (err instanceof Anthropic.AuthenticationError) {
         return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
       }
