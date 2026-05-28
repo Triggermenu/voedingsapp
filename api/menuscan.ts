@@ -101,7 +101,23 @@ const CONDITION_CONTEXT: Record<string, string> = {
   histamine: 'histamine-intolerantie (vermijd histamine, liberatoren en DAO-blokkers)',
 }
 
+const ALLOWED_ORIGINS = new Set([
+  'https://triggermenu.nl',
+  'https://www.triggermenu.nl',
+])
+
+function applyCors(req: VercelRequest, res: VercelResponse) {
+  const origin = req.headers.origin
+  if (typeof origin === 'string' && ALLOWED_ORIGINS.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin)
+    res.setHeader('Vary', 'Origin')
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  applyCors(req, res)
   if (req.method === 'OPTIONS') return res.status(200).end()
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
