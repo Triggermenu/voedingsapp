@@ -121,7 +121,7 @@ export function Scan() {
       setLoading(false)
       track('menuscan_gelukt', { gerechten: phase1Results.length })
 
-      // Fase 2: tekst-only → uitleg + obervragen (op de achtergrond)
+      // Fase 2: tekst-only → uitleg + obervragen (op de achtergrond, NDJSON-stream)
       setPhase2Loading(true)
       try {
         const res2 = await fetch('/api/menuscan', {
@@ -133,15 +133,42 @@ export function Scan() {
             dishes: phase1Results.map((r) => ({ dish: r.dish, scores: r.scores })),
           }),
         })
-        if (res2.ok) {
-          const data2 = await res2.json() as { details: Phase2Detail[] }
-          setResults((prev) => {
-            if (!prev) return prev
-            return prev.map((r) => {
-              const detail = data2.details.find((d) => d.dish === r.dish)
-              return detail ? { ...r, explanation: detail.explanation, waiterQuestions: detail.waiterQuestions } : r
+        if (res2.ok && res2.body) {
+          const applyDetail = (detail: Phase2Detail) => {
+            setResults((prev) => {
+              if (!prev) return prev
+              return prev.map((r) =>
+                r.dish === detail.dish
+                  ? { ...r, explanation: detail.explanation, waiterQuestions: detail.waiterQuestions }
+                  : r,
+              )
             })
-          })
+          }
+          const reader = res2.body.getReader()
+          const decoder = new TextDecoder()
+          let buffer = ''
+          // Lees stream: elke regel = één gevalideerd detail-object
+          for (;;) {
+            const { done, value } = await reader.read()
+            if (done) break
+            buffer += decoder.decode(value, { stream: true })
+            let nl: number
+            while ((nl = buffer.indexOf('\n')) !== -1) {
+              const line = buffer.slice(0, nl).trim()
+              buffer = buffer.slice(nl + 1)
+              if (!line) continue
+              try {
+                applyDetail(JSON.parse(line) as Phase2Detail)
+              } catch {
+                // partial / malformed regel — overslaan
+              }
+            }
+          }
+          // Laatste regel zonder afsluitende \n
+          const tail = buffer.trim()
+          if (tail) {
+            try { applyDetail(JSON.parse(tail) as Phase2Detail) } catch { /* skip */ }
+          }
         }
       } catch {
         // fase 2 mislukt stilletjes — scores zijn al zichtbaar

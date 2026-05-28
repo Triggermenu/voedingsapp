@@ -14,14 +14,11 @@ const fase1Schema = z.object({
   ).max(20),
 })
 
-const fase2Schema = z.object({
-  details: z.array(
-    z.object({
-      dish: z.string().max(500),
-      explanation: z.string().max(2000),
-      waiterQuestions: z.array(z.string().max(500)).max(5),
-    })
-  ).max(25),
+// Phase 2 streamt NDJSON (één detail per regel) — schema valideert per regel
+const detailItemSchema = z.object({
+  dish: z.string().max(500),
+  explanation: z.string().max(2000),
+  waiterQuestions: z.array(z.string().max(500)).max(5),
 })
 
 const RATE_LIMIT = 12 // scans per IP per uur (Supabase)
@@ -300,55 +297,73 @@ Slechte voorbeelden (vermijden):
    • "Bevat dit gerecht worcestersaus?" (al genoemd in de uitleg → redundant)
    • "Welke ingrediënten zijn relevant voor mijn jicht?" (aandoening noemen, niet specifiek)
 
-Schrijf in het Nederlands. Antwoord UITSLUITEND als geldig JSON:
-{
-  "details": [
-    {
-      "dish": "exacte naam zoals hierboven",
-      "explanation": "2-3 zinnen uitleg",
-      "waiterQuestions": ["Vraag 1", "Vraag 2"]
-    }
-  ]
-}`
+Schrijf in het Nederlands.
+
+KRITIEK — output-formaat:
+Antwoord in NDJSON (JSON Lines): ÉÉN compleet JSON-object PER REGEL.
+GEEN omhullend object, GEEN array, GEEN markdown code-blocks, GEEN extra tekst voor of na.
+Elke regel exact deze structuur:
+{"dish":"exacte naam","explanation":"2-3 zinnen","waiterQuestions":["vraag 1","vraag 2"]}
+
+Schrijf de gerechten in dezelfde volgorde als hierboven, één gerecht per regel, eindig elke regel met \\n.`
 
     try {
       const client = new Anthropic()
-      const response = await client.messages.create({
+      const stream = client.messages.stream({
         model: 'claude-sonnet-4-6',
         max_tokens: 4096,
         messages: [{ role: 'user', content: prompt }],
       })
 
-      const text = response.content[0].type === 'text' ? response.content[0].text : ''
-      const jsonMatch = text.match(/\{[\s\S]*\}/)
-      if (!jsonMatch) {
-        console.error('menuscan fase 2: geen JSON in AI-response. Tekst:', text.slice(0, 500))
-        return res.status(500).json({ error: 'Kon uitleg niet verwerken' })
+      // Streaming response: NDJSON met één gevalideerd detail per regel
+      res.setHeader('Content-Type', 'application/x-ndjson; charset=utf-8')
+      res.setHeader('Cache-Control', 'no-cache, no-transform')
+      res.setHeader('X-Accel-Buffering', 'no') // schakel proxy-buffering uit
+
+      let buffer = ''
+      const emitLine = (raw: string) => {
+        const line = raw.trim()
+        if (!line || line.startsWith('```')) return
+        try {
+          const parsed = detailItemSchema.safeParse(JSON.parse(line))
+          if (parsed.success) {
+            res.write(JSON.stringify(parsed.data) + '\n')
+          }
+        } catch {
+          // partial of malformed regel — sla over (deltas worden samengevoegd in buffer)
+        }
       }
 
-      let rawJson: unknown
-      try {
-        rawJson = JSON.parse(jsonMatch[0])
-      } catch (parseErr) {
-        console.error('menuscan fase 2: JSON.parse mislukt:', parseErr, 'JSON-blok:', jsonMatch[0].slice(0, 500))
-        return res.status(500).json({ error: 'Kon uitleg niet verwerken' })
+      for await (const event of stream) {
+        if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
+          buffer += event.delta.text
+          let nl: number
+          while ((nl = buffer.indexOf('\n')) !== -1) {
+            emitLine(buffer.slice(0, nl))
+            buffer = buffer.slice(nl + 1)
+          }
+        }
       }
-
-      const parsed = fase2Schema.safeParse(rawJson)
-      if (!parsed.success) {
-        console.error('menuscan fase 2: Zod-validatie mislukt:', JSON.stringify(parsed.error.issues), 'Raw:', JSON.stringify(rawJson).slice(0, 500))
-        return res.status(500).json({ error: 'Onverwacht responsformaat van AI' })
-      }
-      return res.status(200).json(parsed.data)
+      emitLine(buffer) // laatste regel zonder afsluitende \n
+      res.end()
+      return
     } catch (err) {
-      console.error('menuscan fase 2 error:', err)
-      if (err instanceof Anthropic.AuthenticationError) {
-        return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
+      const errName = err instanceof Error ? err.constructor.name : typeof err
+      const errMsg = err instanceof Error ? err.message : String(err)
+      console.error(`menuscan fase 2 ${errName}: ${errMsg.replace(/\n/g, ' | ').slice(0, 800)}`)
+      // Headers nog niet verzonden → normale JSON-error sturen
+      if (!res.headersSent) {
+        if (err instanceof Anthropic.AuthenticationError) {
+          return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
+        }
+        if (err instanceof Anthropic.APIError) {
+          return res.status(500).json({ error: `AI-fout (${err.status}): ${err.message}` })
+        }
+        return res.status(500).json({ error: 'Uitleg kon niet worden opgehaald.' })
       }
-      if (err instanceof Anthropic.APIError) {
-        return res.status(500).json({ error: `AI-fout (${err.status}): ${err.message}` })
-      }
-      return res.status(500).json({ error: 'Uitleg kon niet worden opgehaald.' })
+      // Stream al gestart → netjes afsluiten; client behoudt wat hij al had
+      res.end()
+      return
     }
   }
 
