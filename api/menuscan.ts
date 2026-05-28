@@ -225,9 +225,8 @@ Antwoord UITSLUITEND als geldig JSON:
     } catch (err) {
       const errName = err instanceof Error ? err.constructor.name : typeof err
       const errMsg = err instanceof Error ? err.message : String(err)
-      console.error('menuscan fase 1 — class:', errName)
-      console.error('menuscan fase 1 — message:', errMsg)
-      if (err instanceof Error && err.stack) console.error('menuscan fase 1 — stack:', err.stack.split('\n').slice(0, 5).join(' | '))
+      // Alles in één log-regel zodat Vercel-tabel het toont
+      console.error(`menuscan fase 1 ${errName}: ${errMsg.replace(/\n/g, ' | ').slice(0, 800)}`)
       if (err instanceof Anthropic.AuthenticationError) {
         return res.status(500).json({ error: 'API-configuratie ontbreekt. Neem contact op met de beheerder.' })
       }
