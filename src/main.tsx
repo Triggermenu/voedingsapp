@@ -2,14 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import * as Sentry from '@sentry/react'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import '@/i18n/index'
 import '@/styles/index.css'
 import '@/styles/print.css'
 import App from './App'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
-import { initPlausible } from '@/lib/analytics'
-
-initPlausible()
 
 const dsn = import.meta.env.VITE_SENTRY_DSN as string | undefined
 
@@ -51,6 +50,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <ErrorBoundary>
         <App />
+        <Analytics />
+        <SpeedInsights />
       </ErrorBoundary>
     </BrowserRouter>
   </React.StrictMode>,

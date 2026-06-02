@@ -345,7 +345,7 @@ Bij meerdere aandoeningen:
 - **Tests:** Vitest (unit), Playwright (e2e)
 - **Hosting:** Vercel (static + serverless functions)
 - **Error tracking:** Sentry (gratis tier)
-- **Analytics:** Plausible EU (privacy-friendly, geen cookie banner nodig)
+- **Analytics:** Vercel Analytics + Vercel Speed Insights (gratis tier 25k events/maand, cookieloze tracking, Core Web Vitals erbij)
 - **CI/CD:** GitHub Actions → Vercel auto-deploy
 - **Repo structuur:** zie sectie 11
 
