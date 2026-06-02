@@ -99,7 +99,7 @@ Kind regards,
 2. **Vercel** — ✅ project `voedingsapp` live op triggermenu.nl, auto-deploy bij push naar main.
 3. **Anthropic API key** — ✅ staat in Vercel, menuscan werkt.
 4. **Sentry** — ⚠️ DSN staat in Vercel maar is **ongeldig** (console: *"Invalid Sentry Dsn"*) → foutregistratie initialiseert nu niet. **Actie:** juiste DSN uit sentry.io kopiëren en `VITE_SENTRY_DSN` in Vercel corrigeren.
-5. **Plausible** — ☐ nog niet opgezet. **Actie:** account op plausible.io (EU), site `triggermenu.nl` toevoegen, dan `VITE_PLAUSIBLE_DOMAIN=triggermenu.nl` in Vercel zetten. Code is al gewired (no-op tot de var staat).
+5. **Plausible** — ☐ nog niet opgezet. **Actie:** account op plausible.io (EU), site `triggermenu.nl` toevoegen, dan de script-ID uit Plausible (Site Settings → Tracking, formaat `pa-...`) als `VITE_PLAUSIBLE_SCRIPT_ID` in Vercel zetten. Code is al gewired (no-op tot de var staat).
 6. **Resend** (voor feedback-mailnotificatie) — ☐ nog niet opgezet. **Actie:** account op resend.com (gratis: 100 mails/dag), API key maken, `RESEND_API_KEY` in Vercel zetten. Dan krijg je per feedback een mailtje. Zonder key blijft feedback gewoon in de Supabase-tabel staan. Optioneel: domein verifiëren voor een net afzendadres (anders `onboarding@resend.dev`).
 
 **Supabase (nieuw, 2026-05-27):** ✅ aparte EU-org "Triggermenu's Org" + project (ref `jjfwkawiufplmqjomall`, Frankfurt). Tabellen `rate_limits` + `feedback` aangemaakt. `SUPABASE_URL` + secret key in Vercel. Hierdoor werkt de menuscan-rate-limiting nu (was eerder inactief) én de in-app feedback.
@@ -178,7 +178,7 @@ nu wél actieve rate-limiting. Database 700 items.
 - ☐ **DPA's** klikken (Vercel, Anthropic, Supabase, Sentry) — A-7
 - ☐ **Budget cap €10** op Anthropic — A-5
 - ☐ **Sentry-DSN** corrigeren in Vercel (nu ongeldig) — A-4
-- ☐ *(optioneel)* **Plausible** account + `VITE_PLAUSIBLE_DOMAIN` — voor gebruiksstatistieken
+- ☐ *(optioneel)* **Plausible** account + `VITE_PLAUSIBLE_SCRIPT_ID` — voor gebruiksstatistieken
 - ☐ *(optioneel)* **Resend** account + `RESEND_API_KEY` — voor mail per feedback
 
 ## Klaar voor publieke launch?
