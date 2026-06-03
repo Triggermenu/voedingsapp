@@ -1,6 +1,9 @@
-import { useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useMemo, useEffect, useState, useCallback } from 'react'
+import { useNavigate, Link } from 'react-router-dom'
 import { getAllItems } from '@/lib/db'
+import { getSession, getAdminStatus, signOut } from '@/lib/auth'
+import { supabase } from '@/lib/supabase'
+import type { Session } from '@supabase/supabase-js'
 import type { Condition } from '@/schemas/item'
 
 const CONDITIONS: Condition[] = ['jicht', 'migraine', 'nierstenen', 'histamine']
@@ -15,33 +18,17 @@ const CATEGORY_LABELS: Record<string, string> = {
   zuivel: 'Zuivel & eieren', eieren: 'Eieren',
   'dranken-alcohol': 'Alcohol', 'dranken-non-alcohol': 'Dranken',
   zoetwaren: 'Zoetwaren & snacks', 'sauzen-kruiden': 'Sauzen & kruiden',
+  'bereid-gerecht': 'Bereide gerechten',
 }
 
 const RISKS = [
-  {
-    id: 'R-001', title: 'SIGHI-licentie', status: 'open' as const,
-    desc: 'Commerciële toestemming nog niet bevestigd. Vereist vóór publieke launch.',
-  },
-  {
-    id: 'R-002', title: 'MDR-classificatie', status: 'open' as const,
-    desc: 'Classificatie als medisch hulpmiddel nog onderzocht. Vereist extern advies.',
-  },
-  {
-    id: 'R-003', title: 'Migraine evidence', status: 'mitigated' as const,
-    desc: 'Inherent zwak domein. Gemitigeerd via whitelist + evidence-badges in UI.',
-  },
-  {
-    id: 'R-004', title: 'Menuscan betrouwbaarheid', status: 'mitigated' as const,
-    desc: 'AI kan verborgen ingrediënten missen. Prompt + disclaimer + rate limit.',
-  },
-  {
-    id: 'R-005', title: 'API-kosten (misbruik)', status: 'mitigated' as const,
-    desc: 'Rate limit (12 scans/uur per IP via Supabase) aanwezig. Budget-cap instellen op Anthropic dashboard (A-5).',
-  },
-  {
-    id: 'R-006', title: 'Database-kwaliteit', status: 'mitigated' as const,
-    desc: '16 CI gates blokkeren slechte data automatisch. Sentry escaleert naar Peter.',
-  },
+  { id: 'R-001', title: 'SIGHI-licentie', status: 'open' as const, desc: 'Commerciële toestemming nog niet bevestigd. Vereist vóór publieke launch.' },
+  { id: 'R-002', title: 'MDR-classificatie', status: 'open' as const, desc: 'Classificatie als medisch hulpmiddel nog onderzocht. Vereist extern advies.' },
+  { id: 'R-003', title: 'Migraine evidence', status: 'mitigated' as const, desc: 'Inherent zwak domein. Gemitigeerd via whitelist + evidence-badges in UI.' },
+  { id: 'R-004', title: 'Menuscan betrouwbaarheid', status: 'mitigated' as const, desc: 'AI kan verborgen ingrediënten missen. Prompt + disclaimer + rate limit.' },
+  { id: 'R-005', title: 'API-kosten (misbruik)', status: 'mitigated' as const, desc: 'Rate limit (12 scans/uur per IP via Supabase) aanwezig. Budget-cap instellen op Anthropic dashboard (A-5).' },
+  { id: 'R-006', title: 'Database-kwaliteit', status: 'mitigated' as const, desc: '16 CI gates blokkeren slechte data automatisch. Sentry escaleert naar Peter.' },
+  { id: 'R-010', title: 'Admin-account beveiliging', status: 'open' as const, desc: 'Gecompromitteerd admin-account geeft volledige toegang tot feedback en rate limits. Mitigatie: sterk wachtwoord, rotatie 1× per 6 maanden (acties-peter.md C-2).' },
 ]
 
 const PRIMARY_SOURCES = [
@@ -77,9 +64,118 @@ function ProgressBar({ value, max, color = 'bg-[#1d9e75]' }: { value: number; ma
   )
 }
 
+type FeedbackRow = { id: string; message: string; type: string; context: string | null; created_at: string }
+type RateLimitRow = { ip: string; count: number; lastSeen: string }
+
+function LoginPrompt() {
+  return (
+    <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-6 text-center">
+      <p className="text-sm text-[#9c9a92] mb-3">Log in om live data te zien.</p>
+      <Link
+        to="/admin/login"
+        className="inline-block text-xs font-semibold text-[#1d9e75] border border-[#1d9e75] rounded-lg px-4 py-2 hover:bg-[#f0faf5] transition-colors"
+      >
+        Inloggen →
+      </Link>
+    </div>
+  )
+}
+
 export function Admin() {
   const navigate = useNavigate()
   const items = useMemo(() => getAllItems(), [])
+
+  // ── Auth state ─────────────────────────────────────────────────────────────
+  const [session, setSession] = useState<Session | null>(null)
+  const [isAdmin, setIsAdmin] = useState(false)
+  const [authLoading, setAuthLoading] = useState(true)
+
+  // ── Live data ──────────────────────────────────────────────────────────────
+  const [feedback, setFeedback] = useState<FeedbackRow[]>([])
+  const [rateLimits, setRateLimits] = useState<RateLimitRow[]>([])
+  const [liveLoading, setLiveLoading] = useState(false)
+  const [liveError, setLiveError] = useState<string | null>(null)
+  const [resettingIp, setResettingIp] = useState<string | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+
+    async function checkAuth() {
+      const s = await getSession()
+      if (cancelled) return
+      setSession(s)
+      if (s) {
+        const admin = await getAdminStatus(s.user.id)
+        if (!cancelled) setIsAdmin(admin)
+      }
+      if (!cancelled) setAuthLoading(false)
+    }
+
+    void checkAuth()
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, s) => {
+      if (cancelled) return
+      setSession(s)
+      if (!s) { setIsAdmin(false); setAuthLoading(false) }
+    })
+
+    return () => { cancelled = true; subscription.unsubscribe() }
+  }, [])
+
+  const loadLiveData = useCallback(async (accessToken: string) => {
+    setLiveLoading(true)
+    setLiveError(null)
+    try {
+      const headers = { Authorization: `Bearer ${accessToken}` }
+      const [fbRes, rlRes] = await Promise.all([
+        fetch('/api/admin/feedback', { headers }),
+        fetch('/api/admin/rate-limits', { headers }),
+      ])
+      if (!fbRes.ok || !rlRes.ok) throw new Error('Ophalen mislukt')
+      const [fbData, rlData] = await Promise.all([fbRes.json(), rlRes.json()])
+      setFeedback(fbData.feedback ?? [])
+      setRateLimits(rlData.rateLimits ?? [])
+    } catch {
+      setLiveError('Live data ophalen mislukt. Probeer opnieuw.')
+    } finally {
+      setLiveLoading(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (session?.access_token && isAdmin) {
+      void loadLiveData(session.access_token)
+    }
+  }, [session, isAdmin, loadLiveData])
+
+  async function handleResetIp(ip: string) {
+    if (!session?.access_token) return
+    setResettingIp(ip)
+    try {
+      const res = await fetch('/api/admin/reset-rate-limit', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${session.access_token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ip }),
+      })
+      if (res.ok) {
+        setRateLimits((prev) => prev.filter((r) => r.ip !== ip))
+      }
+    } finally {
+      setResettingIp(null)
+    }
+  }
+
+  async function handleLogout() {
+    await signOut()
+    setSession(null)
+    setIsAdmin(false)
+    setFeedback([])
+    setRateLimits([])
+    navigate('/admin/login')
+  }
 
   // ── Database stats ─────────────────────────────────────────────────────────
   const totalItems = items.length
@@ -108,16 +204,13 @@ export function Admin() {
     items.filter((i) => CONDITIONS.filter((c) => i.scores[c] !== null).length >= 2).length,
     [items])
 
-  // ── Audit: items die aandacht nodig hebben ─────────────────────────────────
   const auditItems = useMemo(() => {
     const evidenceC: typeof items = []
     const zeroConditions: typeof items = []
     const score3EvidenceC: typeof items = []
-
     for (const item of items) {
       const scoredCount = CONDITIONS.filter((c) => item.scores[c] !== null).length
       if (scoredCount === 0) zeroConditions.push(item)
-
       for (const c of CONDITIONS) {
         const s = item.scores[c]
         if (!s) continue
@@ -125,7 +218,6 @@ export function Admin() {
         if (s.score === 3 && s.evidence === 'C') score3EvidenceC.push(item)
       }
     }
-
     return { evidenceC: [...new Set(evidenceC)], zeroConditions, score3EvidenceC: [...new Set(score3EvidenceC)] }
   }, [items])
 
@@ -134,22 +226,129 @@ export function Admin() {
       {/* Header */}
       <div className="bg-white border-b border-[#e0dfd7] px-4 pt-safe pt-4 pb-4">
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-center gap-3 mb-1">
+          <div className="flex items-center justify-between mb-1">
             <button
               onClick={() => navigate('/zoeken')}
               className="text-xs text-[#9c9a92] hover:text-[#1a1a18] transition-colors"
             >
               ← Terug
             </button>
+            {!authLoading && (
+              session && isAdmin ? (
+                <button
+                  onClick={handleLogout}
+                  className="text-xs text-[#9c9a92] hover:text-red-600 transition-colors"
+                >
+                  Uitloggen
+                </button>
+              ) : (
+                <Link
+                  to="/admin/login"
+                  className="text-xs text-[#1d9e75] hover:underline"
+                >
+                  Inloggen
+                </Link>
+              )
+            )}
           </div>
           <h1 className="font-serif text-2xl font-semibold text-[#1a1a18]">Admin</h1>
-          <p className="text-xs text-[#9c9a92] mt-0.5">Database · Risico's · Bronnen</p>
+          <p className="text-xs text-[#9c9a92] mt-0.5">
+            Database · Risico's · Bronnen
+            {session && isAdmin && (
+              <span className="ml-2 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-[#c6e3d5] text-emerald-800">
+                Ingelogd
+              </span>
+            )}
+          </p>
         </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 py-5 space-y-6">
 
-        {/* ── 1. Database overzicht ──────────────────────────────────────── */}
+        {/* ── 1. Feedback inbox ─────────────────────────────────────────── */}
+        <section>
+          <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
+            Feedback inbox
+          </h2>
+          {!session || !isAdmin ? (
+            <LoginPrompt />
+          ) : liveLoading ? (
+            <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-6 text-center text-sm text-[#9c9a92]">Laden…</div>
+          ) : liveError ? (
+            <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-700 flex items-center justify-between">
+              <span>{liveError}</span>
+              <button onClick={() => loadLiveData(session.access_token)} className="text-xs underline ml-3">Opnieuw</button>
+            </div>
+          ) : feedback.length === 0 ? (
+            <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-6 text-center text-sm text-[#9c9a92]">
+              Geen feedback ontvangen.
+            </div>
+          ) : (
+            <div className="bg-white border border-[#e0dfd7] rounded-xl divide-y divide-[#f0efe8]">
+              {feedback.map((fb) => (
+                <div key={fb.id} className="px-4 py-3">
+                  <div className="flex items-center justify-between gap-2 mb-1">
+                    <span className="text-[10px] font-semibold uppercase tracking-widest text-[#9c9a92]">{fb.type}</span>
+                    <span className="text-[10px] text-[#9c9a92]">
+                      {new Date(fb.created_at).toLocaleDateString('nl-NL', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </span>
+                  </div>
+                  <p className="text-sm text-[#1a1a18] leading-relaxed">{fb.message}</p>
+                  {fb.context && (
+                    <p className="text-[10px] text-[#9c9a92] mt-1">Pagina: {fb.context}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* ── 2. Rate limits ────────────────────────────────────────────── */}
+        <section>
+          <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
+            Rate limits — laatste 24u
+          </h2>
+          {!session || !isAdmin ? (
+            <LoginPrompt />
+          ) : liveLoading ? (
+            <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-6 text-center text-sm text-[#9c9a92]">Laden…</div>
+          ) : rateLimits.length === 0 ? (
+            <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-6 text-center text-sm text-[#9c9a92]">
+              Geen scan-activiteit in de afgelopen 24 uur.
+            </div>
+          ) : (
+            <div className="bg-white border border-[#e0dfd7] rounded-xl divide-y divide-[#f0efe8]">
+              {rateLimits.map((rl) => (
+                <div key={rl.ip} className="flex items-center justify-between px-4 py-2.5 gap-3">
+                  <div className="min-w-0">
+                    <p className="text-sm font-mono text-[#1a1a18] truncate">{rl.ip}</p>
+                    <p className="text-[10px] text-[#9c9a92] mt-0.5">
+                      Laatste scan: {new Date(rl.lastSeen).toLocaleString('nl-NL')}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 flex-shrink-0">
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded ${
+                      rl.count >= 12 ? 'bg-red-100 text-red-700' :
+                      rl.count >= 8  ? 'bg-amber-100 text-amber-700' :
+                                        'bg-[#f0efe8] text-[#5f5e5a]'
+                    }`}>
+                      {rl.count}×
+                    </span>
+                    <button
+                      onClick={() => handleResetIp(rl.ip)}
+                      disabled={resettingIp === rl.ip}
+                      className="text-[10px] font-semibold text-red-600 hover:text-red-800 disabled:opacity-40 transition-colors border border-red-200 rounded px-2 py-0.5 hover:bg-red-50"
+                    >
+                      {resettingIp === rl.ip ? '…' : 'Reset'}
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* ── 3. Database overzicht ──────────────────────────────────────── */}
         <section>
           <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
             Database
@@ -159,7 +358,7 @@ export function Admin() {
             <StatCard label="Totaal items" value={totalItems} />
             <StatCard label="≥2 aandoeningen" value={itemsWith2Plus} sub={`${Math.round((itemsWith2Plus / totalItems) * 100)}% gescoord`} />
             <StatCard label="Categorieën" value={byCategory.length} />
-            <StatCard label="Fase doel" value={`${totalItems} / 150`} sub="Fase 1 target" />
+            <StatCard label="Cap" value={`${totalItems} / 700`} sub="Fase 4 — afgerond" />
           </div>
 
           {/* Fase-voortgang */}
@@ -197,7 +396,7 @@ export function Admin() {
           </div>
         </section>
 
-        {/* ── 2. Score coverage per aandoening ──────────────────────────── */}
+        {/* ── 4. Score coverage per aandoening ──────────────────────────── */}
         <section>
           <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
             Score coverage
@@ -237,13 +436,12 @@ export function Admin() {
           </div>
         </section>
 
-        {/* ── 3. Audit-signalen ─────────────────────────────────────────── */}
+        {/* ── 5. Audit-signalen ─────────────────────────────────────────── */}
         <section>
           <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
             Audit-signalen
           </h2>
           <div className="space-y-3">
-
             {auditItems.zeroConditions.length > 0 ? (
               <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3">
                 <p className="text-sm font-medium text-red-800 mb-2">
@@ -303,7 +501,7 @@ export function Admin() {
           </div>
         </section>
 
-        {/* ── 4. Risico's ──────────────────────────────────────────────── */}
+        {/* ── 6. Risico's ──────────────────────────────────────────────── */}
         <section>
           <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
             Risico's
@@ -313,9 +511,7 @@ export function Admin() {
               <div key={r.id} className="px-4 py-3 flex items-start gap-3">
                 <div className="flex-shrink-0 mt-0.5">
                   <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-semibold ${
-                    r.status === 'open'
-                      ? 'bg-red-100 text-red-700'
-                      : 'bg-[#c6e3d5] text-emerald-800'
+                    r.status === 'open' ? 'bg-red-100 text-red-700' : 'bg-[#c6e3d5] text-emerald-800'
                   }`}>
                     {r.status === 'open' ? 'Open' : 'Gemitigeerd'}
                   </span>
@@ -332,7 +528,7 @@ export function Admin() {
           </div>
         </section>
 
-        {/* ── 5. Primaire bronnen ───────────────────────────────────────── */}
+        {/* ── 7. Primaire bronnen ───────────────────────────────────────── */}
         <section>
           <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
             Primaire bronnen
@@ -358,12 +554,9 @@ export function Admin() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-[#9c9a92] mt-2 px-1">
-            Maandelijkse Last-Modified check via GitHub Actions (monthly-evidence-check workflow).
-          </p>
         </section>
 
-        {/* ── 6. Snelle links ──────────────────────────────────────────── */}
+        {/* ── 8. Snelle links ──────────────────────────────────────────── */}
         <section>
           <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
             Snelle links
@@ -372,7 +565,7 @@ export function Admin() {
             {[
               { label: 'GitHub repo', url: 'https://github.com/PeterWolterman/voedingsapp' },
               { label: 'CI / Actions', url: 'https://github.com/PeterWolterman/voedingsapp/actions' },
-              { label: 'Open PR\'s', url: 'https://github.com/PeterWolterman/voedingsapp/pulls' },
+              { label: "Open PR's", url: 'https://github.com/PeterWolterman/voedingsapp/pulls' },
               { label: 'Vercel dashboard', url: 'https://vercel.com/dashboard' },
               { label: 'Anthropic console', url: 'https://console.anthropic.com' },
               { label: 'Sentry', url: 'https://sentry.io' },

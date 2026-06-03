@@ -32,8 +32,8 @@ export function Privacy() {
           <h2 className="font-serif font-semibold text-base text-[#1a1a18]">Wie is verantwoordelijk?</h2>
           <p>
             Triggermenu is een app van Peter Wolterman, bereikbaar via{' '}
-            <a href="mailto:peter.wolterman@gmail.com" className="text-[#1d9e75] underline">
-              peter.wolterman@gmail.com
+            <a href="mailto:Productie@triggermenu.nl" className="text-[#1d9e75] underline">
+              Productie@triggermenu.nl
             </a>
             .
           </p>
@@ -113,8 +113,8 @@ export function Privacy() {
           </p>
           <p>
             Voor vragen over privacy kun je contact opnemen via{' '}
-            <a href="mailto:peter.wolterman@gmail.com" className="text-[#1d9e75] underline">
-              peter.wolterman@gmail.com
+            <a href="mailto:Productie@triggermenu.nl" className="text-[#1d9e75] underline">
+              Productie@triggermenu.nl
             </a>
             .
           </p>

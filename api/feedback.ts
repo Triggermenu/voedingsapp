@@ -67,7 +67,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 async function notifyByEmail(type: string, message: string, context: string | null) {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) return
-  const to = process.env.FEEDBACK_NOTIFY_EMAIL ?? 'peter.wolterman@gmail.com'
+  const to = process.env.FEEDBACK_NOTIFY_EMAIL ?? 'Productie@triggermenu.nl'
   const from = process.env.FEEDBACK_FROM_EMAIL ?? 'Triggermenu <onboarding@resend.dev>'
   try {
     await fetch('https://api.resend.com/emails', {

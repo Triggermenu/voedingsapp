@@ -10,6 +10,9 @@ import { Lijst } from '@/pages/Lijst'
 import { ItemDetail } from '@/pages/ItemDetail'
 import { Privacy } from '@/pages/Privacy'
 import { Admin } from '@/pages/Admin'
+import { AdminLogin } from '@/pages/AdminLogin'
+import { AdminForgotPassword } from '@/pages/AdminForgotPassword'
+import { AdminLayout } from '@/pages/AdminLayout'
 import { FeedbackButton } from '@/components/FeedbackButton'
 
 function RequireProfile({ children }: { children: React.ReactNode }) {
@@ -39,7 +42,14 @@ export default function App() {
       <Route path="/bronnen" element={<RequireProfile><Bronnen /></RequireProfile>} />
       <Route path="/instellingen" element={<RequireProfile><Instellingen /></RequireProfile>} />
       <Route path="/privacy" element={<Privacy />} />
-      <Route path="/admin" element={<Admin />} />
+
+      {/* Admin routes — beveiligd via AdminLayout (vereist Supabase-sessie + is_admin) */}
+      <Route element={<AdminLayout />}>
+        <Route path="/admin" element={<Admin />} />
+      </Route>
+      <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/admin/wachtwoord-vergeten" element={<AdminForgotPassword />} />
+
       <Route path="/" element={<Navigate to="/zoeken" replace />} />
       <Route path="*" element={<Navigate to="/zoeken" replace />} />
     </Routes>

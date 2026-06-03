@@ -141,6 +141,21 @@
 
 ---
 
+## R-010 · Admin-account beveiliging
+
+| Veld | Waarde |
+|---|---|
+| **Aard** | Operationeel / beveiliging |
+| **Status** | Open — gemitigeerd via wachtwoordbeleid |
+| **Impact** | Middel — gecompromitteerd admin-account geeft toegang tot feedback (bevat gebruikersinput) en rate_limits (IP-adressen). Geen toegang tot eindgebruikersprofielen (die staan in localStorage, niet in de DB). Geen schrijfrechten op de voedingsdatabase. |
+| **Waarschijnlijkheid** | Laag bij naleving wachtwoordbeleid |
+| **Mitigatie** | 1) Sterk, uniek wachtwoord (geen hergebruik). 2) Rotatie 1× per 6 maanden via Supabase dashboard (acties-peter.md C-2). 3) Signups disabled in Supabase — niemand anders kan een account aanmaken. 4) is_admin check server-side in alle admin API-routes. 5) RLS op feedback + rate_limits: anon key heeft geen SELECT-rechten. 6) Toekomstige stap: 2FA via Supabase Auth. |
+| **Eigenaar** | Peter |
+| **Deadline** | Doorlopend — zie rotatieagenda in acties-peter.md C-2 |
+| **Tracking** | acties-peter.md C-2; api/_lib/requireAdmin.ts |
+
+---
+
 ## Niet-risico's (expliciet genoemd, doelbewust geen mitigatie)
 
 - **Geen account / cloud sync (MVP).** Profiel in localStorage — blijft op het apparaat van de gebruiker, gaat niet naar een server. Laag AVG-risico. Migratie naar accounts later mogelijk zonder breaking changes (zelfde schema), maar verhoogt het AVG-risico — zie R-007.
