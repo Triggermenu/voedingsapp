@@ -1,18 +1,27 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+const PLACEHOLDER_URL = 'https://placeholder.supabase.co'
+const PLACEHOLDER_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiJ9.placeholder'
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.warn('supabase: VITE_SUPABASE_URL of VITE_SUPABASE_ANON_KEY ontbreekt — auth werkt niet')
+const rawUrl = import.meta.env.VITE_SUPABASE_URL
+const rawKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+/** Valideert of de string een echte HTTP(S)-URL is — vangt ook "undefined" als string op */
+function isValidHttpUrl(val: unknown): val is string {
+  if (typeof val !== 'string' || !val) return false
+  try {
+    const u = new URL(val)
+    return u.protocol === 'https:' || u.protocol === 'http:'
+  } catch {
+    return false
+  }
 }
 
-// Fallback-waarden zodat createClient niet crasht bij ontbrekende env vars
-// (CI, lokale dev zonder .env.local). Supabase vereist een geldige HTTPS-URL
-// én een JWT-formaat key — anders gooit de library een fout die de hele app
-// plat legt. De placeholder-JWT is geldig van formaat maar niet functioneel:
-// auth-calls mislukken met een network error, de rest van de app werkt normaal.
-export const supabase = createClient(
-  supabaseUrl || 'https://placeholder.supabase.co',
-  supabaseAnonKey || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiJ9.placeholder',
-)
+const supabaseUrl = isValidHttpUrl(rawUrl) ? rawUrl : PLACEHOLDER_URL
+const supabaseAnonKey = (typeof rawKey === 'string' && rawKey.length > 10) ? rawKey : PLACEHOLDER_KEY
+
+if (supabaseUrl === PLACEHOLDER_URL) {
+  console.warn('supabase: VITE_SUPABASE_URL ontbreekt of ongeldig — admin-auth werkt niet')
+}
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
