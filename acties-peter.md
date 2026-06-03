@@ -225,7 +225,7 @@ CREATE POLICY "Service role only" ON public.rate_limits
 ### Stap 2 — Admin-gebruiker aanmaken
 
 1. Ga naar **Supabase → Authentication → Users → Add user**
-2. E-mail: `peter.wolterman@gmail.com`
+2. E-mail: `Productie@triggermenu.nl`
 3. Klik **Send invite** (je ontvangt een mail om je wachtwoord in te stellen)
 4. Stel een sterk wachtwoord in (minimaal 16 tekens, uniek, niet hergebruikt)
 
@@ -234,7 +234,7 @@ CREATE POLICY "Service role only" ON public.rate_limits
 Na het aanmaken van de gebruiker, haal het user-ID op uit de Users-lijst en voer uit:
 
 ```sql
-UPDATE public.profiles SET is_admin = true WHERE email = 'peter.wolterman@gmail.com';
+UPDATE public.profiles SET is_admin = true WHERE email = 'Productie@triggermenu.nl';
 ```
 
 ### Stap 4 — Auth-gate activeren in de code
@@ -251,7 +251,7 @@ Ga naar **Vercel → Project → Settings → Environment Variables** en voeg to
 
 ### Wachtwoordrotatie (1× per 6 maanden)
 
-1. Supabase → Authentication → Users → klik op peter.wolterman@gmail.com → **Send password reset**
+1. Supabase → Authentication → Users → klik op Productie@triggermenu.nl → **Send password reset**
 2. Stel nieuw sterk wachtwoord in
 3. Noteer de rotatie hier:
    - Laatste rotatie: _nog niet uitgevoerd_
