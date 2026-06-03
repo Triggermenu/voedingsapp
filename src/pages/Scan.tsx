@@ -84,6 +84,16 @@ export function Scan() {
   const handleFile = (file: File) => {
     // Geef de vorige object-URL vrij — de foto wordt niet langer dan nodig bewaard.
     if (preview) URL.revokeObjectURL(preview)
+
+    if (!file.type.startsWith('image/')) {
+      setError('Alleen afbeeldingen worden ondersteund (JPEG, PNG, HEIC, WEBP).')
+      return
+    }
+    if (file.size > 12 * 1024 * 1024) {
+      setError('Afbeelding is te groot (max 12 MB). Maak een foto met lagere resolutie of kies een kleinere afbeelding.')
+      return
+    }
+
     setImageFile(file)
     setPreview(URL.createObjectURL(file))
     setResults(null)
@@ -175,8 +185,15 @@ export function Scan() {
       } finally {
         setPhase2Loading(false)
       }
-    } catch {
-      setError('Kon de server niet bereiken. Controleer je verbinding.')
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : ''
+      if (msg === 'AFBEELDING_NIET_LEESBAAR') {
+        setError('Kon de afbeelding niet verwerken. Probeer een andere foto (JPEG of PNG werkt het best).')
+      } else if (msg === 'CANVAS_LEEG') {
+        setError('Afbeelding kon niet worden gecomprimeerd. Probeer een foto in een ander formaat.')
+      } else {
+        setError('Kon de server niet bereiken. Controleer je internetverbinding en probeer opnieuw.')
+      }
       setLoading(false)
     }
   }
@@ -231,6 +248,7 @@ export function Scan() {
                 </svg>
                 <p className="text-sm font-medium text-[#1a1a18]">Foto maken of kiezen</p>
                 <p className="text-xs text-[#9c9a92]">Tik om je camera of fotobibliotheek te openen</p>
+                <p className="text-xs text-[#c8c7bf] pt-1">Camera werkt niet? Controleer je browserinstellingen → cameratoegang.</p>
               </div>
             )}
             <input
@@ -434,7 +452,12 @@ async function fileToBase64(file: File): Promise<string> {
   const MAX_PX = 1568
   const QUALITY = 0.85
 
-  const bitmap = await createImageBitmap(file)
+  let bitmap: ImageBitmap
+  try {
+    bitmap = await createImageBitmap(file)
+  } catch {
+    throw new Error('AFBEELDING_NIET_LEESBAAR')
+  }
   const { width, height } = bitmap
 
   const scale = Math.min(1, MAX_PX / Math.max(width, height))
@@ -451,7 +474,7 @@ async function fileToBase64(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     canvas.toBlob(
       (blob) => {
-        if (!blob) { reject(new Error('Canvas toBlob mislukt')); return }
+        if (!blob) { reject(new Error('CANVAS_LEEG')); return }
         const reader = new FileReader()
         reader.onload = () => resolve((reader.result as string).split(',')[1])
         reader.onerror = reject

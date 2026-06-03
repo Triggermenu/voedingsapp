@@ -289,6 +289,7 @@ export function Zoeken() {
   const isDesktop = useMediaQuery('(min-width: 1280px)')
   const [query, setQuery] = useState('')
   const [activeCategories, setActiveCategories] = useState<Set<Category>>(new Set())
+  const [showAllCats, setShowAllCats] = useState(false)
   const [onlySafe, setOnlySafe] = useState(() =>
     localStorage.getItem('zoeken-only-safe') === 'true'
   )
@@ -326,10 +327,24 @@ export function Zoeken() {
   const results = useMemo(() => searchItems(query, conditions), [query, conditions])
 
   const availableCategories = useMemo(() => {
-    const cats = new Set<Category>()
-    for (const item of results) cats.add(item.category as Category)
-    return Array.from(cats)
+    const counts = new Map<Category, number>()
+    for (const item of results) {
+      const cat = item.category as Category
+      counts.set(cat, (counts.get(cat) ?? 0) + 1)
+    }
+    return Array.from(counts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([cat]) => cat)
   }, [results])
+
+  const TOP_CATS = 5
+  const visibleCategories = useMemo(() => {
+    if (showAllCats) return availableCategories
+    // Toon altijd actieve categorieën, ook al zitten ze buiten de top 5
+    const top = availableCategories.slice(0, TOP_CATS)
+    const activeHidden = availableCategories.slice(TOP_CATS).filter((c) => activeCategories.has(c))
+    return [...top, ...activeHidden]
+  }, [availableCategories, showAllCats, activeCategories])
 
   const filteredResults = useMemo(() => {
     let r = results
@@ -495,7 +510,7 @@ export function Zoeken() {
           >
             Alle
           </button>
-          {availableCategories.map((cat) => {
+          {visibleCategories.map((cat) => {
             const isActive = activeCategories.has(cat)
             return (
               <button
@@ -513,6 +528,18 @@ export function Zoeken() {
               </button>
             )
           })}
+          {availableCategories.length > TOP_CATS && (
+            <button
+              onClick={() => setShowAllCats((v) => !v)}
+              style={{
+                flexShrink: 0, padding: '5px 11px', borderRadius: 999, fontSize: 12.5, fontWeight: 500,
+                background: 'transparent', color: 'var(--brand)',
+                border: '1px dashed var(--brand)', cursor: 'pointer', fontFamily: 'inherit',
+              }}
+            >
+              {showAllCats ? 'Minder' : `+${availableCategories.length - TOP_CATS} meer`}
+            </button>
+          )}
         </div>
       )}
     </div>
@@ -625,7 +652,7 @@ export function Zoeken() {
                   {onlySafe ? '✓ Alles groen' : 'Alles groen'}
                 </span>
                 {/* Categorieën */}
-                {['Alle', ...availableCategories].map((c) => {
+                {['Alle', ...visibleCategories].map((c) => {
                   const isAll = c === 'Alle'
                   const isActive = isAll ? activeCategories.size === 0 : activeCategories.has(c as Category)
                   return (
@@ -643,6 +670,18 @@ export function Zoeken() {
                     </span>
                   )
                 })}
+                {availableCategories.length > TOP_CATS && (
+                  <span
+                    onClick={() => setShowAllCats((v) => !v)}
+                    style={{
+                      fontSize: 11.5, padding: '5px 10px', borderRadius: 999, cursor: 'pointer',
+                      background: 'transparent', color: 'var(--brand)',
+                      border: '1px dashed var(--brand)',
+                    }}
+                  >
+                    {showAllCats ? 'Minder' : `+${availableCategories.length - TOP_CATS}`}
+                  </span>
+                )}
               </div>
             </div>
             <LegendBar />
