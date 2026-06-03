@@ -74,7 +74,7 @@ describe('resetPasswordForEmail', () => {
     await resetPasswordForEmail('peter@voorbeeld.nl')
     expect(mockAuth.resetPasswordForEmail).toHaveBeenCalledWith(
       'peter@voorbeeld.nl',
-      expect.objectContaining({ redirectTo: expect.stringContaining('/admin/login') }),
+      expect.objectContaining({ redirectTo: expect.stringContaining('/admin/wachtwoord-reset') }),
     )
   })
 })
