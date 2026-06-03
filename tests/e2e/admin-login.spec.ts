@@ -15,7 +15,9 @@ test.describe('Admin login pagina', () => {
     await page.getByLabel('E-mailadres').fill('fout@voorbeeld.nl')
     await page.getByLabel('Wachtwoord').fill('foutWachtwoord123')
     await page.getByRole('button', { name: 'Inloggen' }).click()
-    await expect(page.getByText('E-mail of wachtwoord onjuist.')).toBeVisible({ timeout: 8000 })
+    // Verwacht foutmelding — bij ontbrekende Supabase-env (CI) geeft network error
+    // dezelfde melding als ongeldige creds (beide zetten authError).
+    await expect(page.getByText('E-mail of wachtwoord onjuist.')).toBeVisible({ timeout: 10000 })
   })
 
   test('toont de wachtwoord-vergeten pagina', async ({ page }) => {
@@ -25,11 +27,10 @@ test.describe('Admin login pagina', () => {
     await expect(page.getByRole('button', { name: 'Herstelmail sturen' })).toBeVisible()
   })
 
-  test('/admin is bereikbaar zonder inloggen (nog geen auth-gate)', async ({ page }) => {
+  test('/admin redirect naar login als niet ingelogd', async ({ page }) => {
     await page.goto('/admin')
-    // De pagina laadt zonder redirect naar /admin/login
+    // Auth-gate actief: redirect naar /admin/login
+    await expect(page).toHaveURL(/\/admin\/login/, { timeout: 8000 })
     await expect(page.getByRole('heading', { name: 'Admin' })).toBeVisible()
-    // De live-data secties tonen "Log in"-prompt
-    await expect(page.getByRole('link', { name: 'Inloggen →' }).first()).toBeVisible()
   })
 })
