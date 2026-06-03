@@ -10,6 +10,10 @@ import { Lijst } from '@/pages/Lijst'
 import { ItemDetail } from '@/pages/ItemDetail'
 import { Privacy } from '@/pages/Privacy'
 import { Admin } from '@/pages/Admin'
+import { AdminLogin } from '@/pages/AdminLogin'
+import { AdminForgotPassword } from '@/pages/AdminForgotPassword'
+// AdminLayout is klaar maar nog niet actief — zie TODO hieronder.
+// import { AdminLayout } from '@/pages/AdminLayout'
 import { FeedbackButton } from '@/components/FeedbackButton'
 
 function RequireProfile({ children }: { children: React.ReactNode }) {
@@ -39,7 +43,18 @@ export default function App() {
       <Route path="/bronnen" element={<RequireProfile><Bronnen /></RequireProfile>} />
       <Route path="/instellingen" element={<RequireProfile><Instellingen /></RequireProfile>} />
       <Route path="/privacy" element={<Privacy />} />
+
+      {/* Admin routes — /admin is nog zonder auth-gate (AdminLayout staat klaar).
+          TODO: zodra admin-account aangemaakt is in Supabase (zie acties-peter.md C-2),
+          vervang de drie regels hieronder door:
+            <Route element={<AdminLayout />}>
+              <Route path="/admin" element={<Admin />} />
+            </Route>
+      */}
       <Route path="/admin" element={<Admin />} />
+      <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/admin/wachtwoord-vergeten" element={<AdminForgotPassword />} />
+
       <Route path="/" element={<Navigate to="/zoeken" replace />} />
       <Route path="*" element={<Navigate to="/zoeken" replace />} />
     </Routes>

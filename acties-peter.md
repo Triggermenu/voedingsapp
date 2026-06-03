@@ -168,6 +168,96 @@ Kind regards,
 
 ---
 
+## C-2 · Admin-account aanmaken + wachtwoordrotatie
+
+**Status:** ☐ Open — admin-auth is gebouwd maar nog niet actief (auth-gate staat uit)
+**Tijd:** ~10 min initieel; ~2 min per rotatie
+**Eigenaar:** Peter
+
+### Stap 1 — Supabase database klaarzetten (eenmalig)
+
+Voer de volgende SQL uit in **Supabase → SQL Editor** (project `jjfwkawiufplmqjomall`):
+
+```sql
+-- 1. Profiles tabel
+CREATE TABLE IF NOT EXISTS public.profiles (
+  id uuid PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
+  email text NOT NULL,
+  is_admin boolean NOT NULL DEFAULT false,
+  created_at timestamptz DEFAULT now()
+);
+
+ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Gebruiker leest eigen profiel"
+  ON public.profiles FOR SELECT
+  USING (auth.uid() = id);
+
+-- 2. Trigger zodat elke nieuwe auth-gebruiker automatisch een profiles-rij krijgt
+CREATE OR REPLACE FUNCTION public.handle_new_user()
+RETURNS TRIGGER LANGUAGE plpgsql SECURITY DEFINER SET search_path = public AS $$
+BEGIN
+  INSERT INTO public.profiles (id, email)
+  VALUES (new.id, new.email)
+  ON CONFLICT (id) DO NOTHING;
+  RETURN new;
+END;
+$$;
+
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
+CREATE TRIGGER on_auth_user_created
+  AFTER INSERT ON auth.users
+  FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
+
+-- 3. RLS op feedback — alleen service_role mag SELECT/DELETE
+ALTER TABLE public.feedback ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Service role only" ON public.feedback
+  USING (false);  -- anon/authenticated mogen niet lezen; API gebruikt service role
+
+-- 4. RLS op rate_limits — alleen service_role mag lezen/schrijven
+ALTER TABLE public.rate_limits ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Service role only" ON public.rate_limits
+  USING (false);  -- idem
+```
+
+> **Let op:** RLS policies met `USING (false)` blokkeren gewone SQL-clients. De bestaande API-routes gebruiken de **service role key** (die RLS omzeilt) — die blijven gewoon werken. Test na het uitvoeren of menuscan en feedback-opslaan nog werken.
+
+### Stap 2 — Admin-gebruiker aanmaken
+
+1. Ga naar **Supabase → Authentication → Users → Add user**
+2. E-mail: `peter.wolterman@gmail.com`
+3. Klik **Send invite** (je ontvangt een mail om je wachtwoord in te stellen)
+4. Stel een sterk wachtwoord in (minimaal 16 tekens, uniek, niet hergebruikt)
+
+### Stap 3 — is_admin activeren
+
+Na het aanmaken van de gebruiker, haal het user-ID op uit de Users-lijst en voer uit:
+
+```sql
+UPDATE public.profiles SET is_admin = true WHERE email = 'peter.wolterman@gmail.com';
+```
+
+### Stap 4 — Auth-gate activeren in de code
+
+Open `src/App.tsx` en volg de TODO-comment: vervang de drie admin-routes door de AdminLayout-wrapper.
+
+### Stap 5 — VITE_SUPABASE_URL en VITE_SUPABASE_ANON_KEY in Vercel zetten
+
+Ga naar **Vercel → Project → Settings → Environment Variables** en voeg toe:
+- `VITE_SUPABASE_URL` = `https://jjfwkawiufplmqjomall.supabase.co`
+- `VITE_SUPABASE_ANON_KEY` = de **anon/public key** uit Supabase → Project Settings → API
+
+> De anon key is veilig voor de browser — het is geen service role key.
+
+### Wachtwoordrotatie (1× per 6 maanden)
+
+1. Supabase → Authentication → Users → klik op peter.wolterman@gmail.com → **Send password reset**
+2. Stel nieuw sterk wachtwoord in
+3. Noteer de rotatie hier:
+   - Laatste rotatie: _nog niet uitgevoerd_
+
+---
+
 ## Stand van zaken (2026-05-27)
 De app is **technisch test-klaar** en draait live op triggermenu.nl: nieuwe scorelabels
 (Veilig/Met mate/Spaarzaam/Vermijden), bewijs in mensentaal, Tonijn-voorbeeldkaart, Jeffrey-verhaal,

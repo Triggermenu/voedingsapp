@@ -317,6 +317,8 @@ Als alle 16 checks groen zijn én PR-author is in `trusted-authors.json` (Cowork
 
 ## 8. Profielkoppeling (gebruikersgericht)
 
+**Admin-uitzondering:** één admin-gebruiker (peter.wolterman@gmail.com) heeft via Supabase Auth toegang tot `/admin` voor feedback-inzicht en rate-limit-beheer. Auth-gate is aanwezig maar nog niet actief (zie TODO-comment in `src/App.tsx`). Eindgebruikers blijven zonder account werken; hun profiel staat in localStorage. Admin-accounts worden handmatig aangemaakt in Supabase — zie acties-peter.md C-2 voor instructies.
+
 Het actieve profiel (1+ gekozen aandoeningen) is **leidend voor alle weergave**:
 
 - **Zoek:** toont alleen scores voor gekozen aandoeningen.
@@ -409,7 +411,13 @@ voedingsapp/
 │   └── styles/                  # incl. print.css
 ├── api/
 │   ├── menuscan.ts              # Anthropic proxy + rate limit + auth
-│   └── auth.ts                  # magic link
+│   ├── feedback.ts              # feedback opslaan (Supabase, service role)
+│   ├── _lib/
+│   │   └── requireAdmin.ts      # middleware: controleert Supabase Bearer token + is_admin
+│   └── admin/
+│       ├── feedback.ts          # GET feedback inbox (admin only)
+│       ├── rate-limits.ts       # GET rate limits per IP — laatste 24u (admin only)
+│       └── reset-rate-limit.ts  # POST reset rate limit voor IP (admin only)
 ├── tests/
 │   ├── unit/                    # Vitest
 │   └── e2e/                     # Playwright
