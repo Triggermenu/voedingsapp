@@ -66,6 +66,19 @@ function ProgressBar({ value, max, color = 'bg-[#1d9e75]' }: { value: number; ma
 
 type FeedbackRow = { id: string; message: string; type: string; context: string | null; created_at: string }
 type RateLimitRow = { ip: string; count: number; lastSeen: string }
+type AnalyticsData = {
+  available: boolean
+  reason?: string
+  stats?: {
+    pageViews?: { value: number; prev?: number }
+    visitors?: { value: number; prev?: number }
+    [key: string]: unknown
+  }
+  pages?: {
+    data?: Array<{ path: string; visitors: number; pageViews: number }>
+    [key: string]: unknown
+  }
+}
 
 function LoginPrompt() {
   return (
@@ -93,6 +106,7 @@ export function Admin() {
   // ── Live data ──────────────────────────────────────────────────────────────
   const [feedback, setFeedback] = useState<FeedbackRow[]>([])
   const [rateLimits, setRateLimits] = useState<RateLimitRow[]>([])
+  const [analytics, setAnalytics] = useState<AnalyticsData | null>(null)
   const [liveLoading, setLiveLoading] = useState(false)
   const [liveError, setLiveError] = useState<string | null>(null)
   const [resettingIp, setResettingIp] = useState<string | null>(null)
@@ -127,14 +141,16 @@ export function Admin() {
     setLiveError(null)
     try {
       const headers = { Authorization: `Bearer ${accessToken}` }
-      const [fbRes, rlRes] = await Promise.all([
+      const [fbRes, rlRes, anRes] = await Promise.all([
         fetch('/api/admin/feedback', { headers }),
         fetch('/api/admin/rate-limits', { headers }),
+        fetch('/api/admin/analytics', { headers }),
       ])
       if (!fbRes.ok || !rlRes.ok) throw new Error('Ophalen mislukt')
-      const [fbData, rlData] = await Promise.all([fbRes.json(), rlRes.json()])
+      const [fbData, rlData, anData] = await Promise.all([fbRes.json(), rlRes.json(), anRes.ok ? anRes.json() : Promise.resolve(null)])
       setFeedback(fbData.feedback ?? [])
       setRateLimits(rlData.rateLimits ?? [])
+      setAnalytics(anData as AnalyticsData | null)
     } catch {
       setLiveError('Live data ophalen mislukt. Probeer opnieuw.')
     } finally {
@@ -264,6 +280,78 @@ export function Admin() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 py-5 space-y-6">
+
+        {/* ── 0. Bezoekers (Vercel Analytics) ──────────────────────────── */}
+        {session && isAdmin && (
+          <section>
+            <h2 className="text-[10px] tracking-widest text-[#9c9a92] uppercase font-semibold mb-3">
+              Bezoekers — laatste 7 dagen
+            </h2>
+            {!analytics ? (
+              <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-6 text-center text-sm text-[#9c9a92]">
+                {liveLoading ? 'Laden…' : 'Geen data'}
+              </div>
+            ) : !analytics.available ? (
+              <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-4">
+                <p className="text-sm text-[#9c9a92] mb-2">
+                  Analytics niet beschikbaar — <code className="text-xs bg-[#f0efe8] px-1 rounded">VERCEL_TOKEN</code> ontbreekt in Vercel env vars.
+                </p>
+                <a
+                  href="https://vercel.com/triggermenu-s-projects/voedingsapp/analytics"
+                  target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-[#1d9e75] hover:underline"
+                >
+                  Open Vercel Analytics dashboard →
+                </a>
+              </div>
+            ) : (
+              <>
+                <div className="grid grid-cols-2 gap-3 mb-3 sm:grid-cols-3">
+                  {analytics.stats?.visitors && (
+                    <StatCard
+                      label="Unieke bezoekers"
+                      value={analytics.stats.visitors.value.toLocaleString('nl-NL')}
+                      sub={analytics.stats.visitors.prev != null
+                        ? `vorige week: ${analytics.stats.visitors.prev.toLocaleString('nl-NL')}`
+                        : undefined}
+                    />
+                  )}
+                  {analytics.stats?.pageViews && (
+                    <StatCard
+                      label="Paginaweergaven"
+                      value={analytics.stats.pageViews.value.toLocaleString('nl-NL')}
+                      sub={analytics.stats.pageViews.prev != null
+                        ? `vorige week: ${analytics.stats.pageViews.prev.toLocaleString('nl-NL')}`
+                        : undefined}
+                    />
+                  )}
+                  <div className="bg-white border border-[#e0dfd7] rounded-xl px-4 py-3 flex items-center justify-center">
+                    <a
+                      href="https://vercel.com/triggermenu-s-projects/voedingsapp/analytics"
+                      target="_blank" rel="noopener noreferrer"
+                      className="text-xs text-[#1d9e75] hover:underline text-center"
+                    >
+                      Volledig dashboard →
+                    </a>
+                  </div>
+                </div>
+                {analytics.pages?.data && analytics.pages.data.length > 0 && (
+                  <div className="bg-white border border-[#e0dfd7] rounded-xl divide-y divide-[#f0efe8]">
+                    {analytics.pages.data.slice(0, 8).map((p) => (
+                      <div key={p.path} className="flex items-center justify-between px-4 py-2.5 gap-3">
+                        <span className="text-sm font-mono text-[#1a1a18] truncate">{p.path}</span>
+                        <div className="flex gap-4 flex-shrink-0 text-xs text-[#9c9a92]">
+                          <span>{p.visitors.toLocaleString('nl-NL')} bezoekers</span>
+                          <span>{p.pageViews.toLocaleString('nl-NL')} views</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </>
+            )}
+          </section>
+        )}
 
         {/* ── 1. Feedback inbox ─────────────────────────────────────────── */}
         <section>
