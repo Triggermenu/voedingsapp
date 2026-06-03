@@ -20,6 +20,9 @@ const AdminLogin = lazy(() => import('@/pages/AdminLogin').then((m) => ({ defaul
 const AdminForgotPassword = lazy(() =>
   import('@/pages/AdminForgotPassword').then((m) => ({ default: m.AdminForgotPassword }))
 )
+const AdminPasswordReset = lazy(() =>
+  import('@/pages/AdminPasswordReset').then((m) => ({ default: m.AdminPasswordReset }))
+)
 const AdminLayout = lazy(() => import('@/pages/AdminLayout').then((m) => ({ default: m.AdminLayout })))
 
 function RequireProfile({ children }: { children: React.ReactNode }) {
@@ -70,6 +73,11 @@ export default function App() {
       <Route path="/admin/wachtwoord-vergeten" element={
         <Suspense fallback={null}>
           <AdminForgotPassword />
+        </Suspense>
+      } />
+      <Route path="/admin/wachtwoord-reset" element={
+        <Suspense fallback={null}>
+          <AdminPasswordReset />
         </Suspense>
       } />
 

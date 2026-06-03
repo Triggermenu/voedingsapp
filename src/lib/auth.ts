@@ -25,6 +25,6 @@ export async function signOut() {
 
 export async function resetPasswordForEmail(email: string) {
   return supabase.auth.resetPasswordForEmail(email, {
-    redirectTo: `${window.location.origin}/admin/login`,
+    redirectTo: `${window.location.origin}/admin/wachtwoord-reset`,
   })
 }
