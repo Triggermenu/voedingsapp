@@ -590,7 +590,7 @@
           ]
         },
         "migraine": {
-          "score": 3,
+          "score": 2,
           "evidence": "B",
           "confidence": "middel",
           "triggerType": "subgroep-bevestigd",
@@ -626,8 +626,7 @@
             }
           ],
           "note": {
-            "nl": "Gecureerde rookworst bevat nitriet als conserveringsmiddel. Via omzetting in de mond en het maag-darmkanaal kan dit stikstofmonoxide produceren, wat bij gevoelige mensen migraine kan veroorzaken. Gevoeligheid verschilt sterk per persoon.",
-            "en": "Cured smoked sausage contains nitrite as a preservative. Via conversion in the mouth and gut this can produce nitric oxide, potentially triggering migraine in sensitive individuals."
+            "nl": "Gecureerde rookworst bevat nitriet, maar een normale portie blijft onder de Henderson-drempel (~10 mg nitriet). Het effect treedt daardoor alleen op in een gevoelige subgroep; gevoeligheid verschilt sterk per persoon. Net als salami, chorizo en paté (sub-Henderson) score 2, niet 3."
           }
         },
         "nierstenen": {
