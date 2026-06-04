@@ -2461,87 +2461,6 @@
       "cluster": 7
     },
     {
-      "id": "nl-ham-gekookt",
-      "name": {
-        "nl": "Ham (gekookt)",
-        "en": "Ham (cooked)"
-      },
-      "category": "vlees",
-      "subcategory": "verwerkt-vlees",
-      "scores": {
-        "jicht": {
-          "score": 2,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 2,
-          "evidence": "C",
-          "confidence": "laag",
-          "triggerType": "context-afhankelijk",
-          "primaryModulators": [
-            "nitriet",
-            "stikstofmonoxide"
-          ],
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/2506503/",
-              "title": "Iversen HK, Olesen J, Tfelt-Hansen P 1989 — IV nitroglycerin as experimental model of vascular headache (Pain)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh NA et al. 2020 — Diet and Nutrition in Migraine (Headache)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
-            }
-          ],
-          "note": {
-            "nl": "Gekookte ham bevat nitriet, maar verhitting verlaagt het residu sterk (gemiddeld circa 11 mg/kg). Er is geen directe studie voor gekookte ham als migrainetrigger. Voor de meeste mensen waarschijnlijk geen probleem; bij hoge gevoeligheid voorzichtigheid geboden.",
-            "en": "Cooked ham contains nitrite but heat treatment significantly reduces residual levels (~11 mg/kg average). No direct study exists. Unlikely to be a problem for most; caution for highly sensitive individuals."
-          }
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-14"
-      },
-      "cluster": 7
-    },
-    {
       "id": "nl-kipgehakt",
       "name": {
         "nl": "Kipgehakt",
@@ -3615,88 +3534,6 @@
       "cluster": 7
     },
     {
-      "id": "nl-kipnuggets",
-      "name": {
-        "nl": "Kipnuggets (diepvries)",
-        "en": "Chicken nuggets (frozen)"
-      },
-      "category": "vlees",
-      "subcategory": "bereid-vlees",
-      "scores": {
-        "jicht": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 2,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Bewerkt product: kan MSG en additieven bevatten."
-          },
-          "triggerType": "subgroep-overschat",
-          "confidence": "laag",
-          "primaryModulators": [
-            "tyramine"
-          ]
-        },
-        "nierstenen": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Hoog natrium."
-          }
-        },
-        "histamine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 8
-    },
-    {
       "id": "nl-vleesbrood",
       "name": {
         "nl": "Vleesbrood (bewerkt)",
@@ -3929,6 +3766,86 @@
         "lastReviewed": "2026-05-20"
       },
       "cluster": 8
+    },
+    {
+      "id": "167875",
+      "name": {
+        "nl": "Ham (gekookt)",
+        "en": "Cooked ham"
+      },
+      "category": "vlees",
+      "subcategory": "verwerkt-vlees",
+      "scores": {
+        "jicht": {
+          "score": 1,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Purine: ~75 mg/100g. Verwerkt vlees heeft lagere purineconcentratie."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-05-20"
+            }
+          ],
+          "note": {
+            "nl": "Ham (gekookt): verwerkt vlees, weinig tyramine. Score 0 bij lage nitriethoudende voorbereiding."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-05-11"
+            }
+          ]
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-05-11"
+            }
+          ],
+          "note": {
+            "nl": "Verwerkt en gepekeld vlees: matig histamine."
+          }
+        }
+      },
+      "meta": {
+        "addedAt": "2026-05-11",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-05-20"
+      },
+      "cluster": 7
     }
   ]
 }
