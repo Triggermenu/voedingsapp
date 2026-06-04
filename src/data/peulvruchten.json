@@ -2176,7 +2176,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -2193,7 +2193,7 @@
             }
           ],
           "note": {
-            "nl": "Purine laag (~<50 mg/100g) → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
+            "nl": "Purine <50 mg/100g → score 0 (§2.1-drempel). Tamarinde is vruchtvlees, laag purine. Peulvrucht-purine geeft sowieso geen verhoogd jichtrisico (Choi 2004)."
           }
         },
         "migraine": {

@@ -1629,7 +1629,7 @@
       "subcategory": "gerookt-gerijpt",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 3,
           "evidence": "A",
           "sources": [
             {
@@ -1640,7 +1640,7 @@
             }
           ],
           "note": {
-            "nl": "Purine: ~170 mg/100g. Zalm-niveau maar gerookt."
+            "nl": "Purine >200 mg/100g (~300) → score 3 (§2.1-drempel). Roken/curen concentreert purine sterk t.o.v. verse zalm (~170 mg); bij jicht vermijden."
           }
         },
         "migraine": {
