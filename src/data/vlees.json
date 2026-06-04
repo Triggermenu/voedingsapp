@@ -2869,7 +2869,7 @@
       "subcategory": "wild",
       "scores": {
         "jicht": {
-          "score": 3,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -2877,10 +2877,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Wildvlees: purine ~200 mg/100g."
+            "nl": "Purine ~150–200 mg/100g (wildvlees) → score 2 (§2.1-drempel 100–200 mg). Vlees verhoogt het jichtrisico epidemiologisch (Choi 2004, RR 1,41), maar de score volgt de drempel; rood (3) vereist >200 mg."
           }
         },
         "migraine": {

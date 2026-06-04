@@ -1230,7 +1230,7 @@
       "subcategory": "schaaldieren",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1241,7 +1241,7 @@
             }
           ],
           "note": {
-            "nl": "Purine: ~90 mg/100g."
+            "nl": "Purine ~90 mg/100g → score 1 (§2.1-drempel 50–100 mg)."
           }
         },
         "migraine": {
@@ -1720,7 +1720,7 @@
       "subcategory": "schaaldieren",
       "scores": {
         "jicht": {
-          "score": 3,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -1731,7 +1731,7 @@
             }
           ],
           "note": {
-            "nl": "Purine: ~150–180 mg/100g."
+            "nl": "Purine ~150–180 mg/100g → score 2 (§2.1-drempel 100–200 mg)."
           }
         },
         "migraine": {
@@ -1956,7 +1956,7 @@
       "subcategory": "schaaldieren",
       "scores": {
         "jicht": {
-          "score": 3,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -1967,7 +1967,7 @@
             }
           ],
           "note": {
-            "nl": "Schaaldieren: purine ~140 mg/100g."
+            "nl": "Purine ~140 mg/100g → score 2 (§2.1-drempel 100–200 mg)."
           }
         },
         "migraine": {
@@ -3802,7 +3802,7 @@
             }
           ],
           "note": {
-            "nl": "Purine: ~70-90 mg/100g (vergelijkbaar met verse zalm). Bereidingswijze heeft geen invloed op purine-gehalte."
+            "nl": "Purine ~150–200 mg/100g → score 2 (§2.1-drempel 100–200 mg). Garen concentreert purine licht t.o.v. rauwe zalm; de eerdere note-waarde (70–90 mg) was onjuist."
           }
         },
         "migraine": {
@@ -3965,7 +3965,7 @@
             }
           ],
           "note": {
-            "nl": "Purine: ~70-90 mg/100g (zalm-basis). Pekelen verhoogt purine niet maar concentreert natrium."
+            "nl": "Purine ~170–210 mg/100g (rauwe zalm-basis) → score 2 (§2.1-drempel 100–200 mg). Pekelen verhoogt natrium, niet purine; de eerdere note-waarde (70–90 mg) was onjuist."
           }
         },
         "migraine": {

@@ -1508,7 +1508,7 @@
       "subcategory": "overige-groenten",
       "scores": {
         "jicht": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -1516,10 +1516,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine: 23 mg/100g."
+            "nl": "Purine 23 mg/100g → score 0 (§2.1-drempel <50 mg). Groente-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -2949,7 +2955,7 @@
       "subcategory": "bladgroenten",
       "scores": {
         "jicht": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -2957,10 +2963,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine: ~34 mg/100g."
+            "nl": "Purine ~34 mg/100g → score 0 (§2.1-drempel <50 mg). Groente-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
