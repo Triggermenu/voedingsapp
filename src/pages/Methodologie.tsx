@@ -39,6 +39,7 @@ export function Methodologie() {
 
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
+      <div style={{ maxWidth: 760, margin: '0 auto' }}>
       <div style={{ padding: '8px 22px 0' }} className="pt-safe">
         <Logo size={18} to="/zoeken" />
       </div>
@@ -168,6 +169,7 @@ export function Methodologie() {
             </Link>
           </div>
         </Section>
+      </div>
       </div>
 
       <NavBar />
