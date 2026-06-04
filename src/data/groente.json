@@ -1416,10 +1416,6 @@
           }
         }
       },
-      "histamineFlags": {
-        "liberator": false,
-        "daoBlocker": false
-      },
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",

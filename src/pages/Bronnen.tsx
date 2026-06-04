@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { getDatabaseStats } from '@/lib/db'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
@@ -120,6 +121,30 @@ export function Bronnen() {
       }}>
         <span className="eyebrow">{totalSources} bronnen · {stats.totalItems} items</span>
         <span className="mono" style={{ fontSize: 10, color: 'var(--muted)' }}>BIJGEWERKT {dateStr}</span>
+      </div>
+
+      {/* Link naar gedetailleerde methodologie */}
+      <div style={{ padding: '14px 22px 0' }}>
+        <Link
+          to="/methodologie"
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
+            padding: '13px 15px', borderRadius: 10, textDecoration: 'none',
+            background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
+          }}
+        >
+          <div>
+            <div className="serif" style={{ fontSize: 14.5, fontWeight: 500, color: 'var(--ink)' }}>
+              Hoe komen de stoplichten tot stand?
+            </div>
+            <div style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 2, lineHeight: 1.4 }}>
+              Gedetailleerde methodologie — drempels, afwegingen en bronnen per aandoening.
+            </div>
+          </div>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </Link>
       </div>
 
       {/* Per-condition source sections */}
