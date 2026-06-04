@@ -256,7 +256,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 60
     },
     {
       "id": "nl-jam-aardbei",
@@ -329,7 +330,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 60
     },
     {
       "id": "nl-chips-aardappel",
@@ -399,7 +401,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 63
     },
     {
       "id": "nl-drop",
@@ -469,7 +472,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-koekje",
@@ -539,7 +543,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-hagelslag",
@@ -689,7 +694,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-worstenbroodje",
@@ -838,7 +844,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-suiker-wit",
@@ -911,7 +918,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 60
     },
     {
       "id": "nl-ijs-vanille",
@@ -981,7 +989,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-ijs-chocolade",
@@ -1138,7 +1147,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-cake-gewone",
@@ -1208,7 +1218,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-muffin",
@@ -1278,7 +1289,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-croissant",
@@ -1348,7 +1360,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-snoep-fruitgum",
@@ -1421,7 +1434,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-karamel",
@@ -1491,7 +1505,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-ontbijtkoek",
@@ -1561,7 +1576,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-pindakaaskoek",
@@ -1634,7 +1650,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-chocoladetruffels",
@@ -1795,7 +1812,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-chocoladereep-wit",
@@ -1939,7 +1957,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-zoethout-snoep",
@@ -2091,7 +2110,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 60
     },
     {
       "id": "nl-marshmallow",
@@ -2161,7 +2181,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-popcorn",
@@ -2231,7 +2252,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 63
     },
     {
       "id": "nl-eclair",
@@ -2385,7 +2407,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-speculaas",
@@ -2455,7 +2478,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-pepernoten",
@@ -2525,7 +2549,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-kruidnoten",
@@ -2595,7 +2620,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-toffee",
@@ -2665,7 +2691,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-stroopwafel",
@@ -2735,7 +2762,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-nougat",
@@ -2887,7 +2915,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-donuts",

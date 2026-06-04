@@ -569,85 +569,6 @@
       "cluster": 8
     },
     {
-      "id": "167875",
-      "name": {
-        "nl": "Ham (gekookt)",
-        "en": "Cooked ham"
-      },
-      "category": "vlees",
-      "subcategory": "verwerkt-vlees",
-      "scores": {
-        "jicht": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Purine: ~75 mg/100g. Verwerkt vlees heeft lagere purineconcentratie."
-          }
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Ham (gekookt): verwerkt vlees, weinig tyramine. Score 0 bij lage nitriethoudende voorbereiding."
-          }
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 2,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Verwerkt en gepekeld vlees: matig histamine."
-          }
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
       "id": "nl-rookworst-gecureerd",
       "name": {
         "nl": "Rookworst (gecureerd)",
@@ -1564,82 +1485,6 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-lamskoteletten",
-      "name": {
-        "nl": "Lamskoteletten",
-        "en": "Lamb chops"
-      },
-      "category": "vlees",
-      "subcategory": "rood-vlees",
-      "scores": {
-        "jicht": {
-          "score": 2,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Purine: ~182 mg/100g. Rood vlees: hoog."
-          }
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
-          }
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
       },
       "cluster": 8
     },
@@ -1794,7 +1639,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 8
     },
     {
       "id": "nl-pastrami",
@@ -1897,83 +1743,6 @@
       "cluster": 7
     },
     {
-      "id": "nl-kalkoenfilet",
-      "name": {
-        "nl": "Kalkoenfilet",
-        "en": "Turkey breast fillet"
-      },
-      "category": "vlees",
-      "subcategory": "gevogelte",
-      "scores": {
-        "jicht": {
-          "score": 2,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Purine: ~150 mg/100g. Gevogelte."
-          }
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Vers vlees bevat minimale biogene aminen. Geen nitriet-additief → geen NO-pathway. Ver onder MAOI-drempel (Finberg 2022)."
-          }
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 8
-    },
-    {
       "id": "nl-biefstuk",
       "name": {
         "nl": "Biefstuk (rundvlees)",
@@ -2032,89 +1801,6 @@
         },
         "histamine": {
           "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 8
-    },
-    {
-      "id": "nl-lever",
-      "name": {
-        "nl": "Runderlever",
-        "en": "Beef liver"
-      },
-      "category": "vlees",
-      "subcategory": "orgaanvlees",
-      "scores": {
-        "jicht": {
-          "score": 3,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            },
-            {
-              "url": "https://ard.eular.org/content/81/11/1452",
-              "title": "EULAR 2022 Gout Guidelines",
-              "type": "guideline",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Orgaanvlees: purine >300 mg/100g. Hoogste risico."
-          }
-        },
-        "migraine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Orgaanvlees bevat meer tyramine dan spiervlees (~20-80 mg/kg). Per portie 100-150g: 2-12 mg tyramine. Subgroep: MAOI-gebruikers en histamine-intoleranten."
-          }
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 1,
           "evidence": "B",
           "sources": [
             {
@@ -2679,185 +2365,6 @@
       "cluster": 8
     },
     {
-      "id": "nl-kippenlever",
-      "name": {
-        "nl": "Kippenlever",
-        "en": "Chicken liver"
-      },
-      "category": "vlees",
-      "subcategory": "orgaanvlees",
-      "scores": {
-        "jicht": {
-          "score": 3,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Purine: ~310 mg/100g. Hoogste purinegehalte van gevogelte-organen."
-          }
-        },
-        "migraine": {
-          "score": 2,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Kippenlever: hoog tyramine-gehalte."
-          },
-          "triggerType": "subgroep-overschat",
-          "confidence": "laag",
-          "primaryModulators": [
-            "tyramine"
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 2,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 8
-    },
-    {
-      "id": "nl-worst-rook",
-      "name": {
-        "nl": "Rookworst (gecureerd)",
-        "en": "Smoked sausage (cured)"
-      },
-      "category": "vlees",
-      "subcategory": "verwerkt-vlees",
-      "scores": {
-        "jicht": {
-          "score": 2,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 3,
-          "evidence": "B",
-          "confidence": "middel",
-          "triggerType": "subgroep-bevestigd",
-          "primaryModulators": [
-            "nitriet",
-            "stikstofmonoxide",
-            "enterosalivaire-conversie"
-          ],
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/4117590/",
-              "title": "Henderson WR & Raskin NH 1972 — \"Hot-dog\" headache: individual susceptibility to nitrite (Lancet)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
-            },
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/2506503/",
-              "title": "Iversen HK, Olesen J, Tfelt-Hansen P 1989 — IV nitroglycerin as experimental model of vascular headache (Pain)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
-            },
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/27822557/",
-              "title": "Gonzalez A et al. 2016 — Migraines correlated with nitrate/nitrite oral microbes (mSystems)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh NA et al. 2020 — Diet and Nutrition in Migraine (Headache)",
-              "type": "review",
-              "accessedAt": "2026-05-14"
-            }
-          ],
-          "note": {
-            "nl": "Gecureerde rookworst bevat nitriet als conserveringsmiddel. Via omzetting in de mond en het maag-darmkanaal kan dit stikstofmonoxide produceren, wat bij gevoelige mensen migraine kan veroorzaken. Gevoeligheid verschilt sterk per persoon.",
-            "en": "Cured smoked sausage contains nitrite as a preservative. This may trigger migraine via nitric oxide production in sensitive individuals."
-          }
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 3,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Gerookt en gecureerd: hoog histamine."
-          }
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-14"
-      },
-      "cluster": 7
-    },
-    {
       "id": "nl-salami",
       "name": {
         "nl": "Salami (gecureerd, gerijpt)",
@@ -3264,7 +2771,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 8
     },
     {
       "id": "nl-gerookte-kipfilet",
@@ -3666,7 +3174,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 7
     },
     {
       "id": "nl-bouillon-kip",

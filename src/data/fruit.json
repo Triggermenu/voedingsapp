@@ -74,7 +74,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 41
     },
     {
       "id": "173944",
@@ -157,7 +158,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "169097",
@@ -504,7 +506,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 41
     },
     {
       "id": "171711",
@@ -574,7 +577,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 42
     },
     {
       "id": "174682",
@@ -644,7 +648,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 42
     },
     {
       "id": "169124",
@@ -800,7 +805,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "174673",
@@ -870,153 +876,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "169949",
-      "name": {
-        "nl": "Pruim",
-        "en": "Plum"
       },
-      "category": "fruit",
-      "subcategory": "steenfruit",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Oxalaat: 5 mg/100g."
-          }
-        },
-        "histamine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "167765",
-      "name": {
-        "nl": "Watermeloen",
-        "en": "Watermelon"
-      },
-      "category": "fruit",
-      "subcategory": "meloen",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Purine: 5 mg/100g."
-          }
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
+      "cluster": 41
     },
     {
       "id": "167755",
@@ -1261,7 +1122,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "nl-grapefruit",
@@ -1421,7 +1283,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 43
     },
     {
       "id": "nl-perzik",
@@ -1494,7 +1357,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 41
     },
     {
       "id": "nl-abrikoos",
@@ -1574,7 +1438,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 41
     },
     {
       "id": "nl-vijg-vers",
@@ -1654,7 +1519,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "nl-papaja",
@@ -1731,7 +1597,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "nl-passievrucht",
@@ -1804,7 +1671,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "nl-kokosnoot",
@@ -1874,7 +1742,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "169911",
@@ -1957,7 +1826,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 41
     },
     {
       "id": "173032",
@@ -2030,7 +1900,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 43
     },
     {
       "id": "169916",
@@ -2103,7 +1974,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 42
     },
     {
       "id": "nl-dadels",
@@ -2345,7 +2217,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 41
     },
     {
       "id": "nl-lychee",
@@ -2415,7 +2288,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 45
     },
     {
       "id": "nl-clementine",
@@ -2586,76 +2460,6 @@
       "cluster": 15
     },
     {
-      "id": "nl-watermeloen",
-      "name": {
-        "nl": "Watermeloen",
-        "en": "Watermelon"
-      },
-      "category": "fruit",
-      "subcategory": "meloenen",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
       "id": "nl-honingmeloen",
       "name": {
         "nl": "Honingmeloen",
@@ -2723,7 +2527,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 43
     },
     {
       "id": "nl-vijg-gedroogd",
@@ -2892,222 +2697,6 @@
       "cluster": 19
     },
     {
-      "id": "nl-nectarine",
-      "name": {
-        "nl": "Nectarine",
-        "en": "Nectarine"
-      },
-      "category": "fruit",
-      "subcategory": "steenvrucht",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-pruim",
-      "name": {
-        "nl": "Pruim",
-        "en": "Plum"
-      },
-      "category": "fruit",
-      "subcategory": "steenvrucht",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Oxalaat ~10 mg/100g."
-          }
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-blauwe-bes",
-      "name": {
-        "nl": "Blauwe bes",
-        "en": "Blueberry"
-      },
-      "category": "fruit",
-      "subcategory": "besvruchten",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Oxalaat ~14 mg/100g."
-          }
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
       "id": "nl-braam",
       "name": {
         "nl": "Braam",
@@ -3178,157 +2767,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-framboos",
-      "name": {
-        "nl": "Framboos",
-        "en": "Raspberry"
       },
-      "category": "fruit",
-      "subcategory": "besvruchten",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 2,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Oxalaat ~30 mg/100g."
-          }
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-papaya",
-      "name": {
-        "nl": "Papaja",
-        "en": "Papaya"
-      },
-      "category": "fruit",
-      "subcategory": "exotisch-fruit",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 2,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ],
-          "note": {
-            "nl": "Histamineliberator."
-          }
-        }
-      },
-      "histamineFlags": {
-        "liberator": true,
-        "daoBlocker": false
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
+      "cluster": 42
     },
     {
       "id": "nl-guave",
@@ -3398,7 +2838,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 45
     },
     {
       "id": "nl-dragon-fruit",
@@ -3468,7 +2909,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 45
     },
     {
       "id": "nl-rambutan",
@@ -3538,7 +2980,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 45
     },
     {
       "id": "nl-rode-bes",
@@ -3611,7 +3054,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 42
     },
     {
       "id": "nl-zwarte-bes",
@@ -3684,7 +3128,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 42
     },
     {
       "id": "nl-kokosnoot-vers",
@@ -3757,7 +3202,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 45
     },
     {
       "id": "nl-cranberry",
@@ -3830,7 +3276,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 42
     },
     {
       "id": "nl-durian",
@@ -3979,7 +3426,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 45
     },
     {
       "id": "nl-abrikozen-gedroogd",
@@ -4301,7 +3749,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 41
     },
     {
       "id": "nl-kumquat",
@@ -4457,7 +3906,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 45
     },
     {
       "id": "nl-physalis",
@@ -4527,7 +3977,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     },
     {
       "id": "nl-mangosteen",
@@ -4597,7 +4048,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 44
     }
   ]
 }
