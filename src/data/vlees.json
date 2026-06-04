@@ -262,7 +262,7 @@
           "score": 3,
           "evidence": "B",
           "confidence": "middel",
-          "triggerType": "subgroep-bevestigd",
+          "triggerType": "dosis-afhankelijk",
           "primaryModulators": [
             "nitriet",
             "stikstofmonoxide",
@@ -3287,7 +3287,7 @@
           "score": 3,
           "evidence": "B",
           "confidence": "middel",
-          "triggerType": "subgroep-bevestigd",
+          "triggerType": "dosis-afhankelijk",
           "primaryModulators": [
             "nitriet",
             "stikstofmonoxide",
