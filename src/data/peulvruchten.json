@@ -80,7 +80,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "172421",
@@ -165,7 +166,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "173757",
@@ -247,7 +249,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "175200",
@@ -332,7 +335,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-edamame",
@@ -414,7 +418,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-zwarte-bonen",
@@ -499,7 +504,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-bruine-bonen",
@@ -581,7 +587,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-witte-bonen",
@@ -666,7 +673,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-mungbonen",
@@ -748,7 +756,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-tofu",
@@ -830,7 +839,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-hummus",
@@ -915,7 +925,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-tempeh",
@@ -1006,7 +1017,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-snijbonen-peul",
@@ -1082,7 +1094,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-sojabonen",
@@ -1164,7 +1177,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kapucijners",
@@ -1240,7 +1254,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-adzukibonen",
@@ -1325,7 +1340,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-pintobonen",
@@ -1410,7 +1426,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-groene-linzen",
@@ -1495,7 +1512,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kikkererwten-blik",
@@ -1580,7 +1598,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-misopasta",
@@ -1751,7 +1770,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-doperwten-diepvries",
@@ -1833,7 +1853,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-linzensoep",
@@ -1915,7 +1936,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-flageolets",
@@ -1997,7 +2019,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-tamarinpasta",
@@ -2073,7 +2096,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-rode-linzen",
@@ -2152,7 +2176,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-beluga-linzen",
@@ -2228,7 +2253,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-puy-linzen",
@@ -2304,7 +2330,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kikkererwten-gedroogd",
@@ -2380,7 +2407,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-natto",
@@ -2411,7 +2439,10 @@
           "evidence": "B",
           "triggerType": "subgroep-bevestigd",
           "confidence": "laag",
-          "primaryModulators": ["tyramine", "biogene-aminen"],
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ],
           "sources": [
             {
               "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
@@ -2462,7 +2493,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-gedroogde-bruine-bonen",
@@ -2538,7 +2570,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-sojadrink",
@@ -2611,7 +2644,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-lupinebonen",
@@ -2687,7 +2721,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kidneybonen",
@@ -2763,7 +2798,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-sojaschroot",
@@ -2839,7 +2875,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     }
   ]
 }
