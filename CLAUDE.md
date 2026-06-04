@@ -62,9 +62,10 @@ Elk niet-null score MOET een `evidence` (A/B/C) en `sources[]` hebben.
 5. Niet uitgesloten door een paradigma-precedent (§13) of een vastgestelde bronweging (§12).
 
 **1. Alcohol — ethanol-mechanisme.**
-- Score 3: bier (alle varianten), gedistilleerd, sterke wijn.
+- Score 3: **bier (alle varianten)**.
 - Mechanisme: directe vasodilatatie, CGRP-release, mestcel-degranulatie. Populatiebreed reproduceerbaar bij voldoende dosis.
-- **Uitzondering:** rode wijn krijgt score 2 + `subgroep-overschat` vanwege dominante tyramine/histamine/sulfiet-pathway die alleen in MAO-A-gevoelige subgroep klinisch relevant is.
+- **Uitzondering — rode wijn:** score 2 + `subgroep-overschat` vanwege dominante tyramine/histamine/sulfiet-pathway die alleen in MAO-A-gevoelige subgroep klinisch relevant is.
+- **Uitzondering — gedistilleerd (whisky, gin, wodka, rum, e.d.) en versterkte wijn:** score 2 + `subgroep-overschat`. Onderwater 2019 (PMID 31254436, n≈2197): wodka — vrijwel pure ethanol + water — is de mínst provocerende drank (8,5%), rode wijn de meest (77,8%); de reproduceerbare trigger zit in congeneren/biogene aminen, niet in ethanol zelf. Geen quercetine-/ALDH2-pathway zoals bij rode wijn. Prospectief (Vives-Mestres 2022, PMC10099573) geen positieve associatie; wijn-meta-analyse 2025 (Alcohol & Alcoholism, OR 0,63) niet-significant. Verwijderd van score-3 whitelist 2026-06 (v2.0): `subgroep-overschat` is per toelatingscriterium 3 onverenigbaar met score 3.
 
 **2. Gecureerd vlees boven Henderson-drempel.**
 - Score 3: vleeswaren waarvan een typische portie ≥10 mg nitriet bereikt (spek/bacon: 60g × ~12 mg/kg ≈ 7–15 mg nitriet).
@@ -446,6 +447,7 @@ Deze weging is **definitief** tenzij CLAUDE.md wordt aangepast. Cowork mag hier 
 | MSG ↔ migraine | Whitelist (oud): rood. SR 2016 + ICHD-3 2018: geen reproduceerbaar effect. | **Oranje + note "subgroep-overschat"** | Obayashi 2016 SR, Geha 2000, ICHD-3 2018 |
 | Gerijpte kaas ↔ migraine | Klassiek: rood (Hannington 1967, Sandler 1974). Modern: MAO-functie neutraliseert tyramine; geen RCT. | **Oranje + note "subgroep-overschat"** | Finberg 2022 (PMC9172554), Maintz 2007 (PMID 17490952); interne paradigma-extensie 2026-05 |
 | Peulvruchten ↔ jicht | Hoog purine. Geen verhoogd risico. | **Oranje max** | EULAR 2022 |
+| Gedistilleerd ↔ migraine | §2.2 (oud): rood. Onderwater 2019: wodka mínst provocerend (8,5%) vs rode wijn 77,8% — trigger zit in congeneren, niet ethanol. | **Oranje + note "subgroep-overschat"** | Onderwater 2019 (PMID 31254436), Vives-Mestres 2022 (PMC10099573), wijn-meta-analyse 2025 |
 
 ---
 
@@ -463,6 +465,7 @@ Verschil met §12 (Tegenstrijdige bronnen): §12 registreert *item-niveau* besli
 | 2026-05-20 | MSG ↔ migraine | Score 2 + `subgroep-overschat`. Geblindeerde studies: geen reproduceerbaar effect bij normale inname. Van score-3 whitelist verwijderd (v1.3). | Geblindeerde provocatie-RCT overrulet open-label observaties. ICHD-3-revisie is leidend boven klassieke trigger-lijsten. | v1.3 |
 | 2026-05-20 | Gerijpte kaas ↔ migraine | Score 2 + `subgroep-overschat`. MAO-functie neutraliseert tyramine bij intacte enzymstatus; effect alleen in MAO-A-gevoelige subgroep. Van score-3 whitelist verwijderd (v1.4). | Mechanistisch inzicht in inactivatie-pathway > klassieke observationele trigger-lijsten (Hannington 1967-stijl). | v1.4 |
 | 2026-05-21 | Evidence-C-only clusters — cluster 9 | Score-plafond 1; score 2 alleen bij dosis-uitzonderingen; score 3 verboden. TriggerType `individueel-variabel`. Volledig paradigma in §2.2.2. | Clusters zonder A/B-evidence: mechanistische plausibility + observationeel = max score 1 zonder RCT-ondersteuning. | v1.5 |
+| 2026-06-04 | Gedistilleerd ↔ migraine | Score 2 + `subgroep-overschat`. Wodka (vrijwel pure ethanol) is mínst provocerende drank — de reproduceerbare trigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol. Van score-3 whitelist verwijderd (v2.0); bier blijft als enige alcohol score 3. | Beverage-specifieke congeneren-/ALDH2-evidence > generiek ethanol-vasodilatatie-argument; een `subgroep-*` triggerType sluit score 3 uit (toelatingscriterium 3). | v2.0 |
 
 ---
 
@@ -479,8 +482,8 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 15. Versiebeheer van dit document
 
-- **Schema version:** v1.9
-- **Laatste wijziging:** 2026-05-23
+- **Schema version:** v2.0
+- **Laatste wijziging:** 2026-06-04
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
   - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).
@@ -491,3 +494,4 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
   - v1.6 (2026-05-21): §3 ScoreObject volledig gedocumenteerd. `confidence`, `triggerType`, `primaryModulators` toegevoegd aan type-definitie + nieuwe §3.3 met veldbeschrijvingen. `subcategory` op FoodItem toegevoegd (was al in schema). Geen data-wijzigingen. Akkoord: Peter Wolterman (chat 2026-05-21).
   - v1.8 (2026-05-23): TriggerType-enumwaarde `universeel` → `populatiebreed` hernoemd (regulatoire defensibility — "universeel" suggereerde reactie bij iedere patiënt; "populatiebreed" claimt reproduceerbaarheid over brede populaties zonder subgroep-grens, conform de reeds bestaande definitie). Doorgevoerd in `src/schemas/item.ts`, 7 bier/alcohol-items in `dranken-alcohol.json` (scores ongewijzigd — alléén label), UI-labelmap `ItemDetailPanel.tsx`, §2.2 + enum-tabel §2.2.1. Nieuw: expliciete 5-punts toelatingschecklist voor score-3-whitelist in §2.2 (consolideert verspreide criteria; geen inhoudelijke verzwaring). Geen scorewijzigingen. Akkoord: Peter Wolterman (chat 2026-05-23, review extern feedbackdocument).
   - v1.9 (2026-05-23): Consistentie-sync na fase-4-afronding + reviewpunten. §7: fase 4 op "cap bereikt (700, afgerond 2026-05-23)" — databasegroei voltooid. §10: nieuwe subsectie "Bedoeld gebruik — populatieniveau" (stoplichten zijn populatie-inschattingen, geen individueel verdict; individuele respons varieert; onderschrijft conservatieve MDR-positie). §14: twee nieuwe risico's erkend — R-008 (methodologische governance bij één auteur, gemitigeerd via §12/§13-audit-trail + externe-review-aanbeveling) en R-009 (populatie-vs-individu-misinterpretatie, gemitigeerd via triggerType-zichtbaarheid + UI-hint). Bijbehorende R-008/R-009 staan volledig in RISKS.md; UI-hint "respons verschilt per persoon" in `ItemDetailPanel.tsx`. Geen scoring-/drempelwijzigingen. Akkoord: Peter Wolterman (chat 2026-05-23, keuze "Sync + intended-use").
+  - v2.0 (2026-06-04): §2.2 **gedistilleerd (whisky, gin, wodka, rum, e.d.) en versterkte wijn verwijderd van score-3 whitelist** — score 2 + `subgroep-overschat` is nu de standaard; bier blijft als enige alcohol op de score-3-whitelist. Onderbouwing: Onderwater 2019 (PMID 31254436) — wodka (vrijwel pure ethanol) is de mínst provocerende drank (8,5%) vs rode wijn 77,8%, dus de reproduceerbare trigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol; Vives-Mestres 2022 (PMC10099573, prospectief) geen positieve associatie; wijn-meta-analyse 2025 (OR 0,63) niet-significant. De score-2-data bestond al en was intern consistent met toelatingscriterium 3 (`subgroep-*` ⇒ geen score 3); alleen de §2.2-prozaregel "gedistilleerd" was blijven staan. §12 + §13 uitgebreid met gedistilleerd-precedent. `cluster` toegevoegd aan `src/schemas/item.ts` (optioneel, was al 100% in data aanwezig). Nieuwe CI-regressietest in `scripts/validate-db.ts`: gedistilleerd/versterkte wijn (cluster 12, niet-bier) ≠ migraine score 3. Geen scorewijzigingen in de data. Akkoord: Peter Wolterman (chat 2026-06-04, na evidence-research).

@@ -75,6 +75,16 @@ for (const file of files) {
       }
     }
 
+    // Regression test (CLAUDE.md §2.2 v2.0): gedistilleerd & versterkte wijn migraine != 3.
+    // Cluster 12 = sterke alcohol (bier + gedistilleerd). Bier is de enige alcohol op de
+    // score-3-whitelist; gedistilleerd (whisky/gin/wodka/rum/e.d.) is score 2 + subgroep-overschat.
+    if (item.category === 'dranken-alcohol' && item.cluster === 12) {
+      const isBier = item.name.nl.toLowerCase().includes('bier')
+      if (!isBier && item.scores.migraine?.score === 3) {
+        fail(`${label}: REGRESSIE — gedistilleerd/versterkte wijn mag bij migraine niet score 3 hebben; alleen bier staat op de alcohol-whitelist (zie CLAUDE.md §2.2 v2.0).`)
+      }
+    }
+
     // Regression test: calcium-rijk zuivel (melk, kaas, edammer, yoghurt) nierstenen <= 1
     // Exclusions: pindakaas (noot, geen zuivel)
     const calciumRijkZuivel = ['melk', 'edammer', 'yoghurt']
