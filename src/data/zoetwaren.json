@@ -331,7 +331,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 60
+      "cluster": 60,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-chips-aardappel",
@@ -624,7 +628,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 2
+      "cluster": 2,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-taart-slagroom",
@@ -1808,7 +1816,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 2
+      "cluster": 2,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-pepermunt",
@@ -2258,7 +2270,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 2
+      "cluster": 2,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-madeleine",

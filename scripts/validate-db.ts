@@ -8,6 +8,34 @@ const MIGRAINE_WHITELIST = new Set(['rode wijn', 'bier', 'alcohol', 'msg', 'spek
 // Gate 11: evidence A toegestaan bij database, meta-analyse, of evidence-based guideline (AUA, EULAR, ACR)
 const EVIDENCE_A_SOURCE_TYPES = new Set(['database', 'meta-analysis', 'guideline'])
 
+// Gate 13: jicht note-getal moet bij de §2.1-drempel passen (single-ingredient categorieën).
+const SINGLE_INGREDIENT = new Set([
+  'groente', 'fruit', 'vlees', 'vis-schaaldieren', 'noten-zaden', 'peulvruchten', 'granen', 'zuivel', 'eieren',
+])
+function jichtBand(mg: number): 0 | 1 | 2 | 3 {
+  if (mg < 50) return 0
+  if (mg < 100) return 1
+  if (mg <= 200) return 2
+  return 3
+}
+/** Verwachte jicht-score uit een note-genoteerde purinewaarde, of null als de note geen waarde noemt. */
+function expectedJichtFromNote(note: string, category: string, nameNl: string): number | null {
+  const norm = note.replace(/,(\d)/g, '.$1') // decimaalkomma → punt
+  const m = /([<>])?\s*~?\s*(\d{1,3}(?:\.\d)?)\s*(?:[–-]\s*(\d{1,3}(?:\.\d)?))?\s*mg(?:\s*\/?\s*100\s*g| purine)/i.exec(norm)
+  if (!m) return null
+  const cmp = m[1]
+  const lo = parseFloat(m[2])
+  const hi = m[3] ? parseFloat(m[3]) : lo
+  const mid = (lo + hi) / 2
+  let exp: number
+  if (cmp === '>') exp = mid >= 200 ? 3 : jichtBand(mid + 0.01)
+  else if (cmp === '<') exp = jichtBand(Math.max(0, mid - 0.01))
+  else exp = jichtBand(mid)
+  if (category === 'peulvruchten') exp = Math.min(exp, 2) // §2.1 plafond
+  if (nameNl.toLowerCase().includes('koffie')) exp = 0 // override §2.1
+  return exp
+}
+
 let errors = 0
 let totalItems = 0
 
@@ -73,6 +101,22 @@ for (const file of files) {
       if (!note.includes('omstreden')) {
         fail(`${label}: citrus met histamine-score vereist een 'omstreden'-note (§2.4/§12).`)
       }
+    }
+
+    // Gate 13: jicht — note-genoteerde purinewaarde moet bij de §2.1-drempel passen
+    // (single-ingredient categorieën). Borgt de DB-brede consistentie zodat scores en
+    // hun eigen note-waarde niet kunnen driften.
+    if (item.scores.jicht?.note?.nl && SINGLE_INGREDIENT.has(item.category)) {
+      const exp = expectedJichtFromNote(item.scores.jicht.note.nl, item.category, item.name.nl)
+      if (exp !== null && item.scores.jicht.score !== exp) {
+        fail(`${label}: jicht-score ${item.scores.jicht.score} strijdig met de purinewaarde in de note (drempel §2.1 → ${exp}).`)
+      }
+    }
+
+    // Gate 14: alcohol met histamine-score moet als DAO-blokker geflagd zijn (§2.4).
+    if (item.category === 'dranken-alcohol' && item.scores.histamine &&
+        !item.histamineFlags?.daoBlocker) {
+      fail(`${label}: alcoholische drank met histamine-score vereist histamineFlags.daoBlocker = true (§2.4).`)
     }
 
     // Gate 10: score=3 vereist evidence >= B

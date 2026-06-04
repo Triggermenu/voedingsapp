@@ -2934,7 +2934,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-23"
       },
-      "cluster": 59
+      "cluster": 59,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-falafel",

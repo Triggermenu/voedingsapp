@@ -202,7 +202,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-witte-wijn",
@@ -382,7 +386,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-gin",
@@ -470,7 +478,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-prosecco",
@@ -653,7 +665,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-rum",
@@ -741,7 +757,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-port",
@@ -926,7 +946,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-bier-stout",
@@ -1649,7 +1673,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-cognac",
@@ -1734,7 +1762,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-bier-alcoholvrij",
@@ -1811,7 +1843,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 12
+      "cluster": 12,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-bier-trappist",
@@ -1992,7 +2028,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 11
+      "cluster": 11,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-vermouth",

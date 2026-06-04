@@ -567,7 +567,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 23
+      "cluster": 23,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-zout",
