@@ -67,8 +67,7 @@
             }
           ],
           "note": {
-            "nl": "Rode wijn kan bij een deel van de mensen met migraine aanvallen uitlokken — maar minder vaak dan vaak gedacht. Onderzoek laat zien dat circa 1 op de 10 migrainepatiënten er objectief gevoelig voor is, terwijl veel meer mensen het zichzelf als trigger rapporteren. Wodka gaf in dezelfde studie geen klachten.",
-            "en": "Red wine can trigger migraine in some people — but less often than commonly assumed. Research suggests about 1 in 10 migraine patients is objectively sensitive to it, while many more self-report it as a trigger. Vodka caused no complaints in the same study."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           }
         },
         "nierstenen": {
@@ -253,7 +252,7 @@
             }
           ],
           "note": {
-            "nl": "Alcohol maar niet specifiek op de whitelist als rode wijn."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           },
           "triggerType": "subgroep-overschat",
           "confidence": "middel",
@@ -350,7 +349,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {
@@ -438,7 +437,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {
@@ -521,7 +520,7 @@
             }
           ],
           "note": {
-            "nl": "Bruisende wijn met alcohol; niet op de migraine-whitelist als rode wijn."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           },
           "triggerType": "subgroep-overschat",
           "confidence": "middel",
@@ -618,7 +617,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {
@@ -709,7 +708,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {
@@ -889,7 +888,7 @@
             }
           ],
           "note": {
-            "nl": "Alcohol met smaken; matig migrainerisico."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           },
           "triggerType": "subgroep-overschat",
           "confidence": "middel",
@@ -1258,7 +1257,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Witte en mousserende wijn bevatten minder quercetine dan rode wijn (cluster 10). Primaire trigger-pathway: ethanol. ~9% van migrainepatiënten rapporteert witte wijn als trigger (Onderwater 2019). Score 2 correct."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           }
         },
         "nierstenen": {
@@ -1350,7 +1349,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Witte en mousserende wijn bevatten minder quercetine dan rode wijn (cluster 10). Primaire trigger-pathway: ethanol. ~9% van migrainepatiënten rapporteert witte wijn als trigger (Onderwater 2019). Score 2 correct."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           }
         },
         "nierstenen": {
@@ -1439,7 +1438,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Witte en mousserende wijn bevatten minder quercetine dan rode wijn (cluster 10). Primaire trigger-pathway: ethanol. ~9% van migrainepatiënten rapporteert witte wijn als trigger (Onderwater 2019). Score 2 correct."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           }
         },
         "nierstenen": {
@@ -1528,7 +1527,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Witte en mousserende wijn bevatten minder quercetine dan rode wijn (cluster 10). Primaire trigger-pathway: ethanol. ~9% van migrainepatiënten rapporteert witte wijn als trigger (Onderwater 2019). Score 2 correct."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           }
         },
         "nierstenen": {
@@ -1617,7 +1616,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {
@@ -1702,7 +1701,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {
@@ -1960,7 +1959,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Witte en mousserende wijn bevatten minder quercetine dan rode wijn (cluster 10). Primaire trigger-pathway: ethanol. ~9% van migrainepatiënten rapporteert witte wijn als trigger (Onderwater 2019). Score 2 correct."
+            "nl": "Witte/mousserende/lichte wijn bevat veel minder quercetine en congeneren dan rode wijn; een eventuele trigger is beperkt tot een MAO-gevoelige subgroep en in de algemene populatie overschat → score 2 + subgroep-overschat."
           }
         },
         "nierstenen": {
@@ -2045,7 +2044,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {
@@ -2129,7 +2128,7 @@
             }
           ],
           "note": {
-            "nl": "Gedistilleerd alcohol — sterke migrainetrigger."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           },
           "triggerType": "subgroep-overschat",
           "confidence": "middel",
@@ -2218,7 +2217,7 @@
             }
           ],
           "note": {
-            "nl": "Hoog alcoholpercentage + thujon: sterke trigger."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           },
           "triggerType": "subgroep-overschat",
           "confidence": "middel",
@@ -2312,7 +2311,7 @@
             "ethanol"
           ],
           "note": {
-            "nl": "Gedistilleerde drank: ethanol-dominant trigger-pathway. Minder getriggerde patiënten dan bij rode wijn (<10%). Score 2 correct (geen quercetine-ALDH2 pathway)."
+            "nl": "Gedistilleerd/sterke drank: de reproduceerbare migrainetrigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol zelf (Onderwater 2019: wodka — vrijwel pure ethanol — is de mínst provocerende drank). Effect alleen in een gevoelige subgroep → score 2 + subgroep-overschat, niet rood."
           }
         },
         "nierstenen": {

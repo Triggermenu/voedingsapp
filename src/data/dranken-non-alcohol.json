@@ -315,7 +315,7 @@
             }
           ],
           "note": {
-            "nl": "Citrus is histamineliberator."
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
           }
         }
       },
@@ -1774,7 +1774,10 @@
               "type": "consensus",
               "accessedAt": "2026-05-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
+          }
         }
       },
       "meta": {
@@ -1782,7 +1785,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 1
+      "cluster": 1,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-vlierbloesemsiroop",
@@ -1916,7 +1923,10 @@
               "type": "consensus",
               "accessedAt": "2026-05-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
+          }
         }
       },
       "meta": {
@@ -1924,7 +1934,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 39
+      "cluster": 39,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-rooibosthee",
@@ -2610,7 +2624,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 1
+      "cluster": 1,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-hibiscusthee",
@@ -2920,7 +2938,7 @@
             }
           ],
           "note": {
-            "nl": "Citrus: histamineliberator."
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
           }
         }
       },
@@ -2929,7 +2947,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 1
+      "cluster": 1,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-tonic-water",

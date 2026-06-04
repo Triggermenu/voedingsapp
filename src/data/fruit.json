@@ -1036,7 +1036,7 @@
             }
           ],
           "note": {
-            "nl": "Histamineliberator."
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
           }
         }
       },
@@ -1197,7 +1197,7 @@
             }
           ],
           "note": {
-            "nl": "Histamineliberator."
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
           }
         }
       },
@@ -2361,7 +2361,10 @@
               "type": "consensus",
               "accessedAt": "2026-05-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
+          }
         }
       },
       "histamineFlags": {
@@ -2445,7 +2448,10 @@
               "type": "consensus",
               "accessedAt": "2026-05-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
+          }
         }
       },
       "histamineFlags": {

@@ -53,6 +53,28 @@ for (const file of files) {
       }
     }
 
+    // Gate 9c: note-label semantische consistentie (migraine). Een subgroep-/individueel-
+    // variabel/context-afhankelijk triggerType mag geen note hebben die een populatiebreed/
+    // universeel effect claimt — anders spreken label en tekst elkaar tegen.
+    const SUBGROUP_TT = new Set(['subgroep-bevestigd', 'subgroep-overschat', 'individueel-variabel', 'context-afhankelijk'])
+    const STRONG_PHRASES = ['sterke trigger', 'krachtige trigger', 'bij iedereen', 'altijd een trigger', 'veelvoorkomende trigger', 'belangrijke trigger']
+    if (item.scores.migraine && SUBGROUP_TT.has(item.scores.migraine.triggerType ?? '')) {
+      const note = (item.scores.migraine.note?.nl ?? '').toLowerCase()
+      const hit = STRONG_PHRASES.find((ph) => note.includes(ph))
+      if (hit) {
+        fail(`${label}: migraine triggerType '${item.scores.migraine.triggerType}' (subgroep/variabel) maar note claimt populatiebreed effect ("${hit}"). Note en label zijn tegenstrijdig.`)
+      }
+    }
+
+    // Gate 12: citrus met histamine-score vereist het 'omstreden'-voorbehoud (§2.4/§12).
+    if (/sinaasappel|citroen|grapefruit|mandarijn|limoen|clementine/i.test(item.name.nl) &&
+        item.scores.histamine && item.scores.histamine.score >= 1) {
+      const note = (item.scores.histamine.note?.nl ?? '').toLowerCase()
+      if (!note.includes('omstreden')) {
+        fail(`${label}: citrus met histamine-score vereist een 'omstreden'-note (§2.4/§12).`)
+      }
+    }
+
     // Gate 10: score=3 vereist evidence >= B
     for (const [condition, s] of Object.entries(item.scores)) {
       if (!s) continue
