@@ -1,8 +1,6 @@
-import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import type { Condition } from '@/schemas/item'
-import { CONDITIONS } from '@/schemas/item'
-import { getProfile, saveProfile, clearProfile } from '@/lib/profile'
+import { getProfile, clearProfile } from '@/lib/profile'
 import { getTodayStats } from '@/lib/stats'
 import { getAllItems } from '@/lib/db'
 import { getCombinedScore } from '@/lib/scoring'
@@ -10,19 +8,69 @@ import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
 import { METHODOLOGY_VERSION } from '@/lib/version'
 
-const COND_META: Record<Condition, { label: string; short: string }> = {
-  jicht:      { label: 'Jicht',      short: 'JCHT' },
-  migraine:   { label: 'Migraine',   short: 'MIGR' },
-  nierstenen: { label: 'Nierstenen', short: 'NIER' },
-  histamine:  { label: 'Histamine',  short: 'HIST' },
+const COND_LABEL: Record<Condition, string> = {
+  jicht: 'Jicht',
+  migraine: 'Migraine',
+  nierstenen: 'Nierstenen',
+  histamine: 'Histamine',
+}
+
+// Chevron voor lijst-items.
+function Chevron() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--rule)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+      <path d="M9 18l6-6-6-6" />
+    </svg>
+  )
+}
+
+// Eén rij in een hub-lijstkaart.
+function HubItem({
+  to, icon, title, desc, value,
+}: { to: string; icon: React.ReactNode; title: string; desc?: string; value?: string }) {
+  return (
+    <Link
+      to={to}
+      style={{
+        display: 'flex', alignItems: 'center', gap: 11,
+        padding: '14px 15px', textDecoration: 'none', color: 'inherit',
+        borderBottom: '1px solid var(--rule-soft)',
+      }}
+      className="hub-item"
+    >
+      <span style={{
+        width: 30, height: 30, borderRadius: 8, flexShrink: 0,
+        background: 'var(--brand-50)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        color: 'var(--brand-2)',
+      }}>
+        {icon}
+      </span>
+      <span style={{ flex: 1, minWidth: 0 }}>
+        <span className="serif" style={{ display: 'block', fontSize: 14.5, fontWeight: 500, color: 'var(--ink)', lineHeight: 1.2 }}>
+          {title}
+        </span>
+        {desc && (
+          <span style={{ display: 'block', fontSize: 11.5, color: 'var(--muted)', marginTop: 2 }}>{desc}</span>
+        )}
+      </span>
+      {value && (
+        <span style={{ fontSize: 12, color: 'var(--brand-2)', fontWeight: 500, flexShrink: 0, whiteSpace: 'nowrap' }}>
+          {value}
+        </span>
+      )}
+      <Chevron />
+    </Link>
+  )
+}
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return <div className="eyebrow" style={{ margin: '20px 0 9px' }}>{children}</div>
 }
 
 export function Instellingen() {
   const navigate = useNavigate()
   const profile = getProfile()
   const conditions = profile?.conditions ?? []
-  const [selected, setSelected] = useState<Condition[]>(conditions)
-  const [saved, setSaved] = useState(false)
 
   const todayStats = getTodayStats()
   const allItems = getAllItems()
@@ -39,21 +87,15 @@ export function Instellingen() {
     },
     { veilig: 0, matig: 0, voorzichtig: 0, vermijden: 0 }
   )
-
   const safePercent =
     viewedItems.length > 0 ? Math.round((scoreCounts.veilig / viewedItems.length) * 100) : null
 
-  const toggle = (c: Condition) => {
-    setSaved(false)
-    setSelected((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]))
-  }
-
-  const handleSave = () => {
-    if (selected.length === 0) return
-    saveProfile({ conditions: selected })
-    setSaved(true)
-    setTimeout(() => setSaved(false), 2000)
-  }
+  const profileValue =
+    conditions.length === 0
+      ? 'Niet ingesteld'
+      : conditions.length <= 2
+        ? conditions.map((c) => COND_LABEL[c]).join(' · ')
+        : `${conditions.length} aandoeningen`
 
   const handleReset = () => {
     if (window.confirm('Weet je het zeker? Je profiel en instellingen worden gewist.')) {
@@ -65,164 +107,114 @@ export function Instellingen() {
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
       <div style={{ maxWidth: 760, margin: '0 auto' }}>
-      {/* Header */}
-      <div style={{ padding: '8px 22px 0' }} className="pt-safe">
-        <Logo size={18} to="/zoeken" />
-      </div>
-      <div style={{ padding: '16px 22px 4px' }}>
-        <div className="eyebrow" style={{ marginBottom: 6 }}>Mijn profiel</div>
-        <h1 className="serif" style={{ fontSize: 20, lineHeight: 1.1, fontWeight: 500, margin: '4px 0 3px', letterSpacing: -0.3, color: 'var(--ink)' }}>
-          Voor wie advies?
-        </h1>
-        <p style={{ fontSize: 12.5, color: 'var(--muted)', margin: 0 }}>
-          Zoekresultaten passen zich aan jouw selectie aan.
-        </p>
-      </div>
+        {/* Header */}
+        <div style={{ padding: '8px 22px 0' }} className="pt-safe">
+          <Logo size={18} to="/zoeken" />
+        </div>
+        <div style={{ padding: '16px 22px 0' }}>
+          <h1 className="serif" style={{ fontSize: 22, lineHeight: 1.1, fontWeight: 500, margin: 0, letterSpacing: -0.3, color: 'var(--ink)' }}>
+            Meer
+          </h1>
+        </div>
 
-      {/* Condition toggles */}
-      <div style={{ padding: '10px 22px', display: 'flex', flexDirection: 'column', gap: 6 }}>
-        {CONDITIONS.map((c) => {
-          const meta = COND_META[c]
-          const isOn = selected.includes(c)
-          return (
-            <button
-              key={c}
-              onClick={() => toggle(c)}
-              style={{
-                display: 'flex', alignItems: 'center', gap: 10,
-                padding: '9px 14px', borderRadius: 9, cursor: 'pointer',
-                background: isOn ? 'var(--brand-50)' : 'var(--paper)',
-                border: isOn ? '1px solid var(--brand)' : '1px solid var(--rule)',
-                fontFamily: 'inherit', textAlign: 'left',
-              }}
-            >
-              <span className="mono" style={{ fontSize: 9.5, color: isOn ? 'var(--brand-2)' : 'var(--muted)', width: 30 }}>
-                {meta.short}
-              </span>
-              <span className="serif" style={{ fontSize: 14.5, fontWeight: 500, flex: 1, color: 'var(--ink)' }}>
-                {meta.label}
-              </span>
-              <span style={{
-                width: 16, height: 16, borderRadius: 5, flexShrink: 0,
-                background: isOn ? 'var(--brand)' : 'transparent',
-                border: isOn ? 'none' : '1.5px solid var(--rule)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-              }}>
-                {isOn && (
-                  <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round">
-                    <path d="M2 5l2 2 4-4" />
-                  </svg>
-                )}
-              </span>
-            </button>
-          )
-        })}
-      </div>
-
-      {/* Save button */}
-      <div style={{ padding: '4px 22px 10px' }}>
-        <button
-          onClick={handleSave}
-          disabled={selected.length === 0}
-          style={{
-            width: '100%', height: 40, borderRadius: 9, fontFamily: 'inherit',
-            background: selected.length === 0 ? 'var(--rule)' : 'var(--brand)',
-            color: selected.length === 0 ? 'var(--muted)' : '#fff',
-            border: 'none', fontSize: 13.5, fontWeight: 600, cursor: selected.length === 0 ? 'not-allowed' : 'pointer',
-          }}
-        >
-          {saved ? '✓ Opgeslagen' : 'Opslaan'}
-        </button>
-      </div>
-
-      {/* Onderbouwing — bronnen & methodologie, prominent */}
-      <div style={{ padding: '8px 22px 4px' }}>
-        <div className="eyebrow" style={{ marginBottom: 10 }}>Onderbouwing</div>
-        <Link
-          to="/bronnen"
-          style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
-            padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
-            background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
-          }}
-        >
-          <div>
-            <div className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>De wetenschap achter elke score</div>
-            <div style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 2, lineHeight: 1.4 }}>
-              Datasets, richtlijnen en peer-reviewed studies — per aandoening, met evidence-grade.
-            </div>
+        <div style={{ padding: '0 22px' }}>
+          {/* Profiel */}
+          <SectionLabel>Profiel</SectionLabel>
+          <div className="tm-hubcard">
+            <HubItem
+              to="/instellingen/profiel"
+              value={profileValue}
+              title="Mijn profiel"
+              desc="Voor welke aandoeningen"
+              icon={
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="8" r="3.5" /><path d="M5 20c0-3.3 3.1-5 7-5s7 1.7 7 5" />
+                </svg>
+              }
+            />
           </div>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-            <path d="M9 18l6-6-6-6" />
-          </svg>
-        </Link>
-        <Link
-          to="/methodologie"
-          style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
-            marginTop: 8, padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
-            background: 'var(--paper)', border: '1px solid var(--rule)',
-          }}
-        >
-          <div>
-            <div className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>Hoe een stoplicht tot stand komt</div>
-            <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2, lineHeight: 1.4 }}>
-              De methodologie: drempels, afwegingen en uitzonderingen per aandoening.
-            </div>
-          </div>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.8" strokeLinecap="round">
-            <path d="M9 18l6-6-6-6" />
-          </svg>
-        </Link>
-      </div>
 
-      {/* Today stats */}
-      {viewedItems.length > 0 && (
-        <div style={{ padding: '0 22px 4px' }}>
-          <div className="eyebrow" style={{ marginBottom: 10 }}>Vandaag</div>
-          <div className="tm-card" style={{ padding: 16 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div>
-                <div className="serif" style={{ fontSize: 18, fontWeight: 500, color: 'var(--ink)' }}>
-                  {viewedItems.length} {viewedItems.length === 1 ? 'item' : 'items'} bekeken
+          {/* Onderbouwing */}
+          <SectionLabel>Onderbouwing</SectionLabel>
+          <div className="tm-hubcard">
+            <HubItem
+              to="/methodologie"
+              title="Hoe een stoplicht tot stand komt"
+              desc="De methode: drempels, afwegingen en uitzonderingen"
+              icon={
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 3h6M10 3v5l-4 9a2 2 0 002 3h8a2 2 0 002-3l-4-9V3" />
+                </svg>
+              }
+            />
+            <HubItem
+              to="/bronnen"
+              title="Bronnen &amp; datasets"
+              desc="Alle datasets, richtlijnen en studies per aandoening"
+              icon={
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-3" />
+                </svg>
+              }
+            />
+          </div>
+
+          {/* Vandaag */}
+          {viewedItems.length > 0 && (
+            <>
+              <SectionLabel>Vandaag</SectionLabel>
+              <div className="tm-card" style={{ padding: 16 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <div>
+                    <div className="serif" style={{ fontSize: 18, fontWeight: 500, color: 'var(--ink)' }}>
+                      {viewedItems.length} {viewedItems.length === 1 ? 'item' : 'items'} bekeken
+                    </div>
+                    <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2 }}>
+                      {scoreCounts.veilig} veilig · {scoreCounts.matig} matig · {scoreCounts.vermijden} vermijden
+                    </div>
+                  </div>
+                  {safePercent !== null && (
+                    <div className="mono" style={{ fontSize: 22, color: 'var(--ink)', fontWeight: 600 }}>
+                      {safePercent}<span style={{ color: 'var(--muted)', fontSize: 14 }}>%</span>
+                    </div>
+                  )}
                 </div>
-                <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2 }}>
-                  {scoreCounts.veilig} veilig · {scoreCounts.matig} matig · {scoreCounts.vermijden} vermijden
+                <div className="stripe-bar" style={{ marginTop: 12 }}>
+                  <span className="swatch-safe" style={{ flex: scoreCounts.veilig }} />
+                  <span className="swatch-ok"   style={{ flex: scoreCounts.matig }} />
+                  <span className="swatch-warn" style={{ flex: scoreCounts.voorzichtig }} />
+                  <span className="swatch-avoid"style={{ flex: scoreCounts.vermijden }} />
                 </div>
               </div>
-              {safePercent !== null && (
-                <div className="mono" style={{ fontSize: 22, color: 'var(--ink)', fontWeight: 600 }}>
-                  {safePercent}<span style={{ color: 'var(--muted)', fontSize: 14 }}>%</span>
-                </div>
-              )}
-            </div>
-            {/* Stripe bar */}
-            <div className="stripe-bar" style={{ marginTop: 12 }}>
-              <span className="swatch-safe" style={{ flex: scoreCounts.veilig }} />
-              <span className="swatch-ok"   style={{ flex: scoreCounts.matig }} />
-              <span className="swatch-warn" style={{ flex: scoreCounts.voorzichtig }} />
-              <span className="swatch-avoid"style={{ flex: scoreCounts.vermijden }} />
-            </div>
+            </>
+          )}
+
+          {/* App */}
+          <SectionLabel>App</SectionLabel>
+          <div className="tm-hubcard">
+            <HubItem
+              to="/privacy"
+              title="Privacybeleid"
+              desc="Wat we opslaan — en wat niet"
+              icon={
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="5" y="11" width="14" height="9" rx="2" /><path d="M8 11V8a4 4 0 018 0v3" />
+                </svg>
+              }
+            />
+          </div>
+
+          {/* Footer */}
+          <div style={{ padding: '22px 0 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+            <button
+              onClick={handleReset}
+              style={{ fontSize: 12.5, color: 'var(--avoid)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit', fontWeight: 500 }}
+            >
+              Profiel wissen
+            </button>
+            <span style={{ fontSize: 12, color: 'var(--muted)' }}>Triggermenu · methodologie v{METHODOLOGY_VERSION}</span>
           </div>
         </div>
-      )}
-
-      {/* Footer links */}
-      <div style={{ padding: '20px 22px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
-        <button
-          onClick={handleReset}
-          style={{ fontSize: 12, color: 'var(--muted)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}
-        >
-          Profiel wissen
-        </button>
-        <div style={{ display: 'flex', gap: 16 }}>
-          <Link to="/privacy" style={{ fontSize: 12, color: 'var(--muted)', textDecoration: 'none' }}>
-            Privacybeleid
-          </Link>
-          <span style={{ fontSize: 12, color: 'var(--rule)' }}>·</span>
-          <span style={{ fontSize: 12, color: 'var(--muted)' }}>Triggermenu · methodologie v{METHODOLOGY_VERSION}</span>
-        </div>
-      </div>
       </div>
 
       <NavBar />

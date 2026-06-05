@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
 import { getDatabaseStats } from '@/lib/db'
 import { NavBar } from '@/components/NavBar'
-import { Logo } from '@/components/Logo'
+import { BackBar } from '@/components/BackBar'
 
 type SourceType = 'DATASET' | 'GUIDELINE' | 'REVIEW' | 'CONSENSUS' | 'STUDIE'
 type CondKey = 'jicht' | 'migraine' | 'nierstenen' | 'histamine'
@@ -130,9 +129,7 @@ export function Bronnen() {
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
       <div style={{ maxWidth: 760, margin: '0 auto' }}>
       {/* Header */}
-      <div style={{ padding: '8px 22px 0' }} className="pt-safe">
-        <Logo size={18} to="/zoeken" />
-      </div>
+      <BackBar />
       <div style={{ padding: '18px 22px 8px' }}>
         <div className="eyebrow" style={{ marginBottom: 8 }}>Bronnen</div>
         <h1 className="serif" style={{ fontSize: 26, lineHeight: 1.05, fontWeight: 500, margin: '8px 0 4px', letterSpacing: -0.5, color: 'var(--ink)' }}>
@@ -141,30 +138,6 @@ export function Bronnen() {
         <p style={{ fontSize: 13, color: 'var(--ink-soft)', margin: 0, lineHeight: 1.5 }}>
           Iedere kleur in Triggermenu komt uit één van de onderstaande datasets, richtlijnen of peer-reviewed studies.
         </p>
-      </div>
-
-      {/* Uitleg vooraan: link naar gedetailleerde methodologie */}
-      <div style={{ padding: '10px 22px 0' }}>
-        <Link
-          to="/methodologie"
-          style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
-            padding: '13px 15px', borderRadius: 10, textDecoration: 'none',
-            background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
-          }}
-        >
-          <div>
-            <div className="serif" style={{ fontSize: 14.5, fontWeight: 500, color: 'var(--ink)' }}>
-              Hoe komen de stoplichten tot stand?
-            </div>
-            <div style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 2, lineHeight: 1.4 }}>
-              Gedetailleerde methodologie — drempels, afwegingen en bronnen per aandoening.
-            </div>
-          </div>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-            <path d="M9 18l6-6-6-6" />
-          </svg>
-        </Link>
       </div>
 
       {/* Meta bar */}

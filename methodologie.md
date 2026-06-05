@@ -118,7 +118,7 @@ Elke migraine-score ≥ 2 heeft een `triggerType` die aangeeft of het om een pop
 
 De SIGHI 0–3-schaal wordt direct overgenomen. Per item worden twee extra kenmerken bijgehouden: **histamineliberator** (bv. citrus, aardbei, tomaat) en **DAO-blokker** (bv. alcohol, zwarte/groene thee).
 
-Tegenstrijdigheden worden expliciet gemarkeerd. Voorbeeld: citrus wordt door SIGHI vaak hoog gescoord, maar San Mauro 2021 toont beperkte directe histamine-evidence → label *"omstreden"*.
+Tegenstrijdigheden worden in de toelichting expliciet benoemd. Voorbeeld: citrus wordt door SIGHI vaak hoog gescoord, maar San Mauro 2021 toont beperkte directe histamine-evidence → label *"omstreden"* in de note.
 
 Evidence is hier vrijwel nooit A: meestal B (consensus) of C (anekdotisch). Individuele DAO-drempels variëren sterk.
 
