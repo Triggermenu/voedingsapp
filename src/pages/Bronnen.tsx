@@ -143,19 +143,8 @@ export function Bronnen() {
         </p>
       </div>
 
-      {/* Meta bar */}
-      <div style={{
-        padding: '12px 22px',
-        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        borderBottom: '1px solid var(--rule-soft)', borderTop: '1px solid var(--rule-soft)',
-        marginTop: 4,
-      }}>
-        <span className="eyebrow">{totalSources} bronnen · {stats.totalItems} items</span>
-        <span className="mono" style={{ fontSize: 10, color: 'var(--muted)' }}>BIJGEWERKT {dateStr}</span>
-      </div>
-
-      {/* Link naar gedetailleerde methodologie */}
-      <div style={{ padding: '14px 22px 0' }}>
+      {/* Uitleg vooraan: link naar gedetailleerde methodologie */}
+      <div style={{ padding: '10px 22px 0' }}>
         <Link
           to="/methodologie"
           style={{
@@ -176,6 +165,17 @@ export function Bronnen() {
             <path d="M9 18l6-6-6-6" />
           </svg>
         </Link>
+      </div>
+
+      {/* Meta bar */}
+      <div style={{
+        padding: '12px 22px',
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        borderBottom: '1px solid var(--rule-soft)', borderTop: '1px solid var(--rule-soft)',
+        marginTop: 14,
+      }}>
+        <span className="eyebrow">{totalSources} bronnen · {stats.totalItems} items</span>
+        <span className="mono" style={{ fontSize: 10, color: 'var(--muted)' }}>BIJGEWERKT {dateStr}</span>
       </div>
 
       {/* Per-condition source sections */}

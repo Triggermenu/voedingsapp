@@ -63,22 +63,23 @@ export function Instellingen() {
 
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
+      <div style={{ maxWidth: 760, margin: '0 auto' }}>
       {/* Header */}
       <div style={{ padding: '8px 22px 0' }} className="pt-safe">
         <Logo size={18} to="/zoeken" />
       </div>
-      <div style={{ padding: '18px 22px 6px' }}>
-        <div className="eyebrow" style={{ marginBottom: 8 }}>Mijn profiel</div>
-        <h1 className="serif" style={{ fontSize: 26, lineHeight: 1.05, fontWeight: 500, margin: '8px 0 4px', letterSpacing: -0.5, color: 'var(--ink)' }}>
+      <div style={{ padding: '16px 22px 4px' }}>
+        <div className="eyebrow" style={{ marginBottom: 6 }}>Mijn profiel</div>
+        <h1 className="serif" style={{ fontSize: 20, lineHeight: 1.1, fontWeight: 500, margin: '4px 0 3px', letterSpacing: -0.3, color: 'var(--ink)' }}>
           Voor wie advies?
         </h1>
-        <p style={{ fontSize: 13, color: 'var(--muted)', margin: 0 }}>
+        <p style={{ fontSize: 12.5, color: 'var(--muted)', margin: 0 }}>
           Zoekresultaten passen zich aan jouw selectie aan.
         </p>
       </div>
 
       {/* Condition toggles */}
-      <div style={{ padding: '14px 22px', display: 'flex', flexDirection: 'column', gap: 8 }}>
+      <div style={{ padding: '10px 22px', display: 'flex', flexDirection: 'column', gap: 6 }}>
         {CONDITIONS.map((c) => {
           const meta = COND_META[c]
           const isOn = selected.includes(c)
@@ -87,27 +88,27 @@ export function Instellingen() {
               key={c}
               onClick={() => toggle(c)}
               style={{
-                display: 'flex', alignItems: 'center', gap: 12,
-                padding: '14px 16px', borderRadius: 10, cursor: 'pointer',
+                display: 'flex', alignItems: 'center', gap: 10,
+                padding: '9px 14px', borderRadius: 9, cursor: 'pointer',
                 background: isOn ? 'var(--brand-50)' : 'var(--paper)',
                 border: isOn ? '1px solid var(--brand)' : '1px solid var(--rule)',
                 fontFamily: 'inherit', textAlign: 'left',
               }}
             >
-              <span className="mono" style={{ fontSize: 10, color: isOn ? 'var(--brand-2)' : 'var(--muted)', width: 36 }}>
+              <span className="mono" style={{ fontSize: 9.5, color: isOn ? 'var(--brand-2)' : 'var(--muted)', width: 30 }}>
                 {meta.short}
               </span>
-              <span className="serif" style={{ fontSize: 16, fontWeight: 500, flex: 1, color: 'var(--ink)' }}>
+              <span className="serif" style={{ fontSize: 14.5, fontWeight: 500, flex: 1, color: 'var(--ink)' }}>
                 {meta.label}
               </span>
               <span style={{
-                width: 18, height: 18, borderRadius: 5, flexShrink: 0,
+                width: 16, height: 16, borderRadius: 5, flexShrink: 0,
                 background: isOn ? 'var(--brand)' : 'transparent',
                 border: isOn ? 'none' : '1.5px solid var(--rule)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
               }}>
                 {isOn && (
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round">
+                  <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round">
                     <path d="M2 5l2 2 4-4" />
                   </svg>
                 )}
@@ -118,19 +119,60 @@ export function Instellingen() {
       </div>
 
       {/* Save button */}
-      <div style={{ padding: '4px 22px 12px' }}>
+      <div style={{ padding: '4px 22px 10px' }}>
         <button
           onClick={handleSave}
           disabled={selected.length === 0}
           style={{
-            width: '100%', height: 46, borderRadius: 10, fontFamily: 'inherit',
+            width: '100%', height: 40, borderRadius: 9, fontFamily: 'inherit',
             background: selected.length === 0 ? 'var(--rule)' : 'var(--brand)',
             color: selected.length === 0 ? 'var(--muted)' : '#fff',
-            border: 'none', fontSize: 14, fontWeight: 600, cursor: selected.length === 0 ? 'not-allowed' : 'pointer',
+            border: 'none', fontSize: 13.5, fontWeight: 600, cursor: selected.length === 0 ? 'not-allowed' : 'pointer',
           }}
         >
           {saved ? '✓ Opgeslagen' : 'Opslaan'}
         </button>
+      </div>
+
+      {/* Onderbouwing — bronnen & methodologie, prominent */}
+      <div style={{ padding: '8px 22px 4px' }}>
+        <div className="eyebrow" style={{ marginBottom: 10 }}>Onderbouwing</div>
+        <Link
+          to="/bronnen"
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
+            padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
+            background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
+          }}
+        >
+          <div>
+            <div className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>De wetenschap achter elke score</div>
+            <div style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 2, lineHeight: 1.4 }}>
+              Datasets, richtlijnen en peer-reviewed studies — per aandoening, met evidence-grade.
+            </div>
+          </div>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </Link>
+        <Link
+          to="/methodologie"
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
+            marginTop: 8, padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
+            background: 'var(--paper)', border: '1px solid var(--rule)',
+          }}
+        >
+          <div>
+            <div className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>Hoe een stoplicht tot stand komt</div>
+            <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2, lineHeight: 1.4 }}>
+              De methodologie: drempels, afwegingen en uitzonderingen per aandoening.
+            </div>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.8" strokeLinecap="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </Link>
       </div>
 
       {/* Today stats */}
@@ -164,29 +206,6 @@ export function Instellingen() {
         </div>
       )}
 
-      {/* Bronnen */}
-      <div style={{ padding: '16px 22px 0' }}>
-        <Link
-          to="/bronnen"
-          style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
-            background: 'var(--paper)', border: '1px solid var(--rule)',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 4h11a3 3 0 013 3v13a2 2 0 00-2-2H4z" />
-              <path d="M4 4v14h12" />
-            </svg>
-            <span className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>Bronnen</span>
-          </div>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.8" strokeLinecap="round">
-            <path d="M9 18l6-6-6-6" />
-          </svg>
-        </Link>
-      </div>
-
       {/* Footer links */}
       <div style={{ padding: '20px 22px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
         <button
@@ -202,6 +221,7 @@ export function Instellingen() {
           <span style={{ fontSize: 12, color: 'var(--rule)' }}>·</span>
           <span style={{ fontSize: 12, color: 'var(--muted)' }}>Triggermenu v0.1</span>
         </div>
+      </div>
       </div>
 
       <NavBar />
