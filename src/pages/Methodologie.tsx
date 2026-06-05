@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { NavBar } from '@/components/NavBar'
-import { Logo } from '@/components/Logo'
+import { BackBar } from '@/components/BackBar'
 import { getDatabaseStats } from '@/lib/db'
 
 // Detail-/uitlegpagina: hoe komen de stoplichten tot stand?
@@ -40,9 +40,7 @@ export function Methodologie() {
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
       <div style={{ maxWidth: 760, margin: '0 auto' }}>
-      <div style={{ padding: '8px 22px 0' }} className="pt-safe">
-        <Logo size={18} to="/zoeken" />
-      </div>
+      <BackBar />
 
       <div style={{ padding: '18px 22px 8px' }}>
         <div className="eyebrow" style={{ marginBottom: 8 }}>Methodologie</div>
@@ -123,7 +121,7 @@ export function Methodologie() {
           (0–3-schaal) wordt direct overgenomen, aangevuld met HPLC-data uit een{' '}
           <Src href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/">Braziliaanse systematic review 2024</Src>.
           Per item houden we bij of het een <strong>histamineliberator</strong> of <strong>DAO-blokker</strong> is.
-          Tegenstrijdigheden worden expliciet gemarkeerd: citrus krijgt het label <em>"omstreden"</em> omdat de directe
+          Tegenstrijdigheden worden in de toelichting expliciet benoemd: citrus krijgt het label <em>"omstreden"</em> omdat de directe
           histamine-evidence beperkt is (<Src href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8143338/">San Mauro 2021</Src>).
         </Section>
 
@@ -138,7 +136,8 @@ export function Methodologie() {
           De database ({stats.totalItems} items) wordt bij elke wijziging automatisch gevalideerd: schemacontrole, minstens één
           bereikbare bron per score, drempel-conformiteit, en een reeks regressie-checks die bewaken dat onze afwijkingen van oude
           aannames niet terugsijpelen (bv. koffie blijft groen, chocolade niet rood, rood-voor-migraine alleen met een populatiebreed/
-          dosis-afhankelijk mechanisme). Inconsistenties tussen een score en zijn toelichting worden machinaal afgevangen.
+          dosis-afhankelijk mechanisme). De consistentie tussen score en toelichting wordt per as machinaal bewaakt (note ↔ drempel)
+          en bij elke wijziging nagelezen — een controle die we stap voor stap verder automatiseren.
         </Section>
 
         <Section title="8. Beperkingen — eerlijk benoemd">
@@ -166,7 +165,7 @@ export function Methodologie() {
           </div>
           <div style={{ marginTop: 14 }}>
             <Link to="/bronnen" style={{ fontSize: 13, color: 'var(--brand)', textDecoration: 'none', fontWeight: 500 }}>
-              ← Terug naar Bronnen
+              Alle bronnen &amp; datasets bekijken →
             </Link>
           </div>
         </Section>

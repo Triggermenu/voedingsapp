@@ -89,6 +89,29 @@
   box-shadow: var(--shadow);
 }
 
+/* ── Hub-lijst (Meer-pagina) ────────────────────────────────────────────── */
+.tm-hubcard {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.tm-hubcard .hub-item:last-child {
+  border-bottom: none;
+}
+.hub-item {
+  transition: background-color .12s ease;
+}
+@media (hover: hover) {
+  .hub-item:hover {
+    background: var(--rule-soft);
+  }
+}
+.hub-item:active {
+  background: var(--rule-soft);
+}
+
 /* ── Stoplicht atoms ────────────────────────────────────────────────────── */
 .dot {
   width: .55em;

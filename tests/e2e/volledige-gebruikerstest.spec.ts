@@ -75,6 +75,9 @@ test('volledige gebruikersreis — onboarding tot bronnen', async ({ page }) => 
 
   await test.step('Profielwissel: aandoening toevoegen via Instellingen', async () => {
     await page.goto('/instellingen', { waitUntil: 'domcontentloaded' })
+    // "Meer" is een hub — het profiel bewerk je op een eigen subscherm.
+    await page.getByRole('link', { name: /Mijn profiel/ }).click()
+    await expect(page).toHaveURL(/\/instellingen\/profiel/)
     await page.getByRole('button', { name: 'Nierstenen' }).click()
     await page.getByRole('button', { name: 'Opslaan' }).click()
     await expect(page.getByText('✓ Opgeslagen')).toBeVisible()

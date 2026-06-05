@@ -7,6 +7,7 @@ import { Scan } from '@/pages/Scan'
 import { Bronnen } from '@/pages/Bronnen'
 import { Methodologie } from '@/pages/Methodologie'
 import { Instellingen } from '@/pages/Instellingen'
+import { ProfielInstellingen } from '@/pages/ProfielInstellingen'
 import { Recepten } from '@/pages/Recepten'
 import { Lijst } from '@/pages/Lijst'
 import { ItemDetail } from '@/pages/ItemDetail'
@@ -53,6 +54,7 @@ export default function App() {
       <Route path="/bronnen" element={<RequireProfile><Bronnen /></RequireProfile>} />
       <Route path="/methodologie" element={<RequireProfile><Methodologie /></RequireProfile>} />
       <Route path="/instellingen" element={<RequireProfile><Instellingen /></RequireProfile>} />
+      <Route path="/instellingen/profiel" element={<RequireProfile><ProfielInstellingen /></RequireProfile>} />
       <Route path="/privacy" element={<Privacy />} />
 
       {/* Admin routes — lazy geladen, Supabase wordt pas geïnitialiseerd bij navigatie */}
