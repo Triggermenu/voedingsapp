@@ -8,6 +8,7 @@ import { getAllItems } from '@/lib/db'
 import { getCombinedScore } from '@/lib/scoring'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
+import { METHODOLOGY_VERSION } from '@/lib/version'
 
 const COND_META: Record<Condition, { label: string; short: string }> = {
   jicht:      { label: 'Jicht',      short: 'JCHT' },
@@ -219,7 +220,7 @@ export function Instellingen() {
             Privacybeleid
           </Link>
           <span style={{ fontSize: 12, color: 'var(--rule)' }}>·</span>
-          <span style={{ fontSize: 12, color: 'var(--muted)' }}>Triggermenu v0.1</span>
+          <span style={{ fontSize: 12, color: 'var(--muted)' }}>Triggermenu · methodologie v{METHODOLOGY_VERSION}</span>
         </div>
       </div>
       </div>
