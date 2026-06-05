@@ -92,8 +92,9 @@ export function Methodologie() {
         </Section>
 
         <Section title="3. Nierstenen — calciumoxalaat">
-          Drempels (mg oxalaat per portie): <strong>&lt;10 → groen, 10–25 → geel, 25–50 → oranje, &gt;50 → rood</strong>,
-          met een natrium-modifier (+1 bij &gt;600 mg/portie). Basis:{' '}
+          Drempels (mg oxalaat per 100 g/100 ml): <strong>&lt;10 → groen, 10–25 → geel, 25–50 → oranje, &gt;50 → rood</strong>,
+          met een natrium-modifier (+1 bij &gt;600 mg/portie). Twee uitzonderingen: noten/zaden per 30 g-portie, kruiden/specerijen
+          maximaal oranje (garneerhoeveelheid). Basis:{' '}
           <Src href="https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx">Harvard Oxalate Table 2023</Src>.
           Kern-uitzondering: <strong>calciumrijke producten zijn groen</strong> — een normale calciuminname{' '}
           <em>verlaagt</em> het steenrisico (<Src href="https://pubmed.ncbi.nlm.nih.gov/11742412/">Borghi RCT 2002</Src>);

@@ -1307,7 +1307,7 @@
           ]
         },
         "nierstenen": {
-          "score": 1,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -1618,7 +1618,7 @@
           ]
         },
         "nierstenen": {
-          "score": 1,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -1629,7 +1629,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat: 28 mg/100g."
+            "nl": "Oxalaat: 28 mg/100g. Score 2 (§2.3 per-100g-drempel 25–50 mg)."
           }
         },
         "histamine": {
@@ -1692,7 +1692,7 @@
           ]
         },
         "nierstenen": {
-          "score": 0,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1703,7 +1703,7 @@
             }
           ],
           "note": {
-            "nl": "Boerenkool is laag-oxalaat (~17 mg/100g; ~2 mg per portie gekookt). Een standaardportie blijft onder de 10 mg-drempel (§2.3). Anders dan spinazie geen relevante oxalaatbron."
+            "nl": "Oxalaat ~17 mg/100g → score 1 (§2.3 per-100g-drempel 10–25 mg). Veel lager dan spinazie."
           }
         },
         "histamine": {
@@ -1837,7 +1837,7 @@
           ]
         },
         "nierstenen": {
-          "score": 2,
+          "score": 3,
           "evidence": "A",
           "sources": [
             {
@@ -1848,7 +1848,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat: ~110 mg/100g — hoog."
+            "nl": "Oxalaat: ~110 mg/100g — hoog-oxalaat blad."
           }
         },
         "histamine": {
@@ -2994,7 +2994,7 @@
           ]
         },
         "nierstenen": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -3005,7 +3005,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat: ~10 mg/100g. Matig."
+            "nl": "Oxalaat: ~10 mg/100g."
           }
         },
         "histamine": {
@@ -3096,7 +3096,7 @@
           }
         },
         "nierstenen": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -3107,7 +3107,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat: ~5 mg/100g. Laag-matig."
+            "nl": "Oxalaat: ~5 mg/100g."
           }
         },
         "histamine": {

@@ -509,7 +509,7 @@
           }
         },
         "nierstenen": {
-          "score": 1,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -520,7 +520,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat ~27mg/100g."
+            "nl": "Oxalaat ~27mg/100g. Score 2 (§2.3 per-100g-drempel 25–50 mg)."
           }
         },
         "histamine": {

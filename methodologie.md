@@ -78,13 +78,19 @@ Voor dierlijke bronnen geldt géén neerwaartse correctie — Choi laat juist ee
 
 **Primaire bron:** Harvard Oxalate Table 2023. **Aanvullend:** USDA FDC, AUA Guideline, EAU.
 
-**Drempels — mg oxalaat per standaardportie:** < 10 → 0, 10–25 → 1, 25–50 → 2, > 50 → 3.
+**Drempels — mg oxalaat per 100 g / 100 ml:** < 10 → 0, 10–25 → 1, > 25–50 → 2, > 50 → 3.
 **Modifier:** natrium > 600 mg per portie → +1 (max 3).
+
+*Per-100g (niet per-portie): consistent met de jicht-as en reproduceerbaar/auditeerbaar — een per-portie-drempel zou een nergens-opgeslagen portiegrootte vereisen.*
+
+**Twee uitzonderingen op de per-100g-default (consumptierealiteit):**
+- **Noten en zaden** worden per standaardportie van 30 g beoordeeld — niemand eet 100 g noten.
+- **Kruiden en specerijen** krijgen maximaal oranje (plafond 1): ze worden in mespunt-/garneerhoeveelheid gegeten, dus het hoge oxalaatgehalte per 100 g is niet representatief. Sauzen (pesto, sojasaus) vallen hier níet onder — die eet je in echte porties.
 
 ### Onderbouwde uitzonderingen
 - **Calciumrijke producten = groen.** Een normale calciuminname (1000–1200 mg/dag) *verlaagt* het steenrisico (Borghi RCT, AUA-guideline). Een laag-calciumdieet wordt afgeraden.
 - **Vitamine C-supplementen = rood (3)** — worden omgezet in oxalaat.
-- **Lage oxalaatgroenten worden niet als spinazie behandeld.** Boerenkool bijvoorbeeld is laag-oxalaat (~2 mg/portie) → groen, ondanks de visuele gelijkenis met spinazie.
+- **Lage oxalaatgroenten worden niet als spinazie behandeld.** Boerenkool (~17 mg/100 g) krijgt geel, spinazie (~755 mg/100 g) rood — ondanks de visuele gelijkenis een factor ~40 verschil.
 
 ---
 

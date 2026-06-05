@@ -36,6 +36,38 @@ function expectedJichtFromNote(note: string, category: string, nameNl: string): 
   return exp
 }
 
+// Gate 15: nierstenen — per-100g note-oxalaatwaarde moet bij de §2.3-drempel passen.
+// Enkelvoudige vaste categorieën (notes citeren per 100g/100ml). Noten-zaden uitgesloten
+// (uitzondering: per 30g-portie). Natrium/calcium-notes en concentratie-qualifiers
+// (gedroogd product waarvan de genoteerde waarde de verse precursor is) overgeslagen.
+const NIERSTENEN_PER100G = new Set([
+  'groente', 'fruit', 'granen', 'peulvruchten', 'vlees', 'vis-schaaldieren', 'eieren', 'zuivel',
+])
+// §2.3-plafond 1 voor kruiden/specerijen (mespunt-/garneerhoeveelheid) — niet voor sauzen.
+const KRUID_SPECERIJ_SUBCATS = new Set([
+  'kruiden-specerijen', 'specerijen', 'kruidenmix', 'kruiden-vers', 'kruiden-droog',
+])
+function oxalaatBand(mg: number): 0 | 1 | 2 | 3 {
+  if (mg < 10) return 0
+  if (mg <= 25) return 1
+  if (mg <= 50) return 2
+  return 3
+}
+/** Verwachte nierstenen-score uit een per-100g-oxalaatwaarde in de note, of null. */
+function expectedNierstenenFromNote(note: string): number | null {
+  const low = note.toLowerCase()
+  // mg-getal slaat op natrium/calcium (modifier/beschermend), niet op oxalaat → niet toetsen.
+  if (/natrium|calcium/.test(low)) return null
+  // genoteerde waarde is de verse precursor van een gedroogd product → niet representatief.
+  if (/concentreert|gedroogd|drogen/.test(low)) return null
+  const norm = note.replace(/,(\d)/g, '.$1')
+  const m = /(\d{1,4}(?:\.\d)?)\s*(?:[–-]\s*(\d{1,4}(?:\.\d)?))?\s*mg\s*\/?\s*(?:per\s*)?100\s*(?:g|ml)/i.exec(norm)
+  if (!m) return null
+  const lo = parseFloat(m[1])
+  const hi = m[2] ? parseFloat(m[2]) : lo
+  return oxalaatBand((lo + hi) / 2)
+}
+
 let errors = 0
 let totalItems = 0
 
@@ -117,6 +149,23 @@ for (const file of files) {
     if (item.category === 'dranken-alcohol' && item.scores.histamine &&
         !item.histamineFlags?.daoBlocker) {
       fail(`${label}: alcoholische drank met histamine-score vereist histamineFlags.daoBlocker = true (§2.4).`)
+    }
+
+    // Gate 15a: nierstenen — per-100g note-oxalaatwaarde moet bij de §2.3-drempel passen
+    // (enkelvoudige vaste categorieën; noten-zaden uitgezonderd, zie §2.3). Borgt dat de
+    // per-100g-as net zo strak is als de jicht-as (gate 13).
+    if (item.scores.nierstenen?.note?.nl && NIERSTENEN_PER100G.has(item.category)) {
+      const exp = expectedNierstenenFromNote(item.scores.nierstenen.note.nl)
+      if (exp !== null && item.scores.nierstenen.score !== exp) {
+        fail(`${label}: nierstenen-score ${item.scores.nierstenen.score} strijdig met de per-100g-oxalaatwaarde in de note (§2.3-drempel → ${exp}).`)
+      }
+    }
+
+    // Gate 15b: kruiden/specerijen-plafond 1 (§2.3-uitzondering — garneerhoeveelheid).
+    if (item.category === 'sauzen-kruiden' && item.subcategory &&
+        KRUID_SPECERIJ_SUBCATS.has(item.subcategory) &&
+        item.scores.nierstenen && item.scores.nierstenen.score > 1) {
+      fail(`${label}: kruid/specerij (subcategorie '${item.subcategory}') mag nierstenen-score max 1 hebben (§2.3-plafond, garneerhoeveelheid).`)
     }
 
     // Gate 10: score=3 vereist evidence >= B

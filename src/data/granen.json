@@ -280,7 +280,7 @@
           }
         },
         "nierstenen": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -291,7 +291,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat ~7mg/100g."
+            "nl": "Oxalaat ~7mg/100g. Score 0 (§2.3 per-100g <10 mg)."
           }
         },
         "histamine": {
@@ -431,7 +431,7 @@
           }
         },
         "nierstenen": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -442,7 +442,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat ~5mg/100g."
+            "nl": "Oxalaat ~5mg/100g. Score 0 (§2.3 per-100g <10 mg)."
           }
         },
         "histamine": {
@@ -662,7 +662,7 @@
           }
         },
         "nierstenen": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -673,7 +673,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat ~8mg/100g."
+            "nl": "Oxalaat ~8mg/100g. Score 0 (§2.3 per-100g <10 mg)."
           }
         },
         "histamine": {
@@ -2882,7 +2882,7 @@
           ]
         },
         "nierstenen": {
-          "score": 1,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -2893,7 +2893,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat ~7mg/100g."
+            "nl": "Oxalaat ~7mg/100g. Score 0 (§2.3 per-100g <10 mg)."
           }
         },
         "migraine": {

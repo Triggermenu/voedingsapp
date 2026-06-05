@@ -130,11 +130,17 @@ Sommige clusters bevatten geen items met evidence-grade A of B. Dit treedt op wa
 **Primaire bron:** Harvard Oxalate Table 2023 (UAB Knight Lab).
 **Aanvullend:** USDA FDC voor natrium/calcium, AUA Guideline, EAU Urolithiasis.
 
-**Drempels (mg oxalaat per standaardportie):**
+**Drempels (mg oxalaat per 100 g / 100 ml).** Ondergrens exclusief, bovengrens inclusief (25 → score 1, 50 → score 2):
 - `< 10` → 0
 - `10–25` → 1
-- `25–50` → 2
+- `> 25–50` → 2
 - `> 50` → 3
+
+> **Eenheidskeuze (v2.7, 2026-06-05): per-100g, niet per-portie.** Tot v2.6 stond hier "per standaardportie", maar de data is altijd per-100g gescoord (74/91 items met een waarde matchten exact `band(per-100g)`). Per-portie vereist een portiegrootte-tabel die nergens wordt opgeslagen → niet reproduceerbaar/auditeerbaar (R-008). Per-100g is bovendien consistent met de jicht-as (§2.1, ook per-100g). De regel is daarom uitgelijnd op de werkelijkheid i.p.v. de hele dataset om te bouwen. Zie §13-paradigma + §15 v2.7.
+
+**Twee gedocumenteerde uitzonderingen op de per-100g-default** (consumptierealiteit; analoog aan het jicht-peulvrucht-plafond, §2.1):
+- **Noten-zaden: per standaardportie 30 g.** Niemand eet 100 g noten; per-100g zou walnoten/cashew kunstmatig naar score 3 tillen. Notes en band-toets gebruiken de 30g-portiewaarde.
+- **Kruiden & specerijen: plafond 1.** Geconsumeerd in mespunt-/garneerhoeveelheid; het per-100g-oxalaatgehalte (peterselie ~100 mg, cayenne ~100 mg) is dan niet representatief. Geldt voor de subcategorieën `kruiden-specerijen`, `specerijen`, `kruidenmix`, `kruiden-vers`, `kruiden-droog` — **niet** voor sauzen (pesto, sojasaus) die in echte porties worden gegeten.
 
 **Modifier:** natrium > 600mg per portie → +1 punt (max 3).
 
@@ -449,6 +455,7 @@ Deze weging is **definitief** tenzij CLAUDE.md wordt aangepast. Cowork mag hier 
 | Gerijpte kaas ↔ migraine | Klassiek: rood (Hannington 1967, Sandler 1974). Modern: MAO-functie neutraliseert tyramine; geen RCT. | **Oranje + note "subgroep-overschat"** | Finberg 2022 (PMC9172554), Maintz 2007 (PMID 17490952); interne paradigma-extensie 2026-05 |
 | Peulvruchten ↔ jicht | Hoog purine. Geen verhoogd risico. | **Drempel volgen, geplafonneerd op 2** (laag-purine → 1) | Choi 2004 (NEJM), EULAR 2022 |
 | Gedistilleerd ↔ migraine | §2.2 (oud): rood. Onderwater 2019: wodka mínst provocerend (8,5%) vs rode wijn 77,8% — trigger zit in congeneren, niet ethanol. | **Oranje + note "subgroep-overschat"** | Onderwater 2019 (PMID 31254436), Vives-Mestres 2022 (PMC10099573), wijn-meta-analyse 2025 |
+| Oxalaat-eenheid ↔ nierstenen | §2.3 (oud): "per standaardportie". Data feitelijk per-100g (74/91 match). Per-portie vereist niet-opgeslagen portiegrootte. | **Per-100g/100ml** (uitz.: noten-zaden per 30g; kruiden/specerijen plafond 1) | Consistent met jicht-as §2.1; auditeerbaarheid R-008; v2.7 |
 
 ---
 
@@ -467,6 +474,7 @@ Verschil met §12 (Tegenstrijdige bronnen): §12 registreert *item-niveau* besli
 | 2026-05-20 | Gerijpte kaas ↔ migraine | Score 2 + `subgroep-overschat`. MAO-functie neutraliseert tyramine bij intacte enzymstatus; effect alleen in MAO-A-gevoelige subgroep. Van score-3 whitelist verwijderd (v1.4). | Mechanistisch inzicht in inactivatie-pathway > klassieke observationele trigger-lijsten (Hannington 1967-stijl). | v1.4 |
 | 2026-05-21 | Evidence-C-only clusters — cluster 9 | Score-plafond 1; score 2 alleen bij dosis-uitzonderingen; score 3 verboden. TriggerType `individueel-variabel`. Volledig paradigma in §2.2.2. | Clusters zonder A/B-evidence: mechanistische plausibility + observationeel = max score 1 zonder RCT-ondersteuning. | v1.5 |
 | 2026-06-04 | Gedistilleerd ↔ migraine | Score 2 + `subgroep-overschat`. Wodka (vrijwel pure ethanol) is mínst provocerende drank — de reproduceerbare trigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol. Van score-3 whitelist verwijderd (v2.0); bier blijft als enige alcohol score 3. | Beverage-specifieke congeneren-/ALDH2-evidence > generiek ethanol-vasodilatatie-argument; een `subgroep-*` triggerType sluit score 3 uit (toelatingscriterium 3). | v2.0 |
+| 2026-06-05 | Oxalaat-eenheid ↔ nierstenen | Nierstenen-drempel per-100g i.p.v. per-portie. De data was al per-100g; de regeltekst liep achter. Twee consumptierealiteit-uitzonderingen: noten-zaden per 30g, kruiden/specerijen plafond 1. Geborgd met CI-gate 15. | Lijn de regel uit op de feitelijke (reproduceerbare, auditeerbare) scoringsbasis i.p.v. een niet-opgeslagen variabele (portiegrootte) in te voeren; consistentie tussen kwantitatieve assen (jicht/nierstenen beide per-100g). | v2.7 |
 
 ---
 
@@ -483,9 +491,10 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 15. Versiebeheer van dit document
 
-- **Schema version:** v2.6
-- **Laatste wijziging:** 2026-06-04
+- **Schema version:** v2.7
+- **Laatste wijziging:** 2026-06-05
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
+  - v2.7 (2026-06-05): **Nierstenen-as: drempel uitgelijnd op per-100g (was per-portie) + CI-geborgd.** Sluit het laatste inhoudelijke gat over de 4 assen. Verificatie toonde dat de as de facto al per-100g was gescoord (74/91 items met waarde matchten exact `band(per-100g)`), terwijl §2.3 "per standaardportie" zei. **§2.3** herschreven naar per-100g/100ml + twee gedocumenteerde uitzonderingen: noten-zaden per 30g-portie en kruiden/specerijen plafond 1 (garneerhoeveelheid; niet voor sauzen). **14 scores uitgelijnd op de per-100g-band** (mechanisch, regel-afgeleid — geen eigen oordeel): sinaasappel 0→1, tamarinde 2→1, havermout/zilvervliesrijst/boekweit/havervlokken 1→0, prei 1→2, zoete aardappel 1→2, boerenkool 0→1, andijvie 2→3, waterkers 2→1, paksoi 1→0, zwarte bonen 1→2, peterselie 2→1 (plafond), pijnboompitten 2→1 (note naar per-30g, consistent met overige noten). **Nieuwe CI-gate 15** (a: per-100g-note↔§2.3-band voor enkelvoudige vaste categorieën; b: kruid/specerij-plafond 1) — beide bewezen falend op overtreding. §12 + §13 uitgebreid. **Niet door mij beslist (aan Peter):** havermelk-dup (ongezoet=1 vs plantaardig=0, geen per-100g-waarde → echt scoreconflict); rozijnen-note citeert verse-druifwaarde (raisin-waarde onzeker). Akkoord: Peter Wolterman (chat 2026-06-05, keuze "A").
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
   - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).
   - v1.3 (2026-05-20): §2.2 MSG verwijderd van score-3 whitelist; score 2 + subgroep-overschat is nu standaard. Akkoord: Peter Wolterman (chat 2026-05-20, review PR #15 methodologische bevinding).

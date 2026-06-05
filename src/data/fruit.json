@@ -213,7 +213,7 @@
           }
         },
         "nierstenen": {
-          "score": 0,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -3881,7 +3881,7 @@
           ]
         },
         "nierstenen": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
