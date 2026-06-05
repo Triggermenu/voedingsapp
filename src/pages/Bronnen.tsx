@@ -122,7 +122,9 @@ const totalSources = Object.values(SOURCES).reduce((n, arr) => n + arr.length, 0
 
 export function Bronnen() {
   const stats = getDatabaseStats()
-  const dateStr = new Date().toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' }).toUpperCase()
+  // Echte laatste-updatedatum uit de data (meta.lastReviewed), niet de kijkdag.
+  const dateStr = (stats.lastUpdated ? new Date(stats.lastUpdated) : new Date())
+    .toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' }).toUpperCase()
 
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
