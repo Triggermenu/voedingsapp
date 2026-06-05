@@ -233,8 +233,17 @@ export function getAlternatives(item: FoodItem, conditions: Condition[], limit =
 }
 
 export function getDatabaseStats() {
+  // Echte laatste-updatedatum = nieuwste meta.lastReviewed in de data (ISO-string,
+  // dus lexicografisch vergelijkbaar). NIET new Date(): die toonde altijd de kijkdag,
+  // waardoor zelfs een verouderde (gecachete) build "vandaag bijgewerkt" leek.
+  let lastUpdated = ''
+  for (const item of ALL_ITEMS) {
+    const d = item.meta?.lastReviewed
+    if (d && d > lastUpdated) lastUpdated = d
+  }
   return {
     totalItems: ALL_ITEMS.length,
+    lastUpdated,
     schemaVersion: import.meta.env.VITE_SCHEMA_VERSION ?? '1.0.0',
   }
 }
