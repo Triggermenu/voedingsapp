@@ -5,6 +5,7 @@ import { Onboarding } from '@/pages/Onboarding'
 import { Zoeken } from '@/pages/Zoeken'
 import { Scan } from '@/pages/Scan'
 import { Bronnen } from '@/pages/Bronnen'
+import { Methodologie } from '@/pages/Methodologie'
 import { Instellingen } from '@/pages/Instellingen'
 import { Recepten } from '@/pages/Recepten'
 import { Lijst } from '@/pages/Lijst'
@@ -50,6 +51,7 @@ export default function App() {
       <Route path="/lijst" element={<RequireProfile><Lijst /></RequireProfile>} />
       <Route path="/scan" element={<RequireProfile><Scan /></RequireProfile>} />
       <Route path="/bronnen" element={<RequireProfile><Bronnen /></RequireProfile>} />
+      <Route path="/methodologie" element={<RequireProfile><Methodologie /></RequireProfile>} />
       <Route path="/instellingen" element={<RequireProfile><Instellingen /></RequireProfile>} />
       <Route path="/privacy" element={<Privacy />} />
 

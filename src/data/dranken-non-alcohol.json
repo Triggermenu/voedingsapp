@@ -87,7 +87,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 37
     },
     {
       "id": "nl-thee-zwart",
@@ -167,7 +168,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 37
     },
     {
       "id": "nl-groene-thee",
@@ -247,7 +249,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 37
     },
     {
       "id": "nl-sinaasappelsap",
@@ -312,7 +315,7 @@
             }
           ],
           "note": {
-            "nl": "Citrus is histamineliberator."
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
           }
         }
       },
@@ -324,7 +327,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 39
     },
     {
       "id": "nl-appelsap",
@@ -397,7 +401,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 39
     },
     {
       "id": "nl-energiedrank",
@@ -640,7 +645,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 39
     },
     {
       "id": "nl-water",
@@ -653,7 +659,7 @@
       "scores": {
         "jicht": {
           "score": 0,
-          "evidence": "A",
+          "evidence": "B",
           "sources": [
             {
               "url": "https://ard.eular.org/content/81/11/1452",
@@ -713,7 +719,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 40
     },
     {
       "id": "nl-sojamelk",
@@ -786,77 +793,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-kamille-thee",
-      "name": {
-        "nl": "Kamille thee",
-        "en": "Chamomile tea"
       },
-      "category": "dranken-non-alcohol",
-      "subcategory": "koffie-thee",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-3-headache-attributed-to-substance-withdrawal/8-3-1-caffeine-withdrawal-headache/",
-              "title": "ICHD-3 — Caffeine-withdrawal headache (IHS 2018)",
-              "type": "guideline",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      }
+      "cluster": 40
     },
     {
       "id": "nl-havermoutmelk",
@@ -929,7 +867,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 40
     },
     {
       "id": "nl-kokoswater",
@@ -1002,7 +941,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 40
     },
     {
       "id": "nl-spa-rood",
@@ -1015,7 +955,7 @@
       "scores": {
         "jicht": {
           "score": 0,
-          "evidence": "A",
+          "evidence": "B",
           "sources": [
             {
               "url": "https://ard.eular.org/content/81/11/1452",
@@ -1075,7 +1015,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 40
     },
     {
       "id": "nl-gemberthee",
@@ -1145,7 +1086,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 37
     },
     {
       "id": "nl-cranberrysap",
@@ -1218,7 +1160,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 39
     },
     {
       "id": "nl-limonade",
@@ -1294,7 +1237,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 40
     },
     {
       "id": "nl-muntthee",
@@ -1364,7 +1308,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 37
     },
     {
       "id": "nl-energydrink",
@@ -1447,7 +1392,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 1
+      "cluster": 1,
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": true
+      }
     },
     {
       "id": "nl-druivensap",
@@ -1602,7 +1551,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 38
     },
     {
       "id": "nl-rozenbottelsap",
@@ -1672,7 +1622,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 38
     },
     {
       "id": "nl-sportdrank",
@@ -1745,7 +1696,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 40
     },
     {
       "id": "nl-grapefruitsap",
@@ -1826,7 +1778,10 @@
               "type": "consensus",
               "accessedAt": "2026-05-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
+          }
         }
       },
       "meta": {
@@ -1834,7 +1789,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 1
+      "cluster": 1,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-vlierbloesemsiroop",
@@ -1904,7 +1863,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 39
     },
     {
       "id": "nl-mandarijnensap",
@@ -1967,13 +1927,21 @@
               "type": "consensus",
               "accessedAt": "2026-05-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
+          }
         }
       },
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
+      },
+      "cluster": 39,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
       }
     },
     {
@@ -2044,7 +2012,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 38
     },
     {
       "id": "nl-lavendelthee",
@@ -2114,7 +2083,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 38
     },
     {
       "id": "nl-verbena-thee",
@@ -2184,7 +2154,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 38
     },
     {
       "id": "nl-witte-thee",
@@ -2402,7 +2373,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 38
     },
     {
       "id": "nl-wortelensap",
@@ -2472,7 +2444,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 39
     },
     {
       "id": "nl-bietensap",
@@ -2655,7 +2628,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 1
+      "cluster": 1,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-hibiscusthee",
@@ -2728,7 +2705,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 38
     },
     {
       "id": "nl-kombucha",
@@ -2887,6 +2865,11 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
+      },
+      "cluster": 39,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
       }
     },
     {
@@ -2963,7 +2946,7 @@
             }
           ],
           "note": {
-            "nl": "Citrus: histamineliberator."
+            "nl": "Omstreden: SIGHI labelt citrus als hoog-risico histamineliberator, maar San Mauro 2021 toont beperkte directe histamine-evidence. Score onder voorbehoud."
           }
         }
       },
@@ -2972,7 +2955,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 1
+      "cluster": 1,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-tonic-water",

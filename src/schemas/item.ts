@@ -76,6 +76,7 @@ export const FoodItemSchema = z.object({
     schemaVersion: z.string().regex(/^\d+\.\d+\.\d+$/),
     lastReviewed: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   }),
+  cluster: z.number().int().positive().optional(),
 })
 
 export const DatabaseFileSchema = z.object({

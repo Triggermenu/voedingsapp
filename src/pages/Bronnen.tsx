@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { getDatabaseStats } from '@/lib/db'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
@@ -28,15 +29,22 @@ const SOURCES: Record<CondKey, Source[]> = {
       title: 'USDA Purine Database, Release 2.0',
       org: 'U.S. Department of Agriculture',
       year: 2025, items: 312, type: 'DATASET',
-      use: 'Purinegehalte (mg / 100g) per voedingsmiddel.',
+      use: 'Purinegehalte (mg / 100g) — drempel < 50 / 100 / 200 mg.',
       url: 'https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf',
     },
     {
-      title: '2020 ACR Guideline for Management of Gout',
-      org: 'American College of Rheumatology',
-      year: 2020, type: 'GUIDELINE',
-      use: 'Drempelwaarden < 50 / 100 / 200 mg purine.',
-      url: 'https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24180',
+      title: 'EULAR 2022 — Gout management recommendations',
+      org: 'European Alliance of Associations for Rheumatology',
+      year: 2022, type: 'GUIDELINE',
+      use: 'Bevestigt: peulvruchten geen verhoogd risico → plafond op oranje.',
+      url: 'https://ard.eular.org/content/81/11/1452',
+    },
+    {
+      title: 'Choi et al. — Purine-Rich Foods and the Risk of Gout in Men',
+      org: 'New England Journal of Medicine (n=47.150)',
+      year: 2004, type: 'STUDIE',
+      use: 'Plantaardige purine verhoogt jichtrisico niet; vlees/vis wél.',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/15014182/',
     },
   ],
   migraine: [
@@ -44,15 +52,22 @@ const SOURCES: Record<CondKey, Source[]> = {
       title: 'Hindiyeh et al. — The role of diet and nutrition in migraine triggers',
       org: 'Headache Journal, 60(7)',
       year: 2020, type: 'REVIEW',
-      use: 'Bewezen voedingstriggers: tyramine, MSG, nitraten.',
+      use: 'Leidende review — welke triggers wel en niet houdbaar zijn.',
       url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/',
     },
     {
-      title: 'EHF Consensus on Migraine Triggers',
-      org: 'European Headache Federation',
-      year: 2023, type: 'CONSENSUS',
-      use: 'Evidence-level A/B/C voor 84 triggers.',
-      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10561391/',
+      title: 'Finberg & Gillman — Dietary Tyramine and MAO Inhibitors',
+      org: 'Progress in Brain Research',
+      year: 2022, type: 'REVIEW',
+      use: 'Tyramine-mechanisme — basis voor kaas/gecureerd-vlees-scoring.',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/',
+    },
+    {
+      title: 'Onderwater et al. — Alcoholic beverages as trigger factor',
+      org: 'European Journal of Neurology (n≈2.197)',
+      year: 2019, type: 'STUDIE',
+      use: 'Wodka mínst, rode wijn meest provocerend → trigger zit in congeneren.',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/30565341/',
     },
   ],
   nierstenen: [
@@ -67,8 +82,15 @@ const SOURCES: Record<CondKey, Source[]> = {
       title: 'AUA Medical Management of Kidney Stones',
       org: 'American Urological Association',
       year: 2014, type: 'GUIDELINE',
-      use: 'Natrium, eiwit en oxalaat drempelwaarden.',
+      use: 'Natrium-, eiwit- en oxalaat-drempelwaarden.',
       url: 'https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline',
+    },
+    {
+      title: 'Borghi et al. — Comparison of two diets for idiopathic calcium stones',
+      org: 'New England Journal of Medicine (RCT)',
+      year: 2002, type: 'STUDIE',
+      use: 'Normale calciuminname verlaagt steenrisico → calciumrijk = groen.',
+      url: 'https://pubmed.ncbi.nlm.nih.gov/11742412/',
     },
   ],
   histamine: [
@@ -86,6 +108,13 @@ const SOURCES: Record<CondKey, Source[]> = {
       use: 'Gemeten histaminewaardes (HPLC), 343 voedingsmiddelen.',
       url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12620675/',
     },
+    {
+      title: 'San Mauro Martín et al. — Low-histamine diet critique',
+      org: 'Nutrients',
+      year: 2021, type: 'STUDIE',
+      use: 'Beperkte directe histamine-evidence → "omstreden"-label citrus.',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8143338/',
+    },
   ],
 }
 
@@ -97,6 +126,7 @@ export function Bronnen() {
 
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
+      <div style={{ maxWidth: 760, margin: '0 auto' }}>
       {/* Header */}
       <div style={{ padding: '8px 22px 0' }} className="pt-safe">
         <Logo size={18} to="/zoeken" />
@@ -120,6 +150,30 @@ export function Bronnen() {
       }}>
         <span className="eyebrow">{totalSources} bronnen · {stats.totalItems} items</span>
         <span className="mono" style={{ fontSize: 10, color: 'var(--muted)' }}>BIJGEWERKT {dateStr}</span>
+      </div>
+
+      {/* Link naar gedetailleerde methodologie */}
+      <div style={{ padding: '14px 22px 0' }}>
+        <Link
+          to="/methodologie"
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
+            padding: '13px 15px', borderRadius: 10, textDecoration: 'none',
+            background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
+          }}
+        >
+          <div>
+            <div className="serif" style={{ fontSize: 14.5, fontWeight: 500, color: 'var(--ink)' }}>
+              Hoe komen de stoplichten tot stand?
+            </div>
+            <div style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 2, lineHeight: 1.4 }}>
+              Gedetailleerde methodologie — drempels, afwegingen en bronnen per aandoening.
+            </div>
+          </div>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </Link>
       </div>
 
       {/* Per-condition source sections */}
@@ -185,6 +239,7 @@ export function Bronnen() {
         <p style={{ fontSize: 11.5, color: 'var(--muted)', lineHeight: 1.5 }}>
           MDR-status: in onderzoek · SIGHI commerciële licentie: aangevraagd
         </p>
+      </div>
       </div>
 
       <NavBar />

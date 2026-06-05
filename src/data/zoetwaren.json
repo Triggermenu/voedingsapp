@@ -256,7 +256,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 60
     },
     {
       "id": "nl-jam-aardbei",
@@ -329,6 +330,11 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
+      },
+      "cluster": 60,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
       }
     },
     {
@@ -399,7 +405,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 63
     },
     {
       "id": "nl-drop",
@@ -469,7 +476,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-koekje",
@@ -539,7 +547,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-hagelslag",
@@ -619,7 +628,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 2
+      "cluster": 2,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-taart-slagroom",
@@ -689,86 +702,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
-    },
-    {
-      "id": "nl-worstenbroodje",
-      "name": {
-        "nl": "Worstenbroodje",
-        "en": "Sausage roll (Dutch)"
       },
-      "category": "zoetwaren",
-      "subcategory": "hartige-snacks",
-      "scores": {
-        "jicht": {
-          "score": 1,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
-              "title": "Maintz & Novak 2007 — Histamine and histamine intolerance (Am J Clin Nutr)",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Verwerkt vlees kan biogene aminen bevatten; score 1 als voorzorgsmaatregel."
-          },
-          "triggerType": "context-afhankelijk",
-          "confidence": "laag",
-          "primaryModulators": [
-            "biogene-aminen"
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 1,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 2
+      "cluster": 61
     },
     {
       "id": "nl-appelgebak",
@@ -838,7 +773,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-suiker-wit",
@@ -911,7 +847,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 60
     },
     {
       "id": "nl-ijs-vanille",
@@ -981,7 +918,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-ijs-chocolade",
@@ -1138,7 +1076,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-cake-gewone",
@@ -1208,7 +1147,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-muffin",
@@ -1278,7 +1218,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-croissant",
@@ -1348,7 +1289,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-snoep-fruitgum",
@@ -1421,7 +1363,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-karamel",
@@ -1491,7 +1434,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-ontbijtkoek",
@@ -1561,7 +1505,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-pindakaaskoek",
@@ -1634,7 +1579,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-chocoladetruffels",
@@ -1795,7 +1741,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-chocoladereep-wit",
@@ -1869,7 +1816,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 2
+      "cluster": 2,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-pepermunt",
@@ -1939,7 +1890,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-zoethout-snoep",
@@ -2091,7 +2043,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 60
     },
     {
       "id": "nl-marshmallow",
@@ -2161,7 +2114,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-popcorn",
@@ -2231,7 +2185,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 63
     },
     {
       "id": "nl-eclair",
@@ -2315,7 +2270,11 @@
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
       },
-      "cluster": 2
+      "cluster": 2,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
+      }
     },
     {
       "id": "nl-madeleine",
@@ -2385,7 +2344,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-speculaas",
@@ -2455,7 +2415,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-pepernoten",
@@ -2525,7 +2486,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-kruidnoten",
@@ -2595,7 +2557,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-toffee",
@@ -2665,7 +2628,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-stroopwafel",
@@ -2735,7 +2699,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 61
     },
     {
       "id": "nl-nougat",
@@ -2887,7 +2852,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 62
     },
     {
       "id": "nl-donuts",

@@ -10,7 +10,7 @@
       "subcategory": "verse-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -24,10 +24,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine: 84 mg/100g. Maximaal oranje per EULAR 2022: bij peulvruchten is er epidemiologisch geen verhoogd jichtrisico, ondanks het purinegehalte."
+            "nl": "Purine 84 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -80,7 +86,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "172421",
@@ -106,10 +113,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~127mg/100g. Epidemiologisch geen verhoogd jichtrisico ondanks purinegehalte (EULAR 2022)."
+            "nl": "Purine ~127 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -165,7 +178,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "173757",
@@ -191,10 +205,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~109mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~109 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -247,7 +267,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "175200",
@@ -259,7 +280,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -273,10 +294,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~80mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~80 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -332,7 +359,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-edamame",
@@ -358,10 +386,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~116mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~116 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -414,7 +448,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-zwarte-bonen",
@@ -426,7 +461,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -440,10 +475,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~75mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~75 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -468,7 +509,7 @@
           }
         },
         "nierstenen": {
-          "score": 1,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -479,7 +520,7 @@
             }
           ],
           "note": {
-            "nl": "Oxalaat ~27mg/100g."
+            "nl": "Oxalaat ~27mg/100g. Score 2 (§2.3 per-100g-drempel 25–50 mg)."
           }
         },
         "histamine": {
@@ -499,7 +540,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-bruine-bonen",
@@ -511,7 +553,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -525,10 +567,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~80mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~80 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -581,7 +629,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-witte-bonen",
@@ -593,7 +642,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -607,10 +656,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~70mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~70 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -666,7 +721,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-mungbonen",
@@ -678,7 +734,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -692,10 +748,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~50 mg/100g (gekookt, matig-laag) → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -748,7 +810,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-tofu",
@@ -760,7 +823,7 @@
       "subcategory": "sojaproducten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -774,10 +837,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine: ~68 mg/100g. Sojaproduct: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~68 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -830,7 +899,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-hummus",
@@ -842,7 +912,7 @@
       "subcategory": "bereide-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -856,10 +926,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Peulvruchten-basis: maximaal oranje per EULAR 2022."
+            "nl": "Purine verdund met tahin/olie, <100 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -915,7 +991,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-tempeh",
@@ -927,7 +1004,7 @@
       "subcategory": "sojaproducten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -941,10 +1018,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Gefermenteerde soja: purine ~65 mg/100g."
+            "nl": "Purine ~65 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1006,7 +1089,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-snijbonen-peul",
@@ -1026,10 +1110,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine: ~104 mg/100g. Verse peulvrucht."
+            "nl": "Purine ~104 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -1082,7 +1172,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-sojabonen",
@@ -1108,10 +1199,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine: ~190 mg/100g. Hoog voor een peulvrucht."
+            "nl": "Purine ~190 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -1164,7 +1261,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kapucijners",
@@ -1184,10 +1282,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Droge peulvrucht: purine ~118 mg/100g."
+            "nl": "Purine ~118 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -1240,7 +1344,8 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-adzukibonen",
@@ -1252,7 +1357,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1266,10 +1371,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~95 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~95 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1325,7 +1436,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-pintobonen",
@@ -1337,7 +1449,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1351,10 +1463,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~75 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~75 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1410,7 +1528,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-groene-linzen",
@@ -1436,10 +1555,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~120 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~120 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -1495,7 +1620,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kikkererwten-blik",
@@ -1521,10 +1647,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Zelfde purinegehalte als gekookte kikkererwten."
+            "nl": "Purine ~109 mg/100g (= gekookt) → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -1580,7 +1712,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-misopasta",
@@ -1592,7 +1725,7 @@
       "subcategory": "sojaproducten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1600,10 +1733,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Gefermenteerde soja: purine ~85 mg/100g."
+            "nl": "Purine ~85 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1695,10 +1834,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~50 mg/100g."
+            "nl": "Purine ~50 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1751,7 +1896,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-doperwten-diepvries",
@@ -1763,7 +1909,7 @@
       "subcategory": "verse-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1777,10 +1923,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~80 mg/100g. Peulvruchten: maximaal oranje per EULAR 2022."
+            "nl": "Purine ~80 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1833,7 +1985,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-linzensoep",
@@ -1845,7 +1998,7 @@
       "subcategory": "bereide-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1859,10 +2012,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine-inhoudt varieert; peulvruchten-basis: maximaal oranje per EULAR 2022."
+            "nl": "Purine verdund (soep), <100 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1915,7 +2074,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-flageolets",
@@ -1927,7 +2087,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -1941,10 +2101,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine ~72 mg/100g. Maximaal oranje per EULAR 2022."
+            "nl": "Purine ~72 mg/100g → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -1997,7 +2163,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-tamarinpasta",
@@ -2009,7 +2176,7 @@
       "subcategory": "droge-peulvruchten",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 0,
           "evidence": "A",
           "sources": [
             {
@@ -2017,10 +2184,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Peulvrucht: maximaal oranje per EULAR 2022."
+            "nl": "Purine <50 mg/100g → score 0 (§2.1-drempel). Tamarinde is vruchtvlees, laag purine. Peulvrucht-purine geeft sowieso geen verhoogd jichtrisico (Choi 2004)."
           }
         },
         "migraine": {
@@ -2073,7 +2246,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-rode-linzen",
@@ -2093,10 +2267,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Purine: ~127 mg/100g. EULAR 2022: max score 2."
+            "nl": "Purine ~127 mg/100g → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -2152,7 +2332,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-beluga-linzen",
@@ -2172,10 +2353,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Peulvrucht: max score 2 (EULAR 2022)."
+            "nl": "Purine ~120 mg/100g (linzen) → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -2228,7 +2415,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-puy-linzen",
@@ -2248,10 +2436,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Peulvrucht: max score 2 (EULAR 2022)."
+            "nl": "Purine ~120 mg/100g (linzen) → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -2304,7 +2498,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kikkererwten-gedroogd",
@@ -2324,10 +2519,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Gedroogd: geconcentreerder, ~170 mg/100g purines."
+            "nl": "Purine ~170 mg/100g (gedroogd) → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -2380,7 +2581,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-natto",
@@ -2392,7 +2594,7 @@
       "subcategory": "soja",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -2400,10 +2602,22 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
+            },
+            {
+              "url": "https://www.jstage.jst.go.jp/article/gnamtsunyo/48/1/48_47/_article/-char/en",
+              "title": "Natto purinegehalte HPLC (56,6 mg/100g)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Soja: max score 2 (EULAR 2022)."
+            "nl": "Purine 56,6 mg/100g (HPLC) → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -2411,7 +2625,10 @@
           "evidence": "B",
           "triggerType": "subgroep-bevestigd",
           "confidence": "laag",
-          "primaryModulators": ["tyramine", "biogene-aminen"],
+          "primaryModulators": [
+            "tyramine",
+            "biogene-aminen"
+          ],
           "sources": [
             {
               "url": "https://pubmed.ncbi.nlm.nih.gov/17490952/",
@@ -2462,7 +2679,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-gedroogde-bruine-bonen",
@@ -2482,10 +2700,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Gedroogde peulvruchten: max score 2 (EULAR 2022)."
+            "nl": "Purine ~160 mg/100g (gedroogd) → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -2538,7 +2762,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-sojadrink",
@@ -2558,8 +2783,17 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Purine sterk verdund, laag → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
+          }
         },
         "migraine": {
           "score": 0,
@@ -2611,7 +2845,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 27
     },
     {
       "id": "nl-lupinebonen",
@@ -2623,7 +2858,7 @@
       "subcategory": "bonen",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -2631,10 +2866,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Peulvrucht: max score 2 (EULAR 2022)."
+            "nl": "Purine laag — nauwelijks purinezuur bij vertering → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -2687,7 +2928,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-kidneybonen",
@@ -2699,7 +2941,7 @@
       "subcategory": "bonen",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 1,
           "evidence": "A",
           "sources": [
             {
@@ -2707,10 +2949,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Peulvrucht: max score 2 (EULAR 2022)."
+            "nl": "Purine ~80 mg/100g (= gekookte kidneybonen) → score 1 (§2.1-drempel <100 mg). Peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico (Choi 2004, EULAR 2022); het plafond van 2 geldt alleen voor hoog-purine soorten (≥100 mg)."
           }
         },
         "migraine": {
@@ -2763,7 +3011,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     },
     {
       "id": "nl-sojaschroot",
@@ -2783,10 +3032,16 @@
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15014182/",
+              "title": "Choi et al. 2004 — Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout (NEJM)",
+              "type": "review",
+              "accessedAt": "2026-06-04"
             }
           ],
           "note": {
-            "nl": "Jonge sojabonen: max score 2 (EULAR 2022)."
+            "nl": "Purine ~116 mg/100g (= edamame) → score 2 (§2.1-drempel ≥100 mg), geplafonneerd op 2: peulvrucht-purine geeft epidemiologisch geen verhoogd jichtrisico ondanks het gehalte (Choi 2004, EULAR 2022)."
           }
         },
         "migraine": {
@@ -2839,7 +3094,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 26
     }
   ]
 }

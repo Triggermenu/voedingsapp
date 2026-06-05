@@ -1,5 +1,7 @@
 # Migraine whitelist-audit — mei 2026
 
+> **Historisch document (v1.4-staat). Achterhaald op punt 1.** In v2.0 (2026-06-04) is **gedistilleerd en sterke/versterkte wijn van de score-3-whitelist verwijderd** — alleen **bier** blijft score 3 (`populatiebreed`). Gedistilleerd/wijn zijn score 2 + `subgroep-overschat` (Onderwater 2019). In v2.4 kreeg gecureerd vlees boven Henderson triggerType `dosis-afhankelijk` en ging rookworst naar score 2. Zie CLAUDE.md §2.2 + `docs/migraine-methodologie.md` §3.1 voor de actuele stand. Dit document blijft bewaard als besluitspoor.
+
 ## Aanleiding
 
 Tijdens review van PR #15 (sauzen-kruiden Hindiyeh-purge) werd vastgesteld dat MSG in de CLAUDE.md §2.2 whitelist voor score=3 stond, maar de data MSG al correct op score=2 + subgroep-overschat had. Dit triggerde een bredere audit: welke stoffen op de whitelist zijn wetenschappelijk te rechtvaardigen als universele trigger (score=3)?

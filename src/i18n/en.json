@@ -61,12 +61,6 @@
     "disclaimer": "The AI analysis is an estimate based on visible ingredients. Preparation methods and hidden ingredients may affect scores. Ask staff if in doubt.",
     "error": "Something went wrong. Please try again."
   },
-  "bronnen": {
-    "title": "Sources & methodology",
-    "subtitle": "Transparency about how scores are determined.",
-    "export": "Export as PDF",
-    "exportHint": "Use Ctrl+P or ⌘+P to print / save as PDF."
-  },
   "instellingen": {
     "title": "Settings",
     "profile": "My profile",

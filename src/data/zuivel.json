@@ -1439,6 +1439,11 @@
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
+      },
+      "cluster": 4,
+      "histamineFlags": {
+        "liberator": true,
+        "daoBlocker": false
       }
     },
     {
@@ -2034,86 +2039,6 @@
         "lastReviewed": "2026-05-14"
       },
       "cluster": 3
-    },
-    {
-      "id": "nl-mozzarella-vers",
-      "name": {
-        "nl": "Mozzarella (vers)",
-        "en": "Mozzarella (fresh)"
-      },
-      "category": "zuivel",
-      "subcategory": "kaas-vers",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
-              "title": "Finberg & Gillman 2022 — Dietary Tyramine and MAO Inhibitors",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Verse mozzarella heeft minimaal tyramine."
-          }
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
-              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
-              "type": "review",
-              "accessedAt": "2026-05-12"
-            },
-            {
-              "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline",
-              "title": "AUA Medical Management of Kidney Stones Guideline",
-              "type": "guideline",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 0,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-12"
-            }
-          ]
-        }
-      },
-      "meta": {
-        "addedAt": "2026-05-12",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 4
     },
     {
       "id": "nl-ricotta",
@@ -3225,7 +3150,7 @@
           }
         },
         "nierstenen": {
-          "score": 1,
+          "score": 2,
           "evidence": "A",
           "sources": [
             {
@@ -3236,7 +3161,7 @@
             }
           ],
           "note": {
-            "nl": "Amandelen bevatten oxalaat, verdund in melk ~5mg/100ml."
+            "nl": "Amandel-oxalaat ~27–50 mg per kop (240 ml) → score 2 (§2.3-drempel 25–50 mg/portie). Amandelmelk heeft het hoogste oxalaatgehalte onder plantaardige melken; oat-/rijstmelk zijn lagere alternatieven."
           }
         },
         "histamine": {
@@ -4240,7 +4165,8 @@
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
         "lastReviewed": "2026-05-20"
-      }
+      },
+      "cluster": 4
     }
   ]
 }

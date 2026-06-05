@@ -11,7 +11,7 @@
 
 Voedingsgids (Pulse) is een Nederlandstalige, informatieve beslishulp — uitdrukkelijk **geen medisch hulpmiddel** — die voedingsmiddelen scoort op vier aandoeningen. Dit document beschrijft de methodologie voor de **migraine-as**. Elk voedingsmiddel krijgt een ordinale score van 0 tot 3, met een onafhankelijke evidence-grade (A/B/C) en, vanaf score 2, een verplichte classificatie van het triggermechanisme (`triggerType`).
 
-De methodologie is bewust terughoudend, passend bij de zwakke migraine-voedingsliteratuur. De hoogste score is gereserveerd voor een restrictieve whitelist (in de praktijk alleen alcohol en gecureerd vlees boven de nitrietdrempel — tien van de 700 items). Klassieke "triggers" als MSG, gerijpte kaas, rode wijn en chocolade worden bewust niet op score 3 gezet maar op 2, op grond van geblindeerde evidence boven observationele trigger-lijsten. Triggers worden gegroepeerd per mechanistisch pathway-cluster; clusters zonder sterk bewijs kennen een verlaagd score-plafond. Methodologische keuzes zijn vastgelegd als toetsbare paradigma-precedenten.
+De methodologie is bewust terughoudend, passend bij de zwakke migraine-voedingsliteratuur. De hoogste score is gereserveerd voor een restrictieve whitelist (in de praktijk alleen bier en gecureerd vlees boven de nitrietdrempel — acht van de 669 items). Klassieke "triggers" als MSG, gerijpte kaas, rode wijn en chocolade worden bewust niet op score 3 gezet maar op 2, op grond van geblindeerde evidence boven observationele trigger-lijsten. Triggers worden gegroepeerd per mechanistisch pathway-cluster; clusters zonder sterk bewijs kennen een verlaagd score-plafond. Methodologische keuzes zijn vastgelegd als toetsbare paradigma-precedenten.
 
 De doc is geschreven voor medisch-wetenschappelijke en regulatoire lezers die willen beoordelen of de scoring methodologisch verdedigbaar is.
 
@@ -90,7 +90,7 @@ Drie zaken die deze methodologie expliciet niet doet:
 
 2. **Geen volledig dieetadvies.** Het systeem scoort losse voedingsmiddelen. Het doet geen uitspraken over dieetcomposities, maaltijdfrequentie, of nutritionele adequaatheid. Een gebruiker die op basis van de scores producten elimineert, kan in nutritionele tekorten terechtkomen. Hiervoor wordt naar een diëtist verwezen.
 
-3. **Geen claim van volledigheid.** De huidige database bevat 700 voedingsmiddelen (per 2026-05-23, de vastgestelde cap). Producten die niet in de database staan, worden niet automatisch als "veilig" of "onveilig" beschouwd — ze zijn simpelweg nog niet gescoord.
+3. **Geen claim van volledigheid.** De huidige database bevat 669 voedingsmiddelen (per 2026-06-04; de vastgestelde cap is 700). Producten die niet in de database staan, worden niet automatisch als "veilig" of "onveilig" beschouwd — ze zijn simpelweg nog niet gescoord.
 
 ---
 
@@ -163,21 +163,21 @@ De algemene scoring-principes uit sectie 2 gelden voor alle vier aandoeningen. D
 
 ### 3.1 Het score-3-principe: een restrictieve whitelist
 
-Score 3 is op de migraine-as bewust zeldzaam. Van de 700 gescoorde items dragen er **tien** een migraine-score 3 (1,4%). De score-verdeling per 2026-05-23:
+Score 3 is op de migraine-as bewust zeldzaam. Van de 669 gescoorde items dragen er **acht** een migraine-score 3 (1,2%). De score-verdeling per 2026-06-04:
 
 | Score | Aantal items |
 |---|---|
-| 0 | 476 |
-| 1 | 119 |
-| 2 | 95 |
-| 3 | 10 |
+| 0 | 452 |
+| 1 | 116 |
+| 2 | 93 |
+| 3 | 8 |
 
 De reden voor deze terughoudendheid is principieel. De migraine-voedingsliteratuur is methodologisch zwak: de meeste "triggers" berusten op zelfrapportage en cross-sectioneel onderzoek, en moderne geblindeerde studies reproduceren het effect zelden in de algemene populatie. Een score die "sterke, in de algemene populatie reproduceerbare associatie" claimt, mag daarom niet lichtvaardig worden toegekend.
 
 Concreet wordt score 3 gereserveerd voor stoffen waarvan het mechanisme **populatiebreed** is (reproduceerbaar over brede populaties bij voldoende dosis, niet gebonden aan een geïdentificeerde subgroep — géén claim dat iedere patiënt reageert) **of dosis-afhankelijk** met een drempel die via normale voeding daadwerkelijk bereikt wordt. Slechts twee stofklassen voldoen hieraan, en zij vormen samen de volledige score-3-populatie:
 
-1. **Alcoholische dranken** (bier in alle varianten, gedistilleerd, sterke wijn) — zes items, mechanisme `populatiebreed`. De trigger is het ethanol-mechanisme zelf (directe vasodilatatie, CGRP-release, mestcel-degranulatie), dat dosis-afhankelijk over brede populaties optreedt en niet beperkt is tot een geïdentificeerde subgroep.
-2. **Gecureerd vlees boven de Henderson-nitrietdrempel** (spek/bacon, gerookte/gecureerde worst) — vier items, mechanisme `subgroep-bevestigd`. Een typische portie bereikt ≥10 mg nitriet, de dosis waarbij Henderson & Raskin (1972) in direct enteraal provocatieonderzoek migraine opwekten. De dose-route-match rechtvaardigt de hoogste score, ook al rust de directe evidence op een kleine n.
+1. **Bier (alle alcoholische varianten)** — zes items, mechanisme `populatiebreed`. De trigger is het ethanol-mechanisme zelf (directe vasodilatatie, CGRP-release, mestcel-degranulatie), dat over brede populaties bij voldoende dosis optreedt en niet beperkt is tot een geïdentificeerde subgroep. **Gedistilleerd en wijn vallen hier uitdrukkelijk niet onder** (zie §3.2): wodka — vrijwel pure ethanol — is juist de mínst provocerende drank (Onderwater 2019), dus de reproduceerbare trigger zit in dranksspecifieke congeneren, niet in ethanol. Zij krijgen score 2.
+2. **Gecureerd vlees boven de Henderson-nitrietdrempel** (spek/bacon) — twee items, mechanisme `dosis-afhankelijk`. Een typische portie bereikt ≥10 mg nitriet, de dosis waarbij Henderson & Raskin (1972) in direct enteraal provocatieonderzoek migraine opwekten. Gecureerde vleeswaren ónder de drempel (salami, paté, rookworst) krijgen score 2 + `subgroep-bevestigd`.
 
 Een nieuw item kan alleen score 3 krijgen als het op deze whitelist past; dit wordt geautomatiseerd bewaakt. Daarbij geldt een ondergrens voor de bewijskwaliteit: score 3 vereist evidence-grade ≥ B.
 
@@ -190,6 +190,7 @@ Per geval:
 - **MSG.** Meerdere dubbelblinde RCT's tonen geen reproduceerbaar effect bij normale voedselinname; ICHD-3 verwijderde MSG in 2018 van de officiële triggerlijst. Score 2, `subgroep-overschat`.
 - **Gerijpte kaas.** Tyramine wordt bij een intacte MAO-functie in darmwand en lever geïnactiveerd; het effect is alleen klinisch relevant in een MAO-A-gevoelige subgroep of bij MAO-remmer-gebruik. Geen moderne provocatie-RCT. Score 2, `subgroep-overschat`.
 - **Rode wijn.** Er bestaat een positieve RCT (Littlewood 1988) maar met kleine n, en een groot cohort (Onderwater 2019) toont een forse kloof tussen ~77% zelf-rapportage en ~9% objectief consistente respons. Score 2, `subgroep-overschat`.
+- **Gedistilleerd en versterkte wijn** (whisky, gin, wodka, rum, jenever, vermouth, …). Anders dan bier ontbreekt het ethanol-only-argument hier juist: in Onderwater 2019 is wodka — vrijwel pure ethanol — de mínst provocerende drank (8,5%). De reproduceerbare trigger zit dus in dranksspecifieke congeneren/biogene aminen, beperkt tot een gevoelige subgroep. Score 2, `subgroep-overschat` (verwijderd van de score-3-whitelist, v2.0).
 - **Chocolade.** Recente systematische reviews suggereren dat chocolade-craving eerder een vroeg prodroom-symptoom is dan een oorzaak. Score 2, met note.
 
 Deze downgrades zijn als formele paradigma-precedenten vastgelegd, zodat een toekomstig item dat op een precedent lijkt zonder hernieuwde discussie dezelfde weging volgt.
@@ -353,7 +354,7 @@ Ter illustratie van de methodologie van begin tot eind, twee items die bewust co
 | **Mechanisme** | Nitriet (E250) → stikstofmonoxide via maagzuur en de enterosalivaire cyclus → vasodilatatie |
 | **Dosis-data** | Een portie van ~60 g levert ~7–15 mg nitriet |
 | **Toets** | Henderson & Raskin (1972) wekten in enteraal provocatieonderzoek migraine op bij ~10 mg nitriet. De voedingsdosis bereikt die drempel: dose-route-match. Gecureerd vlees boven de Henderson-drempel is één van de twee stofklassen op de score-3-whitelist (§3.1). |
-| **Resultaat** | **score 3** · evidence **B** · triggerType **`subgroep-bevestigd`** · confidence **middel** · modulatoren `nitriet`, `stikstofmonoxide`, `enterosalivaire-conversie` |
+| **Resultaat** | **score 3** · evidence **B** · triggerType **`dosis-afhankelijk`** · confidence **middel** · modulatoren `nitriet`, `stikstofmonoxide`, `enterosalivaire-conversie` |
 | **Waarom geen evidence A** | De directe provocatie is een N=1-bevinding, nooit in een moderne RCT gerepliceerd → B, niet A (§2.2). |
 
 De score is hoog én de onzekerheid wordt eerlijk meegegeven: een sterke, dosis-onderbouwde associatie, maar gedragen door beperkte directe evidence.
