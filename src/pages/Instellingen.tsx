@@ -63,6 +63,7 @@ export function Instellingen() {
 
   return (
     <div className="min-h-screen pb-24" style={{ background: 'var(--bg)' }}>
+      <div style={{ maxWidth: 760, margin: '0 auto' }}>
       {/* Header */}
       <div style={{ padding: '8px 22px 0' }} className="pt-safe">
         <Logo size={18} to="/zoeken" />
@@ -220,6 +221,7 @@ export function Instellingen() {
           <span style={{ fontSize: 12, color: 'var(--rule)' }}>·</span>
           <span style={{ fontSize: 12, color: 'var(--muted)' }}>Triggermenu v0.1</span>
         </div>
+      </div>
       </div>
 
       <NavBar />
