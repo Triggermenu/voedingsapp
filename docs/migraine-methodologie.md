@@ -90,7 +90,7 @@ Drie zaken die deze methodologie expliciet niet doet:
 
 2. **Geen volledig dieetadvies.** Het systeem scoort losse voedingsmiddelen. Het doet geen uitspraken over dieetcomposities, maaltijdfrequentie, of nutritionele adequaatheid. Een gebruiker die op basis van de scores producten elimineert, kan in nutritionele tekorten terechtkomen. Hiervoor wordt naar een diëtist verwezen.
 
-3. **Geen claim van volledigheid.** De huidige database bevat 669 voedingsmiddelen (per 2026-06-04; de vastgestelde cap is 700). Producten die niet in de database staan, worden niet automatisch als "veilig" of "onveilig" beschouwd — ze zijn simpelweg nog niet gescoord.
+3. **Geen claim van volledigheid.** De database bevat bijna 700 voedingsmiddelen (de vastgestelde cap is 700). Producten die niet in de database staan, worden niet automatisch als "veilig" of "onveilig" beschouwd — ze zijn simpelweg nog niet gescoord.
 
 ---
 
@@ -163,7 +163,7 @@ De algemene scoring-principes uit sectie 2 gelden voor alle vier aandoeningen. D
 
 ### 3.1 Het score-3-principe: een restrictieve whitelist
 
-Score 3 is op de migraine-as bewust zeldzaam. Van de 669 gescoorde items dragen er **acht** een migraine-score 3 (1,2%). De score-verdeling per 2026-06-04:
+Score 3 is op de migraine-as bewust zeldzaam: **acht** items dragen een migraine-score 3 — circa 1% van alle gescoorde items. De score-verdeling (momentopname 2026-06-04):
 
 | Score | Aantal items |
 |---|---|
