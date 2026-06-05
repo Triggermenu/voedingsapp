@@ -38,13 +38,13 @@ test('navigation tabs work', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/zoeken')
 
-  // Bronnen is now accessible via Instellingen, not a direct NavBar tab
+  // Bronnen is now accessible via the "Meer" tab, not a direct NavBar tab
   await page.goto('/bronnen')
   await expect(page).toHaveURL(/\/bronnen/)
   await expect(page.getByText('De wetenschap achter elke score.')).toBeVisible()
 
-  // Tab is labelled "Instellingen" in the NavBar
-  await page.getByRole('link', { name: 'Instellingen' }).click()
+  // Tab is labelled "Meer" in the NavBar (was "Instellingen")
+  await page.getByRole('link', { name: 'Meer' }).click()
   await expect(page).toHaveURL(/\/instellingen/)
 })
 
