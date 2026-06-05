@@ -133,6 +133,47 @@ export function Instellingen() {
         </button>
       </div>
 
+      {/* Onderbouwing — bronnen & methodologie, prominent */}
+      <div style={{ padding: '8px 22px 4px' }}>
+        <div className="eyebrow" style={{ marginBottom: 10 }}>Onderbouwing</div>
+        <Link
+          to="/bronnen"
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
+            padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
+            background: 'var(--brand-50)', border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
+          }}
+        >
+          <div>
+            <div className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>De wetenschap achter elke score</div>
+            <div style={{ fontSize: 12, color: 'var(--ink-soft)', marginTop: 2, lineHeight: 1.4 }}>
+              Datasets, richtlijnen en peer-reviewed studies — per aandoening, met evidence-grade.
+            </div>
+          </div>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </Link>
+        <Link
+          to="/methodologie"
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10,
+            marginTop: 8, padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
+            background: 'var(--paper)', border: '1px solid var(--rule)',
+          }}
+        >
+          <div>
+            <div className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>Hoe een stoplicht tot stand komt</div>
+            <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 2, lineHeight: 1.4 }}>
+              De methodologie: drempels, afwegingen en uitzonderingen per aandoening.
+            </div>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.8" strokeLinecap="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </Link>
+      </div>
+
       {/* Today stats */}
       {viewedItems.length > 0 && (
         <div style={{ padding: '0 22px 4px' }}>
@@ -163,29 +204,6 @@ export function Instellingen() {
           </div>
         </div>
       )}
-
-      {/* Bronnen */}
-      <div style={{ padding: '16px 22px 0' }}>
-        <Link
-          to="/bronnen"
-          style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            padding: '14px 16px', borderRadius: 10, textDecoration: 'none',
-            background: 'var(--paper)', border: '1px solid var(--rule)',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 4h11a3 3 0 013 3v13a2 2 0 00-2-2H4z" />
-              <path d="M4 4v14h12" />
-            </svg>
-            <span className="serif" style={{ fontSize: 15, fontWeight: 500, color: 'var(--ink)' }}>Bronnen</span>
-          </div>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="1.8" strokeLinecap="round">
-            <path d="M9 18l6-6-6-6" />
-          </svg>
-        </Link>
-      </div>
 
       {/* Footer links */}
       <div style={{ padding: '20px 22px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
