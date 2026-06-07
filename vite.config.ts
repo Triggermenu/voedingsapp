@@ -17,8 +17,17 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      // We registreren de SW zelf in main.tsx zodat we periodiek op nieuwe
+      // deploys kunnen pollen (anders checkt de browser pas als ALLE tabs
+      // sluiten — op iOS bleef de app daardoor maandenlang op een oude bundle).
+      injectRegister: false,
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
+        // Nieuwe SW neemt direct over + ruimt oude precaches op, zodat een
+        // update niet achter "wachtende" service workers blijft hangen.
+        clientsClaim: true,
+        skipWaiting: true,
+        cleanupOutdatedCaches: true,
         runtimeCaching: [
           {
             urlPattern: /\/src\/data\/.+\.json$/,
