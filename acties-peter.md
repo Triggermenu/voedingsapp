@@ -170,7 +170,7 @@ Kind regards,
 
 ## C-2 · Admin-account aanmaken + wachtwoordrotatie
 
-**Status:** ☐ Open — admin-auth is gebouwd maar nog niet actief (auth-gate staat uit)
+**Status:** ✅ Afgerond 2026-06-07 — admin-auth is actief; inloggen op `/admin` werkt (geverifieerd: dashboard zichtbaar als ingelogd, `/api/admin/*` geeft 401 zonder token). Stappen 1–5 hieronder zijn uitgevoerd; ze blijven staan als referentie voor de wachtwoordrotatie.
 **Tijd:** ~10 min initieel; ~2 min per rotatie
 **Eigenaar:** Peter
 
@@ -239,7 +239,7 @@ UPDATE public.profiles SET is_admin = true WHERE email = 'Productie@triggermenu.
 
 ### Stap 4 — Auth-gate activeren in de code
 
-Open `src/App.tsx` en volg de TODO-comment: vervang de drie admin-routes door de AdminLayout-wrapper.
+✅ Gedaan: `/admin` is in `src/App.tsx` gewrapt in `AdminLayout` (Supabase-sessie + `is_admin`, anders redirect naar `/admin/login`); de admin-API's zitten achter `requireAdmin`. Beide vallen dicht bij twijfel.
 
 ### Stap 5 — VITE_SUPABASE_URL en VITE_SUPABASE_ANON_KEY in Vercel zetten
 
