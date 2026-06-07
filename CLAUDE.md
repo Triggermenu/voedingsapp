@@ -324,7 +324,7 @@ Als alle 16 checks groen zijn én PR-author is in `trusted-authors.json` (Cowork
 
 ## 8. Profielkoppeling (gebruikersgericht)
 
-**Admin-uitzondering:** één admin-gebruiker (Productie@triggermenu.nl) heeft via Supabase Auth toegang tot `/admin` voor feedback-inzicht en rate-limit-beheer. Auth-gate is aanwezig maar nog niet actief (zie TODO-comment in `src/App.tsx`). Eindgebruikers blijven zonder account werken; hun profiel staat in localStorage. Admin-accounts worden handmatig aangemaakt in Supabase — zie acties-peter.md C-2 voor instructies.
+**Admin-uitzondering:** één admin-gebruiker (Productie@triggermenu.nl) heeft via Supabase Auth toegang tot `/admin` voor feedback-inzicht en rate-limit-beheer. De auth-gate is in de code actief: `/admin` zit achter `AdminLayout` (controleert Supabase-sessie + `is_admin`, anders redirect naar `/admin/login`) en elke admin-API achter `requireAdmin` (Bearer-token + `is_admin`); beide vallen dicht bij twijfel. Wat operationeel resteert — het Supabase-adminaccount met `is_admin=true` aanmaken en de env-vars zetten — verloopt via acties-peter.md C-2; tot dan kan niemand inloggen, maar de data blijft beschermd. Eindgebruikers blijven zonder account werken; hun profiel staat in localStorage.
 
 Het actieve profiel (1+ gekozen aandoeningen) is **leidend voor alle weergave**:
 
