@@ -7,12 +7,12 @@ import { getDatabaseStats } from '@/lib/db'
 // Bedoeld voor geïnteresseerden, diëtisten en onderzoekers. Bereikbaar via een link
 // op de Bronnen-pagina. Inhoud loopt in de pas met methodologie.md + CLAUDE.md.
 
-type Cond = { id: string; label: string; status: 'safe' | 'ok' | 'warn' | 'avoid' }
+type Cond = { id: string; label: string }
 const CONDS: Cond[] = [
-  { id: 'jicht', label: 'Jicht', status: 'ok' },
-  { id: 'migraine', label: 'Migraine', status: 'ok' },
-  { id: 'nierstenen', label: 'Nierstenen', status: 'warn' },
-  { id: 'histamine', label: 'Histamine', status: 'avoid' },
+  { id: 'jicht', label: 'Jicht' },
+  { id: 'migraine', label: 'Migraine' },
+  { id: 'nierstenen', label: 'Nierstenen' },
+  { id: 'histamine', label: 'Histamine' },
 ]
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -152,7 +152,7 @@ export function Methodologie() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 10 }}>
             {CONDS.map((c) => (
               <div key={c.id} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ width: 9, height: 9, borderRadius: 2, background: `var(--${c.status})`, flexShrink: 0 }} />
+                <span style={{ width: 9, height: 9, borderRadius: 2, background: 'var(--brand)', flexShrink: 0 }} />
                 <span style={{ fontSize: 13, color: 'var(--ink)', fontWeight: 500, width: 78, flexShrink: 0 }}>{c.label}</span>
                 <span style={{ fontSize: 12, color: 'var(--muted)' }}>
                   {c.id === 'jicht' && 'USDA Purine DB 2.0 · EULAR 2022 · Choi 2004 · Kaneko'}
