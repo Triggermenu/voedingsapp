@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
+import { registerSW } from 'virtual:pwa-register'
 import * as Sentry from '@sentry/react'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
@@ -44,6 +45,23 @@ if (dsn) {
     },
   })
 }
+
+// Service worker registreren met actieve update-detectie. Met registerType
+// 'autoUpdate' wordt een nieuwe versie stil geïnstalleerd en de pagina herladen
+// zodra die klaarstaat. Standaard checkt de browser pas bij het heropenen van
+// álle tabs — daardoor bleef de app (vooral op iOS) op een oude bundle hangen.
+// Daarom pollen we hier zelf: elke 60s én telkens als de tab weer zichtbaar wordt.
+registerSW({
+  immediate: true,
+  onRegisteredSW(_swUrl, registration) {
+    if (!registration) return
+    const checkForUpdate = () => { registration.update().catch(() => {}) }
+    setInterval(checkForUpdate, 60_000)
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') checkForUpdate()
+    })
+  },
+})
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
