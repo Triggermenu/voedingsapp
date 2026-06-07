@@ -15,11 +15,11 @@ interface Source {
   url: string
 }
 
-const COND_ORDER: { id: CondKey; label: string; status: 'safe' | 'ok' | 'warn' | 'avoid' }[] = [
-  { id: 'jicht',      label: 'Jicht',      status: 'ok' },
-  { id: 'migraine',   label: 'Migraine',   status: 'ok' },
-  { id: 'nierstenen', label: 'Nierstenen', status: 'warn' },
-  { id: 'histamine',  label: 'Histamine',  status: 'avoid' },
+const COND_ORDER: { id: CondKey; label: string }[] = [
+  { id: 'jicht',      label: 'Jicht' },
+  { id: 'migraine',   label: 'Migraine' },
+  { id: 'nierstenen', label: 'Nierstenen' },
+  { id: 'histamine',  label: 'Histamine' },
 ]
 
 const SOURCES: Record<CondKey, Source[]> = {
@@ -159,7 +159,7 @@ export function Bronnen() {
             <div key={cond.id}>
               {/* Condition header */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '18px 0 10px' }}>
-                <span style={{ width: 10, height: 10, borderRadius: 2, background: `var(--${cond.status})`, flexShrink: 0 }} />
+                <span style={{ width: 10, height: 10, borderRadius: 2, background: 'var(--brand)', flexShrink: 0 }} />
                 <span className="serif" style={{ fontSize: 17, fontWeight: 500, color: 'var(--ink)' }}>{cond.label}</span>
                 <span className="mono" style={{ fontSize: 10, color: 'var(--muted)' }}>· {srcs.length} bronnen</span>
               </div>
