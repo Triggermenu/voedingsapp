@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { Condition } from '@/schemas/item'
 import { CONDITIONS } from '@/schemas/item'
@@ -180,8 +180,15 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
         </div>
       </div>
 
-      {/* CTA */}
-      <div className="px-[26px] pt-5 pb-8">
+      {/* CTA — sticky footer zodat 'Beginnen' altijd in beeld is, ook bovenaan
+          de lange pagina (de knop stond eerst onder de fold → onboarding-drop). */}
+      <div
+        style={{
+          position: 'sticky', bottom: 0, marginTop: 'auto',
+          padding: '14px 26px calc(env(safe-area-inset-bottom) + 16px)',
+          background: 'linear-gradient(to top, var(--bg) 72%, transparent)',
+        }}
+      >
         <StepDots step={0} />
         <button
           onClick={onNext}
@@ -194,7 +201,7 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
         >
           Beginnen
         </button>
-        <p style={{ textAlign: 'center', fontSize: 11.5, color: 'var(--muted)', margin: '12px 0 0' }}>
+        <p style={{ textAlign: 'center', fontSize: 11.5, color: 'var(--muted)', margin: '10px 0 0' }}>
           Indicatief · geen vervanging voor medisch advies
         </p>
       </div>
@@ -382,12 +389,20 @@ export function Onboarding() {
   const [disclaimerChecked, setDisclaimerChecked] = useState(false)
   const [error, setError] = useState('')
 
+  // Funnel-instrumentatie: meet waar gebruikers afhaken tussen de drie stappen.
+  // gestart (denominator) → profiel → disclaimer → voltooid. Eénmalig per mount.
+  useEffect(() => {
+    track('onboarding_gestart')
+  }, [])
+
   const toggle = (c: Condition) =>
     setSelected((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]))
 
   const handleNext = () => {
     if (step === 1 && selected.length === 0) { setError('Kies minstens één aandoening'); return }
     setError('')
+    // step 0 → 1 betekent: welkom doorlopen, profielstap bereikt; 1 → 2: disclaimer bereikt.
+    track('onboarding_stap', { naar: step === 0 ? 'profiel' : 'disclaimer' })
     setStep((s) => s + 1)
   }
 
