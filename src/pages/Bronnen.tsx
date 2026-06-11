@@ -209,6 +209,49 @@ export function Bronnen() {
         })}
       </div>
 
+      {/* Aanvullende NL-referenties — bewust gescheiden van de scoringsbronnen hierboven:
+          deze worden NIET voor de individuele scores gebruikt. */}
+      <div style={{ padding: '0 22px 16px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '22px 0 8px' }}>
+          <span style={{ width: 10, height: 10, borderRadius: 2, background: 'var(--muted)', flexShrink: 0 }} />
+          <span className="serif" style={{ fontSize: 17, fontWeight: 500, color: 'var(--ink)' }}>Aanvullende Nederlandse referenties</span>
+        </div>
+        <p style={{ fontSize: 12.5, color: 'var(--ink-soft)', lineHeight: 1.5, margin: '0 0 14px' }}>
+          Toegankelijke, gezaghebbende NL-bronnen voor patiënten, diëtisten en artsen — <strong style={{ color: 'var(--ink)' }}>ter
+          context, niet gebruikt voor de individuele scores</strong> (die leunen op de datasets en studies hierboven).
+        </p>
+
+        {([
+          {
+            cond: 'Jicht',
+            refs: [
+              { label: 'Richtlijnendatabase — jicht (leefstijl & comedicatie)', note: 'de Nederlandse klinische richtlijn', url: 'https://richtlijnendatabase.nl/richtlijn/diagnostiek_en_behandeling_van_jicht_in_de_2e_lijn/leefstijl_en_comedicatie_bij_jicht_bij_rl_jicht.html' },
+              { label: 'ReumaNederland — Jicht en voeding', note: 'patiëntenvereniging', url: 'https://reumanederland.nl/jicht-en-voeding' },
+              { label: 'Voedingscentrum — Eten bij jicht', note: '', url: 'https://www.voedingscentrum.nl/nl/service/vraag-en-antwoord/aandoeningen/dieet-gezond-eten-bij-jicht-jichtaanval.aspx' },
+            ],
+          },
+          {
+            cond: 'Nierstenen',
+            refs: [
+              { label: 'Diëtisten Nierziekten (DNN) — dieetrichtlijn nierstenen', note: 'sluit aan op onze aanpak: calcium niet beperken (zuivel bij de maaltijd bindt oxalaat en is het meest beschermend), ruim vocht (≥ 2,5 L/dag); oxalaatbeperking is één factor, niet het hoofdadvies', url: 'https://www.dietistennierziekten.nl/' },
+              { label: 'Voedingscentrum', note: 'algemene voedingsadviezen', url: 'https://www.voedingscentrum.nl/' },
+            ],
+          },
+        ] as const).map((group) => (
+          <div key={group.cond} style={{ marginBottom: 12 }}>
+            <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink)', marginBottom: 5 }}>{group.cond}</div>
+            <ul style={{ margin: 0, paddingLeft: 18, display: 'flex', flexDirection: 'column', gap: 5 }}>
+              {group.refs.map((r) => (
+                <li key={r.url} style={{ fontSize: 12.5, color: 'var(--ink-soft)', lineHeight: 1.45 }}>
+                  <a href={r.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--brand)', textDecoration: 'none' }}>{r.label}</a>
+                  {r.note ? ` — ${r.note}` : ''}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
       {/* Footer note */}
       <div style={{ padding: '0 22px 16px' }}>
         <p style={{ fontSize: 11.5, color: 'var(--muted)', lineHeight: 1.5 }}>
