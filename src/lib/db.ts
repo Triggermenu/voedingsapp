@@ -171,12 +171,39 @@ export function getAllItems(): FoodItem[] {
   return ALL_ITEMS
 }
 
+/**
+ * Concept-/categoriewoorden waarop ook gezocht mag worden, naast de itemnaam.
+ * Lost het vindbaarheidsgat op dat een diëtiste vond: "alcohol" gaf 0 resultaten
+ * omdat geen enkel item zo héét, terwijl bier/wijn er wél in staan. Nu toont
+ * "alcohol" de hele categorie. Alleen prefix-match (≥3 tekens) om ruis te vermijden.
+ */
+const CATEGORY_SEARCH_TERMS: Partial<Record<Category, string[]>> = {
+  groente:               ['groente', 'groenten'],
+  fruit:                 ['fruit', 'vruchten'],
+  granen:                ['granen', 'graan', 'brood'],
+  peulvruchten:          ['peulvruchten', 'peulvrucht'],
+  'noten-zaden':         ['noten', 'zaden', 'pitten'],
+  vlees:                 ['vlees', 'gevogelte'],
+  'vis-schaaldieren':    ['vis', 'schaaldieren', 'zeevruchten'],
+  zuivel:                ['zuivel'],
+  eieren:                ['eieren'],
+  'dranken-alcohol':     ['alcohol', 'alcoholisch', 'alcoholische', 'drank', 'borrel'],
+  'dranken-non-alcohol': ['drank', 'dranken', 'frisdrank'],
+  zoetwaren:             ['zoetwaren', 'snoep', 'snack', 'snacks', 'zoetigheid'],
+  'sauzen-kruiden':      ['saus', 'sauzen', 'kruiden', 'specerijen'],
+  'bereid-gerecht':      ['gerecht', 'maaltijd'],
+}
+
 export function searchItems(query: string, conditions: Condition[]): FoodItem[] {
   const q = query.toLowerCase().trim()
 
   return ALL_ITEMS.filter((item) => {
-    if (q && !item.name.nl.toLowerCase().includes(q) && !item.name.en.toLowerCase().includes(q)) {
-      return false
+    if (q) {
+      const nameHit = item.name.nl.toLowerCase().includes(q) || item.name.en.toLowerCase().includes(q)
+      const subHit = item.subcategory?.toLowerCase().includes(q) ?? false
+      const catTerms = CATEGORY_SEARCH_TERMS[item.category as Category]
+      const catHit = q.length >= 3 && !!catTerms && catTerms.some((t) => t.startsWith(q))
+      if (!nameHit && !subHit && !catHit) return false
     }
     // Show item if it has at least one active condition scored
     const hasActiveScore = conditions.some((c) => item.scores[c] !== null)
