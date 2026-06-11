@@ -14,6 +14,11 @@ const COND_SHORT: Record<Condition, string> = {
   jicht: 'JCHT', migraine: 'MIGR', nierstenen: 'NIER', histamine: 'HIST',
 }
 
+// 3-letter labels voor de compacte stoplicht-strip op alternatieven
+const COND_ABBR: Record<Condition, string> = {
+  jicht: 'JCH', migraine: 'MIG', nierstenen: 'NIE', histamine: 'HIS',
+}
+
 const CAT_LABELS: Record<string, string> = {
   groente: 'Groente', fruit: 'Fruit', granen: 'Granen & brood',
   peulvruchten: 'Peulvruchten', 'noten-zaden': 'Noten & zaden',
@@ -82,6 +87,31 @@ function ScorePill({ score }: { score: number | null }) {
       }} />
       {label}
     </span>
+  )
+}
+
+// ── CondDots — stoplicht per aandoening, voor alternatieven ────────────────
+// Maakt expliciet welke aandoening welke score heeft (i.p.v. één gecombineerde
+// pill waarvan onduidelijk is voor welke aandoening die geldt).
+function CondDots({ item, conditions }: { item: ReturnType<typeof getItemById>; conditions: Condition[] }) {
+  if (!item) return null
+  return (
+    <div style={{ display: 'flex', gap: 9, flexShrink: 0 }}>
+      {conditions.map((c) => {
+        const status = scoreToStatus(item.scores[c]?.score ?? null)
+        return (
+          <div key={c} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+            <span style={{
+              width: 11, height: 11, borderRadius: 3, flexShrink: 0,
+              background: status !== 'null' ? `var(--${status})` : 'var(--rule)',
+            }} />
+            <span className="mono" style={{ fontSize: 8, letterSpacing: 0.3, color: 'var(--muted)' }}>
+              {COND_ABBR[c]}
+            </span>
+          </div>
+        )
+      })}
+    </div>
   )
 }
 
@@ -304,6 +334,13 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                 ) : (
                   <div style={{ fontSize: 13, color: 'var(--muted)' }}>Geen data beschikbaar</div>
                 )}
+                {/* Vocht-waarschuwing (CLAUDE.md §2.3) — apart van de per-item score:
+                    voldoende vocht is bij nierstenen even bepalend als oxalaat beperken. */}
+                {c === 'nierstenen' && (
+                  <div style={{ fontSize: 12, color: 'var(--muted)', fontStyle: 'italic', lineHeight: 1.5, marginTop: s ? 8 : 6 }}>
+                    ↳ Drink minstens 2,5 liter vocht per dag — bij nierstenen even belangrijk als het beperken van oxalaat.
+                  </div>
+                )}
               </div>
             </div>
           )
@@ -330,7 +367,7 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
       {showAlternatives && alternatives.length > 0 && (
         <div style={{ marginTop: 20, paddingTop: 16, borderTop: '1px solid var(--rule)' }}>
           <div className="eyebrow" style={{ marginBottom: 10 }}>
-            Betere alternatieven · veilig voor jouw profiel
+            Betere alternatieven · gunstiger voor jouw profiel
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             {alternatives.map((alt) => {
@@ -352,7 +389,7 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
                     <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--ink)' }}>{altMain}</div>
                     {altSub && <div style={{ fontSize: 11, color: 'var(--muted)' }}>{altSub}</div>}
                   </div>
-                  <ScorePill score={getCombinedScore(alt, conditions).score} />
+                  <CondDots item={alt} conditions={conditions} />
                 </button>
               )
             })}
@@ -386,7 +423,7 @@ export function AlternativesPanel({ id, conditions, onNavigate }: Omit<Props, 's
         <>
           <div className="eyebrow" style={{ marginBottom: 6 }}>Betere alternatieven</div>
           <p style={{ fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.5, margin: '6px 0 14px' }}>
-            Drie veilige opties die qua gebruik dichtbij {nameFirst} liggen.
+            Drie gunstigere opties die qua gebruik dichtbij {nameFirst} liggen.
           </p>
           <div>
             {alternatives.map((alt) => {
@@ -409,7 +446,7 @@ export function AlternativesPanel({ id, conditions, onNavigate }: Omit<Props, 's
                     <div className="serif" style={{ fontSize: 15.5, fontWeight: 500, color: 'var(--ink)' }}>{altMain}</div>
                     {altSub && <div style={{ fontSize: 11.5, color: 'var(--muted)', marginTop: 2 }}>{altSub}</div>}
                   </div>
-                  <ScorePill score={getCombinedScore(alt, conditions).score} />
+                  <CondDots item={alt} conditions={conditions} />
                 </button>
               )
             })}

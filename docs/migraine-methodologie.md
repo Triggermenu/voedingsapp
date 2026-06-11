@@ -11,7 +11,7 @@
 
 Voedingsgids (Pulse) is een Nederlandstalige, informatieve beslishulp — uitdrukkelijk **geen medisch hulpmiddel** — die voedingsmiddelen scoort op vier aandoeningen. Dit document beschrijft de methodologie voor de **migraine-as**. Elk voedingsmiddel krijgt een ordinale score van 0 tot 3, met een onafhankelijke evidence-grade (A/B/C) en, vanaf score 2, een verplichte classificatie van het triggermechanisme (`triggerType`).
 
-De methodologie is bewust terughoudend, passend bij de zwakke migraine-voedingsliteratuur. De hoogste score is gereserveerd voor een restrictieve whitelist (in de praktijk alleen bier en gecureerd vlees boven de nitrietdrempel — acht van de 669 items). Klassieke "triggers" als MSG, gerijpte kaas, rode wijn en chocolade worden bewust niet op score 3 gezet maar op 2, op grond van geblindeerde evidence boven observationele trigger-lijsten. Triggers worden gegroepeerd per mechanistisch pathway-cluster; clusters zonder sterk bewijs kennen een verlaagd score-plafond. Methodologische keuzes zijn vastgelegd als toetsbare paradigma-precedenten.
+De methodologie is bewust terughoudend, passend bij de zwakke migraine-voedingsliteratuur. De hoogste score is gereserveerd voor een restrictieve whitelist (in de praktijk alleen bier en gecureerd vlees boven de nitrietdrempel — acht van de 668 items). Klassieke "triggers" als MSG, gerijpte kaas, rode wijn en chocolade worden bewust niet op score 3 gezet maar op 2, op grond van geblindeerde evidence boven observationele trigger-lijsten. Triggers worden gegroepeerd per mechanistisch pathway-cluster; clusters zonder sterk bewijs kennen een verlaagd score-plafond. Methodologische keuzes zijn vastgelegd als toetsbare paradigma-precedenten.
 
 De doc is geschreven voor medisch-wetenschappelijke en regulatoire lezers die willen beoordelen of de scoring methodologisch verdedigbaar is.
 
@@ -163,12 +163,12 @@ De algemene scoring-principes uit sectie 2 gelden voor alle vier aandoeningen. D
 
 ### 3.1 Het score-3-principe: een restrictieve whitelist
 
-Score 3 is op de migraine-as bewust zeldzaam: **acht** items dragen een migraine-score 3 — circa 1% van alle gescoorde items. De score-verdeling (momentopname 2026-06-04):
+Score 3 is op de migraine-as bewust zeldzaam: **acht** items dragen een migraine-score 3 — circa 1% van alle gescoorde items. De score-verdeling (momentopname 2026-06-11):
 
 | Score | Aantal items |
 |---|---|
 | 0 | 452 |
-| 1 | 116 |
+| 1 | 115 |
 | 2 | 93 |
 | 3 | 8 |
 
