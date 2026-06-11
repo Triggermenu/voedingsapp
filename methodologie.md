@@ -81,6 +81,8 @@ Voor dierlijke bronnen geldt géén neerwaartse correctie — Choi laat juist ee
 **Drempels — mg oxalaat per 100 g / 100 ml:** < 10 → 0, 10–25 → 1, > 25–50 → 2, > 50 → 3.
 **Modifier:** natrium > 600 mg per portie → +1 (max 3).
 
+**Oxalaat is een modifier binnen een calcium- en vocht-eerste aanpak.** De sterkste hefbomen bij calciumoxalaatstenen zijn een *normale* calciuminname en ruime vochtinname (≥ 2,5 liter per dag), niet oxalaatrestrictie. Dit volgt de moderne consensus (AUA-guideline; Diëtisten Nierziekten): calcium **niet** beperken, want zuivel bij de maaltijd bindt oxalaat in de darm en werkt juist beschermend. Onze per-item-scores bewaken het oxalaatgehalte, maar die calcium- en vocht-boodschap is leidend — operationeel zichtbaar als de "calciumrijk = groen"-uitzondering (hieronder) en de vocht-hint op de nierstenen-weergave in de app.
+
 *Per-100g (niet per-portie): consistent met de jicht-as en reproduceerbaar/auditeerbaar — een per-portie-drempel zou een nergens-opgeslagen portiegrootte vereisen.*
 
 **Twee uitzonderingen op de per-100g-default (consumptierealiteit):**
@@ -155,7 +157,7 @@ Onze scores leunen op primaire, internationale en kwantitatieve bronnen (USDA, E
 - [Voedingscentrum — Eten bij jicht](https://www.voedingscentrum.nl/nl/service/vraag-en-antwoord/aandoeningen/dieet-gezond-eten-bij-jicht-jichtaanval.aspx)
 
 **Nierstenen**
-- [Diëtisten Nierziekten (DNN) — oxaalzuurbeperking & hyperoxalurie](https://www.dietistennierziekten.nl/) — gespecialiseerde diëtisten-richtlijn; onderschrijft de oxalaatbeperking én het belang van ≥ 2,5 liter vocht per dag
+- [Diëtisten Nierziekten (DNN) — dieetrichtlijn nierstenen](https://www.dietistennierziekten.nl/) — gespecialiseerde diëtisten-richtlijn. Sluit aan op onze aanpak: **calcium niet beperken** (zuivel bij de maaltijd bindt oxalaat en is het meest beschermend) en ruim vocht (≥ 2,5 liter/dag). Oxalaatbeperking is één factor, niet het hoofdadvies.
 - [Voedingscentrum](https://www.voedingscentrum.nl/) — algemene voedingsadviezen
 
 **Algemeen**
