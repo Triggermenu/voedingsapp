@@ -145,4 +145,22 @@ Elke afwijking van een "klassieke" aanname is gedocumenteerd met datum, bron en 
 
 ---
 
-*Laatst bijgewerkt: 2026-06-04. Bronnen-URL's en exacte waarden per voedingsmiddel zijn in de app zichtbaar onder "Bronnen" en per item.*
+## 8. Nederlandse referenties
+
+Onze scores leunen op primaire, internationale en kwantitatieve bronnen (USDA, EULAR/ACR, Harvard Oxalate Table, SIGHI — zie per aandoening hierboven). Voor Nederlandstalige patiënten, diëtisten en artsen verwijzen we daarnaast naar de volgende **gezaghebbende NL-bronnen**. Deze dienen ter context en toegankelijkheid, niet als basis voor de individuele scores.
+
+**Jicht**
+- [Richtlijnendatabase — Diagnostiek en behandeling van jicht (leefstijl & comedicatie)](https://richtlijnendatabase.nl/richtlijn/diagnostiek_en_behandeling_van_jicht_in_de_2e_lijn/leefstijl_en_comedicatie_bij_jicht_bij_rl_jicht.html) — de Nederlandse klinische richtlijn
+- [ReumaNederland — Jicht en voeding](https://reumanederland.nl/jicht-en-voeding) — patiëntenvereniging
+- [Voedingscentrum — Eten bij jicht](https://www.voedingscentrum.nl/nl/service/vraag-en-antwoord/aandoeningen/dieet-gezond-eten-bij-jicht-jichtaanval.aspx)
+
+**Nierstenen**
+- [Diëtisten Nierziekten (DNN) — oxaalzuurbeperking & hyperoxalurie](https://www.dietistennierziekten.nl/) — gespecialiseerde diëtisten-richtlijn; onderschrijft de oxalaatbeperking én het belang van ≥ 2,5 liter vocht per dag
+- [Voedingscentrum](https://www.voedingscentrum.nl/) — algemene voedingsadviezen
+
+**Algemeen**
+- [Voedingscentrum](https://www.voedingscentrum.nl/) — officiële Nederlandse voedingsautoriteit
+
+---
+
+*Laatst bijgewerkt: 2026-06-11. Bronnen-URL's en exacte waarden per voedingsmiddel zijn in de app zichtbaar onder "Bronnen" en per item.*
