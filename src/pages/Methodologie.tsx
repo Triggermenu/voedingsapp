@@ -169,6 +169,29 @@ export function Methodologie() {
             </Link>
           </div>
         </Section>
+
+        <Section title="Nederlandse referenties">
+          De scores leunen op de internationale ruggengraat-bronnen hierboven. Voor Nederlandstalige patiënten,
+          diëtisten en artsen verwijzen we daarnaast naar deze gezaghebbende NL-bronnen — ter context en
+          toegankelijkheid, niet als basis voor de individuele scores.
+          <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink)', marginBottom: 4 }}>Jicht</div>
+              <ul style={{ margin: 0, paddingLeft: 18 }}>
+                <li><Src href="https://richtlijnendatabase.nl/richtlijn/diagnostiek_en_behandeling_van_jicht_in_de_2e_lijn/leefstijl_en_comedicatie_bij_jicht_bij_rl_jicht.html">Richtlijnendatabase — jicht (leefstijl &amp; comedicatie)</Src> — de Nederlandse klinische richtlijn</li>
+                <li><Src href="https://reumanederland.nl/jicht-en-voeding">ReumaNederland — Jicht en voeding</Src> — patiëntenvereniging</li>
+                <li><Src href="https://www.voedingscentrum.nl/nl/service/vraag-en-antwoord/aandoeningen/dieet-gezond-eten-bij-jicht-jichtaanval.aspx">Voedingscentrum — Eten bij jicht</Src></li>
+              </ul>
+            </div>
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink)', marginBottom: 4 }}>Nierstenen</div>
+              <ul style={{ margin: 0, paddingLeft: 18 }}>
+                <li><Src href="https://www.dietistennierziekten.nl/">Diëtisten Nierziekten (DNN)</Src> — gespecialiseerde diëtisten-richtlijn; onderschrijft de oxalaatbeperking én het belang van &ge; 2,5 liter vocht per dag</li>
+                <li><Src href="https://www.voedingscentrum.nl/">Voedingscentrum</Src> — algemene voedingsadviezen</li>
+              </ul>
+            </div>
+          </div>
+        </Section>
       </div>
       </div>
 
