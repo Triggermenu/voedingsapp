@@ -96,7 +96,10 @@ export function Methodologie() {
           <Src href="https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx">Harvard Oxalate Table 2023</Src>.
           Kern-uitzondering: <strong>calciumrijke producten zijn groen</strong> — een normale calciuminname{' '}
           <em>verlaagt</em> het steenrisico (<Src href="https://pubmed.ncbi.nlm.nih.gov/11742412/">Borghi RCT 2002</Src>);
-          een laag-calciumdieet wordt afgeraden. Lage-oxalaatgroenten (bv. boerenkool) worden niet als spinazie behandeld.
+          een laag-calciumdieet wordt afgeraden. Sterker nog: bij calciumoxalaatstenen zijn een normale calciuminname
+          én ruim vocht (&ge; 2,5 liter/dag) de belangrijkste hefbomen — <strong>oxalaatbeperking is een aanvulling,
+          niet het hoofdadvies</strong> (conform AUA-guideline en Diëtisten Nierziekten; zuivel bij de maaltijd bindt
+          oxalaat en werkt juist beschermend). Lage-oxalaatgroenten (bv. boerenkool) worden niet als spinazie behandeld.
         </Section>
 
         <Section title="4. Migraine — streng begrensd rood">
@@ -186,7 +189,7 @@ export function Methodologie() {
             <div>
               <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--ink)', marginBottom: 4 }}>Nierstenen</div>
               <ul style={{ margin: 0, paddingLeft: 18 }}>
-                <li><Src href="https://www.dietistennierziekten.nl/">Diëtisten Nierziekten (DNN)</Src> — gespecialiseerde diëtisten-richtlijn; onderschrijft de oxalaatbeperking én het belang van &ge; 2,5 liter vocht per dag</li>
+                <li><Src href="https://www.dietistennierziekten.nl/">Diëtisten Nierziekten (DNN)</Src> — dieetrichtlijn nierstenen. Sluit aan op onze aanpak: calcium niet beperken (zuivel bij de maaltijd bindt oxalaat en is het meest beschermend), ruim vocht (&ge; 2,5 liter/dag); oxalaatbeperking is één factor, niet het hoofdadvies.</li>
                 <li><Src href="https://www.voedingscentrum.nl/">Voedingscentrum</Src> — algemene voedingsadviezen</li>
               </ul>
             </div>
