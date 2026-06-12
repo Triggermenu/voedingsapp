@@ -420,93 +420,6 @@
       "cluster": 39
     },
     {
-      "id": "nl-energiedrank",
-      "name": {
-        "nl": "Energiedrank",
-        "en": "Energy drink"
-      },
-      "category": "dranken-non-alcohol",
-      "subcategory": "frisdrank",
-      "scores": {
-        "jicht": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
-              "title": "USDA Purine Database Release 2.0 (2025)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "migraine": {
-          "score": 2,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://ichd-3.org/8-headache-attributed-to-a-substance-or-its-withdrawal/8-3-headache-attributed-to-substance-withdrawal/8-3-1-caffeine-withdrawal-headache/",
-              "title": "ICHD-3 — Caffeine-withdrawal headache (IHS 2018)",
-              "type": "guideline",
-              "accessedAt": "2026-05-20"
-            },
-            {
-              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
-              "title": "Hindiyeh et al. 2020 — Diet and Headache",
-              "type": "review",
-              "accessedAt": "2026-05-20"
-            }
-          ],
-          "note": {
-            "nl": "Hoog cafeïnegehalte + taurine. Consistent met nl-energydrink (score 2). Onttrekkings-trigger bij regelmatig gebruik."
-          },
-          "triggerType": "onttrekkings-trigger",
-          "confidence": "middel",
-          "primaryModulators": [
-            "cafeine",
-            "taurine"
-          ]
-        },
-        "nierstenen": {
-          "score": 0,
-          "evidence": "A",
-          "sources": [
-            {
-              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
-              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
-              "type": "database",
-              "accessedAt": "2026-05-11"
-            }
-          ]
-        },
-        "histamine": {
-          "score": 2,
-          "evidence": "B",
-          "sources": [
-            {
-              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
-              "title": "SIGHI Food Compatibility List 2023",
-              "type": "consensus",
-              "accessedAt": "2026-05-11"
-            }
-          ],
-          "note": {
-            "nl": "Hoge cafeïne remt DAO-enzym."
-          }
-        }
-      },
-      "histamineFlags": {
-        "liberator": false,
-        "daoBlocker": true
-      },
-      "meta": {
-        "addedAt": "2026-05-11",
-        "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
-      },
-      "cluster": 1
-    },
-    {
       "id": "nl-cola",
       "name": {
         "nl": "Cola (suikerhoudend)",
@@ -3046,16 +2959,25 @@
       "subcategory": "overig-drank",
       "scores": {
         "jicht": {
-          "score": 0,
-          "evidence": "A",
+          "score": 3,
+          "evidence": "B",
           "sources": [
             {
               "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Suikergezoete frisdrank (~8 g suiker/100ml): levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek. Prospectief cohort vond verhoogd jichtrisico bij fructose-gezoete dranken (Choi 2008, BMJ). Suikervrije tonic valt hier niet onder."
+          }
         },
         "migraine": {
           "score": 1,
@@ -3111,7 +3033,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 1
     },

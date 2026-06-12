@@ -5,4 +5,4 @@
 //
 // Houd deze waarde gelijk aan CLAUDE.md. De CI-test tests/unit/version-sync.test.ts
 // faalt als ze afwijken, zodat de footer niet stilletjes kan verouderen.
-export const METHODOLOGY_VERSION = '2.8'
+export const METHODOLOGY_VERSION = '2.9'
