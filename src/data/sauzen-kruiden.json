@@ -236,6 +236,7 @@
           }
         }
       },
+      "highAddedSugar": true,
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
@@ -1493,6 +1494,7 @@
           }
         }
       },
+      "highAddedSugar": true,
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
@@ -1869,6 +1871,7 @@
           }
         }
       },
+      "highAddedSugar": true,
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
@@ -3627,6 +3630,7 @@
           ]
         }
       },
+      "highAddedSugar": true,
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
