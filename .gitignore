@@ -11,3 +11,9 @@ dist
 /playwright/.cache/
 coverage
 repomix-output.md
+
+# Door tooling gegenereerd — hoort niet in de repo
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+.playwright-mcp/
+.claire/
