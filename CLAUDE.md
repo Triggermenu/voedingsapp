@@ -174,6 +174,21 @@ SIGHI vereist schriftelijke toestemming voor commercieel gebruik. Mail door Pete
 
 ---
 
+## 2.5 Informatieve vlaggen (niet-scorend)
+
+Naast de vier aandoening-scores kan een item **niet-scorende vlaggen** dragen die context geven maar géén stoplicht-kleur beïnvloeden. Ze lossen een communicatie-probleem op, geen scoring-probleem: een groen stoplicht betekent *"geen trigger voor déze aandoening"*, niet *"algemeen gezond"*.
+
+### `highAddedSugar: boolean`
+
+Markeert producten met een hoog gehalte toegevoegde/vrije suiker. **Raakt geen enkele score** — een suikerrijk koekje blijft jicht-groen (≈0 purine) en krijgt alleen deze informatieve hint in de UI naast de stoplichten.
+
+- **Drempel:** FSA/EU front-of-pack "hoog suiker"-grens — **>22,5 g suiker per 100 g**. Een erkende, citeerbare cutoff (geen interne keuze).
+- **Waarom een vlag i.p.v. een score:** de evidence dat (snelle) suikers urinezuur/ontsteking beïnvloeden is reëel maar zwakker en minder specifiek dan voor dranken (vaste fructose mét vezel geeft géén jicht-uitkomstassociatie; controlled-feeding-data voor snoep/desserts is "moderate certainty" op surrogaatmarker urinezuur; migraine-suiker-evidence is C). Dat draagt een *informatief signaal*, geen oranje/rode trigger-score. De vier-assen-logica blijft zuiver: scores = aandoening-specifieke triggers.
+- **Reikwijdte:** uitgerold per categorie, te beginnen met `zoetwaren` (37 items gevlagd; uitgezonderd: hartige snacks zoals chips, laag-suiker gebak zoals croissant, en zoetstoffen zoals aspartaam/sucralose). Overige categorieën (suikergezoete dranken — al jicht-3 gescoord —, jam, gedroogd fruit, gezoete zuivel, zoete sauzen) volgen als aparte batch.
+- **Bron-grondslag:** Choi & Curhan 2008 (BMJ) + controlled-feeding meta-analyse fructosebronnen (fasting urinezuur) + FSA front-of-pack-criterium. SIGHI/USDA niet van toepassing (geen trigger-claim).
+
+---
+
 ## 3. Database schema
 
 Elk item is een TypeScript object dat aan dit Zod-schema voldoet. **CI faalt bij elke afwijking.**
@@ -196,6 +211,7 @@ type FoodItem = {
     liberator: boolean;
     daoBlocker: boolean;
   };
+  highAddedSugar?: boolean;             // informatieve vlag, niet-scorend — zie §2.5
   meta: {
     addedAt: string;                    // ISO date
     schemaVersion: string;              // semver
@@ -502,9 +518,10 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 15. Versiebeheer van dit document
 
-- **Schema version:** v2.9
+- **Schema version:** v3.0
 - **Laatste wijziging:** 2026-06-12
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
+  - v3.0 (2026-06-12): **Eerste niet-scorende informatieve vlag: `highAddedSugar` (§2.5) — n.a.v. Jacquelines zoetwaren/suiker-feedback.** Jacqueline merkte op dat veel zoetwaren groen staan terwijl suikerrijke voeding "sowieso niet groen" zou moeten zijn. Broncheck bevestigde: dit is een *scope*-kwestie, geen scoring-bug — snoep heeft ≈0 purine/oxalaat (terecht groen op de vier aandoening-assen), en de suiker→urinezuur/ontsteking-evidence is voor vaste suikers zwakker/minder specifiek dan voor dranken (vaste fructose mét vezel geeft géén jicht-uitkomstassociatie; snoep/desserts "moderate certainty" op surrogaatmarker; migraine-suiker = evidence-C). Oplossing (Peters keuze "B"): een **informatieve, niet-scorende vlag** die géén score raakt maar in de UI duidelijk maakt dat groen = "geen trigger voor déze aandoening", niet "gezond". **Nieuw:** §2.5 (informatieve vlaggen) + `highAddedSugar?: boolean` in `src/schemas/item.ts` (FoodItem-niveau, naast `histamineFlags`) + UI-hint "Suikerrijk · geen gezondheidsoordeel" in `ItemDetailPanel.tsx`. **Drempel:** FSA/EU front-of-pack >22,5 g suiker/100 g (citeerbare cutoff). **Data:** 37 van 41 `zoetwaren` gevlagd (uitgezonderd: chips, croissant, aspartaam-tafelzoetje, sucralose). Overige categorieën volgen als aparte batch. Geen score-/drempelwijziging aan de vier assen. Akkoord: Peter Wolterman (chat 2026-06-12, keuze "B" op zoetwaren-suiker-feedback).
   - v2.9 (2026-06-12): **Retro-sweep fructose-dranken (onderzoek-volgt, §6) — staart van de v2.8-pass.** Het onderzoek-volgt-principe geldt niet alleen vooruit; ook items die vóór v2.8 bestonden vallen eronder. Na de v2.8-pass (10 duidelijke sappen/frisdranken → jicht 3) restten een paar suikergezoete dranken op een lage jicht-score. **Uitgelijnd:** tonic water (suikergezoet, ~8 g suiker/100ml — valt letterlijk onder §2.1 "frisdrank") jicht 0→3, Choi 2008 (BMJ) + diëtiste-note ("suikervrije tonic valt hier niet onder"). **Dedup (door Peter beslist):** twee energiedrank-items (`nl-energiedrank` jicht 0 en `nl-energydrink`/Red Bull jicht 3, near-duplicaten die naar elkaar verwezen) → `nl-energiedrank` verwijderd, alleen Red Bull-entry behouden (667 items). Bewust láág gelaten (geen fructose-bolus): sportdrank, vlierbloesemsiroop/cordial, rozenbottelsap, groene smoothie (heel fruit+vezel), wortel-/bietensap (groentesap), cola light/citroenwater (suikervrij). Doc-sync bijgewerkt (migraine-itemtotaal 668→667, score-2-telling 93→92). Geen nieuwe regel — §2.1-override + §6-principe. Akkoord: Peter Wolterman (chat 2026-06-12, "akkoord" op retro-sweep + dedup-keuze "samenvoegen").
   - v2.8 (2026-06-12): **Onderzoek-volgt-principe (§6) + eerste toepassing: fructose-dranken ↔ jicht.** Nieuwe §6-clausule: waar data afwijkt van geciteerde onderzoeken én een bestaande §2.x-regel, lijnt Cowork uit op het onderzoek zonder per-item-escalatie; tie-break = §13-paradigma; escalatie alleen als §13 niet beslist; borging via PR + changelog. Dit is Peters staand akkoord voor *uitlijn*-passes (niet voor nieuwe regels/drempels). **Eerste toepassing:** de §2.1-fructose-override ("fructose-rijke dranken = 3") was niet in de data doorgevoerd — 10 dranken stonden op jicht 0–2. Uitgelijnd op **jicht 3**: cola (suikerhoudend) 2→3, limonade 1→3, energydrank 1→3, appelsap 1→3, druivensap 1→3, sinaasappelsap (vers) 0→3, grapefruitsap 0→3, mandarijnensap 0→3, aardbeiensap 0→3, cranberrysap (ongezoet) 0→3. Choi 2008 (BMJ, n=46.393) als basisbron + diëtiste-uitleg in elke note (vloeibare fructose-bolus zonder vezel; heel fruit/groentesap/dieetfrisdrank blijven terecht laag). §12 + §13 uitgebreid. Geen nieuwe regel — §2.1 stond al op "=3". Akkoord: Peter Wolterman (chat 2026-06-12, "ja" na diëtiste-uitlegbaarheid + onderzoek-volgen).
   - v2.7 (2026-06-05): **Nierstenen-as: drempel uitgelijnd op per-100g (was per-portie) + CI-geborgd.** Sluit het laatste inhoudelijke gat over de 4 assen. Verificatie toonde dat de as de facto al per-100g was gescoord (74/91 items met waarde matchten exact `band(per-100g)`), terwijl §2.3 "per standaardportie" zei. **§2.3** herschreven naar per-100g/100ml + twee gedocumenteerde uitzonderingen: noten-zaden per 30g-portie en kruiden/specerijen plafond 1 (garneerhoeveelheid; niet voor sauzen). **14 scores uitgelijnd op de per-100g-band** (mechanisch, regel-afgeleid — geen eigen oordeel): sinaasappel 0→1, tamarinde 2→1, havermout/zilvervliesrijst/boekweit/havervlokken 1→0, prei 1→2, zoete aardappel 1→2, boerenkool 0→1, andijvie 2→3, waterkers 2→1, paksoi 1→0, zwarte bonen 1→2, peterselie 2→1 (plafond), pijnboompitten 2→1 (note naar per-30g, consistent met overige noten). **Nieuwe CI-gate 15** (a: per-100g-note↔§2.3-band voor enkelvoudige vaste categorieën; b: kruid/specerij-plafond 1) — beide bewezen falend op overtreding. §12 + §13 uitgebreid. **Niet door mij beslist (aan Peter):** havermelk-dup (ongezoet=1 vs plantaardig=0, geen per-100g-waarde → echt scoreconflict); rozijnen-note citeert verse-druifwaarde (raisin-waarde onzeker). Akkoord: Peter Wolterman (chat 2026-06-05, keuze "A").

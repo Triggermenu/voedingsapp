@@ -71,6 +71,11 @@ export const FoodItemSchema = z.object({
     liberator: z.boolean(),
     daoBlocker: z.boolean(),
   }).optional(),
+  // Informatieve, NIET-scorende vlag (CLAUDE.md §2.5): markeert producten met een hoog
+  // gehalte toegevoegde/vrije suiker (FSA front-of-pack-grens >22,5 g suiker/100 g). Raakt
+  // géén van de vier aandoening-scores; dient als UI-hint dat een groen stoplicht "geen
+  // trigger voor déze aandoening" betekent, niet "algemeen gezond".
+  highAddedSugar: z.boolean().optional(),
   meta: z.object({
     addedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     schemaVersion: z.string().regex(/^\d+\.\d+\.\d+$/),

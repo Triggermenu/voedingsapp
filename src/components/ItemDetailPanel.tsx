@@ -363,6 +363,18 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
         </div>
       )}
 
+      {/* Suiker-hint: informatief, niet-scorend, niet aandoeningsspecifiek (CLAUDE.md §2.5) */}
+      {item.highAddedSugar && (
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 8 }}>
+          <span
+            title="Hoog gehalte toegevoegde suiker (>22,5 g/100 g). De stoplichten beoordelen alleen triggers voor jouw aandoening(en), niet algemene gezondheid — een groen licht betekent dus niet 'onbeperkt'."
+            style={{ fontSize: 12, padding: '4px 10px', borderRadius: 999, background: 'var(--warn-bg)', color: 'var(--warn-ink)' }}
+          >
+            Suikerrijk · geen gezondheidsoordeel
+          </span>
+        </div>
+      )}
+
       {/* Alternatives (mobile inline) */}
       {showAlternatives && alternatives.length > 0 && (
         <div style={{ marginTop: 20, paddingTop: 16, borderTop: '1px solid var(--rule)' }}>
