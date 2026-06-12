@@ -262,16 +262,25 @@
       "subcategory": "vruchtensap",
       "scores": {
         "jicht": {
-          "score": 0,
-          "evidence": "A",
+          "score": 3,
+          "evidence": "B",
           "sources": [
             {
               "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Ook vers/ongezoet: sap levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek; de hele sinaasappel (groen) doet dat veel minder. Choi 2008 (BMJ) noemt sinaasappelsap expliciet als verhoogd jichtrisico."
+          }
         },
         "migraine": {
           "score": 0,
@@ -326,7 +335,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 39
     },
@@ -340,7 +349,7 @@
       "subcategory": "vruchtensap",
       "scores": {
         "jicht": {
-          "score": 1,
+          "score": 3,
           "evidence": "B",
           "sources": [
             {
@@ -348,10 +357,16 @@
               "title": "EULAR 2022 Gout Guidelines",
               "type": "guideline",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
           ],
           "note": {
-            "nl": "Fructose-houdend sap kan urinezuur verhogen bij veel gebruik."
+            "nl": "Sap levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek; de hele appel (groen) doet dat veel minder. Choi 2008 (BMJ) noemt appelsap expliciet als verhoogd jichtrisico."
           }
         },
         "migraine": {
@@ -400,7 +415,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 39
     },
@@ -501,7 +516,7 @@
       "subcategory": "frisdrank",
       "scores": {
         "jicht": {
-          "score": 2,
+          "score": 3,
           "evidence": "B",
           "sources": [
             {
@@ -509,10 +524,16 @@
               "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)",
               "type": "review",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
           ],
           "note": {
-            "nl": "Fructose-gezoete frisdrank verhoogt urinezuur (Choi 2010 cohort)."
+            "nl": "Fructose-gezoete frisdrank verhoogt urinezuur — fructose komt als snelle vloeibare bolus binnen, zonder vezel die de opname remt. Prospectief cohort: hoogste inname ~1,8× jichtrisico (Choi 2008, BMJ; Choi 2010)."
           }
         },
         "migraine": {
@@ -569,7 +590,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 1
     },
@@ -1099,16 +1120,25 @@
       "subcategory": "vruchtensap",
       "scores": {
         "jicht": {
-          "score": 0,
-          "evidence": "A",
+          "score": 3,
+          "evidence": "B",
           "sources": [
             {
               "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Ook ongezoet: vruchtensap levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek; de hele bes doet dat veel minder. Prospectief cohort: vruchtensap verhoogt jichtrisico (Choi 2008, BMJ)."
+          }
         },
         "migraine": {
           "score": 0,
@@ -1159,7 +1189,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 39
     },
@@ -1173,7 +1203,7 @@
       "subcategory": "frisdrank",
       "scores": {
         "jicht": {
-          "score": 1,
+          "score": 3,
           "evidence": "B",
           "sources": [
             {
@@ -1181,10 +1211,16 @@
               "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)",
               "type": "review",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
           ],
           "note": {
-            "nl": "Fructosehoudende dranken verhogen urinezuur."
+            "nl": "Suikerhoudende limonade levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek. Prospectief cohort vond verhoogd jichtrisico bij fructose-gezoete dranken (Choi 2008, BMJ)."
           }
         },
         "migraine": {
@@ -1236,7 +1272,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 40
     },
@@ -1321,7 +1357,7 @@
       "subcategory": "frisdrank",
       "scores": {
         "jicht": {
-          "score": 1,
+          "score": 3,
           "evidence": "B",
           "sources": [
             {
@@ -1329,10 +1365,16 @@
               "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)",
               "type": "review",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
           ],
           "note": {
-            "nl": "Fructose en cafeïne; indirecte jichtassociatie."
+            "nl": "Suikerhoudende energydrank levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek (cafeïne speelt los daarvan). Prospectief cohort: verhoogd jichtrisico bij fructose-gezoete dranken (Choi 2008, BMJ)."
           }
         },
         "migraine": {
@@ -1390,7 +1432,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 1,
       "histamineFlags": {
@@ -1408,7 +1450,7 @@
       "subcategory": "vruchtensap",
       "scores": {
         "jicht": {
-          "score": 1,
+          "score": 3,
           "evidence": "B",
           "sources": [
             {
@@ -1416,10 +1458,16 @@
               "title": "Choi et al. 2010 — Fructose-rich beverages and gout risk (cohort)",
               "type": "review",
               "accessedAt": "2026-05-11"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
           ],
           "note": {
-            "nl": "Fructoserijke vruchtendrank."
+            "nl": "Sap levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek; de hele druif doet dat veel minder. Prospectief cohort: vruchtensap verhoogt jichtrisico (Choi 2008, BMJ)."
           }
         },
         "migraine": {
@@ -1479,7 +1527,7 @@
       "meta": {
         "addedAt": "2026-05-11",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 1
     },
@@ -1709,16 +1757,25 @@
       "subcategory": "vruchtensap",
       "scores": {
         "jicht": {
-          "score": 0,
-          "evidence": "A",
+          "score": 3,
+          "evidence": "B",
           "sources": [
             {
               "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Ook ongezoet: sap levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek; de hele grapefruit doet dat veel minder. Prospectief cohort: vruchtensap verhoogt jichtrisico (Choi 2008, BMJ)."
+          }
         },
         "migraine": {
           "score": 1,
@@ -1787,7 +1844,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 1,
       "histamineFlags": {
@@ -1876,16 +1933,25 @@
       "subcategory": "vruchtensap",
       "scores": {
         "jicht": {
-          "score": 0,
-          "evidence": "A",
+          "score": 3,
+          "evidence": "B",
           "sources": [
             {
               "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Ook ongezoet: sap levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek; de hele mandarijn doet dat veel minder. Prospectief cohort: vruchtensap verhoogt jichtrisico (Choi 2008, BMJ)."
+          }
         },
         "migraine": {
           "score": 0,
@@ -1936,7 +2002,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 39,
       "histamineFlags": {
@@ -2558,16 +2624,25 @@
       "subcategory": "sappen",
       "scores": {
         "jicht": {
-          "score": 0,
-          "evidence": "A",
+          "score": 3,
+          "evidence": "B",
           "sources": [
             {
               "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
               "title": "USDA Purine Database Release 2.0 (2025)",
               "type": "database",
               "accessedAt": "2026-05-12"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2234536/",
+              "title": "Choi & Curhan 2008 — Soft drinks, fructose, and risk of gout (BMJ, prospectief cohort n=46.393)",
+              "type": "review",
+              "accessedAt": "2026-06-12"
             }
-          ]
+          ],
+          "note": {
+            "nl": "Vruchtensap/-drank levert fructose als snelle vloeibare bolus zonder vezel → urinezuurpiek; het hele fruit doet dat veel minder. Prospectief cohort: vruchtensap verhoogt jichtrisico (Choi 2008, BMJ)."
+          }
         },
         "migraine": {
           "score": 1,
@@ -2626,7 +2701,7 @@
       "meta": {
         "addedAt": "2026-05-12",
         "schemaVersion": "1.0.0",
-        "lastReviewed": "2026-05-20"
+        "lastReviewed": "2026-06-12"
       },
       "cluster": 1,
       "histamineFlags": {

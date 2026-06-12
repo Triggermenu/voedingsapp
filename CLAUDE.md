@@ -305,6 +305,15 @@ Als alle 16 checks groen zijn én PR-author is in `trusted-authors.json` (Cowork
 - Engelstalige én Nederlandstalige bronnen overwegen (internationale schaalbaarheid).
 - Batches van ~25 items per PR (CI-doorvoer + leesbare diff).
 
+### Onderzoek-volgt-principe (v2.8)
+
+Operationele uitzondering op "MAG NIET: bestaande scores wijzigen". Waar de data afwijkt van de **geciteerde onderzoeken** én een **bestaande §2.x-regel**, lijnt Cowork de data uit op het onderzoek — **zonder per-item-escalatie naar Peter**. Dit is regel-toepassing, geen nieuw oordeel.
+
+- **Tie-break bij tegenstrijdig bewijs:** het §13-paradigma (*epidemiologische uitkomstdata > biochemische samenstelling*). Dat is een bestaande regel, geen Cowork-oordeel.
+- **Escaleren naar Peter** alleen wanneer zelfs §13 niet beslist (genuine tegenstrijdige uitkomstdata van gelijke weging).
+- **Borging blijft:** wijziging uitsluitend via PR + vastgelegd in de §15-changelog (audit-trail R-008). Niets stilletjes.
+- Dit principe is Peters staand akkoord; het vervangt de per-pass-akkoordregistratie voor *uitlijn*-passes (niet voor nieuwe regels/drempels — die blijven exclusief Peter via CLAUDE.md-update).
+
 ---
 
 ## 7. Database-groeitarget
@@ -456,6 +465,7 @@ Deze weging is **definitief** tenzij CLAUDE.md wordt aangepast. Cowork mag hier 
 | Peulvruchten ↔ jicht | Hoog purine. Geen verhoogd risico. | **Drempel volgen, geplafonneerd op 2** (laag-purine → 1) | Choi 2004 (NEJM), EULAR 2022 |
 | Gedistilleerd ↔ migraine | §2.2 (oud): rood. Onderwater 2019: wodka mínst provocerend (8,5%) vs rode wijn 77,8% — trigger zit in congeneren, niet ethanol. | **Oranje + note "subgroep-overschat"** | Onderwater 2019 (PMID 31254436), Vives-Mestres 2022 (PMC10099573), wijn-meta-analyse 2025 |
 | Oxalaat-eenheid ↔ nierstenen | §2.3 (oud): "per standaardportie". Data feitelijk per-100g (74/91 match). Per-portie vereist niet-opgeslagen portiegrootte. | **Per-100g/100ml** (uitz.: noten-zaden per 30g; kruiden/specerijen plafond 1) | Consistent met jicht-as §2.1; auditeerbaarheid R-008; v2.7 |
+| Vruchtensap/fructose-drank ↔ jicht | USDA purine ≈ 0 (zou groen impliceren) vs Choi-cohort: verhoogd jichtrisico. | **Rood (score 3)** per §2.1 fructose-override | Choi 2008 (BMJ, n=46.393): fructose-bolus in vloeibare vorm, niet purinegehalte, drijft urinezuur; heel fruit doet dit veel minder; v2.8 |
 
 ---
 
@@ -475,6 +485,7 @@ Verschil met §12 (Tegenstrijdige bronnen): §12 registreert *item-niveau* besli
 | 2026-05-21 | Evidence-C-only clusters — cluster 9 | Score-plafond 1; score 2 alleen bij dosis-uitzonderingen; score 3 verboden. TriggerType `individueel-variabel`. Volledig paradigma in §2.2.2. | Clusters zonder A/B-evidence: mechanistische plausibility + observationeel = max score 1 zonder RCT-ondersteuning. | v1.5 |
 | 2026-06-04 | Gedistilleerd ↔ migraine | Score 2 + `subgroep-overschat`. Wodka (vrijwel pure ethanol) is mínst provocerende drank — de reproduceerbare trigger zit in dranksspecifieke congeneren/biogene aminen, niet in ethanol. Van score-3 whitelist verwijderd (v2.0); bier blijft als enige alcohol score 3. | Beverage-specifieke congeneren-/ALDH2-evidence > generiek ethanol-vasodilatatie-argument; een `subgroep-*` triggerType sluit score 3 uit (toelatingscriterium 3). | v2.0 |
 | 2026-06-05 | Oxalaat-eenheid ↔ nierstenen | Nierstenen-drempel per-100g i.p.v. per-portie. De data was al per-100g; de regeltekst liep achter. Twee consumptierealiteit-uitzonderingen: noten-zaden per 30g, kruiden/specerijen plafond 1. Geborgd met CI-gate 15. | Lijn de regel uit op de feitelijke (reproduceerbare, auditeerbare) scoringsbasis i.p.v. een niet-opgeslagen variabele (portiegrootte) in te voeren; consistentie tussen kwantitatieve assen (jicht/nierstenen beide per-100g). | v2.7 |
+| 2026-06-12 | Onderzoek-volgt-principe + fructose-dranken ↔ jicht | Staand akkoord: data volgt geciteerde onderzoeken + bestaande §2.x-regel zonder per-item-escalatie (§6, tie-break = §13). Eerste toepassing: 10 fructose-dranken uitgelijnd op §2.1-override → jicht 3 (cola, limonade, energydrank, appel-/druiven-/sinaasappel-/grapefruit-/mandarijnen-/aardbeien-/cranberrysap). | Bij conflict data↔onderzoek wint de uitkomstdata + bestaande regel; uitlijnen i.p.v. de keuze terugkaatsen naar de auteur. Grens: alléén uitlijn-passes, nooit nieuwe regels/drempels. | v2.8 |
 
 ---
 
@@ -491,9 +502,10 @@ Zie `RISKS.md` voor volledig overzicht. Bij goedkeuring CLAUDE.md erkend:
 
 ## 15. Versiebeheer van dit document
 
-- **Schema version:** v2.7
-- **Laatste wijziging:** 2026-06-05
+- **Schema version:** v2.8
+- **Laatste wijziging:** 2026-06-12
 - **Wijzigingen:** alleen door Peter, met expliciete akkoordregistratie in commit message.
+  - v2.8 (2026-06-12): **Onderzoek-volgt-principe (§6) + eerste toepassing: fructose-dranken ↔ jicht.** Nieuwe §6-clausule: waar data afwijkt van geciteerde onderzoeken én een bestaande §2.x-regel, lijnt Cowork uit op het onderzoek zonder per-item-escalatie; tie-break = §13-paradigma; escalatie alleen als §13 niet beslist; borging via PR + changelog. Dit is Peters staand akkoord voor *uitlijn*-passes (niet voor nieuwe regels/drempels). **Eerste toepassing:** de §2.1-fructose-override ("fructose-rijke dranken = 3") was niet in de data doorgevoerd — 10 dranken stonden op jicht 0–2. Uitgelijnd op **jicht 3**: cola (suikerhoudend) 2→3, limonade 1→3, energydrank 1→3, appelsap 1→3, druivensap 1→3, sinaasappelsap (vers) 0→3, grapefruitsap 0→3, mandarijnensap 0→3, aardbeiensap 0→3, cranberrysap (ongezoet) 0→3. Choi 2008 (BMJ, n=46.393) als basisbron + diëtiste-uitleg in elke note (vloeibare fructose-bolus zonder vezel; heel fruit/groentesap/dieetfrisdrank blijven terecht laag). §12 + §13 uitgebreid. Geen nieuwe regel — §2.1 stond al op "=3". Akkoord: Peter Wolterman (chat 2026-06-12, "ja" na diëtiste-uitlegbaarheid + onderzoek-volgen).
   - v2.7 (2026-06-05): **Nierstenen-as: drempel uitgelijnd op per-100g (was per-portie) + CI-geborgd.** Sluit het laatste inhoudelijke gat over de 4 assen. Verificatie toonde dat de as de facto al per-100g was gescoord (74/91 items met waarde matchten exact `band(per-100g)`), terwijl §2.3 "per standaardportie" zei. **§2.3** herschreven naar per-100g/100ml + twee gedocumenteerde uitzonderingen: noten-zaden per 30g-portie en kruiden/specerijen plafond 1 (garneerhoeveelheid; niet voor sauzen). **14 scores uitgelijnd op de per-100g-band** (mechanisch, regel-afgeleid — geen eigen oordeel): sinaasappel 0→1, tamarinde 2→1, havermout/zilvervliesrijst/boekweit/havervlokken 1→0, prei 1→2, zoete aardappel 1→2, boerenkool 0→1, andijvie 2→3, waterkers 2→1, paksoi 1→0, zwarte bonen 1→2, peterselie 2→1 (plafond), pijnboompitten 2→1 (note naar per-30g, consistent met overige noten). **Nieuwe CI-gate 15** (a: per-100g-note↔§2.3-band voor enkelvoudige vaste categorieën; b: kruid/specerij-plafond 1) — beide bewezen falend op overtreding. §12 + §13 uitgebreid. **Niet door mij beslist (aan Peter):** havermelk-dup (ongezoet=1 vs plantaardig=0, geen per-100g-waarde → echt scoreconflict); rozijnen-note citeert verse-druifwaarde (raisin-waarde onzeker). Akkoord: Peter Wolterman (chat 2026-06-05, keuze "A").
   - v1.1 (2026-05-15): §9 principes 4+5 — rate limiting via Supabase i.p.v. Vercel KV/Upstash; magic link auth vervangen door IP-limiet. Akkoord: Peter Wolterman (chat 2026-05-15).
   - v1.2 (2026-05-18): §7 database-cap verhoogd van 500 → 700 voor ontbrekende categorieën (eieren, bereid-gerecht, vis-schaaldieren). Fase 4 toegevoegd. Akkoord: Peter Wolterman (chat 2026-05-18).
