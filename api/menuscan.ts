@@ -3,6 +3,12 @@ import Anthropic from '@anthropic-ai/sdk'
 import { createClient } from '@supabase/supabase-js'
 import { z } from 'zod'
 
+// Expliciete functie-time-out. De vision-call (fase 1) + de Sonnet-stream (fase 2)
+// kunnen samen tientallen seconden duren; zonder expliciete waarde kan een kort
+// platform-default de functie midden in de AI-call killen — de verbinding wordt
+// dan gereset (client ziet "kon server niet bereiken") nog vóór de catch/log draait.
+export const config = { maxDuration: 60 }
+
 // Ruime limieten: het doel is hard misbruik blokkeren, niet de AI inperken.
 const fase1Schema = z.object({
   results: z.array(
