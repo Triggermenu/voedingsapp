@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import * as Sentry from '@sentry/react'
 import { getProfile, hasAcceptedScanConsent, acceptScanConsent } from '@/lib/profile'
 import { track } from '@/lib/analytics'
 import { NavBar } from '@/components/NavBar'
@@ -110,11 +111,22 @@ export function Scan() {
     try {
       // Fase 1: afbeelding → scores (snel)
       const base64 = await fileToBase64(imageFile)
-      const res1 = await fetch('/api/menuscan', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ phase: 1, image: base64, conditions, mediaType: 'image/jpeg' }),
-      })
+      // Harde client-time-out: als de functie hangt (bv. trage AI-call of een
+      // platform-reset), breken we netjes af met een herkenbare AbortError i.p.v.
+      // een eindeloze spinner of een vage "kon server niet bereiken".
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 60_000)
+      let res1: Response
+      try {
+        res1 = await fetch('/api/menuscan', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ phase: 1, image: base64, conditions, mediaType: 'image/jpeg' }),
+          signal: controller.signal,
+        })
+      } finally {
+        clearTimeout(timeoutId)
+      }
       if (res1.status === 429) {
         const data = await res1.json().catch(() => null) as { error?: string } | null
         setError(data?.error ?? 'Te veel scans. Probeer het later opnieuw.')
@@ -186,13 +198,22 @@ export function Scan() {
         setPhase2Loading(false)
       }
     } catch (err) {
-      const msg = err instanceof Error ? err.message : ''
+      const e = err instanceof Error ? err : new Error(String(err))
+      const msg = e.message
       if (msg === 'AFBEELDING_NIET_LEESBAAR') {
         setError('Kon de afbeelding niet verwerken. Probeer een andere foto (JPEG of PNG werkt het best).')
       } else if (msg === 'CANVAS_LEEG') {
         setError('Afbeelding kon niet worden gecomprimeerd. Probeer een foto in een ander formaat.')
+      } else if (e.name === 'AbortError') {
+        setError('De analyse duurde te lang en is afgebroken. Probeer een kleinere of duidelijkere foto.')
+        console.error('menuscan: fase-1 time-out (AbortError) na 60s')
+        Sentry.captureException(e, { tags: { feature: 'menuscan', phase: 'fase1', soort: 'timeout' } })
       } else {
         setError('Kon de server niet bereiken. Controleer je internetverbinding en probeer opnieuw.')
+        // Leg de échte fout vast — anders blijft elke mislukking een vage melding
+        // en tasten we (zoals nu) in het duister over de werkelijke oorzaak.
+        console.error('menuscan: fase-1 fetch mislukt:', e.name, e.message)
+        Sentry.captureException(e, { tags: { feature: 'menuscan', phase: 'fase1', soort: 'netwerk' } })
       }
       setLoading(false)
     }
