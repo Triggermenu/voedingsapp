@@ -16,10 +16,10 @@
     "histamine": "Histamine"
   },
   "scores": {
-    "groen": "Safe",
+    "groen": "Favourable",
     "geel": "Moderate",
     "oranje": "Caution",
-    "rood": "Avoid",
+    "rood": "Better not",
     "onbekend": "Unknown"
   },
   "evidence": {

@@ -29,7 +29,7 @@ const CAT_LABELS: Record<string, string> = {
 }
 
 const SCORE_LABELS: Record<number, string> = {
-  0: 'Veilig', 1: 'Met mate', 2: 'Spaarzaam', 3: 'Vermijden',
+  0: 'Gunstig', 1: 'Met mate', 2: 'Spaarzaam', 3: 'Liever niet',
 }
 
 const EVIDENCE_LABELS: Record<string, string> = {
@@ -183,7 +183,7 @@ export function ItemDetailPanel({ id, conditions, showAlternatives = false, onNa
           border: '1px solid color-mix(in srgb, var(--brand) 20%, transparent)',
           fontSize: 12.5, color: 'var(--ink-soft)', lineHeight: 1.5,
         }}>
-          Elke gekleurde balk is één aandoening uit jouw profiel. Groen = veilig, rood = vermijden.
+          Elke gekleurde balk is één aandoening uit jouw profiel. Groen = gunstig, rood = liever niet.
           Tik op <strong style={{ color: 'var(--ink)' }}>meer info</strong> voor de onderbouwing en
           het bewijsniveau (sterk/redelijk/beperkt).
           <button
