@@ -6,7 +6,7 @@ import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
 import type { Condition } from '@/schemas/item'
 
-const SCORE_LABELS: Record<number, string> = { 0: 'Veilig', 1: 'Met mate', 2: 'Spaarzaam', 3: 'Vermijden' }
+const SCORE_LABELS: Record<number, string> = { 0: 'Gunstig', 1: 'Met mate', 2: 'Spaarzaam', 3: 'Liever niet' }
 const CONDITION_LABELS: Record<Condition, string> = {
   jicht: 'Jicht', migraine: 'Migraine', nierstenen: 'Nierstenen', histamine: 'Histamine',
 }

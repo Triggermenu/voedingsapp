@@ -17,10 +17,10 @@
     "histamine": "Histamine"
   },
   "scores": {
-    "groen": "Veilig",
+    "groen": "Gunstig",
     "geel": "Met mate",
     "oranje": "Spaarzaam",
-    "rood": "Vermijden",
+    "rood": "Liever niet",
     "onbekend": "Onbekend"
   },
   "scoreHelp": {

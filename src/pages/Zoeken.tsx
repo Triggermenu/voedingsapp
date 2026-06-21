@@ -154,7 +154,7 @@ function CardC({
             {conditions.map((c) => {
               const scoreObj = item.scores[c]
               const status = scoreToStatus(scoreObj?.score ?? null)
-              const statusLabel = { safe: 'Veilig', ok: 'Met mate', warn: 'Spaarzaam', avoid: 'Vermijden', null: 'Onbekend' }[status]
+              const statusLabel = { safe: 'Gunstig', ok: 'Met mate', warn: 'Spaarzaam', avoid: 'Liever niet', null: 'Onbekend' }[status]
               return (
                 <div key={c}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 3 }}>
@@ -245,7 +245,7 @@ function LegendBar() {
       display: 'flex', justifyContent: 'flex-end', alignItems: 'center',
     }}>
       <div style={{ display: 'flex', gap: 10 }}>
-        {([['safe', 'Veilig'], ['ok', 'Met mate'], ['warn', 'Spaarzaam'], ['avoid', 'Vermijden']] as const).map(([s, l]) => (
+        {([['safe', 'Gunstig'], ['ok', 'Met mate'], ['warn', 'Spaarzaam'], ['avoid', 'Liever niet']] as const).map(([s, l]) => (
           <span key={s} style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 10.5, color: 'var(--ink-soft)' }}>
             <i style={{ width: 8, height: 8, borderRadius: 2, background: `var(--${s})`, display: 'inline-block' }} />
             {l}

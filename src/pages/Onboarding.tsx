@@ -9,9 +9,9 @@ import { Logo } from '@/components/Logo'
 
 // ── Condition metadata ──────────────────────────────────────────────────────
 const COND_META: Record<Condition, { label: string; short: string; desc: string }> = {
-  jicht:      { label: 'Jicht',      short: 'JCHT', desc: 'Purine-arm advies' },
-  migraine:   { label: 'Migraine',   short: 'MIGR', desc: 'Triggers vermijden' },
-  nierstenen: { label: 'Nierstenen', short: 'NIER', desc: 'Oxalaat-monitoring' },
+  jicht:      { label: 'Jicht',      short: 'JCHT', desc: 'Purine-informatie' },
+  migraine:   { label: 'Migraine',   short: 'MIGR', desc: 'Trigger-informatie' },
+  nierstenen: { label: 'Nierstenen', short: 'NIER', desc: 'Oxalaat-informatie' },
   histamine:  { label: 'Histamine',  short: 'HIST', desc: 'SIGHI-compatibel' },
 }
 
@@ -83,8 +83,8 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
           Jicht · Migraine ·<br />Nierstenen · Histamine
         </h1>
         <p style={{ fontSize: 14.5, lineHeight: 1.5, color: 'var(--ink-soft)', margin: 0, maxWidth: 320 }}>
-          Zoek een voedingsmiddel en zie direct of het voor jouw aandoening veilig is.
-          Indicatief advies, transparant onderbouwd.
+          Zoek een voedingsmiddel en zie direct hoe het scoort voor jouw aandoening.
+          Indicatieve informatie, transparant onderbouwd.
         </p>
       </div>
 
@@ -117,7 +117,7 @@ function StepWelkom({ onNext }: { onNext: () => void }) {
       <div className="px-[26px] pt-6">
         {[
           { t: `Zoek ${itemCount} voedingsmiddelen`,  d: 'Producten, ingrediënten en bereidingen — rauw, gekookt, gebakken.' },
-          { t: 'Eén stoplicht per aandoening', d: 'Veilig · Met mate · Spaarzaam · Vermijden. Op één rij zichtbaar.' },
+          { t: 'Eén stoplicht per aandoening', d: 'Gunstig · Met mate · Spaarzaam · Liever niet. Op één rij zichtbaar.' },
           { t: 'Met bron en bewijs-niveau',  d: 'USDA, SIGHI, EULAR. Iedere score linkt naar de gebruikte studie.' },
         ].map((it, i, a) => (
           <div
@@ -230,8 +230,8 @@ function StepAandoeningen({
           style={{ fontSize: 28, lineHeight: 1.05, fontWeight: 500, margin: '8px 0 6px', letterSpacing: -0.6, color: 'var(--ink)' }}
         >
           Voor welke aandoening<br />
-          geef ik{' '}
-          <em style={{ fontStyle: 'italic', color: 'var(--brand)' }}>advies</em>?
+          wil je{' '}
+          <em style={{ fontStyle: 'italic', color: 'var(--brand)' }}>informatie</em>?
         </h2>
         <p style={{ fontSize: 13, color: 'var(--ink-soft)', margin: 0 }}>Kies één of meer. Je kunt dit later wijzigen.</p>
       </div>
@@ -326,7 +326,7 @@ function StepDisclaimer({
         <div className="tm-card" style={{ padding: '6px 18px 10px' }}>
           {[
             { t: 'Indicatief, niet medisch advies', d: 'Bespreek wijzigingen met je arts of diëtist.' },
-            { t: 'Per persoon verschillend',         d: 'Reacties op voeding variëren. Houd zo nodig een dagboek bij.' },
+            { t: 'Per persoon verschillend',         d: 'Reacties op voeding variëren — wat voor de één een trigger is, hoeft dat voor jou niet te zijn.' },
             { t: 'Transparant onderbouwd',           d: 'Iedere score linkt naar de gebruikte studie of dataset.' },
           ].map((it, i, a) => (
             <div
@@ -356,7 +356,7 @@ function StepDisclaimer({
               </svg>
             )}
           </span>
-          <span>Ik begrijp dat Triggermenu een hulpmiddel is en geen medisch advies vervangt.</span>
+          <span>Ik begrijp dat Triggermenu een informatieve beslishulp is en geen medisch advies vervangt.</span>
         </label>
       </div>
 

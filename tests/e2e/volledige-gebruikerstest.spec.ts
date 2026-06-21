@@ -66,7 +66,7 @@ test('volledige gebruikersreis — onboarding tot bronnen', async ({ page }) => 
 
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Spinazie')
     await expect(page.getByText('Jicht', { exact: true })).toBeVisible()
-    await expect(page.getByText(/^(Veilig|Met mate|Spaarzaam|Vermijden)$/).first()).toBeVisible()
+    await expect(page.getByText(/^(Gunstig|Met mate|Spaarzaam|Liever niet)$/).first()).toBeVisible()
     await expect(page.getByText(/(Sterk|Redelijk|Beperkt) bewijs/).first()).toBeVisible()
 
     await page.getByRole('button', { name: 'Terug' }).click()
