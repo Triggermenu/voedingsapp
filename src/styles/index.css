@@ -154,11 +154,11 @@
   gap: 2px;
 }
 .colorblock .lbl {
-  font-size: 8.5px;
-  letter-spacing: .08em;
+  font-size: 10px;
+  letter-spacing: .06em;
   text-transform: uppercase;
-  font-weight: 500;
-  opacity: .78;
+  font-weight: 600;
+  opacity: 1;
 }
 .colorblock.safe  { background: var(--safe);  color: #fff; }
 .colorblock.ok    { background: var(--ok);    color: #241800; }
