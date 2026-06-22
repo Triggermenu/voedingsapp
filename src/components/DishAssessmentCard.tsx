@@ -89,6 +89,7 @@ export function DishAssessmentCard({ dish, ingredients, conditions }: Props) {
         }
 
         const item = mi.match.item
+        const approx = mi.match.approximate
         const triggers = conditions
           .map((c) => ({ c, s: item.scores[c] }))
           .filter((x) => x.s !== null && x.s.score >= 1)
@@ -97,11 +98,16 @@ export function DishAssessmentCard({ dish, ingredients, conditions }: Props) {
           <div key={i} style={{ borderTop: '0.5px solid var(--rule-soft)', padding: '10px 0' }}>
             <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
               <span style={{ fontSize: 14, fontWeight: 500, color: 'var(--ink)' }}>
-                {item.name.nl}
+                {approx ? mi.raw : item.name.nl}
                 {triggers.length === 0 && <span style={{ fontSize: 12, fontWeight: 400, color: 'var(--safe-ink)' }}> · geen trigger</span>}
               </span>
-              <span style={{ fontSize: 11, color: 'var(--muted)', flexShrink: 0 }}>database</span>
+              <span style={{ fontSize: 11, color: 'var(--muted)', flexShrink: 0 }}>{approx ? '≈ database' : 'database'}</span>
             </div>
+            {approx && (
+              <div style={{ fontSize: 11.5, color: 'var(--ink-soft)', marginTop: 3, fontStyle: 'italic' }}>
+                ≈ beoordeeld als {item.name.nl} — representatief, de werkelijke variant kan afwijken
+              </div>
+            )}
 
             {triggers.map(({ c, s }) => (
               <div key={c} style={{ marginTop: 6 }}>

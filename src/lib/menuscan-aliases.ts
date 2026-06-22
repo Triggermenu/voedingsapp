@@ -22,4 +22,20 @@ export const INGREDIENT_ALIASES: Record<string, string> = {
   'pitten': 'Pijnboompitten',
   'rode ui': 'Ui',
   'gerookte kaas': 'Goudse kaas (belegen)',
+  'chilisaus': 'Zoete chilisaus',
+  'jalapeno peper': 'Chilipeper (vers)',
+  'jalapeno': 'Chilipeper (vers)',
+}
+
+// REPRESENTATIEVE aliassen: een generieke term → een representatief DB-item. Dit is een
+// BENADERING (de echte "kaas"/"brood" kan een ander type zijn met een afwijkende score),
+// dus de UI markeert deze matches expliciet als "≈ representatief". Houd hier alleen
+// generalisaties; precieze naamvarianten horen in INGREDIENT_ALIASES.
+export const REPRESENTATIVE_ALIASES: Record<string, string> = {
+  'kaas': 'Goudse kaas (jong)',
+  'brood': 'Wit brood',
+  'toast': 'Wit brood',
+  'nachos': 'Maistortilla',
+  'nacho': 'Maistortilla',
+  'truffelmayonaise': 'Mayonaise',
 }

@@ -49,4 +49,14 @@ describe('DishAssessmentCard', () => {
     expect(screen.getByText('33%')).toBeInTheDocument()
     expect(screen.getByText(/Te weinig herkend/i)).toBeInTheDocument()
   })
+
+  it('markeert een representatieve (benaderende) match expliciet', () => {
+    render(
+      <DishAssessmentCard dish="Kaasplankje" ingredients={['kaas']} conditions={['histamine']} />,
+    )
+    // toont de menukaart-term, niet het DB-item, + een "≈ beoordeeld als"-toelichting
+    expect(screen.getByText('kaas')).toBeInTheDocument()
+    expect(screen.getByText(/≈ beoordeeld als/i)).toBeInTheDocument()
+    expect(screen.getByText(/representatief/i)).toBeInTheDocument()
+  })
 })
