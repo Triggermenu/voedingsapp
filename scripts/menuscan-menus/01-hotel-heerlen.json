@@ -1,0 +1,17 @@
+{
+  "source": "Hotel Heerlen — brasserie",
+  "url": "https://www.hotelheerlen.nl/restaurant/menukaart-nl/",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Carpaccio grande", "ingredients": ["rundvlees", "rucola", "truffelmayonaise", "pijnboompitten", "parmezaanse kaas"] },
+    { "dish": "Tomaat burrata", "ingredients": ["tomaat", "burrata", "basilicum"] },
+    { "dish": "Poke bowl", "ingredients": ["zalm", "sushi rijst", "edamame", "mango", "lente-ui", "avocado", "mayonaise", "nori"] },
+    { "dish": "Gravad lax", "ingredients": ["zalm", "brioche", "mierikswortel", "rode biet"] },
+    { "dish": "Steak tartaar", "ingredients": ["rundvlees", "witte ponzu", "aardappel"] },
+    { "dish": "Zalm", "ingredients": ["zalm", "groenten", "bearnaisesaus"] },
+    { "dish": "Angus burger", "ingredients": ["rundvlees", "briochebroodje", "rode ui", "tomaat", "cheddar", "augurk", "spek", "sla", "mayonaise", "friet"] },
+    { "dish": "Eendenborst a la Normande", "ingredients": ["eend", "appel", "calvados"] },
+    { "dish": "Spaghetti bolognese", "ingredients": ["pasta", "rundergehakt", "tomaat", "parmezaanse kaas", "rucola"] },
+    { "dish": "Gegrilde runderentrecote", "ingredients": ["rundvlees", "friet"] }
+  ]
+}

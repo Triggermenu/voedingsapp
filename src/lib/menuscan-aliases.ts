@@ -25,6 +25,16 @@ export const INGREDIENT_ALIASES: Record<string, string> = {
   'chilisaus': 'Zoete chilisaus',
   'jalapeno peper': 'Chilipeper (vers)',
   'jalapeno': 'Chilipeper (vers)',
+
+  // Toegevoegd na eval over echte kaarten (npm run menuscan:eval) — exacte mappings naar
+  // een bestaand DB-item; geen benadering.
+  // (lente-ui/bosui/bataat zaten hier ook, maar worden nu structureel afgevangen: de matcher
+  // splitst "/"-namen zoals "Lente-ui / bosui" en "Zoete aardappel / bataat" in losse termen.)
+  'sushi rijst': 'Witte rijst (gekookt)', // vóór token-laag: anders matcht "sushi" op "Sushi (zalm nigiri)"
+  'sushirijst': 'Witte rijst (gekookt)',
+  'eend': 'Eendenfilet',
+  'eendenborst': 'Eendenfilet',
+  'katenspek': 'Spek (gerookt, gecureerd)', // gecureerd/gerookt — relevant voor migraine/histamine
 }
 
 // REPRESENTATIEVE aliassen: een generieke term → een representatief DB-item. Dit is een
@@ -38,4 +48,20 @@ export const REPRESENTATIVE_ALIASES: Record<string, string> = {
   'nachos': 'Maistortilla',
   'nacho': 'Maistortilla',
   'truffelmayonaise': 'Mayonaise',
+
+  // Toegevoegd na eval over echte kaarten — generieke/samengestelde term → representatief
+  // basis-item. BENADERING (bereiding zoals frituren/suiker wordt niet meegenomen); de UI
+  // markeert deze als "≈ representatief".
+  'friet': 'Aardappel (gekookt)',
+  'frietjes': 'Aardappel (gekookt)',
+  'patat': 'Aardappel (gekookt)',
+  'fries': 'Aardappel (gekookt)',
+  'brioche': 'Wit brood',
+  'briochebroodje': 'Wit brood',
+  'crouton': 'Wit brood',
+  'kropsla': 'Sla (ijsberg)',
+  'burrata': 'Mozzarella (vers)',
+  'worst': 'Rookworst (gecureerd)',
+  'appelmoes': 'Appel (rauw)',
+  'calvados': 'Cognac / Brandy', // appelbrandewijn → gedistilleerd; vangt de alcohol-as
 }

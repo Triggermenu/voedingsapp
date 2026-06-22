@@ -15,7 +15,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "validate-db": "tsx scripts/validate-db.ts",
-    "check-sources": "tsx scripts/check-sources.ts"
+    "check-sources": "tsx scripts/check-sources.ts",
+    "menuscan:eval": "tsx scripts/menuscan-eval.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.37.0",

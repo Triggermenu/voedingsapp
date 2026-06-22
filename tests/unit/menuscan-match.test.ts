@@ -86,4 +86,24 @@ describe('matchIngredient', () => {
     expect(matchIngredient('volstrekt onbekend xyzzy')).toBeNull()
     expect(matchIngredient('')).toBeNull()
   })
+
+  it('"/"-naam: beide losse synoniemen matchen hetzelfde DB-item', () => {
+    // DB-item "Lente-ui / bosui" bundelt twee namen in één entry.
+    const a = matchIngredient('lente-ui')
+    const b = matchIngredient('bosui')
+    expect(a?.item.name.nl).toBe('Lente-ui / bosui')
+    expect(b?.item.id).toBe(a?.item.id)
+    expect(a?.method).toBe('exact')
+    expect(a?.approximate).toBe(false)
+  })
+
+  it('"/"-naam: tweede synoniem van een ander item ("brandy" → Cognac / Brandy)', () => {
+    expect(matchIngredient('brandy')?.item.name.nl).toBe('Cognac / Brandy')
+    expect(matchIngredient('bataat')?.item.name.nl).toBe('Zoete aardappel / bataat')
+  })
+
+  it('"/" binnen haakjes wordt NIET als synoniem gesplitst', () => {
+    // "Edamame bonen (vers/bevroren)" — "bevroren" mag geen losse sleutel worden.
+    expect(matchIngredient('bevroren')).toBeNull()
+  })
 })

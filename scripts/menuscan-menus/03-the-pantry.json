@@ -1,0 +1,20 @@
+{
+  "source": "The Pantry — traditioneel Hollands",
+  "url": "https://www.thepantry.nl/menukaart/",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Gerookte paling op toast", "ingredients": ["gerookte paling", "toast"] },
+    { "dish": "Haring met uitjes en zuur", "ingredients": ["haring", "ui", "augurk"] },
+    { "dish": "Vis trio", "ingredients": ["gerookte paling", "makreel", "gerookte zalm", "toast"] },
+    { "dish": "Trio van Hollandse worsten", "ingredients": ["worst", "brood", "mosterd"] },
+    { "dish": "Erwtensoep", "ingredients": ["erwten", "roggebrood", "katenspek"] },
+    { "dish": "Bitterballen", "ingredients": ["bitterbal", "mosterd"] },
+    { "dish": "Geitenkaas kroketjes", "ingredients": ["geitenkaas", "salade", "honing"] },
+    { "dish": "Hollandse garnalenkroketjes", "ingredients": ["garnalen"] },
+    { "dish": "Hutspot met rookworst", "ingredients": ["wortel", "ui", "aardappel", "rookworst"] },
+    { "dish": "Boerenkoolstamppot", "ingredients": ["boerenkool", "aardappel", "rookworst"] },
+    { "dish": "Zuurkoolstamppot met spekjes", "ingredients": ["zuurkool", "aardappel", "spek", "rookworst"] },
+    { "dish": "Runderhachee", "ingredients": ["rundvlees", "rode kool", "aardappel"] },
+    { "dish": "Kapucijners", "ingredients": ["kapucijners", "spek", "ui", "appelmoes"] }
+  ]
+}
