@@ -10,13 +10,15 @@
 
 import type { FoodItem } from '@/schemas/item'
 import { getAllItems } from '@/lib/db'
-import { INGREDIENT_ALIASES } from '@/lib/menuscan-aliases'
+import { INGREDIENT_ALIASES, REPRESENTATIVE_ALIASES } from '@/lib/menuscan-aliases'
 
-export type MatchMethod = 'alias' | 'exact' | 'token'
+export type MatchMethod = 'alias' | 'exact' | 'token' | 'representatief'
 
 export interface IngredientMatch {
   item: FoodItem
   method: MatchMethod
+  /** true als de match een benadering is (generieke term → representatief item). */
+  approximate: boolean
 }
 
 /** lowercase, diacrieten weg, leestekens → spatie, witruimte genormaliseerd. */
@@ -52,6 +54,27 @@ function resolveName(name: string): FoodItem | undefined {
   return byExact.get(n) ?? byBase.get(n)
 }
 
+/**
+ * Morfologische varianten voor meervoud/enkelvoud (NL is grillig, dit dekt de gangbare
+ * gevallen): "champignon" ↔ "champignons", "boon" ↔ "bonen". Langste/origineel eerst.
+ */
+function variants(n: string): string[] {
+  const out = new Set<string>([n])
+  out.add(n + 's')
+  out.add(n + 'en')
+  if (n.endsWith('s')) out.add(n.slice(0, -1))
+  if (n.endsWith('en')) out.add(n.slice(0, -2))
+  return [...out]
+}
+
+function lookupVariant(n: string): FoodItem | undefined {
+  for (const v of variants(n)) {
+    const hit = byExact.get(v) ?? byBase.get(v)
+    if (hit) return hit
+  }
+  return undefined
+}
+
 // Token-index: langere sleutels eerst zodat de meest specifieke match wint.
 // `source` onthoudt of de treffer via een alias of via een DB-basisnaam kwam.
 interface TokenEntry {
@@ -84,22 +107,29 @@ export function matchIngredient(raw: string): IngredientMatch | null {
   const n = normalize(raw)
   if (!n) return null
 
-  // 1. Alias — exacte sleutel.
+  // 1. Precieze alias — exacte sleutel.
   const aliasTarget = INGREDIENT_ALIASES[n]
   if (aliasTarget) {
     const item = resolveName(aliasTarget)
-    if (item) return { item, method: 'alias' }
+    if (item) return { item, method: 'alias', approximate: false }
   }
 
-  // 2. Exacte volledige naam of basisnaam.
-  const exact = byExact.get(n) ?? byBase.get(n)
-  if (exact) return { item: exact, method: 'exact' }
+  // 2. Representatieve alias — generieke term → benadering.
+  const repTarget = REPRESENTATIVE_ALIASES[n]
+  if (repTarget) {
+    const item = resolveName(repTarget)
+    if (item) return { item, method: 'representatief', approximate: true }
+  }
 
-  // 3. Token — langste alias-/basisnaam-sleutel die in het ingrediënt voorkomt.
+  // 3. Exacte volledige naam of basisnaam (incl. meervoud/enkelvoud-varianten).
+  const exact = lookupVariant(n)
+  if (exact) return { item: exact, method: 'exact', approximate: false }
+
+  // 4. Token — langste alias-/basisnaam-sleutel die in het ingrediënt voorkomt.
   const words = new Set(n.split(' '))
   for (const entry of tokenIndex) {
     if (keyMatchesIn(entry.key, words, n)) {
-      return { item: entry.item, method: entry.source === 'alias' ? 'alias' : 'token' }
+      return { item: entry.item, method: entry.source === 'alias' ? 'alias' : 'token', approximate: false }
     }
   }
 

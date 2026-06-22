@@ -62,6 +62,26 @@ describe('matchIngredient', () => {
     expect(matchIngredient('bruine bonen')?.item.name.nl).not.toBe('Ui')
   })
 
+  it('meervoud/enkelvoud: enkelvoud matcht een meervoudig DB-item', () => {
+    // DB-item heet "Champignons"; de menukaart zegt vaak "champignon"
+    const m = matchIngredient('champignon')
+    expect(m?.item.name.nl).toBe('Champignons')
+    expect(m?.method).toBe('exact')
+    expect(m?.approximate).toBe(false)
+  })
+
+  it('representatieve alias is een benadering (approximate)', () => {
+    const m = matchIngredient('kaas')
+    expect(m?.item.name.nl).toBe('Goudse kaas (jong)')
+    expect(m?.method).toBe('representatief')
+    expect(m?.approximate).toBe(true)
+  })
+
+  it('precieze alias is géén benadering', () => {
+    expect(matchIngredient('parmezaanse kaas')?.approximate).toBe(false)
+    expect(matchIngredient('rucola')?.approximate).toBe(false)
+  })
+
   it('onbekend ingrediënt → null', () => {
     expect(matchIngredient('volstrekt onbekend xyzzy')).toBeNull()
     expect(matchIngredient('')).toBeNull()
