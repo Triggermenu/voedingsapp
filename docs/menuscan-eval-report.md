@@ -374,26 +374,26 @@ Scores → jicht: oranje(2) ←kalfsvlees · migraine: geel(1) ←tonijn · nier
 Scores → jicht: geel(1) ←witte bonen · migraine: geel(1) ←gedroogde vijg · nierstenen: oranje(2) ←gedroogde vijg · histamine: oranje(2) ←gedroogde vijg
 
 ### Spaghetti alla Carbonara
-*Dekking 4/5 (80%) — gerecht-totaal: getoond*
+*Dekking 5/5 (100%) — gerecht-totaal: getoond*
 
 - `pasta` → **Pasta (wit, gekookt)** _(exact)_
 - `ei` → **Ei (heel, rauw)** _(exact)_
 - `guanciale` → **Spek (gerookt, gecureerd)** _(representatief, benadering ≈)_
-- `pecorino` → ❓ **onbekend** — vraag de ober
+- `pecorino` → **Parmezaan** _(representatief, benadering ≈)_
 - `parmezaan` → **Parmezaan** _(exact)_
 
 Scores → jicht: oranje(2) ←guanciale · migraine: ROOD(3) ←guanciale · nierstenen: groen(0) ←pasta · histamine: ROOD(3) ←guanciale
 
 ### Penne ai 4 Formaggi
-*Dekking 2/5 (40%) — gerecht-totaal: NIET getoond (te onzeker → vraag de ober)*
+*Dekking 3/5 (60%) — gerecht-totaal: getoond*
 
 - `pasta` → **Pasta (wit, gekookt)** _(exact)_
-- `gorgonzola` → ❓ **onbekend** — vraag de ober
+- `gorgonzola` → **Blauwe kaas (gerijpte kaas)** _(representatief, benadering ≈)_
 - `taleggio` → ❓ **onbekend** — vraag de ober
 - `groviera` → ❓ **onbekend** — vraag de ober
 - `parmezaan` → **Parmezaan** _(exact)_
 
-Scores → jicht: groen(0) ←pasta · migraine: geel(1) ←parmezaan · nierstenen: groen(0) ←pasta · histamine: ROOD(3) ←parmezaan
+Scores → jicht: groen(0) ←pasta · migraine: oranje(2) ←gorgonzola · nierstenen: groen(0) ←pasta · histamine: ROOD(3) ←gorgonzola
 
 ### Gnocchi alla Sorrentina
 *Dekking 3/4 (75%) — gerecht-totaal: getoond*
@@ -436,7 +436,7 @@ Scores → jicht: oranje(2) ←rundvlees · migraine: groen(0) ←rundvlees · n
 
 Scores → jicht: oranje(2) ←zalm · migraine: groen(0) ←zalm · nierstenen: groen(0) ←zalm · histamine: geel(1) ←paprika
 
-**Kaart-dekking: 31/40 (78%)**
+**Kaart-dekking: 33/40 (83%)**
 
 ## Indonesia Son — Indonesisch
 
@@ -678,9 +678,9 @@ Scores → jicht: geel(1) ←doperwten · migraine: groen(0) ←aardappel · nie
 Scores → jicht: groen(0) ←ui · migraine: groen(0) ←ui · nierstenen: groen(0) ←ui · histamine: geel(1) ←paprika
 
 ### Palak Paneer
-*Dekking 3/4 (75%) — gerecht-totaal: getoond*
+*Dekking 4/4 (100%) — gerecht-totaal: getoond*
 
-- `paneer` → ❓ **onbekend** — vraag de ober
+- `paneer` → **Mozzarella (vers)** _(representatief, benadering ≈)_
 - `spinazie` → **Spinazie (rauw)** _(exact)_
 - `knoflook` → **Knoflook** _(exact)_
 - `citroen` → **Citroen** _(exact)_
@@ -724,7 +724,7 @@ Scores → jicht: oranje(2) ←linzen · migraine: groen(0) ←linzen · nierste
 
 Scores → jicht: oranje(2) ←garnalen · migraine: groen(0) ←garnalen · nierstenen: groen(0) ←garnalen · histamine: geel(1) ←garnalen
 
-**Kaart-dekking: 24/31 (77%)**
+**Kaart-dekking: 25/31 (81%)**
 
 ## Tapa Tapa — Spaans (tapas)
 
@@ -817,8 +817,8 @@ Scores → jicht: groen(0) ←paprika · migraine: groen(0) ←paprika · nierst
 
 ## Samenvatting
 
-- **Totale dekking: 227/276 (82%)** over 8 kaarten.
-- Match-methodes: exact 174 · representatief 30 · alias 23
+- **Totale dekking: 230/276 (83%)** over 8 kaarten.
+- Match-methodes: exact 174 · representatief 33 · alias 23
 
 ### Onbekende ingrediënten (alias-kandidaten, frequentie)
 
@@ -841,15 +841,12 @@ Scores → jicht: groen(0) ←paprika · migraine: groen(0) ←paprika · nierst
 - `filodeeg` ×1
 - `gans` ×1
 - `gnocchi` ×1
-- `gorgonzola` ×1
 - `groente` ×1
 - `groviera` ×1
 - `hollandaisesaus` ×1
 - `kokossaus` ×1
 - `kweepeer` ×1
 - `nori` ×1
-- `paneer` ×1
-- `pecorino` ×1
 - `risotto` ×1
 - `salade` ×1
 - `sugarsnaps` ×1
@@ -870,10 +867,13 @@ Scores → jicht: groen(0) ←paprika · migraine: groen(0) ←paprika · nierst
 - `crouton` ≈ Wit brood
 - `friet` ≈ Aardappel (gekookt)
 - `gehakt` ≈ Rundergehakt
+- `gorgonzola` ≈ Blauwe kaas (gerijpte kaas)
 - `guanciale` ≈ Spek (gerookt, gecureerd)
 - `kaas` ≈ Goudse kaas (jong)
 - `kropsla` ≈ Sla (ijsberg)
 - `linzen` ≈ Groene linzen (gekookt)
+- `paneer` ≈ Mozzarella (vers)
+- `pecorino` ≈ Parmezaan
 - `rijst` ≈ Witte rijst (gekookt)
 - `room` ≈ Slagroom
 - `schapenkaas` ≈ Feta

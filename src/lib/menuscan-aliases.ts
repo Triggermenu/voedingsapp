@@ -83,4 +83,9 @@ export const REPRESENTATIVE_ALIASES: Record<string, string> = {
   'schapenkaas': 'Feta',
   'room': 'Slagroom',
   'guanciale': 'Spek (gerookt, gecureerd)', // gecureerd varkensvlees
+
+  // Specifieke kazen → bestaand representatief DB-kaasitem (na onderzoek; geen DB-groei nodig).
+  'gorgonzola': 'Blauwe kaas (gerijpte kaas)', // blauwe schimmelkaas
+  'pecorino': 'Parmezaan', // hard-gerijpte raspkaas
+  'paneer': 'Mozzarella (vers)', // verse, niet-gerijpte kaas → laagste aminen
 }
