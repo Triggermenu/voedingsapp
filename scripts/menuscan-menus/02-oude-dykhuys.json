@@ -1,0 +1,15 @@
+{
+  "source": "Het Oude Dykhuys — fine dining",
+  "url": "https://hetoudedykhuys.nl/menukaart.php",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Huisgerookte zalm", "ingredients": ["gerookte zalm", "kropsla", "asperge", "aardappel", "mierikswortel"] },
+    { "dish": "Gepocheerd ei en truffel", "ingredients": ["ei", "asperge", "hollandaisesaus", "eekhoorntjesbrood", "crouton", "amandel", "aardappel"] },
+    { "dish": "Pate van eendenlever en gans", "ingredients": ["eendenlever", "gans", "brioche", "vijg"] },
+    { "dish": "Langoustine bouillon", "ingredients": ["langoustine", "garnalen", "groente"] },
+    { "dish": "Heilbot", "ingredients": ["heilbot", "aardappel", "asperge", "kreeft"] },
+    { "dish": "Zeebaars geroosterd", "ingredients": ["zeebaars", "venkel", "zeekraal", "wortel", "risotto", "citroen"] },
+    { "dish": "Wagyu biefstuk", "ingredients": ["rundvlees", "witlof", "aardappel", "asperge", "sugarsnaps"] },
+    { "dish": "Lamsfilet", "ingredients": ["lamsvlees", "koolrabi", "tuinboon", "bataat"] }
+  ]
+}

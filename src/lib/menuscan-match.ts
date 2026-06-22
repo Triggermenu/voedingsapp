@@ -37,16 +37,46 @@ function baseName(nl: string): string {
   return normalize(nl.replace(/\([^)]*\)/g, ''))
 }
 
+/**
+ * Losse naamvarianten uit een "/"-naam. Veel DB-items bundelen synoniemen in één entry
+ * ("Lente-ui / bosui", "Zoete aardappel / bataat", "Cognac / Brandy"); zonder dit zou enkel
+ * de samengestelde naam matchen en glipt elke losse term door de matcher ("lente-ui" werd
+ * "niet bekend" terwijl het item bestond). Parenthese-kwalificaties eerst eruit, zodat
+ * "(beef/pork)" geen valse split geeft; korte fragmenten en suffix-shorthand ("-thee") weg.
+ */
+function nameVariants(name: string): string[] {
+  if (!name.includes('/')) return []
+  const cleaned = name.replace(/\([^)]*\)/g, ' ')
+  if (!cleaned.includes('/')) return []
+  return cleaned.split('/').map((p) => p.trim()).filter((p) => p.length >= 3 && !p.startsWith('-'))
+}
+
 const POOL: FoodItem[] = getAllItems().filter((i) => i.category !== 'bereid-gerecht')
 
 const byExact = new Map<string, FoodItem>()
 const byBase = new Map<string, FoodItem>()
+const addKey = (map: Map<string, FoodItem>, key: string, it: FoodItem) => {
+  if (key && !map.has(key)) map.set(key, it)
+}
+
+// Pass 1: volledige namen (nl + en) — krijgen voorrang bij botsing.
 for (const it of POOL) {
-  for (const key of [normalize(it.name.nl), normalize(it.name.en)]) {
-    if (key && !byExact.has(key)) byExact.set(key, it)
+  addKey(byExact, normalize(it.name.nl), it)
+  addKey(byExact, normalize(it.name.en), it)
+  addKey(byBase, baseName(it.name.nl), it)
+}
+
+// Pass 2: losse naamvarianten uit "/"-namen (bv. "Lente-ui / bosui" → "lente-ui", "bosui"),
+// zodat als synoniem gebundelde termen ook los matchen. Pass 1 had voorrang, dus een variant
+// overschrijft nooit de echte volledige naam van een ánder item.
+for (const it of POOL) {
+  for (const nm of [it.name.nl, it.name.en]) {
+    for (const variant of nameVariants(nm)) {
+      const key = normalize(variant)
+      addKey(byExact, key, it)
+      addKey(byBase, key, it)
+    }
   }
-  const b = baseName(it.name.nl)
-  if (b && !byBase.has(b)) byBase.set(b, it)
 }
 
 function resolveName(name: string): FoodItem | undefined {
