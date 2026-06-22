@@ -1,0 +1,17 @@
+{
+  "source": "Il Pozzo — Italiaans",
+  "url": "https://www.ilpozzo.nl/menukaart/",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Prosciutto e Melone", "ingredients": ["parmaham", "meloen"] },
+    { "dish": "Carpaccio al Pozzo", "ingredients": ["rundvlees", "rucola", "pijnboompitten", "parmezaan"] },
+    { "dish": "Vitello Tonnato", "ingredients": ["kalfsvlees", "tonijn", "mayonaise"] },
+    { "dish": "Burrata e Fichi Secchi", "ingredients": ["burrata", "witte bonen", "gedroogde vijg", "balsamico"] },
+    { "dish": "Spaghetti alla Carbonara", "ingredients": ["pasta", "ei", "guanciale", "pecorino", "parmezaan"] },
+    { "dish": "Penne ai 4 Formaggi", "ingredients": ["pasta", "gorgonzola", "taleggio", "groviera", "parmezaan"] },
+    { "dish": "Gnocchi alla Sorrentina", "ingredients": ["gnocchi", "tomaat", "mozzarella", "pesto"] },
+    { "dish": "Pizza Siciliana", "ingredients": ["tomaat", "kaas", "kappertjes", "olijven", "ansjovis", "ui"] },
+    { "dish": "Bistecca alla Griglia", "ingredients": ["rundvlees", "groenten", "rode ui"] },
+    { "dish": "Filetto di Salmone", "ingredients": ["zalm", "mozzarella", "paprika", "zeekraal"] }
+  ]
+}

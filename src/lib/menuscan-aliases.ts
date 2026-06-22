@@ -35,6 +35,13 @@ export const INGREDIENT_ALIASES: Record<string, string> = {
   'eend': 'Eendenfilet',
   'eendenborst': 'Eendenfilet',
   'katenspek': 'Spek (gerookt, gecureerd)', // gecureerd/gerookt — relevant voor migraine/histamine
+
+  // Tweede eval-batch (5 extra kaarten: IT/ID/GR/IN/ES). Precieze synoniemen.
+  'gedroogde vijg': 'Vijg (gedroogd)', // vóór token-laag: anders matcht "vijg" op "Vijg (vers)"
+  'gedroogde vijgen': 'Vijg (gedroogd)',
+  'tahoe': 'Tofu (naturel)', // NL/Indonesisch synoniem
+  'parmaham': 'Prosciutto (rauwe ham, Italiaans)',
+  'manchego': 'Manchego kaas',
 }
 
 // REPRESENTATIEVE aliassen: een generieke term → een representatief DB-item. Dit is een
@@ -64,4 +71,16 @@ export const REPRESENTATIVE_ALIASES: Record<string, string> = {
   'worst': 'Rookworst (gecureerd)',
   'appelmoes': 'Appel (rauw)',
   'calvados': 'Cognac / Brandy', // appelbrandewijn → gedistilleerd; vangt de alcohol-as
+
+  // Tweede eval-batch — generieke term → representatief item (de werkelijke variant kan
+  // afwijken; UI markeert als ≈). Veel hiervan zijn termen waarvan het item wél bestaat maar
+  // met een kwalificatie ervoor ("Volle yoghurt", "Rundergehakt", "Witte rijst").
+  'yoghurt': 'Volle yoghurt',
+  'rijst': 'Witte rijst (gekookt)',
+  'gehakt': 'Rundergehakt',
+  'linzen': 'Groene linzen (gekookt)',
+  'serranoham': 'Prosciutto (rauwe ham, Italiaans)', // gecureerde ham, vangt het cured-meat-signaal
+  'schapenkaas': 'Feta',
+  'room': 'Slagroom',
+  'guanciale': 'Spek (gerookt, gecureerd)', // gecureerd varkensvlees
 }

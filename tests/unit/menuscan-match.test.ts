@@ -106,4 +106,10 @@ describe('matchIngredient', () => {
     // "Edamame bonen (vers/bevroren)" — "bevroren" mag geen losse sleutel worden.
     expect(matchIngredient('bevroren')).toBeNull()
   })
+
+  it('precieze alias wint van een bredere token-match ("gedroogde vijg" → gedroogd, niet vers)', () => {
+    const m = matchIngredient('gedroogde vijg')
+    expect(m?.item.name.nl).toBe('Vijg (gedroogd)')
+    expect(m?.method).toBe('alias')
+  })
 })

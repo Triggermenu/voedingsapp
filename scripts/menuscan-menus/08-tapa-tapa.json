@@ -1,0 +1,17 @@
+{
+  "source": "Tapa Tapa — Spaans (tapas)",
+  "url": "https://www.tapa-tapa.nl/tapas-menukaart/",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Manchego con membrillo", "ingredients": ["schapenkaas", "kweepeer"] },
+    { "dish": "Chorizo de bellota", "ingredients": ["chorizo"] },
+    { "dish": "Jamon serrano", "ingredients": ["serranoham"] },
+    { "dish": "Carpaccio", "ingredients": ["rundvlees", "pesto", "pijnboompitten", "parmezaan"] },
+    { "dish": "Gambas al ajillo", "ingredients": ["garnalen", "knoflook", "olijfolie"] },
+    { "dish": "Salmon Frito", "ingredients": ["zalm", "wakame", "teriyaki"] },
+    { "dish": "Tortilla de patatas", "ingredients": ["aardappel", "ei", "ui"] },
+    { "dish": "Patatas bravas", "ingredients": ["aardappel", "tomatensaus"] },
+    { "dish": "Albondigas con salsa de tomate", "ingredients": ["gehakt", "tomatensaus"] },
+    { "dish": "Pimientos rellenos", "ingredients": ["paprika", "geitenkaas"] }
+  ]
+}
