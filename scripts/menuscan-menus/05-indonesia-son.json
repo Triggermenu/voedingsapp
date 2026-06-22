@@ -1,0 +1,17 @@
+{
+  "source": "Indonesia Son — Indonesisch",
+  "url": "https://indonesiason.nl/menukaart/",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Ayam Goreng Indonesia", "ingredients": ["kip", "zoetzure saus"] },
+    { "dish": "Daging Rendang", "ingredients": ["rundvlees", "kokos", "sambal"] },
+    { "dish": "Daging Semur", "ingredients": ["rundvlees", "sojasaus"] },
+    { "dish": "Gulei Kambing", "ingredients": ["lamsvlees", "kokossaus"] },
+    { "dish": "Udang Goreng Indonesia", "ingredients": ["garnalen", "zoetzure saus"] },
+    { "dish": "Ikan Bumbu Bali", "ingredients": ["vis", "sambal"] },
+    { "dish": "Sambal Goreng Buncis", "ingredients": ["sperziebonen", "sambal"] },
+    { "dish": "Sayur Lodeh", "ingredients": ["groenten", "kokos"] },
+    { "dish": "Gado Gado", "ingredients": ["groenten", "pindasaus", "ei"] },
+    { "dish": "Ketoprak", "ingredients": ["rijst", "groenten", "pindasaus", "tahoe"] }
+  ]
+}

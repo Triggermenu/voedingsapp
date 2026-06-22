@@ -1,0 +1,17 @@
+{
+  "source": "Gandhi Zwolle — Indiaas",
+  "url": "https://gandhizwolle.nl/menukaart/",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Fish Pakora", "ingredients": ["vis", "kikkererwtenmeel"] },
+    { "dish": "Chicken Pakora", "ingredients": ["kip", "kikkererwtenmeel"] },
+    { "dish": "Dal Soep", "ingredients": ["linzen", "koriander", "citroen"] },
+    { "dish": "Samosa", "ingredients": ["aardappel", "doperwten", "deeg"] },
+    { "dish": "Onion Bhaji", "ingredients": ["ui", "koriander", "paprika", "kikkererwtenmeel"] },
+    { "dish": "Palak Paneer", "ingredients": ["paneer", "spinazie", "knoflook", "citroen"] },
+    { "dish": "Navratan Kurma", "ingredients": ["groenten", "rozijnen", "amandel", "kokos", "room"] },
+    { "dish": "Aloo Gobi", "ingredients": ["aardappel", "bloemkool"] },
+    { "dish": "Tarka Dal", "ingredients": ["linzen", "gember", "ui", "knoflook", "koriander"] },
+    { "dish": "Jhinga Tikka", "ingredients": ["garnalen"] }
+  ]
+}

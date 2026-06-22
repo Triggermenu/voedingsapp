@@ -1,0 +1,17 @@
+{
+  "source": "Akropolis — Grieks",
+  "url": "https://www.akropolis-restaurant.nl/menukaart/",
+  "note": "Ingrediënten geëxtraheerd uit de gerechtomschrijvingen (de vision-stap), licht versimpeld naar losse termen.",
+  "dishes": [
+    { "dish": "Tzatziki", "ingredients": ["yoghurt", "komkommer", "knoflook"] },
+    { "dish": "Melitzanosalata", "ingredients": ["aubergine", "knoflook"] },
+    { "dish": "Choriatiki (boerensalade)", "ingredients": ["tomaat", "komkommer", "feta", "olijven", "rode ui"] },
+    { "dish": "Solomos kapnistos", "ingredients": ["gerookte zalm", "sla"] },
+    { "dish": "Spanakopita", "ingredients": ["filodeeg", "spinazie", "feta"] },
+    { "dish": "Garides saganaki", "ingredients": ["garnalen", "knoflook", "tomaat", "feta"] },
+    { "dish": "Gigantes", "ingredients": ["witte bonen", "tomaat"] },
+    { "dish": "Dolmadakia", "ingredients": ["druivenblad", "rijst", "gehakt", "yoghurt"] },
+    { "dish": "Moussaka", "ingredients": ["aardappel", "aubergine", "courgette", "gehakt", "bechamelsaus"] },
+    { "dish": "Souvlaki speciaal", "ingredients": ["varkenshaas", "rundvlees", "paprika", "ui", "feta"] }
+  ]
+}
