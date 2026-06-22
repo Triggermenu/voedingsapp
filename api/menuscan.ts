@@ -14,6 +14,8 @@ const fase1Schema = z.object({
   results: z.array(
     z.object({
       dish: z.string().max(500),
+      // Herkende hoofdingrediënten — voedt de DB-matching client-side (menuscan-herontwerp.md).
+      ingredients: z.array(z.string().max(120)).max(30).optional(),
       scores: z.record(z.object({ score: z.number().int().min(0).max(3), note: z.string().max(500).optional() })),
       overallNote: z.string().max(1000).optional(),
     })
@@ -170,11 +172,14 @@ Scoreschaal:
 Scan de volledige afbeelding van boven naar beneden. Geef maximaal 15 gerechten terug — kies de meest herkenbare hoofd- en bijgerechten. Sla drankjes over tenzij er verder weinig gerechten zijn.
 Schrijf alle tekst in het Nederlands.
 
+Geef per gerecht ook "ingredients": de losse hoofdingrediënten als korte enkelvoudige termen (bv. "gerookt rundvlees", "parmezaanse kaas", "rucola"). Gebruik enkelvoudige basisingrediënten, geen hele gerechtnamen of bijzinnen. Lees ze uit de gerechtomschrijving op de kaart; vul aan met de meest waarschijnlijke hoofdingrediënten als de omschrijving summier is.
+
 Antwoord UITSLUITEND als geldig JSON:
 {
   "results": [
     {
       "dish": "naam van het gerecht",
+      "ingredients": ["ingrediënt 1", "ingrediënt 2"],
       "scores": {
         ${scoreFields}
       },
