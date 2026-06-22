@@ -5,6 +5,7 @@ import { getProfile, hasAcceptedScanConsent, acceptScanConsent } from '@/lib/pro
 import { track } from '@/lib/analytics'
 import { NavBar } from '@/components/NavBar'
 import { Logo } from '@/components/Logo'
+import { DishAssessmentCard } from '@/components/DishAssessmentCard'
 import type { Condition } from '@/schemas/item'
 
 const SCORE_LABELS: Record<number, string> = { 0: 'Gunstig', 1: 'Met mate', 2: 'Spaarzaam', 3: 'Liever niet' }
@@ -14,6 +15,7 @@ const CONDITION_LABELS: Record<Condition, string> = {
 
 interface Phase1Result {
   dish: string
+  ingredients?: string[]
   scores: Partial<Record<Condition, { score: number; note: string }>>
   overallNote: string
 }
@@ -333,42 +335,36 @@ export function Scan() {
             {results.map((r, i) => {
               const isOpen = expandedIndex === i
               return (
-                <div key={i} className="bg-white border border-[#e0dfd7] rounded-xl overflow-hidden">
-                  {/* Hoofdrij */}
-                  <div className="p-4 space-y-2.5">
-                    <div className="flex items-start justify-between gap-2">
-                      <p className="font-serif font-semibold text-[#1a1a18] leading-snug">{r.dish}</p>
-                      <button
-                        onClick={() => setExpandedIndex(isOpen ? null : i)}
-                        aria-expanded={isOpen}
-                        aria-label="Meer uitleg"
-                        className="flex-shrink-0 w-6 h-6 rounded-full border border-[#c8c7bf] flex items-center justify-center text-[#73726c] hover:border-[#1d9e75] hover:text-[#1d9e75] transition-colors mt-0.5"
-                      >
-                        <span className="text-[11px] font-semibold leading-none">i</span>
-                      </button>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {conditions.map((c) => {
-                        const s = r.scores[c]
-                        if (!s) return null
-                        return (
-                          <div key={c} className="flex items-center gap-1.5">
-                            <ScorePill score={s.score} />
-                            <span className="text-xs text-[#73726c]">{CONDITION_LABELS[c]}</span>
-                          </div>
-                        )
-                      })}
-                    </div>
-                    {r.overallNote && (
-                      <p className="text-xs text-[#73726c] leading-relaxed border-t border-[#f0efe8] pt-2">
-                        {r.overallNote}
-                      </p>
-                    )}
-                  </div>
+                <div key={i} className="space-y-2">
+                  {/* Primair: DB-gedreven, ingrediënt-centrisch (uit de gevalideerde database) */}
+                  <DishAssessmentCard dish={r.dish} ingredients={r.ingredients ?? []} conditions={conditions} />
 
-                  {/* Uitklapblok */}
+                  {/* Aanvullend (hybride): de AI-inschatting, expliciet als indicatief gemarkeerd */}
+                  <button
+                    onClick={() => setExpandedIndex(isOpen ? null : i)}
+                    aria-expanded={isOpen}
+                    className="flex items-center gap-1 text-xs text-[#9c9a92] hover:text-[#1d9e75] transition-colors"
+                  >
+                    AI-inschatting (indicatief) <span aria-hidden="true">{isOpen ? '▴' : '▾'}</span>
+                  </button>
+
                   {isOpen && (
-                    <div className="border-t border-[#f0efe8] bg-[#faf9f6] px-4 py-3 space-y-3">
+                    <div className="border border-[#e0dfd7] rounded-xl bg-[#faf9f6] px-4 py-3 space-y-3">
+                      <div className="flex flex-wrap gap-2">
+                        {conditions.map((c) => {
+                          const s = r.scores[c]
+                          if (!s) return null
+                          return (
+                            <div key={c} className="flex items-center gap-1.5">
+                              <ScorePill score={s.score} />
+                              <span className="text-xs text-[#73726c]">{CONDITION_LABELS[c]}</span>
+                            </div>
+                          )
+                        })}
+                      </div>
+                      {r.overallNote && (
+                        <p className="text-xs text-[#73726c] leading-relaxed">{r.overallNote}</p>
+                      )}
                       {/* Spinner tijdens fase 2 */}
                       {phase2Loading && !r.explanation && (
                         <div className="flex items-center gap-2 text-xs text-[#9c9a92]">
@@ -418,8 +414,9 @@ export function Scan() {
             })}
 
             <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-xs text-amber-800 leading-relaxed">
-              Dit is een AI-inschatting op basis van de menukaart — geen medisch advies. Raadpleeg
-              altijd je diëtist of arts bij twijfel. Scores kunnen afwijken van de database.
+              De stoplichten komen uit onze gevalideerde database, gekoppeld aan de in de
+              menukaart herkende ingrediënten. De AI-inschatting (inklapbaar) is aanvullend en
+              indicatief. Geen medisch advies — raadpleeg bij twijfel je diëtist of arts.
             </div>
 
             {/* Deel-knop */}

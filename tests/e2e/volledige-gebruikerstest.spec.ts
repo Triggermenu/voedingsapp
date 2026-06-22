@@ -104,8 +104,8 @@ test('menukaart-scan: AVG-toestemming + gemockte AI-analyse', async ({ page }) =
     const body = route.request().postDataJSON() as { phase?: number } | null
     const phase1 = {
       results: [
-        { dish: 'Spaghetti carbonara', scores: { jicht: { score: 2, note: 'Spek + kaas.' }, migraine: { score: 2, note: 'Gerijpte kaas.' } }, overallNote: 'Met mate.' },
-        { dish: 'Caprese salade', scores: { jicht: { score: 0, note: 'Laag purine.' }, migraine: { score: 1, note: 'Verse tomaat.' } }, overallNote: 'Prima keuze.' },
+        { dish: 'Spaghetti carbonara', ingredients: ['parmezaanse kaas', 'pasta', 'spek'], scores: { jicht: { score: 2, note: 'Spek + kaas.' }, migraine: { score: 2, note: 'Gerijpte kaas.' } }, overallNote: 'Met mate.' },
+        { dish: 'Caprese salade', ingredients: ['tomaat', 'mozzarella', 'basilicum'], scores: { jicht: { score: 0, note: 'Laag purine.' }, migraine: { score: 1, note: 'Verse tomaat.' } }, overallNote: 'Prima keuze.' },
       ],
     }
     const phase2 = {
@@ -138,6 +138,13 @@ test('menukaart-scan: AVG-toestemming + gemockte AI-analyse', async ({ page }) =
     await expect(page.getByText('Spaghetti carbonara')).toBeVisible()
     await expect(page.getByText('Caprese salade')).toBeVisible()
     await expect(page.getByText(/gerechten beoordeeld/)).toBeVisible()
+
+    // Nieuwe DB-gedreven kaart: ingrediënten gematcht aan de gevalideerde database,
+    // dekkingsring, en de AI-inschatting als inklapbare "indicatief"-sectie (hybride).
+    await expect(page.getByText('Parmezaan').first()).toBeVisible()
+    await expect(page.getByText('Mozzarella').first()).toBeVisible()
+    await expect(page.getByText('dekking').first()).toBeVisible()
+    await expect(page.getByRole('button', { name: /AI-inschatting \(indicatief\)/ }).first()).toBeVisible()
   })
 })
 
