@@ -7164,6 +7164,93 @@
         "lastReviewed": "2026-05-20"
       },
       "cluster": 28
+    },
+    {
+      "id": "nl-olijven",
+      "name": {
+        "nl": "Olijven (in pekel)",
+        "en": "Olives (brined)"
+      },
+      "category": "groente",
+      "subcategory": "ingemaakt",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-06-23"
+            }
+          ],
+          "note": {
+            "nl": "Olijven zijn een vrucht met een laag purinegehalte; gicht-voedingstabellen rangschikken ze als laag-purine. Geen jicht-aandachtspunt."
+          }
+        },
+        "migraine": {
+          "score": 0,
+          "evidence": "C",
+          "sources": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-06-23"
+            }
+          ],
+          "note": {
+            "nl": "Geen erkende migrainetrigger. Olijven worden gepekeld/licht gefermenteerd maar staan niet op trigger-lijsten; groene olijven bevatten lagere biogene aminen dan zwarte."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://hsph.harvard.edu/wp-content/uploads/2024/07/OXALATE-TABLE-1.xlsx",
+              "title": "Harvard Oxalate Table 2023 (UAB Knight Lab)",
+              "type": "database",
+              "accessedAt": "2026-06-23"
+            },
+            {
+              "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline",
+              "title": "AUA Medical Management of Kidney Stones Guideline",
+              "type": "guideline",
+              "accessedAt": "2026-06-23"
+            }
+          ],
+          "note": {
+            "nl": "Laag oxalaatgehalte. Pekel maakt olijven wel natriumrijk — bij een standaardportie blijft dit onder de §2.3-natriumdrempel, maar bij grote hoeveelheden telt natrium mee."
+          }
+        },
+        "histamine": {
+          "score": 2,
+          "evidence": "B",
+          "confidence": "laag",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-06-23"
+            }
+          ],
+          "note": {
+            "nl": "SIGHI rangschikt olijven als histamine-relevant: gepekeld/gefermenteerd, soms met intolerante additieven. Sterk variabel per type (groene < zwarte, kalamata soms laag). Omstreden — beperkte directe meetdata."
+          }
+        }
+      },
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": false
+      },
+      "meta": {
+        "addedAt": "2026-06-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-06-23"
+      }
     }
   ]
 }
