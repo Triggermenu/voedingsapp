@@ -4167,6 +4167,107 @@
         "lastReviewed": "2026-05-20"
       },
       "cluster": 4
+    },
+    {
+      "id": "nl-geitenkaas",
+      "name": {
+        "nl": "Geitenkaas (vers)",
+        "en": "Goat cheese (fresh)"
+      },
+      "category": "zuivel",
+      "subcategory": "kaas-vers",
+      "scores": {
+        "jicht": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Purine/PURINEDATABASEDOCUMENTATION2025.pdf",
+              "title": "USDA Purine Database Release 2.0 (2025)",
+              "type": "database",
+              "accessedAt": "2026-06-23"
+            }
+          ]
+        },
+        "migraine": {
+          "score": 1,
+          "evidence": "B",
+          "confidence": "laag",
+          "triggerType": "subgroep-overschat",
+          "primaryModulators": [
+            "tyramine"
+          ],
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4559027/",
+              "title": "Moffett A, Swash M, Scott DF 1972 — Effect of tyramine in migraine: a double-blind study (J Neurol Neurosurg Psychiatry)",
+              "type": "review",
+              "accessedAt": "2026-06-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9172554/",
+              "title": "Finberg JPM & Gillman K 2022 — Prescribers' guide to the MAOI diet (J Neural Transm)",
+              "type": "review",
+              "accessedAt": "2026-06-23"
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7496357/",
+              "title": "Hindiyeh et al. 2020 — Diet and Headache",
+              "type": "review",
+              "accessedAt": "2026-06-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse geitenkaas bevat lage biogene aminen (tyramine doorgaans 4–51 mg/kg) — milder dan gerijpte koemelkkaas of feta. Tyramine is alleen klinisch relevant in een MAO-A-gevoelige subgroep; in de algemene populatie overschat. Sterk gerijpte geitenkaas scoort hoger."
+          }
+        },
+        "nierstenen": {
+          "score": 0,
+          "evidence": "A",
+          "sources": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11742412/",
+              "title": "Borghi et al. 2002 — Dietary calcium and kidney stone risk (RCT)",
+              "type": "review",
+              "accessedAt": "2026-06-23"
+            },
+            {
+              "url": "https://www.auanet.org/guidelines-and-quality/guidelines/kidney-stones-medical-mangement-guideline",
+              "title": "AUA Medical Management of Kidney Stones Guideline",
+              "type": "guideline",
+              "accessedAt": "2026-06-23"
+            }
+          ],
+          "note": {
+            "nl": "Kaas is calciumrijk; normale calciuminname verlaagt het nierstenenrisico (Borghi RCT, AUA). Geen aandachtspunt."
+          }
+        },
+        "histamine": {
+          "score": 1,
+          "evidence": "B",
+          "sources": [
+            {
+              "url": "https://www.mastzellaktivierung.info/downloads/foodlist/21_FoodList_EN_alphabetic_withCateg.pdf",
+              "title": "SIGHI Food Compatibility List 2023",
+              "type": "consensus",
+              "accessedAt": "2026-06-23"
+            }
+          ],
+          "note": {
+            "nl": "Verse geitenkaas heeft lage biogene-amine-niveaus (histamine in ongeveer de helft van de monsters, ≤69 mg/kg). Verse, niet-gerijpte kaas is histamine-armer dan gerijpte of blauwe kaas."
+          }
+        }
+      },
+      "histamineFlags": {
+        "liberator": false,
+        "daoBlocker": false
+      },
+      "meta": {
+        "addedAt": "2026-06-23",
+        "schemaVersion": "1.0.0",
+        "lastReviewed": "2026-06-23"
+      },
+      "cluster": 3
     }
   ]
 }
